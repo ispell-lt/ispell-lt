@@ -98,6 +98,7 @@ daugiskaitinis/BN
 daþnas/AQN
 daþninis/BN
 debesuotas/AQN
+deimantinis/B
 dëkingas/AQN
 deklaratyvus/AQN
 deðimtainis/B
@@ -121,10 +122,12 @@ dþiugus/AQN
 erdvus/ANQ
 esminis/BN
 estiðkas/AN
+filologinis/B
 gailestingas/AQN
 gailus/AQN
 gaivus/ANQ
 galingas/AQN
+galinis/B
 galutinis/BN
 gamtinis/B
 garbingas/AQN
@@ -170,6 +173,7 @@ ilgasnapis/B
 ámanomas/AN
 ámantrus/AQN
 informatyvus/AQN
+iniciatyvinis/AQ
 ánoringas/AQN
 áprastas/AQN
 áprastinis/B
@@ -185,6 +189,7 @@ iðskirtinis/BN
 iðtisas/AN
 ástriþas/AQN
 iðtvermingas/AQN
+iðvirkðèias/A
 italiðkas/AN
 átartinas/AQN
 ávadinis/B
@@ -199,6 +204,7 @@ japoniðkas/AQ
 jaukus/AQN
 jaunas/AQN
 jautrus/AQN
+jubiliejinis/B
 jungtinis/B
 juodas/AQ
 juokingas/AQN
@@ -304,12 +310,15 @@ miðrus/AQN
 mokestinis/BN
 mokslinis/B
 molinis/B
+moraliðkas/AQ
 moteriðkas/AQN
 murzinas/AQN
 musulmoniðkas/AQN
 muzikinis/BN
+nacionalinis/B
 naktinis/B
 naminis/B
+narkotinis/B
 naudingas/AQN
 naujas/AQN
 nebylus/AQ
@@ -322,6 +331,7 @@ niûrus/AQN
 nykstamas/AQN
 nulinis/BN
 nuobodus/AQN
+nuodingas/AQN
 nuodugnus/AQN
 nuolankus/ANQ
 nuolatinis/BN
@@ -361,7 +371,6 @@ paukðtinis/B
 pavasarinis/B
 pavasariðkas/AQN
 pavienis/B
-pavienis/BN
 pavirðutiniðkas/AQN
 pavyzdinis/BN
 pavojingas/AQN
@@ -370,6 +379,7 @@ pelkëtas/AQN
 pësèias/AQN
 pieniðkas/A
 pigus/AQN
+pikantiðkas/AQN
 piktas/AQN
 pilkas/AQ
 pilnas/AQN
@@ -407,6 +417,7 @@ pusnuogis/B
 pusþalis/B
 raibas/AQN
 raiðas/AQ
+rajoninis/B
 raktinis/B
 ramus/AQN
 rankinis/B
@@ -421,6 +432,7 @@ religiðkas/AQN
 retas/AQN
 riebus/AQN
 riðlus/AQN
+rizikingas/AQN
 ryðkus/AQN
 rytinis/BN
 rodyklinis/BN
@@ -431,6 +443,7 @@ rûgðtus/AQN
 rumuniðkas/AQ
 rûpestingas/AQN
 rusiðkas/AN
+rûstus/AQ
 ðabloniðkas/AQN
 ðakninis/BN
 saldus/AQN
@@ -482,6 +495,7 @@ skubus/AQN
 slankus/AQN
 ðlapias/AQN
 slaptas/AQN
+slidus/AQN
 ðlykðtus/AQN
 slovëniðkas/AQ
 smagus/AQN
@@ -498,6 +512,7 @@ spartus/AQN
 staèias/AQN
 staigus/AQN
 stambus/AQN
+startinis/B
 statmenas/AN
 status/AQN
 stebuklingas/AQN
@@ -557,6 +572,7 @@ trumpalaikis/B
 trumpas/AQN
 trupmeninis/BN
 tualetinis/B
+turnyrinis/B
 turtingas/AQN
 tuðèias/AQN
 tvarkingas/AQN
@@ -608,7 +624,7 @@ visiðkas/AQN
 visuomeninis/BN
 visuotinis/AQN
 vyresnis/A
-vyriausias/A
+vyriausias/AQ
 vyriðkas/AQN
 vokiðkas/AN
 þalias/AQN
