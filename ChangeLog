@@ -1,3 +1,15 @@
+2002-09-06  Gediminas Paulauskas <menesis@delfi.lt>
+
+	* nauji þodþiai ið Lino, Mariaus ir manæs
+	
+	* lietuviu.aff: pataisymai ið Rièardo Èepo, kad bûtø galima
+	gaminti tiek Latin7 (áprastas), tiek UTF-8 (reikalingas pvz. KMail)
+	þodynus
+
+	* Makefile: BSD pataisymai
+
+	* README: ðiek tiek atnaujinau
+
 2001-05-02  Gediminas Paulauskas <menesis@delfi.lt>
 
 	Versija 0.5: 8767 þodþiai.
@@ -23,7 +35,7 @@
 
 	* 600 naujø mano þodþiø, virð 200 ið Mariaus, pataisyti buvæ.
 
-	* COPYING: pridëjau licenzijà, nepakenks...
+	* COPYING: pridëjau BSD tipo licenzijà, nepakenks...
 
 2000-07-04  Albertas Agejevas  <alga@uosis.mif.vu.lt>
 
