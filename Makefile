@@ -28,5 +28,5 @@ clean:
 	rm -f *~ lietuviu.dict.stat lietuviu.dict.cnt lietuviu.hash lietuviu.dict
 
 install: lietuviu.hash
-	install -g root -o root -m 0644 lietuviu.hash $(installdir)
-	install -g root -o root -m 0644 lietuviu.aff $(installdir)
+	install -c -g 0 -o root -m 0644 lietuviu.hash $(installdir)
+	install -c -g 0 -o root -m 0644 lietuviu.aff $(installdir)

@@ -19,7 +19,47 @@
 compoundwords	off
 allaffixes	off
 
-wordchars [aàbcèdeæëf-iáyj-rsğt-uøûv-zş] [AÀBCÈDEÆËF-IÁYJ-RSĞT-UØÛV-ZŞ] 
+defstringtype "latin7" "TeX" ".latin7"
+
+wordchars a A
+stringchar à À
+wordchars [bc] [BC]
+stringchar è È
+wordchars [d-e] [D-E]
+stringchar æ Æ
+stringchar ë Ë
+wordchars [f-i] [F-I]
+stringchar á Á
+wordchars [yj-rs] [YJ-RS]
+stringchar ğ Ğ
+wordchars [t-u] [T-U]
+stringchar ø Ø
+stringchar û Û
+wordchars [v-z] [V-Z]
+stringchar ş Ş
+
+altstringtype "utf8" "TeX" ".UTF-8" ".utf-8"
+ 
+altstringchar Ä„ À
+altstringchar ÄŒ È
+altstringchar Ä˜ Æ
+altstringchar Ä– Ë
+altstringchar Ä® Á
+altstringchar Å  Ğ
+altstringchar Å² Ø
+altstringchar Åª Û
+altstringchar Å½ Ş
+altstringchar Ä… à
+altstringchar Ä è
+altstringchar Ä™ æ
+altstringchar Ä— ë
+altstringchar Ä¯ á
+altstringchar Å¡ ğ
+altstringchar Å³ ø
+altstringchar Å« û
+altstringchar Å¾ ş
+#altstringchar â€ ¥
+#altstringchar â€œ ´
 
 prefixes
 
