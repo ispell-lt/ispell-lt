@@ -64,6 +64,7 @@ begalinis/B
 bejëgis/B
 bendras/AQN
 bendrinis/BN
+beprasmis/B
 beprasmiðkas/AQN
 bergþdþias/AQN
 beribis/B
@@ -98,6 +99,7 @@ daþnas/AQN
 daþninis/BN
 debesuotas/AQN
 dëkingas/AQN
+deklaratyvus/AQN
 deðimtainis/B
 deðininis/B
 deðinys/AQ
@@ -125,6 +127,8 @@ gaivus/ANQ
 galingas/AQN
 galutinis/BN
 gamtinis/B
+garbingas/AQN
+garbus/AQN
 gardus/AQN
 garsus/AQN
 gauruotas/AQN
@@ -330,6 +334,7 @@ nuotolinis/B
 olandiðkas/AQ
 padorus/AQN
 pagalbinis/BN
+pagarbus/AQN
 pagrindinis/BN
 painus/AQN
 pajëgus/AQN
@@ -411,6 +416,8 @@ raðtiðkas/A
 raudonas/AQ
 rausvas/AQ
 reikalingas/AQN
+religingas/AQN
+religiðkas/AQN
 retas/AQN
 riebus/AQN
 riðlus/AQN
@@ -519,6 +526,7 @@ tarnybinis/BN
 tarpinis/B
 tarptautinis/BN
 taðkinis/B
+technologizuotas/AQN
 teisëtas/AQN
 teisingas/AQN
 teisinis/BN
@@ -538,6 +546,7 @@ tinklinis/BN
 tylus/AQN
 tobulas/AQN
 toks/AN
+tolerantiðkas/AQN
 tolimas/AQN
 tolydus/AQN
 tolygus/AQN
@@ -596,6 +605,7 @@ visaapimantis/BN
 visapusiðkas/AQN
 visaþinis/BN
 visiðkas/AQN
+visuomeninis/BN
 visuotinis/AQN
 vyresnis/A
 vyriausias/A
