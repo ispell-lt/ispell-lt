@@ -7,7 +7,7 @@
 SORTWORDS =	\
 	lietuviu.budvardziai	\
 	lietuviu.daiktavardziai	\
-	lietuviu.ivairus	\
+	lietuviu.jargon	\
 	lietuviu.nekaitomi	\
 	lietuviu.tarpt.budvardziai	\
 	lietuviu.tarpt.daiktavardziai	\
@@ -17,7 +17,7 @@ SORTWORDS =	\
 
 WORDS =	\
 	$(SORTWORDS)	\
-	lietuviu.jargon
+	lietuviu.ivairus
 
 installdir=`ispell -vv | grep LIBDIR | cut -d'"' -f2`
 
