@@ -1,0 +1,20 @@
+Komanda 'make' sukompiliuoja þodynus aspell formate
+Sistemoje turi bûti ádëtos ispell ir aspell programos.
+
+Veiksmaþodþiø þodynø kompiliacija atjungta. Jei neturite 
+kompiuterio su 400-500 MB atmintimi (RAM+swap), galite nebandyti 
+jø ájungti. Problema yra tame, kad iðpakuotas ispell veiksmaþodþiø
+sàraðas iðsipuèia n-iolika kartø ir kompiliuojant gali 
+pritrûkti atminties.
+
+Ant Atlono 1800 su 512 MB RAM'o ðis procesas veikë apie 5 minutes, bet swapo
+nepareikalavo.
+
+'make install' kol kas nieko nedaro. Realiai reiktø visus *.rws failus 
+ir lt.multi nukopijuoti á /usr/lib/aspell, o *.dat failus á /usr/share/aspell
+Jûsø katalogai gali skirtis priklausomai nuo to, kà apie tai mano
+'aspell config | grep data-dir' ir 'aspell config | grep dict-dir'
+
+iso-8859-13.dat failas paimtas ið aspell-0.50.3.
+
+'make clean' iðvalo instaliacijà
