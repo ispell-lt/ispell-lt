@@ -105,6 +105,7 @@ arbata/D
 arbatëlë/D
 arbatþolë/D
 arimas/D
+arkliukas/D
 arklys/D
 armënas/D
 armonika/D
@@ -239,6 +240,7 @@ braðkë/D
 brazilas/D
 brëþinys/D
 brolis/D
+broliukas/D
 broðiûrëlë/D
 brûkðnelis/D
 brûkðnys/D
@@ -257,8 +259,10 @@ bulkutë/D
 bulvë/D
 burbulas/D
 bûrelis/D
+buriavimas/D
 bûrimas/D
 bûrys/D
+burlentë/D
 burna/D
 burtai/D
 burtininkas/D
@@ -647,6 +651,7 @@ kaladëlë/D
 kalakutas/D
 kalba/D
 kalbininkas/D
+kalbotyra/D
 Kalëdos/D
 kaliausë/D
 kalnas/D
@@ -664,6 +669,7 @@ kaminas/D
 kampas/D
 kamðèiatraukis/D
 kamuolys/D
+kanapë/D
 kanèia/D
 kanopa/D
 kantrybë/D
@@ -683,6 +689,7 @@ kariðkis/D
 kariuomenë/D
 karys/D
 karklas/D
+karpis/D
 karðtis/D
 karta/D
 kartas/D
@@ -1118,7 +1125,7 @@ nulis/D
 nuliukas/D
 numeris/D
 nuobauda/D
-nuodai/D
+nuodas/D
 nuodëgulis/D
 nuodëmë/D
 nuojauta/D
@@ -1333,7 +1340,8 @@ pilietis/D
 pilis/IM
 pilkapis/D
 pilkuma/D
-pilnatis/VI
+pilnatis/IV
+pilnavertiðkumas/DN
 pilotas/D
 pilvas/D
 pingvinas/D
@@ -1485,6 +1493,7 @@ pusiaujas/D
 pusiaukelë/D
 puslankis/D
 puslapis/D
+pûslë/D
 pusryèiai/D
 pustaðkis/D
 pustonis/D
@@ -1576,6 +1585,7 @@ rusas/D
 rûðis/MI
 rûsys/D
 rûstybë/D
+saitas/D
 sàjunga/D
 ðaka/D
 sakalas/D
@@ -1722,6 +1732,7 @@ skambutis/D
 skanëstas/D
 skatikas/D
 skausmas/D
+skersgatvis/D
 skersmuo/KV
 skëtis/D
 skiltis/IM
@@ -1754,6 +1765,7 @@ skrynelë/D
 skruzdëlynas/D
 skuba/D
 ðlaitas/D
+ðlamðtas/D
 slanka/D
 slapyvardis/D
 slaptaþodis/D
@@ -1763,6 +1775,7 @@ slenkstis/D
 slëptuvë/D
 slibinas/D
 slidës/D
+slidinëjimas/D
 slinkiklis/D
 slinktis/MI
 ðliûþë/D
@@ -1816,6 +1829,7 @@ spyna/D
 sportbatis/D
 sportininkas/D
 sprindis/D
+sraigë/D
 sprogimas/D
 ðratas/D
 srautas/D
@@ -1985,6 +1999,7 @@ traðkutis/D
 trauka/D
 traukinys/D
 treèiadienis/D
+treèiakursis/D
 treèiokas/D
 treèiokë/D
 treniruoklis/D
@@ -2093,6 +2108,7 @@ vairas/D
 vairuotojas/D
 vaisius/D
 vaistas/D
+vaistinë/D
 vaizdas/D
 vaizdelis/D
 vaizduoklis/D
@@ -2152,6 +2168,7 @@ vëjelis/D
 vëliava/D
 vëliavëlë/D
 velnias/D
+vëluma/D
 vengras/D
 vergas/D
 vergija/D
@@ -2214,6 +2231,7 @@ vyrukas/D
 vyðnia/D
 vokas/D
 vokietis/D
+vonia/D
 vora/D
 voratinklis/D
 þadintuvas/D
@@ -2264,6 +2282,7 @@ voratinklis/D
 þmogþudystë/D
 þmona/D
 þmonës/D
+þmonija/D
 þodelis/D
 þodis/D
 þodynas/D
