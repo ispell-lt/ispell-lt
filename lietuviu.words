@@ -7,6 +7,7 @@ abonentinis/B
 absoliutus/AQN
 abstrakcija/D
 abstraktus/AQN
+aèiû
 adapteris/D
 adaptyvus/AQN
 administracija/D
@@ -103,6 +104,7 @@ antkrûtinis/D
 antradienis/D
 antraip
 antraðtë/D
+antrinis/B
 antrokas/D
 antrokë/D
 antspaudas/D
@@ -208,6 +210,7 @@ atmosfera/D
 atodanga/D
 atokvëpis/D
 atomas/D
+atomazga/D
 atominis/B
 atostogos/D
 atrakcija/D
@@ -640,6 +643,7 @@ eiga/D
 eilë/D
 eilëraðtis/D
 eilinis/D
+eiliðkumas/D
 eilutë/D
 eime
 eismas/D
@@ -943,6 +947,7 @@ ikona/D
 ákrova/D
 ákûrëjas/D
 álanka/D
+ilgalaikis/BN
 ilgametis/BN
 ilgas/AQN
 ilgesys/D
@@ -1182,6 +1187,7 @@ kartinis/BN
 kartonas/D
 kartoninis/B
 kartotinis/BN
+kartotuvas/D
 karts
 kartus/AQN
 karvë/D
@@ -1271,6 +1277,7 @@ kirminas/D
 kirtis/D
 kirvis/D
 kiðenë/D
+kiðeninis/BN
 kita/D
 kitaip
 kitaip/N
@@ -1431,6 +1438,7 @@ krûmas/D
 krûmynas/D
 kruopa/D
 kruopelytë/D
+kruopðtus/AQN
 kruða/D
 krûtinë/D
 krûva/D
@@ -1551,7 +1559,7 @@ lentyna/D
 lëðos/D
 lëtas/AQN
 liaudis/MI
-licenzija/D
+licencija/D
 liekana/D
 liemuo/V
 liepa/D
@@ -1669,6 +1677,7 @@ matomumas/D
 matrica/D
 matuoklis/D
 mauras/DN
+mazgas/DN
 maþas/AQN
 maþybinis/BN
 maþytis/B
@@ -1821,6 +1830,7 @@ niekada
 niekaip
 niekam
 niekas/D
+niekuomet
 niekur
 niða/D
 niuansas/D
@@ -1854,6 +1864,7 @@ nuoseklus/AQN
 nuoðirdus/AQN
 nuostabus/AQN
 nuostata/D
+nuostatas/D
 nuostolingas/ANQ
 nuostolis/D
 nuotaika/D
@@ -2006,6 +2017,7 @@ pateiktis/MI
 patentas/D
 patikimas/BN
 patikimumas/DN
+patikra/D
 patirtis/MI
 patogus/AQN
 patranka/D
@@ -2020,6 +2032,7 @@ paveikslëlis/D
 paveiksliukas/D
 pavidalas/D
 pavirðutiniðkas/AQN
+pavienis/BN
 pavyzdinis/BN
 pavyzdys/D
 pavojingas/AQN
@@ -2040,6 +2053,7 @@ penktadienis/D
 periferija/D
 periodas/D
 periodinis/BN
+periodiðkai
 perjungiklis/D
 perklausa/D
 perkrova/D
@@ -2218,6 +2232,7 @@ privalomas/AQN
 privalumas/D
 privatus/AQ
 privilegija/D
+privilegijuotas/AQN
 prizas/D
 priþiûrëtojas/D
 problema/D
@@ -2252,6 +2267,7 @@ protingas/AQN
 protokolas/D
 provincija/D
 proþektorius/D
+pseudonimas/D
 psichiatras/D
 publikacija/D
 publika/D
@@ -2453,6 +2469,7 @@ sàraðas/D
 sàryðis/D
 sàsaja/D
 sàskaita/D
+sàstingis/D
 ðaðkë/D
 sàskrydis/D
 ðaudyklë/D
@@ -2476,6 +2493,7 @@ savaiminis/B
 savaip
 savaitë/D
 savaitgalis/D
+savarankiðkas/AQN
 savijauta/D
 savikontrolë/D
 savininkas/D
@@ -2605,6 +2623,7 @@ skardus/AQN
 skatintinas/AN
 skausmas/D
 skausmingas/AQN
+skeneris/D
 skeptikas/D
 skersmuo/KV
 skëtis/D
@@ -2670,6 +2689,7 @@ snaiperis/D
 snarglys/D
 ðneka/D
 sniegas/D
+spalvumas/D
 sodas/D
 sodyba/D
 sodrumas/D
@@ -2815,6 +2835,7 @@ sviedinys/D
 svietas/D
 ðvilpukas/D
 svoris/D
+tabu
 tada
 taika/D
 taikinys/D
@@ -2870,6 +2891,7 @@ telefaksas/D
 telefonas/D
 telefoninis/B
 telekomas/D
+telekomunikacija/D
 teleksas/D
 televizija/D
 televizorius/D
@@ -2913,6 +2935,7 @@ tikimybë/D
 tikras/AQN
 tikrinis/B
 tikslas/D
+tikslingas/AQN
 tikslingumas/D
 tikslus/AQN
 tiltas/D
@@ -2922,7 +2945,7 @@ tinklalapis/D
 tinklapis/D
 tinklas/D
 tinklelis/D
-tinklinis/D
+tinklinis/DBN
 tipas/D
 tipinis/BN
 tipiðkas/AQN
@@ -2948,6 +2971,7 @@ tomas/D
 tona/D
 tonas/D
 toninis/BN
+topologija/D
 tradicija/D
 tradicinis/BN
 tradiciðkas/AQN

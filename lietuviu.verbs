@@ -395,6 +395,8 @@ detalizuoti/TNX
 detektavo/PNX
 detektuoja/ENX
 detektuoti/TNX
+dëmëtis/T
+dëmisi/E
 dëtis/T
 dëti/TSXabcdefhijklmnopqrtuvwx
 diagnozavo/PNX
@@ -409,12 +411,12 @@ didino/PSXdfhlpr
 didinosi/P
 didintis/T
 didinti/TSXdfhlpr
-diegë/PSXcejv
+diegë/PSXcdeoptjvw
 diegësi/P
-diegia/ESXcejv
+diegia/ESXcdeoptjvw
 diegiasi/E
 diegtis/T
-diegti/TSXcejv
+diegti/TSXcdeoptjvw
 diferencijavo/PSXd
 diferencijavosi/P
 diferencijuoja/ESXd
@@ -1507,6 +1509,9 @@ lepino/PSXdfpr
 lepinosi/P
 lepintis/T
 lepinti/TSXdfpr
+lëtëja/ENXfkl
+lëtëjo/PNXfkl
+lëtëti/TNXfkl
 lëtina/ESXfhjkrtvx
 lëtino/PSXfhjkrtvx
 lëtinti/TSXfhjkrtvx
@@ -1825,6 +1830,8 @@ neðasi/E
 neðë/PSXabcdefghijklmnopqrstuvwx
 neðësi/P
 nesi
+nesate
+nesame
 neðioja/ESXadefijklmnpqruvwx
 neðiojasi/E
 neðiojo/PSXadefijklmnpqruvwx
@@ -2497,9 +2504,6 @@ skambino/PSXafhjnrvw
 skambinosi/P
 skambintis/T
 skambinti/TSXafhjnrvw
-skanavo/PNXeq
-skanuoja/ENXeq
-skanuoti/TNXeq
 skauda/ENXfko
 skaudëjo/PNXfko
 skaudëti/TNXfko
@@ -2509,10 +2513,13 @@ skelbia/ESXafmr
 skelbiasi/E
 skelbtis/T
 skelbti/TSXafmr
-skenavo/ENXeq
+skenavo/PSXefjqrv
+skenavosi/P
 skendo/NPeXf
-skenuoja/PNXeq
-skenuoti/TNXeq
+skenuoja/ESXefjqrv
+skenuojasi/E
+skenuoti/TSXefjqrv
+skenuotis/T
 skerdë/PSXdfjprv
 skerdësi/P
 skerdþia/ESXdfjprv
@@ -2796,6 +2803,9 @@ stovëtis/T
 stovëti/TSXbdefinoqvwx
 stovi/ESXbdefinoqvwx
 stovisi/E
+strigo/PNXbcl
+strigti/TNXbcl
+stringa/ENXbcl
 studijavo/PNXbdfipr
 studijuoja/ENXbdfipr
 studijuoti/TNXbdfipr
@@ -2945,6 +2955,9 @@ teikia/ESXcefhkoqt
 teikiasi/E
 teiktis/T
 teikti/TSXcefhkoqt
+teirautis/T
+teiraujasi/E
+teiravosi/P
 teisina/ESXcdfopr
 teisinasi/E
 teisino/PSXcdfopr
@@ -3318,6 +3331,8 @@ veikti/TNXacefijklvw
 veja/ESXabcdefgjmnopqrvw
 vejasi/E
 vëlavo/PNXfklv
+vëliava/D
+vëliavëlë/D
 velka/ESXabcdefghijklmnopqrstvwx
 velkasi/E
 vëluoja/ENXfklv
@@ -3459,6 +3474,7 @@ vokti/TNXekqw
 þingsniuojasi/E
 þingsniuotis/T
 þingsniuoti/TSXabcdefghijkloqtv
+þiniatinklis/D
 þino/ESXfkw
 þinojo/PSXfkw
 þinojosi/P
