@@ -35,6 +35,7 @@ anketa/D
 anotacija/D
 ansamblis/D
 antena/D
+antiradaras/D
 aparatas/D
 aparatûra/D
 aplikacija/D
@@ -99,12 +100,15 @@ buferis/D
 buferizacija/D
 buldozeris/D
 èekis/D
+èempionas/D
+èempionatas/D
 centas/D
 chaosas/D
 charakteristika/D
 chemija/D
 chuliganas/D
 ciklas/D
+ciklonas/D
 cilindras/D
 citata/D
 colis/D
@@ -212,6 +216,7 @@ filmas/D
 filosofas/D
 filosofija/D
 filtras/D
+finalas/D
 finansai/D
 finiðas/D
 firma/D
@@ -308,6 +313,7 @@ inþinerija/D
 inþinierius/D
 istorija/D
 iteracija/D
+iþdas/D
 jubiliejus/DN
 kabelis/D
 kabinetas/D
@@ -321,6 +327,8 @@ kanalas/D
 kanalizacija/D
 kandidatas/D
 kandidatë/D
+kapitalas/D
+kapitonas/D
 karatas/D
 karavanas/D
 karjeras/D
@@ -333,6 +341,7 @@ katedra/D
 kategorija/D
 kavalierius/D
 kefyras/D
+kempinligë/D
 kilobaitas/D
 kilogramas/D
 kilometras/D
@@ -344,6 +353,7 @@ klaviatûra/D
 klaviðas/D
 kobra/D
 kodas/D
+kodeksas/D
 koduotë/D
 koeficientas/D
 kolega/D
@@ -359,17 +369,21 @@ komisija/D
 komitetas/D
 kompanija/D
 kompasas/D
+kompensacija/D
 kompiliatorius/D
 kompiuterija/D
 kompiuterininkas/D
 kompiuteris/D
+kompleksas/D
 komplektas/D
 komponentas/D
 kompresija/D
 komuna/D
 komunikacija/D
 komunikacijos/D
+komunistas/D
 koncepcija/D
+koncernas/D
 koncertas/D
 konferencija/D
 konfigûracija/D
@@ -377,12 +391,14 @@ konfliktas/D
 konkurencija/D
 konkurentas/D
 konstanta/D
+konstitucija/D
 konstrukcija/D
 konstruktorius/D
 konsultacija/D
 konsultantas/D
 kontaktas/D
 kontekstas/D
+kontinentas/D
 kontingentas/D
 kontraktas/D
 kontrolë/D
@@ -394,11 +410,14 @@ koordinatë/D
 koordinatorius/D
 kopija/D
 korespondencija/D
+korespondentas/D
 koridorius/D
 korporacija/D
 kosmosas/D
 kostiumas/D
 kreditas/D
+kreditorius/D
+kriminalas/D
 kriptografija/D
 kriterijus/D
 krizë/D
@@ -424,9 +443,11 @@ lituanistë/D
 lituanistika/D
 lituanizacija/D
 lyderis/D
+lyga/D
 logika/D
 lokalë/D
 lokalizacija/D
+loterija/D
 mafija/D
 magija/D
 magistralë/D
@@ -445,8 +466,10 @@ markeris/D
 marðrutas/D
 matematika/D
 matematikas/D
+materija/D
 matrica/D
 mechanizmas/D
+medicina/D
 megabaitas/D
 melodija/D
 metalas/DN
@@ -487,6 +510,7 @@ navigatorius/D
 niuansas/D
 nominalas/D
 normalizacija/D
+notaras/D
 oazë/D
 objektas/D
 ofisas/D
@@ -496,6 +520,9 @@ operacinë/D
 opera/D
 operatorius/D
 optimistas/D
+orderis/D
+ordinas/D
+organas/D
 organizacija/D
 organizatorius/D
 organizmas/D
@@ -505,6 +532,7 @@ originalas/D
 orkestras/D
 ornamentas/D
 ovalas/D
+pacientas/D
 paketas/D
 palmë/D
 parabolë/D
@@ -512,6 +540,7 @@ para/D
 paragrafas/D
 parametras/D
 paritetas/D
+parlamentas/D
 partizanas/D
 partneris/D
 patentas/D
@@ -525,6 +554,7 @@ persas/D
 perspektyva/D
 pikselis/D
 piktograma/D
+pionierius/D
 piramidë/D
 pirotechnika/D
 pistoletas/D
@@ -532,7 +562,9 @@ planas/D
 plantacija/D
 platforma/D
 pleistras/D
+plomba/D
 pokeris/D
+policija/D
 poliklinika/D
 politika/D
 populiacija/D
@@ -567,6 +599,7 @@ programa/D
 programuotojas/D
 projektas/D
 projektuotojas/D
+prokuroras/D
 prologas/D
 promilë/D
 propeleris/D
@@ -580,6 +613,8 @@ publikacija/D
 publika/D
 pultas/D
 punktas/D
+pusfinalis/D
+radaras/D
 radiatorius/D
 radijas/D
 radiomodemas/D
@@ -596,6 +631,7 @@ regionas/D
 registracija/D
 registras/D
 reglamentas/D
+reitingas/D
 reklama/D
 rekomendacija/D
 rekordas/D
@@ -623,6 +659,7 @@ rokas/D
 ðablonas/D
 ðachmatas/D
 samba/D
+samurajus/D
 sandalas/D
 sankcija/D
 ðansas/D
@@ -660,9 +697,11 @@ skalë/D
 skeneris/D
 skeptikas/D
 skriptukas/D
+ðleifas/D
 ðliuzas/D
 snaiperis/D
 sonata/D
+sovietas/D
 specialistas/D
 specializacija/D
 specialybë/D
@@ -716,6 +755,8 @@ terminas/D
 terminija/D
 terminologija/D
 termosas/D
+teroras/D
+terorizmas/D
 testas/D
 tipas/D
 tiraþas/D
@@ -731,6 +772,7 @@ transformacija/D
 transmisija/D
 transportas/D
 tranzakcija/D
+tranzitas/D
 treniruotë/D
 triukas/D
 troleibusas/D
@@ -750,5 +792,6 @@ vizija/D
 þanras/D
 zefyras/D
 zenitas/D
+zoologija/D
 þurnalas/D
 þurnalistas/D
