@@ -97,7 +97,7 @@ if( !getopts('bBvVhHp:P:f:F:') || @ARGV ) {
 }
 else {
     if ($opt_b || $opt_B) {
-	# Force black & white. Sutinku, kad spalvos gali rëþti aká ar ákyrëti. TODO: custom colors
+	# Force Black & White. Sutinku, kad spalvos gali rëþti aká ar ákyrëti. TODO: custom colors
 	$d = $Y = $R = $G = $B = '';
     }
     if($opt_v || $opt_V) { 
@@ -185,15 +185,15 @@ sub veiksmazodis {
     print "$Y"."=== Veiksmaþodis ===\n$B$word$d\n";
     $msg = "Áveskite veiksmaþodþio bendratá($G"."kà daryti$d\/$G"."veikti?$d\)";
     do {
-	if(! ($bend = ivesti_zodi($msg)) ) { return; }
+	if(! ($bend = ivesti_zodi($msg, ($word =~/.*tis?$/i) ? $word : '' )) ) { return; }
 	elsif(!($bend =~ /.*tis?$/i)) { print "\n$R"."Dëmesio$d\, veiksmaþodþio bendratis turi baigtis galûne \'$G"."-ti(s)$d\' !\n"; }
     }until ($bend =~/.*tis?$/i);
     
     $msg =  "Áveskite veiksmaþodþio esamàjá laikà($G"."kà daro$d\/$G"."veikia?$d\)";
-    if(! ($es = ivesti_zodi($msg, $word)) ) { return; };
+    if(! ($es = ivesti_zodi($msg, ($word =~/.*(a|[^t]i)$/i) ? $word : '' )) ) { return; };
     
     $msg = "Áveskite veiksmaþodþio bûtàjá kartiná laikà ($G"."kà darë$d\/$G"."veikë?$d\)";
-    if(! ($but = ivesti_zodi($msg)) ) { return; } 
+    if(! ($but = ivesti_zodi($msg, ($word =~/.*ë$/i) ? $word : '')) ) { return; } 
 
     my %v_h = (1 => $bend, 2 => $es, 3 => $but); # pagrindiniø (v)eiksmaþodþio formø (h)ash
     my %vr_h = (1 => 0, 2 => 0, 3 => 0); # (v)eiksmaþodþio forma (r)asta hash
@@ -217,6 +217,7 @@ sub veiksmazodis {
     }
     elsif($found_u) {
 	# TODO :
+	return;
     }
     if(!veiks_tikrinimas(\$bend, \$es, \$but)) { return; }
     foreach $i (keys (%prefix), 'a[pt]', 'a[pt]i') {
@@ -348,8 +349,8 @@ sub budvardis {
     } until( $word =~ /.*s$/i );    
 
     &paieska_zodynuose($word, 3);
-    if($found_i) { last; }
-    elsif ($found_u) {} # TODO
+    if($found_i) { return; }
+    elsif ($found_u) { return; } # TODO
 
     $word =~ /(.*)(.)s$/i;
     $kokyb = $2 ne 'i';
@@ -368,6 +369,18 @@ sub budvardis {
     print  "$word\n";
     irasyti_izodyna(3, "$word");
 }  # bûdvardþio pabaiga
+
+
+sub nekaitomas {
+
+    $word = $_[0];
+    print "\n==== $Y"." Nekaitomas$d =====\n$B$word$d\n";
+    &paieska_zodynuose($word, 4);
+    if($found_i) { return; }
+    elsif ($found_u) { return; } # TODO
+
+    irasyti_izodyna(4, "$word");
+}  # nekaitomas pabaiga
 
 sub legal {
     # Funkcija, kuri tikrina ávedamø þodþiø "legalumà". Mano manymu, tai ðiek tiek padeda iðvengti klaidø ir sutaupyti laiko(pvz: vëlai pastebëjus, kad klaidingai 
@@ -539,12 +552,12 @@ sub taip_ne($$) {
 
 sub ivesti_zodi($;$) {
     my $msg = shift;
-    my $def_word = shift;
+    my $def_word = shift ;
     my $kart = 0;
     do {
 	if($kart >= 3) { print "\nÁveskite teisingà þodá ($G"."q$d sugráþti á pradþià): $B"; } 
 	else { 
-	    if( defined($def_word) ) { print "$msg [$B$def_word$d\]: $B"; }
+	    if( defined($def_word) && $def_word ne '' ) { print "$msg [$B$def_word$d\]: $B"; }
 	    else { print "$msg: $B"; }
 	} 
 	$_ = <STDIN>;
@@ -643,13 +656,13 @@ sub find_in($$)
     
     if (tell($FH)) { seek($FH, 0, 0) or die "$R"."Dëmesio$d\, negaliu pereiti á failo pradþià.\n"; }
     while ( <$FH> ) {
-	if (/$word\/(.+)/i) {
+	if (/$word(\/(.+))?/i) {
 	    $found_u = 1;
-	    $_ = $1;
+	    $_ = $2;
 	    last;
 	}
     }
-    if ($found_u) { return  $_; }
+    if ($found_u) {  return ($_) ? $_ : 1; }
 }
 
 sub append_flags($$$;$) {
