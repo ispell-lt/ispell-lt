@@ -821,19 +821,25 @@ suffixes
 	[^DT] I S	>	-IS,IAIS
 	[^DT] I S	>	-IS,IUOSE
 
-	T I S	>	-TIS,ÈIO
-	T I S	>	-TIS,ÈIAM
-	T I S	>	-TIS,TÁ
-	T I S	>	-TIS,ÈIU
-	T I S	>	-TIS,ÈIAME
+# Panaðu, kad visi þodþiai, kurie atsako á klausimà "koks" ir 
+# baigiasi galûne "*.(i)antis" yra dalyviai, kuriø linksniai generuojami 
+# veiksmaþodþiø afiksø.
+# Dël ðios prieþasties þemiau esantys afiksai yra uþkomentuoti
+#
+#	T I S	>	-TIS,ÈIO 
+#	T I S	>	-TIS,ÈIAM
+#	T I S	>	-TIS,TÁ
+#	T I S	>	-TIS,ÈIU
+#	T I S	>	-TIS,ÈIAME
 
-	T I S	>	-TIS,TI
-	T I S	>	-TIS,ÈIØ
-	T I S	>	-TIS,TIEMS
-	T I S	>	-TIS,TIEM
-	T I S	>	-TIS,ÈIUS
-	T I S	>	-TIS,ÈIAIS
-	T I S	>	-TIS,ÈIUOSE
+#	T I S	>	-TIS,TI
+#	T I S	>	-TIS,ÈIØ
+#	T I S	>	-TIS,TIEMS
+#	T I S	>	-TIS,TIEM
+#	T I S	>	-TIS,ÈIUS
+#	T I S	>	-TIS,ÈIAIS
+#	T I S	>	-TIS,ÈIUOSE
+	
 
 	D I S	>	-DIS,DÞIO	# didis > didþio
 	D I S	>	-DIS,DÞIAM	# Pagal tai ir -tis padariau...

@@ -1,0 +1,73 @@
+2002-10-xx Laimonas Vëbra <l.v@centras.lt>,<wiela@centras.lt>
+
+Þodþiai smulkiau ir grieþèiau iðskirstyti á atskirus þodynus pagal _grynas_ 
+pagrindines kalbos dalis.
+
+ - lietuviu.daiktavardziai (lietuviðki daiktavardþiai)
+ - lietuviu.tarpt.daiktavardziai (tarptautinës kilmës þodþiø daiktavardþiai)
+ - lietuviø.budvardziai (lietuviðki bûdvardþiai)
+ - lietuviø.tarpt.budvardziai (tarptautinës kilmës þodþiø bûdvardþiai)
+ - lietuviu.veiksmazodziai (lietuviðki veiksmaþodþiai)
+ - lietuviu.tarpt.veiksmazodziai (tarptautinës kilmës þodþiø veiksmaþodþiai)
+ - lietuviu.ivairus(ávardþiai, prielinksniai, dalelytës, skaitvardþiai)
+ - lietuviu.nekaitomi(nekaitomi _lietuviðki_ þodþiai)
+ - lietuviu.jargon(santrumpos, inicialai, ávairûs pavadinimai, kompiuterinio 
+ ar kt. "slengo" þodþiai bei kt. gramatinës konstrukcijos)
+ 
+Tai leidþia kokybiðkiau kaupti, skaièiuoti þodþius, nes yra lengviau aptinkamos 
+klaidos(besikartojantys þodþiai atskiruose þodynuose, neteisingos þodþiø afiksø
+vëliavëlës(angl. "flag"). Taip pat patogiau yra stebëti þodyno bûklæ, analizuoti 
+þodþiø darybos dësningumus(galûniø-linksniø priklausomybës, kurias vëliau galima 
+ádiegti kaip patikros taisykles, saugiklius þodyno kaupimo programoje "spell.pl")
+
+Paþymëtina, kad nelietuviðki, savadarbiai, neaiðkûs þodþiai, profesinis ar kt. 
+"slengas", santrumpos, pavadinimai, bei kitos gramatinës konstrukcijos tûrëtø 
+bûti raðomos tik á lietuviu.jargon þodynà. 
+Tokiu bûdu iðvengiama "neteisingø"(asmeninës-profesinës aplinkos, nekompetencijos 
+faktorius) þodþiø átraukimo á pagrindiná þodynà.
+
+Skirstant þodþius buvo surasta nemaþai klaidø(neteisingi afiksai, nevartotini, 
+besikartojantys þodþiai).
+Nesu lietuviø kalbos specialistas, todël tikëtina, kad tarptautinës kilmës 
+þodþiø skirstyme yra klaidø. Skirstydamas vadovavausi asmeniniu iðsilavinimu,
+intuicija bei þodþiø panaðumo kriterijumi lietuviø, rusø, anglø kalbose.
+Bûtø labai gerai jei kas nors turintis filologo iðsilavinimà galëtø perþiûrëti
+tarptautiniø þodþiø þodynus, nes juose yra lietuviðkø(nors ir ne lietuviðkos
+kilmës) þodþiø, kuriuos átraukiau remdamasis savo asmenine nuoþiûra(pvz. 
+centras, data, grupë, linija ir kt. Plg. : "katë", mano suvokime  yra 
+lietuviðkas þodis, taèiau  juk "cat", "kot"..? :)). Kitaip tariant - norëtøsi 
+grieþtesnio, tikslesnio skirstymo - "lietuviðki þodþiai : nelietuvðki þodþiai".
+
+Tikrindamas þodynus pastebëjau, kad visi(?) bûdvardþiai besibaigiantys
+galûne *.inis, *.enis yra nekokybiniai, todël turëtø bûti þymimi afikso 
+vëliavële /B. Panaðu, kad tai galioja ir daiktavardþiams(dgs. naudininkas
+turi minkðtà galûnæ -iø).
+
+Rastos klaidos:
+
+Afiksø lentelë, bûdvardis /A 3 paradigma:
+TIS - panaðu, kad nëra nei vieno bûdvardþio besibaigianèio galûne -tis, kuris
+galëtø bûti priskirtas /A grupei(dgs naudininkas -iems), todël dalis afiksø(TIS)
+treèiojoje paradigmoje yra nereikalingi.
+
+Taip pat pþymëtina, kad visi(?) þodþiai atsakantys á klausimà "koks?" ir 
+besibaigiantys galûne -(i)antis yra dalyviai, kuriø linksniai generuojami 
+veiksmaþodþiø afiksø. Dël ðios prieþasties reikia atidþiai tikrinti bûdvardþiø 
+þodynà, nes tokie þodþiai(panaðûs á bûdvardþius - nesantis,riðantis,verkiantis..) 
+su bûdvardþiø afiksais(/A,/B) generuoja neteisingus linksnius(pvz. veikiantis/A:
+veikiantis, veikiantë(bet ne veikianti), veikiantës(bet ne veikianèios) ir t.t.)
+
+Pakoreguota veiksmaþodininiø prefiksø lentelë - dabar generuojama ir:
+neesantis, nesantis
+neeina, neina
+nebeeina, nebeina
+...
+
+Þodynuose buvo rasta nelegaliø pamatiniø veiksmaþodþiø formø, kurios 
+generuoja neteisingus þodþius(pvz. elgia, elgë, elgti). Taip pat buvo rasti
+þodþiai su nurodytomis ne visomis pagrindinëmis pamatinëmis formomis(esamasis,
+bûtasis kartinis laikai, bendratis).
+Stengiuosi tikrinti tik pagrindines formas nekalbant jau apie prefiksus bei 
+afiksus :) 
+Daug klaidø...reikëtø IÐ ESMËS perþvelgti VISUS veiksmaþodþius ir jø afiksus !
+

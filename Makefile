@@ -4,7 +4,21 @@
 #  Copyright (C) 2000-2002 Albertas Agejevas
 #
 
-WORDS = lietuviu.base lietuviu.vardai lietuviu.words lietuviu.jargon lietuviu.verbs
+SORTWORDS =	\
+	lietuviu.budvardziai	\
+	lietuviu.daiktavardziai	\
+	lietuviu.ivairus	\
+	lietuviu.nekaitomi	\
+	lietuviu.tarpt.budvardziai	\
+	lietuviu.tarpt.daiktavardziai	\
+	lietuviu.tarpt.veiksmazodziai	\
+	lietuviu.vardai	\
+	lietuviu.veiksmazodziai
+
+WORDS =	\
+	$(SORTWORDS)	\
+	lietuviu.jargon
+
 installdir=`ispell -vv | grep LIBDIR | cut -d'"' -f2`
 
 all: lietuviu.hash myspell
@@ -27,8 +41,7 @@ lietuviu.hash: lietuviu.dict lietuviu.aff
 	buildhash lietuviu.dict lietuviu.aff lietuviu.hash
 
 sort:
-	# sort all files except base
-	for file in lietuviu.vardai lietuviu.words lietuviu.jargon lietuviu.verbs; do \
+	for file in $(SORTWORDS) ; do \
 		sort $$file | uniq > tmp-$$file; \
 		mv tmp-$$file $$file; \
 	done
@@ -38,5 +51,5 @@ clean:
 	lt_LT.aff lt_LT.dic
 
 install: lietuviu.hash
-	install -c -g 0 -o root -m 0644 lietuviu.hash $(installdir)
-	install -c -g 0 -o root -m 0644 lietuviu.aff $(installdir)
+	install -c -g 0 -o 0 -m 0644 lietuviu.hash $(installdir)
+	install -c -g 0 -o 0 -m 0644 lietuviu.aff $(installdir)

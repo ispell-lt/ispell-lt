@@ -1,3 +1,25 @@
+2002-11-22  Gediminas Paulauskas <menesis@delfi.lt>
+
+	Dideli pakeitimai ið Laimono Vëbros:
+
+	* lietuviu.words: ðio failo nebëra, jis padalintas á...
+	* lietuviu.budvardziai, lietuviu.daiktavardziai, lietuviu.nekaitomi,
+	lietuviu.tarpt.budvardziai, lietuviu.tarpt.daiktavardziai: ...ðiuos
+	failus pagal kalbos dalis. 
+	* lietuviu.base: pervadintas...
+	* lietuviu.ivairus: ...lietuviðkai ir perþiûrëtas.
+	* lietuviu.verbs: iðskaldytas á...
+	* lietuviu.veiksmazodziai, lietuviu.tarpt.veiksmazodziai: ðiuos du
+	failus.
+	* Makefile: atnaujintas.
+
+	* lietuviu.aff: uþkomentuotos taisyklës þodþiams, kurie atsako á
+	klausimà "koks?" ir baigiasi "-tis" -- atrodo kad visi jie yra
+	ne bûdvardþiai, o dalyviai. 
+
+	* tools/spell.pl: stipriai patobulintas skriptas, iðskirsto þodþius á
+	reikalingus failus.
+
 2002-09-06  Gediminas Paulauskas <menesis@delfi.lt>
 
 	* nauji þodþiai ið Lino, Mariaus ir manæs
