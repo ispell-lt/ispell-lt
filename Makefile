@@ -1,13 +1,22 @@
 #
 #  Makefile for Lithuanian ispell dictionary
 #   
-#  (C) 2000 Albertas Agejevas
+#  Copyright (C) 2000-2002 Albertas Agejevas
 #
 
 WORDS = lietuviu.base lietuviu.vardai lietuviu.words lietuviu.jargon lietuviu.verbs
 installdir=`ispell -vv | grep LIBDIR | cut -d'"' -f2`
 
-all: lietuviu.hash
+all: lietuviu.hash myspell
+
+myspell: lt_LT.dic lt_LT.aff
+
+lt_LT.dic: lietuviu.dict
+	wc -l < lietuviu.dict | tr -d ' ' > lt_LT.dic
+	cat lietuviu.dict >> lt_LT.dic
+
+lt_LT.aff: lietuviu.aff
+	tools/ispell2myspell.py lietuviu.aff > lt_LT.aff
 
 lietuviu.dict: $(WORDS)
 	cat  $(WORDS) | \
