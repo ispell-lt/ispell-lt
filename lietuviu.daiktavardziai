@@ -28,6 +28,7 @@ aklavietë/D
 akmenukas/D
 akmuo/KV
 aktas/D
+aktorë/D
 aktualija/D
 akutë/D
 albanas/D
@@ -69,6 +70,7 @@ antraðtë/D
 antrokas/D
 antrokë/D
 antspaudas/D
+antsvoris/D
 apaèia/D
 apdaras/D
 apeigos/D
@@ -97,6 +99,7 @@ apsauga/D
 apsiaustas/D
 apskaita/D
 apskritimas/D
+apskritis/VI
 apvalkalas/D
 apþiûra/D
 apþvalga/D
@@ -170,6 +173,7 @@ ausis/MK
 auðra/D
 autobusas/D
 autobusiukas/D
+autosportas/D
 avelë/D
 avis/MI
 àþuolas/D
@@ -177,6 +181,7 @@ badas/D
 bagaþinë/D
 baigtis/MI
 baimë/D
+bakterija/D
 bala/D
 balandis/D
 baletas/D
@@ -191,6 +196,7 @@ banga/D
 bangelë/D
 baravykas/D
 barzda/D
+baseinas/D
 baskas/D
 batas/D
 bauda/D
@@ -219,6 +225,7 @@ bernas/D
 berniukas/D
 beþdþionë/D
 bièiulë/D
+birþa/D
 birþelis/D
 bitë/D
 byla/D
@@ -241,6 +248,7 @@ brazilas/D
 brëþinys/D
 brolis/D
 broliukas/D
+brondza/D
 broðiûrëlë/D
 brûkðnelis/D
 brûkðnys/D
@@ -276,6 +284,8 @@ bûtybë/D
 centras/D
 èerpë/D
 chloras/D
+cigaras/D
+cigaretë/D
 èigonas/D
 èigonë/D
 èiombë/D
@@ -288,6 +298,7 @@ daiktas/D
 daiktavardis/D
 daina/D
 dainininkas/D
+dainininkë/D
 dalelë/D
 dalelytë/D
 daliklis/D
@@ -321,12 +332,14 @@ daþnis/D
 debesëlis/D
 debesis/VK
 debetas/D
+debiutas/D
 dëdë/D
 degësis/D
 degtukas/D
 deguonis/V
 deimantas/D
 deklaracija/D
+delfinas/D
 dëlionë/D
 delnas/D
 delsa/D
@@ -338,6 +351,7 @@ derybos/D
 derlius/D
 deðimtinë/D
 deðimtmetis/D
+deðimtukas/D
 deðinë/D
 dësnis/D
 deðra/D
@@ -373,6 +387,7 @@ drausmë/D
 drëgmë/D
 drëgnumas/D
 drieþas/D
+drugelis/D
 drugys/D
 druska/D
 dugnas/D
@@ -416,6 +431,9 @@ eilutë/D
 eismas/D
 ekipaþas/D
 ekransargis/D
+eksmeras/D
+eksmerë/D
+eksprezidentas/D
 elfas/D
 elgesys/D
 elgeta/D
@@ -441,7 +459,10 @@ gaidukas/D
 gaigalas/D
 gailestis/D
 gairë/D
+gaisras/D
+gaisrininkas/D
 galas/D
+galerija/D
 galia/D
 galimybë/D
 galybë/D
@@ -485,6 +506,7 @@ gëlë/D
 geleþinkelis/D
 geleþis/MK
 gelmë/D
+genas/D
 genys/D
 gentainis/D
 gentis/IM
@@ -539,17 +561,20 @@ grupelë/D
 grupiokas/D
 gruzinas/D
 gudrybë/D
+gulbë/D
 guolis/D
 gurkðnis/D
 gûsis/D
 horoskopas/D
 ieva/D
+ágaliotojas/D
 ágriova/D
 ágriuva/D
 ágûdis/D
 ákaitas/D
 ákrova/D
 ákûrëjas/D
+ákurtuvës/D
 álanka/D
 ilgesys/D
 ilgis/D
@@ -597,6 +622,7 @@ italas/D
 átrauka/D
 átvaras/D
 ávadas/D
+ávairovë/D
 ávaizdis/D
 ávardis/D
 ávertis/D
@@ -667,6 +693,7 @@ kambariokas/D
 kambarys/D
 kaminas/D
 kampas/D
+kamputis/D
 kamðèiatraukis/D
 kamuolys/D
 kanapë/D
@@ -688,6 +715,7 @@ kareivis/D
 kariðkis/D
 kariuomenë/D
 karys/D
+karjera/D
 karklas/D
 karpis/D
 karðtis/D
@@ -710,6 +738,7 @@ kautynës/D
 kava/D
 kavutë/D
 keblumas/D
+këbulas/D
 këdë/D
 keistuolis/D
 keitiklis/D
@@ -773,6 +802,7 @@ klausimas/D
 klausytojas/D
 klaustukas/D
 klebonas/D
+klevas/D
 klientas/D
 klijai/D
 klipata/D
@@ -907,6 +937,7 @@ lapukas/D
 laðas/D
 laðiniai/D
 làstelë/D
+latakas/D
 latvis/D
 laukas/D
 laukelis/D
@@ -933,6 +964,7 @@ lëðos/D
 liaudis/MI
 liberalas/D
 liekana/D
+liemenë/D
 liemuo/V
 liepa/D
 liepsna/D
@@ -940,6 +972,7 @@ liepsnelë/D
 lietus/D
 lietuvis/D
 lietuvybë/D
+liftas/D
 liga/D
 ligoninë/D
 ligonis/D
@@ -974,6 +1007,7 @@ lûkestis/D
 lûpa/D
 lustas/D
 lûþis/D
+mainas/D
 maiðatis/IM
 maiðelis/D
 maistas/D
@@ -985,6 +1019,8 @@ malonumas/D
 malûnas/D
 mama/D
 mankðta/D
+marios/D
+markë/D
 marðkinëliai/D
 marðkiniai/D
 marti/D
@@ -1003,6 +1039,8 @@ mazgas/DN
 medalis/D
 medelis/D
 mediena/D
+medikas/D
+medikë/D
 medis/D
 medus/D
 medþiaga/D
@@ -1037,6 +1075,7 @@ miegmaiðis/D
 miestas/D
 miestelis/D
 migla/D
+migracija/D
 minia/D
 ministras/D
 mintis/IM
@@ -1048,12 +1087,15 @@ miðkelis/D
 mygtukas/D
 moèiutë/D
 mokestis/D
+mokëtojas/D
 mokinys/D
 mokykla/D
 mokytoja/D
 mokytojas/D
 mokslas/D
+moksleivis/D
 mokslininkas/D
+molekulë/D
 molis/D
 moralë/D
 moteriðkë/D
@@ -1061,6 +1103,8 @@ moteris/KM
 motina/D
 motinystë/D
 motyvas/D
+motociklas/D
+motociklininkas/D
 mugë/D
 muilas/D
 muitas/D
@@ -1104,6 +1148,7 @@ nemiga/D
 nendrë/D
 nenuorama/D
 nerimas/D
+nervas/D
 nëðèia/D
 nesklandumas/D
 nëðtumas/D
@@ -1114,7 +1159,7 @@ neþinomybë/D
 niekas/D
 niða/D
 niurzglys/D
-noras/D
+noras/DN
 norma/D
 norvegas/D
 nosinë/D
@@ -1135,6 +1180,7 @@ nuoma/D
 nuomininkas/D
 nuomonë/D
 nuomotojas/D
+nuoraðas/D
 nuoroda/D
 nuorûka/D
 nuosavybë/D
@@ -1148,6 +1194,7 @@ nuotrauka/D
 nuovargis/D
 nuoþiûra/D
 nusikalstamumas/D
+objektukas/D
 obuolys/D
 oda/D
 ola/D
@@ -1272,6 +1319,7 @@ patalynë/D
 patalpa/D
 pateiktis/MI
 patelë/D
+patëvis/D
 patikimumas/DN
 patikra/D
 patinas/D
@@ -1282,6 +1330,7 @@ paukðtis/D
 paukðtvanagis/D
 pavaduotojas/D
 pavakarë/D
+pavaldinys/D
 pavardë/D
 pavasaris/D
 paveikslas/D
@@ -1292,10 +1341,12 @@ pavidalas/D
 pavirðius/D
 pavydas/D
 pavyzdys/D
+pavyzdukas/D
 pavojus/D
 paþanga/D
 paþyma/D
 paþymys/D
+peèiamumas/D
 pëda/D
 pëdsakas/D
 peilis/D
@@ -1308,6 +1359,7 @@ pelnas/DN
 penktadienis/D
 pensija/D
 perëja/D
+perëmëjas/D
 pergalë/D
 peripetija/D
 perjungiklis/D
@@ -1315,6 +1367,7 @@ perklausa/D
 perkrova/D
 perkûnas/D
 perkûnija/D
+personalas/D
 persvara/D
 pertrauka/D
 pertrauktis/MI
@@ -1325,8 +1378,10 @@ pëstininkas/D
 petys/D
 piemuo/V
 pienas/D
+pieðëjas/D
 pieðinëlis/D
 pieðinys/D
+pieðinukas/D
 pieðtukas/D
 pietryèiai/D
 pietûs/D
@@ -1335,11 +1390,14 @@ pieva/D
 pievokðnis/D
 pievutë/D
 pikèiurna/D
+piktþolë/D
 piliakalnis/D
 pilietis/D
+pilietybë/D
 pilis/IM
 pilkapis/D
 pilkuma/D
+pilnametystë/DN
 pilnatis/IV
 pilnavertiðkumas/DN
 pilotas/D
@@ -1354,6 +1412,7 @@ pirmenybë/D
 pirmininkas/D
 pirmininkë/D
 pirmokë/D
+pirmtakas/D
 pirmtakë/D
 pirðtas/D
 pylimas/D
@@ -1427,6 +1486,7 @@ praeitis/MI
 praeivis/D
 pragiedruliai/D
 prakaitas/D
+praktikantas/D
 pralaidumas/D
 pramoga/D
 pranaðas/D
@@ -1458,7 +1518,9 @@ priekrantë/D
 prielaida/D
 prielinksnis/D
 priemenë/D
+priemoka/D
 priemonë/D
+prieplauka/D
 priesaga/D
 priesaika/D
 prieðas/D
@@ -1491,15 +1553,20 @@ pusdalyvis/D
 pusë/D
 pusiaujas/D
 pusiaukelë/D
+pusiausvyra/D
+puðis/MK
 puslankis/D
 puslapis/D
 pûslë/D
+pusmënulis/D
 pusryèiai/D
+pusseserë/D
 pustaðkis/D
 pustonis/D
 pustreèia/D
 pusvalandis/D
 puta/D
+radinys/D
 ragaiðis/D
 ragelis/D
 raidë/D
@@ -1513,6 +1580,7 @@ raktaþodis/D
 ralis/D
 ramybë/D
 rangas/D
+rangovas/D
 ranka/D
 rankena/D
 rankovë/D
@@ -1533,13 +1601,16 @@ raumuo/KV
 raþiena/D
 reakcija/D
 redakcija/D
+reginys/D
 reikalas/D
 reikmë/D
 reikðmë/D
 reiðkinys/D
 reivas/D
 rëmas/D
+rëmëjas/D
 rëmelis/D
+remontas/D
 rengëjas/D
 renginys/D
 rëþis/D
@@ -1753,7 +1824,9 @@ skleistë/D
 skleistinë/D
 skliaustas/D
 skliaustelis/D
+sklypas/D
 skola/D
+skolininkas/D
 skonis/D
 ðkotas/D
 skraistë/D
@@ -1764,6 +1837,7 @@ skrydis/D
 skrynelë/D
 skruzdëlynas/D
 skuba/D
+skundas/D
 ðlaitas/D
 ðlamðtas/D
 slanka/D
@@ -1829,8 +1903,8 @@ spyna/D
 sportbatis/D
 sportininkas/D
 sprindis/D
-sraigë/D
 sprogimas/D
+sraigë/D
 ðratas/D
 srautas/D
 sritis/MI
@@ -1926,6 +2000,7 @@ svietas/D
 svirnas/D
 svirplys/D
 svoris/D
+tabakas/D
 taika/D
 taikiklis/D
 taikinys/D
@@ -2163,6 +2238,7 @@ veiksena/D
 veiksmas/D
 veiksmaþodis/D
 veislë/D
+veja/D
 vëjas/D
 vëjelis/D
 vëliava/D
@@ -2209,6 +2285,7 @@ virëjas/D
 virðaibis/D
 virðelis/D
 virðininkas/D
+virðsvoris/D
 virðûnë/D
 virðus/D
 virtinë/D
@@ -2247,6 +2324,7 @@ voratinklis/D
 þemynas/D
 þenklas/D
 þenkliukas/D
+þentas/D
 þibintuvëlis/D
 þiburëlis/D
 þiebtuvëlis/D
@@ -2293,6 +2371,7 @@ zona/D
 zuikelis/D
 zuikis/D
 þuklë/D
+þûtis/VI
 þuvis/MK
 þvaigþdë/D
 þvaigþdelë/D
@@ -2302,6 +2381,7 @@ zuikis/D
 þvakutë/D
 þvalgyba/D
 þvejas/D
+þvejyba/D
 þvejys/D
 þvërelis/D
 þvëris/VI
