@@ -34,7 +34,8 @@ sort:
 	done
 
 clean:
-	rm -f *~ lietuviu.dict.stat lietuviu.dict.cnt lietuviu.hash lietuviu.dict
+	rm -f lietuviu.dict.stat lietuviu.dict.cnt lietuviu.hash lietuviu.dict \
+	lt_LT.aff lt_LT.dic
 
 install: lietuviu.hash
 	install -c -g 0 -o root -m 0644 lietuviu.hash $(installdir)
