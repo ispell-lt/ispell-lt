@@ -119,6 +119,8 @@ dvimatis/B
 dvipusis/BN
 dvivietis/B
 dþiugus/AQN
+ekologiðkas/AQN
+ekonominis/B
 erdvus/ANQ
 esminis/BN
 estiðkas/AN
@@ -164,6 +166,7 @@ gulsèias/AQN
 guminis/B
 ádëmus/AQN
 ádomus/AQN
+ágaliotinis/B
 ákypas/AQN
 ilgaausis/B
 ilgalaikis/BN
@@ -189,6 +192,7 @@ iðskirtinis/BN
 iðtisas/AN
 ástriþas/AQN
 iðtvermingas/AQN
+iðvestinis/B
 iðvirkðèias/A
 italiðkas/AN
 átartinas/AQN
@@ -213,6 +217,7 @@ kairys/AQ
 kalbinis/BN
 kampinis/B
 kantrus/AQN
+karinis/B
 karðtas/AQN
 karstinis/B
 kartinis/BN
@@ -262,7 +267,6 @@ latviðkas/AN
 laukinis/B
 lauþtinis/BN
 ledinis/BN
-lemtas/AN
 lemtingas/AQN
 lengvas/AQN
 lenkiðkas/AQ
@@ -282,6 +286,7 @@ lygiaðonis/BN
 lygiavertis/BN
 lyginis/BN
 lygus/AQN
+lytinis/B
 maloninis/B
 malonus/AQN
 mandagus/AQN
@@ -296,8 +301,8 @@ maþutis/BN
 medinis/BN
 medvilninis/BN
 medþioklinis/B
+mëgëjiðkas/AQN
 mëgiamas/AQN
-mëgstamas/AQN
 meilus/AQN
 mëlynas/AQ
 mënesinis/B
@@ -361,7 +366,7 @@ paprastas/AQN
 paðalinis/B
 pasaulinis/B
 pasyvus/AQN
-paskutinis/BN
+paskutinis/BQN
 paslaptingas/AQN
 pastaras/AQN
 pastovus/AQN
@@ -383,6 +388,7 @@ pigus/AQN
 pikantiðkas/AQN
 piktas/AQN
 pilkas/AQ
+pilnametis/BN
 pilnas/AQN
 piniginis/B
 piratinis/BN
@@ -516,6 +522,7 @@ staèias/AQN
 staigus/AQN
 stambus/AQN
 startinis/B
+statiðkas/BN
 statmenas/AN
 status/AQN
 stebuklingas/AQN
@@ -573,6 +580,7 @@ trapus/AQN
 trikampis/BD
 trumpalaikis/B
 trumpas/AQN
+trumputis/B
 trupmeninis/BN
 tualetinis/B
 turnyrinis/B
@@ -627,7 +635,8 @@ visaþinis/BN
 visiðkas/AQN
 visuomeninis/BN
 visuotinis/AQN
-vyresnis/A
+vizualus/AQN
+vyresnis/AQ
 vyriausias/AQ
 vyriðkas/AQN
 vokiðkas/AN
@@ -643,7 +652,6 @@ vokiðkas/AN
 þymus/AQN
 þmogiðkas/AQN
 þmoniðkas/AQN
-zuikingas/AQN
-zuikinis/B
+þodinis/B
 þvalus/AQN
 þvarbus/AQN
