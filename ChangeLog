@@ -1,0 +1,97 @@
+2001-05-02  Gediminas Paulauskas <menesis@delfi.lt>
+
+	Versija 0.5: 8767 þodþiai.
+
+	* pervadinau þodynà á "lietuviu", kaip rekomenduoja autorius.
+
+	* lietuviu.aff: pataisiau porà klaidø su mot.g. aukðtesniojo laipsnio
+	bûdvardþiais. Albertas pridëjo trûkstamà "keitei, keiteisi" formà.
+
+	* paðalinau veiksmaþodinius daiktavardþius ið þodyno -- juos pakeièiau
+	atitinkamais veiksmaþodþiais.
+
+	* daug mano naujø þodþiø, 300 Alberto, radau klaidø þodynuose.
+
+	* tools/spellai: ðiek tiek gudriau atspëja bûdvardþius: beveik visà
+	laikà reikia spausti enter :)
+
+2001-04-18  Gediminas Paulauskas <menesis@delfi.lt>
+
+	Versija 0.4.2: 8220 þodþiø.
+
+	* tools/updated: naujas skriptukas
+
+	* 600 naujø mano þodþiø, virð 200 ið Mariaus, pataisyti buvæ.
+
+	* COPYING: pridëjau licenzijà, nepakenks...
+
+2000-07-04  Albertas Agejevas  <alga@uosis.mif.vu.lt>
+
+	Versija 0.4
+	
+	* Ið Gedimino Paulausko <menesis@takas.lt> -- dar tûkstantis
+	naujø þodþiø.  Þodynà sudaro jau virð 7400 þodþiø.
+
+	* Pridëti veiksmaþodiniai daiktavardþiai (darymas, kalimas),
+	daromi ið veiksmaþodþiø bûtojo kartinio laiko.
+
+2000-04-14  Albertas Agejevas  <alga@uosis.mif.vu.lt>
+
+	Versija 0.3
+	
+	* Ið Gedimino Paulausko <menesis@takas.lt> -- keli tûkstanèiai
+	naujø þodþiø, o taip pat pilnai sutvarkyti veiksmaþodþiai.  Tai
+	buvo milþiniðkas darbas.  Þodynà sudaro jau virð 6000 þodþiø.
+
+	* Jo paties skriptukas, pakeièiantis bei apjungiantis mano ir
+	Mariaus skriptukus, padedanèius nustatyti þodþio flagus.
+
+	* Bug fix'ai ir papildymai afiksø faile.  
+	
+2000-04-04  Albertas Agejevas  <alga@uosis.mif.vu.lt>
+
+	Versija 0.3pre1
+
+	* Þodþiai ir bug fix'ai ið Mariaus Gedmino ir Aurimo Mikalausko;
+
+	* Lietuvos miestø sàraðas ið Daliaus <dali@isag.lei.lt>;
+
+	* ádëtas veiksmaþodþiø prieðdëliø palaikymas (kol kas nevisas
+	þodynas sukonvertuotas á naujà pavidalà, þr failà liet.verbs);
+	
+	* atsidaro tools direktorija, o joje keletas Mariaus Gedmino
+	utelyèiø ir mano skriptukas veiksmaþodiø áraðams daryti.  Manau,
+	tik juo ir reikëtø naudotis -- padaro visà veiksmaþodþiø flagø
+	magijà pats, tereikia tik suvesti tris pagrindines formas ir
+	atsakyti á 25 klausimus, ar galimos tam tikros formos.
+
+2000-03-17  Albertas Agejevas  <alga@uosis.mif.vu.lt>
+
+	Versija 0.2
+	
+	* Pataisytas afiksø failas; 
+
+	* keli nauji þodþiai;
+
+	* keletas liet.base pakeitimø;
+
+	* atsirado Makefile;
+
+	* Aurimo Mikalausko suteiktas vardø sàraðas ir keletas þodþiø;
+
+	* þodynas suskaidytas á keletà failø;
+
+	* atsirado ðitas ChangeLog.
+
+2000-03-15  Albertas Agejevas  <alga@uosis.mif.vu.lt>
+
+	* Iðleista versija 0.1
+
+2000-02-15  Albertas Agejevas
+	
+	* Pradetas darbas (gavau gramatikos þinynà)
+
+
+
+
+	

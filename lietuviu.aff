@@ -1,0 +1,5823 @@
+#
+# Lietuviðka afiksø lentelë ispell programai
+# Lithuanian affix table for ispell(1)
+#
+# Copyright (C) 2000 Albertas Agejevas
+# 
+# Taisyklës ið V. Ambrazas ir kiti   
+# ¥Dabartinës lietuviø kalbos gramatika, V. 1994´
+#
+#  Dël failo formato skaitykite ispell(5)
+#
+
+# Here's a record of flags used, in case you want to add new ones.
+#
+#            ABCDEFGHIJKLMNOPQRSTUVWXYZ
+# Used:      +++++--++-+-++-++-++++-++-
+#
+
+compoundwords	off
+allaffixes	off
+
+wordchars [aàbcèdeæëf-iáyj-rsðt-uøûv-zþ] [AÀBCÈDEÆËF-IÁYJ-RSÐT-UØÛV-ZÞ] 
+
+prefixes
+
+flag *N:
+	.	>	NE	
+	.	>	NEBE
+
+
+flag *S:
+	.	>	NE	
+	.	>	NEBE
+	.	>	NESI
+	.	> 	NEBESI
+	.	>	BESI
+	.	>	TEBESI
+
+flag *X:
+ 	.	>	BE
+ 	.	>	TE
+ 	.	>	TEBE
+
+#
+# Ðtai ðitie flagai yra labai abejotini.  Dabar jie lipdomi visiems
+# veiksmaþodþiams. Ar verta?
+# Gaunasi labai daug beprasmiðkø formø.
+# 
+# flag *E:
+# 	.	>	BE
+# 	.	>	TE
+# 	.	>	TEBE
+# 
+# flag *P:
+# 	.	>	BE
+# 	.	>	TE
+# 	.	>	TEBE
+# flag *Y:
+# 	.	>	BE
+# 	.	>	TE
+# 	.	>	TEBE
+# flag *T:
+# 	.	>	BE
+# 	.	>	TE
+# 	.	>	TEBE
+# flag *U:
+# 	.	>	BE
+# 	.	>	TE
+# 	.	>	TEBE
+# 
+
+#############################################################
+# Veiksmaþodþiø priesagos
+#
+#		ap at á ið nu pa par per pra pri su uþ
+# be nieko	a  b  c	d  e  f	 g   h	 i   j	 k  l
+# su sangràþa	m  n  o	p  q  r	 s   t	 u   v	 w  x
+#
+
+flag *a:
+	[PB]	>	API
+	[^PB]	>	AP
+
+	[PB]	>	NEAPI
+	[^PB]	>	NEAP
+
+flag *b:
+	[DT]	>	ATI
+	[^DT]	>	AT
+
+	[DT]	>	NEATI
+	[^DT]	>	NEAT
+flag *c:
+	.	>	Á
+	.	>	NEÁ
+flag *d:
+	.	>	IÐ
+	.	>	NEIÐ
+flag *e:
+	.	>	NU
+	.	>	NENU
+flag *f:
+	.	>	PA
+	.	>	NEPA
+flag *g:
+	.	>	PAR
+	.	>	NEPAR
+flag *h:
+	.	>	PER
+	.	>	NEPER
+flag *i:
+	.	>	PRA
+	.	>	NEPRA
+flag *j:
+	.	>	PRI
+	.	>	NEPRI
+flag *k:
+	.	>	SU
+	.	>	NESU
+flag *l:
+	.	>	UÞ
+	.	>	NEUÞ
+#################################################
+flag *m:
+	.	>	APSI
+	.	>	NEAPSI
+
+flag *n:
+	.	>	ATSI
+	.	>	NEATSI
+flag *o:
+	.	>	ÁSI
+	.	>	NEÁSI
+flag *p:
+	.	>	IÐSI
+	.	>	NEIÐSI
+flag *q:
+	.	>	NUSI
+	.	>	NENUSI
+flag *r:
+	.	>	PASI
+	.	>	NEPASI
+flag *s:
+	.	>	PARSI
+	.	>	NEPARSI
+flag *t:
+	.	>	PERSI
+	.	>	NEPERSI
+flag *u:
+	.	>	PRASI
+	.	>	NEPRASI
+flag *v:
+	.	>	PRISI
+	.	>	NEPRISI
+flag *w:
+	.	>	SUSI
+	.	>	NESUSI
+flag *x:
+	.	>	UÞSI
+	.	>	NEUÞSI
+
+suffixes
+
+		#####################################
+		#####################################
+
+			       flag *D:
+
+		#####################################
+		#####################################
+
+
+# ############################################################################## 
+# #
+# #			    Daiktavardis
+# #
+# ##############################################################################
+# 
+# 	       DAIKTAVARDÞIØ LINKSNIUOTËS IR PARADIGMOS
+# 
+# Vn. vard. galûnë	Dg. naud. galûnë	Paradigma	Linksniuotë Pvz.
+# -----------------------------------------------------------------------------
+# -as			-ams			1		(i)a	stalas
+# -ias			-iams			2			sveèias
+# -is, -ys		-iams			3			peilis
+# -us			-ams			4		(i)u	alus
+# -ius			-iams			5			stalius
+# -a			-oms			6		(i)o	jûra
+# -ia, -i		-ioms			7			marti
+# -ë			-ëms			8		ë	karvë
+# -is			-ims			9		i	þvëris
+# -is			-ims			10		i	ðirdis
+# -			-ims			11			vanduo
+# -			-ims			12			sesuo
+# -----------------------------------------------------------------------------
+# 
+# 
+
+# 1 paradigma  (vyras, pirðtas, langas, miðkas)
+
+	[^IJ] A S	>	-AS,O		# stalas > stalo 
+	[^IJ] A S	>	-AS,UI		# stalas > stalui 
+	[^IJ] A S	>	-AS,À		# stalas > stalà 
+	[^IJ] A S	>	-AS,U		# stalas > stalu 
+	[^IJ] A S	>	-AS,E		# stalas > stale 
+
+	[^IJ] A S	>	-AS,AI		# stalas > stalai 
+	[^IJ] A S	>	-AS,Ø		# stalas > stalø 
+	[^IJ] A S	>	-AS,AMS		# stalas > stalams 
+	[^IJ] A S	>	-AS,US		# stalas > stalus 
+	[^IJ] A S	>	-AS,AIS		# stalas > stalais 
+	[^IJ] A S	>	-AS,UOSE	# stalas > staluose 
+
+
+# 2 paradigma (elnias, kelias, vëjas, galvijas)
+
+	I A S	>	-IAS,IO		# elnias > elnio
+	I A S	>	-IAS,IUI	# elnias > elniui
+	I A S	>	-IAS,IÀ		# elnias > elnià
+	I A S	>	-IAS,IU		# elnias > elniu
+	I A S	>	-IAS,YJE	# elnias > elnyje
+	I A S	>	-IAS,I		# elnias > elni
+	I A S	>	-IAS,Y		# kelias > kely		FIXME
+
+	I A S	>	-IAS,IAI	# elnias > elniai
+	I A S	>	-IAS,IØ		# elnias > elniø
+	I A S	>	-IAS,IAMS	# elnias > elniams
+	I A S	>	-IAS,IUS	# elnias > elnius
+	I A S	>	-IAS,IAIS	# elnias > elniais
+	I A S	>	-IAS,IUOSE	# elnias > elniuose
+
+	J A S	>	-JAS,JO		# vejas > vejo
+	J A S	>	-JAS,JUI	
+	J A S	>	-JAS,JÀ		
+	J A S	>	-JAS,JU		
+	J A S	>	-JAS,JUJE	
+	J A S	>	-JAS,JYJE	# vëjuje/vëjyje	
+	J A S	>	-JAS,JAU	
+
+	J A S	>	-JAS,JAI	# galvijas > galvijai
+	J A S	>	-JAS,JØ
+	J A S	>	-JAS,JAMS	
+	J A S	>	-JAS,JUS	
+	J A S	>	-JAS,JAIS	
+	J A S	>	-JAS,JUOSE	
+
+# 3 paradigma (brolis, peilis, arklys, bûrys)
+
+	[^DTJ] I S	>	-IS,IO		# peilis > peilio
+	[^DTJ] I S	>	-IS,IUI		# peilis > peiliui
+	[^DTJ] I S	>	-IS,IU		# peilis > peiliu
+	[^DTJ] I S	>	-IS,IAI		# peilis > peiliai
+	[^J] I S	>	-IS,Á		# peilis > peilá
+	[^J] I S	>	-IS,YJE		# peilis > peilyje
+	[^J] I S	>	-IS,Y		# peilis > peily
+	[^J] I S	>	-IS,I		# peilis > peili
+
+	J I S	>	-IS,O		# atvejis > atvejo
+	J I S	>	-IS,UI		# atvejis > atvejui
+	J I S	>	-IS,U		# atvejis > atveju
+	J I S	>	-IS,AI		# atvejis > atvejai
+	J I S	>	-IS,Á		# atvejis > atvejá
+	J I S	>	-IS,YJE		# atvejis > atvejyje
+	J I S	>	-IS,Y		# atvejis > atvejy
+	J I S	>	-IS,I		# atvejis > atveji
+
+	T I S		>	-TIS,ÈIO	# 
+	T I S		>	-TIS,ÈIUI	# 
+	T I S		>	-TIS,ÈIU	
+	T I S		>	-TIS,ÈIAI	
+
+	D I S		>	-DIS,DÞIO	# skrandis > skrandþio
+	D I S		>	-DIS,DÞIUI	# skrandis > skrandþiui
+	D I S		>	-DIS,DÞIU	
+	D I S		>	-DIS,DÞIAI	
+
+	[^DTJ] I S	> 	-IS,IAI
+	[^DTJ] I S	>	-IS,IØ		
+	[^DTJ] I S	>	-IS,IAMS	
+	[^DTJ] I S	>	-IS,IUS		
+	[^DTJ] I S	>	-IS,IAIS	
+	[^DTJ] I S	>	-IS,IUOSE	
+
+	J I S	> 	-IS,AI
+	J I S	>	-IS,Ø		
+	J I S	>	-IS,AMS	
+	J I S	>	-IS,US		
+	J I S	>	-IS,AIS	
+	J I S	>	-IS,UOSE	
+
+	D I S		> 	-DIS,DÞIAI
+	D I S		>	-DIS,DÞIØ		
+	D I S		>	-DIS,DÞIAMS	
+	D I S		>	-DIS,DÞIUS		
+	D I S		>	-DIS,DÞIAIS	
+	D I S		>	-DIS,DÞIUOSE	
+
+	T I S		> 	-TIS,ÈIAI
+	T I S		>	-TIS,ÈIØ		
+	T I S		>	-TIS,ÈIAMS	
+	T I S		>	-TIS,ÈIUS		
+	T I S		>	-TIS,ÈIAIS	
+	T I S		>	-TIS,ÈIUOSE	
+
+	[^DT] Y S	>	-YS,IO		# arklys > arklio
+	[^DT] Y S	>	-YS,IUI		# arklys > arkliui
+	[^DT] Y S	>	-YS,IU		# arklys > arkliu
+	Y S		>	-YS,Á		
+	Y S		>	-YS,YJE		
+	Y S		>	-YS,Y		
+	T Y S		>	-TYS,ÈIO
+	T Y S		>	-TYS,ÈIUI
+	T Y S		>	-TYS,ÈIU
+	D Y S		>	-DYS,DÞIUI
+	D Y S		>	-DYS,DÞIO
+	D Y S		>	-DYS,DÞIU
+
+	[^DTJ] Y S	> 	-YS,IAI
+	[^DTJ] Y S	>	-YS,IØ		
+	[^DTJ] Y S	>	-YS,IAMS	
+	[^DTJ] Y S	>	-YS,IUS		
+	[^DTJ] Y S	>	-YS,IAIS	
+	[^DTJ] Y S	>	-YS,IUOSE	
+
+	D Y S		> 	-DYS,DÞIAI
+	D Y S		>	-DYS,DÞIØ		
+	D Y S		>	-DYS,DÞIAMS	
+	D Y S		>	-DYS,DÞIUS		
+	D Y S		>	-DYS,DÞIAIS	
+	D Y S		>	-DYS,DÞIUOSE	
+
+	T Y S		> 	-TYS,ÈIAI
+	T Y S		>	-TYS,ÈIØ		
+	T Y S		>	-TYS,ÈIAMS	
+	T Y S		>	-TYS,ÈIUS		
+	T Y S		>	-TYS,ÈIAIS	
+	T Y S		>	-TYS,ÈIUOSE	
+
+	J Y S	> 	-YS,AI
+	J Y S	>	-YS,Ø		
+	J Y S	>	-YS,AMS	
+	J Y S	>	-YS,US		
+	J Y S	>	-YS,AIS	
+	J Y S	>	-YS,UOSE	
+
+
+# 4 paradigma (turgus, sûnus, dangus)
+
+	[^I] U S	>	-US,AUS		
+	[^I] U S	>	-US,UI		
+	[^I] U S	>	-US,Ø		
+	[^I] U S	>	-US,UMI		
+	[^I] U S	>	-US,UJE		
+	[^I] U S	>	-US,UJ
+	[^I] U S	>	-US,AU		
+
+	[^I] U S	>	-US,ÛS
+	[^I] U S	>	-US,Ø
+	[^I] U S	>	-US,UMS
+	[^I] U S	>	-US,US
+	[^I] U S	>	-US,UMIS
+	[^I] U S	>	-US,UOSE
+
+# 5 paradigma (koridorius, sodþius, pavojus)
+
+	I U S	>	-IUS,IAUS
+	I U S	>	-IUS,IUI
+	I U S	>	-IUS,IØ
+	I U S	>	-IUS,IUMI
+	I U S	>	-IUS,IUJE
+	I U S	>	-IUS,IUJ
+	I U S	>	-IUS,IAU
+
+	I U S	>	-IUS,IAI
+	I U S	>	-IUS,IØ
+	I U S	>	-IUS,IAMS
+	I U S	>	-IUS,IUS
+	I U S	>	-IUS,IAIS
+	I U S	>	-IUS,IUOSE
+
+	J U S	>	-JUS,JAUS	# pavojus > pavojaus
+	J U S	>	-JUS,JUI
+	J U S	>	-JUS,JØ
+	J U S	>	-JUS,JUMI
+	J U S	>	-JUS,JUJE
+	J U S	>	-JUS,JUJ
+	J U S	>	-JUS,JAU
+
+	J U S	>	-JUS,JAI
+	J U S	>	-JUS,JØ
+	J U S	>	-JUS,JAMS
+	J U S	>	-JUS,JUS
+	J U S	>	-JUS,JAIS
+	J U S	>	-JUS,JUOSE
+
+############################################################## 
+# Daugiskaitiniai daiktavardþiai: visa vyriðka giminë atrodo
+# taip pat, iðskyrus 11 paradigmà 
+
+	A I	>	-AI,Ø
+	A I	>	-AI,AMS
+	A I	>	-AI,US
+	A I	>	-AI,AIS
+	A I	>	-AI,UOSE
+
+	Û S	>	-ÛS,Ø
+	Û S	>	-ÛS,UMS
+	Û S	>	-ÛS,US
+	Û S	>	-ÛS,UMIS
+	Û S	>	-ÛS,UOSE
+
+# 6 paradigma (jûra, reanka, galva, auðra)
+# o taip pat dalis 7-os
+
+	A	>	-A,OS
+	A	>	-A,AI
+	A	>	-A,À
+	A	>	-A,OJE
+	A	>	-A,OJ
+
+	A	>	-A,Ø
+	A	>	-A,OMS
+	A	>	-A,AS
+	A	>	-A,OMIS
+	A	>	-A,OSE
+
+	O S	>	-OS,Ø
+	O S	>	-OS,OMS
+	O S	>	-OS,AS
+	O S	>	-OS,OMIS
+	O S	>	-OS,OSE
+
+# 7 paradigma (sauja, vyðnia, þinia, marti, pati)
+
+# sauja, vayðnia, þinia sutampa su 1 paradigma
+
+	T I	>	-TI,ÈIOS	# marti > marèios
+	T I	>	-TI,ÈIAI
+	T I	>	-TI,ÈIÀ
+	T I	>	-TI,ÈIA
+	T I	>	-TI,ÈIOJE
+	T I	>	-TI,ÈIOJ
+
+	T I	>	-TI,ÈIØ
+	T I	>	-TI,ÈIOMS
+	T I	>	-TI,ÈIAS
+	T I	>	-TI,ÈIOMIS
+	T I	>	-TI,ÈIOSE
+
+# 8 paradigma (gervë, dëdë, bitë)
+
+	Ë	>	-Ë,ËS
+	Ë	>	-Ë,EI
+	Ë	>	-Ë,Æ
+	Ë	>	-Ë,E
+	Ë	>	-Ë,ËJE
+
+	[^DT] Ë	>	-Ë,IØ
+	T Ë	>	-TË,ÈIØ
+	D Ë	>	-DË,DÞIØ
+	Ë	>	-Ë,ËMS
+	Ë	>	-Ë,ES
+	Ë	>	-Ë,ËMIS
+	Ë	>	-Ë,ËSE
+
+	[^DT] Ë S	>	-ËS,IØ
+	T Ë S	>	-TËS,ÈIØ
+	D Ë S	>	-DËS,DÞIØ
+	Ë S	>	-ËS,ËMS
+	Ë S	>	-ËS,ES
+	Ë S	>	-ËS,ËMIS
+	Ë S	>	-ËS,ËSE
+
+#  Prasideda ádomybës:
+#
+#  *  valè-iø ar nakt-ø
+#  *  ak-iø     ar aus-ø
+#     (minkðta)   (kieta)     
+
+		#####################################
+		#####################################
+
+
+			       flag *I:
+
+		#####################################
+		#####################################
+
+# minkðtasis variantas (þvëriø, valèiø)
+	[^DT] I S		>	-IS,IØ		# akis > akiø
+	D I S			>	-DIS,DÞIØ	# ðirdis > ðirdþiø
+	T I S			>	-TIS,ÈIØ	# valtis > valèiø
+
+# daugiskaitiniai daiktavardþiai
+	[^DT] Y S		>	-YS,IØ
+	D Y S			>	-DYS,DÞIØ
+	T Y S			>	-TYS,ÈIØ
+
+
+		#####################################
+		#####################################
+
+			       flag *K:
+
+		#####################################
+		#####################################
+
+# kietasis variantas (naktø; ausø)
+	I S		>	-IS,Ø		# ausis > ausø
+# daugiskaitiniai daiktavardþiai
+	Y S		>	-YS,Ø		# durys > durø
+
+
+		#####################################
+		#####################################
+				   
+			       flag *M:
+
+		#####################################
+		#####################################
+# moteriðka
+##############################
+#  9 paradigma (þuvis, akis)
+#
+	[^DT] I S	>	-IS,IAI		# krosnis > krosniai
+	D I S		>	-DIS,DÞIAI	# ðirdis > ðirdþiai 
+	T I S		>	-TIS,ÈIAI	# naktis > nakèiai
+
+# ðitas blokas atrodo taip pat 9 ir 10 paradigmai, cut&paste
+	I S		>	-IS,IES
+	I S		>	-IS,Á
+	I S		>	-IS,IMI
+	I S		>	-IS,YJE
+	I S		>	-IS,Y
+	I S		>	-IS,IE
+
+	I S		>	-IS,YS
+	I S		>	-IS,IMS
+	I S		>	-IS,IMIS
+	I S		>	-IS,YSE
+
+# daugiskaitiniai daiktavardþiai
+
+	Y S		>	-YS,IMS
+	Y S		>	-YS,IS
+	Y S		>	-YS,IMIS
+	Y S		>	-YS,YSE
+
+
+
+#############################################################################
+# 12 paradigma (sesuo, duktë)
+#
+	U O	>	-UO,ERS		# sesuo > sesers
+	U O	>	-UO,ERIAI
+	U O	>	-UO,ERÁ
+	U O	>	-UO,ERIMI
+	U O	>	-UO,ERYJE
+	U O	>	-UO,ERIE
+
+	U O	>	-UO,ERYS
+	U O	>	-UO,ERØ
+	U O	>	-UO,ERIMS
+	U O	>	-UO,ERIS
+	U O	>	-UO,ERIMIS
+	U O	>	-UO,ERYSE
+
+	Ë	>	-Ë,ERS		# duktë > dukters
+	Ë	>	-Ë,ERIAI
+	Ë	>	-Ë,ERÁ
+	Ë	>	-Ë,ERIMI
+	Ë	>	-Ë,ERYJE
+	Ë	>	-Ë,ERIE
+
+	Ë	>	-Ë,ERYS
+	Ë	>	-Ë,ERØ
+	Ë	>	-Ë,ERIMS
+	Ë	>	-Ë,ERIS
+	Ë	>	-Ë,ERIMIS
+	Ë	>	-Ë,ERYSE
+
+				   
+		#####################################
+		#####################################
+
+			       flag *V:
+
+		#####################################
+		#####################################
+
+#########################################################################
+# 10 paradigma
+# vyriðka (þvëris, dantis, debiesis)
+
+	[^DT] I S	>	-IS,IUI		# debesis > debesiui 
+	T I S		>	-TIS,ÈIUI	# dantis > danèiui
+	D I S		>	-DIS,DÞIUI	
+
+# ðitas blokas atrodo taip pat 9 ir 10 paradigmai, cut&paste
+	I S		>	-IS,IES
+	I S		>	-IS,Á
+	I S		>	-IS,IMI
+	I S		>	-IS,YJE
+	I S		>	-IS,Y
+	I S		>	-IS,IE
+
+	I S		>	-IS,YS
+	I S		>	-IS,IMS
+	I S		>	-IS,IMIS
+	I S		>	-IS,YSE
+
+
+#############################################################################
+# 11 paradigma (akmuo, vanduo, ðuo)
+
+	[^Ð] U O	>      -UO,ENS
+	[^Ð] U O	>      -UO,ENIUI
+	[^Ð] U O	>      -UO,ENÁ
+	[^Ð] U O	>      -UO,ENIU
+	[^Ð] U O	>      -UO,ENIMI
+	[^Ð] U O	>      -UO,ENYJE
+	[^Ð] U O	>      -UO,ENY
+	[^Ð] U O	>      -UO,ENIE
+
+	[^Ð] U O	>      -UO,ENYS
+	[^Ð] U O	>      -UO,ENØ
+	[^Ð] U O	>      -UO,ENIMIS
+	[^Ð] U O	>      -UO,ENIMS
+	[^Ð] U O	>      -UO,ENIS
+	[^Ð] U O	>      -UO,ENYSE
+
+	# daugiskaitinës formos
+	Y S	>      -YS,YS
+	Y S	>      -YS,Ø
+	Y S	>      -YS,IMS
+	Y S	>      -YS,IMIS
+	Y S	>      -YS,IS
+	Y S	>      -YS,YSE
+
+
+# Padarykim tokià garbæ vienam þodþiui, visgi geriausias þmogaus
+# draugas...
+
+	Ð U O	>      -UO,UNS
+	Ð U O	>      -UO,UNIUI
+	Ð U O	>      -UO,UNÁ
+	Ð U O	>      -UO,UNIU
+	Ð U O	>      -UO,UNIMI
+	Ð U O	>      -UO,UNYJE
+	Ð U O	>      -UO,UNY
+	Ð U O	>      -UO,UNIE
+
+	Ð U O	>      -UO,UNYS
+	Ð U O	>      -UO,UNØ
+	Ð U O	>      -UO,UNIMIS
+	Ð U O	>      -UO,UNIS
+	Ð U O	>      -UO,UNYSE
+
+
+#################################################################################
+# 
+# 			      Bûdvardis
+#
+################################################################################# 
+# 
+# 		       BÛDVARDÞIØ GIMINIØ POROS
+# -------------------------------------------------------------------------------
+# Linksniuotë	Paradigma Vyr. galûnë	| Mot. galûnë	Paradigma   Linksniuotë   
+# -------------------------------------------------------------------------------
+# i(a)		1	  -as		| -a		6	(i)o
+# 		2	  -ias		| -ia		7	  
+# 		3-4	  -is, -ys	| -ë		9	ë
+# i(u)		5	  -us		| -i		8	io
+# -------------------------------------------------------------------------------
+# Pvz.: 
+# geras, gera; 
+# þalias, þalia; 
+# geresnis, geresnë; 
+# kairys, kairë;
+# didelis, didelë; 
+# medinis, medinë;
+# graþus, graþi.
+# 
+#################################################################################
+
+		#####################################
+		#####################################
+
+			       flag *A:
+
+		#####################################
+		#####################################
+
+#############################
+# 1 paradigma (aukðtas, geras)
+	[^I] A S	>	-AS,O
+	[^I] A S	>	-AS,AM
+	[^I] A S	>	-AS,À
+	[^I] A S	>	-AS,U
+	[^I] A S	>	-AS,AME
+
+	[^I] A S	>	-AS,I
+	[^I] A S	>	-AS,Ø
+	[^I] A S	>	-AS,IEMS
+	[^I] A S	>	-AS,IEM
+	[^I] A S	>	-AS,US
+	[^I] A S	>	-AS,AIS
+	[^I] A S	>	-AS,UOSE
+
+##############################
+# 6 paradigma (aukðta, gera)
+
+	[^I] A S	>	-AS,A
+	[^I] A S	>	-AS,OS
+	[^I] A S	>	-AS,AI
+	[^I] A S	>	-AS,À
+	[^I] A S	>	-AS,OJE
+	[^I] A S	>	-AS,OJ
+
+	[^I] A S	>	-AS,OMS
+	[^I] A S	>	-AS,OMIS
+	[^I] A S	>	-AS,OSE
+
+################################
+# 2 paradigma (þalias, geriausias)
+
+	I A S	>	-IAS,IO
+	I A S	>	-IAS,IAM
+	I A S	>	-IAS,IÀ
+	I A S	>	-IAS,IU
+	I A S	>	-IAS,IAME
+
+	[^ÈÞ] I A S	>	-IAS,I
+	[^ÈÞ] I A S	>	-IAS,IEMS	# þalias > þaliems
+	[^ÈÞ] I A S	>	-IAS,IEM	# þalias > þaliem
+	È I A S	>	-ÈIAS,TI		# plokðèias > plokðti
+	È I A S	>	-ÈIAS,TIEMS
+	È I A S	>	-ÈIAS,TIEM
+	D Þ I A S	>	-DÞIAS,DI
+	D Þ I A S	>	-DÞIAS,DIEMS
+	D Þ I A S	>	-DÞIAS,DIEM
+	[^D] Þ I A S	>	-IAS,I
+	[^D] Þ I A S	>	-IAS,IEMS
+	[^D] Þ I A S	>	-IAS,IEM
+	I A S	>	-IAS,IØ
+	I A S	>	-IAS,IUS
+	I A S	>	-IAS,IAIS
+	I A S	>	-IAS,IOUSE
+
+#################################
+# 7 paradigma (þalia, geriausia)
+
+	I A S	>	-IAS,IA
+	I A S	>	-IAS,IOS
+	I A S	>	-IAS,IAI
+	I A S	>	-IAS,IÀ
+	I A S	>	-IAS,IA
+	I A S	>	-IAS,IOJE
+	I A S	>	-IAS,IOJ
+
+	I A S	>	-IAS,IØ
+	I A S	>	-IAS,IOMS
+	I A S	>	-IAS,IAS
+	I A S	>	-IAS,IOMIS
+	I A S	>	-IAS,IOSE
+
+##########################################
+# 3 paradigma (geresnis, didelis, kairys)
+
+	[^DT] I S	>	-IS,IO
+	[^DT] I S	>	-IS,IAM
+	[^DT] I S	>	-IS,Á
+	[^DT] I S	>	-IS,IU
+	[^DT] I S	>	-IS,IAME
+
+	[^DT] I S	>	-IS,I
+	[^DT] I S	>	-IS,IØ
+	[^DT] I S	>	-IS,IEMS
+	[^DT] I S	>	-IS,IEM
+	[^DT] I S	>	-IS,IUS
+	[^DT] I S	>	-IS,IAIS
+	[^DT] I S	>	-IS,IUOSE
+
+	T I S	>	-TIS,ÈIO
+	T I S	>	-TIS,ÈIAM
+	T I S	>	-TIS,TÁ
+	T I S	>	-TIS,ÈIU
+	T I S	>	-TIS,ÈIAME
+
+	T I S	>	-TIS,TI
+	T I S	>	-TIS,ÈIØ
+	T I S	>	-TIS,TIEMS
+	T I S	>	-TIS,TIEM
+	T I S	>	-TIS,ÈIUS
+	T I S	>	-TIS,ÈIAIS
+	T I S	>	-TIS,ÈIUOSE
+
+	D I S	>	-DIS,DÞIO	# didis > didþio
+	D I S	>	-DIS,DÞIAM	# Pagal tai ir -tis padariau...
+	D I S	>	-DIS,DÁ
+	D I S	>	-DIS,DÞIU
+	D I S	>	-DIS,DÞIAME
+
+	D I S	>	-DIS,DI
+	D I S	>	-DIS,DÞIØ
+	D I S	>	-DIS,DIEMS
+	D I S	>	-DIS,DIEM
+	D I S	>	-DIS,DÞIUS
+	D I S	>	-DIS,DÞIAIS
+	D I S	>	-DIS,DÞIUOSE
+
+	Y S	>	-YS,IO
+	Y S	>	-YS,IAM
+	Y S	>	-YS,Á
+	Y S	>	-YS,IU
+	Y S	>	-YS,IAME
+
+	Y S	>	-YS,I
+	Y S	>	-YS,IØ
+	Y S	>	-YS,IEMS
+	Y S	>	-YS,IEM
+	Y S	>	-YS,IUS
+	Y S	>	-YS,IAIS
+	Y S	>	-YS,IUOSE
+	
+#######################################################
+# 9 paradigma (ir geresnë, ir medinë)
+
+	I S	>	-IS,Ë
+	I S	>	-IS,ËS
+	I S	>	-IS,IAI
+	I S	>	-IS,Æ
+	I S	>	-IS,E
+	I S	>	-IS,ËJE
+	I S	>	-IS,ËJ
+
+	I S	>	-IS,ËS
+	I S	>	-IS,ËMS
+	I S	>	-IS,IAS
+	I S	>	-IS,ËMIS
+	I S	>	-IS,ËSE
+
+	Y S	>	-YS,Ë
+	Y S	>	-YS,ËS
+	Y S	>	-YS,IAI
+	Y S	>	-YS,Æ
+	Y S	>	-YS,IA
+	Y S	>	-YS,IOJE
+	Y S	>	-YS,IOJ
+
+	Y S	>	-YS,ËS
+	Y S	>	-YS,ËMS
+	Y S	>	-YS,ES
+	Y S	>	-YS,ËMIS
+	Y S	>	-YS,ËSE
+
+
+######################################################
+# 5 paradigma (graþus, lygus)
+
+	U S	>	-US,AUS
+#	U S	>	-US,IAM
+	[^DTJ] U S	>	-US,IAM		# graþus > graþiam
+	T U S	>	-TUS,ÈIAM		# platus > plaèiam
+	D U S	>	-DUS,DÞIAM		# saldus > saldþiam
+	J U S	>	-JUS,JAM
+	U S	>	-US,Ø
+#	U S	>	-US,IU
+	[^DTJ] U S	>	-US,IU		# graþus > graþiu
+	T U S	>	-TUS,ÈIU		# platus > plaèiu
+	D U S	>	-DUS,DÞIU		# saldus > saldþiu
+	J U S	>	-JUS,JU
+#	U S	>	-US,IAME
+	[^DTJ] U S	>	-US,IAME	# graþus > graþiame
+	T U S	>	-TUS,ÈIAME		# platus > plaèiame
+	D U S	>	-DUS,DÞIAME		# saldus > saldþiame
+	J U S	>	-JUS,JAME
+
+	U S	>	-US,ÛS
+#	U S	>	-US,IØ
+	[^DTJ] U S	>	-US,IØ		# graþus > graþiø
+	T U S	>	-TUS,ÈIØ		# platus > plaèiø
+	D U S	>	-DUS,DÞIØ		# saldus > saldþiø
+	J U S	>	-JUS,JØ
+	U S	>	-US,IEMS
+	U S	>	-US,IEM
+	J U S	>	-JUS,JAM
+#	U S	>	-US,IUS
+	[^DTJ] U S	>	-US,IUS	
+	T U S	>	-TUS,ÈIUS	
+	D U S	>	-DUS,DÞIUS	
+#	U S	>	-US,IAIS
+	[^DTJ] U S	>	-US,IAIS
+	T U S	>	-TUS,ÈIAIS
+	D U S	>	-DUS,DÞIAIS	
+	J U S	>	-JUS,JAIS
+#	U S	>	-US,IUOSE
+	[^DTJ] U S	>	-US,IUOSE	
+	T U S	>	-TUS,ÈIUOSE
+	D U S	>	-DUS,DÞIUOSE
+	J U S	>	-JUS,JUOSE
+
+#############################
+# 8 paradigma (graþi, lygi)
+
+	   
+	D U S	>	-DUS,DI		# saldus > saldi
+	D U S	>	-DUS,DÞIOS	# saldus > saldþios
+	D U S	>	-DUS,DÞIAI
+	D U S	>	-DUS,DÞIÀ
+	D U S	>	-DUS,DÞIA
+	D U S	>	-DUS,DÞIOJE
+	D U S	>	-DUS,DÞIOJ
+
+	D U S	>	-DUS,DÞIOS
+	D U S	>	-DUS,DÞIOMS
+	D U S	>	-DUS,DÞIAS
+	D U S	>	-DUS,DÞIOMIS
+	D U S	>	-DUS,DÞIOSE
+
+
+	T U S	>	-TUS,TI		# ðlykðtus > ðlykðti
+	T U S	>	-TUS,ÈIOS	# slykðtys > slykðèios
+	T U S	>	-TUS,ÈIAI
+	T U S	>	-TUS,ÈIÀ
+	T U S	>	-TUS,ÈIA
+	T U S	>	-TUS,ÈIOJE
+	T U S	>	-TUS,ÈIOJ
+
+	T U S	>	-TUS,ÈIOS
+	T U S	>	-TUS,ÈIOMS
+	T U S	>	-TUS,ÈIAS
+	T U S	>	-TUS,ÈIOMIS
+	T U S	>	-TUS,ÈIOSE
+
+	J U S	>	-JUS,JI		# rajus > raji
+	J U S	>	-JUS,JOS	# rajus > rajos
+	J U S	>	-JUS,JAI
+	J U S	>	-JUS,JÀ
+	J U S	>	-JUS,JA
+	J U S	>	-JUS,JOJE
+	J U S	>	-JUS,JOJ
+
+	J U S	>	-JUS,JOS
+	J U S	>	-JUS,JOMS
+	J U S	>	-JUS,JAS
+	J U S	>	-JUS,JOMIS
+	J U S	>	-JUS,JOSE
+
+	[^DTJ] U S	>	-US,I
+	[^DTJ] U S	>	-US,IOS
+	[^DTJ] U S	>	-US,IAI
+	[^DTJ] U S	>	-US,IÀ
+	[^DTJ] U S	>	-US,IA
+	[^DTJ] U S	>	-US,IOJE
+	[^DTJ] U S	>	-US,IOJ
+
+	[^DTJ] U S	>	-US,IOS
+	[^DTJ] U S	>	-US,IOMS
+	[^DTJ] U S	>	-US,IAS
+	[^DTJ] U S	>	-US,IOMIS
+	[^DTJ] U S	>	-US,IOSE
+
+
+		#####################################
+		#####################################
+
+			       flag *B:
+
+		#####################################
+		#####################################
+
+#######################################################
+# 4 paradigma (medinis, apymaþis, baltakaklis)
+#
+# Ðitai klasei prikauso sudurtiniai ir prieðdëlius apy- po- turintys
+# bûdvardþiai, ir dar kai kurie.
+#
+
+	[^DT] I S	>	-IS,IO
+	[^DT] I S	>	-IS,IAM
+	[^DT] I S	>	-IS,Á
+	[^DT] I S	>	-IS,IU
+	[^DT] I S	>	-IS,IAME
+
+	[^DT] I S	>	-IS,IAI
+	[^DT] I S	>	-IS,IØ
+	[^DT] I S	>	-IS,IAMS
+	[^DT] I S	>	-IS,IUS
+	[^DT] I S	>	-IS,IAIS
+	[^DT] I S	>	-IS,IUOSE
+
+
+	T I S	>	-TIS,ÈIO
+	T I S	>	-TIS,ÈIAM	# apyplokðtis > apyplokðèiam
+	T I S	>	-TIS,TÁ		# apyplokðtis > apyplokðtá
+	T I S	>	-TIS,ÈIU
+	T I S	>	-TIS,ÈIAME
+
+	T I S	>	-TIS,ÈIAI
+	T I S	>	-TIS,ÈIØ
+	T I S	>	-TIS,ÈIAMS
+	T I S	>	-TIS,ÈIUS
+	T I S	>	-TIS,ÈIAIS
+	T I S	>	-TIS,ÈIUOSE
+
+	D I S	>	-DIS,DÞIO
+	D I S	>	-DIS,DÞIAM	# smuliagrûdis > smulkiagrûdþiam
+	D I S	>	-DIS,DÁ		# smuliagrûdis > smulkiagrûdá
+	D I S	>	-DIS,DÞIU
+	D I S	>	-DIS,DÞIAME
+
+	D I S	>	-DIS,DÞIAI
+	D I S	>	-DIS,DÞIØ
+	D I S	>	-DIS,DÞIAMS
+	D I S	>	-DIS,DÞIUS
+	D I S	>	-DIS,DÞIAIS
+	D I S	>	-DIS,DÞIUOSE
+
+#######################################################
+# 9 paradigma (ir geresnë, ir medinë)
+
+	I S	>	-IS,Ë
+	I S	>	-IS,ËS
+	I S	>	-IS,EI
+	I S	>	-IS,Æ
+	I S	>	-IS,E
+	I S	>	-IS,ËJE
+	I S	>	-IS,ËJ
+
+
+	I S	>	-IS,ËS
+	I S	>	-IS,ËMS
+	I S	>	-IS,ES
+	I S	>	-IS,ËMIS
+	I S	>	-IS,ËSE
+
+flag *Q:
+##################################################
+# Kokybinis bûdvardis
+#
+# (Be kokybiniø bûna ir santykiniai, pvz. medinis)
+#
+# Ið jo daromos:
+# 	* ávardþiuotinës formos;
+#	* laipsniø formos (geresnis, geriausiais);
+# 	* prieveiksmiai su  priesaga -(i)ai (gerai, graþiai);
+# 	* bevardës giminës formos (sena, gera, graþu);
+# 	* ypatybës su priesaga -umas (gerumas);
+# 	* vediniai su priesaga -okas -a, (bei prieðdëliais apy-, po-,
+# 	  bet tai jau þodyno reikalas).
+# 	
+# Tai dabar visa tai ir iðraðysim.
+# 
+
+######################################################
+# Ávardþiuotinai bûdvardþiai
+
+#######################################################################
+# 1 paradigma  (geras)
+# 2 paradigma  (naujas, þalias)
+	A S	>	-AS,ASIS	# geras > gerasis
+	A S	>	-AS,OJO
+	A S	>	-AS,AJAM
+	A S	>	-AS,ÀJÁ
+	A S	>	-AS,UOJU
+	A S	>	-AS,AJAME
+
+# vyr. g. daugiskaita vienoda visoms paradigmoms (¥i´ moduliu :)
+
+#	 A S	>	-AS,IEJI	# geras > gerieji
+	[^I] A S	>	-AS,IEJI	# geras > gerieji
+	[^ÈÞ] I A S	>	-IAS,IEJI	# þalias > þalieji
+	È I A S	>	-ÈIAS,TIEJI	# pësèias > pëstieji
+	[^D] Þ I A S	>	-IAS,IEJI	# ??? > ???
+	D Þ I A S	>	-DÞIAS,DIEJI	# bergþdþias > bergþdieji
+	A S	>	-AS,ØJØ
+#	 A S	>	-AS,IESIEMS
+	[^I] A S	>	-AS,IESIEMS	# geras > geriesiems
+	[^ÈÞ] I A S	>	-IAS,IESIEMS	# þalias > þaliesiems
+	È I A S	>	-ÈIAS,TIESIEMS	# pësèias > pëstiesiems
+	[^D] Þ I A S	>	-IAS,IESIEMS	# ??? > ???
+	D Þ I A S	>	-DÞIAS,DIESIEMS	# bergþdþias > bergþdiesiems
+	A S	>	-AS,UOSIUS
+	A S	>	-AS,AISIAIS
+	A S	>	-AS,UOSIUOSE
+
+
+# moteriðka giminë irgi vienoda ¥i´ moduliu
+###########################################################
+
+	A S	>	-AS,OJI		# geras > geroji
+	A S	>	-AS,OSIOS
+	A S	>	-AS,AJAI
+	A S	>	-AS,ÀJÀ
+	A S	>	-AS,ÀJA
+	A S	>	-AS,OJOJ
+	A S	>	-AS,OJOJE
+
+	A S	>	-AS,ØJØ		# geras > gerøjø
+	A S	>	-AS,OSIOMS
+	A S	>	-AS,ÀSIAS
+	A S	>	-AS,OSIOMIS
+	A S	>	-AS,OSIOSE
+
+# Uþkomentavau, nes, atrodo, viskas sulenda á pirmos paradigmos taisykles
+#
+# #########################
+# # 2 paradigma (þalias, naujas)
+# 
+# 	I A S	>	-IAS,IASIS	# þalias > þaliasis
+# 	I A S	>	-IAS,IOJO
+# 	I A S	>	-IAS,IAJAM
+# 	I A S	>	-IAS,IÀJÁ
+# 	I A S	>	-IAS,IUOJU
+# 	I A S	>	-IAS,IAJAME
+# 
+# # vyr. g. daugiskaita vienoda visoms paradigmoms (¥i´ moduliu :)
+# 	I A S		>	-IAS,IEJI
+# 	I A S	>	-IAS,IØJØ
+# 	I A S	>	-IAS,IESIEMS
+# 	I A S	>	-IAS,IUOSIUS
+# 	I A S	>	-IAS,IAISIAIS
+# 	I A S	>	-IAS,IUOSIUOSE
+# 
+# # moteriðka giminë irgi vienoda ¥i´ moduliu
+# 	I A S	>	-IAS,IOJI	# þalias > þalioji
+# 	I A S	>	-IAS,IOSIOS
+# 	I A S	>	-IAS,IAJAI
+# 	I A S	>	-IAS,IÀJÀ
+# 	I A S	>	-IAS,IÀJA
+# 	I A S	>	-IAS,IOJOJ
+# 	I A S	>	-IAS,IOJOJE
+# 
+# 	I A S	>	-IAS,IØJØ	# þalias > þaliøjø
+# 	I A S	>	-IAS,IOSIOMS
+# 	I A S	>	-IAS,IÀSIAS
+# 	I A S	>	-IAS,IOSIOMIS
+# 	I A S	>	-IAS,IOSIOSE
+# 
+
+#################################################################
+# 3 paradigma (didelis, kairys, (geresnis))
+
+	I S	>	-IS,YSIS	# geresnis > geresnysis
+	I S	>	-IS,ÁJÁ
+
+	[^DT] I S	>	-IS,IOJO
+	[^DT] I S	>	-IS,IAJAM
+	[^DT] I S	>	-IS,IUOJU
+	[^DT] I S	>	-IS,IAJAME
+
+	D I S	>	-DIS,DÞIOJO
+	D I S	>	-DIS,DÞIAJAM
+	D I S	>	-DIS,DÞIUOJU
+	D I S	>	-DIS,DÞIAJAME
+
+	T I S	>	-TIS,ÈIOJO
+	T I S	>	-TIS,ÈIAJAM
+	T I S	>	-TIS,ÈIUOJU
+	T I S	>	-TIS,ÈIAJAME
+
+# vyr. g. daugiskaita vienoda visoms paradigmoms (¥i´ moduliu :)
+	I S	>	-IS,IEJI	# geresnis > geresnieji
+	I S	>	-IS,IESIEMS
+
+	D I S	>	-DIS,DÞIØJØ
+	D I S	>	-DIS,DÞIUOSIUS
+	D I S	>	-DIS,DÞIAISIAIS
+	D I S	>	-DIS,DÞIUOSIUOSE
+
+	T I S	>	-TIS,ÈIØJØ
+	T I S	>	-TIS,ÈIUOSIUS
+	T I S	>	-TIS,ÈIAISIAIS
+	T I S	>	-TIS,ÈIUOSIUOSE
+
+	[^DT] I S	>	-IS,IØJØ
+	[^DT] I S	>	-IS,IUOSIUS
+	[^DT] I S	>	-IS,IAISIAIS
+	[^DT] I S	>	-IS,IUOSIUOSE
+
+# moteriðka giminë irgi vienoda ¥i´ moduliu
+# 
+	D I S	>	-DIS,DÞIOJI	# didis > didþioji
+	D I S	>	-DIS,DÞIOSIOS
+	D I S	>	-DIS,DÞIAJAI
+	D I S	>	-DIS,DÞIÀJÀ
+	D I S	>	-DIS,DÞIÀJA
+	D I S	>	-DIS,DÞIOJOJ
+	D I S	>	-DIS,DÞIOJOJE
+
+	D I S	>	-DIS,DÞIØJØ	# didis > didþiøjø
+	D I S	>	-DIS,DÞIOSIOMS
+	D I S	>	-DIS,DÞIÀSIAS
+	D I S	>	-DIS,DÞIOSIOMIS
+	D I S	>	-DIS,DÞIOSIOSE
+
+	T I S	>	-TIS,ÈIOJI	
+	T I S	>	-TIS,ÈIOSIOS
+	T I S	>	-TIS,ÈIAJAI
+	T I S	>	-TIS,ÈIÀJÀ
+	T I S	>	-TIS,ÈIÀJA
+	T I S	>	-TIS,ÈIOJOJ
+	T I S	>	-TIS,ÈIOJOJE
+
+	T I S	>	-TIS,ÈIØJØ	
+	T I S	>	-TIS,ÈIOSIOMS
+	T I S	>	-TIS,ÈIÀSIAS
+	T I S	>	-TIS,ÈIOSIOMIS
+	T I S	>	-TIS,ÈIOSIOSE
+
+
+	J I S	>	-JIS,JOJI	
+	J I S	>	-JIS,JOSIOS
+	J I S	>	-JIS,JAJAI
+	J I S	>	-JIS,JÀJÀ
+	J I S	>	-JIS,JÀJA
+	J I S	>	-JIS,JOJOJ
+	J I S	>	-JIS,JOJOJE
+
+	J I S	>	-JIS,JØJØ	
+	J I S	>	-JIS,JOSIOMS
+	J I S	>	-JIS,JÀSIAS
+	J I S	>	-JIS,JOSIOMIS
+	J I S	>	-JIS,JOSIOSE
+
+	[^DTJ] I S	>	-IS,IOJI	# geresnis > geresnioji
+	[^DTJ] I S	>	-IS,IOSIOS
+	[^DTJ] I S	>	-IS,IAJAI
+	[^DTJ] I S	>	-IS,IÀJÀ
+	[^DTJ] I S	>	-IS,IÀJA
+	[^DTJ] I S	>	-IS,IOJOJ
+	[^DTJ] I S	>	-IS,IOJOJE
+
+	[^DTJ] I S	>	-IS,IØJØ	# geresnis > geresniøjø
+	[^DTJ] I S	>	-IS,IOSIOMS
+	[^DTJ] I S	>	-IS,IÀSIAS
+	[^DTJ] I S	>	-IS,IOSIOMIS
+	[^DTJ] I S	>	-IS,IOSIOSE
+
+
+	Y S	>	-YS,YSIS	# kairys > kairysis
+	Y S	>	-YS,IOJO
+	Y S	>	-YS,IAJAM
+	Y S	>	-YS,ÁJÁ
+	Y S	>	-YS,IUOJU
+	Y S	>	-YS,IAJAME
+
+# vyr. g. daugiskaita vienoda visoms paradigmoms (¥i´ moduliu :)
+	Y S	>	-YS,IEJI	# kairys > kairieji
+	Y S	>	-YS,IØJØ
+	Y S	>	-YS,IESIEMS
+	Y S	>	-YS,IUOSIUS
+	Y S	>	-YS,IAISIAIS
+	Y S	>	-YS,IUOSIUOSE
+
+# moteriðka giminë irgi vienoda ¥i´ moduliu
+# 
+	Y S	>	-YS,IOJI	# kairys > kairioji
+	Y S	>	-YS,IOSIOS
+	Y S	>	-YS,IAJAI
+	Y S	>	-YS,IÀJÀ
+	Y S	>	-YS,IÀJA
+	Y S	>	-YS,IOJOJ
+	Y S	>	-YS,IOJOJE
+
+	Y S	>	-YS,IØJØ	# kairys > kairiøjø
+	Y S	>	-YS,IOSIOMS
+	Y S	>	-YS,IÀSIAS
+	Y S	>	-YS,IOSIOMIS
+	Y S	>	-YS,IOSIOSE
+
+#################################################################
+# 5 paradigma (graþus, lygus, mandagus)
+
+	U S	>	-US,USIS	# mandagus > mandagusis
+	U S	>	-US,ØJÁ
+
+	T U S	>	-TUS,ÈIOJO	# platus > plaèiojo
+	T U S	>	-TUS,ÈIAJAM
+	T U S	>	-TUS,ÈIUOJU
+	T U S	>	-TUS,ÈIAJAM
+
+	D U S	>	-DUS,DÞIOJO	# saldus > saldþiojo
+	D U S	>	-DUS,DÞIAJAM
+	D U S	>	-DUS,DÞIUOJU
+	D U S	>	-DUS,DÞIAJAM
+
+	J U S	>	-JUS,JOJO	# rajus > rajojo
+	J U S	>	-JUS,JAJAM
+	J U S	>	-JUS,JUOJU
+	J U S	>	-JUS,JAJAM
+
+	[^DTJ] U S	>	-US,IOJO
+	[^DTJ] U S	>	-US,IAJAM
+	[^DTJ] U S	>	-US,IUOJU
+	[^DTJ] U S	>	-US,IAJAME
+
+# vyr. g. daugiskaita vienoda visoms paradigmoms (¥i´ moduliu :)
+	U S	>	-US,IEJI	# mandagus > mandagieji
+	U S	>	-US,IESIEMS
+
+	D U S	>	-DUS,DÞIØJØ	# saldus > saldþiøjø
+	D U S	>	-DUS,DÞIUOSIUS
+	D U S	>	-DUS,DÞIAISIAIS
+	D U S	>	-DUS,DÞIUOSIUOSE
+
+	T U S	>	-TUS,ÈIØJØ	# platus > plaèiøjø
+	T U S	>	-TUS,ÈIUOSIUS
+	T U S	>	-TUS,ÈIAISIAIS
+	T U S	>	-TUS,ÈIUOSIUOSE
+
+	J U S	>	-JUS,JØJØ	# rajus > rajøjø
+	J U S	>	-JUS,JUOSIUS
+	J U S	>	-JUS,JAISIAIS
+	J U S	>	-JUS,JUOSIUOSE
+
+	[^DTJ] U S	>	-US,IØJØ
+	[^DTJ] U S	>	-US,IUOSIUS
+	[^DTJ] U S	>	-US,IAISIAIS
+	[^DTJ] U S	>	-US,IUOSIUOSE
+
+# moteriðka giminë irgi vienoda ¥i´ moduliu
+# 8 paradigma
+
+	[^DTJ] U S	>	-US,IOJI	# mandagus > mandagioji
+	[^DTJ] U S	>	-US,IOSIOS
+	[^DTJ] U S	>	-US,IAJAI
+	[^DTJ] U S	>	-US,IÀJÀ
+	[^DTJ] U S	>	-US,IÀJA
+	[^DTJ] U S	>	-US,IOJOJ
+	[^DTJ] U S	>	-US,IOJOJE
+
+	[^DTJ] U S	>	-US,IØJØ	# mandagus > mandagiøjø
+	[^DTJ] U S	>	-US,IOSIOMS
+	[^DTJ] U S	>	-US,IÀSIAS
+	[^DTJ] U S	>	-US,IOSIOMIS
+	[^DTJ] U S	>	-US,IOSIOSE
+
+	T U S	>	-TUS,ÈIOJI	# platus > plaèioji
+	T U S	>	-TUS,ÈIOSIOS
+	T U S	>	-TUS,ÈIAJAI
+	T U S	>	-TUS,ÈIÀJÀ
+	T U S	>	-TUS,ÈIÀJA
+	T U S	>	-TUS,ÈIOJOJ
+	T U S	>	-TUS,ÈIOJOJE
+
+	T U S	>	-TUS,ÈIØJØ	# platus > plaèiøjø
+	T U S	>	-TUS,ÈIOSIOMS
+	T U S	>	-TUS,ÈIÀSIAS
+	T U S	>	-TUS,ÈIOSIOMIS
+	T U S	>	-TUS,ÈIOSIOSE
+
+
+	J U S	>	-JUS,JOJI	# rajus > rajoji
+	J U S	>	-JUS,JOSIOS
+	J U S	>	-JUS,JAJAI
+	J U S	>	-JUS,JÀJÀ
+	J U S	>	-JUS,JÀJA
+	J U S	>	-JUS,JOJOJ
+	J U S	>	-JUS,JOJOJE
+
+	J U S	>	-JUS,JØJØ	# rajus > rajoji
+	J U S	>	-JUS,JOSIOMS
+	J U S	>	-JUS,JÀSIAS
+	J U S	>	-JUS,JOSIOMIS
+	J U S	>	-JUS,JOSIOSE
+
+	D U S	>	-DUS,DÞIOJI	# saldus > saldþioji
+	D U S	>	-DUS,DÞIOSIOS
+	D U S	>	-DUS,DÞIAJAI
+	D U S	>	-DUS,DÞIÀJÀ
+	D U S	>	-DUS,DÞIÀJA
+	D U S	>	-DUS,DÞIOJOJ
+	D U S	>	-DUS,DÞIOJOJE
+
+	D U S	>	-DUS,DÞIØJØ	# saldus > saldþiøjø
+	D U S	>	-DUS,DÞIOSIOMS
+	D U S	>	-DUS,DÞIÀSIAS
+	D U S	>	-DUS,DÞIOSIOMIS
+	D U S	>	-DUS,DÞIOSIOSE
+
+###########################################################################
+# Laipsniø formos
+#
+#  Kaip tingiu ðitai daliai komentarus raðyt...
+#  Èia tiesiog visi atvejai paimti ir sulinksniuoti.
+#  Didelis cut & paste & replace-regexp 
+
+#
+# Ateinantys 400 eiluèiø bus aukðtesnysis laipsnis kartu su jo 
+# ávardþiuotinëmis formomis
+#
+
+	I S	>	-IS,ESNIS
+	I S	>	-IS,ESNIO
+	I S	>	-IS,ESNIAM
+	I S	>	-IS,ESNÁ
+	I S	>	-IS,ESNIU
+	I S	>	-IS,ESNIAME
+
+	I S	>	-IS,ESNI
+	I S	>	-IS,ESNIØ
+	I S	>	-IS,ESNIEMS
+	I S	>	-IS,ESNIUS
+	I S	>	-IS,ESNIAIS
+	I S	>	-IS,ESNIUOSE
+
+	I S	>	-IS,ESNË
+	I S	>	-IS,ESNËS
+	I S	>	-IS,ESNEI
+	I S	>	-IS,ESNÆ
+	I S	>	-IS,ESNE
+	I S	>	-IS,ESNËJE
+
+	I S	>	-IS,ESNËS
+	I S	>	-IS,ESNËMS
+	I S	>	-IS,ESNES
+	I S	>	-IS,ESNËMIS
+	I S	>	-IS,ESNËSE
+
+# ávardþiuotinës to paties formos
+
+	I S	>	-IS,ESNYSIS	
+	I S	>	-IS,ESNIOJO
+	I S	>	-IS,ESNIAJAM
+	I S	>	-IS,ESNÁJÁ
+	I S	>	-IS,ESNIUOJU
+	I S	>	-IS,ESNIAJAME
+
+
+	I S	>	-IS,ESNIEJI	
+	I S	>	-IS,ESNIØJØ
+	I S	>	-IS,ESNIESIEMS
+	I S	>	-IS,ESNIUOSIUS
+	I S	>	-IS,ESNIAISIAIS
+	I S	>	-IS,ESNIUOSIUOSE
+
+# mot. g.
+	I S	>	-IS,ESNIOJI	
+	I S	>	-IS,ESNIOSIOS
+	I S	>	-IS,ESNIAJAI
+	I S	>	-IS,ESNIÀJÀ
+	I S	>	-IS,ESNIÀJA
+	I S	>	-IS,ESNIOJOJ
+	I S	>	-IS,ESNIOJOJE
+
+	I S	>	-IS,ESNIØJØ	
+	I S	>	-IS,ESNIOSIOMS
+	I S	>	-IS,ESNIÀSIAS
+	I S	>	-IS,ESNIOSIOMIS
+	I S	>	-IS,ESNIOSIOSE
+
+
+	Y S	>	-YS,ESNIS
+	Y S	>	-YS,ESNIO
+	Y S	>	-YS,ESNIAM
+	Y S	>	-YS,ESNÁ
+	Y S	>	-YS,ESNIU
+	Y S	>	-YS,ESNIAME
+
+	Y S	>	-YS,ESNI
+	Y S	>	-YS,ESNIØ
+	Y S	>	-YS,ESNIEMS
+	Y S	>	-YS,ESNIUS
+	Y S	>	-YS,ESNIAIS
+	Y S	>	-YS,ESNIUOSE
+
+	Y S	>	-YS,ESNË
+	Y S	>	-YS,ESNËS
+	Y S	>	-YS,ESNEI
+	Y S	>	-YS,ESNÆ
+	Y S	>	-YS,ESNE
+	Y S	>	-YS,ESNËJE
+
+	Y S	>	-YS,ESNËS
+	Y S	>	-YS,ESNËMS
+	Y S	>	-YS,ESNES
+	Y S	>	-YS,ESNËMIS
+	Y S	>	-YS,ESNËSE
+
+# ávardþiuotinës to paties formos
+
+	Y S	>	-YS,ESNYSIS	
+	Y S	>	-YS,ESNIOJO
+	Y S	>	-YS,ESNIAJAM
+	Y S	>	-YS,ESNÁJÁ
+	Y S	>	-YS,ESNIUOJU
+	Y S	>	-YS,ESNIAJAME
+
+
+	Y S	>	-YS,ESNIEJI	
+	Y S	>	-YS,ESNIØJØ
+	Y S	>	-YS,ESNIESIEMS
+	Y S	>	-YS,ESNIUOSIUS
+	Y S	>	-YS,ESNIAISIAIS
+	Y S	>	-YS,ESNIUOSIUOSE
+
+# mot. g.
+	Y S	>	-YS,ESNIOJI	
+	Y S	>	-YS,ESNIOSIOS
+	Y S	>	-YS,ESNIAJAI
+	Y S	>	-YS,ESNIÀJÀ
+	Y S	>	-YS,ESNIÀJA
+	Y S	>	-YS,ESNIOJOJ
+	Y S	>	-YS,ESNIOJOJE
+
+	Y S	>	-YS,ESNIØJØ	
+	Y S	>	-YS,ESNIOSIOMS
+	Y S	>	-YS,ESNIÀSIAS
+	Y S	>	-YS,ESNIOSIOMIS
+	Y S	>	-YS,ESNIOSIOSE
+
+
+	[^I] A S	>	-AS,ESNIS
+	[^I] A S	>	-AS,ESNIO
+	[^I] A S	>	-AS,ESNIAM
+	[^I] A S	>	-AS,ESNÁ
+	[^I] A S	>	-AS,ESNIU
+	[^I] A S	>	-AS,ESNIAME
+
+	[^I] A S	>	-AS,ESNI
+	[^I] A S	>	-AS,ESNIØ
+	[^I] A S	>	-AS,ESNIEMS
+	[^I] A S	>	-AS,ESNIUS
+	[^I] A S	>	-AS,ESNIAIS
+	[^I] A S	>	-AS,ESNIUOSE
+
+	[^I] A S	>	-AS,ESNË
+	[^I] A S	>	-AS,ESNËS
+	[^I] A S	>	-AS,ESNEI
+	[^I] A S	>	-AS,ESNÆ
+	[^I] A S	>	-AS,ESNE
+	[^I] A S	>	-AS,ESNIOJE
+
+	[^I] A S	>	-AS,ESNËS
+	[^I] A S	>	-AS,ESNËMS
+	[^I] A S	>	-AS,ESNES
+	[^I] A S	>	-AS,ESNËMIS
+	[^I] A S	>	-AS,ESNËSE
+
+# ávardþiuotinës to paties formos
+
+	[^I] A S	>	-AS,ESNYSIS	
+	[^I] A S	>	-AS,ESNIOJO
+	[^I] A S	>	-AS,ESNIAJAM
+	[^I] A S	>	-AS,ESNÁJÁ
+	[^I] A S	>	-AS,ESNIUOJU
+	[^I] A S	>	-AS,ESNIAJAME
+
+
+	[^I] A S	>	-AS,ESNIEJI	
+	[^I] A S	>	-AS,ESNIØJØ
+	[^I] A S	>	-AS,ESNIESIEMS
+	[^I] A S	>	-AS,ESNIUOSIUS
+	[^I] A S	>	-AS,ESNIAISIAIS
+	[^I] A S	>	-AS,ESNIUOSIUOSE
+
+# mot. g.
+	[^I] A S	>	-AS,ESNIOJI	
+	[^I] A S	>	-AS,ESNIOSIOS
+	[^I] A S	>	-AS,ESNIAJAI
+	[^I] A S	>	-AS,ESNIÀJÀ
+	[^I] A S	>	-AS,ESNIÀJA
+	[^I] A S	>	-AS,ESNIOJOJ
+	[^I] A S	>	-AS,ESNIOJOJE
+
+	[^I] A S	>	-AS,ESNIØJØ	
+	[^I] A S	>	-AS,ESNIOSIOMS
+	[^I] A S	>	-AS,ESNIÀSIAS
+	[^I] A S	>	-AS,ESNIOSIOMIS
+	[^I] A S	>	-AS,ESNIOSIOSE
+
+
+	[^ÈÞ] I A S	>	-IAS,ESNIS
+	[^ÈÞ] I A S	>	-IAS,ESNIO
+	[^ÈÞ] I A S	>	-IAS,ESNIAM
+	[^ÈÞ] I A S	>	-IAS,ESNÁ
+	[^ÈÞ] I A S	>	-IAS,ESNIU
+	[^ÈÞ] I A S	>	-IAS,ESNIAME
+
+	[^ÈÞ] I A S	>	-IAS,ESNI
+	[^ÈÞ] I A S	>	-IAS,ESNIØ
+	[^ÈÞ] I A S	>	-IAS,ESNIEMS
+	[^ÈÞ] I A S	>	-IAS,ESNIUS
+	[^ÈÞ] I A S	>	-IAS,ESNIAIS
+	[^ÈÞ] I A S	>	-IAS,ESNIUOSE
+
+	[^ÈÞ] I A S	>	-IAS,ESNË
+	[^ÈÞ] I A S	>	-IAS,ESNËS
+	[^ÈÞ] I A S	>	-IAS,ESNEI
+	[^ÈÞ] I A S	>	-IAS,ESNÆ
+	[^ÈÞ] I A S	>	-IAS,ESNE
+	[^ÈÞ] I A S	>	-IAS,ESNËJE
+
+	[^ÈÞ] I A S	>	-IAS,ESNËS
+	[^ÈÞ] I A S	>	-IAS,ESNËMS
+	[^ÈÞ] I A S	>	-IAS,ESNES
+	[^ÈÞ] I A S	>	-IAS,ESNËMIS
+	[^ÈÞ] I A S	>	-IAS,ESNËSE
+
+# ávardþiuotinës to paties formos
+
+	[^ÈÞ] I A S	>	-IAS,ESNYSIS	
+	[^ÈÞ] I A S	>	-IAS,ESNIOJO
+	[^ÈÞ] I A S	>	-IAS,ESNIAJAM
+	[^ÈÞ] I A S	>	-IAS,ESNÁJÁ
+	[^ÈÞ] I A S	>	-IAS,ESNIUOJU
+	[^ÈÞ] I A S	>	-IAS,ESNIAJAME
+
+
+	[^ÈÞ] I A S	>	-IAS,ESNIEJI	
+	[^ÈÞ] I A S	>	-IAS,ESNIØJØ
+	[^ÈÞ] I A S	>	-IAS,ESNIESIEMS
+	[^ÈÞ] I A S	>	-IAS,ESNIUOSIUS
+	[^ÈÞ] I A S	>	-IAS,ESNIAISIAIS
+	[^ÈÞ] I A S	>	-IAS,ESNIUOSIUOSE
+
+# mot. g.
+	[^ÈÞ] I A S	>	-IAS,ESNIOJI	
+	[^ÈÞ] I A S	>	-IAS,ESNIOSIOS
+	[^ÈÞ] I A S	>	-IAS,ESNIAJAI
+	[^ÈÞ] I A S	>	-IAS,ESNIÀJÀ
+	[^ÈÞ] I A S	>	-IAS,ESNIÀJA
+	[^ÈÞ] I A S	>	-IAS,ESNIOJOJ
+	[^ÈÞ] I A S	>	-IAS,ESNIOJOJE
+
+	[^ÈÞ] I A S	>	-IAS,ESNIØJØ	
+	[^ÈÞ] I A S	>	-IAS,ESNIOSIOMS
+	[^ÈÞ] I A S	>	-IAS,ESNIÀSIAS
+	[^ÈÞ] I A S	>	-IAS,ESNIOSIOMIS
+	[^ÈÞ] I A S	>	-IAS,ESNIOSIOSE
+
+
+	È I A S	>	-ÈIAS,TESNIS
+	È I A S	>	-ÈIAS,TESNIO
+	È I A S	>	-ÈIAS,TESNIAM
+	È I A S	>	-ÈIAS,TESNÁ
+	È I A S	>	-ÈIAS,TESNIU
+	È I A S	>	-ÈIAS,TESNIAME
+
+	È I A S	>	-ÈIAS,TESNI
+	È I A S	>	-ÈIAS,TESNIØ
+	È I A S	>	-ÈIAS,TESNIEMS
+	È I A S	>	-ÈIAS,TESNIUS
+	È I A S	>	-ÈIAS,TESNIAIS
+	È I A S	>	-ÈIAS,TESNIUOSE
+
+	È I A S	>	-ÈIAS,TESNË
+	È I A S	>	-ÈIAS,TESNËS
+	È I A S	>	-ÈIAS,TESNEI
+	È I A S	>	-ÈIAS,TESNÆ
+	È I A S	>	-ÈIAS,TESNE
+	È I A S	>	-ÈIAS,TESNËJE
+
+	È I A S	>	-ÈIAS,TESNËS
+	È I A S	>	-ÈIAS,TESNËMS
+	È I A S	>	-ÈIAS,TESNES
+	È I A S	>	-ÈIAS,TESNËMIS
+	È I A S	>	-ÈIAS,TESNËSE
+
+# ávardþiuotinës to paties formos
+
+	È I A S	>	-ÈIAS,TESNYSIS	
+	È I A S	>	-ÈIAS,TESNIOJO
+	È I A S	>	-ÈIAS,TESNIAJAM
+	È I A S	>	-ÈIAS,TESNÁJÁ
+	È I A S	>	-ÈIAS,TESNIUOJU
+	È I A S	>	-ÈIAS,TESNIAJAME
+
+
+	È I A S	>	-ÈIAS,TESNIEJI	
+	È I A S	>	-ÈIAS,TESNIØJØ
+	È I A S	>	-ÈIAS,TESNIESIEMS
+	È I A S	>	-ÈIAS,TESNIUOSIUS
+	È I A S	>	-ÈIAS,TESNIAISIAIS
+	È I A S	>	-ÈIAS,TESNIUOSIUOSE
+
+# mot. g.
+	È I A S	>	-ÈIAS,TESNIOJI	
+	È I A S	>	-ÈIAS,TESNIOSIOS
+	È I A S	>	-ÈIAS,TESNIAJAI
+	È I A S	>	-ÈIAS,TESNIÀJÀ
+	È I A S	>	-ÈIAS,TESNIÀJA
+	È I A S	>	-ÈIAS,TESNIOJOJ
+	È I A S	>	-ÈIAS,TESNIOJOJE
+
+	È I A S	>	-ÈIAS,TESNIØJØ	
+	È I A S	>	-ÈIAS,TESNIOSIOMS
+	È I A S	>	-ÈIAS,TESNIÀSIAS
+	È I A S	>	-ÈIAS,TESNIOSIOMIS
+	È I A S	>	-ÈIAS,TESNIOSIOSE
+
+
+
+	D Þ I A S	>	-DÞIAS,DESNIS
+	D Þ I A S	>	-DÞIAS,DESNIO
+	D Þ I A S	>	-DÞIAS,DESNIAM
+	D Þ I A S	>	-DÞIAS,DESNÁ
+	D Þ I A S	>	-DÞIAS,DESNIU
+	D Þ I A S	>	-DÞIAS,DESNIAME
+
+	D Þ I A S	>	-DÞIAS,DESNI
+	D Þ I A S	>	-DÞIAS,DESNIØ
+	D Þ I A S	>	-DÞIAS,DESNIEMS
+	D Þ I A S	>	-DÞIAS,DESNIUS
+	D Þ I A S	>	-DÞIAS,DESNIAIS
+	D Þ I A S	>	-DÞIAS,DESNIUOSE
+
+	D Þ I A S	>	-DÞIAS,DESNË
+	D Þ I A S	>	-DÞIAS,DESNËS
+	D Þ I A S	>	-DÞIAS,DESNEI
+	D Þ I A S	>	-DÞIAS,DESNÆ
+	D Þ I A S	>	-DÞIAS,DESNE
+	D Þ I A S	>	-DÞIAS,DESNËJE
+
+	D Þ I A S	>	-DÞIAS,DESNËS
+	D Þ I A S	>	-DÞIAS,DESNËMS
+	D Þ I A S	>	-DÞIAS,DESNES
+	D Þ I A S	>	-DÞIAS,DESNËMIS
+	D Þ I A S	>	-DÞIAS,DESNËSE
+
+# ávardþiuotinës to paties formos
+
+	D Þ I A S	>	-DÞIAS,DESNYSIS	
+	D Þ I A S	>	-DÞIAS,DESNIOJO
+	D Þ I A S	>	-DÞIAS,DESNIAJAM
+	D Þ I A S	>	-DÞIAS,DESNÁJÁ
+	D Þ I A S	>	-DÞIAS,DESNIUOJU
+	D Þ I A S	>	-DÞIAS,DESNIAJAME
+
+
+	D Þ I A S	>	-DÞIAS,DESNIEJI	
+	D Þ I A S	>	-DÞIAS,DESNIØJØ
+	D Þ I A S	>	-DÞIAS,DESNIESIEMS
+	D Þ I A S	>	-DÞIAS,DESNIUOSIUS
+	D Þ I A S	>	-DÞIAS,DESNIAISIAIS
+	D Þ I A S	>	-DÞIAS,DESNIUOSIUOSE
+
+# mot. g.
+	D Þ I A S	>	-DÞIAS,DESNIOJI	
+	D Þ I A S	>	-DÞIAS,DESNIOSIOS
+	D Þ I A S	>	-DÞIAS,DESNIAJAI
+	D Þ I A S	>	-DÞIAS,DESNIÀJÀ
+	D Þ I A S	>	-DÞIAS,DESNIÀJA
+	D Þ I A S	>	-DÞIAS,DESNIOJOJ
+	D Þ I A S	>	-DÞIAS,DESNIOJOJE
+
+	D Þ I A S	>	-DÞIAS,DESNIØJØ	
+	D Þ I A S	>	-DÞIAS,DESNIOSIOMS
+	D Þ I A S	>	-DÞIAS,DESNIÀSIAS
+	D Þ I A S	>	-DÞIAS,DESNIOSIOMIS
+	D Þ I A S	>	-DÞIAS,DESNIOSIOSE
+
+	U S	>	-US,ESNIS
+	U S	>	-US,ESNIO
+	U S	>	-US,ESNIAM
+	U S	>	-US,ESNÁ
+	U S	>	-US,ESNIU
+	U S	>	-US,ESNIAME
+
+	U S	>	-US,ESNI
+	U S	>	-US,ESNIØ
+	U S	>	-US,ESNIEMS
+	U S	>	-US,ESNIUS
+	U S	>	-US,ESNIAIS
+	U S	>	-US,ESNIUOSE
+
+	U S	>	-US,ESNË
+	U S	>	-US,ESNËS
+	U S	>	-US,ESNEI
+	U S	>	-US,ESNÆ
+	U S	>	-US,ESNE
+	U S	>	-US,ESNIOJE
+
+	U S	>	-US,ESNËS
+	U S	>	-US,ESNËMS
+	U S	>	-US,ESNES
+	U S	>	-US,ESNËMIS
+	U S	>	-US,ESNËSE
+
+# ávardþiuotinës to paties formos
+
+	U S	>	-US,ESNYSIS	
+	U S	>	-US,ESNIOJO
+	U S	>	-US,ESNIAJAM
+	U S	>	-US,ESNÁJÁ
+	U S	>	-US,ESNIUOJU
+	U S	>	-US,ESNIAJAME
+
+
+	U S	>	-US,ESNIEJI	
+	U S	>	-US,ESNIØJØ
+	U S	>	-US,ESNIESIEMS
+	U S	>	-US,ESNIUOSIUS
+	U S	>	-US,ESNIAISIAIS
+	U S	>	-US,ESNIUOSIUOSE
+
+# mot. g.
+	U S	>	-US,ESNIOJI	
+	U S	>	-US,ESNIOSIOS
+	U S	>	-US,ESNIAJAI
+	U S	>	-US,ESNIÀJÀ
+	U S	>	-US,ESNIÀJA
+	U S	>	-US,ESNIOJOJ
+	U S	>	-US,ESNIOJOJE
+
+	U S	>	-US,ESNIØJØ	
+	U S	>	-US,ESNIOSIOMS
+	U S	>	-US,ESNIÀSIAS
+	U S	>	-US,ESNIOSIOMIS
+	U S	>	-US,ESNIOSIOSE
+
+################################################
+#  Kitos 766 eilutës -- Auksèiausias laipsnis
+#  su visom ávardþiuotinëm formom
+#
+#  Gal að ir persistengiau -- gal nëra bûdvardþio, besibaigianèio -tys
+#  arba -dys, bet kà gali þinot...  Tegu bûna.
+#
+#   Á klausimà ar bûna ¥geriausiuosiuose" atsakyèiau, kad
+#   ¥geriausieji´, ¥ðauniausieji´ ir t.t. tai bûna... 
+#
+
+	[^DTJ] I S	>	-IS,IAUSIO
+	[^DTJ] I S	>	-IS,IAUSIAM
+	[^DTJ] I S	>	-IS,IAUSÁ
+	[^DTJ] I S	>	-IS,IAUSIU
+	[^DTJ] I S	>	-IS,IAUSIAME
+
+	[^DTJ] I S	>	-IS,IAUSI
+	[^DTJ] I S	>	-IS,IAUSIØ
+	[^DTJ] I S	>	-IS,IAUSIEMS
+	[^DTJ] I S	>	-IS,IAUSIUS
+	[^DTJ] I S	>	-IS,IAUSIAIS
+	[^DTJ] I S	>	-IS,IAUSIUOSE
+
+	[^DTJ] I S	>	-IS,IAUSIA
+	[^DTJ] I S	>	-IS,IAUSIOS
+	[^DTJ] I S	>	-IS,IAUSIAI
+	[^DTJ] I S	>	-IS,IAUSIÀ
+	[^DTJ] I S	>	-IS,IAUSIA
+	[^DTJ] I S	>	-IS,IAUSIOJE
+
+	[^DTJ] I S	>	-IS,IAUSIOS
+	[^DTJ] I S	>	-IS,IAUSIOMS
+	[^DTJ] I S	>	-IS,IAUSIAS
+	[^DTJ] I S	>	-IS,IAUSIOMIS
+	[^DTJ] I S	>	-IS,IAUSIOSE
+
+# ávardþiuotinës to paties formos
+
+	[^DTJ] I S	>	-IS,IAUSIASIS	
+	[^DTJ] I S	>	-IS,IAUSIOJO
+	[^DTJ] I S	>	-IS,IAUSIAJAM
+	[^DTJ] I S	>	-IS,IAUSIÀJÁ
+	[^DTJ] I S	>	-IS,IAUSIUOJU
+	[^DTJ] I S	>	-IS,IAUSIAJAME
+
+
+	[^DTJ] I S	>	-IS,IAUSIEJI	
+	[^DTJ] I S	>	-IS,IAUSIØJØ
+	[^DTJ] I S	>	-IS,IAUSIESIEMS
+	[^DTJ] I S	>	-IS,IAUSIUOSIUS
+	[^DTJ] I S	>	-IS,IAUSIAISIAIS
+	[^DTJ] I S	>	-IS,IAUSIUOSIUOSE
+
+# mot. g.
+	[^DTJ] I S	>	-IS,IAUSIOJI	
+	[^DTJ] I S	>	-IS,IAUSIOSIOS
+	[^DTJ] I S	>	-IS,IAUSIAJAI
+	[^DTJ] I S	>	-IS,IAUSIÀJÀ
+	[^DTJ] I S	>	-IS,IAUSIÀJA
+	[^DTJ] I S	>	-IS,IAUSIOJOJ
+	[^DTJ] I S	>	-IS,IAUSIOJOJE
+
+	[^DTJ] I S	>	-IS,IAUSIØJØ	
+	[^DTJ] I S	>	-IS,IAUSIOSIOMS
+	[^DTJ] I S	>	-IS,IAUSIÀSIAS
+	[^DTJ] I S	>	-IS,IAUSIOSIOMIS
+	[^DTJ] I S	>	-IS,IAUSIOSIOSE
+
+
+	[^DTJ] Y S	>	-YS,IAUSIO
+	[^DTJ] Y S	>	-YS,IAUSIAM
+	[^DTJ] Y S	>	-YS,IAUSÁ
+	[^DTJ] Y S	>	-YS,IAUSIU
+	[^DTJ] Y S	>	-YS,IAUSIAME
+
+	[^DTJ] Y S	>	-YS,IAUSI
+	[^DTJ] Y S	>	-YS,IAUSIØ
+	[^DTJ] Y S	>	-YS,IAUSIEMS
+	[^DTJ] Y S	>	-YS,IAUSIUS
+	[^DTJ] Y S	>	-YS,IAUSIAIS
+	[^DTJ] Y S	>	-YS,IAUSIUOSE
+
+	[^DTJ] Y S	>	-YS,IAUSIA
+	[^DTJ] Y S	>	-YS,IAUSIOS
+	[^DTJ] Y S	>	-YS,IAUSIAI
+	[^DTJ] Y S	>	-YS,IAUSIÀ
+	[^DTJ] Y S	>	-YS,IAUSIA
+	[^DTJ] Y S	>	-YS,IAUSIOJE
+
+	[^DTJ] Y S	>	-YS,IAUSIOS
+	[^DTJ] Y S	>	-YS,IAUSIOMS
+	[^DTJ] Y S	>	-YS,IAUSIAS
+	[^DTJ] Y S	>	-YS,IAUSIOMIS
+	[^DTJ] Y S	>	-YS,IAUSIOSE
+
+# ávardþiuotinës to paties formos
+
+	[^DTJ] Y S	>	-YS,IAUSIASIS	
+	[^DTJ] Y S	>	-YS,IAUSIOJO
+	[^DTJ] Y S	>	-YS,IAUSIAJAM
+	[^DTJ] Y S	>	-YS,IAUSIÀJÁ
+	[^DTJ] Y S	>	-YS,IAUSIUOJU
+	[^DTJ] Y S	>	-YS,IAUSIAJAME
+
+
+	[^DTJ] Y S	>	-YS,IAUSIEJI	
+	[^DTJ] Y S	>	-YS,IAUSIØJØ
+	[^DTJ] Y S	>	-YS,IAUSIESIEMS
+	[^DTJ] Y S	>	-YS,IAUSIUOSIUS
+	[^DTJ] Y S	>	-YS,IAUSIAISIAIS
+	[^DTJ] Y S	>	-YS,IAUSIUOSIUOSE
+
+# mot. g.
+	[^DTJ] Y S	>	-YS,IAUSIOJI	
+	[^DTJ] Y S	>	-YS,IAUSIOSIOS
+	[^DTJ] Y S	>	-YS,IAUSIAJAI
+	[^DTJ] Y S	>	-YS,IAUSIÀJÀ
+	[^DTJ] Y S	>	-YS,IAUSIÀJA
+	[^DTJ] Y S	>	-YS,IAUSIOJOJ
+	[^DTJ] Y S	>	-YS,IAUSIOJOJE
+
+	[^DTJ] Y S	>	-YS,IAUSIØJØ	
+	[^DTJ] Y S	>	-YS,IAUSIOSIOMS
+	[^DTJ] Y S	>	-YS,IAUSIÀSIAS
+	[^DTJ] Y S	>	-YS,IAUSIOSIOMIS
+	[^DTJ] Y S	>	-YS,IAUSIOSIOSE
+
+
+	[^DTIJ] A S	>	-AS,IAUSIO
+	[^DTIJ] A S	>	-AS,IAUSIAM
+	[^DTIJ] A S	>	-AS,IAUSIÀ
+	[^DTIJ] A S	>	-AS,IAUSIU
+	[^DTIJ] A S	>	-AS,IAUSIAME
+
+	[^DTIJ] A S	>	-AS,IAUSI
+	[^DTIJ] A S	>	-AS,IAUSIØ
+	[^DTIJ] A S	>	-AS,IAUSIEMS
+	[^DTIJ] A S	>	-AS,IAUSIUS
+	[^DTIJ] A S	>	-AS,IAUSIAIS
+	[^DTIJ] A S	>	-AS,IAUSIUOSE
+
+	[^DTIJ] A S	>	-AS,IAUSIA
+	[^DTIJ] A S	>	-AS,IAUSIOS
+	[^DTIJ] A S	>	-AS,IAUSIAI
+	[^DTIJ] A S	>	-AS,IAUSIÀ
+	[^DTIJ] A S	>	-AS,IAUSIA
+	[^DTIJ] A S	>	-AS,IAUSIOJE
+
+	[^DTIJ] A S	>	-AS,IAUSIOS
+	[^DTIJ] A S	>	-AS,IAUSIOMS
+	[^DTIJ] A S	>	-AS,IAUSIAS
+	[^DTIJ] A S	>	-AS,IAUSIOMIS
+	[^DTIJ] A S	>	-AS,IAUSIOSE
+
+# ávardþiuotinës to paties formos
+
+	[^DTIJ] A S	>	-AS,IAUSIASIS	
+	[^DTIJ] A S	>	-AS,IAUSIOJO
+	[^DTIJ] A S	>	-AS,IAUSIAJAM
+	[^DTIJ] A S	>	-AS,IAUSIÀJÁ
+	[^DTIJ] A S	>	-AS,IAUSIUOJU
+	[^DTIJ] A S	>	-AS,IAUSIAJAME
+
+
+	[^DTIJ] A S	>	-AS,IAUSIEJI	
+	[^DTIJ] A S	>	-AS,IAUSIØJØ
+	[^DTIJ] A S	>	-AS,IAUSIESIEMS
+	[^DTIJ] A S	>	-AS,IAUSIUOSIUS
+	[^DTIJ] A S	>	-AS,IAUSIAISIAIS
+	[^DTIJ] A S	>	-AS,IAUSIUOSIUOSE
+
+# mot. g.
+	[^DTIJ] A S	>	-AS,IAUSIOJI	
+	[^DTIJ] A S	>	-AS,IAUSIOSIOS
+	[^DTIJ] A S	>	-AS,IAUSIAJAI
+	[^DTIJ] A S	>	-AS,IAUSIÀJÀ
+	[^DTIJ] A S	>	-AS,IAUSIÀJA
+	[^DTIJ] A S	>	-AS,IAUSIOJOJ
+	[^DTIJ] A S	>	-AS,IAUSIOJOJE
+
+	[^DTIJ] A S	>	-AS,IAUSIØJØ	
+	[^DTIJ] A S	>	-AS,IAUSIOSIOMS
+	[^DTIJ] A S	>	-AS,IAUSIÀSIAS
+	[^DTIJ] A S	>	-AS,IAUSIOSIOMIS
+	[^DTIJ] A S	>	-AS,IAUSIOSIOSE
+
+
+	[^DTJ] U S	>	-US,IAUSIO
+	[^DTJ] U S	>	-US,IAUSIAM
+	[^DTJ] U S	>	-US,IAUSIÀ
+	[^DTJ] U S	>	-US,IAUSIU
+	[^DTJ] U S	>	-US,IAUSIAME
+
+	[^DTJ] U S	>	-US,IAUSI
+	[^DTJ] U S	>	-US,IAUSIØ
+	[^DTJ] U S	>	-US,IAUSIEMS
+	[^DTJ] U S	>	-US,IAUSIUS
+	[^DTJ] U S	>	-US,IAUSIAIS
+	[^DTJ] U S	>	-US,IAUSIUOSE
+
+	[^DTJ] U S	>	-US,IAUSIA
+	[^DTJ] U S	>	-US,IAUSIOS
+	[^DTJ] U S	>	-US,IAUSIAI
+	[^DTJ] U S	>	-US,IAUSIÀ
+	[^DTJ] U S	>	-US,IAUSIA
+	[^DTJ] U S	>	-US,IAUSIOJE
+
+	[^DTJ] U S	>	-US,IAUSIOS
+	[^DTJ] U S	>	-US,IAUSIOMS
+	[^DTJ] U S	>	-US,IAUSIAS
+	[^DTJ] U S	>	-US,IAUSIOMIS
+	[^DTJ] U S	>	-US,IAUSIOSE
+
+# ávardþiuotinës to paties formos
+
+	[^DTJ] U S	>	-US,IAUSIASIS	
+	[^DTJ] U S	>	-US,IAUSIOJO
+	[^DTJ] U S	>	-US,IAUSIAJAM
+	[^DTJ] U S	>	-US,IAUSIÀJÁ
+	[^DTJ] U S	>	-US,IAUSIUOJU
+	[^DTJ] U S	>	-US,IAUSIAJAME
+
+
+	[^DTJ] U S	>	-US,IAUSIEJI	
+	[^DTJ] U S	>	-US,IAUSIØJØ
+	[^DTJ] U S	>	-US,IAUSIESIEMS
+	[^DTJ] U S	>	-US,IAUSIUOSIUS
+	[^DTJ] U S	>	-US,IAUSIAISIAIS
+	[^DTJ] U S	>	-US,IAUSIUOSIUOSE
+
+# mot. g.
+	[^DTJ] U S	>	-US,IAUSIOJI	
+	[^DTJ] U S	>	-US,IAUSIOSIOS
+	[^DTJ] U S	>	-US,IAUSIAJAI
+	[^DTJ] U S	>	-US,IAUSIÀJÀ
+	[^DTJ] U S	>	-US,IAUSIÀJA
+	[^DTJ] U S	>	-US,IAUSIOJOJ
+	[^DTJ] U S	>	-US,IAUSIOJOJE
+
+	[^DTJ] U S	>	-US,IAUSIØJØ	
+	[^DTJ] U S	>	-US,IAUSIOSIOMS
+	[^DTJ] U S	>	-US,IAUSIÀSIAS
+	[^DTJ] U S	>	-US,IAUSIOSIOMIS
+	[^DTJ] U S	>	-US,IAUSIOSIOSE
+
+
+	D I S	>	-DIS,DÞIAUSIO
+	D I S	>	-DIS,DÞIAUSIAM
+	D I S	>	-DIS,DÞIAUSIÀ
+	D I S	>	-DIS,DÞIAUSIU
+	D I S	>	-DIS,DÞIAUSIAME
+
+	D I S	>	-DIS,DÞIAUSI
+	D I S	>	-DIS,DÞIAUSIØ
+	D I S	>	-DIS,DÞIAUSIEMS
+	D I S	>	-DIS,DÞIAUSIUS
+	D I S	>	-DIS,DÞIAUSIAIS
+	D I S	>	-DIS,DÞIAUSIUOSE
+
+	D I S	>	-DIS,DÞIAUSIA
+	D I S	>	-DIS,DÞIAUSIOS
+	D I S	>	-DIS,DÞIAUSIAI
+	D I S	>	-DIS,DÞIAUSIÀ
+	D I S	>	-DIS,DÞIAUSIA
+	D I S	>	-DIS,DÞIAUSIOJE
+
+	D I S	>	-DIS,DÞIAUSIOS
+	D I S	>	-DIS,DÞIAUSIOMS
+	D I S	>	-DIS,DÞIAUSIAS
+	D I S	>	-DIS,DÞIAUSIOMIS
+	D I S	>	-DIS,DÞIAUSIOSE
+
+# ávardþiuotinës to paties formos
+
+	D I S	>	-DIS,DÞIAUSIASIS	
+	D I S	>	-DIS,DÞIAUSIOJO
+	D I S	>	-DIS,DÞIAUSIAJAM
+	D I S	>	-DIS,DÞIAUSIÀJÁ
+	D I S	>	-DIS,DÞIAUSIUOJU
+	D I S	>	-DIS,DÞIAUSIAJAME
+
+
+	D I S	>	-DIS,DÞIAUSIEJI	
+	D I S	>	-DIS,DÞIAUSIØJØ
+	D I S	>	-DIS,DÞIAUSIESIEMS
+	D I S	>	-DIS,DÞIAUSIUOSIUS
+	D I S	>	-DIS,DÞIAUSIAISIAIS
+	D I S	>	-DIS,DÞIAUSIUOSIUOSE
+
+# mot. g.
+	D I S	>	-DIS,DÞIAUSIOJI	
+	D I S	>	-DIS,DÞIAUSIOSIOS
+	D I S	>	-DIS,DÞIAUSIAJAI
+	D I S	>	-DIS,DÞIAUSIÀJÀ
+	D I S	>	-DIS,DÞIAUSIÀJA
+	D I S	>	-DIS,DÞIAUSIOJOJ
+	D I S	>	-DIS,DÞIAUSIOJOJE
+
+	D I S	>	-DIS,DÞIAUSIØJØ	
+	D I S	>	-DIS,DÞIAUSIOSIOMS
+	D I S	>	-DIS,DÞIAUSIÀSIAS
+	D I S	>	-DIS,DÞIAUSIOSIOMIS
+	D I S	>	-DIS,DÞIAUSIOSIOSE
+
+
+	D Y S	>	-DYS,DÞIAUSIO
+	D Y S	>	-DYS,DÞIAUSIAM
+	D Y S	>	-DYS,DÞIAUSIÀ
+	D Y S	>	-DYS,DÞIAUSIU
+	D Y S	>	-DYS,DÞIAUSIAME
+
+	D Y S	>	-DYS,DÞIAUSI
+	D Y S	>	-DYS,DÞIAUSIØ
+	D Y S	>	-DYS,DÞIAUSIEMS
+	D Y S	>	-DYS,DÞIAUSIUS
+	D Y S	>	-DYS,DÞIAUSIAIS
+	D Y S	>	-DYS,DÞIAUSIUOSE
+
+	D Y S	>	-DYS,DÞIAUSIA
+	D Y S	>	-DYS,DÞIAUSIOS
+	D Y S	>	-DYS,DÞIAUSIAI
+	D Y S	>	-DYS,DÞIAUSIÀ
+	D Y S	>	-DYS,DÞIAUSIA
+	D Y S	>	-DYS,DÞIAUSIOJE
+
+	D Y S	>	-DYS,DÞIAUSIOS
+	D Y S	>	-DYS,DÞIAUSIOMS
+	D Y S	>	-DYS,DÞIAUSIAS
+	D Y S	>	-DYS,DÞIAUSIOMIS
+	D Y S	>	-DYS,DÞIAUSIOSE
+
+# ávardþiuotinës to paties formos
+
+	D Y S	>	-DYS,DÞIAUSIASIS	
+	D Y S	>	-DYS,DÞIAUSIOJO
+	D Y S	>	-DYS,DÞIAUSIAJAM
+	D Y S	>	-DYS,DÞIAUSIÀJÁ
+	D Y S	>	-DYS,DÞIAUSIUOJU
+	D Y S	>	-DYS,DÞIAUSIAJAME
+
+
+	D Y S	>	-DYS,DÞIAUSIEJI	
+	D Y S	>	-DYS,DÞIAUSIØJØ
+	D Y S	>	-DYS,DÞIAUSIESIEMS
+	D Y S	>	-DYS,DÞIAUSIUOSIUS
+	D Y S	>	-DYS,DÞIAUSIAISIAIS
+	D Y S	>	-DYS,DÞIAUSIUOSIUOSE
+
+# mot. g.
+	D Y S	>	-DYS,DÞIAUSIOJI	
+	D Y S	>	-DYS,DÞIAUSIOSIOS
+	D Y S	>	-DYS,DÞIAUSIAJAI
+	D Y S	>	-DYS,DÞIAUSIÀJÀ
+	D Y S	>	-DYS,DÞIAUSIÀJA
+	D Y S	>	-DYS,DÞIAUSIOJOJ
+	D Y S	>	-DYS,DÞIAUSIOJOJE
+
+	D Y S	>	-DYS,DÞIAUSIØJØ	
+	D Y S	>	-DYS,DÞIAUSIOSIOMS
+	D Y S	>	-DYS,DÞIAUSIÀSIAS
+	D Y S	>	-DYS,DÞIAUSIOSIOMIS
+	D Y S	>	-DYS,DÞIAUSIOSIOSE
+
+
+	D A S	>	-DAS,DÞIAUSIO
+	D A S	>	-DAS,DÞIAUSIAM
+	D A S	>	-DAS,DÞIAUSIÀ
+	D A S	>	-DAS,DÞIAUSIU
+	D A S	>	-DAS,DÞIAUSIAME
+
+	D A S	>	-DAS,DÞIAUSI
+	D A S	>	-DAS,DÞIAUSIØ
+	D A S	>	-DAS,DÞIAUSIEMS
+	D A S	>	-DAS,DÞIAUSIUS
+	D A S	>	-DAS,DÞIAUSIAIS
+	D A S	>	-DAS,DÞIAUSIUOSE
+
+	D A S	>	-DAS,DÞIAUSIA
+	D A S	>	-DAS,DÞIAUSIOS
+	D A S	>	-DAS,DÞIAUSIAI
+	D A S	>	-DAS,DÞIAUSIÀ
+	D A S	>	-DAS,DÞIAUSIA
+	D A S	>	-DAS,DÞIAUSIOJE
+
+	D A S	>	-DAS,DÞIAUSIOS
+	D A S	>	-DAS,DÞIAUSIOMS
+	D A S	>	-DAS,DÞIAUSIAS
+	D A S	>	-DAS,DÞIAUSIOMIS
+	D A S	>	-DAS,DÞIAUSIOSE
+
+# ávardþiuotinës to paties formos
+
+	D A S	>	-DAS,DÞIAUSIASIS	
+	D A S	>	-DAS,DÞIAUSIOJO
+	D A S	>	-DAS,DÞIAUSIAJAM
+	D A S	>	-DAS,DÞIAUSIÀJÁ
+	D A S	>	-DAS,DÞIAUSIUOJU
+	D A S	>	-DAS,DÞIAUSIAJAME
+
+
+	D A S	>	-DAS,DÞIAUSIEJI	
+	D A S	>	-DAS,DÞIAUSIØJØ
+	D A S	>	-DAS,DÞIAUSIESIEMS
+	D A S	>	-DAS,DÞIAUSIUOSIUS
+	D A S	>	-DAS,DÞIAUSIAISIAIS
+	D A S	>	-DAS,DÞIAUSIUOSIUOSE
+
+# mot. g.
+	D A S	>	-DAS,DÞIAUSIOJI	
+	D A S	>	-DAS,DÞIAUSIOSIOS
+	D A S	>	-DAS,DÞIAUSIAJAI
+	D A S	>	-DAS,DÞIAUSIÀJÀ
+	D A S	>	-DAS,DÞIAUSIÀJA
+	D A S	>	-DAS,DÞIAUSIOJOJ
+	D A S	>	-DAS,DÞIAUSIOJOJE
+
+	D A S	>	-DAS,DÞIAUSIØJØ	
+	D A S	>	-DAS,DÞIAUSIOSIOMS
+	D A S	>	-DAS,DÞIAUSIÀSIAS
+	D A S	>	-DAS,DÞIAUSIOSIOMIS
+	D A S	>	-DAS,DÞIAUSIOSIOSE
+
+
+	D U S	>	-DUS,DÞIAUSIO
+	D U S	>	-DUS,DÞIAUSIAM
+	D U S	>	-DUS,DÞIAUSIÀ
+	D U S	>	-DUS,DÞIAUSIU
+	D U S	>	-DUS,DÞIAUSIAME
+
+	D U S	>	-DUS,DÞIAUSI
+	D U S	>	-DUS,DÞIAUSIØ
+	D U S	>	-DUS,DÞIAUSIEMS
+	D U S	>	-DUS,DÞIAUSIUS
+	D U S	>	-DUS,DÞIAUSIAIS
+	D U S	>	-DUS,DÞIAUSIUOSE
+
+	D U S	>	-DUS,DÞIAUSIA
+	D U S	>	-DUS,DÞIAUSIOS
+	D U S	>	-DUS,DÞIAUSIAI
+	D U S	>	-DUS,DÞIAUSIÀ
+	D U S	>	-DUS,DÞIAUSIA
+	D U S	>	-DUS,DÞIAUSIOJE
+
+	D U S	>	-DUS,DÞIAUSIOS
+	D U S	>	-DUS,DÞIAUSIOMS
+	D U S	>	-DUS,DÞIAUSIAS
+	D U S	>	-DUS,DÞIAUSIOMIS
+	D U S	>	-DUS,DÞIAUSIOSE
+
+# ávardþiuotinës to paties formos
+
+	D U S	>	-DUS,DÞIAUSIASIS	
+	D U S	>	-DUS,DÞIAUSIOJO
+	D U S	>	-DUS,DÞIAUSIAJAM
+	D U S	>	-DUS,DÞIAUSIÀJÁ
+	D U S	>	-DUS,DÞIAUSIUOJU
+	D U S	>	-DUS,DÞIAUSIAJAME
+
+
+	D U S	>	-DUS,DÞIAUSIEJI	
+	D U S	>	-DUS,DÞIAUSIØJØ
+	D U S	>	-DUS,DÞIAUSIESIEMS
+	D U S	>	-DUS,DÞIAUSIUOSIUS
+	D U S	>	-DUS,DÞIAUSIAISIAIS
+	D U S	>	-DUS,DÞIAUSIUOSIUOSE
+
+# mot. g.
+	D U S	>	-DUS,DÞIAUSIOJI	
+	D U S	>	-DUS,DÞIAUSIOSIOS
+	D U S	>	-DUS,DÞIAUSIAJAI
+	D U S	>	-DUS,DÞIAUSIÀJÀ
+	D U S	>	-DUS,DÞIAUSIÀJA
+	D U S	>	-DUS,DÞIAUSIOJOJ
+	D U S	>	-DUS,DÞIAUSIOJOJE
+
+	D U S	>	-DUS,DÞIAUSIØJØ	
+	D U S	>	-DUS,DÞIAUSIOSIOMS
+	D U S	>	-DUS,DÞIAUSIÀSIAS
+	D U S	>	-DUS,DÞIAUSIOSIOMIS
+	D U S	>	-DUS,DÞIAUSIOSIOSE
+
+
+	J I S	>	-JIS,JAUSIO
+	J I S	>	-JIS,JAUSIAM
+	J I S	>	-JIS,JAUSIÀ
+	J I S	>	-JIS,JAUSIU
+	J I S	>	-JIS,JAUSIAME
+
+	J I S	>	-JIS,JAUSI
+	J I S	>	-JIS,JAUSIØ
+	J I S	>	-JIS,JAUSIEMS
+	J I S	>	-JIS,JAUSIUS
+	J I S	>	-JIS,JAUSIAIS
+	J I S	>	-JIS,JAUSIUOSE
+
+	J I S	>	-JIS,JAUSIA
+	J I S	>	-JIS,JAUSIOS
+	J I S	>	-JIS,JAUSIAI
+	J I S	>	-JIS,JAUSIÀ
+	J I S	>	-JIS,JAUSIA
+	J I S	>	-JIS,JAUSIOJE
+
+	J I S	>	-JIS,JAUSIOS
+	J I S	>	-JIS,JAUSIOMS
+	J I S	>	-JIS,JAUSIAS
+	J I S	>	-JIS,JAUSIOMIS
+	J I S	>	-JIS,JAUSIOSE
+
+# ávardþiuotinës to paties formos
+
+	J I S	>	-JIS,JAUSIASIS	
+	J I S	>	-JIS,JAUSIOJO
+	J I S	>	-JIS,JAUSIAJAM
+	J I S	>	-JIS,JAUSIÀJÁ
+	J I S	>	-JIS,JAUSIUOJU
+	J I S	>	-JIS,JAUSIAJAME
+
+
+	J I S	>	-JIS,JAUSIEJI	
+	J I S	>	-JIS,JAUSIØJØ
+	J I S	>	-JIS,JAUSIESIEMS
+	J I S	>	-JIS,JAUSIUOSIUS
+	J I S	>	-JIS,JAUSIAISIAIS
+	J I S	>	-JIS,JAUSIUOSIUOSE
+
+# mot. g.
+	J I S	>	-JIS,JAUSIOJI	
+	J I S	>	-JIS,JAUSIOSIOS
+	J I S	>	-JIS,JAUSIAJAI
+	J I S	>	-JIS,JAUSIÀJÀ
+	J I S	>	-JIS,JAUSIÀJA
+	J I S	>	-JIS,JAUSIOJOJ
+	J I S	>	-JIS,JAUSIOJOJE
+
+	J I S	>	-JIS,JAUSIØJØ	
+	J I S	>	-JIS,JAUSIOSIOMS
+	J I S	>	-JIS,JAUSIÀSIAS
+	J I S	>	-JIS,JAUSIOSIOMIS
+	J I S	>	-JIS,JAUSIOSIOSE
+
+
+	J Y S	>	-JYS,JAUSIO
+	J Y S	>	-JYS,JAUSIAM
+	J Y S	>	-JYS,JAUSIÀ
+	J Y S	>	-JYS,JAUSIU
+	J Y S	>	-JYS,JAUSIAME
+
+	J Y S	>	-JYS,JAUSI
+	J Y S	>	-JYS,JAUSIØ
+	J Y S	>	-JYS,JAUSIEMS
+	J Y S	>	-JYS,JAUSIUS
+	J Y S	>	-JYS,JAUSIAIS
+	J Y S	>	-JYS,JAUSIUOSE
+
+	J Y S	>	-JYS,JAUSIA
+	J Y S	>	-JYS,JAUSIOS
+	J Y S	>	-JYS,JAUSIAI
+	J Y S	>	-JYS,JAUSIÀ
+	J Y S	>	-JYS,JAUSIA
+	J Y S	>	-JYS,JAUSIOJE
+
+	J Y S	>	-JYS,JAUSIOS
+	J Y S	>	-JYS,JAUSIOMS
+	J Y S	>	-JYS,JAUSIAS
+	J Y S	>	-JYS,JAUSIOMIS
+	J Y S	>	-JYS,JAUSIOSE
+
+# ávardþiuotinës to paties formos
+
+	J Y S	>	-JYS,JAUSIASIS	
+	J Y S	>	-JYS,JAUSIOJO
+	J Y S	>	-JYS,JAUSIAJAM
+	J Y S	>	-JYS,JAUSIÀJÁ
+	J Y S	>	-JYS,JAUSIUOJU
+	J Y S	>	-JYS,JAUSIAJAME
+
+
+	J Y S	>	-JYS,JAUSIEJI	
+	J Y S	>	-JYS,JAUSIØJØ
+	J Y S	>	-JYS,JAUSIESIEMS
+	J Y S	>	-JYS,JAUSIUOSIUS
+	J Y S	>	-JYS,JAUSIAISIAIS
+	J Y S	>	-JYS,JAUSIUOSIUOSE
+
+# mot. g.
+	J Y S	>	-JYS,JAUSIOJI	
+	J Y S	>	-JYS,JAUSIOSIOS
+	J Y S	>	-JYS,JAUSIAJAI
+	J Y S	>	-JYS,JAUSIÀJÀ
+	J Y S	>	-JYS,JAUSIÀJA
+	J Y S	>	-JYS,JAUSIOJOJ
+	J Y S	>	-JYS,JAUSIOJOJE
+
+	J Y S	>	-JYS,JAUSIØJØ	
+	J Y S	>	-JYS,JAUSIOSIOMS
+	J Y S	>	-JYS,JAUSIÀSIAS
+	J Y S	>	-JYS,JAUSIOSIOMIS
+	J Y S	>	-JYS,JAUSIOSIOSE
+
+
+	J A S	>	-JAS,JAUSIO
+	J A S	>	-JAS,JAUSIAM
+	J A S	>	-JAS,JAUSIÀ
+	J A S	>	-JAS,JAUSIU
+	J A S	>	-JAS,JAUSIAME
+
+	J A S	>	-JAS,JAUSI
+	J A S	>	-JAS,JAUSIØ
+	J A S	>	-JAS,JAUSIEMS
+	J A S	>	-JAS,JAUSIUS
+	J A S	>	-JAS,JAUSIAIS
+	J A S	>	-JAS,JAUSIUOSE
+
+	J A S	>	-JAS,JAUSIA
+	J A S	>	-JAS,JAUSIOS
+	J A S	>	-JAS,JAUSIAI
+	J A S	>	-JAS,JAUSIÀ
+	J A S	>	-JAS,JAUSIA
+	J A S	>	-JAS,JAUSIOJE
+
+	J A S	>	-JAS,JAUSIOS
+	J A S	>	-JAS,JAUSIOMS
+	J A S	>	-JAS,JAUSIAS
+	J A S	>	-JAS,JAUSIOMIS
+	J A S	>	-JAS,JAUSIOSE
+
+# ávardþiuotinës to paties formos
+
+	J A S	>	-JAS,JAUSIASIS	
+	J A S	>	-JAS,JAUSIOJO
+	J A S	>	-JAS,JAUSIAJAM
+	J A S	>	-JAS,JAUSIÀJÁ
+	J A S	>	-JAS,JAUSIUOJU
+	J A S	>	-JAS,JAUSIAJAME
+
+
+	J A S	>	-JAS,JAUSIEJI	
+	J A S	>	-JAS,JAUSIØJØ
+	J A S	>	-JAS,JAUSIESIEMS
+	J A S	>	-JAS,JAUSIUOSIUS
+	J A S	>	-JAS,JAUSIAISIAIS
+	J A S	>	-JAS,JAUSIUOSIUOSE
+
+# mot. g.
+	J A S	>	-JAS,JAUSIOJI	
+	J A S	>	-JAS,JAUSIOSIOS
+	J A S	>	-JAS,JAUSIAJAI
+	J A S	>	-JAS,JAUSIÀJÀ
+	J A S	>	-JAS,JAUSIÀJA
+	J A S	>	-JAS,JAUSIOJOJ
+	J A S	>	-JAS,JAUSIOJOJE
+
+	J A S	>	-JAS,JAUSIØJØ	
+	J A S	>	-JAS,JAUSIOSIOMS
+	J A S	>	-JAS,JAUSIÀSIAS
+	J A S	>	-JAS,JAUSIOSIOMIS
+	J A S	>	-JAS,JAUSIOSIOSE
+
+
+	J U S	>	-JUS,JAUSIO
+	J U S	>	-JUS,JAUSIAM
+	J U S	>	-JUS,JAUSIÀ
+	J U S	>	-JUS,JAUSIU
+	J U S	>	-JUS,JAUSIAME
+
+	J U S	>	-JUS,JAUSI
+	J U S	>	-JUS,JAUSIØ
+	J U S	>	-JUS,JAUSIEMS
+	J U S	>	-JUS,JAUSIUS
+	J U S	>	-JUS,JAUSIAIS
+	J U S	>	-JUS,JAUSIUOSE
+
+	J U S	>	-JUS,JAUSIA
+	J U S	>	-JUS,JAUSIOS
+	J U S	>	-JUS,JAUSIAI
+	J U S	>	-JUS,JAUSIÀ
+	J U S	>	-JUS,JAUSIA
+	J U S	>	-JUS,JAUSIOJE
+
+	J U S	>	-JUS,JAUSIOS
+	J U S	>	-JUS,JAUSIOMS
+	J U S	>	-JUS,JAUSIAS
+	J U S	>	-JUS,JAUSIOMIS
+	J U S	>	-JUS,JAUSIOSE
+
+# ávardþiuotinës to paties formos
+
+	J U S	>	-JUS,JAUSIASIS	
+	J U S	>	-JUS,JAUSIOJO
+	J U S	>	-JUS,JAUSIAJAM
+	J U S	>	-JUS,JAUSIÀJÁ
+	J U S	>	-JUS,JAUSIUOJU
+	J U S	>	-JUS,JAUSIAJAME
+
+
+	J U S	>	-JUS,JAUSIEJI	
+	J U S	>	-JUS,JAUSIØJØ
+	J U S	>	-JUS,JAUSIESIEMS
+	J U S	>	-JUS,JAUSIUOSIUS
+	J U S	>	-JUS,JAUSIAISIAIS
+	J U S	>	-JUS,JAUSIUOSIUOSE
+
+# mot. g.
+	J U S	>	-JUS,JAUSIOJI	
+	J U S	>	-JUS,JAUSIOSIOS
+	J U S	>	-JUS,JAUSIAJAI
+	J U S	>	-JUS,JAUSIÀJÀ
+	J U S	>	-JUS,JAUSIÀJA
+	J U S	>	-JUS,JAUSIOJOJ
+	J U S	>	-JUS,JAUSIOJOJE
+
+	J U S	>	-JUS,JAUSIØJØ	
+	J U S	>	-JUS,JAUSIOSIOMS
+	J U S	>	-JUS,JAUSIÀSIAS
+	J U S	>	-JUS,JAUSIOSIOMIS
+	J U S	>	-JUS,JAUSIOSIOSE
+
+
+	T I S	>	-TIS,ÈIAUSIO
+	T I S	>	-TIS,ÈIAUSIAM
+	T I S	>	-TIS,ÈIAUSIÀ
+	T I S	>	-TIS,ÈIAUSIU
+	T I S	>	-TIS,ÈIAUSIAME
+
+	T I S	>	-TIS,ÈIAUSI
+	T I S	>	-TIS,ÈIAUSIØ
+	T I S	>	-TIS,ÈIAUSIEMS
+	T I S	>	-TIS,ÈIAUSIUS
+	T I S	>	-TIS,ÈIAUSIAIS
+	T I S	>	-TIS,ÈIAUSIUOSE
+
+	T I S	>	-TIS,ÈIAUSIA
+	T I S	>	-TIS,ÈIAUSIOS
+	T I S	>	-TIS,ÈIAUSIAI
+	T I S	>	-TIS,ÈIAUSIÀ
+	T I S	>	-TIS,ÈIAUSIA
+	T I S	>	-TIS,ÈIAUSIOJE
+
+	T I S	>	-TIS,ÈIAUSIOS
+	T I S	>	-TIS,ÈIAUSIOMS
+	T I S	>	-TIS,ÈIAUSIAS
+	T I S	>	-TIS,ÈIAUSIOMIS
+	T I S	>	-TIS,ÈIAUSIOSE
+
+# ávardþiuotinës to paties formos
+
+	T I S	>	-TIS,ÈIAUSIASIS	
+	T I S	>	-TIS,ÈIAUSIOJO
+	T I S	>	-TIS,ÈIAUSIAJAM
+	T I S	>	-TIS,ÈIAUSIÀJÁ
+	T I S	>	-TIS,ÈIAUSIUOJU
+	T I S	>	-TIS,ÈIAUSIAJAME
+
+
+	T I S	>	-TIS,ÈIAUSIEJI	
+	T I S	>	-TIS,ÈIAUSIØJØ
+	T I S	>	-TIS,ÈIAUSIESIEMS
+	T I S	>	-TIS,ÈIAUSIUOSIUS
+	T I S	>	-TIS,ÈIAUSIAISIAIS
+	T I S	>	-TIS,ÈIAUSIUOSIUOSE
+
+# mot. g.
+	T I S	>	-TIS,ÈIAUSIOJI	
+	T I S	>	-TIS,ÈIAUSIOSIOS
+	T I S	>	-TIS,ÈIAUSIAJAI
+	T I S	>	-TIS,ÈIAUSIÀJÀ
+	T I S	>	-TIS,ÈIAUSIÀJA
+	T I S	>	-TIS,ÈIAUSIOJOJ
+	T I S	>	-TIS,ÈIAUSIOJOJE
+
+	T I S	>	-TIS,ÈIAUSIØJØ	
+	T I S	>	-TIS,ÈIAUSIOSIOMS
+	T I S	>	-TIS,ÈIAUSIÀSIAS
+	T I S	>	-TIS,ÈIAUSIOSIOMIS
+	T I S	>	-TIS,ÈIAUSIOSIOSE
+
+
+	T Y S	>	-TYS,ÈIAUSIO
+	T Y S	>	-TYS,ÈIAUSIAM
+	T Y S	>	-TYS,ÈIAUSIÀ
+	T Y S	>	-TYS,ÈIAUSIU
+	T Y S	>	-TYS,ÈIAUSIAME
+
+	T Y S	>	-TYS,ÈIAUSI
+	T Y S	>	-TYS,ÈIAUSIØ
+	T Y S	>	-TYS,ÈIAUSIEMS
+	T Y S	>	-TYS,ÈIAUSIUS
+	T Y S	>	-TYS,ÈIAUSIAIS
+	T Y S	>	-TYS,ÈIAUSIUOSE
+
+	T Y S	>	-TYS,ÈIAUSIA
+	T Y S	>	-TYS,ÈIAUSIOS
+	T Y S	>	-TYS,ÈIAUSIAI
+	T Y S	>	-TYS,ÈIAUSIÀ
+	T Y S	>	-TYS,ÈIAUSIA
+	T Y S	>	-TYS,ÈIAUSIOJE
+
+	T Y S	>	-TYS,ÈIAUSIOS
+	T Y S	>	-TYS,ÈIAUSIOMS
+	T Y S	>	-TYS,ÈIAUSIAS
+	T Y S	>	-TYS,ÈIAUSIOMIS
+	T Y S	>	-TYS,ÈIAUSIOSE
+
+# ávardþiuotinës to paties formos
+
+	T Y S	>	-TYS,ÈIAUSIASIS	
+	T Y S	>	-TYS,ÈIAUSIOJO
+	T Y S	>	-TYS,ÈIAUSIAJAM
+	T Y S	>	-TYS,ÈIAUSIÀJÁ
+	T Y S	>	-TYS,ÈIAUSIUOJU
+	T Y S	>	-TYS,ÈIAUSIAJAME
+
+
+	T Y S	>	-TYS,ÈIAUSIEJI	
+	T Y S	>	-TYS,ÈIAUSIØJØ
+	T Y S	>	-TYS,ÈIAUSIESIEMS
+	T Y S	>	-TYS,ÈIAUSIUOSIUS
+	T Y S	>	-TYS,ÈIAUSIAISIAIS
+	T Y S	>	-TYS,ÈIAUSIUOSIUOSE
+
+# mot. g.
+	T Y S	>	-TYS,ÈIAUSIOJI	
+	T Y S	>	-TYS,ÈIAUSIOSIOS
+	T Y S	>	-TYS,ÈIAUSIAJAI
+	T Y S	>	-TYS,ÈIAUSIÀJÀ
+	T Y S	>	-TYS,ÈIAUSIÀJA
+	T Y S	>	-TYS,ÈIAUSIOJOJ
+	T Y S	>	-TYS,ÈIAUSIOJOJE
+
+	T Y S	>	-TYS,ÈIAUSIØJØ	
+	T Y S	>	-TYS,ÈIAUSIOSIOMS
+	T Y S	>	-TYS,ÈIAUSIÀSIAS
+	T Y S	>	-TYS,ÈIAUSIOSIOMIS
+	T Y S	>	-TYS,ÈIAUSIOSIOSE
+
+
+	T A S	>	-TAS,ÈIAUSIO
+	T A S	>	-TAS,ÈIAUSIAM
+	T A S	>	-TAS,ÈIAUSIÀ
+	T A S	>	-TAS,ÈIAUSIU
+	T A S	>	-TAS,ÈIAUSIAME
+
+	T A S	>	-TAS,ÈIAUSI
+	T A S	>	-TAS,ÈIAUSIØ
+	T A S	>	-TAS,ÈIAUSIEMS
+	T A S	>	-TAS,ÈIAUSIUS
+	T A S	>	-TAS,ÈIAUSIAIS
+	T A S	>	-TAS,ÈIAUSIUOSE
+
+	T A S	>	-TAS,ÈIAUSIA
+	T A S	>	-TAS,ÈIAUSIOS
+	T A S	>	-TAS,ÈIAUSIAI
+	T A S	>	-TAS,ÈIAUSIÀ
+	T A S	>	-TAS,ÈIAUSIA
+	T A S	>	-TAS,ÈIAUSIOJE
+
+	T A S	>	-TAS,ÈIAUSIOS
+	T A S	>	-TAS,ÈIAUSIOMS
+	T A S	>	-TAS,ÈIAUSIAS
+	T A S	>	-TAS,ÈIAUSIOMIS
+	T A S	>	-TAS,ÈIAUSIOSE
+
+# ávardþiuotinës to paties formos
+
+	T A S	>	-TAS,ÈIAUSIASIS	
+	T A S	>	-TAS,ÈIAUSIOJO
+	T A S	>	-TAS,ÈIAUSIAJAM
+	T A S	>	-TAS,ÈIAUSIÀJÁ
+	T A S	>	-TAS,ÈIAUSIUOJU
+	T A S	>	-TAS,ÈIAUSIAJAME
+
+
+	T A S	>	-TAS,ÈIAUSIEJI	
+	T A S	>	-TAS,ÈIAUSIØJØ
+	T A S	>	-TAS,ÈIAUSIESIEMS
+	T A S	>	-TAS,ÈIAUSIUOSIUS
+	T A S	>	-TAS,ÈIAUSIAISIAIS
+	T A S	>	-TAS,ÈIAUSIUOSIUOSE
+
+# mot. g.
+	T A S	>	-TAS,ÈIAUSIOJI	
+	T A S	>	-TAS,ÈIAUSIOSIOS
+	T A S	>	-TAS,ÈIAUSIAJAI
+	T A S	>	-TAS,ÈIAUSIÀJÀ
+	T A S	>	-TAS,ÈIAUSIÀJA
+	T A S	>	-TAS,ÈIAUSIOJOJ
+	T A S	>	-TAS,ÈIAUSIOJOJE
+
+	T A S	>	-TAS,ÈIAUSIØJØ	
+	T A S	>	-TAS,ÈIAUSIOSIOMS
+	T A S	>	-TAS,ÈIAUSIÀSIAS
+	T A S	>	-TAS,ÈIAUSIOSIOMIS
+	T A S	>	-TAS,ÈIAUSIOSIOSE
+
+
+	T U S	>	-TUS,ÈIAUSIO
+	T U S	>	-TUS,ÈIAUSIAM
+	T U S	>	-TUS,ÈIAUSIÀ
+	T U S	>	-TUS,ÈIAUSIU
+	T U S	>	-TUS,ÈIAUSIAME
+
+	T U S	>	-TUS,ÈIAUSI
+	T U S	>	-TUS,ÈIAUSIØ
+	T U S	>	-TUS,ÈIAUSIEMS
+	T U S	>	-TUS,ÈIAUSIUS
+	T U S	>	-TUS,ÈIAUSIAIS
+	T U S	>	-TUS,ÈIAUSIUOSE
+
+	T U S	>	-TUS,ÈIAUSIA
+	T U S	>	-TUS,ÈIAUSIOS
+	T U S	>	-TUS,ÈIAUSIAI
+	T U S	>	-TUS,ÈIAUSIÀ
+	T U S	>	-TUS,ÈIAUSIA
+	T U S	>	-TUS,ÈIAUSIOJE
+
+	T U S	>	-TUS,ÈIAUSIOS
+	T U S	>	-TUS,ÈIAUSIOMS
+	T U S	>	-TUS,ÈIAUSIAS
+	T U S	>	-TUS,ÈIAUSIOMIS
+	T U S	>	-TUS,ÈIAUSIOSE
+
+# ávardþiuotinës to paties formos
+
+	T U S	>	-TUS,ÈIAUSIASIS	
+	T U S	>	-TUS,ÈIAUSIOJO
+	T U S	>	-TUS,ÈIAUSIAJAM
+	T U S	>	-TUS,ÈIAUSIÀJÁ
+	T U S	>	-TUS,ÈIAUSIUOJU
+	T U S	>	-TUS,ÈIAUSIAJAME
+
+
+	T U S	>	-TUS,ÈIAUSIEJI	
+	T U S	>	-TUS,ÈIAUSIØJØ
+	T U S	>	-TUS,ÈIAUSIESIEMS
+	T U S	>	-TUS,ÈIAUSIUOSIUS
+	T U S	>	-TUS,ÈIAUSIAISIAIS
+	T U S	>	-TUS,ÈIAUSIUOSIUOSE
+
+# mot. g.
+	T U S	>	-TUS,ÈIAUSIOJI	
+	T U S	>	-TUS,ÈIAUSIOSIOS
+	T U S	>	-TUS,ÈIAUSIAJAI
+	T U S	>	-TUS,ÈIAUSIÀJÀ
+	T U S	>	-TUS,ÈIAUSIÀJA
+	T U S	>	-TUS,ÈIAUSIOJOJ
+	T U S	>	-TUS,ÈIAUSIOJOJE
+
+	T U S	>	-TUS,ÈIAUSIØJØ	
+	T U S	>	-TUS,ÈIAUSIOSIOMS
+	T U S	>	-TUS,ÈIAUSIÀSIAS
+	T U S	>	-TUS,ÈIAUSIOSIOMIS
+	T U S	>	-TUS,ÈIAUSIOSIOSE
+
+	I A S	>	-IAS,IAUSIO
+	I A S	>	-IAS,IAUSIAM
+	I A S	>	-IAS,IAUSIÀ
+	I A S	>	-IAS,IAUSIU
+	I A S	>	-IAS,IAUSIAME
+
+	I A S	>	-IAS,IAUSI
+	I A S	>	-IAS,IAUSIØ
+	I A S	>	-IAS,IAUSIEMS
+	I A S	>	-IAS,IAUSIUS
+	I A S	>	-IAS,IAUSIAIS
+	I A S	>	-IAS,IAUSIUOSE
+
+	I A S	>	-IAS,IAUSIA
+	I A S	>	-IAS,IAUSIOS
+	I A S	>	-IAS,IAUSIAI
+	I A S	>	-IAS,IAUSIÀ
+	I A S	>	-IAS,IAUSIA
+	I A S	>	-IAS,IAUSIOJE
+
+	I A S	>	-IAS,IAUSIOS
+	I A S	>	-IAS,IAUSIOMS
+	I A S	>	-IAS,IAUSIAS
+	I A S	>	-IAS,IAUSIOMIS
+	I A S	>	-IAS,IAUSIOSE
+
+# ávardþiuotinës to paties formos
+
+	I A S	>	-IAS,IAUSIASIS	
+	I A S	>	-IAS,IAUSIOJO
+	I A S	>	-IAS,IAUSIAJAM
+	I A S	>	-IAS,IAUSIÀJÁ
+	I A S	>	-IAS,IAUSIUOJU
+	I A S	>	-IAS,IAUSIAJAME
+
+
+	I A S	>	-IAS,IAUSIEJI	
+	I A S	>	-IAS,IAUSIØJØ
+	I A S	>	-IAS,IAUSIESIEMS
+	I A S	>	-IAS,IAUSIUOSIUS
+	I A S	>	-IAS,IAUSIAISIAIS
+	I A S	>	-IAS,IAUSIUOSIUOSE
+
+# mot. g.
+	I A S	>	-IAS,IAUSIOJI	
+	I A S	>	-IAS,IAUSIOSIOS
+	I A S	>	-IAS,IAUSIAJAI
+	I A S	>	-IAS,IAUSIÀJÀ
+	I A S	>	-IAS,IAUSIÀJA
+	I A S	>	-IAS,IAUSIOJOJ
+	I A S	>	-IAS,IAUSIOJOJE
+
+	I A S	>	-IAS,IAUSIØJØ	
+	I A S	>	-IAS,IAUSIOSIOMS
+	I A S	>	-IAS,IAUSIÀSIAS
+	I A S	>	-IAS,IAUSIOSIOMIS
+	I A S	>	-IAS,IAUSIOSIOSE
+
+
+
+###########################################################################
+# Prieveiksmiai su galûne -(i)ai, -iau, -iausiai
+#
+	A S		>	-AS,AI		# geras > gerai; þalias > þaliai
+	[^J] U S		>	-US,IAI		# mandagus > mandagiai
+	J U S		>	-US,AI		# rajus > rajai
+	[^DTJ] I S	>	-IS,IAI		# didelis > dideliai
+	D I S		>	-DIS,DÞIAI	# didis > didþiai
+	T I S		>	-TIS,ÈIAI	
+	J I S		>	-JIS,JAI
+	Y S		>	-YS,IAI
+
+	[^DTIJ] A S	>	-AS,IAU		# geras > geriau; þalias > þaliau
+	T A S		>	-TAS,ÈIAU	# greitas > greièiau
+	D A S		>	-DAS,DÞIAU	
+	[IJ] A S		>	-AS,AU
+
+	[^DTJ] U S	>	-US,IAU		# mandagus > mandagiau
+	D U S		>	-DUS,DÞIAU	# saldus > saldþiau
+	T U S		>	-TUS,ÈIAU	# platus > plaèiau
+	J U S		>	-JUS,JAU
+	[^DTJ] I S	>	-IS,IAU		# didelis > dideliau
+	D I S		>	-DIS,DÞIAU	# didis > didþiau
+	T I S		>	-TIS,ÈIAU	
+	Y S		>	-YS,IAU
+	J I S		>	-JIS,JAU
+
+	[^DTJ] U S	>	-US,IAUSIAI	# mandagus > mandagiausiai
+	D U S		>	-DUS,DÞIAUSIAI	# saldus > saldþiausiai
+	T U S		>	-TUS,ÈIAUSIAI	# platus > plaèiausiai
+	J U S		>	-JUS,JAUSIAI
+	[^DTJ] I S	>	-IS,IAUSIAI	# didelis > dideliausiai
+	D I S		>	-DIS,DÞIAUSIAI	# didis > didþiausiai
+	T I S		>	-TIS,ÈIAUSIAI	
+	J I S		>	-JIS,JAUSIAI
+	Y S		>	-YS,IAUSIAI
+
+###########################################################################
+# Bevardës giminës formos
+#
+
+	A S	>	-AS,A	# geras > gera; þalias > þalia
+	U S	>	-US,U	# mandagus > mandagu
+# o ið -is ir negalima paradyti bevardës giminës...
+
+###########################################################################
+# Daiktavardþiai su -umas
+#
+#  Èia man ypaè patinka daugiskaitos... Bet negi drausi þmonëms 
+#  naudoti tokiø dalykø daugiskaità... Tegu sau... Að ne koks 
+#  faðistas-filologas.  
+
+	[^I] A S	> -AS,UMAS	# beprasmiðkas > beprasmiðkumas
+	[^I] A S	> -AS,UMO	# naujas > naujumo
+	[^I] A S	> -AS,UMUI	# naujas > naujumui
+	[^I] A S	> -AS,UMÀ	# naujas > naujumà
+	[^I] A S	> -AS,UMU	# naujas > naujumas
+	[^I] A S	> -AS,UME	# naujas > naujume
+
+	[^I] A S	> -AS,UMAI	# naujas > naujumai
+	[^I] A S	> -AS,UMØ	# naujas > naujumø
+	[^I] A S	> -AS,UMAMS	# naujas > naujumams
+	[^I] A S	> -AS,UMUS	# naujas > naujumus
+	[^I] A S	> -AS,UMAIS	# naujas > naujumais
+	[^I] A S	> -AS,UMUOSE	# naujas > naujumuose
+
+	U S	> -US,UMAS	# sunkus > sunkumas
+	U S	> -US,UMO	# 
+	U S	> -US,UMUI	# 
+	U S	> -US,UMÀ	# 
+	U S	> -US,UMU	# 
+	U S	> -US,UME	# 
+
+	U S	> -US,UMAI	# 
+	U S	> -US,UMØ	# 
+	U S	> -US,UMAMS	# 
+	U S	> -US,UMUS	# 
+	U S	> -US,UMAIS	# 
+	U S	> -US,UMUOSE	# 
+
+
+# Hm... ¥Þaliumas´ ar ¥þalumas´? Gal ¥þalumas´...
+
+	[^ÈÞ] I A S	> -IAS,UMAS	# þalias > þalumas
+	[^ÈÞ] I A S	> -IAS,UMO	# þalias > þalumo
+	[^ÈÞ] I A S	> -IAS,UMUI	# þalias > þalumui
+	[^ÈÞ] I A S	> -IAS,UMÀ	# þalias > þalumà
+	[^ÈÞ] I A S	> -IAS,UMU	# þalias > þalumas
+	[^ÈÞ] I A S	> -IAS,UME	# þalias > þalume
+
+	[^ÈÞ] I A S	> -IAS,UMAI	# þalias > þalumai
+	[^ÈÞ] I A S	> -IAS,UMØ	# þalias > þalumø
+	[^ÈÞ] I A S	> -IAS,UMAMS	# þalias > þalumams
+	[^ÈÞ] I A S	> -IAS,UMUS	# þalias > þalumus
+	[^ÈÞ] I A S	> -IAS,UMAIS	# þalias > þalumais
+	[^ÈÞ] I A S	> -IAS,UMUOSE	# þalias > þalumuose
+
+	È I A S	> -ÈIAS,TUMAS	# pësèias > pëstumas
+	È I A S	> -ÈIAS,TUMO	# pësèias > pëstumo
+	È I A S	> -ÈIAS,TUMUI	# pësèias > pëstumui
+	È I A S	> -ÈIAS,TUMÀ	# pësèias > pëstumà
+	È I A S	> -ÈIAS,TUMU	# pësèias > pëstumas
+	È I A S	> -ÈIAS,TUME	# pësèias > pëstume
+
+	È I A S	> -ÈIAS,TUMAI	# pësèias > pëstumai
+	È I A S	> -ÈIAS,TUMØ	# pësèias > pëstumø
+	È I A S	> -ÈIAS,TUMAMS	# pësèias > pëstumams
+	È I A S	> -ÈIAS,TUMUS	# pësèias > pëstumus
+	È I A S	> -ÈIAS,TUMAIS	# pësèias > pëstumais
+	È I A S	> -ÈIAS,TUMUOSE	# pësèias > pëstumuose
+
+	D Þ I A S	> -DÞIAS,DUMAS		# bergþdþias > bergþdumas
+	D Þ I A S	> -DÞIAS,DUMO		# bergþdþias > bergþdumo
+	D Þ I A S	> -DÞIAS,DUMUI		# bergþdþias > bergþdumui
+	D Þ I A S	> -DÞIAS,DUMÀ		# bergþdþias > bergþdumà
+	D Þ I A S	> -DÞIAS,DUMU		# bergþdþias > bergþdumas
+	D Þ I A S	> -DÞIAS,DUME		# bergþdþias > bergþdume
+
+	D Þ I A S	> -DÞIAS,DUMAI		# bergþdþias > bergþdumai
+	D Þ I A S	> -DÞIAS,DUMØ		# bergþdþias > bergþdumø
+	D Þ I A S	> -DÞIAS,DUMAMS		# bergþdþias > bergþdumams
+	D Þ I A S	> -DÞIAS,DUMUS		# bergþdþias > bergþdumus
+	D Þ I A S	> -DÞIAS,DUMAIS		# bergþdþias > bergþdumais
+	D Þ I A S	> -DÞIAS,DUMUOSE	# bergþdþias > bergþdumuose
+
+################################################################################
+# Vediniai su -okas
+#
+
+	[^I] A S	>	-AS,OKAI	# geras > gerokai
+
+	[^I] A S	>	-AS,OKAS	# geras > gerokas
+ 	[^I] A S	>	-AS,OKO		
+	[^I] A S	>	-AS,OKAM
+	[^I] A S	>	-AS,OKÀ
+	[^I] A S	>	-AS,OKU
+	[^I] A S	>	-AS,OKAME
+
+	[^I] A S	>	-AS,OKI
+	[^I] A S	>	-AS,OKØ
+	[^I] A S	>	-AS,OKIEMS
+	[^I] A S	>	-AS,OKUS
+	[^I] A S	>	-AS,OKAIS
+	[^I] A S	>	-AS,OKUOSE
+
+	[^I] A S	>	-AS,OKA		# geras > geroka
+	[^I] A S	>	-AS,OKOS
+	[^I] A S	>	-AS,OKAI
+	[^I] A S	>	-AS,OKÀ
+	[^I] A S	>	-AS,OKOJE
+
+	[^I] A S	>	-AS,OKOMS
+	[^I] A S	>	-AS,OKOMIS
+	[^I] A S	>	-AS,OKOSE
+
+	[^ÈÞ] I A S	>	-IAS,OKAI	# þalias > þalokai
+
+	[^ÈÞ] I A S	>	-IAS,OKAS	# þalias > þalokas
+ 	[^ÈÞ] I A S	>	-IAS,OKO		
+	[^ÈÞ] I A S	>	-IAS,OKAM
+	[^ÈÞ] I A S	>	-IAS,OKÀ
+	[^ÈÞ] I A S	>	-IAS,OKU
+	[^ÈÞ] I A S	>	-IAS,OKAME
+
+	[^ÈÞ] I A S	>	-IAS,OKI
+	[^ÈÞ] I A S	>	-IAS,OKØ
+	[^ÈÞ] I A S	>	-IAS,OKIEMS
+	[^ÈÞ] I A S	>	-IAS,OKUS
+	[^ÈÞ] I A S	>	-IAS,OKAIS
+	[^ÈÞ] I A S	>	-IAS,OKUOSE
+
+	[^ÈÞ] I A S	>	-IAS,OKA		# þalias > þaloka
+	[^ÈÞ] I A S	>	-IAS,OKOS
+	[^ÈÞ] I A S	>	-IAS,OKAI
+	[^ÈÞ] I A S	>	-IAS,OKÀ
+	[^ÈÞ] I A S	>	-IAS,OKOJE
+
+	[^ÈÞ] I A S	>	-IAS,OKOMS
+	[^ÈÞ] I A S	>	-IAS,OKOMIS
+	[^ÈÞ] I A S	>	-IAS,OKOSE
+
+
+	È I A S	>	-ÈIAS,TOKAI	# staèias > statokai
+	È I A S	>	-ÈIAS,TOKAS	# staèias > statokas
+ 	È I A S	>	-ÈIAS,TOKO		
+	È I A S	>	-ÈIAS,TOKAM
+	È I A S	>	-ÈIAS,TOKÀ
+	È I A S	>	-ÈIAS,TOKU
+	È I A S	>	-ÈIAS,TOKAME
+
+	È I A S	>	-ÈIAS,TOKI
+	È I A S	>	-ÈIAS,TOKØ
+	È I A S	>	-ÈIAS,TOKIEMS
+	È I A S	>	-ÈIAS,TOKUS
+	È I A S	>	-ÈIAS,TOKAIS
+	È I A S	>	-ÈIAS,TOKUOSE
+
+	È I A S	>	-ÈIAS,TOKA		# staèias > statoka
+	È I A S	>	-ÈIAS,TOKOS
+	È I A S	>	-ÈIAS,TOKAI
+	È I A S	>	-ÈIAS,TOKÀ
+	È I A S	>	-ÈIAS,TOKOJE
+
+	È I A S	>	-ÈIAS,TOKOMS
+	È I A S	>	-ÈIAS,TOKOMIS
+	È I A S	>	-ÈIAS,TOKOSE
+
+
+	D Þ I A S	>	-DÞIAS,DOKAI	# bergþdþias > bergþdokai
+
+	D Þ I A S	>	-DÞIAS,DOKAS	# bergþdþias > bergþdokas
+ 	D Þ I A S	>	-DÞIAS,DOKO		
+	D Þ I A S	>	-DÞIAS,DOKAM
+	D Þ I A S	>	-DÞIAS,DOKÀ
+	D Þ I A S	>	-DÞIAS,DOKU
+	D Þ I A S	>	-DÞIAS,DOKAME
+
+	D Þ I A S	>	-DÞIAS,DOKI
+	D Þ I A S	>	-DÞIAS,DOKØ
+	D Þ I A S	>	-DÞIAS,DOKIEMS
+	D Þ I A S	>	-DÞIAS,DOKUS
+	D Þ I A S	>	-DÞIAS,DOKAIS
+	D Þ I A S	>	-DÞIAS,DOKUOSE
+
+	D Þ I A S	>	-DÞIAS,DOKA	
+	D Þ I A S	>	-DÞIAS,DOKOS
+	D Þ I A S	>	-DÞIAS,DOKAI
+	D Þ I A S	>	-DÞIAS,DOKÀ
+	D Þ I A S	>	-DÞIAS,DOKOJE
+
+	D Þ I A S	>	-DÞIAS,DOKOMS
+	D Þ I A S	>	-DÞIAS,DOKOMIS
+	D Þ I A S	>	-DÞIAS,DOKOSE
+
+
+########################################################################
+#			     Skaitvardis
+########################################################################
+
+			#######################
+			#######################
+
+				flag *H:
+
+			#######################
+			#######################
+
+# keturi...devyni
+# penkeri...devyneri
+
+	I	>	-I,IOS
+	I	>	-I,IØ
+	I	>	-I,IEMS
+	I	>	-I,IOMS
+	I	>	-I,IS
+	I	>	-I,IAS
+	I	>	-I,IAIS
+	I	>	-I,IOMIS
+	I	>	-I,IUOSE
+	I	>	-I,IOSE
+
+# deðimt...devyniasdeðimt
+
+	M T	>	IES
+	M T	>	-T,ÈIAI
+	M T	>	Á
+	M T	>	IMI
+	M T	>	YJE
+
+	M T	>	YS
+	M T	>	-T,ÈIØ
+	M T	>	IMS
+	M T	>	IS
+	M T	>	IMIS
+	M T	>	YSE
+
+# vienuolika...devyniolika
+
+	L I K A	>	-A,OS
+	L I K A	>	-A,AI
+	L I K A	>	-A,OJE
+
+# pirmas, antras, treèias, ...  paskelbti kokybiniais bûdvardþiais,
+# ko pasekoje sutaupom keliolika eiluèiø ðitam faile, kaþkiek
+# atminties ir disko vietos, bet uþtat gaunam keletà keistø, bet
+# nekenksmingø formø ;-)
+
+	 A S	>	-AS,O
+	 A S	>	-AS,AM
+	 A S	>	-AS,À
+	 A S	>	-AS,U
+	 A S	>	-AS,AME
+
+	 A S	>	-AS,I
+	 A S	>	-AS,Ø
+	 A S	>	-AS,IEMS
+	 A S	>	-AS,US
+	 A S	>	-AS,AIS
+	 A S	>	-AS,UOSE
+
+	 A S	>	-AS,A
+	 A S	>	-AS,OS
+	 A S	>	-AS,AI
+	 A S	>	-AS,À
+	 A S	>	-AS,OJE
+	 A S	>	-AS,OJ
+
+	 A S	>	-AS,OMS
+	 A S	>	-AS,OMIS
+	 A S	>	-AS,OSE
+
+#######################################################################
+# 1 paradigma  (geras)
+# 2 paradigma  (naujas, þalias)
+	A S	>	-AS,ASIS	# geras > gerasis
+	A S	>	-AS,OJO
+	A S	>	-AS,AJAM
+	A S	>	-AS,ÀJÁ
+	A S	>	-AS,UOJU
+	A S	>	-AS,AJAME
+# vyr. g. daugiskaita vienoda visoms paradigmoms (¥i´ moduliu :)
+	A S	>	-AS,IEJI	# geras > gerieji
+	A S	>	-AS,ØJØ
+	A S	>	-AS,IESIEMS
+	A S	>	-AS,UOSIUS
+	A S	>	-AS,AISIAIS
+	A S	>	-AS,UOSIUOSE
+# moteriðka giminë irgi vienoda ¥i´ moduliu
+###########################################################
+	A S	>	-AS,OJI		# geras > geroji
+	A S	>	-AS,OSIOS
+	A S	>	-AS,AJAI
+	A S	>	-AS,ÀJÀ
+	A S	>	-AS,ÀJA
+	A S	>	-AS,OJOJ
+	A S	>	-AS,OJOJE
+	A S	>	-AS,ØJØ		# geras > gerøjø
+	A S	>	-AS,OSIOMS
+	A S	>	-AS,ÀSIAS
+	A S	>	-AS,OSIOMIS
+	A S	>	-AS,OSIOSE
+	A S	>	-AS,IAUSIA
+
+
+########################################################################
+#			     Ávardis
+########################################################################
+
+			#######################
+			#######################
+
+				flag *C:
+
+			#######################
+			#######################
+			
+# 1 paradigma
+# tas, ðitas, anas, katras, kas
+ 
+ 	A S		>	-AS,O
+ 	A S		>	-AS,AM
+ 	A S		>	-AS,À
+ 	A S		>	-AS,UO
+ 	A S		>	-AS,AME
+ 
+ 	A S		>	-AS,IE
+ 	A S		>	-AS,Ø
+ 	A S		>	-AS,IEMS
+ 	A S		>	-AS,UOS
+ 	A S		>	-AS,AIS
+ 	A S		>	-AS,UOSE
+ 
+
+# 2 paradigma
+# kitas, visas, vienas, kiekvienas, tûlas, tam tikras, manas, tavas, savas
+# sutampa su bûdvardþiu
+# 
+# 	A S		>	-AS,O
+# 	A S		>	-AS,AM
+# 	A S		>	-AS,À
+# 	A S		>	-AS,U
+# 	A S		>	-AS,AME
+# 
+# 	A S		>	-AS,I
+# 	A S		>	-AS,Ø
+# 	A S		>	-AS,IEMS
+# 	A S		>	-AS,US
+# 	A S		>	-AS,AIS
+# 	A S		>	-AS,UOSE
+# 
+
+# 3 paradigma
+# toks, ðioks, anoks, koks ir t.t.
+
+	K S		>	-S,IO
+	K S		>	-S,IAM
+	K S		>	-S,Á
+	K S		>	-S,IU
+	K S		>	-S,IAME
+
+	K S		>	-S,IE
+	K S		>	-S,IØ
+	K S		>	-S,IEMS
+	K S		>	-S,IUS
+	K S		>	-S,IAIS
+	K S		>	-S,IUOSE
+
+# 4 paradigma
+# (jis), ðis, kuris
+
+	[^J] I S	>	-IS,IO
+	[^J] I S	>	-IS,IAM
+	[^J] I S	>	-IS,Á
+	[^J] I S	>	-IS,IUO
+	[^J] I S	>	-IS,IAME
+
+	[^J] I S	>	-IS,IE
+	[^J] I S	>	-IS,IØ
+	[^J] I S	>	-IS,IEMS
+	[^J] I S	>	-IS,IUOS
+	[^J] I S	>	-IS,IAIS
+	[^J] I S	>	-IS,IUOSE
+
+	J I S		>	-IS,O
+	J I S		>	-IS,AM
+	J I S		>	-IS,Á
+	J I S		>	-IS,UO
+	J I S		>	-IS,AME
+
+	J I S		>	-IS,IE
+	J I S		>	-IS,Ø
+	J I S		>	-IS,IEMS
+	J I S		>	-IS,UOS
+	J I S		>	-IS,AIS
+	J I S		>	-IS,UOSE
+
+
+# 5 paradigma
+# tik ¥pats´ -- suraðom geriau á þodynà, sutaupysim.
+
+# 6 paradigma
+# ta, ðita, kita, visa
+# 7 paradigma
+# tokia, kokia, visokia
+# 8 paradigma
+# ji, ði, kuri, pati
+#
+	A		>	-A,OS
+	A		>	-A,AI
+	A		>	-A,À
+	A		>	-A,A
+	A		>	-A,OJE
+
+	A		>	-A,OS
+	A		>	-A,Ø
+	A		>	-A,OMS
+	A		>	-A,AS
+	A		>	-A,OMIS
+	A		>	-A,OSE
+
+	J I		>	-I,OS
+	J I		>	-I,AI
+	J I		>	-I,À
+	J I		>	-I,A
+	J I		>	-I,OJE
+	J I		>	-I,OJ
+
+	J I		>	-I,OS
+	J I		>	-I,Ø
+	J I		>	-I,OMS
+	J I		>	-I,AS
+	J I		>	-I,OMIS
+	J I		>	-I,OSE
+
+	[^J] I		>	OS
+	[^J] I		>	AI
+	[^J] I		>	À
+	[^J] I		>	A
+	[^J] I		>	OJE
+	[^J] I		>	OJ
+
+	[^J] I		>	OS
+	[^J] I		>	Ø
+	[^J] I		>	OMS
+	[^J] I		>	AS
+	[^J] I		>	OMIS
+	[^J] I		>	OSE
+
+
+
+# Dviskaita: mudu, mudvi, tuodu, tiedu, tiedvi
+# abu, abi supilti á þodynà!
+
+	U D U		>	-DU,DVIEJØ
+	U D U		>	-DU,DVIEM
+	U D U		>	-DU,DVIEJUOSE
+
+	U D V I		>	-DVI,DVIEJØ
+	U D V I		>	-DVI,DVIEM
+	U D V I		>	-DVI,DVIEJOSE
+
+# 2 paradigma
+# juodu, tiedu, ðiuodu, aniedu
+
+	U O D U		>	-UODU,ØDVIEJØ
+	U O D U		>	-UODU,IEDVIEM
+	U O D U		>	-UODU,IEMDVIEM
+
+	I E D U		>	-IEDU,ØDVIEJØ
+	I E D U		>	-IEDU,IEDVIEM
+	I E D U		>	-IEDU,IEMDVIEM
+
+	I E D V I	>	-IEDVI,ØDVIEJØ
+	I E D V I	>	-IEDVI,OMDVIEM
+	I E D V I	>	-IEDVI,ODVIEM
+	
+# Ávardþiuotiniai ávardþiai (èia tai lietuviai aiðkiai persistengë :)
+# supilti á þodynà.
+# tasai, ðisai, anasai, jisai, manasis , tavasis, savasis 
+# toji, ðioji, anoji, joji, manoji , tavoji, savoji 
+
+########################################################################
+#			     Veiksmaþodis
+########################################################################
+
+			#######################
+			#######################
+
+				flag *E:
+
+			#######################
+			#######################
+
+#####################################################
+#
+#		 Esamasis laikas
+#	
+#
+
+# moka, supa, neða, ðukuoja, traukia, kenèia
+# I paradigma
+
+	A		>	-A,U	
+	[^I] A		>	-A,I		# moka > moki
+	[^ÈÞ] I A	>	-IA,I		# traukia > trauki
+	È I A		>	-ÈIA,TI		# kenèia > kenti
+	D Þ I A		>	-DÞIA,DI	# beldþia > beldi
+	A		>	ME
+	A		>	M
+	A		>	TE
+	A		>	T
+
+	A S I			>	-ASI,UOSI	
+	[^I] A S I		>	-ASI,IESI		# supasi > supiesi
+	[^ÈÞ] I A S I		>	-IASI,IESI		# traukiasi > traukiesi
+	È I A S I		>	-ÈIASI,TIESI		# kenèiasi > kentiesi
+	D Þ I A S I		>	-DÞIASI,DIESI		# beldþiasi > beldiesi
+	A S I			>	-SI,MËS
+	A S I			>	-SI,TËS
+
+# sëdi, tiki, trinksi
+# II paradigma
+
+	[^S] [^DT] I	>	-I,IU		# tiki > tikiu
+	[^S] D I	>	-DI,DÞIU	# sëdi > sëdþiu
+	[^S] T I	>	-TI,ÈIU		# ???
+	[^S] I		>	ME		# sëdi > sëdime
+	[^S] I		>	TE		# sëdi > sëdite
+	[^S] I		>	M
+	[^S] I		>	T
+
+	[^AOI] S  [^DT] I	>	-I,IU		# tiksi > tiksiu
+	[^AOI] S  D I		>	-DI,DÞIU
+	[^AOI] S  T I		>	-TI,ÈIU	
+	[^AOI] S  I		>	ME		# tvinksi > tvinksime
+	[^AOI] S  I		>	TE	
+	[^AOI] S  I		>	M
+	[^AOI] S  I		>	T
+
+
+	[^DT] I S I	>	-ISI,IUOSI		# tikisi > tikiuosi
+	D I S I		>	-DISI,DÞIUOSI		# sëdisi > sëdþiuosi
+	T I S I		>	-TISI,ÈIUOSI		# ???
+	I S I		>	-SI,MËS			# tikisi > tikimës
+	I S I		>	-SI,TËS			# tikisi > tikitës
+
+
+# moko, bijo, þiopso
+# III paradigma
+
+	O	>	-O,AU
+	O	>	-O,AI
+	O	>	-O,OME
+	O	>	-O,OTE	
+	O	>	-O,OM
+	O	>	-O,OT	
+
+	O S I	>	-OSI,AUSI
+	O S I	>	-OSI,AISI
+	O S I	>	-SI,MËS
+	O S I	>	-SI,TËS
+
+
+################################################
+#  Esamojo laiko padalyvis
+
+	A		>	-A,ANT
+	O		>	-O,ANT
+	[^S] I		>	-I,INT	# kaþokdël tiesiog NT neveikia ;(
+	[^AOI]	S I	>	-I,INT	# kriuksi > kriuksint
+
+	O S I	>	-OSI,ANTIS
+	A S I	>	-ASI,ANTIS
+	I S I		>	-SI,NTIS
+
+
+################################################
+#  Esamojo laiko dalyvis
+#
+
+	A	>	-A,ANTIS	# dirba > dirbantis
+	A	>	-A,ÀS		# dirba > dirbàs
+	A	>	-A,ANÈIO
+	A	>	-A,ANÈIAM
+	A	>	-A,ANTÁ
+	A	>	-A,ANÈIU
+	A	>	-A,ANÈIAME
+
+	A	>	-A,ANTYS
+	A	>	-A,À
+	A	>	-A,ANÈIØ
+	A	>	-A,ANTIEMS
+	A	>	-A,ANÈIUS
+	A	>	-A,ANÈIAIS
+	A	>	-A,ANÈIUOSE
+
+	A	>	-A,ANTI
+	A	>	-A,ANÈIOS
+	A	>	-A,ANÈIAI
+	A	>	-A,ANÈIÀ
+	A	>	-A,ANÈIA
+	A	>	-A,ANÈIOJE
+	A	>	-A,ANÈIOJ
+
+	A	>	-A,ANÈIOS
+	A	>	-A,ANÈIØ
+	A	>	-A,ANÈIOMS
+	A	>	-A,ANÈIAS
+	A	>	-A,ANÈIOMIS
+	A	>	-A,ANÈIOSE
+
+	O	>	-O,ANTIS	# daro > darantis
+	O	>	-O,ÀS		# daro > daràs
+	O	>	-O,ANÈIO
+	O	>	-O,ANÈIAM
+	O	>	-O,ANTÁ
+	O	>	-O,ANÈIU
+	O	>	-O,ANÈIAME
+
+	O	>	-O,ANTYS
+	O	>	-O,À
+	O	>	-O,ANÈIØ
+	O	>	-O,ANTIEMS
+	O	>	-O,ANÈIUS
+	O	>	-O,ANÈIAIS
+	O	>	-O,ANÈIUOSE
+
+	O	>	-O,ANTI
+	O	>	-O,ANÈIOS
+	O	>	-O,ANÈIAI
+	O	>	-O,ANÈIÀ
+	O	>	-O,ANÈIA
+	O	>	-O,ANÈIOJE
+	O	>	-O,ANÈIOJ
+
+	O	>	-O,ANÈIOS
+	O	>	-O,ANÈIØ
+	O	>	-O,ANÈIOMS
+	O	>	-O,ANÈIAS
+	O	>	-O,ANÈIOMIS
+	O	>	-O,ANÈIOSE
+
+	[^S] I	>	-I,INTIS	# tiki > tikintis
+	[^S] I	>	-I,ÁS		# tiki > tikás
+	[^S] I	>	-I,INÈIO
+	[^S] I	>	-I,INÈIAM
+	[^S] I	>	-I,INTÁ
+	[^S] I	>	-I,INÈIU
+	[^S] I	>	-I,INÈIAME
+
+	[^S] I	>	-I,INTYS
+	[^S] I	>	-I,Á
+	[^S] I	>	-I,INÈIØ
+	[^S] I	>	-I,INTIEMS
+	[^S] I	>	-I,INÈIUS
+	[^S] I	>	-I,INÈIAIS
+	[^S] I	>	-I,INÈIUOSE
+
+	[^S] I	>	-I,INTI
+	[^S] I	>	-I,INÈIOS
+	[^S] I	>	-I,INÈIAI
+	[^S] I	>	-I,INÈIÀ
+	[^S] I	>	-I,INÈIA
+	[^S] I	>	-I,INÈIOJE
+	[^S] I	>	-I,INÈIOJ
+
+	[^S] I	>	-I,INÈIOS
+	[^S] I	>	-I,INÈIØ
+	[^S] I	>	-I,INÈIOMS
+	[^S] I	>	-I,INÈIAS
+	[^S] I	>	-I,INÈIOMIS
+	[^S] I	>	-I,INÈIOSE
+
+	[^AOI] S I	>	-I,INTIS	# tiki > tikintis
+	[^AOI] S I	>	-I,ÁS		# tiki > tikás
+	[^AOI] S I	>	-I,INÈIO
+	[^AOI] S I	>	-I,INÈIAM
+	[^AOI] S I	>	-I,INTÁ
+	[^AOI] S I	>	-I,INÈIU
+	[^AOI] S I	>	-I,INÈIAME
+
+	[^AOI] S I	>	-I,INTYS
+	[^AOI] S I	>	-I,Á
+	[^AOI] S I	>	-I,INÈIØ
+	[^AOI] S I	>	-I,INTIEMS
+	[^AOI] S I	>	-I,INÈIUS
+	[^AOI] S I	>	-I,INÈIAIS
+	[^AOI] S I	>	-I,INÈIUOSE
+
+	[^AOI] S I	>	-I,INTI
+	[^AOI] S I	>	-I,INÈIOS
+	[^AOI] S I	>	-I,INÈIAI
+	[^AOI] S I	>	-I,INÈIÀ
+	[^AOI] S I	>	-I,INÈIA
+	[^AOI] S I	>	-I,INÈIOJE
+	[^AOI] S I	>	-I,INÈIOJ
+
+	[^AOI] S I	>	-I,INÈIOS
+	[^AOI] S I	>	-I,INÈIØ
+	[^AOI] S I	>	-I,INÈIOMS
+	[^AOI] S I	>	-I,INÈIAS
+	[^AOI] S I	>	-I,INÈIOMIS
+	[^AOI] S I	>	-I,INÈIOSE
+
+#################################################################
+# Esamojo laiko dalyviø ávardþiuotinës formos
+
+	A	>	-A,ANTYSIS	# dirba > dirbantysis
+	A	>	-A,ANTÁJÁ
+	A	>	-A,ANÈIOJO
+	A	>	-A,ANÈIAJAM
+	A	>	-A,ANÈIUOJU
+	A	>	-A,ANÈIAJAME
+
+	A	>	-A,ANTIEJI	# dirba > dirbantieji
+	A	>	-A,ANTIESIEMS
+	A	>	-A,ANÈIØJØ
+	A	>	-A,ANÈIUOSIUS
+	A	>	-A,ANÈIAISIAIS
+	A	>	-A,ANÈIUOSIUOSE
+
+	A	>	-A,ANÈIOJI	
+	A	>	-A,ANÈIOSIOS
+	A	>	-A,ANÈIAJAI
+	A	>	-A,ANÈIÀJÀ
+	A	>	-A,ANÈIÀJA
+	A	>	-A,ANÈIOJOJ
+	A	>	-A,ANÈIOJOJE
+	A	>	-A,ANÈIOJOJ
+
+	A	>	-A,ANÈIØJØ	
+	A	>	-A,ANÈIOSIOMS
+	A	>	-A,ANÈIÀSIAS
+	A	>	-A,ANÈIOSIOMIS
+	A	>	-A,ANÈIOSIOSE
+
+	O	>	-O,ANTYSIS	# daro > darantysis
+	O	>	-O,ANTÁJÁ
+	O	>	-O,ANÈIOJO
+	O	>	-O,ANÈIAJAM
+	O	>	-O,ANÈIUOJU
+	O	>	-O,ANÈIAJAME
+
+	O	>	-O,ANTIEJI	# daro > darantieji
+	O	>	-O,ANTIESIEMS
+	O	>	-O,ANÈIØJØ
+	O	>	-O,ANÈIUOSIUS
+	O	>	-O,ANÈIAISIAIS
+	O	>	-O,ANÈIUOSIUOSE
+
+	O	>	-O,ANÈIOJI	
+	O	>	-O,ANÈIOSIOS
+	O	>	-O,ANÈIAJAI
+	O	>	-O,ANÈIÀJÀ
+	O	>	-O,ANÈIÀJA
+	O	>	-O,ANÈIOJOJ
+	O	>	-O,ANÈIOJOJE
+	O	>	-O,ANÈIOJOJ
+
+	O	>	-O,ANÈIØJØ	
+	O	>	-O,ANÈIOSIOMS
+	O	>	-O,ANÈIÀSIAS
+	O	>	-O,ANÈIOSIOMIS
+	O	>	-O,ANÈIOSIOSE
+
+	[^S] I	>	-I,INTYSIS	# tiki > tikintysis
+	[^S] I	>	-I,INTÁJÁ
+	[^S] I	>	-I,INÈIOJO
+	[^S] I	>	-I,INÈIAJAM
+	[^S] I	>	-I,INÈIUOJU
+	[^S] I	>	-I,INÈIAJAME
+
+	[^S] I	>	-I,INTIEJI	# tiki > tikintieji
+	[^S] I	>	-I,INTIESIEMS
+	[^S] I	>	-I,INÈIØJØ
+	[^S] I	>	-I,INÈIUOSIUS
+	[^S] I	>	-I,INÈIAISIAIS
+	[^S] I	>	-I,INÈIUOSIUOSE
+
+	[^S] I	>	-I,INÈIOJI	
+	[^S] I	>	-I,INÈIOSIOS
+	[^S] I	>	-I,INÈIAJAI
+	[^S] I	>	-I,INÈIÀJÀ
+	[^S] I	>	-I,INÈIÀJA
+	[^S] I	>	-I,INÈIOJOJ
+	[^S] I	>	-I,INÈIOJOJE
+	[^S] I	>	-I,INÈIOJOJ
+
+	[^S] I	>	-I,INÈIØJØ	
+	[^S] I	>	-I,INÈIOSIOMS
+	[^S] I	>	-I,INÈIÀSIAS
+	[^S] I	>	-I,INÈIOSIOMIS
+	[^S] I	>	-I,INÈIOSIOSE
+
+	[^AOI] S I	>	-I,INTYSIS	# tiki > tikintysis
+	[^AOI] S I	>	-I,INTÁJÁ
+	[^AOI] S I	>	-I,INÈIOJO
+	[^AOI] S I	>	-I,INÈIAJAM
+	[^AOI] S I	>	-I,INÈIUOJU
+	[^AOI] S I	>	-I,INÈIAJAME
+
+	[^AOI] S I	>	-I,INTIEJI	# tiki > tikintieji
+	[^AOI] S I	>	-I,INTIESIEMS
+	[^AOI] S I	>	-I,INÈIØJØ
+	[^AOI] S I	>	-I,INÈIUOSIUS
+	[^AOI] S I	>	-I,INÈIAISIAIS
+	[^AOI] S I	>	-I,INÈIUOSIUOSE
+
+	[^AOI] S I	>	-I,INÈIOJI	
+	[^AOI] S I	>	-I,INÈIOSIOS
+	[^AOI] S I	>	-I,INÈIAJAI
+	[^AOI] S I	>	-I,INÈIÀJÀ
+	[^AOI] S I	>	-I,INÈIÀJA
+	[^AOI] S I	>	-I,INÈIOJOJ
+	[^AOI] S I	>	-I,INÈIOJOJE
+	[^AOI] S I	>	-I,INÈIOJOJ
+
+	[^AOI] S I	>	-I,INÈIØJØ	
+	[^AOI] S I	>	-I,INÈIOSIOMS
+	[^AOI] S I	>	-I,INÈIÀSIAS
+	[^AOI] S I	>	-I,INÈIOSIOMIS
+	[^AOI] S I	>	-I,INÈIOSIOSE
+
+################################################
+#  Esamojo laiko neveikiamasis dalyvis
+#
+
+	[AOI]	>	MAS	# myli > mylimas Rrrrrrr.... :)
+	[AOI]	>	MO
+	[AOI]	>	MAM
+	[AOI]	>	MÀ
+	[AOI]	>	MU
+	[AOI]	>	MAME
+
+	[AOI]	>	MI
+	[AOI]	>	MØ
+	[AOI]	>	MIEMS
+	[AOI]	>	MUS
+	[AOI]	>	MAIS
+	[AOI]	>	MUOSE
+
+	[AOI]	>	MA
+	[AOI]	>	MOS
+	[AOI]	>	MAI
+	[AOI]	>	MOJE
+	[AOI]	>	MOJ
+
+	[AOI]	>	MOS
+	[AOI]	>	MØ
+	[AOI]	>	MOMS
+	[AOI]	>	MOMIS
+	[AOI]	>	MOSE
+
+#################################################################
+# Esamojo laiko neveikiamojo dalyviø ávardþiuotinës formos
+
+	[AOI]	>	MASIS	# myli > mylimasis
+	[AOI]	>	MOJO
+	[AOI]	>	MÀJAM
+	[AOI]	>	MÀJÁ
+	[AOI]	>	MUOJU
+	[AOI]	>	MAJAME
+
+	[AOI]	>	MIEJI
+	[AOI]	>	MØJØ
+	[AOI]	>	MIESIEMS
+	[AOI]	>	MUOSIUS
+	[AOI]	>	MAISIAIS
+	[AOI]	>	MUOSIUOSE
+
+	[AOI]	>	MOJI
+	[AOI]	>	MOSIOS
+	[AOI]	>	MAJAI
+	[AOI]	>	MÀJÀ
+	[AOI]	>	MÀJA
+	[AOI]	>	MOJOJE
+	[AOI]	>	MOJOJ
+
+	[AOI]	>	MOSIOS
+	[AOI]	>	MØJØ
+	[AOI]	>	MOSIOMS
+	[AOI]	>	MÀSIAS
+	[AOI]	>	MOSIOMIS
+	[AOI]	>	MOSIOSE
+
+			#######################
+			#######################
+
+				flag *P:		
+
+			#######################
+			#######################
+
+######################################################################
+#
+#			 Bûtasis kartinis laikas
+#
+######################################################################
+#
+
+
+# tikëjo, kentëjo, supo, ðukavo, saugojo
+# III paradigma
+
+	O	>	-O,AU
+	O	>	-O,AI
+	O	>	ME
+	O	>	TE	
+	O	>	M
+	O	>	T	
+
+	O S I	>	-OSI,AUSI
+	O S I	>	-OSI,AISI
+	O S I	>	-SI,MËS
+	O S I	>	-SI,TËS
+
+# IV paradigma
+# mokë, neðë, keitë
+
+	[^DT] Ë	>	-Ë,IAU		# mokë > mokiau
+	D Ë	>	-DË,DÞIAU	# beldë > beldþiau
+	T Ë	>	-TË,ÈIAU	# keitë > keièiau
+	Ë	>	-Ë,EI
+	Ë	>	ME		
+	Ë	>	TE		
+	Ë	>	M
+	Ë	>	T
+
+	[^DT] Ë S I	>	-ËSI,IAUSI		# mokësi > mokiausi
+	D Ë S I		>	-DËSI,DÞIAUSI	# beldësi > beldþiausi
+	T Ë S I		>	-TËSI,ÈIAUSI	# keitësi > keièiausi
+	Ë S I		>	-SI,MËS		
+	Ë S I		>	-SI,TËS		
+
+
+#####################################
+# Bûtojo kartinio laiko padalyvis
+#
+	O	>	-O,US		# gerti > gërus
+	Ë	>	-Ë,US		# gerti > gërus
+
+	O S I	>	-OSI,USIS	# mylëjosi > mylëjusis
+	Ë S I	>	-ËSI,USIS	# mylëjosi > mylëjusis
+
+############################################
+#  Bûtojo kartinio laiko dalyvis
+
+	O	>	-O,ÆS
+	O	>	-O,USIO
+	O	>	-O,USIAM
+	O	>	-O,USÁ
+	O	>	-O,USIU
+	O	>	-O,USIAME
+
+	O	>	-O,Æ
+	O	>	-O,USIØ
+	O	>	-O,USIEMS
+	O	>	-O,USIUS
+	O	>	-O,USIAIS
+	O	>	-O,USIUOSE
+
+	O	>	-O,USI
+	O	>	-O,USIOS
+	O	>	-O,USIAI
+	O	>	-O,USIÀ
+	O	>	-O,USIA
+	O	>	-O,USIOJ
+	O	>	-O,USIOJE
+
+	O	>	-O,USIOS
+	O	>	-O,USIØ
+	O	>	-O,USIOMS
+	O	>	-O,USIAS
+	O	>	-O,USIOMIS
+	O	>	-O,USIOSE
+
+	Ë	>	-Ë,ÆS
+	Ë	>	-Ë,USIO
+	Ë	>	-Ë,USIAM
+	Ë	>	-Ë,USÁ
+	Ë	>	-Ë,USIU
+	Ë	>	-Ë,USIAME
+
+	Ë	>	-Ë,Æ
+	Ë	>	-Ë,USIØ
+	Ë	>	-Ë,USIEMS
+	Ë	>	-Ë,USIUS
+	Ë	>	-Ë,USIAIS
+	Ë	>	-Ë,USIUOSE
+
+	Ë	>	-Ë,USI
+	Ë	>	-Ë,USIOS
+	Ë	>	-Ë,USIAI
+	Ë	>	-Ë,USIÀ
+	Ë	>	-Ë,USIA
+	Ë	>	-Ë,USIOJE
+	Ë	>	-Ë,USIOJ
+
+	Ë	>	-Ë,USIOS
+	Ë	>	-Ë,USIØ
+	Ë	>	-Ë,USIOMS
+	Ë	>	-Ë,USIAS
+	Ë	>	-Ë,USIOMIS
+	Ë	>	-Ë,USIOSE
+
+######################################################
+#  Bûtojo kartinio laiko dalyvio ávardþiuotinë forma
+
+	O	>	-O,USYSIS
+	O	>	-O,USIOJO
+	O	>	-O,USIAJAM
+	O	>	-O,USÁJÁ
+	O	>	-O,USIUOJU
+	O	>	-O,USIAJAME
+
+	O	>	-O,USIEJI
+	O	>	-O,USIØJØ
+	O	>	-O,USIESIEMS
+	O	>	-O,USIUOSIUS
+	O	>	-O,USIAISIAIS
+	O	>	-O,USIUOSIUOSE
+
+	O	>	-O,USIOJI
+	O	>	-O,USIOSIOS
+	O	>	-O,USIAJAI
+	O	>	-O,USIÀJÀ
+	O	>	-O,USIÀJA
+	O	>	-O,USIOJOJE
+	O	>	-O,USIOJOJ
+
+	O	>	-O,USIOSIOS
+	O	>	-O,USIØJØ
+	O	>	-O,USIOSIOMS
+	O	>	-O,USIÀSIAS
+	O	>	-O,USIOSIOMIS
+	O	>	-O,USIOSIOSE
+
+	Ë	>	-Ë,USYSIS
+	Ë	>	-Ë,USIOJO
+	Ë	>	-Ë,USIAJAM
+	Ë	>	-Ë,USÁJÁ
+	Ë	>	-Ë,USIUOJU
+	Ë	>	-Ë,USIAJAME
+
+	Ë	>	-Ë,USIEJI
+	Ë	>	-Ë,USIØJØ
+	Ë	>	-Ë,USIESIEMS
+	Ë	>	-Ë,USIUOSIUS
+	Ë	>	-Ë,USIAISIAIS
+	Ë	>	-Ë,USIUOSIUOSE
+
+	Ë	>	-Ë,USIOJI
+	Ë	>	-Ë,USIOSIOS
+	Ë	>	-Ë,USIAJAI
+	Ë	>	-Ë,USIÀJÀ
+	Ë	>	-Ë,USIÀJA
+	Ë	>	-Ë,USIOJOJE
+	Ë	>	-Ë,USIOJOJ
+
+	Ë	>	-Ë,USIOSIOS
+	Ë	>	-Ë,USIØJØ
+	Ë	>	-Ë,USIOSIOMS
+	Ë	>	-Ë,USIÀSIAS
+	Ë	>	-Ë,USIOSIOMIS
+	Ë	>	-Ë,USIOSIOSE
+
+
+#####
+# Daiktavardþiai su priesaga -imas
+#
+	O	>	-O,IMAS		# tikëjimas
+	O	>	-O,IMO	
+	O	>	-O,IMUI
+	O	>	-O,IMÀ
+	O	>	-O,IMU
+	O	>	-O,IME
+	O	>	-O,IMAI		
+	O	>	-O,IMØ
+	O	>	-O,IMAMS
+	O	>	-O,IMUS
+	O	>	-O,IMAIS
+	O	>	-O,IMUOSE
+
+	Ë	>	-Ë,IMAS		# keitimas
+	Ë	>	-Ë,IMO	
+	Ë	>	-Ë,IMUI
+	Ë	>	-Ë,IMÀ
+	Ë	>	-Ë,IMU
+	Ë	>	-Ë,IME
+	Ë	>	-Ë,IMAI
+	Ë	>	-Ë,IMØ
+	Ë	>	-Ë,IMAMS
+	Ë	>	-Ë,IMUS
+	Ë	>	-Ë,IMAIS
+	Ë	>	-Ë,IMUOSE
+
+	O S I	>	-OSI,IMASIS		# muðimasis
+	O S I	>	-OSI,IMOSI	
+	O S I	>	-OSI,IMUISI
+	O S I	>	-OSI,IMÀSI
+	O S I	>	-OSI,IMUSI
+	O S I	>	-OSI,IMESI
+	O S I	>	-OSI,IMAISI		
+	O S I	>	-OSI,IMØSI
+	O S I	>	-OSI,IMAMSIS
+	O S I	>	-OSI,IMUSIS
+	O S I	>	-OSI,IMAISIS
+	O S I	>	-OSI,IMUOSESI
+
+	Ë S I	>	-ËSI,IMASIS		# keitimasis
+	Ë S I	>	-ËSI,IMOSI	
+	Ë S I	>	-ËSI,IMUISI
+	Ë S I	>	-ËSI,IMÀSI
+	Ë S I	>	-ËSI,IMUSI
+	Ë S I	>	-ËSI,IMESI
+	Ë S I	>	-ËSI,IMAISI
+	Ë S I	>	-ËSI,IMØSI
+	Ë S I	>	-ËSI,IMAMSIS
+	Ë S I	>	-ËSI,IMUSIS
+	Ë S I	>	-ËSI,IMAISIS
+	Ë S I	>	-ËSI,IMUOSESI
+
+
+			#######################
+			#######################
+
+				flag *Y:		
+
+			#######################
+			#######################
+
+######################################################################
+#
+#			 Bûtasis kartinis laikas
+#
+#	Tai yra nucut&paste'intas P flagas, skirtas veiksmaþodþiams su
+#	bendratimi -yti.
+#
+#	Jei dabar -ë, o bendratyje -yti, tai b. k. laiko dalyviai 
+#	suminkðtëja.
+#
+######################################################################
+#
+
+
+# tikëjo, kentëjo, supo, ðukavo, saugojo
+# III paradigma
+
+	O	>	-O,AU
+	O	>	-O,AI
+	O	>	ME
+	O	>	TE	
+	O	>	M
+	O	>	T	
+
+	O S I	>	-OSI,AUSI
+	O S I	>	-OSI,AISI
+	O S I	>	-SI,MËS
+	O S I	>	-SI,TËS
+
+# IV paradigma
+# mokë, neðë, keitë
+
+	[^DT] Ë	>	-Ë,IAU		# mokë > mokiau
+	D Ë	>	-DË,DÞIAU	# beldë > beldþiau
+	T Ë	>	-TË,ÈIAU	# keitë > keièiau
+	Ë	>	ME		
+	Ë	>	TE		
+	Ë	>	M
+	Ë	>	T
+
+	[^DT] Ë S I	>	-ËSI,IAUSI	# mokësi > mokiausi
+	D Ë S I		>	-DËSI,DÞIAUSI	# beldësi > beldþiausi
+	T Ë S I		>	-TËSI,ÈIAUSI	# keitësi > keièiausi
+	Ë S I		>	-SI,MËS		
+	Ë S I		>	-SI,TËS		
+
+
+#####################################
+# Bûtojo kartinio laiko padalyvis
+#
+	O		>	-O,US		# gerti > gërus
+	[^DT] Ë		>	-Ë,IUS		# raðyti > raðius
+	D Ë		>	-DË,DÞIUS	# rodyti > rodþius
+	T Ë		>	-TË,ÈIUS	# matyti > maèius
+
+	O S I		>	-OSI,USIS	# mylëjosi > mylëjusis
+	Ë S I		> 	-ËSI,IUSIS	# raðytis > raðiusis
+
+############################################
+#  Bûtojo kartinio laiko dalyvis
+
+	O	>	-O,ÆS
+	O	>	-O,USIO
+	O	>	-O,USIAM
+	O	>	-O,USÁ
+	O	>	-O,USIU
+	O	>	-O,USIAME
+
+	O	>	-O,Æ
+	O	>	-O,USIØ
+	O	>	-O,USIEMS
+	O	>	-O,USIUS
+	O	>	-O,USIAIS
+	O	>	-O,USIUOSE
+
+	O	>	-O,USI
+	O	>	-O,USIOS
+	O	>	-O,USIAI
+	O	>	-O,USIÀ
+	O	>	-O,USIA
+	O	>	-O,USIOJE
+	O	>	-O,USIOJ
+
+	O	>	-O,USIOS
+	O	>	-O,USIØ
+	O	>	-O,USIOMS
+	O	>	-O,USIAS
+	O	>	-O,USIOMIS
+	O	>	-O,USIOSE
+
+######################################################
+#  Bûtojo kartinio laiko dalyvio ávardþiuotinë forma
+
+	O	>	-O,USYSIS
+	O	>	-O,USIOJO
+	O	>	-O,USIAJAM
+	O	>	-O,USÁJÁ
+	O	>	-O,USIUOJU
+	O	>	-O,USIAJAME
+
+	O	>	-O,USIEJI
+	O	>	-O,USIØJØ
+	O	>	-O,USIESIEMS
+	O	>	-O,USIUOSIUS
+	O	>	-O,USIAISIAIS
+	O	>	-O,USIUOSIUOSE
+
+	O	>	-O,USIOJI
+	O	>	-O,USIOSIOS
+	O	>	-O,USIAJAI
+	O	>	-O,USIÀJÀ
+	O	>	-O,USIÀJA
+	O	>	-O,USIOJOJE
+	O	>	-O,USIOJOJ
+
+	O	>	-O,USIOSIOS
+	O	>	-O,USIØJØ
+	O	>	-O,USIOSIOMS
+	O	>	-O,USIÀSIAS
+	O	>	-O,USIOSIOMIS
+	O	>	-O,USIOSIOSE
+
+# raðë, darë, bandë, kratë
+
+	Ë	>	-Ë,ÆS
+	Ë	>	-Ë,Æ
+
+####################################################
+	[^DT] Ë	>	-Ë,IUSIO
+	[^DT] Ë	>	-Ë,IUSIAM
+	[^DT] Ë	>	-Ë,IUSÁ
+	[^DT] Ë	>	-Ë,IUSIU
+	[^DT] Ë	>	-Ë,IUSIAME
+
+	[^DT] Ë	>	-Ë,IUSIØ
+	[^DT] Ë	>	-Ë,IUSIEMS
+	[^DT] Ë	>	-Ë,IUSIUS
+	[^DT] Ë	>	-Ë,IUSIAIS
+	[^DT] Ë	>	-Ë,IUSIUOSE
+
+	[^DT] Ë	>	-Ë,IUSI
+	[^DT] Ë	>	-Ë,IUSIOS
+	[^DT] Ë	>	-Ë,IUSIAI
+	[^DT] Ë	>	-Ë,IUSIÀ
+	[^DT] Ë	>	-Ë,IUSIA
+	[^DT] Ë	>	-Ë,IUSIOJE
+	[^DT] Ë	>	-Ë,IUSIOJ
+
+	[^DT] Ë	>	-Ë,IUSIOS
+	[^DT] Ë	>	-Ë,IUSIØ
+	[^DT] Ë	>	-Ë,IUSIOMS
+	[^DT] Ë	>	-Ë,IUSIAS
+	[^DT] Ë	>	-Ë,IUSIOMIS
+	[^DT] Ë	>	-Ë,IUSIOSE
+
+######################################################
+#  Bûtojo kartinio laiko dalyvio ávardþiuotinë forma
+
+	[^DT] Ë	>	-Ë,IUSYSIS
+	[^DT] Ë	>	-Ë,IUSIOJO
+	[^DT] Ë	>	-Ë,IUSIAJAM
+	[^DT] Ë	>	-Ë,IUSÁJÁ
+	[^DT] Ë	>	-Ë,IUSIUOJU
+	[^DT] Ë	>	-Ë,IUSIAJAME
+
+	[^DT] Ë	>	-Ë,IUSIEJI
+	[^DT] Ë	>	-Ë,IUSIØJØ
+	[^DT] Ë	>	-Ë,IUSIESIEMS
+	[^DT] Ë	>	-Ë,IUSIUOSIUS
+	[^DT] Ë	>	-Ë,IUSIAISIAIS
+	[^DT] Ë	>	-Ë,IUSIUOSIUOSE
+
+	[^DT] Ë	>	-Ë,IUSIOJI
+	[^DT] Ë	>	-Ë,IUSIOSIOS
+	[^DT] Ë	>	-Ë,IUSIAJAI
+	[^DT] Ë	>	-Ë,IUSIÀJÀ
+	[^DT] Ë	>	-Ë,IUSIÀJA
+	[^DT] Ë	>	-Ë,IUSIOJOJE
+	[^DT] Ë	>	-Ë,IUSIOJOJ
+
+	[^DT] Ë	>	-Ë,IUSIOSIOS
+	[^DT] Ë	>	-Ë,IUSIØJØ
+	[^DT] Ë	>	-Ë,IUSIOSIOMS
+	[^DT] Ë	>	-Ë,IUSIÀSIAS
+	[^DT] Ë	>	-Ë,IUSIOSIOMIS
+	[^DT] Ë	>	-Ë,IUSIOSIOSE
+
+####################################################
+	T Ë	>	-TË,ÈIUSIO
+	T Ë	>	-TË,ÈIUSIAM
+	T Ë	>	-TË,ÈIUSÁ
+	T Ë	>	-TË,ÈIUSIU
+	T Ë	>	-TË,ÈIUSIAME
+
+	T Ë	>	-TË,ÈIUSIØ
+	T Ë	>	-TË,ÈIUSIEMS
+	T Ë	>	-TË,ÈIUSIUS
+	T Ë	>	-TË,ÈIUSIAIS
+	T Ë	>	-TË,ÈIUSIUOSE
+
+	T Ë	>	-TË,ÈIUSI
+	T Ë	>	-TË,ÈIUSIOS
+	T Ë	>	-TË,ÈIUSIAI
+	T Ë	>	-TË,ÈIUSIÀ
+	T Ë	>	-TË,ÈIUSIA
+	T Ë	>	-TË,ÈIUSIOJE
+	T Ë	>	-TË,ÈIUSIOJ
+
+	T Ë	>	-TË,ÈIUSIOS
+	T Ë	>	-TË,ÈIUSIØ
+	T Ë	>	-TË,ÈIUSIOMS
+	T Ë	>	-TË,ÈIUSIAS
+	T Ë	>	-TË,ÈIUSIOMIS
+	T Ë	>	-TË,ÈIUSIOSE
+
+######################################################
+#  Bûtojo kartinio laiko dalyvio ávardþiuotinë forma
+
+	T Ë	>	-TË,ÈIUSYSIS
+	T Ë	>	-TË,ÈIUSIOJO
+	T Ë	>	-TË,ÈIUSIAJAM
+	T Ë	>	-TË,ÈIUSÁJÁ
+	T Ë	>	-TË,ÈIUSIUOJU
+	T Ë	>	-TË,ÈIUSIAJAME
+
+	T Ë	>	-TË,ÈIUSIEJI
+	T Ë	>	-TË,ÈIUSIØJØ
+	T Ë	>	-TË,ÈIUSIESIEMS
+	T Ë	>	-TË,ÈIUSIUOSIUS
+	T Ë	>	-TË,ÈIUSIAISIAIS
+	T Ë	>	-TË,ÈIUSIUOSIUOSE
+
+	T Ë	>	-TË,ÈIUSIOJI
+	T Ë	>	-TË,ÈIUSIOSIOS
+	T Ë	>	-TË,ÈIUSIAJAI
+	T Ë	>	-TË,ÈIUSIÀJÀ
+	T Ë	>	-TË,ÈIUSIÀJA
+	T Ë	>	-TË,ÈIUSIOJOJE
+	T Ë	>	-TË,ÈIUSIOJOJ
+
+	T Ë	>	-TË,ÈIUSIOSIOS
+	T Ë	>	-TË,ÈIUSIØJØ
+	T Ë	>	-TË,ÈIUSIOSIOMS
+	T Ë	>	-TË,ÈIUSIÀSIAS
+	T Ë	>	-TË,ÈIUSIOSIOMIS
+	T Ë	>	-TË,ÈIUSIOSIOSE
+
+####################################################
+	D Ë	>	-DË,DÞIUSIO
+	D Ë	>	-DË,DÞIUSIAM
+	D Ë	>	-DË,DÞIUSÁ
+	D Ë	>	-DË,DÞIUSIU
+	D Ë	>	-DË,DÞIUSIAME
+
+	D Ë	>	-DË,DÞIUSIØ
+	D Ë	>	-DË,DÞIUSIEMS
+	D Ë	>	-DË,DÞIUSIUS
+	D Ë	>	-DË,DÞIUSIAIS
+	D Ë	>	-DË,DÞIUSIUOSE
+
+	D Ë	>	-DË,DÞIUSI
+	D Ë	>	-DË,DÞIUSIOS
+	D Ë	>	-DË,DÞIUSIAI
+	D Ë	>	-DË,DÞIUSIÀ
+	D Ë	>	-DË,DÞIUSIA
+	D Ë	>	-DË,DÞIUSIOJE
+	D Ë	>	-DË,DÞIUSIOJ
+
+	D Ë	>	-DË,DÞIUSIOS
+	D Ë	>	-DË,DÞIUSIØ
+	D Ë	>	-DË,DÞIUSIOMS
+	D Ë	>	-DË,DÞIUSIAS
+	D Ë	>	-DË,DÞIUSIOMIS
+	D Ë	>	-DË,DÞIUSIOSE
+
+######################################################
+#  Bûtojo kartinio laiko dalyvio ávardþiuotinë forma
+
+	D Ë	>	-DË,DÞIUSYSIS
+	D Ë	>	-DË,DÞIUSIOJO
+	D Ë	>	-DË,DÞIUSIAJAM
+	D Ë	>	-DË,DÞIUSÁJÁ
+	D Ë	>	-DË,DÞIUSIUOJU
+	D Ë	>	-DË,DÞIUSIAJAME
+
+	D Ë	>	-DË,DÞIUSIEJI
+	D Ë	>	-DË,DÞIUSIØJØ
+	D Ë	>	-DË,DÞIUSIESIEMS
+	D Ë	>	-DË,DÞIUSIUOSIUS
+	D Ë	>	-DË,DÞIUSIAISIAIS
+	D Ë	>	-DË,DÞIUSIUOSIUOSE
+
+	D Ë	>	-DË,DÞIUSIOJI
+	D Ë	>	-DË,DÞIUSIOSIOS
+	D Ë	>	-DË,DÞIUSIAJAI
+	D Ë	>	-DË,DÞIUSIÀJÀ
+	D Ë	>	-DË,DÞIUSIÀJA
+	D Ë	>	-DË,DÞIUSIOJOJE
+	D Ë	>	-DË,DÞIUSIOJOJ
+
+	D Ë	>	-DË,DÞIUSIOSIOS
+	D Ë	>	-DË,DÞIUSIØJØ
+	D Ë	>	-DË,DÞIUSIOSIOMS
+	D Ë	>	-DË,DÞIUSIÀSIAS
+	D Ë	>	-DË,DÞIUSIOSIOMIS
+	D Ë	>	-DË,DÞIUSIOSIOSE
+
+#####
+# Daiktavardþiai su priesagomis -imas, -ymas
+#
+	O	>	-O,IMAS		
+	O	>	-O,IMO	
+	O	>	-O,IMUI
+	O	>	-O,IMÀ
+	O	>	-O,IMU
+	O	>	-O,IME
+	O	>	-O,IMAI		
+	O	>	-O,IMØ
+	O	>	-O,IMAMS
+	O	>	-O,IMUS
+	O	>	-O,IMAIS
+	O	>	-O,IMUOSE
+
+	Ë	>	-Ë,YMAS		# valgymas
+	Ë	>	-Ë,YMO	
+	Ë	>	-Ë,YMUI
+	Ë	>	-Ë,YMÀ
+	Ë	>	-Ë,YMU
+	Ë	>	-Ë,YME
+	Ë	>	-Ë,YMAI
+	Ë	>	-Ë,YMØ
+	Ë	>	-Ë,YMAMS
+	Ë	>	-Ë,YMUS
+	Ë	>	-Ë,YMAIS
+	Ë	>	-Ë,YMUOSE
+
+	O S I	>	-OSI,IMASIS	
+	O S I	>	-OSI,IMOSI	
+	O S I	>	-OSI,IMUISI
+	O S I	>	-OSI,IMÀSI
+	O S I	>	-OSI,IMUSI
+	O S I	>	-OSI,IMESI
+	O S I	>	-OSI,IMAISI		
+	O S I	>	-OSI,IMØSI
+	O S I	>	-OSI,IMAMSIS
+	O S I	>	-OSI,IMUSIS
+	O S I	>	-OSI,IMAISIS
+	O S I	>	-OSI,IMUOSESI
+
+	Ë S I	>	-ËSI,YMASIS	
+	Ë S I	>	-ËSI,YMOSI	
+	Ë S I	>	-ËSI,YMUISI
+	Ë S I	>	-ËSI,YMÀSI
+	Ë S I	>	-ËSI,YMUSI
+	Ë S I	>	-ËSI,YMESI
+	Ë S I	>	-ËSI,YMAISI
+	Ë S I	>	-ËSI,YMØSI
+	Ë S I	>	-ËSI,YMAMSIS
+	Ë S I	>	-ËSI,YMUSIS
+	Ë S I	>	-ËSI,YMAISIS
+	Ë S I	>	-ËSI,YMUOSESI
+
+
+
+			#######################
+			#######################
+
+				flag *T:
+
+			#######################
+			#######################
+
+###################################################################
+#
+# 			Bendratis
+#
+###################################################################
+
+	T I	>	-TI,T	# eiti > eit
+
+# bûtasis daþninis laikas
+	T I	>	-TI,DAVAU
+	T I	>	-TI,DAVAI
+	T I	>	-TI,DAVO
+	T I	>	-TI,DAVOME
+	T I	>	-TI,DAVOM
+	T I	>	-TI,DAVOTE
+	T I	>	-TI,DAVOT
+
+	T I S	>	-TIS,DAVAUSI
+	T I S	>	-TIS,DAVAISI
+	T I S	>	-TIS,DAVOSI
+	T I S	>	-TIS,DAVOMËS
+	T I S	>	-TIS,DAVOTËS
+
+# bûsimasis laikas
+#
+# Iðimtis yra ten kur, bendraty ir es. l. ilgi balsiai Û,Y, o bût. k. l. -- trumpi
+#	gyti gyja gijo		-- gis
+#	lyti lyja lijo		-- lis
+#	griûti griûva griuvo 	-- grius
+#	pûti pûva puvo		-- pus
+#	þûti þûva þuvo		-- þus
+#
+#  Tokiø veiksmaþodþiø bendraèiai skirtas flagas U.
+#
+
+	[^SÐZÞ] T I	>	-TI,SIU
+	[^SÐZÞ] T I	>	-TI,SI
+	[^SÐZÞ] T I	>	-TI,S
+	[^SÐZÞ] T I	>	-TI,SIME
+	[^SÐZÞ] T I	>	-TI,SIM
+	[^SÐZÞ] T I	>	-TI,SITE
+	[^SÐZÞ] T I	>	-TI,SIT
+
+	S T I	>	-STI,SIU	# mesti
+	S T I	>	-STI,SI
+	S T I	>	-STI,S
+	S T I	>	-STI,SIME
+	S T I	>	-STI,SIM
+	S T I	>	-STI,SITE
+	S T I	>	-STI,SIT
+
+	Ð T I	>	-TI,IU		# neðti
+	Ð T I	>	-TI,I
+	Ð T I	>	-ÐTI,Ð
+	Ð T I	>	-TI,IME
+	Ð T I	>	-TI,IM
+	Ð T I	>	-TI,ITE
+	Ð T I	>	-TI,IT
+
+	Þ T I	>	-ÞTI,ÐIU	# veþti
+	Þ T I	>	-ÞTI,ÐI
+	Þ T I	>	-ÞTI,Ð
+	Þ T I	>	-ÞTI,ÐIME
+	Þ T I	>	-ÞTI,ÐIM
+	Þ T I	>	-ÞTI,ÐITE
+	Þ T I	>	-ÞTI,ÐIT
+
+# ir sangràþinës formos
+
+	[^SÐZÞ] T I S	>	-TIS,SIUOSI
+	[^SÐZÞ] T I S	>	-TIS,SIESI
+	[^SÐZÞ] T I S	>	-TIS,SIS
+	[^SÐZÞ] T I S	>	-TIS,SIMËS
+	[^SÐZÞ] T I S	>	-TIS,SITËS
+
+	S T I S	>	-STIS,SIUOSI	# mesti
+	S T I S	>	-STIS,SIESI
+	S T I S	>	-STIS,SIS
+	S T I S	>	-STIS,SIMËS
+	S T I S	>	-STIS,SITËS
+
+	Ð T I S	>	-TIS,IUOSI		# neðti
+	Ð T I S	>	-TIS,IESI
+	Ð T I S	>	-ÐTIS,ÐIS
+	Ð T I S	>	-TIS,IMËS
+	Ð T I S	>	-TIS,ITËS
+
+	Þ T I S	>	-ÞTIS,ÐIUOSI	# veþti
+	Þ T I S	>	-ÞTIS,ÐIESI
+	Þ T I S	>	-ÞTIS,ÐIS
+	Þ T I S	>	-ÞTIS,ÐIMËS
+	Þ T I S	>	-ÞTIS,ÐITËS
+
+
+# tariamoji nuosaka
+	T I	>	-TI,ÈIAU
+	T I	>	-TI,TUM
+	T I	>	-TI,TUMEI
+	T I	>	-TI,TØ
+	T I	>	-TI,TUME
+	T I	>	-TI,TUMËME
+	T I	>	-TI,TUMËM
+	T I	>	-TI,TUMËTE
+	T I	>	-TI,TUMËT
+	T I	>	-TI,TUTE
+	T I	>	-TI,TUT
+
+	T I S	>	-TIS,ÈIAUSI
+	T I S	>	-TIS,TUMEIS
+	T I S	>	-TIS,TUMEISI
+	T I S	>	-TIS,TØSI
+	T I S	>	-TIS,TUMËS
+	T I S	>	-TIS,TUMËMËS
+	T I S	>	-TIS,TUMËTËS
+	T I S	>	-TIS,TUTËS
+
+# liepiamoji nuosaka
+
+	[^KG] T I	>	-TI,K
+	[^KG] T I	>	-TI,KIME
+	[^KG] T I	>	-TI,KIM
+	[^KG] T I	>	-TI,KITE
+	[^KG] T I	>	-TI,KIT
+
+	K T I	>	-KTI,K
+	K T I	>	-KTI,KIME
+	K T I	>	-KTI,KIM
+	K T I	>	-KTI,KITE
+	K T I	>	-KTI,KIT
+
+	G T I	>	-GTI,K
+	G T I	>	-GTI,KIME
+	G T I	>	-GTI,KIM
+	G T I	>	-GTI,KITE
+	G T I	>	-GTI,KIT
+
+	[^KG] T I S	>	-TIS,KIS
+	[^KG] T I S	>	-TIS,KIMËS
+	[^KG] T I S	>	-TIS,KITËS
+
+	K T I S	>	-KTIS,KIS
+	K T I S	>	-KTIS,KIMËS
+	K T I S	>	-KTIS,KITËS
+
+	G T I S	>	-GTIS,KIS
+	G T I S	>	-GTIS,KIMËS
+	G T I S	>	-GTIS,KITËS
+
+
+#####################################
+# Pusdalyvis
+#
+	T I	>	-TI,DAMAS	# skaityti > skaitydamas
+	T I	>	-TI,DAMA	# skaityti > skaitydama
+	T I	>	-TI,DAMI	# skaityti > skaitydami
+	T I	>	-TI,DAMOS	# skaityti > skaitydamos
+
+	T I S	>	-TIS,DAMASIS	# skaityti > skaitydamasis
+	T I S	>	-TIS,DAMASI	# skaityti > skaitydamasi
+	T I S	>	-TIS,DAMIESI	# skaityti > skaitydamiesi
+	T I S	>	-TIS,DAMOSI	# skaityti > skaitydamosi
+
+#####################################
+# Bûtojo daþninio laiko padalyvis
+#
+	T I	>	-TI,DAVUS	# raðyti > raðydavus
+	T I S	>	-TIS,DAVUSIS	# raðyti > raðydavusis
+
+#####################################
+# Bûsimojo laiko padalyvis
+#
+	[^SZÐÞ] T I 	>	-TI,SIANTIS	# raðyti > raðysiantis
+	S T I 		>	-STI,SIANTIS	# raðyti > raðysiantis
+	Ð T I 		>	-ÐTI,ÐIANTIS	# raðyti > raðysiantis
+	Z T I 		>	-ZTI,SIANTIS	# raðyti > raðysiantis
+	Þ T I 		>	-ÞTI,ÐIANTIS	# raðyti > raðysiantis
+
+############################################
+#   Bûtojo daþninio laiko dalyvis
+#
+
+	T I	>	-TI,DAVÆS
+	T I	>	-TI,DAVUSIO
+	T I	>	-TI,DAVUSIAM
+	T I	>	-TI,DAVUSÁ
+	T I	>	-TI,DAVUSIU
+	T I	>	-TI,DAVUSIAME
+
+	T I	>	-TI,DAVÆ
+	T I	>	-TI,DAVUSIØ
+	T I	>	-TI,DAVUSIEMS
+	T I	>	-TI,DAVUSIUS
+	T I	>	-TI,DAVUSIAIS
+	T I	>	-TI,DAVUSIUOSE
+
+	T I	>	-TI,DAVUSI
+	T I	>	-TI,DAVUSIOS
+	T I	>	-TI,DAVUSIAI
+	T I	>	-TI,DAVUSIÀ
+	T I	>	-TI,DAVUSIA
+	T I	>	-TI,DAVUSIOJE
+	T I	>	-TI,DAVUSIOJ
+
+	T I	>	-TI,DAVUSIOS
+	T I	>	-TI,DAVUSIØ
+	T I	>	-TI,DAVUSIOMS
+	T I	>	-TI,DAVUSIAS
+	T I	>	-TI,DAVUSIOMIS
+	T I	>	-TI,DAVUSIOSE
+
+######################################################
+#  Bûtojo daþninio laiko dalyvio ávardþiuotinë forma
+
+	T I	>	-TI,DAVUSYSIS
+	T I	>	-TI,DAVUSIOJO
+	T I	>	-TI,DAVUSIAJAM
+	T I	>	-TI,DAVUSÁJÁ
+	T I	>	-TI,DAVUSIUOJU
+	T I	>	-TI,DAVUSIAJAME
+
+	T I	>	-TI,DAVUSIEJI
+	T I	>	-TI,DAVUSIØJØ
+	T I	>	-TI,DAVUSIESIEMS
+	T I	>	-TI,DAVUSIUOSIUS
+	T I	>	-TI,DAVUSIAISIAIS
+	T I	>	-TI,DAVUSIUOSIUOSE
+
+	T I	>	-TI,DAVUSIOJI
+	T I	>	-TI,DAVUSIOSIOS
+	T I	>	-TI,DAVUSIAJAI
+	T I	>	-TI,DAVUSIÀJÀ
+	T I	>	-TI,DAVUSIÀJA
+	T I	>	-TI,DAVUSIOJOJE
+	T I	>	-TI,DAVUSIOJOJ
+
+	T I	>	-TI,DAVUSIOSIOS
+	T I	>	-TI,DAVUSIØJØ
+	T I	>	-TI,DAVUSIOSIOMS
+	T I	>	-TI,DAVUSIÀSIAS
+	T I	>	-TI,DAVUSIOSIOMIS
+	T I	>	-TI,DAVUSIOSIOSE
+
+
+############################################
+#   Bûsimojo laiko dalyvis
+#
+
+	[^ÐÞSZ] T I	>	-TI,SIÀS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIO
+	[^ÐÞSZ] T I	>	-TI,SIANÈIAM
+	[^ÐÞSZ] T I	>	-TI,SIANTÁ
+	[^ÐÞSZ] T I	>	-TI,SIANÈIU
+	[^ÐÞSZ] T I	>	-TI,SIANÈIAME
+
+	[^ÐÞSZ] T I	>	-TI,SIÀ
+	[^ÐÞSZ] T I	>	-TI,SIANÈIØ
+	[^ÐÞSZ] T I	>	-TI,SIANTIEMS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIUS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIAIS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIUOSE
+
+	[^ÐÞSZ] T I	>	-TI,SIANTI
+	[^ÐÞSZ] T I	>	-TI,SIANÈIOS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIAI
+	[^ÐÞSZ] T I	>	-TI,SIANÈIÀ
+	[^ÐÞSZ] T I	>	-TI,SIANÈIA
+	[^ÐÞSZ] T I	>	-TI,SIANÈIOJE
+	[^ÐÞSZ] T I	>	-TI,SIANÈIOJ
+
+	[^ÐÞSZ] T I	>	-TI,SIANÈIOS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIØ
+	[^ÐÞSZ] T I	>	-TI,SIANÈIOMS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIAS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIOMIS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIOSE
+
+######################################################
+#  Bûsimojo laiko dalyvio ávardþiuotinë forma
+
+	[^ÐÞSZ] T I	>	-TI,SIANTYSIS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIOJO
+	[^ÐÞSZ] T I	>	-TI,SIANÈIAJAM
+	[^ÐÞSZ] T I	>	-TI,SIANTÁJÁ
+	[^ÐÞSZ] T I	>	-TI,SIANÈIUOJU
+	[^ÐÞSZ] T I	>	-TI,SIANÈIAJAME
+
+	[^ÐÞSZ] T I	>	-TI,SIANTIEJI
+	[^ÐÞSZ] T I	>	-TI,SIANÈIØJØ
+	[^ÐÞSZ] T I	>	-TI,SIANTIESIEMS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIUOSIUS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIAISIAIS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIUOSIUOSE
+
+	[^ÐÞSZ] T I	>	-TI,SIANÈIOJI
+	[^ÐÞSZ] T I	>	-TI,SIANÈIOSIOS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIAJAI
+	[^ÐÞSZ] T I	>	-TI,SIANÈIÀJÀ
+	[^ÐÞSZ] T I	>	-TI,SIANÈIÀJA
+	[^ÐÞSZ] T I	>	-TI,SIANÈIOJOJE
+	[^ÐÞSZ] T I	>	-TI,SIANÈIOJOJ
+
+	[^ÐÞSZ] T I	>	-TI,SIANÈIOSIOS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIØJØ
+	[^ÐÞSZ] T I	>	-TI,SIANÈIOSIOMS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIÀSIAS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIOSIOMIS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIOSIOSE
+######################################################
+#  Bûsimojo laiko dalyvio ávardþiuotinë forma
+
+	[^ÐÞSZ] T I	>	-TI,SIANTYSIS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIOJO
+	[^ÐÞSZ] T I	>	-TI,SIANÈIAJAM
+	[^ÐÞSZ] T I	>	-TI,SIANTÁJÁ
+	[^ÐÞSZ] T I	>	-TI,SIANÈIUOJU
+	[^ÐÞSZ] T I	>	-TI,SIANÈIAJAME
+
+	[^ÐÞSZ] T I	>	-TI,SIANTIEJI
+	[^ÐÞSZ] T I	>	-TI,SIANÈIØJØ
+	[^ÐÞSZ] T I	>	-TI,SIANTIESIEMS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIUOSIUS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIAISIAIS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIUOSIUOSE
+
+	[^ÐÞSZ] T I	>	-TI,SIANÈIOJI
+	[^ÐÞSZ] T I	>	-TI,SIANÈIOSIOS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIAJAI
+	[^ÐÞSZ] T I	>	-TI,SIANÈIÀJÀ
+	[^ÐÞSZ] T I	>	-TI,SIANÈIÀJA
+	[^ÐÞSZ] T I	>	-TI,SIANÈIOJOJE
+	[^ÐÞSZ] T I	>	-TI,SIANÈIOJOJ
+
+	[^ÐÞSZ] T I	>	-TI,SIANÈIOSIOS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIØJØ
+	[^ÐÞSZ] T I	>	-TI,SIANÈIOSIOMS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIÀSIAS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIOSIOMIS
+	[^ÐÞSZ] T I	>	-TI,SIANÈIOSIOSE
+
+####################################################################
+	S T I	>	-STI,SIÀS
+	S T I	>	-STI,SIANÈIO
+	S T I	>	-STI,SIANÈIAM
+	S T I	>	-STI,SIANTÁ
+	S T I	>	-STI,SIANÈIU
+	S T I	>	-STI,SIANÈIAME
+
+	S T I	>	-STI,SIÀ
+	S T I	>	-STI,SIANÈIØ
+	S T I	>	-STI,SIANTIEMS
+	S T I	>	-STI,SIANÈIUS
+	S T I	>	-STI,SIANÈIAIS
+	S T I	>	-STI,SIANÈIUOSE
+
+	S T I	>	-STI,SIANTI
+	S T I	>	-STI,SIANÈIOS
+	S T I	>	-STI,SIANÈIAI
+	S T I	>	-STI,SIANÈIÀ
+	S T I	>	-STI,SIANÈIA
+	S T I	>	-STI,SIANÈIOJE
+	S T I	>	-STI,SIANÈIOJ
+
+	S T I	>	-STI,SIANÈIOS
+	S T I	>	-STI,SIANÈIØ
+	S T I	>	-STI,SIANÈIOMS
+	S T I	>	-STI,SIANÈIAS
+	S T I	>	-STI,SIANÈIOMIS
+	S T I	>	-STI,SIANÈIOSE
+
+######################################################
+#  Bûsimojo laiko dalyvio ávardþiuotinë forma
+
+	S T I	>	-STI,SIANTYSIS
+	S T I	>	-STI,SIANÈIOJO
+	S T I	>	-STI,SIANÈIAJAM
+	S T I	>	-STI,SIANTÁJÁ
+	S T I	>	-STI,SIANÈIUOJU
+	S T I	>	-STI,SIANÈIAJAME
+
+	S T I	>	-STI,SIANTIEJI
+	S T I	>	-STI,SIANÈIØJØ
+	S T I	>	-STI,SIANTIESIEMS
+	S T I	>	-STI,SIANÈIUOSIUS
+	S T I	>	-STI,SIANÈIAISIAIS
+	S T I	>	-STI,SIANÈIUOSIUOSE
+
+	S T I	>	-STI,SIANÈIOJI
+	S T I	>	-STI,SIANÈIOSIOS
+	S T I	>	-STI,SIANÈIAJAI
+	S T I	>	-STI,SIANÈIÀJÀ
+	S T I	>	-STI,SIANÈIÀJA
+	S T I	>	-STI,SIANÈIOJOJE
+	S T I	>	-STI,SIANÈIOJOJ
+
+	S T I	>	-STI,SIANÈIOSIOS
+	S T I	>	-STI,SIANÈIØJØ
+	S T I	>	-STI,SIANÈIOSIOMS
+	S T I	>	-STI,SIANÈIÀSIAS
+	S T I	>	-STI,SIANÈIOSIOMIS
+	S T I	>	-STI,SIANÈIOSIOSE
+####################################################################
+	Z T I	>	-ZTI,SIÀS
+	Z T I	>	-ZTI,SIANÈIO
+	Z T I	>	-ZTI,SIANÈIAM
+	Z T I	>	-ZTI,SIANTÁ
+	Z T I	>	-ZTI,SIANÈIU
+	Z T I	>	-ZTI,SIANÈIAME
+
+	Z T I	>	-ZTI,SIÀ
+	Z T I	>	-ZTI,SIANÈIØ
+	Z T I	>	-ZTI,SIANTIEMS
+	Z T I	>	-ZTI,SIANÈIUS
+	Z T I	>	-ZTI,SIANÈIAIS
+	Z T I	>	-ZTI,SIANÈIUOSE
+
+	Z T I	>	-ZTI,SIANTI
+	Z T I	>	-ZTI,SIANÈIOS
+	Z T I	>	-ZTI,SIANÈIAI
+	Z T I	>	-ZTI,SIANÈIÀ
+	Z T I	>	-ZTI,SIANÈIA
+	Z T I	>	-ZTI,SIANÈIOJE
+	Z T I	>	-ZTI,SIANÈIOJ
+
+	Z T I	>	-ZTI,SIANÈIOS
+	Z T I	>	-ZTI,SIANÈIØ
+	Z T I	>	-ZTI,SIANÈIOMS
+	Z T I	>	-ZTI,SIANÈIAS
+	Z T I	>	-ZTI,SIANÈIOMIS
+	Z T I	>	-ZTI,SIANÈIOSE
+
+######################################################
+#  Bûsimojo laiko dalyvio ávardþiuotinë forma
+
+	Z T I	>	-ZTI,SIANTYSIS
+	Z T I	>	-ZTI,SIANÈIOJO
+	Z T I	>	-ZTI,SIANÈIAJAM
+	Z T I	>	-ZTI,SIANTÁJÁ
+	Z T I	>	-ZTI,SIANÈIUOJU
+	Z T I	>	-ZTI,SIANÈIAJAME
+
+	Z T I	>	-ZTI,SIANTIEJI
+	Z T I	>	-ZTI,SIANÈIØJØ
+	Z T I	>	-ZTI,SIANTIESIEMS
+	Z T I	>	-ZTI,SIANÈIUOSIUS
+	Z T I	>	-ZTI,SIANÈIAISIAIS
+	Z T I	>	-ZTI,SIANÈIUOSIUOSE
+
+	Z T I	>	-ZTI,SIANÈIOJI
+	Z T I	>	-ZTI,SIANÈIOSIOS
+	Z T I	>	-ZTI,SIANÈIAJAI
+	Z T I	>	-ZTI,SIANÈIÀJÀ
+	Z T I	>	-ZTI,SIANÈIÀJA
+	Z T I	>	-ZTI,SIANÈIOJOJE
+	Z T I	>	-ZTI,SIANÈIOJOJ
+
+	Z T I	>	-ZTI,SIANÈIOSIOS
+	Z T I	>	-ZTI,SIANÈIØJØ
+	Z T I	>	-ZTI,SIANÈIOSIOMS
+	Z T I	>	-ZTI,SIANÈIÀSIAS
+	Z T I	>	-ZTI,SIANÈIOSIOMIS
+	Z T I	>	-ZTI,SIANÈIOSIOSE
+####################################################################
+	Þ T I	>	-ÞTI,ÐIÀS
+	Þ T I	>	-ÞTI,ÐIANÈIO
+	Þ T I	>	-ÞTI,ÐIANÈIAM
+	Þ T I	>	-ÞTI,ÐIANTÁ
+	Þ T I	>	-ÞTI,ÐIANÈIU
+	Þ T I	>	-ÞTI,ÐIANÈIAME
+
+	Þ T I	>	-ÞTI,ÐIÀ
+	Þ T I	>	-ÞTI,ÐIANÈIØ
+	Þ T I	>	-ÞTI,ÐIANTIEMS
+	Þ T I	>	-ÞTI,ÐIANÈIUS
+	Þ T I	>	-ÞTI,ÐIANÈIAIS
+	Þ T I	>	-ÞTI,ÐIANÈIUOSE
+
+	Þ T I	>	-ÞTI,ÐIANTI
+	Þ T I	>	-ÞTI,ÐIANÈIOS
+	Þ T I	>	-ÞTI,ÐIANÈIAI
+	Þ T I	>	-ÞTI,ÐIANÈIÀ
+	Þ T I	>	-ÞTI,ÐIANÈIA
+	Þ T I	>	-ÞTI,ÐIANÈIOJE
+	Þ T I	>	-ÞTI,ÐIANÈIOJ
+
+	Þ T I	>	-ÞTI,ÐIANÈIOS
+	Þ T I	>	-ÞTI,ÐIANÈIØ
+	Þ T I	>	-ÞTI,ÐIANÈIOMS
+	Þ T I	>	-ÞTI,ÐIANÈIAS
+	Þ T I	>	-ÞTI,ÐIANÈIOMIS
+	Þ T I	>	-ÞTI,ÐIANÈIOSE
+
+######################################################
+#  Bûsimojo laiko dalyvio ávardþiuotinë forma
+
+	Þ T I	>	-ÞTI,ÐIANTYSIS
+	Þ T I	>	-ÞTI,ÐIANÈIOJO
+	Þ T I	>	-ÞTI,ÐIANÈIAJAM
+	Þ T I	>	-ÞTI,ÐIANTÁJÁ
+	Þ T I	>	-ÞTI,ÐIANÈIUOJU
+	Þ T I	>	-ÞTI,ÐIANÈIAJAME
+
+	Þ T I	>	-ÞTI,ÐIANTIEJI
+	Þ T I	>	-ÞTI,ÐIANÈIØJØ
+	Þ T I	>	-ÞTI,ÐIANTIESIEMS
+	Þ T I	>	-ÞTI,ÐIANÈIUOSIUS
+	Þ T I	>	-ÞTI,ÐIANÈIAISIAIS
+	Þ T I	>	-ÞTI,ÐIANÈIUOSIUOSE
+
+	Þ T I	>	-ÞTI,ÐIANÈIOJI
+	Þ T I	>	-ÞTI,ÐIANÈIOSIOS
+	Þ T I	>	-ÞTI,ÐIANÈIAJAI
+	Þ T I	>	-ÞTI,ÐIANÈIÀJÀ
+	Þ T I	>	-ÞTI,ÐIANÈIÀJA
+	Þ T I	>	-ÞTI,ÐIANÈIOJOJE
+	Þ T I	>	-ÞTI,ÐIANÈIOJOJ
+
+	Þ T I	>	-ÞTI,ÐIANÈIOSIOS
+	Þ T I	>	-ÞTI,ÐIANÈIØJØ
+	Þ T I	>	-ÞTI,ÐIANÈIOSIOMS
+	Þ T I	>	-ÞTI,ÐIANÈIÀSIAS
+	Þ T I	>	-ÞTI,ÐIANÈIOSIOMIS
+	Þ T I	>	-ÞTI,ÐIANÈIOSIOSE
+####################################################################
+	Ð T I	>	-ÐTI,ÐIÀS
+	Ð T I	>	-ÐTI,ÐIANÈIO
+	Ð T I	>	-ÐTI,ÐIANÈIAM
+	Ð T I	>	-ÐTI,ÐIANTÁ
+	Ð T I	>	-ÐTI,ÐIANÈIU
+	Ð T I	>	-ÐTI,ÐIANÈIAME
+
+	Ð T I	>	-ÐTI,ÐIÀ
+	Ð T I	>	-ÐTI,ÐIANÈIØ
+	Ð T I	>	-ÐTI,ÐIANTIEMS
+	Ð T I	>	-ÐTI,ÐIANÈIUS
+	Ð T I	>	-ÐTI,ÐIANÈIAIS
+	Ð T I	>	-ÐTI,ÐIANÈIUOSE
+
+	Ð T I	>	-ÐTI,ÐIANTI
+	Ð T I	>	-ÐTI,ÐIANÈIOS
+	Ð T I	>	-ÐTI,ÐIANÈIAI
+	Ð T I	>	-ÐTI,ÐIANÈIÀ
+	Ð T I	>	-ÐTI,ÐIANÈIA
+	Ð T I	>	-ÐTI,ÐIANÈIOJE
+	Ð T I	>	-ÐTI,ÐIANÈIOJ
+
+	Ð T I	>	-ÐTI,ÐIANÈIOS
+	Ð T I	>	-ÐTI,ÐIANÈIØ
+	Ð T I	>	-ÐTI,ÐIANÈIOMS
+	Ð T I	>	-ÐTI,ÐIANÈIAS
+	Ð T I	>	-ÐTI,ÐIANÈIOMIS
+	Ð T I	>	-ÐTI,ÐIANÈIOSE
+
+######################################################
+#  Bûsimojo laiko dalyvio ávardþiuotinë forma
+
+	Ð T I	>	-ÐTI,ÐIANTYSIS
+	Ð T I	>	-ÐTI,ÐIANÈIOJO
+	Ð T I	>	-ÐTI,ÐIANÈIAJAM
+	Ð T I	>	-ÐTI,ÐIANTÁJÁ
+	Ð T I	>	-ÐTI,ÐIANÈIUOJU
+	Ð T I	>	-ÐTI,ÐIANÈIAJAME
+
+	Ð T I	>	-ÐTI,ÐIANTIEJI
+	Ð T I	>	-ÐTI,ÐIANÈIØJØ
+	Ð T I	>	-ÐTI,ÐIANTIESIEMS
+	Ð T I	>	-ÐTI,ÐIANÈIUOSIUS
+	Ð T I	>	-ÐTI,ÐIANÈIAISIAIS
+	Ð T I	>	-ÐTI,ÐIANÈIUOSIUOSE
+
+	Ð T I	>	-ÐTI,ÐIANÈIOJI
+	Ð T I	>	-ÐTI,ÐIANÈIOSIOS
+	Ð T I	>	-ÐTI,ÐIANÈIAJAI
+	Ð T I	>	-ÐTI,ÐIANÈIÀJÀ
+	Ð T I	>	-ÐTI,ÐIANÈIÀJA
+	Ð T I	>	-ÐTI,ÐIANÈIOJOJE
+	Ð T I	>	-ÐTI,ÐIANÈIOJOJ
+
+	Ð T I	>	-ÐTI,ÐIANÈIOSIOS
+	Ð T I	>	-ÐTI,ÐIANÈIØJØ
+	Ð T I	>	-ÐTI,ÐIANÈIOSIOMS
+	Ð T I	>	-ÐTI,ÐIANÈIÀSIAS
+	Ð T I	>	-ÐTI,ÐIANÈIOSIOMIS
+	Ð T I	>	-ÐTI,ÐIANÈIOSIOSE
+
+
+################################################
+#  Bûtojo laiko neveikiamasis dalyvis
+#
+	T I	>	-TI,TAS		# mylëti > mylëtas :~(~ nebemylimas
+	T I	>	-TI,TO
+	T I	>	-TI,TAM
+	T I	>	-TI,TÀ
+	T I	>	-TI,TU
+	T I	>	-TI,TAME
+
+	T I	>	-TI,TI
+	T I	>	-TI,TØ
+	T I	>	-TI,TIEMS
+	T I	>	-TI,TUS
+	T I	>	-TI,TAIS
+	T I	>	-TI,TUOSE
+
+	T I	>	-TI,TA
+	T I	>	-TI,TOS
+	T I	>	-TI,TAI
+	T I	>	-TI,TOJE
+	T I	>	-TI,TOJ
+
+	T I	>	-TI,TOS
+	T I	>	-TI,TØ
+	T I	>	-TI,TOMS
+	T I	>	-TI,TOMIS
+	T I	>	-TI,TOSE
+
+#################################################################
+# Bûtojo laiko neveikiamojo dalyviø ávardþiuotinës formos
+
+	T I	>	-TI,TASIS	# mylëti > mylëtasis
+	T I	>	-TI,TOJO
+	T I	>	-TI,TÀJAM
+	T I	>	-TI,TÀJÁ
+	T I	>	-TI,TUOJU
+	T I	>	-TI,TAJAME
+
+	T I	>	-TI,TIEJI
+	T I	>	-TI,TØJØ
+	T I	>	-TI,TIESIEMS
+	T I	>	-TI,TUOSIUS
+	T I	>	-TI,TAISIAIS
+	T I	>	-TI,TUOSIUOSE
+
+	T I	>	-TI,TOJI
+	T I	>	-TI,TOSIOS
+	T I	>	-TI,TAJAI
+	T I	>	-TI,TÀJÀ
+	T I	>	-TI,TÀJA
+	T I	>	-TI,TOJOJE
+	T I	>	-TI,TOJOJ
+
+	T I	>	-TI,TOSIOS
+	T I	>	-TI,TØJØ
+	T I	>	-TI,TOSIOMS
+	T I	>	-TI,TÀSIAS
+	T I	>	-TI,TOSIOMIS
+	T I	>	-TI,TOSIOSE
+
+################################################
+#  Bûsimojo laiko neveikiamasis dalyvis
+#
+	[^ÐÞSZ] T I	>	-TI,SIMAS		# mylëti > mylësimas
+	[^ÐÞSZ] T I	>	-TI,SIMO
+	[^ÐÞSZ] T I	>	-TI,SIMAM
+	[^ÐÞSZ] T I	>	-TI,SIMÀ
+	[^ÐÞSZ] T I	>	-TI,SIMU
+	[^ÐÞSZ] T I	>	-TI,SIMAME
+
+	[^ÐÞSZ] T I	>	-TI,SIMI
+	[^ÐÞSZ] T I	>	-TI,SIMØ
+	[^ÐÞSZ] T I	>	-TI,SIMIEMS
+	[^ÐÞSZ] T I	>	-TI,SIMUS
+	[^ÐÞSZ] T I	>	-TI,SIMAIS
+	[^ÐÞSZ] T I	>	-TI,SIMUOSE
+
+	[^ÐÞSZ] T I	>	-TI,SIMA
+	[^ÐÞSZ] T I	>	-TI,SIMOS
+	[^ÐÞSZ] T I	>	-TI,SIMAI
+	[^ÐÞSZ] T I	>	-TI,SIMOJE
+	[^ÐÞSZ] T I	>	-TI,SIMOJ
+
+	[^ÐÞSZ] T I	>	-TI,SIMOS
+	[^ÐÞSZ] T I	>	-TI,SIMØ
+	[^ÐÞSZ] T I	>	-TI,SIMOMS
+	[^ÐÞSZ] T I	>	-TI,SIMOMIS
+	[^ÐÞSZ] T I	>	-TI,SIMOSE
+
+	Þ T I	>	-ÞTI,ÐIMAS		# veþti > veðimas
+	Þ T I	>	-ÞTI,ÐIMO
+	Þ T I	>	-ÞTI,ÐIMAM
+	Þ T I	>	-ÞTI,ÐIMÀ
+	Þ T I	>	-ÞTI,ÐIMU
+	Þ T I	>	-ÞTI,ÐIMAME
+
+	Þ T I	>	-ÞTI,ÐIMI
+	Þ T I	>	-ÞTI,ÐIMØ
+	Þ T I	>	-ÞTI,ÐIMIEMS
+	Þ T I	>	-ÞTI,ÐIMUS
+	Þ T I	>	-ÞTI,ÐIMAIS
+	Þ T I	>	-ÞTI,ÐIMUOSE
+
+	Þ T I	>	-ÞTI,ÐIMA
+	Þ T I	>	-ÞTI,ÐIMOS
+	Þ T I	>	-ÞTI,ÐIMAI
+	Þ T I	>	-ÞTI,ÐIMOJE
+	Þ T I	>	-ÞTI,ÐIMOJ
+
+	Þ T I	>	-ÞTI,ÐIMOS
+	Þ T I	>	-ÞTI,ÐIMØ
+	Þ T I	>	-ÞTI,ÐIMOMS
+	Þ T I	>	-ÞTI,ÐIMOMIS
+	Þ T I	>	-ÞTI,ÐIMOSE
+
+	Ð T I	>	-ÐTI,ÐIMAS		# neðti > neðimas
+	Ð T I	>	-ÐTI,ÐIMO
+	Ð T I	>	-ÐTI,ÐIMAM
+	Ð T I	>	-ÐTI,ÐIMÀ
+	Ð T I	>	-ÐTI,ÐIMU
+	Ð T I	>	-ÐTI,ÐIMAME
+
+	Ð T I	>	-ÐTI,ÐIMI
+	Ð T I	>	-ÐTI,ÐIMØ
+	Ð T I	>	-ÐTI,ÐIMIEMS
+	Ð T I	>	-ÐTI,ÐIMUS
+	Ð T I	>	-ÐTI,ÐIMAIS
+	Ð T I	>	-ÐTI,ÐIMUOSE
+
+	Ð T I	>	-ÐTI,ÐIMA
+	Ð T I	>	-ÐTI,ÐIMOS
+	Ð T I	>	-ÐTI,ÐIMAI
+	Ð T I	>	-ÐTI,ÐIMOJE
+	Ð T I	>	-ÐTI,ÐIMOJ
+
+	Ð T I	>	-ÐTI,ÐIMOS
+	Ð T I	>	-ÐTI,ÐIMØ
+	Ð T I	>	-ÐTI,ÐIMOMS
+	Ð T I	>	-ÐTI,ÐIMOMIS
+	Ð T I	>	-ÐTI,ÐIMOSE
+
+	Z T I	>	-ZTI,SIMAS		# megzti > megsimas
+	Z T I	>	-ZTI,SIMO
+	Z T I	>	-ZTI,SIMAM
+	Z T I	>	-ZTI,SIMÀ
+	Z T I	>	-ZTI,SIMU
+	Z T I	>	-ZTI,SIMAME
+
+	Z T I	>	-ZTI,SIMI
+	Z T I	>	-ZTI,SIMØ
+	Z T I	>	-ZTI,SIMIEMS
+	Z T I	>	-ZTI,SIMUS
+	Z T I	>	-ZTI,SIMAIS
+	Z T I	>	-ZTI,SIMUOSE
+
+	Z T I	>	-ZTI,SIMA
+	Z T I	>	-ZTI,SIMOS
+	Z T I	>	-ZTI,SIMAI
+	Z T I	>	-ZTI,SIMOJE
+	Z T I	>	-ZTI,SIMOJ
+
+	Z T I	>	-ZTI,SIMOS
+	Z T I	>	-ZTI,SIMØ
+	Z T I	>	-ZTI,SIMOMS
+	Z T I	>	-ZTI,SIMOMIS
+	Z T I	>	-ZTI,SIMOSE
+
+	S T I	>	-STI,SIMAS		# mesti > mesimas
+	S T I	>	-STI,SIMO
+	S T I	>	-STI,SIMAM
+	S T I	>	-STI,SIMÀ
+	S T I	>	-STI,SIMU
+	S T I	>	-STI,SIMAME
+
+	S T I	>	-STI,SIMI
+	S T I	>	-STI,SIMØ
+	S T I	>	-STI,SIMIEMS
+	S T I	>	-STI,SIMUS
+	S T I	>	-STI,SIMAIS
+	S T I	>	-STI,SIMUOSE
+
+	S T I	>	-STI,SIMA
+	S T I	>	-STI,SIMOS
+	S T I	>	-STI,SIMAI
+	S T I	>	-STI,SIMOJE
+	S T I	>	-STI,SIMOJ
+
+	S T I	>	-STI,SIMOS
+	S T I	>	-STI,SIMØ
+	S T I	>	-STI,SIMOMS
+	S T I	>	-STI,SIMOMIS
+	S T I	>	-STI,SIMOSE
+
+#################################################################
+# Bûsimojo laiko neveikiamojo dalyviø ávardþiuotinës formos
+
+	[^ÐÞSZ] T I	>	-TI,SIMASIS	# mylëti > mylësimasis
+	[^ÐÞSZ] T I	>	-TI,SIMOJO
+	[^ÐÞSZ] T I	>	-TI,SIMÀJAM
+	[^ÐÞSZ] T I	>	-TI,SIMÀJÁ
+	[^ÐÞSZ] T I	>	-TI,SIMUOJU
+	[^ÐÞSZ] T I	>	-TI,SIMAJAME
+
+	[^ÐÞSZ] T I	>	-TI,SIMIEJI
+	[^ÐÞSZ] T I	>	-TI,SIMØJØ
+	[^ÐÞSZ] T I	>	-TI,SIMIESIEMS
+	[^ÐÞSZ] T I	>	-TI,SIMUOSIUS
+	[^ÐÞSZ] T I	>	-TI,SIMAISIAIS
+	[^ÐÞSZ] T I	>	-TI,SIMUOSIUOSE
+
+	[^ÐÞSZ] T I	>	-TI,SIMOJI
+	[^ÐÞSZ] T I	>	-TI,SIMOSIOS
+	[^ÐÞSZ] T I	>	-TI,SIMAJAI
+	[^ÐÞSZ] T I	>	-TI,SIMÀJÀ
+	[^ÐÞSZ] T I	>	-TI,SIMÀJA
+	[^ÐÞSZ] T I	>	-TI,SIMOJOJE
+	[^ÐÞSZ] T I	>	-TI,SIMOJOJ
+
+	[^ÐÞSZ] T I	>	-TI,SIMOSIOS
+	[^ÐÞSZ] T I	>	-TI,SIMØJØ
+	[^ÐÞSZ] T I	>	-TI,SIMOSIOMS
+	[^ÐÞSZ] T I	>	-TI,SIMÀSIAS
+	[^ÐÞSZ] T I	>	-TI,SIMOSIOMIS
+	[^ÐÞSZ] T I	>	-TI,SIMOSIOSE
+
+
+	Þ T I	>	-ÞTI,ÐIMASIS	# veþti > veðimasis
+	Þ T I	>	-ÞTI,ÐIMOJO
+	Þ T I	>	-ÞTI,ÐIMÀJAM
+	Þ T I	>	-ÞTI,ÐIMÀJÁ
+	Þ T I	>	-ÞTI,ÐIMUOJU
+	Þ T I	>	-ÞTI,ÐIMAJAME
+
+	Þ T I	>	-ÞTI,ÐIMIEJI
+	Þ T I	>	-ÞTI,ÐIMØJØ
+	Þ T I	>	-ÞTI,ÐIMIESIEMS
+	Þ T I	>	-ÞTI,ÐIMUOSIUS
+	Þ T I	>	-ÞTI,ÐIMAISIAIS
+	Þ T I	>	-ÞTI,ÐIMUOSIUOSE
+
+	Þ T I	>	-ÞTI,ÐIMOJI
+	Þ T I	>	-ÞTI,ÐIMOSIOS
+	Þ T I	>	-ÞTI,ÐIMAJAI
+	Þ T I	>	-ÞTI,ÐIMÀJÀ
+	Þ T I	>	-ÞTI,ÐIMÀJA
+	Þ T I	>	-ÞTI,ÐIMOJOJE
+	Þ T I	>	-ÞTI,ÐIMOJOJ
+
+	Þ T I	>	-ÞTI,ÐIMOSIOS
+	Þ T I	>	-ÞTI,ÐIMØJØ
+	Þ T I	>	-ÞTI,ÐIMOSIOMS
+	Þ T I	>	-ÞTI,ÐIMÀSIAS
+	Þ T I	>	-ÞTI,ÐIMOSIOMIS
+	Þ T I	>	-ÞTI,ÐIMOSIOSE
+
+
+	Ð T I	>	-ÐTI,ÐIMASIS	# peðti > peðimasis
+	Ð T I	>	-ÐTI,ÐIMOJO
+	Ð T I	>	-ÐTI,ÐIMÀJAM
+	Ð T I	>	-ÐTI,ÐIMÀJÁ
+	Ð T I	>	-ÐTI,ÐIMUOJU
+	Ð T I	>	-ÐTI,ÐIMAJAME
+
+	Ð T I	>	-ÐTI,ÐIMIEJI
+	Ð T I	>	-ÐTI,ÐIMØJØ
+	Ð T I	>	-ÐTI,ÐIMIESIEMS
+	Ð T I	>	-ÐTI,ÐIMUOSIUS
+	Ð T I	>	-ÐTI,ÐIMAISIAIS
+	Ð T I	>	-ÐTI,ÐIMUOSIUOSE
+
+	Ð T I	>	-ÐTI,ÐIMOJI
+	Ð T I	>	-ÐTI,ÐIMOSIOS
+	Ð T I	>	-ÐTI,ÐIMAJAI
+	Ð T I	>	-ÐTI,ÐIMÀJÀ
+	Ð T I	>	-ÐTI,ÐIMÀJA
+	Ð T I	>	-ÐTI,ÐIMOJOJE
+	Ð T I	>	-ÐTI,ÐIMOJOJ
+
+	Ð T I	>	-ÐTI,ÐIMOSIOS
+	Ð T I	>	-ÐTI,ÐIMØJØ
+	Ð T I	>	-ÐTI,ÐIMOSIOMS
+	Ð T I	>	-ÐTI,ÐIMÀSIAS
+	Ð T I	>	-ÐTI,ÐIMOSIOMIS
+	Ð T I	>	-ÐTI,ÐIMOSIOSE
+
+	Z T I	>	-ZTI,SIMASIS	# megzti > megsimasis
+	Z T I	>	-ZTI,SIMOJO
+	Z T I	>	-ZTI,SIMÀJAM
+	Z T I	>	-ZTI,SIMÀJÁ
+	Z T I	>	-ZTI,SIMUOJU
+	Z T I	>	-ZTI,SIMAJAME
+
+	Z T I	>	-ZTI,SIMIEJI
+	Z T I	>	-ZTI,SIMØJØ
+	Z T I	>	-ZTI,SIMIESIEMS
+	Z T I	>	-ZTI,SIMUOSIUS
+	Z T I	>	-ZTI,SIMAISIAIS
+	Z T I	>	-ZTI,SIMUOSIUOSE
+
+	Z T I	>	-ZTI,SIMOJI
+	Z T I	>	-ZTI,SIMOSIOS
+	Z T I	>	-ZTI,SIMAJAI
+	Z T I	>	-ZTI,SIMÀJÀ
+	Z T I	>	-ZTI,SIMÀJA
+	Z T I	>	-ZTI,SIMOJOJE
+	Z T I	>	-ZTI,SIMOJOJ
+
+	Z T I	>	-ZTI,SIMOSIOS
+	Z T I	>	-ZTI,SIMØJØ
+	Z T I	>	-ZTI,SIMOSIOMS
+	Z T I	>	-ZTI,SIMÀSIAS
+	Z T I	>	-ZTI,SIMOSIOMIS
+	Z T I	>	-ZTI,SIMOSIOSE
+
+	S T I	>	-STI,SIMASIS	
+	S T I	>	-STI,SIMOJO
+	S T I	>	-STI,SIMÀJAM
+	S T I	>	-STI,SIMÀJÁ
+	S T I	>	-STI,SIMUOJU
+	S T I	>	-STI,SIMAJAME
+
+	S T I	>	-STI,SIMIEJI
+	S T I	>	-STI,SIMØJØ
+	S T I	>	-STI,SIMIESIEMS
+	S T I	>	-STI,SIMUOSIUS
+	S T I	>	-STI,SIMAISIAIS
+	S T I	>	-STI,SIMUOSIUOSE
+
+	S T I	>	-STI,SIMOJI
+	S T I	>	-STI,SIMOSIOS
+	S T I	>	-STI,SIMAJAI
+	S T I	>	-STI,SIMÀJÀ
+	S T I	>	-STI,SIMÀJA
+	S T I	>	-STI,SIMOJOJE
+	S T I	>	-STI,SIMOJOJ
+
+	S T I	>	-STI,SIMOSIOS
+	S T I	>	-STI,SIMØJØ
+	S T I	>	-STI,SIMOSIOMS
+	S T I	>	-STI,SIMÀSIAS
+	S T I	>	-STI,SIMOSIOMIS
+	S T I	>	-STI,SIMOSIOSE
+
+################################################
+#  Kaip ðita forma vadinama?...
+#
+	T I	>	NAS		# mylëti > mylëtinas
+	T I	>	NO
+	T I	>	NAM
+	T I	>	NÀ
+	T I	>	NU
+	T I	>	NAME
+
+	T I	>	NI
+	T I	>	NØ
+	T I	>	NIEMS
+	T I	>	NUS
+	T I	>	NAIS
+	T I	>	NUOSE
+
+	T I	>	NA
+	T I	>	NOS
+	T I	>	NAI
+	T I	>	NOJE
+	T I	>	NOJ
+
+	T I	>	NOS
+	T I	>	NØ
+	T I	>	NOMS
+	T I	>	NOMIS
+	T I	>	NOSE
+
+
+#################################################################
+#  Sangràþiniai dalyviai
+#
+#  Paliekami skaitytojui kaip pratimas...
+#  Að paraðysiu ¥besimokantis´ vietoj ¥mokàsis´.
+#  Bet ten tiktai vardininkus visø laikø reikia padaryti.  
+#  Kiti linksniai keièiami besi-.
+
+
+			#######################
+			#######################
+
+				flag *U:
+
+			#######################
+			#######################
+
+###################################################################
+#
+# 			Bendratis
+#
+# Èia veiksmaþodþiai, kuriø bendraty ir es. l. ilgi balsiai Û,Y, 
+# o bût. k. l. -- trumpi
+#	gyti gyja gijo		-- gis
+#	lyti lyja lijo		-- lis
+#	griûti griûva griuvo 	-- grius
+#	pûti pûva puvo		-- pus
+#	þûti þûva þuvo		-- þus
+#
+#    plg. -- nëra ¥û´, ¥y´
+#	siûti siuva siuvo	-- siûs
+#	vyti veja vijo		-- vys
+#	
+#
+###################################################################
+
+	T I	>	-TI,T	# griûti > griût
+
+# bûtasis daþninis laikas
+	T I	>	-TI,DAVAU
+	T I	>	-TI,DAVAI
+	T I	>	-TI,DAVO
+	T I	>	-TI,DAVOME
+	T I	>	-TI,DAVOM
+	T I	>	-TI,DAVOTE
+	T I	>	-TI,DAVOT
+
+	T I S	>	-TIS,DAVAUSI
+	T I S	>	-TIS,DAVAISI
+	T I S	>	-TIS,DAVOSI
+	T I S	>	-TIS,DAVOMËS
+	T I S	>	-TIS,DAVOTËS
+
+	T I	>	-TI,SIU
+	T I	>	-TI,SI
+	T I	>	-TI,S
+	Û T I		>	-ÛTI,US
+	Y T I		>	-YTI,IS
+	T I	>	-TI,SIME
+	T I	>	-TI,SIM
+	T I	>	-TI,SITE
+	T I	>	-TI,SIT
+
+# ir sangràþinës formos
+
+	T I S	>	-TI,SIUOSI
+	T I S	>	-TI,SIESI
+	T I S	>	-TI,SIS
+	T I S	>	-TI,SIMËS
+	T I S	>	-TI,SITËS
+
+# tariamoji nuosaka
+	T I	>	-TI,ÈIAU
+	T I	>	-TI,TUM
+	T I	>	-TI,TUMEI
+	T I	>	-TI,TØ
+	T I	>	-TI,TUME
+	T I	>	-TI,TUMËME
+	T I	>	-TI,TUMËM
+	T I	>	-TI,TUMËTE
+	T I	>	-TI,TUMËT
+	T I	>	-TI,TUTE
+	T I	>	-TI,TUT
+
+	T I S	>	-TIS,ÈIAUSI
+	T I S	>	-TIS,TUMEIS
+	T I S	>	-TIS,TUMEISI
+	T I S	>	-TIS,TØSI
+	T I S	>	-TIS,TUMËS
+	T I S	>	-TIS,TUMËMËS
+	T I S	>	-TIS,TUMËTËS
+	T I S	>	-TIS,TUTËS
+
+# liepiamoji nuosaka
+
+	T I	>	-TI,K
+	T I	>	-TI,KIME
+	T I	>	-TI,KIM
+	T I	>	-TI,KITE
+	T I	>	-TI,KIT
+
+	T I S	>	-TIS,KIS
+	T I S	>	-TIS,KIMËS
+	T I S	>	-TIS,KITËS
+
+#####################################
+# Pusdalyvis
+#
+	T I	>	-TI,DAMAS	# skaityti > skaitydamas
+	T I	>	-TI,DAMA	# skaityti > skaitydama
+	T I	>	-TI,DAMI	# skaityti > skaitydami
+	T I	>	-TI,DAMOS	# skaityti > skaitydamos
+
+	T I S	>	-TIS,DAMASIS	# skaityti > skaitydamasis
+	T I S	>	-TIS,DAMASI	# skaityti > skaitydamasi
+	T I S	>	-TIS,DAMIESI	# skaityti > skaitydamiesi
+	T I S	>	-TIS,DAMOSI	# skaityti > skaitydamosi
+
+#####################################
+# Bûtojo daþninio laiko padalyvis
+#
+	T I	>	-TI,DAVUS	# raðyti > raðydavus
+
+	T I S	>	-TIS,DAVUSIS	# raðyti > raðydavusis
+
+#####################################
+# Bûsimojo laiko padalyvis
+#
+	T I 	>	-TI,SIANTIS	# raðyti > raðysiantis
+
+############################################
+#   Bûtojo daþninio laiko dalyvis
+#
+
+	T I	>	-TI,DAVÆS
+	T I	>	-TI,DAVUSIO
+	T I	>	-TI,DAVUSIAM
+	T I	>	-TI,DAVUSÁ
+	T I	>	-TI,DAVUSIU
+	T I	>	-TI,DAVUSIAME
+
+	T I	>	-TI,DAVÆ
+	T I	>	-TI,DAVUSIØ
+	T I	>	-TI,DAVUSIEMS
+	T I	>	-TI,DAVUSIUS
+	T I	>	-TI,DAVUSIAIS
+	T I	>	-TI,DAVUSIUOSE
+
+	T I	>	-TI,DAVUSI
+	T I	>	-TI,DAVUSIOS
+	T I	>	-TI,DAVUSIAI
+	T I	>	-TI,DAVUSIÀ
+	T I	>	-TI,DAVUSIA
+	T I	>	-TI,DAVUSIOJE
+	T I	>	-TI,DAVUSIOJ
+
+	T I	>	-TI,DAVUSIOS
+	T I	>	-TI,DAVUSIØ
+	T I	>	-TI,DAVUSIOMS
+	T I	>	-TI,DAVUSIAS
+	T I	>	-TI,DAVUSIOMIS
+	T I	>	-TI,DAVUSIOSE
+
+######################################################
+#  Bûtojo daþninio laiko dalyvio ávardþiuotinë forma
+
+	T I	>	-TI,DAVUSYSIS
+	T I	>	-TI,DAVUSIOJO
+	T I	>	-TI,DAVUSIAJAM
+	T I	>	-TI,DAVUSÁJÁ
+	T I	>	-TI,DAVUSIUOJU
+	T I	>	-TI,DAVUSIAJAME
+
+	T I	>	-TI,DAVUSIEJI
+	T I	>	-TI,DAVUSIØJØ
+	T I	>	-TI,DAVUSIESIEMS
+	T I	>	-TI,DAVUSIUOSIUS
+	T I	>	-TI,DAVUSIAISIAIS
+	T I	>	-TI,DAVUSIUOSIUOSE
+
+	T I	>	-TI,DAVUSIOJI
+	T I	>	-TI,DAVUSIOSIOS
+	T I	>	-TI,DAVUSIAJAI
+	T I	>	-TI,DAVUSIÀJÀ
+	T I	>	-TI,DAVUSIÀJA
+	T I	>	-TI,DAVUSIOJOJE
+	T I	>	-TI,DAVUSIOJOJ
+
+	T I	>	-TI,DAVUSIOSIOS
+	T I	>	-TI,DAVUSIØJØ
+	T I	>	-TI,DAVUSIOSIOMS
+	T I	>	-TI,DAVUSIÀSIAS
+	T I	>	-TI,DAVUSIOSIOMIS
+	T I	>	-TI,DAVUSIOSIOSE
+
+
+############################################
+#   Bûsimojo laiko dalyvis
+#
+
+	T I	>	-TI,SIÀS
+	T I	>	-TI,SIANÈIO
+	T I	>	-TI,SIANÈIAM
+	T I	>	-TI,SIANTÁ
+	T I	>	-TI,SIANÈIU
+	T I	>	-TI,SIANÈIAME
+
+	T I	>	-TI,SIÀ
+	T I	>	-TI,SIANÈIØ
+	T I	>	-TI,SIANTIEMS
+	T I	>	-TI,SIANÈIUS
+	T I	>	-TI,SIANÈIAIS
+	T I	>	-TI,SIANÈIUOSE
+
+	T I	>	-TI,SIANTI
+	T I	>	-TI,SIANÈIOS
+	T I	>	-TI,SIANÈIAI
+	T I	>	-TI,SIANÈIÀ
+	T I	>	-TI,SIANÈIA
+	T I	>	-TI,SIANÈIOJE
+	T I	>	-TI,SIANÈIOJ
+
+	T I	>	-TI,SIANÈIOS
+	T I	>	-TI,SIANÈIØ
+	T I	>	-TI,SIANÈIOMS
+	T I	>	-TI,SIANÈIAS
+	T I	>	-TI,SIANÈIOMIS
+	T I	>	-TI,SIANÈIOSE
+
+######################################################
+#  Bûsimojo laiko dalyvio ávardþiuotinë forma
+
+	T I	>	-TI,SIANTYSIS
+	T I	>	-TI,SIANÈIOJO
+	T I	>	-TI,SIANÈIAJAM
+	T I	>	-TI,SIANTÁJÁ
+	T I	>	-TI,SIANÈIUOJU
+	T I	>	-TI,SIANÈIAJAME
+
+	T I	>	-TI,SIANTIEJI
+	T I	>	-TI,SIANÈIØJØ
+	T I	>	-TI,SIANTIESIEMS
+	T I	>	-TI,SIANÈIUOSIUS
+	T I	>	-TI,SIANÈIAISIAIS
+	T I	>	-TI,SIANÈIUOSIUOSE
+
+	T I	>	-TI,SIANÈIOJI
+	T I	>	-TI,SIANÈIOSIOS
+	T I	>	-TI,SIANÈIAJAI
+	T I	>	-TI,SIANÈIÀJÀ
+	T I	>	-TI,SIANÈIÀJA
+	T I	>	-TI,SIANÈIOJOJE
+	T I	>	-TI,SIANÈIOJOJ
+
+	T I	>	-TI,SIANÈIOSIOS
+	T I	>	-TI,SIANÈIØJØ
+	T I	>	-TI,SIANÈIOSIOMS
+	T I	>	-TI,SIANÈIÀSIAS
+	T I	>	-TI,SIANÈIOSIOMIS
+	T I	>	-TI,SIANÈIOSIOSE
+
+
+################################################
+#  Bûtojo laiko neveikiamasis dalyvis
+#
+	T I	>	-TI,TAS		# mylëti > mylëtas :~(~ nebemylimas
+	T I	>	-TI,TO
+	T I	>	-TI,TAM
+	T I	>	-TI,TÀ
+	T I	>	-TI,TU
+	T I	>	-TI,TAME
+
+	T I	>	-TI,TI
+	T I	>	-TI,TØ
+	T I	>	-TI,TIEMS
+	T I	>	-TI,TUS
+	T I	>	-TI,TAIS
+	T I	>	-TI,TUOSE
+
+	T I	>	-TI,TA
+	T I	>	-TI,TOS
+	T I	>	-TI,TAI
+	T I	>	-TI,TOJE
+	T I	>	-TI,TOJ
+
+	T I	>	-TI,TOS
+	T I	>	-TI,TØ
+	T I	>	-TI,TOMS
+	T I	>	-TI,TOMIS
+	T I	>	-TI,TOSE
+
+#################################################################
+# Bûtojo laiko neveikiamojo dalyviø ávardþiuotinës formos
+
+	T I	>	-TI,TASIS	# mylëti > mylëtasis
+	T I	>	-TI,TOJO
+	T I	>	-TI,TÀJAM
+	T I	>	-TI,TÀJÁ
+	T I	>	-TI,TUOJU
+	T I	>	-TI,TAJAME
+
+	T I	>	-TI,TIEJI
+	T I	>	-TI,TØJØ
+	T I	>	-TI,TIESIEMS
+	T I	>	-TI,TUOSIUS
+	T I	>	-TI,TAISIAIS
+	T I	>	-TI,TUOSIUOSE
+
+	T I	>	-TI,TOJI
+	T I	>	-TI,TOSIOS
+	T I	>	-TI,TAJAI
+	T I	>	-TI,TÀJÀ
+	T I	>	-TI,TÀJA
+	T I	>	-TI,TOJOJE
+	T I	>	-TI,TOJOJ
+
+	T I	>	-TI,TOSIOS
+	T I	>	-TI,TØJØ
+	T I	>	-TI,TOSIOMS
+	T I	>	-TI,TÀSIAS
+	T I	>	-TI,TOSIOMIS
+	T I	>	-TI,TOSIOSE
+
+################################################
+#  Bûsimojo laiko neveikiamasis dalyvis
+#
+	T I	>	-TI,SIMAS		# mylëti > mylësimas
+	T I	>	-TI,SIMO
+	T I	>	-TI,SIMAM
+	T I	>	-TI,SIMÀ
+	T I	>	-TI,SIMU
+	T I	>	-TI,SIMAME
+
+	T I	>	-TI,SIMI
+	T I	>	-TI,SIMØ
+	T I	>	-TI,SIMIEMS
+	T I	>	-TI,SIMUS
+	T I	>	-TI,SIMAIS
+	T I	>	-TI,SIMUOSE
+
+	T I	>	-TI,SIMA
+	T I	>	-TI,SIMOS
+	T I	>	-TI,SIMAI
+	T I	>	-TI,SIMOJE
+	T I	>	-TI,SIMOJ
+
+	T I	>	-TI,SIMOS
+	T I	>	-TI,SIMØ
+	T I	>	-TI,SIMOMS
+	T I	>	-TI,SIMOMIS
+	T I	>	-TI,SIMOSE
+
+#################################################################
+# Bûsimojo laiko neveikiamojo dalyviø ávardþiuotinës formos
+
+	T I	>	-TI,SIMASIS	# mylëti > mylësimasis
+	T I	>	-TI,SIMOJO
+	T I	>	-TI,SIMÀJAM
+	T I	>	-TI,SIMÀJÁ
+	T I	>	-TI,SIMUOJU
+	T I	>	-TI,SIMAJAME
+
+	T I	>	-TI,SIMIEJI
+	T I	>	-TI,SIMØJØ
+	T I	>	-TI,SIMIESIEMS
+	T I	>	-TI,SIMUOSIUS
+	T I	>	-TI,SIMAISIAIS
+	T I	>	-TI,SIMUOSIUOSE
+
+	T I	>	-TI,SIMOJI
+	T I	>	-TI,SIMOSIOS
+	T I	>	-TI,SIMAJAI
+	T I	>	-TI,SIMÀJÀ
+	T I	>	-TI,SIMÀJA
+	T I	>	-TI,SIMOJOJE
+	T I	>	-TI,SIMOJOJ
+
+	T I	>	-TI,SIMOSIOS
+	T I	>	-TI,SIMØJØ
+	T I	>	-TI,SIMOSIOMS
+	T I	>	-TI,SIMÀSIAS
+	T I	>	-TI,SIMOSIOMIS
+	T I	>	-TI,SIMOSIOSE
+
+################################################
+#  Kaip ðita forma vadinama?...
+#
+	T I	>	NAS		# mylëti > mylëtinas
+	T I	>	NO
+	T I	>	NAM
+	T I	>	NÀ
+	T I	>	NU
+	T I	>	NAME
+
+	T I	>	NI
+	T I	>	NØ
+	T I	>	NIEMS
+	T I	>	NUS
+	T I	>	NAIS
+	T I	>	NUOSE
+
+	T I	>	NA
+	T I	>	NOS
+	T I	>	NAI
+	T I	>	NOJE
+	T I	>	NOJ
+
+	T I	>	NOS
+	T I	>	NØ
+	T I	>	NOMS
+	T I	>	NOMIS
+	T I	>	NOSE
+
+
+#################################################################
+#  Sangràþiniai dalyviai
+#
+#  Paliekami skaitytojui kaip pratimas...
+#  Að paraðysiu ¥besimokantis´ vietoj ¥mokàsis´.
+#  Bet ten tiktai vardininkus visø laikø reikia padaryti.  
+#  Kiti linksniai keièiami besi-.
+# 
+
+
+# 
+# 			#######################
+# 			#######################
+# 
+# 				flag S:
+# 
+# 			#######################
+# 			#######################
+# 
+# #####################################################
+# #
+# #		 Esamasis laikas
+# #	
+# #
+# 
+# # moka, supa, neða, ðukuoja, traukia, kenèia
+# # I paradigma
+# 
+# 	A		>	SI
+# 	A		>	-A,UOSI
+# 	[^I] A		>	-A,IESI	
+# 	[^ÈÞ] I A	>	-IA,IESI	
+# 	È I A		>	-ÈIA,TIESI 	
+# 	D Þ I A		>	-DÞIA,DIESI	
+# 	A		>	MËS
+# 	A		>	TËS
+# 
+# 	I	>	SI
+# 	I	>	-I,IUOSI	
+# 	D I	>	-DI,DÞIUOSI
+# 	T I	>	-TI,ÈIUOSI	
+# 	I		>	MËS	
+# 	I		>	TËS	
+# 
+# 	O	>	SI
+# 	O	>	-O,AUSI
+# 	O	>	-O,AISI
+# 	O	>	-O,OMËS
+# 	O	>	-O,OTËS
+# 
+# ################################################
+# #  Esamojo laiko padalyvis
+# 
+# 	A		>	-A,ANTIS
+# 	O		>	-O,ANTIS
+# 	I		>	-I,INTIS
+# # bût. k.
+# 	O		>	-O,USIS
+# 
+# 	Ë	>	ËSI
+# 	[^DT] Ë	>	-Ë,IAUSI	# mokë > mokiau
+# 	D Ë	>	-DË,DÞIAUSI	# beldë > beldþiau
+# 	T Ë	>	-TË,ÈIAUSI	# keitë > keièiau
+# 	Ë	>	MËS
+# 	Ë	>	TËS	
+# 
+# 	T I	>	D
+# 	T I	>	-TI,DAVAUSI
+# 	T I	>	-TI,DAVAISI
+# 	T I	>	-TI,DAVOSI
+# 	T I	>	-TI,DAVOMËS
+# 	T I	>	-TI,DAVOTËS
+# 
+# 	T I	>	-TI,SIUOSI
+# 	T I	>	-TI,SIESI
+# 	T I	>	-TI,SIS
+# 	T I	>	-TI,SIS
+# 	T I	>	-TI,SIMËS
+# 	T I	>	-TI,SITËS
+#

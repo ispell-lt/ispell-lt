@@ -1,0 +1,5 @@
+guess 		-- pagal þodþio iðvestines formas bando nustatyti, kokie flagai
+			reikalingi
+try 		-- parodo, kas bus pritaikius taisyklæ þodþiui 
+spellai 	-- interaktyvus skriptas, pagal atsakymus á klausimus sudeda teisingus flagus
+updated		-- randa byloje vienodus, bet su skirtingais flagais, þodþius
