@@ -5,6 +5,7 @@ ADSL
 aha
 AIDS
 aliasas/D
+AltaVista
 Amway
 Apache
 Apple
@@ -13,6 +14,7 @@ ASCII
 asemblerinis/B
 ATI
 atributyvus/AN
+atv
 bajeris/D
 Balsa
 BeOS
@@ -22,12 +24,14 @@ BogoMIPS
 Bonobo
 Borland
 Boston
+BSA
 BSD
 CAD
 Canon
 CASE
 Cc
 CD
+cha
 charset
 charsetas/D
 Cyrix
@@ -46,6 +50,7 @@ DBMS
 DBVS
 Debian
 Delfi
+Delphi
 depozitoriumas/D
 DeskJet
 DHCP
@@ -54,22 +59,26 @@ distribucija/D
 distributyvas/D
 DMA
 DNS
+DogPile
 domenas/D
 DOS
 draiveris/D
 DSL
 DVD
 Eazel
+Ee
 egzas/D
 EIDE
 ekstra
 el
+Elta/D
 Emacs
 email
 emailas/D
 enter
 Epson
 ERD
+ES
 Ethernet
 Evolution
 FAQ
@@ -93,6 +102,8 @@ GMT
 GNOME
 Gnome
 GNU
+Google
+GoTo
 GPG
 GPL
 GRUB
@@ -101,6 +112,7 @@ hardas/D
 Helix
 Hewlett
 hostas/D
+HotBot
 HOWTO
 HP
 HTML
@@ -131,10 +143,12 @@ ISO
 iso
 ispell
 IT
+Yahoo
 Java
 JavaScript
 jpg
 JPM
+JT
 kB
 kBps
 kbps
@@ -166,8 +180,10 @@ LILO
 Linux
 Logitech
 logo
+logotipas/D
 LRV
 Lt
+LTSR
 Macintosh
 MacOS
 mailer
@@ -177,6 +193,7 @@ MandrakeSoft
 MB
 MDMA
 mën
+MGL
 MHz
 Microsoft
 MIF
@@ -187,6 +204,7 @@ modifikatorius/D
 Mozilla
 mutt
 Nautilus
+NBA
 NEC
 Netscape
 Netware
@@ -206,12 +224,14 @@ OKI
 opcija/D
 OpenGL
 OpenLDAP
+OpenOffice
 ORBit
 org
 OS
 Outlook
 pabièiui
 page
+paiðytojas/D
 papkë/D
 Pascal
 PC
@@ -220,6 +240,7 @@ PDF
 pdf
 Pentium
 Perl
+PGN
 PGP
 Pine
 pluginas/D
@@ -240,6 +261,7 @@ RAID
 RAM
 README
 ReiserFS
+Rimi
 ROM
 root
 RPM
@@ -247,6 +269,7 @@ runlevelis/D
 saitas/D
 Samsung
 SASL
+SBA
 SCSI
 SE
 Sendmail
@@ -268,6 +291,7 @@ software
 soketas/D
 Solaris
 Sony
+SOS
 Soundblaster
 Source
 SPICE
@@ -275,6 +299,7 @@ SPICE
 SQL
 ssh
 SSL
+SSRS
 StarOffice
 stdout
 subj
@@ -314,6 +339,7 @@ VÁ
 video
 ViM
 VRK
+VU
 web
 Windows
 WWW
@@ -322,3 +348,4 @@ Ximian
 XMMS
 xterm
 ZIP
+Zope
