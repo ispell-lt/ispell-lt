@@ -451,7 +451,6 @@ sub paieska_zodynuose($$) {
     # paieðka pagrindiniame ispell þodyne #
     open(FROM_ISPELL, "echo $word | ispell -d lietuviu -a | grep \'^[*,-,+,&,#,?]\' |") or die 	"\n$R"."Dëmesio$d".", negaliu ávykdyti komandos \'echo $word | ispell -d lietuviu -a | grep \'^[*,-,+,&,#,?]\' \' !";
     $_ = <FROM_ISPELL>;
-    print "------ ispelas pasake $_";
     close(FROM_ISPELL);
     if (/^\*/) {
 	print "$R"."Dëmesio$d".", þodis $B\'$word\'$d yra pagrindiniame ispell þodyne.\n";
@@ -591,13 +590,7 @@ sub irasyti_izodyna ($$) {
 	else { $ats = ($ats == 1) ? 8 : 10; }  
     }
     $idx = $ats;
-    $ats = taip_ne("Ar tikrai norite áraðyti þodá?\a", "t");
-    if(!$ats) {  return; }
-    elsif ($ats == 2) { 
-	print "Jûsø valia. Þod-is(þiai):\n$B$word$d\n$R"."neáraðyt-as(i)$d á þodynà.\nPradedame nuo pradþiø.\n"; 
-	 return; 
-    }
-    else { write_to($fh_h{$idx}, $word); }
+    write_to($fh_h{$idx}, $word);
 
 }
 
