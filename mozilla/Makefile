@@ -1,4 +1,5 @@
 all:
+	install -d bin/components/myspell
 	cp ../lt_LT.aff bin/components/myspell/lt.aff
 	cp ../lt_LT.dic bin/components/myspell/lt.dic
 	zip lt.zip bin/components/myspell/lt.*

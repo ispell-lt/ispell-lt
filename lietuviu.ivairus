@@ -41,6 +41,7 @@ savo
 sau
 save
 savimi
+savim
 savyje
 pats
 paties
@@ -77,7 +78,6 @@ joks/C
 visoks/C
 vienoks/C
 kitoks/C
-
 ji/C
 jinai
 ği/C
@@ -128,9 +128,11 @@ abu
 abudu
 abiejø
 abiem
+abiems
 abiejuose
 abi
 abidvi
+abejos/D
 abiejose
 juodu/C
 jiedu/C
@@ -379,7 +381,7 @@ uştat
 # prielinksniai
 anot
 ant
-arti
+atseit
 aukğèiau
 be
 dëka
@@ -410,10 +412,8 @@ uşuot
 virğ
 virğum
 virğuj
-iğilgai
 ástrişai
 ákypai
-skersai
 kiaurai
 skradşiai
 abipus
@@ -533,6 +533,7 @@ regis
 
 # skaitvardşiai
 vienas/A
+vieneri/H
 du
 dvi
 dviejø
@@ -603,8 +604,11 @@ bilijonas/D
 trilijonas/D
 kvadrilijonas/D
 vienetas/D
+vienetukas/D
 dvejetas/D
+dvejeukas/D
 trejetas/D
+trejetukas/D
 ketvertas/D
 penketas/D
 ğeğetas/D
@@ -614,6 +618,7 @@ devynetas/D
 pirmas/AQN
 antras/H
 treèias/H
+treèdalis/D
 ketvirtas/H
 penktas/H
 ğeğtas/H
@@ -665,8 +670,8 @@ penkiasdeğimttûkstantas/H
 septyniasdeğimttûkstantas/H
 ağtuoniasdeğimttûkstantas/H
 devyniasdeğimttûkstantas/H
-milijoninis/A
-milijardinis/A
+milijoninis/B
+milijardinis/B
 dviese
 trise
 keturiese
@@ -682,3 +687,11 @@ keletas
 keleto
 keletu
 keli/H
+kelintas/A
+
+viskas
+viskame
+viskam
+visko
+viskuo
+viskà

@@ -1,19 +1,15 @@
 #
 #  Makefile for Lithuanian ispell dictionary
-#   
+#
 #  Copyright (C) 2000-2002 Albertas Agejevas
 #
 
 SORTWORDS =	\
-	lietuviu.budvardziai	\
-	lietuviu.daiktavardziai	\
+	lietuviu.zodziai \
 	lietuviu.jargon	\
-	lietuviu.nekaitomi	\
-	lietuviu.tarpt.budvardziai	\
-	lietuviu.tarpt.daiktavardziai	\
-	lietuviu.tarpt.veiksmazodziai	\
 	lietuviu.vardai	\
-	lietuviu.veiksmazodziai
+	lietuviu.veiksmazodziai\
+	lietuviu.ivpk
 
 WORDS =	\
 	$(SORTWORDS)	\
@@ -34,15 +30,17 @@ lt_LT.aff: lietuviu.aff
 
 lietuviu.dict: $(WORDS)
 	cat  $(WORDS) | \
-	grep -v '^[[:space:]]*#\|^[[:space:]]*$$' | \
-	sort > lietuviu.dict
+	grep -v '^[[:space:]]*#\|^[[:space:]]*$$\|XXX' | \
+	sed -e 's/\#.*//' | \
+	sort -u | tools/sutrauka.py > lietuviu.dict
 
 lietuviu.hash: lietuviu.dict lietuviu.aff
 	buildhash lietuviu.dict lietuviu.aff lietuviu.hash
 
 sort:
+	test -n "$$LC_COLLATE" -a "$$LC_COLLATE" != "C"
 	for file in $(SORTWORDS) ; do \
-		sort $$file | uniq > tmp-$$file; \
+		sort -u $$file > tmp-$$file; \
 		mv tmp-$$file $$file; \
 	done
 

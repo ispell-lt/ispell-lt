@@ -1,14 +1,17 @@
 #!/usr/bin/python
+# -*- coding: iso-8859-13 -*-
 """
 ispell2myspell.py -- Converts an affix table from ispell format
 to OpenOffice's MySpell format.
 
-Copyright (C) 2002 by Albertas Agejevas 
+Copyright (C) 2002 by Albertas Agejevas
 
 Usage:  ./ispell2myspell.py lietuviu.aff > lt_LT.aff
 
-$Id: ispell2myspell.py,v 1.1 2002/09/02 23:39:59 alga Exp $
+$Id: ispell2myspell.py,v 1.4 2003/12/25 02:05:36 alga Exp $
 """
+from locale import setlocale, LC_ALL
+import sys
 
 class AffixTable:
 
@@ -78,7 +81,7 @@ class AffixTable:
                 rule = ''.join(tokens)
                 sep = rule.index('>')
                 context = rule[:sep].lower()
-                sep += 1                
+                sep += 1
                 if rule[sep] == '-':
                     comma = rule.index(',')
                     cut = rule[sep+1:comma].lower()
@@ -94,51 +97,51 @@ class AffixTable:
                 except:
                     rules.append(rule)
 
-    def printMySpell(self):
+    def printMySpell(self, file):
         """Prints the affix table in MySpell format.
 
         The charset and the character probabilities are hardcoded for
         Lithuanian."""
 
-        print "SET ISO8859-13"
-        print "TRY iastnokreuldvëmgpjðbyþûczfèh"\
-              "àáøæwxq"
+        print >> file, "SET ISO8859-13"
+        print >> file, "TRY iastnokreuldvëmgpjðbyþûczfèhàáøæwxq"
 #        print "#%s %s %-7s %-15s %-10s" % ('AFF', 'F', 'cut', 'paste', 'context')
         for flag in self.flags.keys():
-            
+
             if flag[0] == 'P':
-                print 'PFX',
+                fx = 'PFX'
             else:
-                print 'SFX',
-            print flag[1],
+                fx = 'SFX'
+
+            print >> file, fx, flag[1],
 
             if self.flags[flag]['combine']:
-                print 'Y',
+                print >> file, 'Y',
             else:
-                print 'N',
+                print >> file, 'N',
 
-            print len(self.flags[flag]['rules'])
+            print >> file, len(self.flags[flag]['rules'])
 
             for context, cut, paste in self.flags[flag]['rules']:
-                if flag[0] == 'P':
-                    fx = 'PFX'
-                else:
-                    fx = 'SFX'
-
-                print "%s %s %-7s %-15s %-10s" % (fx, flag[1], cut,
+                print >> file, "%s %s %-7s %-15s %-10s" % (fx, flag[1], cut,
                                                   paste, context)
-            print
-            
+            print >> file
 
-if __name__ == '__main__':
-    from locale import *
+
+def main():
     setlocale(LC_ALL, "")
 
-    import sys
     if len(sys.argv) > 1:
         file = sys.argv[1]
     else:
-        file = '../lietuviu.aff'
+        print __doc__
+        sys.exit(1)
+
     converter = AffixTable(file)
     converter.readIn()
-    converter.printMySpell()
+    converter.printMySpell(sys.stdout)
+
+
+if __name__ == '__main__':
+    main()
+

@@ -1,3 +1,20 @@
+2003-12-25  Albertas Agejevas <alga@akl.lt>
+
+	* lietuviu.dict: dabar þodyne yra apie 75000 þodþiø.
+	* lietuviu.zodziai, lietuviu.verbs: atðauktas suskaldymas kalbos
+	dalimis ir á tarptautinius ir lietuviðkus.
+	* lietuviu.aff: pataisyta keletas klaidø, pridëtos kelios naujos
+	formos -- dalyviø laipsniai (mylimesnis, mylimiausias).
+	* lietuviu.ivpk: ið DLKÞ perkeltas þodþiø sàraðas.
+	* tools/sutrauka.py: skriptas, sutraukiantis pasikartojanèius
+	þodþius su skirtingais afiksais bei veiksmaþodþiø afiksus.
+	* tools/make.py: skriptas, leidþiantis MySpell þodynà generuoti
+	turint tik Python interpretatoriø ir neturint ispell (naudinga
+ 	Windows vartotojams).
+	* tools/spell.py: naujas skriptas þodþiø ávedimui.  Kol kas labai
+	paprastas, be jokiø patikrinimø ir t.t., bet klausinëja tik
+	reikalingus klausimus.
+
 2002-11-22  Gediminas Paulauskas <menesis@delfi.lt>
 
 	Dideli pakeitimai ið Laimono Vëbros:
@@ -5,7 +22,7 @@
 	* lietuviu.words: ðio failo nebëra, jis padalintas á...
 	* lietuviu.budvardziai, lietuviu.daiktavardziai, lietuviu.nekaitomi,
 	lietuviu.tarpt.budvardziai, lietuviu.tarpt.daiktavardziai: ...ðiuos
-	failus pagal kalbos dalis. 
+	failus pagal kalbos dalis.
 	* lietuviu.base: pervadintas...
 	* lietuviu.ivairus: ...lietuviðkai ir perþiûrëtas.
 	* lietuviu.verbs: iðskaldytas á...
@@ -15,7 +32,7 @@
 
 	* lietuviu.aff: uþkomentuotos taisyklës þodþiams, kurie atsako á
 	klausimà "koks?" ir baigiasi "-tis" -- atrodo kad visi jie yra
-	ne bûdvardþiai, o dalyviai. 
+	ne bûdvardþiai, o dalyviai.
 
 	* tools/spell.pl: stipriai patobulintas skriptas, iðskirsto þodþius á
 	reikalingus failus.
@@ -23,7 +40,7 @@
 2002-09-06  Gediminas Paulauskas <menesis@delfi.lt>
 
 	* nauji þodþiai ið Lino, Mariaus ir manæs
-	
+
 	* lietuviu.aff: pataisymai ið Rièardo Èepo, kad bûtø galima
 	gaminti tiek Latin7 (áprastas), tiek UTF-8 (reikalingas pvz. KMail)
 	þodynus
@@ -62,7 +79,7 @@
 2000-07-04  Albertas Agejevas  <alga@uosis.mif.vu.lt>
 
 	Versija 0.4
-	
+
 	* Ið Gedimino Paulausko <menesis@takas.lt> -- dar tûkstantis
 	naujø þodþiø.  Þodynà sudaro jau virð 7400 þodþiø.
 
@@ -72,7 +89,7 @@
 2000-04-14  Albertas Agejevas  <alga@uosis.mif.vu.lt>
 
 	Versija 0.3
-	
+
 	* Ið Gedimino Paulausko <menesis@takas.lt> -- keli tûkstanèiai
 	naujø þodþiø, o taip pat pilnai sutvarkyti veiksmaþodþiai.  Tai
 	buvo milþiniðkas darbas.  Þodynà sudaro jau virð 6000 þodþiø.
@@ -80,8 +97,8 @@
 	* Jo paties skriptukas, pakeièiantis bei apjungiantis mano ir
 	Mariaus skriptukus, padedanèius nustatyti þodþio flagus.
 
-	* Bug fix'ai ir papildymai afiksø faile.  
-	
+	* Bug fix'ai ir papildymai afiksø faile.
+
 2000-04-04  Albertas Agejevas  <alga@uosis.mif.vu.lt>
 
 	Versija 0.3pre1
@@ -92,7 +109,7 @@
 
 	* ádëtas veiksmaþodþiø prieðdëliø palaikymas (kol kas nevisas
 	þodynas sukonvertuotas á naujà pavidalà, þr failà liet.verbs);
-	
+
 	* atsidaro tools direktorija, o joje keletas Mariaus Gedmino
 	utelyèiø ir mano skriptukas veiksmaþodiø áraðams daryti.  Manau,
 	tik juo ir reikëtø naudotis -- padaro visà veiksmaþodþiø flagø
@@ -102,8 +119,8 @@
 2000-03-17  Albertas Agejevas  <alga@uosis.mif.vu.lt>
 
 	Versija 0.2
-	
-	* Pataisytas afiksø failas; 
+
+	* Pataisytas afiksø failas;
 
 	* keli nauji þodþiai;
 
@@ -122,10 +139,10 @@
 	* Iðleista versija 0.1
 
 2000-02-15  Albertas Agejevas
-	
+
 	* Pradetas darbas (gavau gramatikos þinynà)
 
 
 
 
-	
+

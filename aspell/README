@@ -18,3 +18,22 @@ Jûsø katalogai gali skirtis priklausomai nuo to, kà apie tai mano
 iso-8859-13.dat failas paimtas ið aspell-0.50.3.
 
 'make clean' iðvalo instaliacijà
+
+
+Prieþastis, dël kurios antjungtas veiksmaþodþiø kompiliavimas
+------
+ 22:08:04 up 12:25,  2 users,  load average: 1.00, 0.84, 0.42
+103 processes: 101 sleeping, 2 running, 0 zombie, 0 stopped
+CPU states:  90.8% user,   5.5% system,   0.0% nice,   3.8% idle
+Mem:    257368K total,   255100K used,     2268K free,     1848K buffers
+Swap:   128480K total,    88880K used,    39600K free,     5076K cached
+
+ 8520 tomas     18   0  239M 222M   308 R    94.6 88.4   5:13 aspell
+                        ^^^^^^^^^
+---
+
+cat veiksmazodziai.aspell | aspell --local-data-dir=./ \                        
+    --lang=lt create master ./lt.veiksmazodziai.rws                             
+bad_alloc                                                                   
+make: *** [all] Error 255
+------

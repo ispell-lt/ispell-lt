@@ -43,17 +43,17 @@ $SIG{KILL} = \&sub_exit;
 );
 # filename hash
 %fn_h = (
-	 1 => 'lietuviu.daiktavardziai', 2 => 'lietuviu.tarpt.daiktavardziai', 3 => 'lietuviu.vardai', 
-	 4 => 'lietuviu.veiksmazodziai', 5 => 'lietuviu.tarpt.veiksmazodziai', 
-	 6 => 'lietuviu.budvardziai', 7 => 'lietuviu.tarpt.budvardziai', 
-	 8 => 'lietuviu.nekaitomi', 9 => 'lietuviu.ivairus', 10 => 'lietuviu.jargon'
+	 1 => 'lietuviu.daiktavardziai', 2 => 'lietuviu.vardai', 
+	 3 => 'lietuviu.veiksmazodziai', 4 => 'lietuviu.budvardziai', 
+	 5 => 'lietuviu.nekaitomi', 6 => 'lietuviu.ivairus', 
+	 7 => 'lietuviu.jargon'
 );
 # file handle hash
 %fh_h = (
-	 1 => 'DAIKT', 2 => 'TARPT_DAIKT', 3 => 'VARDAI', 
-	 4 => 'VEIKS', 5 => 'TARPT_VEIKS',
-	 6 => 'BUDV', 7 => 'TARPT_BUDV',
-	 8 => 'NEKAIT', 9 => 'IVAIR', 10 => 'JARGON'
+	 1 => 'DAIKT', 2 => 'VARDAI', 
+	 3 => 'VEIKS', 4 => 'BUDV',
+	 5 => 'NEKAIT', 6 => 'IVAIR', 
+	 7 => 'JARGON'
 );
 
 $versija = "spell.pl 0.5.0, paraðë Laimonas Vëbra <l.v\@centras.lt>, 2002, Vilnius.";
@@ -161,16 +161,16 @@ sub main() {
 	if ($word =~ /\?/) { pagalba(); next; }
 	elsif ($word =~ /q/i) { sub_exit(); }
 	
-	$msg = "Tai $G"."d$d"."aiktavardis, $G"."v$d"."eiksmaþodis, $G"."b$d"."ûdvardis ar $G"."n$d"."ekaitomas þodis? ($G"."d$d\/$G"."v$d\/$G"."b$d\/$G"."n$d)";
+	$msg = "Tai $G"."d$d"."aiktavardis, $G"."v$d"."eiksmaþodis, $G"."b$d"."ûdvardis,\n$G"."n$d"."ekaitomas þodis ar $G"."j$d"."argon? ($G"."d$d\/$G"."v$d\/$G"."b$d\/$G"."n$d\/$G"."j$d)";
 	do  {
-	    if(!ivesti_zodi($msg, 'n')) { next; }
-	} until (/^[bdnvq\?]$/i);
+	    if(!ivesti_zodi($msg, 'j')) { next; }
+	} until (/^[bdnvjq\?]$/i);
 	
 	if    (/v/i) { veiksmazodis($word); }
 	elsif (/d/i) { daiktavardis($word); }
 	elsif (/b/i) { budvardis($word); }
 	elsif (/n/i) { nekaitomas($word); }
-	
+	elsif (/j/i) { jargon($word); }
 	if(($found_u || $found_i) && $ARGV ne '-') { print "Norëdami tæsti paspauskite $B\"Enter\"$d klaviðà..."; $_ = <STDIN>; }
     
     }
@@ -181,7 +181,8 @@ sub main() {
 sub veiksmazodis {
     my ($bend, $es, $but);
     my ($msg, $ats);
-    
+    my $p_found_i = 0; #partial found - pagr. þodyne rasta viena ar kelios ðakninës veiksmaþodþio formos 
+
     print "$Y"."=== Veiksmaþodis ===\n$B$word$d\n";
     $msg = "Áveskite veiksmaþodþio bendratá($G"."kà daryti$d\/$G"."veikti?$d\)";
     do {
@@ -200,9 +201,9 @@ sub veiksmazodis {
     
     foreach $i (1,2,3) {
 	&paieska_zodynuose($v_h{$i}, 2);  
-	if($found_i || $found_u) { $vr_h{$i} = 1; }
+	if($found_i || $found_u) { $p_found_i=1; $vr_h{$i} = 1; }
     }
-    if($found_i) {
+    if($p_found_i) {
 	if($vr_h{1} && $vr_h{2} && $vr_h{3}) { return; } 
 	else {
 	    print "\n\nJûsø ávestø veiksmaþodþiø:\n";
@@ -213,6 +214,7 @@ sub veiksmazodis {
 	    print "Labai tikëtina, kad ðie, jûsø ávesti, veiksmaþodþiai yra neteisingi, o\npagrindiniame þodyne yra saugomos teisingos veiksmaþodþio formos(bendratis,\nesamasis bei bûtasis kartinis laikai).\n\n";
 	    print "$B"."Kitavertus$d - neatmetama galimybë, kad pagrindiniame ispell þodyne yra klaida.\n";
 	    print "Jei manote, kad tai yra þodyno klaida -  bûkite malonûs, $B"."praneðkite$d\napie tai þodyno bazës koordinatoriui.\n";
+	    return;
 	}	
     }
     elsif($found_u) {
@@ -362,8 +364,9 @@ sub budvardis {
 	$sak =~ s/d$/dþ/;
         if(!append_flags("Ar tai santykinis bûdvardis (kokiems - ${sak}iams)?", 't', 'B', 'A')) {  return; } 
     }
-    
-    if(!append_flags("Ar gali bûti ne$word?", 'n', 'N')) {  return; }
+    # Albertas siûlo visiems bûdvardþiams klijuoti /N
+    #if(!append_flags("Ar gali bûti ne$word?", 'n', 'N')) {  return; }
+    $flags .= "N";
     $word = "$word/$flags";
     print $pskirt;
     print  "$word\n";
@@ -378,9 +381,23 @@ sub nekaitomas {
     &paieska_zodynuose($word, 4);
     if($found_i) { return; }
     elsif ($found_u) { return; } # TODO
-
     irasyti_izodyna(4, "$word");
 }  # nekaitomas pabaiga
+
+sub jargon {
+    my $word = shift;
+      
+    print "\n=== $Y"."Þargonas$d ===\n$B$word$d\n";
+    &paieska_zodynuose($word, 5);
+    print "Jei tai kaitomas þodis, nurodykite afiksà ($G"."D,B,A...$d\): ";
+    print "$B";
+    $_ = <STDIN>;
+    print "$d";
+    chomp($_);
+    if($_ ne '') { $word .= "\/$_"; } 
+    irasyti_izodyna(5, "$word");
+} # jargon pabaiga
+
 
 sub legal {
     # Funkcija, kuri tikrina ávedamø þodþiø "legalumà". Mano manymu, tai ðiek tiek padeda iðvengti klaidø ir sutaupyti laiko(pvz: vëlai pastebëjus, kad klaidingai 
@@ -450,7 +467,7 @@ sub atidaryti_zodynus()
     else{ $home = $ENV{"HOME"} || $ENV{"LOGDIR"} || (getpwuid($<))[7]; }
            
     foreach $key ( keys (%fn_h) ) {
-	sysopen( $fh_h{$key},"$home/$fn_h{$key}", O_RDWR | O_CREAT) or die "\$n$R"."Dëmesio$d\, negaliu atidaryti/sukurti /$home/$fn_h{$key} !";
+	sysopen( $fh_h{$key},"$home/$fn_h{$key}", O_RDWR | O_APPEND |O_CREAT) or die "\$n$R"."Dëmesio$d\, negaliu atidaryti/sukurti /$home/$fn_h{$key} !";
 	flock($fh_h{$key}, LOCK_EX) or die "\n$R"."Dëmesio$d\, negaliu uþrakinti(lock) /$home/$fn_h{$key} !";    
     }
 
@@ -480,7 +497,7 @@ sub paieska_zodynuose($$) {
     # TODO: tikrinti abu þodynus(tiek sukompiliuotà, tiek vartotojo) ir ieðkoti galimai pasikartojanèiø þodþiø
     if ($dalis_id == 1) {
     # daiktavardþio paieðka ~ direktorijoje esanèiuose þodynuose #
-	foreach $key (1,2,3,9) {
+	foreach $key (1,2) {
 	    if(find_in($fh_h{$key}, $word)) {
 		$str1 = $fn_h{$key};
 		$af = $_;
@@ -490,31 +507,34 @@ sub paieska_zodynuose($$) {
     }##
     elsif($dalis_id == 2) {
     # veiksmaþodþio paieðka ~ direktorijoje esanèiuose þodynuose #
-	foreach $key (4,5) {
-	    if(find_in($fh_h{$key}, $word)) {
-		$str1 = $fn_h{$key};
-		$af = $_;
-		last;
-	    }
+	if(find_in($fh_h{3}, $word)) {
+	    $str1 = $fn_h{3};
+	    $af = $_;
+	    last;
 	}
     }##
     elsif($dalis_id == 3) {
     # bûdvardþio paieðka ~ direktorijoje esanèiuose þodynuose #
-	foreach $key (6,7) {
-	    if(find_in($fh_h{$key}, $word)) {
-		$str1 = $fn_h{$key};
-		$af = $_;
-		last;
-	    }
+	if(find_in($fh_h{4}, $word)) {
+	    $str1 = $fn_h{4};
+	    $af = $_;
+	    last;
 	}
     }##
     elsif($dalis_id == 4) {
     # nekaitomo þodþio paieðka ~ direktorijoje esanèiuose þodynuose #
-	foreach $key (8,9,10) {
+	foreach $key (5,6) {
 	    if(find_in($fh_h{$key}, $word)) {
 		$str1 = $fn_h{$key};
 		last;
 	    }
+	}
+    }##
+    elsif($dalis_id == 5) {
+    # jargon paieðka ~ direktorijoje esanèiuose þodynuose #
+	if(find_in($fh_h{7}, $word)) {
+	    $str1 = $fn_h{7};
+	    last;
 	}
     }##
     if ($found_u) { print "\n$R"."Dëmesio$d".", þodis $B$word$Y\/$af$d yra þodyne \'$str1\'.";  }
@@ -566,65 +586,16 @@ sub sub_exit {
 sub irasyti_izodyna ($$) {
     my $id = shift;
     my $word = shift;
-    my $lst_ref;
-    my ($ats, $idx);
+    my $idx;
     
-    my $msg = "\nJûsø ávestas þodis yra? :";
-    
-    if ($id == 1) {
-	$lst_ref = ['Lietuviðkas daiktavardis', 'Taptautinës kilmës þodþio daiktavardis', 'Vardas', 'Kita (skaitvardis, ávardis)'];
-	if(! ($ats = v_choice($msg, $lst_ref,  1 )) ) {  return; }
-	else { $ats = ($ats == 4) ? 9 : $ats; }
-    }
-    elsif ($id == 2) {
-	$lst_ref = ['Lietuviðkas veiksmaþodis', 'Taptautinës kilmës þodþio veiksmaþodis'];
-	if(! ($ats = v_choice($msg, $lst_ref,  1 )) ) {  return; }
-	else { $ats += 3; }
-    }
-    elsif ($id == 3) {
-	$lst_ref = ['Lietuviðkas bûdvardis', 'Taptautinës kilmës þodþio bûdvardis'];
-	if(! ($ats = v_choice($msg, $lst_ref,  1 )) ) {  return; }
-	else { $ats += 5; }
-    }
-    elsif ($id == 4) {
-	$lst_ref = ['Tiesiog nekaitomas (arba neaiðkus) þodis', 'Þargonas'];
-	if(! ($ats = v_choice($msg, $lst_ref,  2 )) ) {  return; }
-	else { $ats = ($ats == 1) ? 8 : 10; }  
-    }
-    $idx = $ats;
+    if ($id == 1) { $idx = 1; }
+    elsif ($id == 2) { $idx = 3; }
+    elsif ($id == 3) { $idx = 4; }
+    elsif ($id == 4) { $idx = 5; }  
+    elsif ($id == 5) { $idx = 7; }  
+   
     write_to($fh_h{$idx}, $word);
 
-}
-
-sub v_choice($$$) {
-    my $msg = shift;
-    my $lst_ref = shift;
-    my $def = shift;
-    my $tmp = 1;
-    my $range;
-
-    print "$msg\n";
-    foreach $i (@$lst_ref) {
-	print "\n\t\t$G$tmp$d $i";
-	$tmp++;
-	next;
-    }
-    print "\n\n";
-    $range = $tmp--;
-    $tmp = 0;
-    do {
-	if ($tmp >= 3) {
-	    print "\nÁveskite variantà atitinkantá skaièiø nuo $G"."1$d iki $G$range$d arba $G"."q$d iðeiti [$B$def$d]: $B" ;
-	}
-	else {	print "Áveskite [$B$def$d]: $B"; }
-	$_ = <STDIN>;
-	print "$d";
-	if (!defined || /q/i) {  return; }
-	chomp($_);
-	$_ = $def if $_ eq '';
-	$tmp++;
-    } until( /[1-$range]/ );
-    return $_;
 }
 
 sub write_to($$)
@@ -632,7 +603,7 @@ sub write_to($$)
     my $FH = shift;
     my $word = shift;
 
-    seek($FH, 0, 1) or die "$R"."Dëmesio$d\, negaliu pereiti á failo galà.\n";
+    seek($FH, 0, 2) or die "$R"."Dëmesio$d\, negaliu pereiti á failo galà.\n";
     print $FH "$word\n" or die "$R"."Dëmesio$d\, negaliu áraðyti á failo galà.\n";
     print "Áraðyta\n";
 }
@@ -660,7 +631,7 @@ sub append_flags($$$;$) {
     my $f_true = shift;
     my $f_false = shift;
     my $ats = taip_ne($msg, $def);
-    if(!$ats) {  return; }
+    if(!$ats) { return; }
     elsif($ats == 1) { $flags .= $f_true; }
     elsif($ats == 2 && defined($f_false)) { $flags .= $f_false; }
     return $ats;
@@ -725,12 +696,13 @@ sub veiks_tikrinimas (\$\$\$) {
 
 sub pagalba() {
     system('clear');
-    print "Programos veikimo $G"."principas$d\:\n\n";
-    print "Þodþiø kaupimas yra iðskirtas á 4 pagrindinius skyrius, tai yra:\n";
+    print "Programos veikimo $G"."principas$d\:\n";
+    print "Þodþiø kaupimas yra iðskirtas á 5 pagrindinius skyrius, tai yra:\n";
     print "    -$B Daiktavardis$d\n";
     print "    -$B Veiksmaþodis$d\n";
     print "    -$B Bûdvardis$d\n";
     print "    -$B Nekaitoma$d\n";
+    print "    -$B Jargon$d\n";
     print "    Ávedus þodá bei pasirinkus skyriø, programa papraðys ávesti ðakninæ þodþio\n";
     print "formà(daiktavardþiams, bûdvardþiams  - vardininko laipsnis, veiksmaþodþiams tai\n";
     print "yra bendratis, esamasis bei bûtasis kartinis laikai). Sàvoka \"ðakninis þodis\"\n";
