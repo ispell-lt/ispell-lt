@@ -458,7 +458,7 @@ sub atidaryti_zodynus()
 sub paieska_zodynuose($$) {
     my $word = shift;
     my $dalis_id = shift; # kokia kalbos dalis 1 - daiktavardis, 2 - veiksmaþodis, 3 - bûdvardis, 4 - nekaitoma
-    my ($str1, $str2, $msg, $ats);
+    my ($str1, $msg, $ats);
     my $af = '';
     $found_i = 0;
     # paieðka pagrindiniame ispell þodyne #
@@ -483,10 +483,6 @@ sub paieska_zodynuose($$) {
 	foreach $key (1,2,3,9) {
 	    if(find_in($fh_h{$key}, $word)) {
 		$str1 = $fn_h{$key};
-		if($key == 1) { $str2 = "yra paprastas lietuviðkas daiktavardis"; }
-		elsif($key == 2) { $str2 = "tarptautinio þodþio daiktavardis"; }
-		elsif($key == 3) { $str2 = "gali bûti vardas, pavardë, vietovardis, valstybës pavadinimas.."; }
-		elsif($key == 9) { $str2 = "gali bûti ávardis ar skaitvardis"; }
 		$af = $_;
 		last;
 	    }
@@ -497,8 +493,6 @@ sub paieska_zodynuose($$) {
 	foreach $key (4,5) {
 	    if(find_in($fh_h{$key}, $word)) {
 		$str1 = $fn_h{$key};
-		if($key == 4) { $str2 = "yra paprastas lietuviðkas veiksmaþodis"; }
-		elsif($key == 5) { $str2 = "yra tarptautinës kilmës þodþio veiksmaþodis"; }
 		$af = $_;
 		last;
 	    }
@@ -509,8 +503,6 @@ sub paieska_zodynuose($$) {
 	foreach $key (6,7) {
 	    if(find_in($fh_h{$key}, $word)) {
 		$str1 = $fn_h{$key};
-		if($key == 6) { $str2 = "yra paprastas lietuviðkas bûdvardis"; }
-		elsif($key == 7) { $str2 = "yra tarptautinës kilmës þodþio bûdvardis"; }
 		$af = $_;
 		last;
 	    }
@@ -521,14 +513,11 @@ sub paieska_zodynuose($$) {
 	foreach $key (8,9,10) {
 	    if(find_in($fh_h{$key}, $word)) {
 		$str1 = $fn_h{$key};
-		if($key == 8) { $str2 = "yra lietuviðkas nekaitomas þodis"; }
-		elsif($key == 9) { $str2 = "gali bûti nekaitomas prielinksnis, jungtukas ar kalbos dalelytë"; }
-		elsif($key == 10) { $str2 = "yra nekaitomas þodis priskiriamas þargonui\n(ávairûs pavadinimai, santrumpos, inicialai, kompiuterinis ar kt. slengas, ir \nkt. gramatinës konstrukcijos)"; }
 		last;
 	    }
 	}
     }##
-    if ($found_u) { print "\n$R"."Dëmesio$d".", þodis $B$word$Y\/$af$d yra þodyne \'$str1\'.\nTai reiðkia, kad \'$word\' $str2.";  }
+    if ($found_u) { print "\n$R"."Dëmesio$d".", þodis $B$word$Y\/$af$d yra þodyne \'$str1\'.";  }
 }  
 
 sub taip_ne($$) {
@@ -656,7 +645,7 @@ sub find_in($$)
     
     if (tell($FH)) { seek($FH, 0, 0) or die "$R"."Dëmesio$d\, negaliu pereiti á failo pradþià.\n"; }
     while ( <$FH> ) {
-	if (/$word(\/(.+))?/i) {
+	if (/^$word(\/(.+))?$/i) {
 	    $found_u = 1;
 	    $_ = $2;
 	    last;
