@@ -95,7 +95,7 @@ flag *X:
 # 	.	>	BE
 # 	.	>	TE
 # 	.	>	TEBE
-# flag *Y:
+# flag *Y
 # 	.	>	BE
 # 	.	>	TE
 # 	.	>	TEBE
@@ -3830,7 +3830,7 @@ flag *Q:
 # IV paradigma
 # mokë, neðë, keitë
 
-	[^DT] Ë	>	-Ë,IAU		# mokë > mokiau
+	[^DT] Ë	>	-Ë,IAU		# stûmë > stûmiau
 	D Ë	>	-DË,DÞIAU	# beldë > beldþiau
 	T Ë	>	-TË,ÈIAU	# keitë > keièiau
 	Ë	>	-Ë,EI
@@ -3842,6 +3842,7 @@ flag *Q:
 	[^DT] Ë S I	>	-ËSI,IAUSI		# mokësi > mokiausi
 	D Ë S I		>	-DËSI,DÞIAUSI	# beldësi > beldþiausi
 	T Ë S I		>	-TËSI,ÈIAUSI	# keitësi > keièiausi
+	Ë S I		>	-ËSI,EISI		
 	Ë S I		>	-SI,MËS		
 	Ë S I		>	-SI,TËS		
 
@@ -4077,6 +4078,7 @@ flag *Q:
 	[^DT] Ë	>	-Ë,IAU		# mokë > mokiau
 	D Ë	>	-DË,DÞIAU	# beldë > beldþiau
 	T Ë	>	-TË,ÈIAU	# keitë > keièiau
+	Ë	>	-Ë,EI		# beldë > beldei
 	Ë	>	ME		
 	Ë	>	TE		
 	Ë	>	M
@@ -4085,6 +4087,7 @@ flag *Q:
 	[^DT] Ë S I	>	-ËSI,IAUSI	# mokësi > mokiausi
 	D Ë S I		>	-DËSI,DÞIAUSI	# beldësi > beldþiausi
 	T Ë S I		>	-TËSI,ÈIAUSI	# keitësi > keièiausi
+	Ë S I		>	-SI,EISI	# mokësi > mokeisi	
 	Ë S I		>	-SI,MËS		
 	Ë S I		>	-SI,TËS		
 
