@@ -1,3 +1,7 @@
-# Generated with Aspell Dicts "proc" script version 0.9.1
 name lt
-charset iso8859-13
+charset iso-8859-13
+affix lt
+affix-compress true
+
+
+

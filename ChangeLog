@@ -1,3 +1,49 @@
+2005-01-03  Kæstutis Biliûnas <kebil@kaunas.init.lt>
+	
+	* tools/sutrauka.py: paðalinta grieþta priklausomybë nuo python 2.3
+		versijos.
+	* Makefile: versija padidinta iki 1.1.
+
+2004-12-18  Kæstutis Biliûnas <kebil@kaunas.init.lt>
+	
+	* aspell/lt_affix.dat: ðis failas paðalintas, nes tai tas pats 
+		lt_LT.aff failas, tik kitu vardu.
+	* MANIFEST: paðalintas aspell/lt_affix.dat failas.
+	* Makefile: atitinkamai pataisyti targetai 'clean' ir 'aspell'.
+
+2004-12-11  Kæstutis Biliûnas <kebil@kaunas.init.lt>
+	
+	* aspell/*: ákeltas Alberto aspell6 paketo turinys.
+	* MANIFEST: papildytas katalogo aspell/ failais.
+	* Makefile: papildytas target'ais aspell, dist-aspell ir dists.
+
+2004-12-06  Kæstutis Biliûnas <kebil@kaunas.init.lt>
+	
+	* lietuviu.vardai, lietuviu.veiksmazodziai, lietuviu.zodziai,
+		lietuviu.ivpk: iðtaisyta daug klaidø, iðryðkëjusiø
+		generuojan aspell þodynà.
+
+2004-12-04  Kæstutis Biliûnas <kebil@kaunas.init.lt>
+	
+	* lietuviu.ivairus, lietuviu.veiksmazodziai, lietuviu.zodziai: pa-
+		ðalinti pasikartojantys þodþiai.
+	* lietuviu.zodziai: paðalinti trys klaidingi daiktavardþiai.
+	* lietuviu.ivpk: uþkomentuotas klaidingas daiktavardis durys/D.
+	* lietuviu.veiksmazodziai: dar keletas pataisymø.
+
+2004-11-29  Kæstutis Biliûnas <kebil@kaunas.init.lt>
+	
+	* Makefile: papildyta target'ais dist-src ir dist-myspell.
+	* MANIFEST: naujas failas - sàraðas failø, áeinanèiø á
+		atchyvà ispell-lt-VERSION..tar.gz.
+	* tools/package.sh: paðalintas, nes nebereikalingas.	
+
+2004-11-24  Kæstutis Biliûnas <kebil@kaunas.init.lt>
+	
+	* lietuviu.vardai: papildyta 7 þodþiais ir 3 pataisymai.
+	* lietuviu.veiksmazodziai: papildyta 2 þodþiais ir 2 pataisymai.
+	* lietuviu.zodziai: papildyta 35 þodþiais. 
+
 2003-12-25  Albertas Agejevas <alga@akl.lt>
 
 	* lietuviu.dict: dabar þodyne yra apie 75000 þodþiø.

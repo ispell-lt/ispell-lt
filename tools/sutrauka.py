@@ -1,4 +1,4 @@
-#!/usr/bin/env python2.3
+#!/usr/bin/env python
 # -*- coding: iso-8859-13 -*-
 """
 Sutraukia skirtingus afiksus prie vieno þodþio:
@@ -9,7 +9,7 @@ Be ðito MySpell varikliukas pamirðta vienà ið formø.
 
 Naudojimas panaðus kaip cat programos: stdin arba failø vardai.
 
-$Id: sutrauka.py,v 1.4 2003/12/30 19:03:01 alga Exp $
+$Id: sutrauka.py,v 1.5 2005/01/03 16:22:10 kebil Exp $
 """
 from sets import Set
 import fileinput
@@ -20,8 +20,7 @@ def sutrauka(lines, outfile=sys.stdout, myspell=True):
     words = {}
 
     try:
-        setlocale(LC_COLLATE, "")
-	#getdefaultlocale())
+        setlocale(LC_COLLATE, getdefaultlocale())
     except:
         print >> sys.stderr, "Could not set locale"
 

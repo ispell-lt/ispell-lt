@@ -1,39 +1,70 @@
-Komanda 'make' sukompiliuoja þodynus aspell formate
-Sistemoje turi bûti ádëtos ispell ir aspell programos.
+GNU Aspell 0.60 Lithuanian Dictionary Package
+Version 1.1-1
+2005-01-03
+Original Word List By:
+  Albertas Agejevas <alga at akl lt>
+Copyright Terms: Other (see the file Copyright for the exact terms)
+Wordlist URL: ftp://ftp.akl.lt/ispell-lt/
+Source Verson: 1.0
 
-Veiksmaþodþiø þodynø kompiliacija atjungta. Jei neturite 
-kompiuterio su 400-500 MB atmintimi (RAM+swap), galite nebandyti 
-jø ájungti. Problema yra tame, kad iðpakuotas ispell veiksmaþodþiø
-sàraðas iðsipuèia n-iolika kartø ir kompiliuojant gali 
-pritrûkti atminties.
+This is the Lithuanian dictionary for Aspell.  It requires Aspell 
+version 0.60 or better.
 
-Ant Atlono 1800 su 512 MB RAM'o ðis procesas veikë apie 5 minutes, bet swapo
-nepareikalavo.
+If Aspell is installed and aspell and prezip-bin are all
+in the path first do a:
 
-'make install' kol kas nieko nedaro. Realiai reiktø visus *.rws failus 
-ir lt.multi nukopijuoti á /usr/lib/aspell, o *.dat failus á /usr/share/aspell
-Jûsø katalogai gali skirtis priklausomai nuo to, kà apie tai mano
-'aspell config | grep data-dir' ir 'aspell config | grep dict-dir'
+  ./configure
 
-iso-8859-13.dat failas paimtas ið aspell-0.50.3.
+Which should output something like:
 
-'make clean' iðvalo instaliacijà
+  Finding Dictionary file location ... /usr/local/lib/aspell
+  Finding Data file location ... /usr/local/share/aspell
 
+if it did not something likely went wrong.
 
-Prieþastis, dël kurios antjungtas veiksmaþodþiø kompiliavimas
-------
- 22:08:04 up 12:25,  2 users,  load average: 1.00, 0.84, 0.42
-103 processes: 101 sleeping, 2 running, 0 zombie, 0 stopped
-CPU states:  90.8% user,   5.5% system,   0.0% nice,   3.8% idle
-Mem:    257368K total,   255100K used,     2268K free,     1848K buffers
-Swap:   128480K total,    88880K used,    39600K free,     5076K cached
+After that build the package with:
+  make
+and then install it with
+  make install
 
- 8520 tomas     18   0  239M 222M   308 R    94.6 88.4   5:13 aspell
-                        ^^^^^^^^^
----
+If any of the above mentioned programs are not in your path than the
+variables, ASPELL and/or PREZIP need to be set to the
+commands (with path) to run the utilities.  These variables may be set
+in the environment before configure is run or specified at the command
+line using the following syntax
+  ./configure --vars VAR1=VAL1 ...
+Other useful variables configure recognizes are ASPELL_PARMS, and DESTDIR.
 
-cat veiksmazodziai.aspell | aspell --local-data-dir=./ \                        
-    --lang=lt create master ./lt.veiksmazodziai.rws                             
-bad_alloc                                                                   
-make: *** [all] Error 255
-------
+To clean up after the build:
+  make clean
+
+To uninstall the files:
+  make uninstall
+
+After the dictionaries are installed you can use the main one (lt) by
+setting the LANG environmental variable to lt or running Aspell
+with "--lang=lt".  You may also chose the dictionary directly
+with the "-d" or "--master" option of Aspell.  You can chose from any of
+the following dictionaries:
+  lt (lietuviu lithuanian)
+Whereas the names in parentheses are alternate names for the
+dictionary preceding the parentheses.
+
+The individual word lists have an extension of ".cwl" and are
+compressed to save space.  To uncompress a word list use 
+"preunzip BASE.cwl" which will uncompress it and rename the file 
+to "BASE.wl".  To dump a compressed word list to standard output use
+"precat BASE.cwl".  To uncompress all word lists in the current
+directory use "preunzip *.cwl".  For more help on "preunzip" use
+"preunzip --help".
+
+If you have any problem with installing or using the word lists please
+let the Aspell maintainer, Kevin Atkinson, know at kevina@gnu.org.
+
+If you have problems with the actual word lists please contact one of
+the Word lists authors as the Aspell maintainer does not maintain the
+actual Word Lists.
+
+Any additional documentation that came with the original word list can
+be found in the doc/ directory.
+
