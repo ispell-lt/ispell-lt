@@ -3,8 +3,9 @@
 	   Lietuviðkø ispell afiksø lenteliø README failas
 
 		 Albertas Agejevas <alga@uosis.mif.vu.lt>
+                 Gediminas Paulauskas <menesis@delfi.lt>
 
-			   2000 balandþio 14 d., v. 0.3
+			   2002 m. balandþio 6 d., v. 0.4
 
 		1. Kas èia yra ir kam to reikia?
 
@@ -12,8 +13,8 @@ lietuviu.aff yra afiksø lentelë ispell programai.  ispell yra spell
 checkeris (raðybos tikrinimo programa) Unix sistemoms.  Jis
 veikia labai primityviai: ima ið teksto po vienà þodá ir tikrina, ar
 toks þodis yra þodyne.  Jei nëra, pasiûlo panaðiausius þodþius ið
-þodyno.  "Panaðûs" þodþiai gaunami pakeièiant gretimas raides
-vietomis arba pakeièiant kokià nors vienà raidæ, arba áterpiant tarpà
+þodyno.  "Panaðûs" þodþiai gaunami sukeièiant gretimas raides
+vietomis, pakeièiant kokià nors vienà raidæ, arba áterpiant tarpà
 ar kokià raidæ.
 
 Lietuviø kalba yra sintetinio tipo, tai yra þodþio reikðmë priklauso
@@ -52,7 +53,55 @@ kalbos þodþiø kaitymo taisyklës, taigi þodyne tereikia nurodyti
 ðakniná þodá, o visos formos bus generuojamos automatiðkai.
 
 
-	2. Bûsena
+	2. Kaip naudotis ispell'u?
+
+buildhash programos pagalba ið þodyno failo ir afiksø failø padaromas
+hash failas, kuris vëliau ispell'o visada ir naudojamas.  Pakeitus
+þodynà ar afiksus hash'à reikia ¥surinkti´ ið naujo, norint, kad
+pakeitimai ásigaliotø.
+
+	buildhash lietuviu.dict lietuviu.aff lietuviu.hash
+
+Norëdami padaryti hash'à ið visø þodynø, áskaitant þargono ir
+ðnekamosios kalbos, paraðykite
+
+	make
+
+Dabar paleisdami ispell'à, -d opcija galime nurodyti, kad jis naudotøsi
+mûsø lietuviðku hash'u:
+
+	ispell -d lietuviu
+
+Jei norite padaryti sistemai globalø hash'à, dëkite já á
+/usr/lib/ispell.  Tada galima bus nurodyti tiktai hash failo vardà, o
+ne pilnà kelià.  Tai galite padaryti komanda 
+
+	make install
+
+Jei apsisprendëte naudoti lietuviu þodynà, galite á profailà ásiraðyti
+DICTIONARY=lietuviu. Debiane tai daroma paprasèiau: kaip root'as paleiskite
+komandà
+
+	/usr/sbin/update-ispell-dictionary
+
+Jei norite ispell'u patikrinti koká nors failà, darykite taip:
+
+	ispell -d lietuviu raðliava.txt
+
+Jei norite ispell'u patikrinti koká nors UTF-8 koduotës failà, naudodami UTF-8
+terminalà bei lokalæ, darykite taip:
+
+        ispell -d lietuviu -Tutf8 raðliava.txt
+
+KSpell biblioteka pati tà raktà bando, kai yra nurodyta tokia koduotë KSpell
+konfigûravimo parinktyse.  Jei ispell su tuo raktu neveikia, bandoma be rakto,
+tikintis, kad ispell þodyno ir tikrinamo teksto koduotës sutaps.  Paskui yra
+perkoduojama kaip reikia pagal KDE lokalës nustatymus.  KDE 2.2.1 konfigûruojant
+kspell dar galima nurodyti ISO 8859-13 þodyno koduotæ tam paèiam rezultatui
+pasiekti, ankstesnëse versijose deja tokios galimybës nëra.
+
+
+	3. Bûsena
 
 Tikiuosi, afiksø faile yra nurodytos visos lietuviðkø þodþiø kaitymo
 taisyklës ir keletas þodþiø darybos taisykliø. Kaip flag'ai naudojamos
@@ -74,11 +123,12 @@ faile yra mano paties ir keleto bendraminèiø ið savø raðiniø pririnktø
 þodþiø krûvelë.
 
 Kvieèiu visus vartotojus siøsti man savo surinktø þodþiø, kuriø nëra
-mano þodyne, rinkinius.  Kartu galësime padaryti visai vartotinà
-lietuviðkà þodynà spell checkeriams!
+mano þodyne, rinkinius (jie yra ~/.ispell_lietuviu arba ~/.ispell_default
+failuose).  Kartu galësime padaryti visai vartotinà lietuviðkà þodynà
+spell checkeriams!
 
 
-	3. Kaip pridëti á þodynà naujus þodþius? 
+	4. Kaip pridëti á þodynà naujus þodþius? 
 
 Visos ðitos taisyklës yra suprogramuotos Gedimino Paulausko skripte
 tools/spellai, bet daþnai efektyviau bûna tiesiog pridëti þodá
@@ -209,40 +259,8 @@ Kaip ir viskas.  Visi ávardþiai ir skaitvardþiai jau yra þodyne.  Jei
 ko nors ið jø padermës ten nëra -- raðykit!  
 
 
-	4. Kaip naudotis ispell'u?
-
-buildhash programos pagalba ið þodyno failo ir afiksø failø padaromas
-hash failas, kuris vëliau ispell'o visada ir naudojamas.  Pakeitus
-þodynà ar afiksus hash'à reikia ¥surinkti´ ið naujo, norint, kad
-pakeitimai ásigaliotø.
-
-	buildhash lietuviu.dict lietuviu.aff lietuviu.hash
-
-Norëdami padaryti hash'à ið visø þodynø, áskaitant þargono ir
-ðnekamosios kalbos, paraðykite
-
-	make
-
-Dabar paleisdami ispell'à, -d opcija galime nurodyti, kad jis naudotøsi
-mûsø lietuviðku hash'u:
-
-	ispell -d ./lietuviu
-
-Jei norite padaryti sistemai globalø hash'à, dëkite já á
-/usr/lib/ispell.  Tada galima bus nurodyti tiktai hash failo vardà, o
-ne pilnà kelià.  Tai galite padaryti komanda 
-
-	make install
-
-Jei apsisprendëte naudoti lietuviu þodynà, galite á profailà ásiraðyti
-DICTIONARY=lietuviu.
-
-Jei norite ispell'u patikrinti koká nors failà, darykite taip:
-
-	ispell -d ./lietuviu raðliava.txt
-
 Ispell'as dar turi keletà naudingø reþimø þodynø sudarinëtojams.
-"ispell -d ./lietuviu -e" iðskleidinës afiksus pagal taisykles,
+"ispell -d lietuviu -e" iðskleidinës afiksus pagal taisykles,
 skaitydamas þodþius ið stdin, raðydamas á stdout:
 
 [alga@peleda ispell-lt]$ echo pavyzdys/D | ispell -d ./lietuviu -e
@@ -279,8 +297,8 @@ Jei ieðkosit info apie ispell, jums padës tiktai ispell'o man page'ai
 (errm, vadovo puslapiai :-) ið 1-os sekcijos ir 5-os sekcijos (po BSD --
 4 o ne 5).  Yra ispell'o info dokumentacija, bet joje yra tiktai
 pavirðutiniðkas vartotojo vadovas ir jokios techninës informacijos,
-net Copyright'ø.  Beje, ispell'as iðleistas su BSD licenzija.  Matyt,
-tokià licenzijà pasirinksiu ir afiksø/þodynø failams.
+net Copyright'ø.  Beje, ispell'as iðleistas su BSD licenzija. Tokia
+licenzija taikoma ir afiksø/þodynø failams.
 
 Atleiskit, kad ðitas apraðymas iðëjo toks sumaltas ir sunkiai
 suprantamas.  Gal dienos ðviesoj ir kà geresnio bûèiau sukûræs.  Bet
