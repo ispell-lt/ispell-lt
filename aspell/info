@@ -1,14 +1,27 @@
 name_english Lithuanian
+name_ascii lietuviu
+name_native lietuvių 
 lang lt
 data-file lt_affix.dat
 author:
   name Albertas Agejevas 
   email alga at akl lt
+  maintainer true
+author:
+  name Kestutis Biliunas
+  name-native Kęstutis Biliūnas 
+  email kebil at kaunas init lt
+  maintainer true
+author:
+  name Laimonas Vebra
+  name-native Laimonas Vėbra 
+  email wiela at centras lt
+  maintainer true
 copyright Other
-version 1.0-1
-source-version 1.0
-complete unknown
-accurate unknown
+version 1.1.cvs20060122-0
+source-version 1.1.cvs20060122
+complete true
+accurate true
 url ftp://ftp.akl.lt/ispell-lt/
 alias lt lithuanian lietuviu
 dict:

@@ -4,8 +4,7 @@
 #  Copyright (C) 2000-2002 Albertas Agejevas
 #
 
-VERSION=1.1
-#+cvs`date -u +%Y%m%d`
+VERSION=1.1+cvs`date -u +%Y%m%d`
 DATE=`date -u +%Y\-%m\-%d`
 
 SORTWORDS = \
@@ -22,6 +21,8 @@ WORDS = \
 installdir=`ispell -vv | grep LIBDIR | cut -d'"' -f2`
 
 all: lietuviu.hash myspell
+
+utf8: liet-utf8.hash
 
 myspell: lt_LT.dic lt_LT.aff
 
@@ -41,6 +42,15 @@ lietuviu.dict: $(WORDS)
 lietuviu.hash: lietuviu.dict lietuviu.aff
 	buildhash lietuviu.dict lietuviu.aff lietuviu.hash
 
+liet-utf8.dict: lietuviu.dict
+	iconv -f ISO-8859-13 -t UTF-8 $< > $@
+
+liet-utf8.aff: lietuviu.aff
+	iconv -f ISO-8859-13 -t UTF-8 $< > $@
+
+liet-utf8.hash: liet-utf8.dict liet-utf8.aff
+	buildhash $^ $@
+
 sort:
 	test -n "$$LC_COLLATE" -a "$$LC_COLLATE" != "C"
 	for file in $(SORTWORDS) ; do \
@@ -50,17 +60,18 @@ sort:
 
 clean:
 	rm -f lietuviu.dict.stat lietuviu.dict.cnt lietuviu.hash lietuviu.dict \
-	lt_LT.aff lt_LT.dic *.tar.gz *.zip  *.tar.bz2\
-	aspell/lt.wl aspell/lt.cwl aspell/lt_affix.dat
-#	$(MAKE) -C aspell distclean
-	rm -f aspell/Makefile aspell/lt.rws
+	lt_LT.aff lt_LT.dic *.tar.gz *.zip  *.tar.bz2 \
+	aspell/lt.wl aspell/lt.cwl aspell/lt_affix.dat aspell/lt.rws \
+	aspell/README aspell/configure aspell/Makefile aspell/Makefile.pre \
+	aspell/lt.multi aspell/lietuviu.alias aspell/lithuanian.alias
 
 install: lietuviu.hash
 	install -c -g 0 -o 0 -m 0644 lietuviu.hash $(installdir)
 	install -c -g 0 -o 0 -m 0644 lietuviu.aff $(installdir)
 
-aspell: myspell
+aspell: lietuviu.dict lt_LT.aff
 	cp lt_LT.aff aspell/lt_affix.dat
+	cd aspell; ../tools/proc
 	cd aspell; ./configure
 	cp lietuviu.dict aspell/lt.wl
 	$(MAKE) -C aspell lt.rws
@@ -69,6 +80,8 @@ dist-src:
 	mkdir ispell-lt-$(VERSION)
 	mkdir ispell-lt-$(VERSION)/tools
 	mkdir ispell-lt-$(VERSION)/aspell
+	mkdir ispell-lt-$(VERSION)/aspell/doc
+	mkdir ispell-lt-$(VERSION)/hyph
 	for file in `cat MANIFEST` ; do \
 		cp $$file ispell-lt-$(VERSION)/$$file; \
 	done
@@ -82,19 +95,22 @@ dist-myspell: myspell
 	zip -r lt_LT-$(VERSION).zip lt_LT-$(VERSION)
 	rm -rf lt_LT-$(VERSION)
 
-dist-aspell: aspell
-	echo "s/^version = .*-/version = "$(VERSION)"-/" > tmp.sed
-	sed -f tmp.sed aspell/Makefile.pre > tempfile
-	cp tempfile aspell/Makefile.pre
-	sed -f tmp.sed aspell/Makefile > tempfile
-	cp tempfile aspell/Makefile
-	echo "s/^Version .*-/Version "$(VERSION)"-/" > tmp.sed
-	echo "s/^20.*-.*-.*/"$(DATE)"/" >> tmp.sed
-	sed -f tmp.sed aspell/README > tempfile
-	cp tempfile aspell/README
-	rm -f tempfile tmp.sed
-	$(MAKE) -C aspell dist-nogen
-	mv aspell/*.tar.bz2 ./
+dist-aspell: clean aspell
+	echo "s/^version .*-/version "$(VERSION)"-/" > tmp.tmp
+	echo "s/^source-version .*/source-version "$(VERSION)"/" >> tmp.tmp
+	sed 's/+cvs/.cvs/g' tmp.tmp > tmp.sed
+	sed -f tmp.sed aspell/info > aspell/tmp.info
+	cp aspell/tmp.info aspell/info
+	rm -f tmp.* aspell/tmp.info
+	mkdir aspell-dist
+	cp -fr aspell/* aspell-dist
+	rm -rf aspell-dist/CVS aspell-dist/doc/CVS
+	$(MAKE) -C aspell-dist dist-nogen
+	mv aspell-dist/*.tar.bz2 ./
+	rm -rf aspell-dist
 
-dists: dist-myspell dist-aspell dist-src 
+dist-hyph:
+	zip -Dj hyph_lt_LT.zip hyph/hyph_lt_LT.dic hyph/README_hyph_lt_LT.txt
+
+dists: dist-aspell dist-myspell dist-src dist-hyph 
 

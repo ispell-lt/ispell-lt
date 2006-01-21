@@ -1,13 +1,72 @@
+2006-01-21  Kæstutis Biliûnas <kebil@kaunas.init.lt>
+
+	* aspell/info, tools/proc, tools/README, aspell/doc/README.txt, Makefile,
+	  MANIFEST: aspell6-lt paketo formavimui perdarytas pagal Kevino Atkinsono
+	  rekomendacijas. Tam pritaikytas skriptas 'proc'.
+	* aspell/READDME, aspell/configure, aspell/Makefile.pre, aspell/lietuviu.alias,
+	  aspell/lithuanian.alias, aspell/lt.multi: paðalinti, nes juos generuoja
+	  tools/proc skriptas.
+	* Makefile, MANIFEST, hyph/hyph_lt_LT.dic, hyph/README_hyph_lt_LT.txt:
+	  ákelta Alberto A. paruoðta skiemenavimo lentelë.
+
+2006-01-02  Laimonas Vëbra <wiela@centras.lt>
+
+	* lietuviu.zodziai, lietuviu.jargon: pridëta akivaizdþiai trûkstanèiø
+	  daiktavardþiø, iðtaisyta keletas klaidø.
+	* lietuviu.aff: pridëta trukstama bûdvardþio vienaskaitos ðauksmininko
+	  linksniuotë. Iðtaisyta *A bûdvardþio afiksø klaida.	  
+
+2005-12-16  Laimonas Vëbra <wiela@centras.lt>
+
+	* lietuviu.ivpk: daug pataisymø.
+	
+2005-12-06..19  Albertas Agejevas <alga@akl.lt>
+
+	* lietuviu.aff: pataisytas skaitvardþiø galininko linksnio generavimas.
+
+2005-12-06  Kæstutis Biliûnas <kebil@kaunas.init.lt>
+	* lietuviu.zodziai: nauji daiktavardþiai ir bûdvardûiai, kai kurie
+	  pataisymai. Viso ~50 pataisymø.
+	* lietuviu.ivairus: pridëtas flagas /H prie þodþio ketveri.
+	* lietuviu.vardai: papildyta 38-iais vardais.
+	* lietuviu.veiksmazodziai: papildyta þodþiais kasti, kasinëti, kasyti,
+	  loðti ir loðinëti.
+
+2005-07-16  Kæstutis Biliûnas <kebil@kaunas.init.lt>
+
+	* lietuviu.aff: pridëtas moteriðkos giminës aukðtesniojo laipsnio
+	  bûdvardiø generavimas.
+	* lietuviu.zodziai: papildyta 17 naujø þodþiø ir 17 pataisyta.		
+	* lietuviu.ivairus: 1 naujas.
+	* lietuviu.veiksmazodziai: 3 nauji ir 2 pataisyti.
+
+2005-05-08  Kæstutis Biliûnas <kebil@kaunas.init.lt>
+	
+	* lietuviu.ivairus: du nauji ávardþiai - visokiausias ir visokiausia.
+	* lietuviø.ivpk: pagonis - flagas /D pakeistas á /V.
+	* lietuviu.vardai: 7-ni nauji vardai: Bastilija, Berlynas, Èechovas, Daukða,
+	  Galilëja, Vivulskis, Þemaitija.
+	* lietuviu.veiksmazodziai: naujas - reflektuoti, o 4-iems pataisyti ar
+	  papildyti flagai - dvasinti, reikðminti, testuoti ir vakarëti. 
+	* lietuviu.zodziai: dadëti 22 daiktavardþiai ir  9 bûdvardþiai. Daiktavardþio
+	  vieðpatis flagas /D pakeistas á /V.
+
+2005-02-03  Kæstutis Biliûnas <kebil@kaunas.init.lt>
+	
+	* lietuviu.veiksmazodziai, lietuviu.zodziai: papildyta keletu þodþiu
+	  {raidelë,traktatas, daugiakalbystë, rinkinëti}, ir du þodþiai
+	  pataisyti {byrëti, ákeltis}.
+
 2005-01-03  Kæstutis Biliûnas <kebil@kaunas.init.lt>
 	
 	* tools/sutrauka.py: paðalinta grieþta priklausomybë nuo python 2.3
-		versijos.
+	  versijos.
 	* Makefile: versija padidinta iki 1.1.
 
 2004-12-18  Kæstutis Biliûnas <kebil@kaunas.init.lt>
 	
 	* aspell/lt_affix.dat: ðis failas paðalintas, nes tai tas pats 
-		lt_LT.aff failas, tik kitu vardu.
+	  lt_LT.aff failas, tik kitu vardu.
 	* MANIFEST: paðalintas aspell/lt_affix.dat failas.
 	* Makefile: atitinkamai pataisyti targetai 'clean' ir 'aspell'.
 
@@ -20,13 +79,13 @@
 2004-12-06  Kæstutis Biliûnas <kebil@kaunas.init.lt>
 	
 	* lietuviu.vardai, lietuviu.veiksmazodziai, lietuviu.zodziai,
-		lietuviu.ivpk: iðtaisyta daug klaidø, iðryðkëjusiø
-		generuojan aspell þodynà.
+	  lietuviu.ivpk: iðtaisyta daug klaidø, iðryðkëjusiø generuojan
+	  aspell þodynà.
 
 2004-12-04  Kæstutis Biliûnas <kebil@kaunas.init.lt>
 	
 	* lietuviu.ivairus, lietuviu.veiksmazodziai, lietuviu.zodziai: pa-
-		ðalinti pasikartojantys þodþiai.
+	  ðalinti pasikartojantys þodþiai.
 	* lietuviu.zodziai: paðalinti trys klaidingi daiktavardþiai.
 	* lietuviu.ivpk: uþkomentuotas klaidingas daiktavardis durys/D.
 	* lietuviu.veiksmazodziai: dar keletas pataisymø.
@@ -35,7 +94,7 @@
 	
 	* Makefile: papildyta target'ais dist-src ir dist-myspell.
 	* MANIFEST: naujas failas - sàraðas failø, áeinanèiø á
-		atchyvà ispell-lt-VERSION..tar.gz.
+	  atchyvà ispell-lt-VERSION..tar.gz.
 	* tools/package.sh: paðalintas, nes nebereikalingas.	
 
 2004-11-24  Kæstutis Biliûnas <kebil@kaunas.init.lt>

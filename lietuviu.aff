@@ -4,7 +4,7 @@
 #
 # Copyright (C) 2000-2003 Albertas Agejevas
 #
-# $Id: lietuviu.aff,v 1.12 2004/07/29 12:32:42 alga Exp $
+# $Id: lietuviu.aff,v 1.23 2006/01/02 15:19:21 laimis Exp $
 #
 # Taisyklës ið V. Ambrazas ir kiti
 # ¥Dabartinës lietuviø kalbos gramatika, V. 1994´
@@ -796,7 +796,7 @@ suffixes
 	I A S	>	-IAS,IØ
 	I A S	>	-IAS,IUS
 	I A S	>	-IAS,IAIS
-	I A S	>	-IAS,IOUSE
+	I A S	>	-IAS,IUOSE
 
 #################################
 # 7 paradigma (þalia, geriausia)
@@ -1074,6 +1074,8 @@ suffixes
 	D I S	>	-DIS,DÞIUS
 	D I S	>	-DIS,DÞIAIS
 	D I S	>	-DIS,DÞIUOSE
+	
+	I S 	> 	-IS,I  		# ðauks. l. - baltakakli!, smulkiagrûdi!
 
 #######################################################
 # 9 paradigma (ir geresnë, ir medinë)
@@ -1589,7 +1591,7 @@ flag *Q:
 	[^I] A S	>	-AS,ESNEI
 	[^I] A S	>	-AS,ESNÆ
 	[^I] A S	>	-AS,ESNE
-	[^I] A S	>	-AS,ESNIOJE
+	[^I] A S	>	-AS,ESNËJE
 
 	[^I] A S	>	-AS,ESNËS
 	[^I] A S	>	-AS,ESNËMS
@@ -1829,7 +1831,7 @@ flag *Q:
 	U S	>	-US,ESNEI
 	U S	>	-US,ESNÆ
 	U S	>	-US,ESNE
-	U S	>	-US,ESNIOJE
+	U S	>	-US,ESNËJE
 
 	U S	>	-US,ESNËS
 	U S	>	-US,ESNËMS
@@ -3407,12 +3409,20 @@ flag *Q:
 	I	>	-I,IØ
 	I	>	-I,IEMS
 	I	>	-I,IOMS
-	I	>	-I,IS
 	I	>	-I,IAS
 	I	>	-I,IAIS
 	I	>	-I,IOMIS
 	I	>	-I,IUOSE
 	I	>	-I,IOSE
+
+# Galininkas
+
+	[^E] [^R] I	>	-I,IS           # penki -> penkis
+        E R I           >       -I,IUS          # penkeri -> penkerius
+
+# Ðitø dviejø neturi reikëti, bet be jø neveikia...
+        U R I           >       -I,IS           # keturis
+        E Ð I           >       -I,IS           # ðeðis
 
 # deðimt...devyniasdeðimt
 
@@ -4323,6 +4333,11 @@ flag *Q:
 	Ë	>	-Ë,USIAS
 	Ë	>	-Ë,USIOMIS
 	Ë	>	-Ë,USIOSE
+
+# sangràþa
+
+	O S I	>	-OSI,ÆSI		# mokæsi
+	Ë S I	>	-ËSI,ÆSI		# taræsi
 
 ######################################################
 #  Bûtojo kartinio laiko dalyvio ávardþiuotinë forma

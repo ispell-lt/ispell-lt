@@ -323,10 +323,10 @@ aiðkumas/D
 aiðkus/AQN
 aiðkutëlis/BN
 aistra/D
-aistrina/ENX
-aistrinasi/E
 aistringas/AQN
 aistringumas/D
+aistrina/ENX
+aistrinasi/E
 aistrino/PNX
 aistrinosi/P
 aistrintis/T
@@ -416,9 +416,7 @@ akilandumas/D
 akilandus/AQN
 akimirka/D
 akimirksnis/D
-akimirksniu
 akimojis/D
-akimoju
 akina/ENX
 akinasi/E
 akinis/BN
@@ -432,7 +430,6 @@ akinti/TNX
 akiplëða/D
 akiplëðiðkas/AQN
 akiplëðiðkumas/D
-akiploèiu
 akiplotis/D
 akiratis/D
 akis/MI
@@ -496,9 +493,6 @@ akliojo/PNX
 aklioti/TNX
 aklys/D
 aklystë/D
-aklom
-aklomis
-aklumas/D
 aklutëlis/BN
 akmenauja/ENX
 akmenauti/TNX
@@ -518,7 +512,7 @@ akmeniðkis/D
 akmenynas/D
 akmenynë/D
 akmenkalë/D
-akmenkalis/V
+akmenkalis/D
 akmenkalys/D
 akmenkalystë/D
 akmenligë/D
@@ -735,7 +729,6 @@ alksnynë/D
 alksnytë/D
 alksta/ENX
 alkti/TNX
-alkumas/D
 alkûnë/D
 alkûniavo/PNX
 alkûniavosi/P
@@ -769,7 +762,6 @@ alpuliavo/PNX
 alpuliuoja/ENX
 alpuliuoti/TNX
 alpulys/D
-alpumas/D
 alpus/AQN
 alsas/D
 alsavo/PNX
@@ -781,7 +773,6 @@ alsino/PNX
 alsinosi/P
 alsintis/T
 alsinti/TNX
-alsumas/D
 alsuoja/ENX
 alsuoti/TNX
 alsus/AQN
@@ -4533,7 +4524,7 @@ arinëjosi/P
 arinëtis/T
 arinëti/TNX
 ariogalietë/D
-ariogalietis/V
+ariogalietis/D
 ariogaliðkë/D
 ariogaliðkis/D
 aristokratas/D
@@ -9095,7 +9086,7 @@ birzgino/PNX
 birzginti/TNX
 birzgynë/D
 birþietë/D
-birþietis/V
+birþietis/D
 birþija/ENX
 birþijo/YNX
 birþiðkë/D
@@ -11716,7 +11707,7 @@ dantingas/AQN
 dantingumas/D
 dantinis/BN
 dantiraðtis/D
-dantis/MI
+dantis/VK
 dantistas/D
 dantistë/D
 dantytas/AQN
@@ -12087,7 +12078,7 @@ debesavo/PSXaf
 debesavosi/P
 debesingas/AQN
 debesingumas/D
-debesis/MI
+debesis/VK
 debesiûkðtis/D
 debesiuotas/AQN
 debesiuotumas/D
@@ -12235,7 +12226,7 @@ degti/TNX
 degtukas/D
 degtuvas/D
 degumas/D
-deguonis/MI
+deguonis/VI
 degus/AQN
 degustacija/D
 degustavo/PNX
@@ -13550,7 +13541,7 @@ doruoju
 dosnumas/D
 dosnus/AQN
 dotacija/D
-dotnuvietis/V
+dotnuvietis/D
 dotnuviðkis/D
 dovana/D
 dovanas/AQN
@@ -14741,7 +14732,7 @@ dvaras/D
 dvarininkas/D
 dvarininkë/D
 dvarininkija/D
-dvarionis/MI
+dvarionis/VI
 dvariðkë/D
 dvariðkis/D
 dvarlaukis/D
@@ -15236,7 +15227,7 @@ ediktas/D
 ëdumas/D
 ëdûnas/D
 ëdûnë/D
-ëduonis/MI
+ëduonis/VI
 ëdus/AQN
 ëdþia/D
 efektas/D
@@ -17388,7 +17379,7 @@ gëlumas/D
 gelumbë/D
 gelumbëtas/AQN
 gelumbinis/BN
-geluonis/MI
+geluonis/VI
 geluoniuotas/AQN
 gelþbetoninis/BN
 gelþbetonis/D
@@ -29605,7 +29596,7 @@ jokeris/D
 jokûbinë/D
 jonas/D
 jonavietë/D
-jonavietis/V
+jonavietis/D
 jonaviðkë/D
 jonaviðkis/D
 jonaþolë/D
@@ -29910,7 +29901,7 @@ jûra/D
 jûrasmiltë/D
 jûravo/PNX
 jurbarkietë/D
-jurbarkietis/V
+jurbarkietis/D
 jurbarkiðkë/D
 jurbarkiðkis/D
 jûreivë/D
@@ -30197,7 +30188,7 @@ kaiðena/D
 kaiðë/PNX
 kaiðësi/Y
 kaiðiadorietë/D
-kaiðiadorietis/V
+kaiðiadorietis/D
 kaiðiadoriðkë/D
 kaiðiadoriðkis/D
 kaiðia/ENX
@@ -31002,9 +30993,9 @@ karibas/D
 karibë/D
 kari/ENX
 karieta/D
-karikatnrina/ENX
-karikatnrino/PNX
-karikatnrinti/TNX
+karikatûrina/ENX
+karikatûrino/PNX
+karikatûrinti/TNX
 karikatûra/D
 karikatûrininkas/D
 karikatûrininkë/D
@@ -31538,7 +31529,7 @@ kauna/ENX
 kauna/ESX
 kaunasi/E
 kaunietë/D
-kaunietis/V
+kaunietis/D
 kauniðkë/D
 kauniðkis/D
 kaupas/D
@@ -31687,7 +31678,7 @@ keèujas/D
 keèujë/D
 keda/ENX
 këdainietë/D
-këdainietis/V
+këdainietis/D
 këdainiðkë/D
 këdainiðkis/D
 këdë/D
@@ -33056,7 +33047,7 @@ kivykðèiojo/PNX
 kivykðèioti/TNX
 kybaravo/PNX
 kybartietë/D
-kybartietis/V
+kybartietis/D
 kybartiðkë/D
 kybartiðkis/D
 kybaruoja/ENX
@@ -33973,9 +33964,9 @@ klusti/TNX
 klusumas/D
 klusus/AQN
 klûva/ENXcbdfijml
-kmetinasi/E
-kmetinosi/P
-kmetintis/T
+kietinasi/E
+kietinosi/P
+kietintis/T
 kmynas/D
 kmynauja/ENX
 kmynauti/TNX
@@ -34064,11 +34055,11 @@ knarksojo/PNX
 knarksoti/TNX
 knarkti/TNX
 knatas/D
-knbrina/ENX
-knbrino/PNX
-knbrinti/TNX
-kndikis/D
-kndikiðkas/AQN
+kûbrina/ENX
+kûbrino/PNX
+kûbrinti/TNX
+kûdikis/D
+kûdikiðkas/AQN
 knëbèioja/ENX
 knëbèiojo/PNX
 knëbèioti/TNX
@@ -34401,7 +34392,7 @@ kojinis/BN
 kojinis/D
 kojnkas/D
 kojokas/D
-kojðgalis/D
+kojûgalis/D
 kokainas/D
 kokamedis/D
 kokarda/D
@@ -34489,8 +34480,8 @@ koloritas/D
 kolosalumas/D
 kolosalus/AQN
 kolosas/D
-kolðkinis/BN
-kolðkis/D
+kolûkinis/BN
+kolûkis/D
 kolûkietë/D
 kolûkietis/D
 komanda/D
@@ -34847,7 +34838,7 @@ kontrpuolimas/D
 kontrrevoliucija/D
 kontrrevoliucionierë/D
 kontrrevoliucionierius/D
-kontrsmngis/D
+kontrsmûgis/D
 kontrþvalgyba/D
 kontûras/D
 kontûrinis/BN
@@ -34906,9 +34897,9 @@ kopininkë/D
 kopynë/D
 koplyèia/D
 koplytulë/D
-kopnstinis/BN
-kopnstkotis/D
-kopnstlapis/D
+kopûstinis/BN
+kopûstkotis/D
+kopûstlapis/D
 koptelëja/ENX
 koptelëjo/PNX
 koptelëti/TNX
@@ -36486,7 +36477,7 @@ kupinti/TNX
 kupiðkënas/D
 kupiðkënë/D
 kupiðkietë/D
-kupiðkietis/V
+kupiðkietis/D
 kupiûra/D
 kupiûravo/PNX
 kupiûruoja/ENX
@@ -37733,7 +37724,6 @@ laukësi/P
 laukëti/TNX
 laukia/ENX
 laukia/ESX
-laukiamasis/V
 laukiasi/E
 laukinaitë/D
 laukinaitis/D
@@ -37837,7 +37827,7 @@ lazdelë/D
 lazdelinis/BN
 lazdenis/D
 lazdijietë/D
-lazdijietis/V
+lazdijietis/D
 lazdijiðkë/D
 lazdijiðkis/D
 lazdynas/D
@@ -38614,7 +38604,7 @@ linktelëti/TNX
 linkti/TNX
 linkuvë/D
 linkuvietë/D
-linkuvietis/V
+linkuvietis/D
 linkuvis/D
 linlapis/D
 linmarka/D
@@ -42576,7 +42566,7 @@ nebylys/D
 nebylystë/D
 nebylumas/D
 nebylus/AQN
-neblogas/AQN
+#kb neblogas/AQN
 nebrendëlë/D
 nebrendëlis/D
 nebrendila/D
@@ -42706,7 +42696,7 @@ nektaras/D
 nekur
 nelabai
 nelabas/AQN
-nelabasis/V
+nelabasis/D
 nelabystë/D
 nelabumas/D
 nelaikðë/D
@@ -50229,7 +50219,7 @@ pakrovë/PNX
 pakrûmë/D
 pakrûminis/BN
 pakruojietë/D
-pakruojietis/V
+pakruojietis/D
 pakruojiðkë/D
 pakruojiðkis/D
 pakruta/ENX
@@ -51214,7 +51204,7 @@ paneðiojo/PNX
 paneðioti/TNX
 paneðti/TSX
 panevëþietë/D
-panevëþietis/V
+panevëþietis/D
 panevëþiðkë/D
 panevëþiðkis/D
 paniabudë/D
@@ -51284,7 +51274,7 @@ panteizmas/D
 panteonas/D
 pantera/D
 pantinis/BN
-pantis/D
+pantis/MI
 pantokrinas/D
 pantomima/D
 panûdo/PNX
@@ -61416,9 +61406,9 @@ prarûgo/PNX
 prarûgsta/ENX
 prarûgti/TNX
 praðalaitë/D
-praðalaitis/V
+praðalaitis/D
 praðalietë/D
-praðalietis/V
+praðalietis/D
 praðalina/ESX
 praðalino/PSX
 praðalinti/TSX
@@ -63393,7 +63383,6 @@ priilso/PNX
 priilsta/ENX
 priilsti/TNX
 priima/ENX
-priimamasis/V
 priimdinëja/ENX
 priimdinëjo/PNX
 priimdinëti/TNX
@@ -66412,7 +66401,6 @@ prosas/D
 prosenë/D
 prosenelë/D
 prosenelis/D
-prosenelis/MI
 prosenis/D
 prosenolë/D
 prosenolis/D
@@ -68664,7 +68652,7 @@ reketas/D
 reketë/D
 reketininkas/D
 reketininkë/D
-reketis/V
+reketis/D
 reketys/D
 reketukas/D
 rekeþis/D
@@ -69649,9 +69637,9 @@ ryþtingumas/D
 ryþtis/T
 ryþti/TSX
 ryþtumas/D
-rmejasi/E
-rmejosi/P
-rmetis/T
+riejasi/E
+riejosi/P
+rietis/T
 robotas/D
 rodë/YNX
 rodë/PSX
@@ -69686,7 +69674,7 @@ rokiruoti/TNX
 rokiðkënas/D
 rokiðkënë/D
 rokiðkietë/D
-rokiðkietis/V
+rokiðkietis/D
 rokokas/D
 rolë/D
 romanas/D
@@ -69931,7 +69919,6 @@ rûknoja/ENX
 rûknojo/PNX
 rûknoti/TNX
 rûko/ENX
-rûkomasis/V
 ruko/PNX
 rûko/PNX
 rûkorë/D
@@ -73921,7 +73908,7 @@ skendi/ENX
 skendo/PNX
 skenduolë/D
 skenduolis/D
-skenduonis/MI
+skenduonis/VI
 skepeta/D
 skepetaitë/D
 skepetëlë/D
@@ -74278,7 +74265,7 @@ skystumas/D
 skystûnas/D
 skystûnë/D
 skystuoja/ENX
-skystuolis/V
+skystuolis/D
 skystuoti/TNX
 sklaida/D
 sklaidë/YNX
@@ -89044,7 +89031,7 @@ tëvynininkas/D
 tëvynininkë/D
 tëvystë/D
 tëvonija/D
-tëvonis/MI
+tëvonis/VI
 tëvonystë/D
 tëvukas/D
 tëvûnas/D
@@ -93212,9 +93199,9 @@ uþklumpa/ENX
 uþkluonë/D
 uþklupo/PNX
 uþklupti/TNX
-uþkmetina/ESX
-uþkmetino/PSX
-uþkmetinti/TSX
+uþkietina/ESX
+uþkietino/PSX
+uþkietinti/TSX
 uþknabina/ENX
 uþknabino/PNX
 uþknabinti/TNX
@@ -93749,7 +93736,7 @@ uþnarvis/D
 uþnaða/D
 uþnemunë/D
 uþnemunietë/D
-uþnemunietis/V
+uþnemunietis/D
 uþnemuniðkë/D
 uþnemuniðkis/D
 uþnërë/PSX
@@ -94159,9 +94146,9 @@ uþritina/ENX
 uþritino/PNX
 uþritinti/TNX
 uþrito/PNX
-uþrmeja/ESX
-uþrmejo/PSX
-uþrmeti/TSX
+uþrmija/ESX
+uþriejo/PSX
+uþrieti/TSX
 uþrovë/PNX
 uþrûdija/ENX
 uþrûdijo/YNX
@@ -94557,9 +94544,9 @@ uþsiklostë/YSX
 uþsiklostyti/TSX
 uþsiklosto/ESX
 uþsikloti/TSX
-uþsikmetina/ESX
-uþsikmetino/PSX
-uþsikmetinti/TSX
+uþsikietina/ESX
+uþsikietino/PSX
+uþsikietinti/TSX
 uþsiknerpë/PSX
 uþsiknerpia/ESX
 uþsiknerpti/TSX
@@ -94859,9 +94846,9 @@ uþsirita/ENX
 uþsirito/PNX
 uþsiryja/ENX
 uþsiryti/UNX
-uþsirmeja/ESX
-uþsirmejo/PSX
-uþsirmeti/TSX
+uþsirieja/ESX
+uþsiriejo/PSX
+uþsirieti/TSX
 uþsiropðèia/ENX
 uþsiropðtë/PNX
 uþsiropðti/TNX
@@ -95261,9 +95248,9 @@ uþsraigtuoti/TNX
 uþsrëbë/PNX
 uþsrebia/ENX
 uþsrëbti/TNX
-uþsrmegë/PNX
-uþsrmegia/ENX
-uþsrmegti/TNX
+uþsriegë/PNX
+uþsriegia/ENX
+uþsriegti/TNX
 uþstalë/D
 uþstatas/D
 uþstatë/YNX
@@ -96966,7 +96953,7 @@ varpotas/AQN
 varpoti/TNX
 varpstë/D
 varpstelis/D
-varpstis/V
+varpstis/D
 varpuèiavo/PNX
 varpuèiuoja/ENX
 varpuèiuoti/TNX
@@ -97270,7 +97257,6 @@ vëbrino/PNX
 vëbrinti/TNX
 veèas/AQN
 veda/ENX
-vedamasis/V
 vëdaras/D
 vëdarëlis/D
 vëdarinis/BN
@@ -97607,7 +97593,7 @@ veltautojas/D
 veltavo/PNX
 veltëdë/D
 veltëdiðkas/AQN
-veltëdis/V
+veltëdis/D
 veltëdys/D
 veltëdystë/D
 veltëdþiauja/ENX
@@ -99450,7 +99436,6 @@ vyresniavo/PNX
 vyresnis/BN
 vyresniðkumas/D
 vyresnybë/D
-vyresnysis/V
 vyrëti/TNX
 vyriausias/AQN
 vyriausybë/D
@@ -99563,14 +99548,14 @@ vyþotë/D
 vyþpynë/D
 vyþpynys/D
 vyþti/TNX
-vmenàkart
-vmenàsyk
-vmengubas/AQN
-vmenvëris/BN
-vmenvietë/D
-vmenvietininkas/D
-vmenvietininkë/D
-vmesuliðkas/AQN
+vienàkart
+vienàsyk
+viengubas/AQN
+vienvëris/BN
+vienvietë/D
+vienvietininkas/D
+vienvietininkë/D
+viesuliðkas/AQN
 vobaloja/ENX
 vobalojo/PNX
 vobaloti/TNX
@@ -100658,7 +100643,7 @@ zenitinis/BN
 þieþmariðkë/D
 þieþmariðkis/D
 þieþulë/D
-þieþulmngas/AQN
+þieþulingas/AQN
 þigas/D
 zigota/D
 zigzagas/D
@@ -101809,11 +101794,11 @@ zvembti/TNX
 þvërinis/BN
 þvëriðkas/AQN
 þvëriðkumas/D
-þvëris/MI
+þvëris/VI
 þvëriûkðtis/D
 þvërybë/D
 þvërynas/D
-þvërmena/D
+þvëriena/D
 þviegë/PNX
 þviegesys/D
 þviegia/ENX

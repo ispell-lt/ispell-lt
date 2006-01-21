@@ -3,3 +3,5 @@ guess 		-- pagal þodþio iðvestines formas bando nustatyti, kokie flagai
 try 		-- parodo, kas bus pritaikius taisyklæ þodþiui 
 spellai 	-- interaktyvus skriptas, pagal atsakymus á klausimus sudeda teisingus flagus
 updated		-- randa byloje vienodus, bet su skirtingais flagais, þodþius
+proc            -- skriptas ið 'aspell-lang' paketo (ftp://ftp.gnu.org/gnu/aspell/),
+			skirtas aspell ditributyvo generavimui
