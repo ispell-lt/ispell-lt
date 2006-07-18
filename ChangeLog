@@ -1,3 +1,17 @@
+2006.07.19  Kæstutis Biliûnas <kebil@kaunas.init.lt> 
+	* lietuviu.vardai: papildyta 2 vardais.
+	* lietuviu.zodziai: papildyta 5 daiktavardþiais, 7 bûdvardþiais,
+          ir apie 90 flagø pataisymø (kai kuriems sudaiktavardëjusiems
+          bûdvardþiams pridëtas flagas /D).  
+
+2006-06-04  Kæstutis Biliûnas <kebil@kaunas.init.lt> 
+	* lietuviu.ivpk: iðmesta porà nesàmoningø þodþiø.
+	* lietuviu.jargon: iðmesti 4 beprasmiðki þodþiai.
+	* lietuviu.vardai: papildyta 5-iais vardais, 1 paðalintas ir 1 pataisytas.
+	* lietuviu.veiksmazodziai: papildyta 2 veiksmaþodþiais ir 2 pataisyti flagi.
+	* lietuviu.zodziai: papildyta 13 daiktavardþiø, 2 bûdvardþiais, 1 bûdvardþio
+          papildytas flagas ir dar papildyta 10-èia þodþiø be flagø.  
+
 2006-01-21  Kæstutis Biliûnas <kebil@kaunas.init.lt>
 
 	* aspell/info, tools/proc, tools/README, aspell/doc/README.txt, Makefile,
@@ -13,7 +27,7 @@
 
 	* lietuviu.zodziai, lietuviu.jargon: pridëta akivaizdþiai trûkstanèiø
 	  daiktavardþiø, iðtaisyta keletas klaidø.
-	* lietuviu.aff: pridëta trukstama bûdvardþio vienaskaitos ðauksmininko
+	* lietuviu.aff: pridëta trûkstama bûdvardþio vienaskaitos ðauksmininko
 	  linksniuotë. Iðtaisyta *A bûdvardþio afiksø klaida.	  
 
 2005-12-16  Laimonas Vëbra <wiela@centras.lt>
