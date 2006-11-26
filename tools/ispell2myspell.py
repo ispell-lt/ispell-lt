@@ -8,10 +8,19 @@ Copyright (C) 2002 by Albertas Agejevas
 
 Usage:  ./ispell2myspell.py lietuviu.aff > lt_LT.aff
 
-$Id: ispell2myspell.py,v 1.4 2003/12/25 02:05:36 alga Exp $
+$Id: ispell2myspell.py,v 1.5 2006/11/27 14:21:49 alga Exp $
 """
-from locale import setlocale, LC_ALL
+
 import sys
+from StringIO import StringIO
+
+
+inputenc = 'ISO8859-13'
+# Prieð persijungiant prie UTF-8, reikia Makefile'e pataisyti MySpell ir
+# aspell taisykles, kad naudotø UTF-8 þodynus.
+#outputenc = 'UTF-8'
+outputenc = 'ISO8859-13'
+
 
 class AffixTable:
 
@@ -25,7 +34,8 @@ class AffixTable:
     def getTokens(self):
         "Returns a list of space separated tokens from a single line"
         while 1:
-            self.line = line = self._in.readline()
+            line = self._in.readline()
+            self.line = line = unicode(line, inputenc)
             if line == "":
                 return None  # End of file
             hash = line.find("#")
@@ -103,9 +113,11 @@ class AffixTable:
         The charset and the character probabilities are hardcoded for
         Lithuanian."""
 
-        print >> file, "SET ISO8859-13"
-        print >> file, "TRY iastnokreuldvëmgpjðbyþûczfèhàáøæwxq"
-#        print "#%s %s %-7s %-15s %-10s" % ('AFF', 'F', 'cut', 'paste', 'context')
+        print >> file, "SET %s" % outputenc
+        print >> file, (u"TRY iastnokreuldv\u0117mgpj\u0161by\u017e\u016bczf"
+                        u"\u010dh\u0105\u012f\u0173\u0119wxq")
+        print >> file
+
         for flag in self.flags.keys():
 
             if flag[0] == 'P':
@@ -123,13 +135,12 @@ class AffixTable:
             print >> file, len(self.flags[flag]['rules'])
 
             for context, cut, paste in self.flags[flag]['rules']:
-                print >> file, "%s %s %-7s %-15s %-10s" % (fx, flag[1], cut,
+                print >> file, u"%s %s %-7s %-15s %-10s" % (fx, flag[1], cut,
                                                   paste, context)
             print >> file
 
 
 def main():
-    setlocale(LC_ALL, "")
 
     if len(sys.argv) > 1:
         file = sys.argv[1]
@@ -139,7 +150,9 @@ def main():
 
     converter = AffixTable(file)
     converter.readIn()
-    converter.printMySpell(sys.stdout)
+    buf = StringIO()
+    converter.printMySpell(buf)
+    sys.stdout.write(buf.getvalue().encode(outputenc))
 
 
 if __name__ == '__main__':

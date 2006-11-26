@@ -323,10 +323,10 @@ aiðkumas/D
 aiðkus/AQN
 aiðkutëlis/BN
 aistra/D
-aistringas/AQN
-aistringumas/D
 aistrina/ENX
 aistrinasi/E
+aistringas/AQN
+aistringumas/D
 aistrino/PNX
 aistrinosi/P
 aistrintis/T
@@ -11707,9 +11707,9 @@ dantingas/AQN
 dantingumas/D
 dantinis/BN
 dantiraðtis/D
-dantis/VK
 dantistas/D
 dantistë/D
+dantis/VK
 dantytas/AQN
 dantytis/T
 dantyti/TNX
@@ -30993,12 +30993,12 @@ karibas/D
 karibë/D
 kari/ENX
 karieta/D
-karikatûrina/ENX
-karikatûrino/PNX
-karikatûrinti/TNX
 karikatûra/D
+karikatûrina/ENX
 karikatûrininkas/D
 karikatûrininkë/D
+karikatûrino/PNX
+karikatûrinti/TNX
 karikatûristas/D
 karikatûristë/D
 karina/ENX
@@ -31621,6 +31621,7 @@ kazuistika/D
 kazuistinis/BN
 kazuistiðkas/AQN
 kazusas/D
+#kb neblogas/AQN
 kebeklis/D
 kebëkðt
 kebëkðtelëja/ENX
@@ -32522,7 +32523,10 @@ kietëti/TNX
 kietiklis/D
 kietimas/D
 kietina/ENX
+kietinasi/E
 kietino/PNX
+kietinosi/P
+kietintis/T
 kietinti/TNX
 kietis/D
 kietymë/D
@@ -33964,9 +33968,6 @@ klusti/TNX
 klusumas/D
 klusus/AQN
 klûva/ENXcbdfijml
-kietinasi/E
-kietinosi/P
-kietintis/T
 kmynas/D
 kmynauja/ENX
 kmynauti/TNX
@@ -34055,11 +34056,6 @@ knarksojo/PNX
 knarksoti/TNX
 knarkti/TNX
 knatas/D
-kûbrina/ENX
-kûbrino/PNX
-kûbrinti/TNX
-kûdikis/D
-kûdikiðkas/AQN
 knëbèioja/ENX
 knëbèiojo/PNX
 knëbèioti/TNX
@@ -34480,10 +34476,10 @@ koloritas/D
 kolosalumas/D
 kolosalus/AQN
 kolosas/D
-kolûkinis/BN
-kolûkis/D
 kolûkietë/D
 kolûkietis/D
+kolûkinis/BN
+kolûkis/D
 komanda/D
 komandavo/PNX
 komandinis/BN
@@ -34897,9 +34893,6 @@ kopininkë/D
 kopynë/D
 koplyèia/D
 koplytulë/D
-kopûstinis/BN
-kopûstkotis/D
-kopûstlapis/D
 koptelëja/ENX
 koptelëjo/PNX
 koptelëti/TNX
@@ -34913,8 +34906,11 @@ kopûstgalvë/D
 kopûstgalvis/D
 kopûstiena/D
 kopûstienë/D
+kopûstinis/BN
 kopûstinukas/D
 kopûstynas/D
+kopûstkotis/D
+kopûstlapis/D
 korailiavo/PNX
 korailiuoja/ENX
 korailiuoti/TNX
@@ -36039,15 +36035,20 @@ kubilas/D
 kubilius/D
 kubinis/BN
 kubizmas/D
+kûbrina/ENX
 kûbrinëja/ENX
 kûbrinëjo/PNX
 kûbrinëti/TNX
+kûbrino/PNX
+kûbrinti/TNX
 kûbrys/D
 kûèkailis/D
 kudakavo/PNX
 kudakuoja/ENX
 kudakuoti/TNX
 kudaðius/D
+kûdikis/D
+kûdikiðkas/AQN
 kûdikystë/D
 kûdra/D
 kûdravabalis/D
@@ -42553,7 +42554,6 @@ nebylys/D
 nebylystë/D
 nebylumas/D
 nebylus/AQN
-#kb neblogas/AQN
 nebrendëlë/D
 nebrendëlis/D
 nebrendila/D
@@ -69624,9 +69624,6 @@ ryþtingumas/D
 ryþtis/T
 ryþti/TSX
 ryþtumas/D
-riejasi/E
-riejosi/P
-rietis/T
 robotas/D
 rodë/YNX
 rodë/PSX
@@ -93074,6 +93071,9 @@ uþkietëjëlë/D
 uþkietëjëlis/D
 uþkietëjo/PNX
 uþkietëti/TNX
+uþkietina/ESX
+uþkietino/PSX
+uþkietinti/TSX
 uþkikena/ENX
 uþkikeno/PNX
 uþkikenti/TNX
@@ -93186,9 +93186,6 @@ uþklumpa/ENX
 uþkluonë/D
 uþklupo/PNX
 uþklupti/TNX
-uþkietina/ESX
-uþkietino/PSX
-uþkietinti/TSX
 uþknabina/ENX
 uþknabino/PNX
 uþknabinti/TNX
@@ -94113,8 +94110,10 @@ uþrieèia/ESX
 uþrieda/ENX
 uþriedëjo/PNX
 uþriedëti/TNX
+uþriejo/PSX
 uþriesti/TSX
 uþrietë/PSX
+uþrieti/TSX
 uþriko/PNX
 uþrikti/TNX
 uþrinka/ENX
@@ -94134,8 +94133,6 @@ uþritino/PNX
 uþritinti/TNX
 uþrito/PNX
 uþrmija/ESX
-uþriejo/PSX
-uþrieti/TSX
 uþrovë/PNX
 uþrûdija/ENX
 uþrûdijo/YNX
@@ -94506,6 +94503,9 @@ uþsikibirkðtinti/TSX
 uþsikieminëja/ENX
 uþsikieminëjo/PNX
 uþsikieminëti/TNX
+uþsikietina/ESX
+uþsikietino/PSX
+uþsikietinti/TSX
 uþsikimðo/PSX
 uþsikimðti/TSX
 uþsikirso/PNX
@@ -94531,9 +94531,6 @@ uþsiklostë/YSX
 uþsiklostyti/TSX
 uþsiklosto/ESX
 uþsikloti/TSX
-uþsikietina/ESX
-uþsikietino/PSX
-uþsikietinti/TSX
 uþsiknerpë/PSX
 uþsiknerpia/ESX
 uþsiknerpti/TSX
@@ -94816,8 +94813,11 @@ uþsirepeèkena/ENX
 uþsirepeèkeno/PNX
 uþsirepeèkenti/TNX
 uþsirieèia/ESX
+uþsirieja/ESX
+uþsiriejo/PSX
 uþsiriesti/TSX
 uþsirietë/PSX
+uþsirieti/TSX
 uþsirijo/YNX
 uþsirioglina/ENX
 uþsirioglina/ESX
@@ -94833,9 +94833,6 @@ uþsirita/ENX
 uþsirito/PNX
 uþsiryja/ENX
 uþsiryti/UNX
-uþsirieja/ESX
-uþsiriejo/PSX
-uþsirieti/TSX
 uþsiropðèia/ENX
 uþsiropðtë/PNX
 uþsiropðti/TNX
@@ -97579,8 +97576,8 @@ veltautoja/D
 veltautojas/D
 veltavo/PNX
 veltëdë/D
-veltëdiðkas/AQN
 veltëdis/D
+veltëdiðkas/AQN
 veltëdys/D
 veltëdystë/D
 veltëdþiauja/ENX
@@ -98206,6 +98203,7 @@ vienaip
 vienairklis/BN
 vienakalbis/BN
 vienakamienis/BN
+vienàkart
 vienakauðis/BN
 vienakë/D
 vienakis/BN
@@ -98269,6 +98267,7 @@ vienasienis/BN
 vienàsis/BN
 vienaðis/BN
 vienasiûlis/BN
+vienàsyk
 vienaskaita/D
 vienaskaitinis/BN
 vienaskiemenis/BN
@@ -98326,6 +98325,7 @@ vienfazis/BN
 viengalis/BN
 viengentë/D
 viengentis/D
+viengubas/AQN
 viengulis/BN
 viengungë/D
 viengungiauja/ENX
@@ -98475,7 +98475,11 @@ vienvalentis/BN
 vienvamzdis/BN
 vienveidis/BN
 vienveiksmis/BN
+vienvëris/BN
 vienvëþis/BN
+vienvietë/D
+vienvietininkas/D
+vienvietininkë/D
 vienvietis/BN
 vienþenklis/BN
 vienþiedis/BN
@@ -98524,6 +98528,7 @@ viesulas/D
 viesulavo/PNX
 viesulingas/AQN
 viesulinis/BN
+viesuliðkas/AQN
 viesuluoja/ENX
 viesuluotas/AQN
 viesuluoti/TNX
@@ -99535,14 +99540,6 @@ vyþotë/D
 vyþpynë/D
 vyþpynys/D
 vyþti/TNX
-vienàkart
-vienàsyk
-viengubas/AQN
-vienvëris/BN
-vienvietë/D
-vienvietininkas/D
-vienvietininkë/D
-viesuliðkas/AQN
 vobaloja/ENX
 vobalojo/PNX
 vobaloti/TNX
@@ -101773,6 +101770,7 @@ zvembti/TNX
 þvëriauja/ENX
 þvëriauti/TNX
 þvëriavo/PNX
+þvëriena/D
 þvërija/D
 þvëringas/AQN
 þvërininkas/D
@@ -101785,7 +101783,6 @@ zvembti/TNX
 þvëriûkðtis/D
 þvërybë/D
 þvërynas/D
-þvëriena/D
 þviegë/PNX
 þviegesys/D
 þviegia/ENX

@@ -4,8 +4,7 @@
 #  Copyright (C) 2000-2002 Albertas Agejevas
 #
 
-VERSION=1.1+cvs20060719
-#`date -u +%Y%m%d`
+VERSION=1.1+cvs`date -u +%Y%m%d`
 DATE=`date -u +%Y\-%m\-%d`
 
 SORTWORDS = \
