@@ -1,235 +1,235 @@
 
 
-	   Lietuviğkø ispell afiksø lenteliø README failas
+	   LietuviÅ¡kÅ³ ispell afiksÅ³ lenteliÅ³ README failas
 
 		 Albertas Agejevas <alga@uosis.mif.vu.lt>
                  Gediminas Paulauskas <menesis@delfi.lt>
 
-			   2002 m. balandşio 6 d., v. 0.4
+			   2002 m. balandÅ¾io 6 d., v. 0.4
 
-		1. Kas èia yra ir kam to reikia?
+		1. Kas Äia yra ir kam to reikia?
 
-lietuviu.aff yra afiksø lentelë ispell programai.  ispell yra spell
-checkeris (rağybos tikrinimo programa) Unix sistemoms.  Jis
-veikia labai primityviai: ima iğ teksto po vienà şodá ir tikrina, ar
-toks şodis yra şodyne.  Jei nëra, pasiûlo panağiausius şodşius iğ
-şodyno.  "Panağûs" şodşiai gaunami sukeièiant gretimas raides
-vietomis, pakeièiant kokià nors vienà raidæ, arba áterpiant tarpà
-ar kokià raidæ.
+lietuviu.aff yra afiksÅ³ lentelÄ— ispell programai.  ispell yra spell
+checkeris (raÅ¡ybos tikrinimo programa) Unix sistemoms.  Jis
+veikia labai primityviai: ima iÅ¡ teksto po vienÄ… Å¾odÄ¯ ir tikrina, ar
+toks Å¾odis yra Å¾odyne.  Jei nÄ—ra, pasiÅ«lo panaÅ¡iausius Å¾odÅ¾ius iÅ¡
+Å¾odyno.  "PanaÅ¡Å«s" Å¾odÅ¾iai gaunami sukeiÄiant gretimas raides
+vietomis, pakeiÄiant kokiÄ… nors vienÄ… raidÄ™, arba Ä¯terpiant tarpÄ…
+ar kokiÄ… raidÄ™.
 
-Lietuviø kalba yra sintetinio tipo, tai yra şodşio reikğmë priklauso
-nuo jo formos, prieğingai negu anglø arba vokieèiø kalbos, vadinamos
-analitinëmis, kuriose şodşio reikğmë iğaiğkëja tiktai kitø şodşiø
-kontekste.  Dël to anglø kalboje pakanka tiesiog tikrinti kiekvienà
-şodá, ar jis yra şodyne.  O ğtai lietuviø kalbos şodynuose
-nepateikiamos visos ámanomos şodşiø formos.  Lietuviø kalboje yra
-tokios kaitomos şodşiø klasës:
+LietuviÅ³ kalba yra sintetinio tipo, tai yra Å¾odÅ¾io reikÅ¡mÄ— priklauso
+nuo jo formos, prieÅ¡ingai negu anglÅ³ arba vokieÄiÅ³ kalbos, vadinamos
+analitinÄ—mis, kuriose Å¾odÅ¾io reikÅ¡mÄ— iÅ¡aiÅ¡kÄ—ja tiktai kitÅ³ Å¾odÅ¾iÅ³
+kontekste.  DÄ—l to anglÅ³ kalboje pakanka tiesiog tikrinti kiekvienÄ…
+Å¾odÄ¯, ar jis yra Å¾odyne.  O Å¡tai lietuviÅ³ kalbos Å¾odynuose
+nepateikiamos visos Ä¯manomos Å¾odÅ¾iÅ³ formos.  LietuviÅ³ kalboje yra
+tokios kaitomos Å¾odÅ¾iÅ³ klasÄ—s:
 
-* daiktavardis (kaitomas skaièiais ir linksniais);
-* bûdvardis (giminë, skaièius ir linksnis);
-   - ávardşiuotinës formos (giminë, skaièius ir linksnis);
-   - laipsniø formos (giminë, skaièius ir linksnis);
-   - ypatybës su priesaga -umas (gerumas) (skaièius ir linksnis);
-   - vediniai su priesaga -okas -a (giminë, skaièius ir linksnis);
-* ávardis (giminë, skaièius, linksnis);
-   - keletas ávardşiuotiniø formø;
-* veiksmaşodis
-   - asmenuojamos formos: esamasis, bûsimasis, bûtasis kartinis ir
-     daşninis laikai;
-   - dalyviai, jø ávardşiuotinës formos, pusdalyviai (giminë, skaièius
+* daiktavardis (kaitomas skaiÄiais ir linksniais);
+* bÅ«dvardis (giminÄ—, skaiÄius ir linksnis);
+   - Ä¯vardÅ¾iuotinÄ—s formos (giminÄ—, skaiÄius ir linksnis);
+   - laipsniÅ³ formos (giminÄ—, skaiÄius ir linksnis);
+   - ypatybÄ—s su priesaga -umas (gerumas) (skaiÄius ir linksnis);
+   - vediniai su priesaga -okas -a (giminÄ—, skaiÄius ir linksnis);
+* Ä¯vardis (giminÄ—, skaiÄius, linksnis);
+   - keletas Ä¯vardÅ¾iuotiniÅ³ formÅ³;
+* veiksmaÅ¾odis
+   - asmenuojamos formos: esamasis, bÅ«simasis, bÅ«tasis kartinis ir
+     daÅ¾ninis laikai;
+   - dalyviai, jÅ³ Ä¯vardÅ¾iuotinÄ—s formos, pusdalyviai (giminÄ—, skaiÄius
      ir linksnis)
-* skaitvardis (kiekiniai ir kelintiniai, kurie panağûs atitinkamai á
-  daiktavardşius ir bûdvardşius)
+* skaitvardis (kiekiniai ir kelintiniai, kurie panaÅ¡Å«s atitinkamai Ä¯
+  daiktavardÅ¾ius ir bÅ«dvardÅ¾ius)
 
-Kokybinis bûdvardis turi apie 170 formø, o pridëjus prieğdëlá ne-, jø
-kiekis iğkart padvigubëja.  Taigi, jeigu norëtume padaryti failà su
-visomis visø şodşiø formomis, jis bûtø nepagrástai didelis.  Laimei,
-ispell palaiko dalykà, vadinamà afiksø sutraukimu.  Tai reiğkia, kad
-şodyne laikomas tiktai ğakninis şodis su nuorodomis, kokios galûnës ar
-priesagos prie to şodşio gali bûti kabinamos.
+Kokybinis bÅ«dvardis turi apie 170 formÅ³, o pridÄ—jus prieÅ¡dÄ—lÄ¯ ne-, jÅ³
+kiekis iÅ¡kart padvigubÄ—ja.  Taigi, jeigu norÄ—tume padaryti failÄ… su
+visomis visÅ³ Å¾odÅ¾iÅ³ formomis, jis bÅ«tÅ³ nepagrÄ¯stai didelis.  Laimei,
+ispell palaiko dalykÄ…, vadinamÄ… afiksÅ³ sutraukimu.  Tai reiÅ¡kia, kad
+Å¾odyne laikomas tiktai Å¡akninis Å¾odis su nuorodomis, kokios galÅ«nÄ—s ar
+priesagos prie to Å¾odÅ¾io gali bÅ«ti kabinamos.
 
-Èia pateikiamoje afiksø lentelëje yra surağytos visø kaitomø lietuviø
-kalbos şodşiø kaitymo taisyklës, taigi şodyne tereikia nurodyti
-ğakniná şodá, o visos formos bus generuojamos automatiğkai.
+ÄŒia pateikiamoje afiksÅ³ lentelÄ—je yra suraÅ¡ytos visÅ³ kaitomÅ³ lietuviÅ³
+kalbos Å¾odÅ¾iÅ³ kaitymo taisyklÄ—s, taigi Å¾odyne tereikia nurodyti
+Å¡akninÄ¯ Å¾odÄ¯, o visos formos bus generuojamos automatiÅ¡kai.
 
 
 	2. Kaip naudotis ispell'u?
 
-buildhash programos pagalba iğ şodyno failo ir afiksø failø padaromas
-hash failas, kuris vëliau ispell'o visada ir naudojamas.  Pakeitus
-şodynà ar afiksus hash'à reikia ¥surinkti´ iğ naujo, norint, kad
-pakeitimai ásigaliotø.
+buildhash programos pagalba iÅ¡ Å¾odyno failo ir afiksÅ³ failÅ³ padaromas
+hash failas, kuris vÄ—liau ispell'o visada ir naudojamas.  Pakeitus
+Å¾odynÄ… ar afiksus hash'Ä… reikia â€surinktiâ€œ iÅ¡ naujo, norint, kad
+pakeitimai Ä¯sigaliotÅ³.
 
 	buildhash lietuviu.dict lietuviu.aff lietuviu.hash
 
-Norëdami padaryti hash'à iğ visø şodynø, áskaitant şargono ir
-ğnekamosios kalbos, parağykite
+NorÄ—dami padaryti hash'Ä… iÅ¡ visÅ³ Å¾odynÅ³, Ä¯skaitant Å¾argono ir
+Å¡nekamosios kalbos, paraÅ¡ykite
 
 	make
 
-Dabar paleisdami ispell'à, -d opcija galime nurodyti, kad jis naudotøsi
-mûsø lietuviğku hash'u:
+Dabar paleisdami ispell'Ä…, -d opcija galime nurodyti, kad jis naudotÅ³si
+mÅ«sÅ³ lietuviÅ¡ku hash'u:
 
 	ispell -d lietuviu
 
-Jei norite padaryti sistemai globalø hash'à, dëkite já á
-/usr/lib/ispell.  Tada galima bus nurodyti tiktai hash failo vardà, o
-ne pilnà kelià.  Tai galite padaryti komanda 
+Jei norite padaryti sistemai globalÅ³ hash'Ä…, dÄ—kite jÄ¯ Ä¯
+/usr/lib/ispell.  Tada galima bus nurodyti tiktai hash failo vardÄ…, o
+ne pilnÄ… keliÄ….  Tai galite padaryti komanda 
 
 	make install
 
-Jei apsisprendëte naudoti lietuviu şodynà, galite á profailà ásirağyti
-DICTIONARY=lietuviu. Debiane tai daroma paprasèiau: kaip root'as paleiskite
-komandà
+Jei apsisprendÄ—te naudoti lietuviu Å¾odynÄ…, galite Ä¯ profailÄ… Ä¯siraÅ¡yti
+DICTIONARY=lietuviu. Debiane tai daroma paprasÄiau: kaip root'as paleiskite
+komandÄ…
 
 	/usr/sbin/update-ispell-dictionary
 
-Jei norite ispell'u patikrinti koká nors failà, darykite taip:
+Jei norite ispell'u patikrinti kokÄ¯ nors failÄ…, darykite taip:
 
-	ispell -d lietuviu rağliava.txt
+	ispell -d lietuviu raÅ¡liava.txt
 
-Jei norite ispell'u patikrinti koká nors UTF-8 koduotës failà, naudodami UTF-8
-terminalà bei lokalæ, darykite taip:
+Jei norite ispell'u patikrinti kokÄ¯ nors UTF-8 koduotÄ—s failÄ…, naudodami UTF-8
+terminalÄ… bei lokalÄ™, darykite taip:
 
-        ispell -d lietuviu -Tutf8 rağliava.txt
+        ispell -d lietuviu -Tutf8 raÅ¡liava.txt
 
-KSpell biblioteka pati tà raktà bando, kai yra nurodyta tokia koduotë KSpell
-konfigûravimo parinktyse.  Jei ispell su tuo raktu neveikia, bandoma be rakto,
-tikintis, kad ispell şodyno ir tikrinamo teksto koduotës sutaps.  Paskui yra
-perkoduojama kaip reikia pagal KDE lokalës nustatymus.  KDE 2.2.1 konfigûruojant
-kspell dar galima nurodyti ISO 8859-13 şodyno koduotæ tam paèiam rezultatui
-pasiekti, ankstesnëse versijose deja tokios galimybës nëra.
+KSpell biblioteka pati tÄ… raktÄ… bando, kai yra nurodyta tokia koduotÄ— KSpell
+konfigÅ«ravimo parinktyse.  Jei ispell su tuo raktu neveikia, bandoma be rakto,
+tikintis, kad ispell Å¾odyno ir tikrinamo teksto koduotÄ—s sutaps.  Paskui yra
+perkoduojama kaip reikia pagal KDE lokalÄ—s nustatymus.  KDE 2.2.1 konfigÅ«ruojant
+kspell dar galima nurodyti ISO 8859-13 Å¾odyno koduotÄ™ tam paÄiam rezultatui
+pasiekti, ankstesnÄ—se versijose deja tokios galimybÄ—s nÄ—ra.
 
 
-	3. Bûsena
+	3. BÅ«sena
 
-Tikiuosi, afiksø faile yra nurodytos visos lietuviğkø şodşiø kaitymo
-taisyklës ir keletas şodşiø darybos taisykliø. Kaip flag'ai naudojamos
-ir maşosios raidës, taigi ispell turi bûti sukompiliuotas su
-MASKBITS opcija lygia 64, tuo tarpu, kai reikğmë pagal nutylëjimà yra
-32, tai yra raidşiø dydis flaguose yra ignoruojamas.  Jei norite
-patikrinti, su kokia MASKBITS buvo sukompiliuotas jûsø ispell,
-surinkite komandà
+Tikiuosi, afiksÅ³ faile yra nurodytos visos lietuviÅ¡kÅ³ Å¾odÅ¾iÅ³ kaitymo
+taisyklÄ—s ir keletas Å¾odÅ¾iÅ³ darybos taisykliÅ³. Kaip flag'ai naudojamos
+ir maÅ¾osios raidÄ—s, taigi ispell turi bÅ«ti sukompiliuotas su
+MASKBITS opcija lygia 64, tuo tarpu, kai reikÅ¡mÄ— pagal nutylÄ—jimÄ… yra
+32, tai yra raidÅ¾iÅ³ dydis flaguose yra ignoruojamas.  Jei norite
+patikrinti, su kokia MASKBITS buvo sukompiliuotas jÅ«sÅ³ ispell,
+surinkite komandÄ…
 
 	ispell -vv | grep MASKBITS
 
-Nëra deminutyviniø (maşybiniø) priesagø palaikymo -- deminutyvai turi
-bûti nurodomi şodyne kaip atskiri şodşiai.
+NÄ—ra deminutyviniÅ³ (maÅ¾ybiniÅ³) priesagÅ³ palaikymo -- deminutyvai turi
+bÅ«ti nurodomi Å¾odyne kaip atskiri Å¾odÅ¾iai.
 
-Kartu su lentelëmis pateikiamas şodynas.  lietuviu.base faile yra
-pagalbiniai lietuviø kalbos şodeliai, áskaitant ávardşius,
-skaitvardşius, dalelytes, jungtukus ir prielinksnius.  lietuviu.words
-faile yra mano paties ir keleto bendraminèiø iğ savø rağiniø pririnktø
-şodşiø krûvelë.
+Kartu su lentelÄ—mis pateikiamas Å¾odynas.  lietuviu.base faile yra
+pagalbiniai lietuviÅ³ kalbos Å¾odeliai, Ä¯skaitant Ä¯vardÅ¾ius,
+skaitvardÅ¾ius, dalelytes, jungtukus ir prielinksnius.  lietuviu.words
+faile yra mano paties ir keleto bendraminÄiÅ³ iÅ¡ savÅ³ raÅ¡iniÅ³ pririnktÅ³
+Å¾odÅ¾iÅ³ krÅ«velÄ—.
 
-Kvieèiu visus vartotojus siøsti man savo surinktø şodşiø, kuriø nëra
-mano şodyne, rinkinius (jie yra ~/.ispell_lietuviu arba ~/.ispell_default
-failuose).  Kartu galësime padaryti visai vartotinà lietuviğkà şodynà
+KvieÄiu visus vartotojus siÅ³sti man savo surinktÅ³ Å¾odÅ¾iÅ³, kuriÅ³ nÄ—ra
+mano Å¾odyne, rinkinius (jie yra ~/.ispell_lietuviu arba ~/.ispell_default
+failuose).  Kartu galÄ—sime padaryti visai vartotinÄ… lietuviÅ¡kÄ… Å¾odynÄ…
 spell checkeriams!
 
 
-	4. Kaip pridëti á şodynà naujus şodşius? 
+	4. Kaip pridÄ—ti Ä¯ Å¾odynÄ… naujus Å¾odÅ¾ius? 
 
-Visos ğitos taisyklës yra suprogramuotos Gedimino Paulausko skripte
-tools/spellai, bet daşnai efektyviau bûna tiesiog pridëti şodá
-rankomis, taigi ğtai taisyklës tiems, kurie flagus dës rankomis.
+Visos Å¡itos taisyklÄ—s yra suprogramuotos Gedimino Paulausko skripte
+tools/spellai, bet daÅ¾nai efektyviau bÅ«na tiesiog pridÄ—ti Å¾odÄ¯
+rankomis, taigi Å¡tai taisyklÄ—s tiems, kurie flagus dÄ—s rankomis.
 
-0.  Jeigu şodis gali turëti prieğdëlius ne-, nebe-, uşdëkite flagà /N:
+0.  Jeigu Å¾odis gali turÄ—ti prieÅ¡dÄ—lius ne-, nebe-, uÅ¾dÄ—kite flagÄ… /N:
     gera/N
 
-1.  Jei şodis nekaitomas, dëkite á şodynà be jokiø flagø.
+1.  Jei Å¾odis nekaitomas, dÄ—kite Ä¯ Å¾odynÄ… be jokiÅ³ flagÅ³.
 
-2.  Jei tai daiktavardis ir ji nesibaigia galûnëmis -is, -uo, flagas yra /D:
+2.  Jei tai daiktavardis ir ji nesibaigia galÅ«nÄ—mis -is, -uo, flagas yra /D:
     stalas/D
-    këdë/D
+    kÄ—dÄ—/D
     paskalos/D
 
-    Kaip matote, daugiskaitinës formos taip pat palaikomos.  Dëja,
-    vienaskaitinës formos neiğskirtos, taigi teks iğkæsti tai, kad visi
-    daiktavardşiai turës daugiskaitas.
+    Kaip matote, daugiskaitinÄ—s formos taip pat palaikomos.  DÄ—ja,
+    vienaskaitinÄ—s formos neiÅ¡skirtos, taigi teks iÅ¡kÄ™sti tai, kad visi
+    daiktavardÅ¾iai turÄ—s daugiskaitas.
 
-2a. Jeigu daiktavardis vyriğkos giminës, vienaskaitos vardininkas
-    baigiasi -is, o vien. kilmininke galûnë yra -io (peilis; peilio),
-    irgi dëkite /D
+2a. Jeigu daiktavardis vyriÅ¡kos giminÄ—s, vienaskaitos vardininkas
+    baigiasi -is, o vien. kilmininke galÅ«nÄ— yra -io (peilis; peilio),
+    irgi dÄ—kite /D
     peilis/D
     brolis/D
 
-2b. Jei tai daiktavardis su vien. vard. galûnëmis -is, -uo, ar net (-ë,
-    -ers -- duktë, dukters), turite nuspræsti du dalykus: tai vyriğka
-    giminë (flagas V), ar moteriğka (flagas M), ir jei v. v. galûnë yra
-    -is, ar daugiskaitos kilmininke galûnë minkğta, ar kieta
-    (akis->akiø, ausis->ausø).  Minkğta (-iø) şymima flagu I, kieta
-    (-ø) şymima K.
+2b. Jei tai daiktavardis su vien. vard. galÅ«nÄ—mis -is, -uo, ar net (-Ä—,
+    -ers -- duktÄ—, dukters), turite nusprÄ™sti du dalykus: tai vyriÅ¡ka
+    giminÄ— (flagas V), ar moteriÅ¡ka (flagas M), ir jei v. v. galÅ«nÄ— yra
+    -is, ar daugiskaitos kilmininke galÅ«nÄ— minkÅ¡ta, ar kieta
+    (akis->akiÅ³, ausis->ausÅ³).  MinkÅ¡ta (-iÅ³) Å¾ymima flagu I, kieta
+    (-Å³) Å¾ymima K.
 
-    duktë/M
+    duktÄ—/M
     sesuo/M
     akis/MI
     ausis/MK
     valtis/MI
     vanduo/V
-    ğuo/V
+    Å¡uo/V
     vagis/V
-    şvëris/V
+    Å¾vÄ—ris/V
     dantis/V
     debesis/V
 
-3. Jei tai bûdvardis, ir jis nesibaigia galûne -is, dëkite flagà /A.
-   Jei jis jis baigiasi -is, paşiûrëkite, á kà jis panağesnis:
+3. Jei tai bÅ«dvardis, ir jis nesibaigia galÅ«ne -is, dÄ—kite flagÄ… /A.
+   Jei jis jis baigiasi -is, paÅ¾iÅ«rÄ—kite, Ä¯ kÄ… jis panaÅ¡esnis:
    didelis, dideliems -- flagas A
    medinis, mediniams -- flagas B.
 
-   Dabar jei galima ásivaizduoti bûdvardşio bevardæ giminæ
-   (geras->gera), ávardşiuotines formas (geras->gerasis),
+   Dabar jei galima Ä¯sivaizduoti bÅ«dvardÅ¾io bevardÄ™ giminÄ™
+   (geras->gera), Ä¯vardÅ¾iuotines formas (geras->gerasis),
    prieveiksmius su -ai (geras->gerai), laipsnius
-   (geras, geresnis, geriausias) ir t.t., tai bûdvardis vadinamas
-   kokybiniu, ir turi bûti şymimas flagu Q.   Atrodo, visi A yra ir Q,
-   bet faktas, kad B nëra Q.
+   (geras, geresnis, geriausias) ir t.t., tai bÅ«dvardis vadinamas
+   kokybiniu, ir turi bÅ«ti Å¾ymimas flagu Q.   Atrodo, visi A yra ir Q,
+   bet faktas, kad B nÄ—ra Q.
 
-   B yra nekokybiniai bûdvardşiai, vadinami santykiniais.  Jie
-   daşniausiai padaryti iğ kokio nors daiktavardşio ir nurodo daikto
-   santyká su kitu (baltakaklis -> turintis baltà kaklà,
-   medinis -> padarytas iğ medşio).
+   B yra nekokybiniai bÅ«dvardÅ¾iai, vadinami santykiniais.  Jie
+   daÅ¾niausiai padaryti iÅ¡ kokio nors daiktavardÅ¾io ir nurodo daikto
+   santykÄ¯ su kitu (baltakaklis -> turintis baltÄ… kaklÄ…,
+   medinis -> padarytas iÅ¡ medÅ¾io).
 
    geras/AQN
-   graşus/AQN
+   graÅ¾us/AQN
    saldus/AQN
-   şydraakis/BN 
+   Å¾ydraakis/BN 
    medinis/BN
    abstraktus/AQN
    absoliutus/AQN
    visaapimantis/BN
 
-4. Jei tai veiksmaşodis, turësite nurodyti iğ karto 3 laikus:
-   bendratá, esamàjá, ir bûtàjá kartiná.  Jums padës interaktyvi Perl
-   programëlë tools/verb, esanti ğiame pakete.  Á stderr ji iğveda
-   uşklausas, nuskaito atsakymus iğ stdin, ir eilutes, kurias reikia
-   árağyti á şodynà iğveda á stdout.  Toliau ğità punktà galite
-   praleisti, jis paliekamas tiems, kurie domisi afiksø failo sandara.
+4. Jei tai veiksmaÅ¾odis, turÄ—site nurodyti iÅ¡ karto 3 laikus:
+   bendratÄ¯, esamÄ…jÄ¯, ir bÅ«tÄ…jÄ¯ kartinÄ¯.  Jums padÄ—s interaktyvi Perl
+   programÄ—lÄ— tools/verb, esanti Å¡iame pakete.  Ä® stderr ji iÅ¡veda
+   uÅ¾klausas, nuskaito atsakymus iÅ¡ stdin, ir eilutes, kurias reikia
+   Ä¯raÅ¡yti Ä¯ Å¾odynÄ… iÅ¡veda Ä¯ stdout.  Toliau Å¡itÄ… punktÄ… galite
+   praleisti, jis paliekamas tiems, kurie domisi afiksÅ³ failo sandara.
 
-   Veiksmaşodşiams, kuriø bûsimojo laiko 3a. vienaskaita yra trumpa,
-   bendratis şymima /U. Komentaras iğ failo:  
-   # Èia veiksmaşodşiai, kuriø bendraty ir es. l. ilgi balsiai Û,Y, 
-   # o bût. k. l. -- trumpi
+   VeiksmaÅ¾odÅ¾iams, kuriÅ³ bÅ«simojo laiko 3a. vienaskaita yra trumpa,
+   bendratis Å¾ymima /U. Komentaras iÅ¡ failo:  
+   # ÄŒia veiksmaÅ¾odÅ¾iai, kuriÅ³ bendraty ir es. l. ilgi balsiai Åª,Y, 
+   # o bÅ«t. k. l. -- trumpi
    #	gyti gyja gijo		-- gis
    #	lyti lyja lijo		-- lis
-   #	griûti griûva griuvo 	-- grius
-   #	pûti pûva puvo		-- pus
-   #	şûti şûva şuvo		-- şus
+   #	griÅ«ti griÅ«va griuvo 	-- grius
+   #	pÅ«ti pÅ«va puvo		-- pus
+   #	Å¾Å«ti Å¾Å«va Å¾uvo		-- Å¾us
    #
-   #    plg. -- nëra ¥û´, ¥y´
-   #	siûti siuva siuvo	-- siûs
+   #    plg. -- nÄ—ra â€Å«â€œ, â€yâ€œ
+   #	siÅ«ti siuva siuvo	-- siÅ«s
    #	vyti veja vijo		-- vys
 
-   Visø kitø veiksmaşodşiø bendratis şymima /T.
+   VisÅ³ kitÅ³ veiksmaÅ¾odÅ¾iÅ³ bendratis Å¾ymima /T.
 
-   Visø veiksmaşodşiø esamasis laikas şymimas /E.
+   VisÅ³ veiksmaÅ¾odÅ¾iÅ³ esamasis laikas Å¾ymimas /E.
    
-   Veiksmaşodşiø su bendratimi -yti, bûtasis kartinis şymimas /Y.
-   Visø kitø veiksmaşodşiø bûtasis kartinis laikas şymimas /P.
+   VeiksmaÅ¾odÅ¾iÅ³ su bendratimi -yti, bÅ«tasis kartinis Å¾ymimas /Y.
+   VisÅ³ kitÅ³ veiksmaÅ¾odÅ¾iÅ³ bÅ«tasis kartinis laikas Å¾ymimas /P.
 
-   Sangràşiniams veiksmaşodşiams reikia nurodyti /S, o visiems kitiems
-   /N.  /S -is ir -si galûniø nepadarys, uştat padarys prieğdëlius
-   nesi- ir besi-. Ir prie /N, ir prie /S reikia pridëti flagà /X,
+   SangrÄ…Å¾iniams veiksmaÅ¾odÅ¾iams reikia nurodyti /S, o visiems kitiems
+   /N.  /S -is ir -si galÅ«niÅ³ nepadarys, uÅ¾tat padarys prieÅ¡dÄ—lius
+   nesi- ir besi-. Ir prie /N, ir prie /S reikia pridÄ—ti flagÄ… /X,
    formoms su be-, te- ir tebe-.
 
    gyti/UNX
@@ -238,70 +238,70 @@ rankomis, taigi ğtai taisyklës tiems, kurie flagus dës rankomis.
 
    valgyti/TNX
    valgo/ENX
-   valgë/YNX
+   valgÄ—/YNX
    
-   mylëti/TSX
+   mylÄ—ti/TSX
    myli/ESX
-   mylëjo/PSX
+   mylÄ—jo/PSX
 
-   Sangràşines formas reikia nurodyti ir atskirai:
+   SangrÄ…Å¾ines formas reikia nurodyti ir atskirai:
 
-   mylëtis/T
+   mylÄ—tis/T
    mylisi/E
-   mylëjosi/P
+   mylÄ—josi/P
 
-   Èia /S nededam, kad neiğeitø dvigubos sangràşos kaip ¥besimylisi´.
-   Ir /N ir /X nededam, kad neiğeitø ¥nemylisi´, ar ¥bemylisi´ nes teisingos formos yra
-   ¥nesimyli´ ir ¥besimyli´, padaromos iğ ¥myli/ESX´
+   ÄŒia /S nededam, kad neiÅ¡eitÅ³ dvigubos sangrÄ…Å¾os kaip â€besimylisiâ€œ.
+   Ir /N ir /X nededam, kad neiÅ¡eitÅ³ â€nemylisiâ€œ, ar â€bemylisiâ€œ nes teisingos formos yra
+   â€nesimyliâ€œ ir â€besimyliâ€œ, padaromos iÅ¡ â€myli/ESXâ€œ
    
 
-Kaip ir viskas.  Visi ávardşiai ir skaitvardşiai jau yra şodyne.  Jei
-ko nors iğ jø padermës ten nëra -- rağykit!  
+Kaip ir viskas.  Visi Ä¯vardÅ¾iai ir skaitvardÅ¾iai jau yra Å¾odyne.  Jei
+ko nors iÅ¡ jÅ³ padermÄ—s ten nÄ—ra -- raÅ¡ykit!  
 
 
-Ispell'as dar turi keletà naudingø reşimø şodynø sudarinëtojams.
-"ispell -d lietuviu -e" iğskleidinës afiksus pagal taisykles,
-skaitydamas şodşius iğ stdin, rağydamas á stdout:
+Ispell'as dar turi keletÄ… naudingÅ³ reÅ¾imÅ³ Å¾odynÅ³ sudarinÄ—tojams.
+"ispell -d lietuviu -e" iÅ¡skleidinÄ—s afiksus pagal taisykles,
+skaitydamas Å¾odÅ¾ius iÅ¡ stdin, raÅ¡ydamas Ä¯ stdout:
 
 [alga@peleda ispell-lt]$ echo pavyzdys/D | ispell -d ./lietuviu -e
-pavyzdys pavyzdyje pavyzdşiuose pavyzdşiai pavyzdşiui pavyzdşio
-pavyzdşiais pavyzdşiams pavyzdşius pavyzdşiu pavyzdy pavyzdá pavyzdşiø
+pavyzdys pavyzdyje pavyzdÅ¾iuose pavyzdÅ¾iai pavyzdÅ¾iui pavyzdÅ¾io
+pavyzdÅ¾iais pavyzdÅ¾iams pavyzdÅ¾ius pavyzdÅ¾iu pavyzdy pavyzdÄ¯ pavyzdÅ¾iÅ³
 
-[alga@peleda ispell-lt]$ echo mylëti/TS | ispell -d ./lietuviu -e 
-mylëti besimylëti besimylëdavusia besimylësianèia besimylëdavusiàja
-besimylësianèiàja besimylësimàja besimylëtàja besimylëdama
-besimylësima besimylëtina besimylëta besimylëdavusioje besimylësianèioje
+[alga@peleda ispell-lt]$ echo mylÄ—ti/TS | ispell -d ./lietuviu -e 
+mylÄ—ti besimylÄ—ti besimylÄ—davusia besimylÄ—sianÄia besimylÄ—davusiÄ…ja
+besimylÄ—sianÄiÄ…ja besimylÄ—simÄ…ja besimylÄ—tÄ…ja besimylÄ—dama
+besimylÄ—sima besimylÄ—tina besimylÄ—ta besimylÄ—davusioje besimylÄ—sianÄioje
 [...]
-Iğ viso /TS padaro 1701 formà :-)
+IÅ¡ viso /TS padaro 1701 formÄ… :-)
 
-Dar yra nelabai naudinga, bet ádomi galimybë -- ispell'as bando
-sutraukti afiksus, atspëti, pagal kokias taisykles sudarytas şodis:
+Dar yra nelabai naudinga, bet Ä¯domi galimybÄ— -- ispell'as bando
+sutraukti afiksus, atspÄ—ti, pagal kokias taisykles sudarytas Å¾odis:
 
 [alga@peleda ispell-lt]$ echo mylimasis | ispell -d ./lietuviu -c
 mylimasis mylimasiti/T mylimasisti/T mylimasiti/Y mylimasisti/Y
 mylimasys/M mylimasys/V mylimasi/H mylimasyti/Y mylimastis/T
 mylimastis/Y mylimas/Q mylimas/H myli/E
 
-[alga@peleda ispell-lt]$ echo besikiğkiakopûstëliaudavusiuosiuose |
+[alga@peleda ispell-lt]$ echo besikiÅ¡kiakopÅ«stÄ—liaudavusiuosiuose |
 ispell -d ./lietuviu -c
-besikiğkiakopûstëliaudavusiuosiuose [niam] kiğkiakopûstëliauti/ST
-kiğkiakopûstëliauti/SY [niam]  besikiğkiakopûstëliaudavo/U
-besikiğkiakopûstëliauti/T besikiğkiakopûstëliauti/Y
+besikiÅ¡kiakopÅ«stÄ—liaudavusiuosiuose [niam] kiÅ¡kiakopÅ«stÄ—liauti/ST
+kiÅ¡kiakopÅ«stÄ—liauti/SY [niam]  besikiÅ¡kiakopÅ«stÄ—liaudavo/U
+besikiÅ¡kiakopÅ«stÄ—liauti/T besikiÅ¡kiakopÅ«stÄ—liauti/Y
 
-Dabar galime pasidşiaugti, kad ispell'as atspëjo iğ trisdeğimto karto -- tai 
+Dabar galime pasidÅ¾iaugti, kad ispell'as atspÄ—jo iÅ¡ trisdeÅ¡imto karto -- tai 
 buvo
 
-myli/E ir kiğkiakopûstëliauti/ST
+myli/E ir kiÅ¡kiakopÅ«stÄ—liauti/ST
 
-Jei ieğkosit info apie ispell, jums padës tiktai ispell'o man page'ai
-(errm, vadovo puslapiai :-) iğ 1-os sekcijos ir 5-os sekcijos (po BSD --
+Jei ieÅ¡kosit info apie ispell, jums padÄ—s tiktai ispell'o man page'ai
+(errm, vadovo puslapiai :-) iÅ¡ 1-os sekcijos ir 5-os sekcijos (po BSD --
 4 o ne 5).  Yra ispell'o info dokumentacija, bet joje yra tiktai
-pavirğutiniğkas vartotojo vadovas ir jokios techninës informacijos,
-net Copyright'ø.  Beje, ispell'as iğleistas su BSD licenzija. Tokia
-licenzija taikoma ir afiksø/şodynø failams.
+pavirÅ¡utiniÅ¡kas vartotojo vadovas ir jokios techninÄ—s informacijos,
+net Copyright'Å³.  Beje, ispell'as iÅ¡leistas su BSD licenzija. Tokia
+licenzija taikoma ir afiksÅ³/Å¾odynÅ³ failams.
 
-Atleiskit, kad ğitas aprağymas iğëjo toks sumaltas ir sunkiai
-suprantamas.  Gal dienos ğviesoj ir kà geresnio bûèiau sukûræs.  Bet
+Atleiskit, kad Å¡itas apraÅ¡ymas iÅ¡Ä—jo toks sumaltas ir sunkiai
+suprantamas.  Gal dienos Å¡viesoj ir kÄ… geresnio bÅ«Äiau sukÅ«rÄ™s.  Bet
 vargu. 
 
 Albertas Agejevas <alga@uosis.mif.vu.lt>

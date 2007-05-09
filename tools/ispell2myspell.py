@@ -8,7 +8,7 @@ Copyright (C) 2002 by Albertas Agejevas
 
 Usage:  ./ispell2myspell.py lietuviu.aff > lt_LT.aff
 
-$Id: ispell2myspell.py,v 1.5 2006/11/27 14:21:49 alga Exp $
+$Id: ispell2myspell.py,v 1.6 2007/05/10 00:07:52 alga Exp $
 """
 
 import sys
@@ -135,7 +135,7 @@ class AffixTable:
             print >> file, len(self.flags[flag]['rules'])
 
             for context, cut, paste in self.flags[flag]['rules']:
-                print >> file, u"%s %s %-7s %-15s %-10s" % (fx, flag[1], cut,
+                print >> file, u"%s %s %-7s %-15s %s" % (fx, flag[1], cut,
                                                   paste, context)
             print >> file
 

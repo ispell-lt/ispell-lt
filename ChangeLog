@@ -1,261 +1,266 @@
-2006-06-04  Kæstutis Biliûnas <kebil@kaunas.init.lt> 
-	* lietuviu.ivpk: iğmesta porà nesàmoningø şodşiø.
-	* lietuviu.jargon: iğmesti 4 beprasmiğki şodşiai.
-	* lietuviu.vardai: papildyta 5-iais vardais, 1 pağalintas ir 1 pataisytas.
-	* lietuviu.veiksmazodziai: papildyta 2 veiksmaşodşiais ir 2 pataisyti flagi.
-	* lietuviu.zodziai: papildyta 13 daiktavardşiø, 2 bûdvardşiais, 1 bûdvardşio
-          papildytas flagas ir dar papildyta 10-èia şodşiø be flagø.  
+2006-12-19  Rimas Kudelis <rq@akl.lt>
+	* CHANGE, ChangeLog, HOWTO, INSTRUKCIJOS.txt, README, THANKS,
+	  mozilla/README, tools/README: failai perkoduoti Ä¯ UTF-8
 
-2006-01-21  Kæstutis Biliûnas <kebil@kaunas.init.lt>
+2006-07-19  KÄ™stutis BiliÅ«nas <kebil@kaunas.init.lt> 
+	* lietuviu.vardai: papildyta 2 vardais.
+	* lietuviu.zodziai: papildyta 9 daiktavardÅ¾iais, 8 bÅ«dvardÅ¾iais,
+	  ir apie 90 flagÅ³ pataisymÅ³ (kai kuriems sudaiktavardÄ—jusiems
+	  bÅ«dvardÅ¾iams pridÄ—tas flagas /D).  
+
+2006-06-04  KÄ™stutis BiliÅ«nas <kebil@kaunas.init.lt> 
+	* lietuviu.ivpk: iÅ¡mesta pora nesÄ…moningÅ³ Å¾odÅ¾iÅ³.
+	* lietuviu.jargon: iÅ¡mesti 4 beprasmiÅ¡ki Å¾odÅ¾iai.
+	* lietuviu.vardai: papildyta 5-iais vardais, 1 paÅ¡alintas ir 1 pataisytas.
+	* lietuviu.veiksmazodziai: papildyta 2 veiksmaÅ¾odÅ¾iais ir 2 pataisyti flagi.
+	* lietuviu.zodziai: papildyta 13 daiktavardÅ¾iÅ³, 2 bÅ«dvardÅ¾iais, 1 bÅ«dvardÅ¾io
+	  papildytas flagas ir dar papildyta 10-Äia Å¾odÅ¾iÅ³ be flagÅ³.  
+
+2006-01-21  KÄ™stutis BiliÅ«nas <kebil@kaunas.init.lt>
 
 	* aspell/info, tools/proc, tools/README, aspell/doc/README.txt, Makefile,
 	  MANIFEST: aspell6-lt paketo formavimui perdarytas pagal Kevino Atkinsono
 	  rekomendacijas. Tam pritaikytas skriptas 'proc'.
 	* aspell/READDME, aspell/configure, aspell/Makefile.pre, aspell/lietuviu.alias,
-	  aspell/lithuanian.alias, aspell/lt.multi: pağalinti, nes juos generuoja
+	  aspell/lithuanian.alias, aspell/lt.multi: paÅ¡alinti, nes juos generuoja
 	  tools/proc skriptas.
 	* Makefile, MANIFEST, hyph/hyph_lt_LT.dic, hyph/README_hyph_lt_LT.txt:
-	  ákelta Alberto A. paruoğta skiemenavimo lentelë.
+	  Ä¯kelta Alberto A. paruoÅ¡ta skiemenavimo lentelÄ—.
 
-2006-01-02  Laimonas Vëbra <wiela@centras.lt>
+2006-01-02  Laimonas VÄ—bra <wiela@centras.lt>
 
-	* lietuviu.zodziai, lietuviu.jargon: pridëta akivaizdşiai trûkstanèiø
-	  daiktavardşiø, iğtaisyta keletas klaidø.
-	* lietuviu.aff: pridëta trûkstama bûdvardşio vienaskaitos ğauksmininko
-	  linksniuotë. Iğtaisyta *A bûdvardşio afiksø klaida.	  
+	* lietuviu.zodziai, lietuviu.jargon: pridÄ—ta akivaizdÅ¾iai trÅ«kstanÄiÅ³
+	  daiktavardÅ¾iÅ³, iÅ¡taisyta keletas klaidÅ³.
+	* lietuviu.aff: pridÄ—ta trÅ«kstama bÅ«dvardÅ¾io vienaskaitos Å¡auksmininko
+	  linksniuotÄ—. IÅ¡taisyta *A bÅ«dvardÅ¾io afiksÅ³ klaida.	  
 
-2005-12-16  Laimonas Vëbra <wiela@centras.lt>
+2005-12-16  Laimonas VÄ—bra <wiela@centras.lt>
 
-	* lietuviu.ivpk: daug pataisymø.
+	* lietuviu.ivpk: daug pataisymÅ³.
 	
 2005-12-06..19  Albertas Agejevas <alga@akl.lt>
 
-	* lietuviu.aff: pataisytas skaitvardşiø galininko linksnio generavimas.
+	* lietuviu.aff: pataisytas skaitvardÅ¾iÅ³ galininko linksnio generavimas.
 
-2005-12-06  Kæstutis Biliûnas <kebil@kaunas.init.lt>
-	* lietuviu.zodziai: nauji daiktavardşiai ir bûdvardûiai, kai kurie
-	  pataisymai. Viso ~50 pataisymø.
-	* lietuviu.ivairus: pridëtas flagas /H prie şodşio ketveri.
+2005-12-06  KÄ™stutis BiliÅ«nas <kebil@kaunas.init.lt>
+	* lietuviu.zodziai: nauji daiktavardÅ¾iai ir bÅ«dvardÅ«iai, kai kurie
+	  pataisymai. Viso ~50 pataisymÅ³.
+	* lietuviu.ivairus: pridÄ—tas flagas /H prie Å¾odÅ¾io ketveri.
 	* lietuviu.vardai: papildyta 38-iais vardais.
-	* lietuviu.veiksmazodziai: papildyta şodşiais kasti, kasinëti, kasyti,
-	  loğti ir loğinëti.
+	* lietuviu.veiksmazodziai: papildyta Å¾odÅ¾iais kasti, kasinÄ—ti, kasyti,
+	  loÅ¡ti ir loÅ¡inÄ—ti.
 
-2005-07-16  Kæstutis Biliûnas <kebil@kaunas.init.lt>
+2005-07-16  KÄ™stutis BiliÅ«nas <kebil@kaunas.init.lt>
 
-	* lietuviu.aff: pridëtas moteriğkos giminës aukğtesniojo laipsnio
-	  bûdvardiø generavimas.
-	* lietuviu.zodziai: papildyta 17 naujø şodşiø ir 17 pataisyta.		
+	* lietuviu.aff: pridÄ—tas moteriÅ¡kos giminÄ—s aukÅ¡tesniojo laipsnio
+	  bÅ«dvardiÅ³ generavimas.
+	* lietuviu.zodziai: papildyta 17 naujÅ³ Å¾odÅ¾iÅ³ ir 17 pataisyta.		
 	* lietuviu.ivairus: 1 naujas.
 	* lietuviu.veiksmazodziai: 3 nauji ir 2 pataisyti.
 
-2005-05-08  Kæstutis Biliûnas <kebil@kaunas.init.lt>
+2005-05-08  KÄ™stutis BiliÅ«nas <kebil@kaunas.init.lt>
 	
-	* lietuviu.ivairus: du nauji ávardşiai - visokiausias ir visokiausia.
-	* lietuviø.ivpk: pagonis - flagas /D pakeistas á /V.
-	* lietuviu.vardai: 7-ni nauji vardai: Bastilija, Berlynas, Èechovas, Daukğa,
-	  Galilëja, Vivulskis, Şemaitija.
+	* lietuviu.ivairus: du nauji Ä¯vardÅ¾iai - visokiausias ir visokiausia.
+	* lietuviÅ³.ivpk: pagonis - flagas /D pakeistas Ä¯ /V.
+	* lietuviu.vardai: 7-ni nauji vardai: Bastilija, Berlynas, ÄŒechovas, DaukÅ¡a,
+	  GalilÄ—ja, Vivulskis, Å½emaitija.
 	* lietuviu.veiksmazodziai: naujas - reflektuoti, o 4-iems pataisyti ar
-	  papildyti flagai - dvasinti, reikğminti, testuoti ir vakarëti. 
-	* lietuviu.zodziai: dadëti 22 daiktavardşiai ir  9 bûdvardşiai. Daiktavardşio
-	  vieğpatis flagas /D pakeistas á /V.
+	  papildyti flagai - dvasinti, reikÅ¡minti, testuoti ir vakarÄ—ti. 
+	* lietuviu.zodziai: dadÄ—ti 22 daiktavardÅ¾iai ir  9 bÅ«dvardÅ¾iai. DaiktavardÅ¾io
+	  vieÅ¡patis flagas /D pakeistas Ä¯ /V.
 
-2005-02-03  Kæstutis Biliûnas <kebil@kaunas.init.lt>
+2005-02-03  KÄ™stutis BiliÅ«nas <kebil@kaunas.init.lt>
 	
-	* lietuviu.veiksmazodziai, lietuviu.zodziai: papildyta keletu şodşiu
-	  {raidelë,traktatas, daugiakalbystë, rinkinëti}, ir du şodşiai
-	  pataisyti {byrëti, ákeltis}.
+	* lietuviu.veiksmazodziai, lietuviu.zodziai: papildyta keletu Å¾odÅ¾iu
+	  {raidelÄ—,traktatas, daugiakalbystÄ—, rinkinÄ—ti}, ir du Å¾odÅ¾iai
+	  pataisyti {byrÄ—ti, Ä¯keltis}.
 
-2005-01-03  Kæstutis Biliûnas <kebil@kaunas.init.lt>
+2005-01-03  KÄ™stutis BiliÅ«nas <kebil@kaunas.init.lt>
 	
-	* tools/sutrauka.py: pağalinta grieşta priklausomybë nuo python 2.3
+	* tools/sutrauka.py: paÅ¡alinta grieÅ¾ta priklausomybÄ— nuo python 2.3
 	  versijos.
 	* Makefile: versija padidinta iki 1.1.
 
-2004-12-18  Kæstutis Biliûnas <kebil@kaunas.init.lt>
+2004-12-18  KÄ™stutis BiliÅ«nas <kebil@kaunas.init.lt>
 	
-	* aspell/lt_affix.dat: ğis failas pağalintas, nes tai tas pats 
+	* aspell/lt_affix.dat: Å¡is failas paÅ¡alintas, nes tai tas pats 
 	  lt_LT.aff failas, tik kitu vardu.
-	* MANIFEST: pağalintas aspell/lt_affix.dat failas.
+	* MANIFEST: paÅ¡alintas aspell/lt_affix.dat failas.
 	* Makefile: atitinkamai pataisyti targetai 'clean' ir 'aspell'.
 
-2004-12-11  Kæstutis Biliûnas <kebil@kaunas.init.lt>
+2004-12-11  KÄ™stutis BiliÅ«nas <kebil@kaunas.init.lt>
 	
-	* aspell/*: ákeltas Alberto aspell6 paketo turinys.
+	* aspell/*: Ä¯keltas Alberto aspell6 paketo turinys.
 	* MANIFEST: papildytas katalogo aspell/ failais.
 	* Makefile: papildytas target'ais aspell, dist-aspell ir dists.
 
-2004-12-06  Kæstutis Biliûnas <kebil@kaunas.init.lt>
+2004-12-06  KÄ™stutis BiliÅ«nas <kebil@kaunas.init.lt>
 	
 	* lietuviu.vardai, lietuviu.veiksmazodziai, lietuviu.zodziai,
-	  lietuviu.ivpk: iğtaisyta daug klaidø, iğryğkëjusiø generuojan
-	  aspell şodynà.
+	  lietuviu.ivpk: iÅ¡taisyta daug klaidÅ³, iÅ¡ryÅ¡kÄ—jusiÅ³ generuojan
+	  aspell Å¾odynÄ….
 
-2004-12-04  Kæstutis Biliûnas <kebil@kaunas.init.lt>
+2004-12-04  KÄ™stutis BiliÅ«nas <kebil@kaunas.init.lt>
 	
 	* lietuviu.ivairus, lietuviu.veiksmazodziai, lietuviu.zodziai: pa-
-	  ğalinti pasikartojantys şodşiai.
-	* lietuviu.zodziai: pağalinti trys klaidingi daiktavardşiai.
-	* lietuviu.ivpk: uşkomentuotas klaidingas daiktavardis durys/D.
-	* lietuviu.veiksmazodziai: dar keletas pataisymø.
+	  Å¡alinti pasikartojantys Å¾odÅ¾iai.
+	* lietuviu.zodziai: paÅ¡alinti trys klaidingi daiktavardÅ¾iai.
+	* lietuviu.ivpk: uÅ¾komentuotas klaidingas daiktavardis durys/D.
+	* lietuviu.veiksmazodziai: dar keletas pataisymÅ³.
 
-2004-11-29  Kæstutis Biliûnas <kebil@kaunas.init.lt>
+2004-11-29  KÄ™stutis BiliÅ«nas <kebil@kaunas.init.lt>
 	
 	* Makefile: papildyta target'ais dist-src ir dist-myspell.
-	* MANIFEST: naujas failas - sàrağas failø, áeinanèiø á
-	  atchyvà ispell-lt-VERSION..tar.gz.
-	* tools/package.sh: pağalintas, nes nebereikalingas.	
+	* MANIFEST: naujas failas - sÄ…raÅ¡as failÅ³, Ä¯einanÄiÅ³ Ä¯
+	  atchyvÄ… ispell-lt-VERSION..tar.gz.
+	* tools/package.sh: paÅ¡alintas, nes nebereikalingas.	
 
-2004-11-24  Kæstutis Biliûnas <kebil@kaunas.init.lt>
+2004-11-24  KÄ™stutis BiliÅ«nas <kebil@kaunas.init.lt>
 	
-	* lietuviu.vardai: papildyta 7 şodşiais ir 3 pataisymai.
-	* lietuviu.veiksmazodziai: papildyta 2 şodşiais ir 2 pataisymai.
-	* lietuviu.zodziai: papildyta 35 şodşiais. 
+	* lietuviu.vardai: papildyta 7 Å¾odÅ¾iais ir 3 pataisymai.
+	* lietuviu.veiksmazodziai: papildyta 2 Å¾odÅ¾iais ir 2 pataisymai.
+	* lietuviu.zodziai: papildyta 35 Å¾odÅ¾iais. 
 
 2003-12-25  Albertas Agejevas <alga@akl.lt>
 
-	* lietuviu.dict: dabar şodyne yra apie 75000 şodşiø.
-	* lietuviu.zodziai, lietuviu.verbs: atğauktas suskaldymas kalbos
-	dalimis ir á tarptautinius ir lietuviğkus.
-	* lietuviu.aff: pataisyta keletas klaidø, pridëtos kelios naujos
-	formos -- dalyviø laipsniai (mylimesnis, mylimiausias).
-	* lietuviu.ivpk: iğ DLKŞ perkeltas şodşiø sàrağas.
-	* tools/sutrauka.py: skriptas, sutraukiantis pasikartojanèius
-	şodşius su skirtingais afiksais bei veiksmaşodşiø afiksus.
-	* tools/make.py: skriptas, leidşiantis MySpell şodynà generuoti
-	turint tik Python interpretatoriø ir neturint ispell (naudinga
- 	Windows vartotojams).
-	* tools/spell.py: naujas skriptas şodşiø ávedimui.  Kol kas labai
-	paprastas, be jokiø patikrinimø ir t.t., bet klausinëja tik
+	* lietuviu.dict: dabar Å¾odyne yra apie 75000 Å¾odÅ¾iÅ³.
+	* lietuviu.zodziai, lietuviu.verbs: atÅ¡auktas suskaldymas kalbos
+	dalimis ir Ä¯ tarptautinius ir lietuviÅ¡kus.
+	* lietuviu.aff: pataisyta keletas klaidÅ³, pridÄ—tos kelios naujos
+	formos -- dalyviÅ³ laipsniai (mylimesnis, mylimiausias).
+	* lietuviu.ivpk: iÅ¡ DLKÅ½ perkeltas Å¾odÅ¾iÅ³ sÄ…raÅ¡as.
+	* tools/sutrauka.py: skriptas, sutraukiantis pasikartojanÄius
+	Å¾odÅ¾ius su skirtingais afiksais bei veiksmaÅ¾odÅ¾iÅ³ afiksus.
+	* tools/make.py: skriptas, leidÅ¾iantis MySpell Å¾odynÄ… generuoti
+	turint tik Python interpretatoriÅ³ ir neturint ispell (naudinga
+	Windows vartotojams).
+	* tools/spell.py: naujas skriptas Å¾odÅ¾iÅ³ Ä¯vedimui.  Kol kas labai
+	paprastas, be jokiÅ³ patikrinimÅ³ ir t.t., bet klausinÄ—ja tik
 	reikalingus klausimus.
 
 2002-11-22  Gediminas Paulauskas <menesis@delfi.lt>
 
-	Dideli pakeitimai iğ Laimono Vëbros:
+	Dideli pakeitimai iÅ¡ Laimono VÄ—bros:
 
-	* lietuviu.words: ğio failo nebëra, jis padalintas á...
+	* lietuviu.words: Å¡io failo nebÄ—ra, jis padalintas Ä¯...
 	* lietuviu.budvardziai, lietuviu.daiktavardziai, lietuviu.nekaitomi,
-	lietuviu.tarpt.budvardziai, lietuviu.tarpt.daiktavardziai: ...ğiuos
+	lietuviu.tarpt.budvardziai, lietuviu.tarpt.daiktavardziai: ...Å¡iuos
 	failus pagal kalbos dalis.
 	* lietuviu.base: pervadintas...
-	* lietuviu.ivairus: ...lietuviğkai ir perşiûrëtas.
-	* lietuviu.verbs: iğskaldytas á...
-	* lietuviu.veiksmazodziai, lietuviu.tarpt.veiksmazodziai: ğiuos du
+	* lietuviu.ivairus: ...lietuviÅ¡kai ir perÅ¾iÅ«rÄ—tas.
+	* lietuviu.verbs: iÅ¡skaldytas Ä¯...
+	* lietuviu.veiksmazodziai, lietuviu.tarpt.veiksmazodziai: Å¡iuos du
 	failus.
 	* Makefile: atnaujintas.
 
-	* lietuviu.aff: uşkomentuotos taisyklës şodşiams, kurie atsako á
-	klausimà "koks?" ir baigiasi "-tis" -- atrodo kad visi jie yra
-	ne bûdvardşiai, o dalyviai.
+	* lietuviu.aff: uÅ¾komentuotos taisyklÄ—s Å¾odÅ¾iams, kurie atsako Ä¯
+	klausimÄ… "koks?" ir baigiasi "-tis" -- atrodo kad visi jie yra
+	ne bÅ«dvardÅ¾iai, o dalyviai.
 
-	* tools/spell.pl: stipriai patobulintas skriptas, iğskirsto şodşius á
+	* tools/spell.pl: stipriai patobulintas skriptas, iÅ¡skirsto Å¾odÅ¾ius Ä¯
 	reikalingus failus.
 
 2002-09-06  Gediminas Paulauskas <menesis@delfi.lt>
 
-	* nauji şodşiai iğ Lino, Mariaus ir manæs
+	* nauji Å¾odÅ¾iai iÅ¡ Lino, Mariaus ir manÄ™s
 
-	* lietuviu.aff: pataisymai iğ Rièardo Èepo, kad bûtø galima
-	gaminti tiek Latin7 (áprastas), tiek UTF-8 (reikalingas pvz. KMail)
-	şodynus
+	* lietuviu.aff: pataisymai iÅ¡ RiÄardo ÄŒepo, kad bÅ«tÅ³ galima
+	gaminti tiek Latin7 (Ä¯prastas), tiek UTF-8 (reikalingas pvz. KMail)
+	Å¾odynus
 
 	* Makefile: BSD pataisymai
 
-	* README: ğiek tiek atnaujinau
+	* README: Å¡iek tiek atnaujinau
 
 2001-05-02  Gediminas Paulauskas <menesis@delfi.lt>
 
-	Versija 0.5: 8767 şodşiai.
+	Versija 0.5: 8767 Å¾odÅ¾iai.
 
-	* pervadinau şodynà á "lietuviu", kaip rekomenduoja autorius.
+	* pervadinau Å¾odynÄ… Ä¯ "lietuviu", kaip rekomenduoja autorius.
 
-	* lietuviu.aff: pataisiau porà klaidø su mot.g. aukğtesniojo laipsnio
-	bûdvardşiais. Albertas pridëjo trûkstamà "keitei, keiteisi" formà.
+	* lietuviu.aff: pataisiau porÄ… klaidÅ³ su mot.g. aukÅ¡tesniojo laipsnio
+	bÅ«dvardÅ¾iais. Albertas pridÄ—jo trÅ«kstamÄ… "keitei, keiteisi" formÄ….
 
-	* pağalinau veiksmaşodinius daiktavardşius iğ şodyno -- juos pakeièiau
-	atitinkamais veiksmaşodşiais.
+	* paÅ¡alinau veiksmaÅ¾odinius daiktavardÅ¾ius iÅ¡ Å¾odyno -- juos pakeiÄiau
+	atitinkamais veiksmaÅ¾odÅ¾iais.
 
-	* daug mano naujø şodşiø, 300 Alberto, radau klaidø şodynuose.
+	* daug mano naujÅ³ Å¾odÅ¾iÅ³, 300 Alberto, radau klaidÅ³ Å¾odynuose.
 
-	* tools/spellai: ğiek tiek gudriau atspëja bûdvardşius: beveik visà
-	laikà reikia spausti enter :)
+	* tools/spellai: Å¡iek tiek gudriau atspÄ—ja bÅ«dvardÅ¾ius: beveik visÄ…
+	laikÄ… reikia spausti enter :)
 
 2001-04-18  Gediminas Paulauskas <menesis@delfi.lt>
 
-	Versija 0.4.2: 8220 şodşiø.
+	Versija 0.4.2: 8220 Å¾odÅ¾iÅ³.
 
 	* tools/updated: naujas skriptukas
 
-	* 600 naujø mano şodşiø, virğ 200 iğ Mariaus, pataisyti buvæ.
+	* 600 naujÅ³ mano Å¾odÅ¾iÅ³, virÅ¡ 200 iÅ¡ Mariaus, pataisyti buvÄ™.
 
-	* COPYING: pridëjau BSD tipo licenzijà, nepakenks...
+	* COPYING: pridÄ—jau BSD tipo licenzijÄ…, nepakenks...
 
 2000-07-04  Albertas Agejevas  <alga@uosis.mif.vu.lt>
 
 	Versija 0.4
 
-	* Iğ Gedimino Paulausko <menesis@takas.lt> -- dar tûkstantis
-	naujø şodşiø.  Şodynà sudaro jau virğ 7400 şodşiø.
+	* IÅ¡ Gedimino Paulausko <menesis@takas.lt> -- dar tÅ«kstantis
+	naujÅ³ Å¾odÅ¾iÅ³.  Å½odynÄ… sudaro jau virÅ¡ 7400 Å¾odÅ¾iÅ³.
 
-	* Pridëti veiksmaşodiniai daiktavardşiai (darymas, kalimas),
-	daromi iğ veiksmaşodşiø bûtojo kartinio laiko.
+	* PridÄ—ti veiksmaÅ¾odiniai daiktavardÅ¾iai (darymas, kalimas),
+	daromi iÅ¡ veiksmaÅ¾odÅ¾iÅ³ bÅ«tojo kartinio laiko.
 
 2000-04-14  Albertas Agejevas  <alga@uosis.mif.vu.lt>
 
 	Versija 0.3
 
-	* Iğ Gedimino Paulausko <menesis@takas.lt> -- keli tûkstanèiai
-	naujø şodşiø, o taip pat pilnai sutvarkyti veiksmaşodşiai.  Tai
-	buvo milşiniğkas darbas.  Şodynà sudaro jau virğ 6000 şodşiø.
+	* IÅ¡ Gedimino Paulausko <menesis@takas.lt> -- keli tÅ«kstanÄiai
+	naujÅ³ Å¾odÅ¾iÅ³, o taip pat pilnai sutvarkyti veiksmaÅ¾odÅ¾iai.  Tai
+	buvo milÅ¾iniÅ¡kas darbas.  Å½odynÄ… sudaro jau virÅ¡ 6000 Å¾odÅ¾iÅ³.
 
-	* Jo paties skriptukas, pakeièiantis bei apjungiantis mano ir
-	Mariaus skriptukus, padedanèius nustatyti şodşio flagus.
+	* Jo paties skriptukas, pakeiÄiantis bei apjungiantis mano ir
+	Mariaus skriptukus, padedanÄius nustatyti Å¾odÅ¾io flagus.
 
-	* Bug fix'ai ir papildymai afiksø faile.
+	* Bug fix'ai ir papildymai afiksÅ³ faile.
 
 2000-04-04  Albertas Agejevas  <alga@uosis.mif.vu.lt>
 
 	Versija 0.3pre1
 
-	* Şodşiai ir bug fix'ai iğ Mariaus Gedmino ir Aurimo Mikalausko;
+	* Å½odÅ¾iai ir bug fix'ai iÅ¡ Mariaus Gedmino ir Aurimo Mikalausko;
 
-	* Lietuvos miestø sàrağas iğ Daliaus <dali@isag.lei.lt>;
+	* Lietuvos miestÅ³ sÄ…raÅ¡as iÅ¡ Daliaus <dali@isag.lei.lt>;
 
-	* ádëtas veiksmaşodşiø prieğdëliø palaikymas (kol kas nevisas
-	şodynas sukonvertuotas á naujà pavidalà, şr failà liet.verbs);
+	* Ä¯dÄ—tas veiksmaÅ¾odÅ¾iÅ³ prieÅ¡dÄ—liÅ³ palaikymas (kol kas nevisas
+	Å¾odynas sukonvertuotas Ä¯ naujÄ… pavidalÄ…, Å¾r failÄ… liet.verbs);
 
 	* atsidaro tools direktorija, o joje keletas Mariaus Gedmino
-	utelyèiø ir mano skriptukas veiksmaşodiø árağams daryti.  Manau,
-	tik juo ir reikëtø naudotis -- padaro visà veiksmaşodşiø flagø
-	magijà pats, tereikia tik suvesti tris pagrindines formas ir
-	atsakyti á 25 klausimus, ar galimos tam tikros formos.
+	utelyÄiÅ³ ir mano skriptukas veiksmaÅ¾odiÅ³ Ä¯raÅ¡ams daryti.  Manau,
+	tik juo ir reikÄ—tÅ³ naudotis -- padaro visÄ… veiksmaÅ¾odÅ¾iÅ³ flagÅ³
+	magijÄ… pats, tereikia tik suvesti tris pagrindines formas ir
+	atsakyti Ä¯ 25 klausimus, ar galimos tam tikros formos.
 
 2000-03-17  Albertas Agejevas  <alga@uosis.mif.vu.lt>
 
 	Versija 0.2
 
-	* Pataisytas afiksø failas;
+	* Pataisytas afiksÅ³ failas;
 
-	* keli nauji şodşiai;
+	* keli nauji Å¾odÅ¾iai;
 
-	* keletas liet.base pakeitimø;
+	* keletas liet.base pakeitimÅ³;
 
 	* atsirado Makefile;
 
-	* Aurimo Mikalausko suteiktas vardø sàrağas ir keletas şodşiø;
+	* Aurimo Mikalausko suteiktas vardÅ³ sÄ…raÅ¡as ir keletas Å¾odÅ¾iÅ³;
 
-	* şodynas suskaidytas á keletà failø;
+	* Å¾odynas suskaidytas Ä¯ keletÄ… failÅ³;
 
-	* atsirado ğitas ChangeLog.
+	* atsirado Å¡itas ChangeLog.
 
 2000-03-15  Albertas Agejevas  <alga@uosis.mif.vu.lt>
 
-	* Iğleista versija 0.1
+	* IÅ¡leista versija 0.1
 
 2000-02-15  Albertas Agejevas
 
-	* Pradetas darbas (gavau gramatikos şinynà)
-
-
-
-
-
+	* Pradetas darbas (gavau gramatikos Å¾inynÄ…)

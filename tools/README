@@ -1,7 +1,7 @@
-guess 		-- pagal şodşio iğvestines formas bando nustatyti, kokie flagai
+guess 		-- pagal Å¾odÅ¾io iÅ¡vestines formas bando nustatyti, kokie flagai
 			reikalingi
-try 		-- parodo, kas bus pritaikius taisyklæ şodşiui 
-spellai 	-- interaktyvus skriptas, pagal atsakymus á klausimus sudeda teisingus flagus
-updated		-- randa byloje vienodus, bet su skirtingais flagais, şodşius
-proc            -- skriptas iğ 'aspell-lang' paketo (ftp://ftp.gnu.org/gnu/aspell/),
+try 		-- parodo, kas bus pritaikius taisyklÄ™ Å¾odÅ¾iui 
+spellai 	-- interaktyvus skriptas, pagal atsakymus Ä¯ klausimus sudeda teisingus flagus
+updated		-- randa byloje vienodus, bet su skirtingais flagais, Å¾odÅ¾ius
+proc            -- skriptas iÅ¡ 'aspell-lang' paketo (ftp://ftp.gnu.org/gnu/aspell/),
 			skirtas aspell ditributyvo generavimui

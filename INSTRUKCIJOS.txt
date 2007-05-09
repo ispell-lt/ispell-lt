@@ -1,67 +1,67 @@
 
 
-		Lietuviğkø MySpell afiksø lenteliø diegimo instrukcijos
+		LietuviÅ¡kÅ³ MySpell afiksÅ³ lenteliÅ³ diegimo instrukcijos
 
-		Ramûnas Lukağevièius (Ramunas.Lukasevicius@mail.lt)
+		RamÅ«nas LukaÅ¡eviÄius (Ramunas.Lukasevicius@mail.lt)
 		Albertas Agejevas (alga@akl.lt)
 
-	1. Áşanga
-	2. Lenteliø ádiegimas á Mozillà
-	3. Lenteliø ádiegimas á OpenOffice
+	1. Ä®Å¾anga
+	2. LenteliÅ³ Ä¯diegimas Ä¯ MozillÄ…
+	3. LenteliÅ³ Ä¯diegimas Ä¯ OpenOffice
 
 
 
-	1. Áşanga
+	1. Ä®Å¾anga
 
-Ğis failas skirtas aprağymams kaip vienoje ar kitoje operacinëje
-sistemoje tam tikroms programoms ádiegti afiksø lenteles kad tikrintø
-lietuviø kalbos rağybà.
+Å is failas skirtas apraÅ¡ymams kaip vienoje ar kitoje operacinÄ—je
+sistemoje tam tikroms programoms Ä¯diegti afiksÅ³ lenteles kad tikrintÅ³
+lietuviÅ³ kalbos raÅ¡ybÄ….
 
-Şemiau pateikti aprağymai yra skirti ğiek tiek paşengusiems
-vartotojams.  Ateityje bûtø galima sukurti koká skriptà, palengvinantá
-ádiegimà.
+Å½emiau pateikti apraÅ¡ymai yra skirti Å¡iek tiek paÅ¾engusiems
+vartotojams.  Ateityje bÅ«tÅ³ galima sukurti kokÄ¯ skriptÄ…, palengvinantÄ¯
+Ä¯diegimÄ….
 
-	2. Lenteliø ádiegimas á Mozilla
+	2. LenteliÅ³ Ä¯diegimas Ä¯ Mozilla
 
-Standartiniame Mozillos ádiegime iki versijos 1.5 nëra ádiegiamas
-rağybos tikrinimo komponentas, todël reikia já papildomai atsisiøsti
-ir ásidiegti iğ interneto adresu
-http://spellchecker.mozdev.org/installation.html Ádiegus ğá paketà,
-rağant laiğkà, ar kuriant puslapá, meniu turi atsirasti mygtukas
-"spell".  Mozilla 1.5 ir vëlesnioms versijoms atskirai rağybos
-tikrinimo paketo diegti nereikia, pakanka tik ádiegti şodynà ir
+Standartiniame Mozillos Ä¯diegime iki versijos 1.5 nÄ—ra Ä¯diegiamas
+raÅ¡ybos tikrinimo komponentas, todÄ—l reikia jÄ¯ papildomai atsisiÅ³sti
+ir Ä¯sidiegti iÅ¡ interneto adresu
+http://spellchecker.mozdev.org/installation.html Ä®diegus Å¡Ä¯ paketÄ…,
+raÅ¡ant laiÅ¡kÄ…, ar kuriant puslapÄ¯, meniu turi atsirasti mygtukas
+"spell".  Mozilla 1.5 ir vÄ—lesnioms versijoms atskirai raÅ¡ybos
+tikrinimo paketo diegti nereikia, pakanka tik Ä¯diegti Å¾odynÄ… ir
 lenteles.
 
-Diegiant afiksø lenteles uştenka nukopijuoti lt_LT.dic ir lt_LT.aff
-bylas á $mozilla/components/myspell katalogà.  Èia $mozilla yra
-Mozilla ádiegimo katalogas, pvz. Windows platformoje 
+Diegiant afiksÅ³ lenteles uÅ¾tenka nukopijuoti lt_LT.dic ir lt_LT.aff
+bylas Ä¯ $mozilla/components/myspell katalogÄ….  ÄŒia $mozilla yra
+Mozilla Ä¯diegimo katalogas, pvz. Windows platformoje 
 "C:\Program Files\mozilla.org\Mozilla", o Linux platformoje
 /usr/lib/mozilla.
 
-	3. Lenteliø ádiegimas á OpenOffice
+	3. LenteliÅ³ Ä¯diegimas Ä¯ OpenOffice
 
-Şemiau pateiktos instrukcijos, kaip ádiegti şodynà á OpenOffice.org
-versijas 641C, 1.0 ir vëlesnius:
+Å½emiau pateiktos instrukcijos, kaip Ä¯diegti Å¾odynÄ… Ä¯ OpenOffice.org
+versijas 641C, 1.0 ir vÄ—lesnius:
 
-1) prieğ pradedant ádiegimà, reikia uşdaryti visus OpenOffice langus,
+1) prieÅ¡ pradedant Ä¯diegimÄ…, reikia uÅ¾daryti visus OpenOffice langus,
    netgi Quickstarter.
 
-2) nukopijuojame lt_LT.dic, lt_LT.aff, ir dictionary.lst á
-   $OpenOffice/user/wordbook/ Èia $OpenOffice yra OpenOffice.org
-   ádiegimo katalogas, pvz. Windows platformoje "C:\Program
+2) nukopijuojame lt_LT.dic, lt_LT.aff, ir dictionary.lst Ä¯
+   $OpenOffice/user/wordbook/ ÄŒia $OpenOffice yra OpenOffice.org
+   Ä¯diegimo katalogas, pvz. Windows platformoje "C:\Program
    Files\OpenOffice.org.1.1.0\", o Linux platformoje
    ~/.openoffice/1.1.0/.
 
-3) Dabar paleidşiame OpenOffice ir vykdom tokias komandas:
+3) Dabar paleidÅ¾iame OpenOffice ir vykdom tokias komandas:
    Tools->Options->LanguageSettings->WritingAids
-   Paspaudşiame Edit (prie Available language modules), pasirenkame
-   lietuviø kalbà ir paşymime "OpenOffice MySpell spell checker".
+   PaspaudÅ¾iame Edit (prie Available language modules), pasirenkame
+   lietuviÅ³ kalbÄ… ir paÅ¾ymime "OpenOffice MySpell spell checker".
 
 4) Dabar pasirenkame Tools->Options->LanguageSettings->Languages ir
-   pasirenkame Lietuviğkà lokalæ, bei nustatome lietuviø kalbà kaip
-   nutylimàjà dokumentams lotyniğkomis raidëmis (ties "Western").
+   pasirenkame LietuviÅ¡kÄ… lokalÄ™, bei nustatome lietuviÅ³ kalbÄ… kaip
+   nutylimÄ…jÄ… dokumentams lotyniÅ¡komis raidÄ—mis (ties "Western").
 
-Şodynas ádiegtas ir uşregistruotas á OpenOffice.
+Å½odynas Ä¯diegtas ir uÅ¾registruotas Ä¯ OpenOffice.
 
-Apie ádiegimà galima pasiskaityti ir adresu
+Apie Ä¯diegimÄ… galima pasiskaityti ir adresu
 http://whiteboard.openoffice.org/lingucomponent/download_dictionary.html#installspell
