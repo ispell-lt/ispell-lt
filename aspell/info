@@ -17,9 +17,9 @@ author:
   name-native Laimonas Vėbra 
   email wiela at centras lt
   maintainer true
-copyright Other
-version 1.2-0
-source-version 1.2
+copyright Free Software
+version 1.2.1-0
+source-version 1.2.1
 complete true
 accurate true
 url ftp://ftp.akl.lt/ispell-lt/

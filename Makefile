@@ -4,7 +4,7 @@
 #  Copyright (C) 2000-2002 Albertas Agejevas
 #
 
-VERSION=1.2
+VERSION=1.2.1
 #+cvs`date -u +%Y%m%d`
 DATE=`date -u +%Y\-%m\-%d`
 
