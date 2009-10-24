@@ -1035,18 +1035,18 @@ suffixes
 # bûdvardşiai, ir dar kai kurie.
 #
 
-	[^DT] I S	>	-IS,IO
-	[^DT] I S	>	-IS,IAM
-	[^DT] I S	>	-IS,Á
-	[^DT] I S	>	-IS,IU
-	[^DT] I S	>	-IS,IAME
+	[^DTJ] I S	>	-IS,IO
+	[^DTJ] I S	>	-IS,IAM
+	[^DTJ] I S	>	-IS,Á
+	[^DTJ] I S	>	-IS,IU
+	[^DTJ] I S	>	-IS,IAME
 
-	[^DT] I S	>	-IS,IAI
-	[^DT] I S	>	-IS,IØ
-	[^DT] I S	>	-IS,IAMS
-	[^DT] I S	>	-IS,IUS
-	[^DT] I S	>	-IS,IAIS
-	[^DT] I S	>	-IS,IUOSE
+	[^DTJ] I S	>	-IS,IAI
+	[^DTJ] I S	>	-IS,IØ
+	[^DTJ] I S	>	-IS,IAMS
+	[^DTJ] I S	>	-IS,IUS
+	[^DTJ] I S	>	-IS,IAIS
+	[^DTJ] I S	>	-IS,IUOSE
 
 
 	T I S	>	-TIS,ÈIO
@@ -1063,8 +1063,8 @@ suffixes
 	T I S	>	-TIS,ÈIUOSE
 
 	D I S	>	-DIS,DŞIO
-	D I S	>	-DIS,DŞIAM	# smuliagrûdis > smulkiagrûdşiam
-	D I S	>	-DIS,DÁ		# smuliagrûdis > smulkiagrûdá
+	D I S	>	-DIS,DŞIAM	# smulkiagrûdis > smulkiagrûdşiam
+	D I S	>	-DIS,DÁ		# smulkiagrûdis > smulkiagrûdá
 	D I S	>	-DIS,DŞIU
 	D I S	>	-DIS,DŞIAME
 
@@ -1074,6 +1074,21 @@ suffixes
 	D I S	>	-DIS,DŞIUS
 	D I S	>	-DIS,DŞIAIS
 	D I S	>	-DIS,DŞIUOSE
+	
+	# kreivakojis, apynaujis, grynakraujis, ...
+	J I S	>	-JIS,JO	
+	J I S	>	-JIS,JAM
+	J I S	>	-JIS,JÁ
+	J I S	>	-JIS,JU
+	J I S	>	-JIS,JAME
+
+	J I S	>	-JIS,JAI
+	J I S	>	-JIS,JØ
+	J I S	>	-JIS,JAMS
+	J I S	>	-JIS,JUS
+	J I S	>	-JIS,JAIS
+	J I S	>	-JIS,JUOSE
+	
 	
 	I S 	> 	-IS,I  		# ğauks. l. - baltakakli!, smulkiagrûdi!
 
