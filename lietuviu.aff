@@ -3719,68 +3719,131 @@ flag *Q:
 #
 #
 
-# moka, supa, neða, ðukuoja, traukia, kenèia
-# I paradigma
 
-	A		>	-A,U
+################################################
+# I paradigma
+# moka, supa, neða, ðukuoja, traukia, kenèia
+#
+
+  	## Nesangràþiniai ##
+	# Vnsk./dgsk. III asm.: ðakninis þodis
+
+  	# Vnsk., I asm.
+	A		>	-A,U		# moka > moku
+
+  	# Vnsk., II asm.
 	[^I] A		>	-A,I		# moka > moki
 	[^ÈÞ] I A	>	-IA,I		# traukia > trauki
 	È I A		>	-ÈIA,TI		# kenèia > kenti
 	D Þ I A		>	-DÞIA,DI	# beldþia > beldi
-	A		>	ME
-	A		>	M
-	A		>	TE
-	A		>	T
 
-	A S I			>	-ASI,UOSI
-	[^I] A S I		>	-ASI,IESI		# supasi > supiesi
-	[^ÈÞ] I A S I		>	-IASI,IESI		# traukiasi > traukiesi
-	È I A S I		>	-ÈIASI,TIESI		# kenèiasi > kentiesi
-	D Þ I A S I		>	-DÞIASI,DIESI		# beldþiasi > beldiesi
+	# Dgsk. I asm.
+	A		>	ME		# moka > mokame	
+	A		>	M		# ðnek.
+
+	# Dgsk. II asm.
+	A		>	TE		# traukia > traukiate
+	A		>	T		# ðnek.
+
+
+  	## Sangràþiniai ##	
+	# Vnsk./dgsk. III asm.: ðakninis þodis
+  	
+	# Vnsk., I asm.
+	A S I			>	-ASI,UOSI	# supasi > supuosi
+
+	# Vnsk., II asm.
+	[^I] A S I		>	-ASI,IESI	# supasi > supiesi
+	[^ÈÞ] I A S I		>	-IASI,IESI	# traukiasi > traukiesi
+	È I A S I		>	-ÈIASI,TIESI	# puèiasi > putiesi
+	D Þ I A S I		>	-DÞIASI,DIESI	# beldþiasi > beldiesi
+	
+	# Dgsk., I asm.
 	A S I			>	-SI,MËS
+
+	# Dgsk., II asm.
 	A S I			>	-SI,TËS
 
-# sëdi, tiki, trinksi
+################################################
 # II paradigma
+# sëdi, tiki, trinksi
+# 
+  	## Nesangràþiniai ##
+	# Vnsk. II, III, dgsk. III asm.: ðakninis þodis
 
-	[^S] [^DT] I	>	-I,IU		# tiki > tikiu
-	[^S] D I	>	-DI,DÞIU	# sëdi > sëdþiu
-	[^S] T I	>	-TI,ÈIU		# ???
+  	# Vnsk., I asm.
+	[^AOI] S I	>	-I,IU		# karksi > karksiu
+ 	[^DTS] I 	>	-I,IU		# guli > guliu
+	D I    		>	-DI,DÞIU	# sëdi > sëdþiu
+	T I		>	-TI,ÈIU		# ðvyti > ðvyèiu
+
+	# Dgsk., I asm.
+	[^AOI] S I	>	ME		# þagsi > þagsime
+	[^AOI] S I	>	M		# ðnek.
 	[^S] I		>	ME		# sëdi > sëdime
+	[^S] I		>	M		# ðnek.
+
+	# Dgsk., II asm . 
+	[^AOI] S I	>	TE		# mirksi > mirksite
+	[^AOI] S I	>	T		# ðnek.
 	[^S] I		>	TE		# sëdi > sëdite
-	[^S] I		>	M
-	[^S] I		>	T
-
-	[^AOI] S  [^DT] I	>	-I,IU		# tiksi > tiksiu
-	[^AOI] S  D I		>	-DI,DÞIU
-	[^AOI] S  T I		>	-TI,ÈIU
-	[^AOI] S  I		>	ME		# tvinksi > tvinksime
-	[^AOI] S  I		>	TE
-	[^AOI] S  I		>	M
-	[^AOI] S  I		>	T
+	[^S] I		>	T		# ðnek.  
 
 
-	[^DT] I S I	>	-ISI,IUOSI		# tikisi > tikiuosi
-	D I S I		>	-DISI,DÞIUOSI		# sëdisi > sëdþiuosi
-	T I S I		>	-TISI,ÈIUOSI		# ???
-	I S I		>	-SI,MËS			# tikisi > tikimës
-	I S I		>	-SI,TËS			# tikisi > tikitës
+	## Sangràþiniai ##
+	# Vnsk./dgsk. III asm.:  ðakninis þodis
+
+	# Vnsk., I asm.
+	[^DT] I S I	>	-ISI,IUOSI	# tikisi > tikiuosi
+	D I S I		>	-DISI,DÞIUOSI	# girdisi > girdþiuosi
+	T I S I		>	-TISI,ÈIUOSI	# ðlykðtisi > ðlykðèiuosi
+	
+	# Vnsk., II asm.
+	I S I		>	-ISI,IESI	# tikisi > tikiesi
+	
+	# Dgsk., I asm.
+	I S I		>	-SI,MËS		# tikisi > tikimës
+	
+	# Dgsk., II asm.
+	I S I		>	-SI,TËS		# gailisi > gailitës 
 
 
-# moko, bijo, þiopso
+################################################
 # III paradigma
+# moko, bijo, þiopso
 
-	O	>	-O,AU
-	O	>	-O,AI
-	O	>	-O,OME
-	O	>	-O,OTE
-	O	>	-O,OM
-	O	>	-O,OT
+  	## Nesangràþiniai ##
+	# Vnsk./dgsk. III asm.: ðakninis þodis
 
-	O S I	>	-OSI,AUSI
-	O S I	>	-OSI,AISI
-	O S I	>	-SI,MËS
-	O S I	>	-SI,TËS
+	# Vnsk., I asm.
+	O	>	-O,AU		# bijo > bijau
+	
+	# Vnsk., II asm.
+	O	>	-O,AI		# moko > mokai
+	
+	# Dgsk., I asm.
+	O	>	-O,OME		# sako > sakome
+	O	>	-O,OM		# ðnek.
+
+	# Dgsk., II asm.
+	O	>	-O,OTE		# þino > þinote
+	O	>	-O,OT		# ðnek.
+
+
+  	## Sangràþiniai ##
+	# Vnsk./dgsk. III asm.: ðakninis þodis
+
+	# Vnsk., I asm.
+	O S I	>	-OSI,AUSI	# bijosi > bijausi
+
+	# Vnsk., II asm.
+	O S I	>	-OSI,AISI	# mokosi > mokaisi
+
+	# Dgsk., I asm.
+	O S I	>	-SI,MËS		# sakosi > sakomës
+
+	# Dgsk., II asm.
+	O S I	>	-SI,TËS		# þinosi > þinotës
 
 
 ################################################
@@ -3789,10 +3852,10 @@ flag *Q:
 	A		>	-A,ANT
 	O		>	-O,ANT
 	[^S] I		>	-I,INT	# kaþokdël tiesiog NT neveikia ;(
-	[^AOI]	S I	>	-I,INT	# kriuksi > kriuksint
+	[^AOI] S I	>	-I,INT	# kriuksi > kriuksint
 
-	O S I	>	-OSI,ANTIS
-	A S I	>	-ASI,ANTIS
+	O S I	  	>	-OSI,ANTIS
+	A S I		>	-ASI,ANTIS
 	I S I		>	-SI,NTIS
 
 
@@ -3893,8 +3956,9 @@ flag *Q:
 	[^S] I	>	-I,INÈIOMIS
 	[^S] I	>	-I,INÈIOSE
 
-	[^AOI] S I	>	-I,INTIS	# tiki > tikintis
-	[^AOI] S I	>	-I,ÁS		# tiki > tikás
+	# amsi, klapsi, tiksi, þagsi, ...
+	[^AOI] S I	>	-I,INTIS	# tiksi > tiksintis
+	[^AOI] S I	>	-I,ÁS		# tiksi > tiksás
 	[^AOI] S I	>	-I,INÈIO
 	[^AOI] S I	>	-I,INÈIAM
 	[^AOI] S I	>	-I,INTÁ
@@ -4014,21 +4078,21 @@ flag *Q:
 	[^S] I	>	-I,INÈIOSIOMIS
 	[^S] I	>	-I,INÈIOSIOSE
 
-	[^AOI] S I	>	-I,INTYSIS	# tiki > tikintysis
+	[^AOI] S I	>	-I,INTYSIS	# tiksi > tiksintysis
 	[^AOI] S I	>	-I,INTÁJÁ
 	[^AOI] S I	>	-I,INÈIOJO
 	[^AOI] S I	>	-I,INÈIAJAM
 	[^AOI] S I	>	-I,INÈIUOJU
 	[^AOI] S I	>	-I,INÈIAJAME
 
-	[^AOI] S I	>	-I,INTIEJI	# tiki > tikintieji
+	[^AOI] S I	>	-I,INTIEJI	# tiksi > tiksintieji
 	[^AOI] S I	>	-I,INTIESIEMS
 	[^AOI] S I	>	-I,INÈIØJØ
 	[^AOI] S I	>	-I,INÈIUOSIUS
 	[^AOI] S I	>	-I,INÈIAISIAIS
 	[^AOI] S I	>	-I,INÈIUOSIUOSE
 
-	[^AOI] S I	>	-I,INÈIOJI
+	[^AOI] S I	>	-I,INÈIOJI	# tiksi > tiksinèioji
 	[^AOI] S I	>	-I,INÈIOSIOS
 	[^AOI] S I	>	-I,INÈIAJAI
 	[^AOI] S I	>	-I,INÈIÀJÀ
@@ -4037,7 +4101,7 @@ flag *Q:
 	[^AOI] S I	>	-I,INÈIOJOJE
 	[^AOI] S I	>	-I,INÈIOJOJ
 
-	[^AOI] S I	>	-I,INÈIØJØ
+	[^AOI] S I	>	-I,INÈIØJØ	# tiksi > tiksinèiøjø
 	[^AOI] S I	>	-I,INÈIOSIOMS
 	[^AOI] S I	>	-I,INÈIÀSIAS
 	[^AOI] S I	>	-I,INÈIOSIOMIS
@@ -4045,188 +4109,407 @@ flag *Q:
 
 ################################################
 #  Esamojo laiko neveikiamasis dalyvis
+#  (ir bûdvardþiø nelyginamasis laipsnis)
+#
+	# vnsk., vyr. gim.
+	[AO]	>	MAS	# eina > einamas, sako > sakomas
+	[AO]	>	MO
+	[AO]	>	MAM
+	[AO]	>	MÀ
+	[AO]	>	MU
+	[AO]	>	MAME
+
+	[^S] I	>	MAS	# myli > mylimas, nori > norimas
+	[^S] I	>	MO
+	[^S] I	>	MAM
+	[^S] I	>	MÀ
+	[^S] I	>	MU
+	[^S] I	>	MAME
+
+	# vnsk., mot. gim.
+	[AO]	>	MA	# eina > einama, sako > sakoma
+	[AO]	>	MOS
+	[AO]	>	MAI
+	#[AO]	>	MÀ	# G. linksnis toks pat kaip vyr. vnsk. G.
+	[AO]	>	MOJE
+	[AO]	>	MOJ
+
+	[^S] I	>	MA	# myli (ne mylisi) > mylima, nori (ne norisi) > norima
+	[^S] I	>	MOS
+	[^S] I	>	MAI
+	#[^S] I	>	MÀ	# G. linksnis toks pat kaip vyr. vnsk. G.
+	[^S] I	>	MOJE
+	[^S] I	>	MOJ
+
+	# dgsk., vyr. gim.
+	[AO]	>	MI	# eina > einami, sako > sakomi
+	[AO]	>	MØ
+	[AO]	>	MIEMS
+	[AO]	>	MUS
+	[AO]	>	MAIS
+	[AO]	>	MUOSE
+
+	[^S] I	>	MI	# myli > mylimi, nori > norimi
+	[^S] I	>	MØ
+	[^S] I	>	MIEMS
+	[^S] I	>	MUS
+	[^S] I	>	MAIS
+	[^S] I	>	MUOSE
+	
+	# dgsk., mot. gim.
+	[AO]	>	MOS	# eina > einamos, sako > sakomos
+	[AO]	>	MØ
+	[AO]	>	MOMS
+	#[AO]	>	MAS	# G. linksnis toks pat kaip vyr. vnsk. V.
+	[AO]	>	MOMIS
+	[AO]	>	MOSE
+
+	[^S] I	>	MOS	# myli > mylimos, nori > norimos
+	[^S] I	>	MØ
+	[^S] I	>	MOMS
+	#[^S] I	>	MAS	# G. linksnis toks pat kaip vyr. vnsk. V.
+	[^S] I	>	MOMIS
+	[^S] I	>	MOSE
+
+	# sngr., neveik. rûð., bevrd. gim.
+        [AOI] S I >     -SI,MASI 	# einasi > einamasi, mylisi > mylimasi
+
+
+################################################
+# Bûdvardþiø aukðtesnysis laipsnis
+#
+# Bûdvardþiø darybos èia (turbût) nereikia. T.y. savaime bûdvardinti visø 
+# dalyviø nevertëtø, nes taip prikuriama (daug) nenaudojamø, dirbtiniø formø.
+# Pvz.: norimesnis, tylimesnis, sakomesnis ir t.t.
 #
 
-	[AOI]	>	MAS	# myli > mylimas Rrrrrrr.... :)
-	[AOI]	>	MO
-	[AOI]	>	MAM
-	[AOI]	>	MÀ
-	[AOI]	>	MU
-	[AOI]	>	MAME
+	# vnsk., vyr. gim.
+	[AO]	>	MESNIS	# geidþia > geidþiamesnis
+	[AO]	>	MESNIO
+	[AO]	>	MESNIAM
+	[AO]	>	MESNÁ
+	[AO]	>	MESNIU
+	[AO]	>	MESNIAME
 
-	[AOI]	>	MI
-	[AOI]	>	MØ
-	[AOI]	>	MIEMS
-	[AOI]	>	MUS
-	[AOI]	>	MAIS
-	[AOI]	>	MUOSE
+	[^S] I	>	MESNIS	# myli > mylimesnis
+	[^S] I	>	MESNIO
+	[^S] I	>	MESNIAM
+	[^S] I	>	MESNÁ
+	[^S] I	>	MESNIU
+	[^S] I	>	MESNIAME
 
-	[AOI]	>	MA
-	[AOI]	>	MOS
-	[AOI]	>	MAI
-	[AOI]	>	MOJE
-	[AOI]	>	MOJ
+	# vnsk., mot. gim.
+	[AO]	>	MESNË	# geidþia > geidþiamesnë
+	[AO]	>	MESNËS
+	[AO]	>	MESNEI
+	[AO]	>	MESNÆ
+	[AO]	>	MESNE
+	[AO]	>	MESNËJE
+	[AO]	>	MESNËJ
 
-	[AOI]	>	MOS
-	[AOI]	>	MØ
-	[AOI]	>	MOMS
-	[AOI]	>	MOMIS
-	[AOI]	>	MOSE
+	[^S] I	>	MESNË	# myli > mylimesnë
+	[^S] I	>	MESNËS
+	[^S] I	>	MESNEI
+	[^S] I	>	MESNÆ
+	[^S] I	>	MESNE
+	[^S] I	>	MESNËJE
+	[^S] I	>	MESNËJ
 
-        [AOI] S I >     -SI,MASI
 
+	# dgsk., vyr. gim.
+	[AO]	>	MESNI	# geidþia > geidþiamesni
+	[AO]	>	MESNIØ
+	[AO]	>	MESNIEMS
+	[AO]	>	MESNIUS
+	[AO]	>	MESNIAIS
+	[AO]	>	MESNIUOSE
 
-# Aukðtesnysis laipsnis
+	[^S] I	>	MESNI	# myli > mylimesni
+	[^S] I	>	MESNIØ
+	[^S] I	>	MESNIEMS
+	[^S] I	>	MESNIUS
+	[^S] I	>	MESNIAIS
+	[^S] I	>	MESNIUOSE
 
-	[AOI]	>	MESNIS	# myli > mylimesnis
-	[AOI]	>	MESNIO
-	[AOI]	>	MESNIAM
-	[AOI]	>	MESNÁ
-	[AOI]	>	MESNIU
-	[AOI]	>	MESNIAME
+	# dgsk., mot. gim.
+	[AO]	>	MESNËS	# geidþia > geidþiamesnës
+	[AO]	>	MESNIØ
+	[AO]	>	MESNËMS
+	[AO]	>	MESNES
+	[AO]	>	MESNËMIS
+	[AO]	>	MESNËSE
 
-	[AOI]	>	MESNI
-	[AOI]	>	MESNIØ
-	[AOI]	>	MESNIEMS
-	[AOI]	>	MESNIUS
-	[AOI]	>	MESNIAIS
-	[AOI]	>	MESNIUOSE
+	[^S] I	>	MESNËS	# myli > mylimesnës
+	[^S] I	>	MESNIØ
+	[^S] I	>	MESNËMS
+	[^S] I	>	MESNES
+	[^S] I	>	MESNËMIS
+	[^S] I	>	MESNËSE
 
-	[AOI]	>	MESNË
-	[AOI]	>	MESNËS
-	[AOI]	>	MESNEI
-	[AOI]	>	MESNËJE
-	[AOI]	>	MESNËJ
+################################################
+# Bûdvardþiø aukðèiausias laipsnis
+#
+	# vnsk., vyr. gim.
+	[AO]	>	MIAUSIAS	# geidþia > geidþiamiausias
+	[AO]	>	MIAUSIO
+	[AO]	>	MIAUSIAM
+	[AO]	>	MIAUSIÀ
+	[AO]	>	MIAUSIU
+	[AO]	>	MIAUSIAME
 
-	[AOI]	>	MESNËS
-	[AOI]	>	MESNIØ
-	[AOI]	>	MESNËMS
-	[AOI]	>	MESNËMIS
-	[AOI]	>	MESNËSE
+	[^S] I	>	MIAUSIAS	# myli > mylimiausias
+	[^S] I	>	MIAUSIO
+	[^S] I	>	MIAUSIAM
+	[^S] I	>	MIAUSIÀ
+	[^S] I	>	MIAUSIU
+	[^S] I	>	MIAUSIAME
 
-# Aukðèiausias laipsnis
+	# vnsk., mot. gim.
+	[AO]	>	MIAUSIA		# geidþia > geidþiamiausia
+	[AO]	>	MIAUSIOS
+	[AO]	>	MIAUSIAI
+	[AO]	>	MIAUSIÀ
+	#[AO]	>	MIAUSIA		# Án. linksnis toks pats kaip V.
+	[AO]	>	MIAUSIOJE
+	[AO]	>	MIAUSIOJ
 
-	[AOI]	>	MIAUSIAS	# myli > mylimiausias
-	[AOI]	>	MIAUSIO
-	[AOI]	>	MIAUSIAM
-	[AOI]	>	MIAUSIÀ
-	[AOI]	>	MIAUSIU
-	[AOI]	>	MIAUSIAME
+	[^S] I	>	MIAUSIA		# myli > mylimiausia
+	[^S] I	>	MIAUSIOS
+	[^S] I	>	MIAUSIAI
+	[^S] I	>	MIAUSIÀ
+	#[^S] I	>	MIAUSIA		# Án. linksnis toks pats kaip V.
+	[^S] I	>	MIAUSIOJE
+	[^S] I	>	MIAUSIOJ
 
-	[AOI]	>	MIAUSI
-	[AOI]	>	MIAUSIØ
-	[AOI]	>	MIAUSIEMS
-	[AOI]	>	MIAUSIUS
-	[AOI]	>	MIAUSIAIS
-	[AOI]	>	MIAUSIUOSE
+	# dgsk., vyr. gim.
+	[AO]	>	MIAUSI		# geidþia > geidþiamiausi
+	[AO]	>	MIAUSIØ
+	[AO]	>	MIAUSIEMS
+	[AO]	>	MIAUSIUS
+	[AO]	>	MIAUSIAIS
+	[AO]	>	MIAUSIUOSE
 
-	[AOI]	>	MIAUSIA
-	[AOI]	>	MIAUSOS
-	[AOI]	>	MIAUSIAI
-	[AOI]	>	MIAUSOJE
-	[AOI]	>	MIAUSOJ
+	[^S] I	>	MIAUSI		# myli > mylimiausi
+	[^S] I	>	MIAUSIØ
+	[^S] I	>	MIAUSIEMS
+	[^S] I	>	MIAUSIUS
+	[^S] I	>	MIAUSIAIS
+	[^S] I	>	MIAUSIUOSE
 
-	[AOI]	>	MIAUSIOS
-	[AOI]	>	MIAUSIØ
-	[AOI]	>	MIAUSIOMS
-	[AOI]	>	MIAUSIOMIS
-	[AOI]	>	MIAUSIOSE
+	# dgsk., mot. gim.
+	[AO]	>	MIAUSIOS	# geidþia > geidþiamiausios
+	[AO]	>	MIAUSIØ
+	[AO]	>	MIAUSIOMS
+	[AO]	>	MIAUSIAS
+	[AO]	>	MIAUSIOMIS
+	[AO]	>	MIAUSIOSE
+
+	[^S] I	>	MIAUSIOS	# myli > mylimiausios
+	[^S] I	>	MIAUSIØ
+	[^S] I	>	MIAUSIOMS
+	[^S] I	>	MIAUSIAS
+	[^S] I	>	MIAUSIOMIS
+	[^S] I	>	MIAUSIOSE
+
 
 #################################################################
 # Esamojo laiko neveikiamojo dalyviø ávardþiuotinës formos
+#
 
-	[AOI]	>	MASIS	# myli > mylimasis
-	[AOI]	>	MOJO
-	[AOI]	>	MAJAM
-	[AOI]	>	MÀJÁ
-	[AOI]	>	MUOJU
-	[AOI]	>	MAJAME
+	# vnsk., vyr. gim.
+	[AO]	>	MASIS	# geidþia > geidþiamasis
+	[AO]	>	MOJO
+	[AO]	>	MAJAM
+	[AO]	>	MÀJÁ
+	[AO]	>	MUOJU
+	[AO]	>	MAJAME
 
-	[AOI]	>	MIEJI
-	[AOI]	>	MØJØ
-	[AOI]	>	MIESIEMS
-	[AOI]	>	MUOSIUS
-	[AOI]	>	MAISIAIS
-	[AOI]	>	MUOSIUOSE
+	[^S] I	>	MASIS	# myli > mylimasis
+	[^S] I	>	MOJO
+	[^S] I	>	MAJAM
+	[^S] I	>	MÀJÁ
+	[^S] I	>	MUOJU
+	[^S] I	>	MAJAME
 
-	[AOI]	>	MOJI
-	[AOI]	>	MOSIOS
-	[AOI]	>	MAJAI
-	[AOI]	>	MÀJÀ
-	[AOI]	>	MÀJA
-	[AOI]	>	MOJOJE
-	[AOI]	>	MOJOJ
+	# vnsk., mot. gim.
+	[AO]	>	MOJI	# geidþia > geidþiamoji
+	[AO]	>	MOSIOS
+	[AO]	>	MAJAI
+	[AO]	>	MÀJÀ
+	[AO]	>	MÀJA
+	[AO]	>	MOJOJE
+	[AO]	>	MOJOJ
 
-	[AOI]	>	MOSIOS
-	[AOI]	>	MØJØ
-	[AOI]	>	MOSIOMS
-	[AOI]	>	MÀSIAS
-	[AOI]	>	MOSIOMIS
-	[AOI]	>	MOSIOSE
+	[^S] I	>	MOJI	# myli > mylimoji
+	[^S] I	>	MOSIOS
+	[^S] I	>	MAJAI
+	[^S] I	>	MÀJÀ
+	[^S] I	>	MÀJA
+	[^S] I	>	MOJOJE
+	[^S] I	>	MOJOJ
 
+	# dgsk., vyr. gim.
+	[AO]	>	MIEJI	# geidþia > geidþiamieji
+	[AO]	>	MØJØ
+	[AO]	>	MIESIEMS
+	[AO]	>	MUOSIUS
+	[AO]	>	MAISIAIS
+	[AO]	>	MUOSIUOSE
+
+	[^S] I	>	MIEJI	# myli > mylimieji
+	[^S] I	>	MØJØ
+	[^S] I	>	MIESIEMS
+	[^S] I	>	MUOSIUS
+	[^S] I	>	MAISIAIS
+	[^S] I	>	MUOSIUOSE
+
+	# dgsk., mot. gim.
+	[AO]	>	MOSIOS	# geidþia > geidþiamosios
+	[AO]	>	MØJØ
+	[AO]	>	MOSIOMS
+	[AO]	>	MÀSIAS
+	[AO]	>	MOSIOMIS
+	[AO]	>	MOSIOSE
+
+	[^S] I	>	MOSIOS	# myli > mylimosios
+	[^S] I	>	MØJØ
+	[^S] I	>	MOSIOMS
+	[^S] I	>	MÀSIAS
+	[^S] I	>	MOSIOMIS
+	[^S] I	>	MOSIOSE
+
+#################################################################
 # Aukðtesnysis laipsnis
 # Kai kurios taisyklës þemiau uþkomentuotos, nes ispellas warningus
 # mëto, kad jos per ilgos.
+#
+	# vnsk., vyr. gim.
+	[AO]	>	MESNYSIS	# geidþia > geidþiamesnysis
+	[AO]	>	MESNIOJO
+	[AO]	>	MESNIAJAM
+	[AO]	>	MESNÁJÁ
+	[AO]	>	MESNIUOJU
+	[AO]	>	MESNIAJAME
 
-	[AOI]	>	MESNYSIS	# myli > mylimesnysis
-	[AOI]	>	MESNIOJO
-	[AOI]	>	MESNIAJAM
-	[AOI]	>	MESNÁJÁ
-	[AOI]	>	MESNIUOJU
-	[AOI]	>	MESNIAJAME
+	[^S] I	>	MESNYSIS	# myli > mylimesnysis
+	[^S] I	>	MESNIOJO
+	[^S] I	>	MESNIAJAM
+	[^S] I	>	MESNÁJÁ
+	[^S] I	>	MESNIUOJU
+	[^S] I	>	MESNIAJAME
 
-	[AOI]	>	MESNIEJI
-	[AOI]	>	MESNIØJØ
-	[AOI]	>	MESNIESIEMS
-	[AOI]	>	MESNIUOSIUS
-	[AOI]	>	MESNIAISIAIS
-#	[AOI]	>	MESNIUOSIUOSE
+	# vnsk., mot. gim.
+	[AO]	>	MESNIOJI	# geidþia > geidþiamesnioji
+	[AO]	>	MESNIOSIOS
+	[AO]	>	MESNIAJAI
+	[AO]	>	MESNIÀJÀ
+	[AO]	>	MESNIÀJA
+	[AO]	>	MESNIOJOJE
+	[AO]	>	MESNIOJOJ
 
-	[AOI]	>	MESNIOJI
-	[AOI]	>	MESNIOSIOS
-	[AOI]	>	MESNIAJAI
-	[AOI]	>	MESNIÀJÀ
-	[AOI]	>	MESNIÀJA
-	[AOI]	>	MESNIOJOJE
-	[AOI]	>	MESNIOJOJ
+	[^S] I	>	MESNIOJI	# myli > mylimesnioji
+	[^S] I	>	MESNIOSIOS
+	[^S] I	>	MESNIAJAI
+	[^S] I	>	MESNIÀJÀ
+	[^S] I	>	MESNIÀJA
+	[^S] I	>	MESNIOJOJE
+	[^S] I	>	MESNIOJOJ
 
-	[AOI]	>	MESNIOSIOS
-	[AOI]	>	MESNIØJØ
-	[AOI]	>	MESNIOSIOMS
-	[AOI]	>	MESNIASIAS
-	[AOI]	>	MESNIOSIOMIS
-	[AOI]	>	MESNIOSIOSE
+	# dgsk., vyr. gim.
+	[AO]	>	MESNIEJI	# geidþia > geidþiamesnieji
+	[AO]	>	MESNIØJØ
+	[AO]	>	MESNIESIEMS
+	[AO]	>	MESNIUOSIUS
+	[AO]	>	MESNIAISIAIS
+	[AO]	>	MESNIUOSIUOSE	# ispell warn.: "too long"
 
+	[^S] I	>	MESNIEJI	# myli > mylimesnieji
+	[^S] I	>	MESNIØJØ
+	[^S] I	>	MESNIESIEMS
+	[^S] I	>	MESNIUOSIUS
+	[^S] I	>	MESNIAISIAIS
+	[^S] I	>	MESNIUOSIUOSE	# ispell warn.: "too long"
+
+	# dgsk., mot. gim.
+	[AO]	>	MESNIOSIOS	# geidþia > geidþiamesniosios
+	[AO]	>	MESNIØJØ
+	[AO]	>	MESNIOSIOMS
+	[AO]	>	MESNIÀSIAS
+	[AO]	>	MESNIOSIOMIS
+	[AO]	>	MESNIOSIOSE
+		
+	[^S] I	>	MESNIOSIOS	# myli > mylimesnioji
+	[^S] I	>	MESNIØJØ
+	[^S] I	>	MESNIOSIOMS
+	[^S] I	>	MESNIÀSIAS
+	[^S] I	>	MESNIOSIOMIS
+	[^S] I	>	MESNIOSIOSE
+
+#################################################################
 # Aukðèiausias laipsnis
+#
+	# vnsk., vyr. gim.
+	[AO]	>	MIAUSIASIS	# geidþia > geidþiamiausiasis
+	[AO]	>	MIAUSIOJO
+	[AO]	>	MIAUSIAJAM
+	[AO]	>	MIAUSIÀJÁ
+	[AO]	>	MIAUSIUOJU
+	[AO]	>	MIAUSIAJAME
 
-	[AOI]	>	MIAUSIASIS	# myli > mylimiausiasis
-	[AOI]	>	MIAUSIOJO
-	[AOI]	>	MIAUSIAJAM
-	[AOI]	>	MIAUSIÀJÁ
-	[AOI]	>	MIAUSIUOJU
-	[AOI]	>	MIAUSIAJAME
+	[^S] I	>	MIAUSIASIS	# myli > mylimiausiasis
+	[^S] I	>	MIAUSIOJO
+	[^S] I	>	MIAUSIAJAM
+	[^S] I	>	MIAUSIÀJÁ
+	[^S] I	>	MIAUSIUOJU	
+	[^S] I	>	MIAUSIAJAME
 
-	[AOI]	>	MIAUSIEJI
-	[AOI]	>	MIAUSIØJØ
-	[AOI]	>	MIAUSIESIEMS
-	[AOI]	>	MIAUSIUOSIUS
-#	[AOI]	>	MIAUSIAISIAIS
-#	[AOI]	>	MIAUSIUOSIUOSE
+	# vnsk., mot. gim.
+	[AO]	>	MIAUSIOJI	# geidþia > geidþiamiausioji
+	[AO]	>	MIAUSIOSIOS
+	[AO]	>	MIAUSIAJAI
+	[AO]	>	MIAUSIÀJÀ
+	[AO]	>	MIAUSIÀJA
+	[AO]	>	MIAUSIOJOJE
+	[AO]	>	MIAUSIOJOJ
 
-	[AOI]	>	MIAUSIOJI
-	[AOI]	>	MIAUSIOSIOS
-	[AOI]	>	MIAUSIAJAI
-	[AOI]	>	MIAUSIÀJÀ
-	[AOI]	>	MIAUSIÀJA
-	[AOI]	>	MIAUSIOJOJE
-	[AOI]	>	MIAUSIOJOJ
+	[^S] I	>	MIAUSIOJI	# myli > mylimiausioji
+	[^S] I	>	MIAUSIOSIOS
+	[^S] I	>	MIAUSIAJAI
+	[^S] I	>	MIAUSIÀJÀ
+	[^S] I	>	MIAUSIÀJA
+	[^S] I	>	MIAUSIOJOJE
+	[^S] I	>	MIAUSIOJOJ
 
-	[AOI]	>	MIAUSIOSIOS
-	[AOI]	>	MIAUSIØJØ
-	[AOI]	>	MIAUSIOSIOMS
-	[AOI]	>	MIAUSIASIAS
-#	[AOI]	>	MIAUSIOSIOMIS
-	[AOI]	>	MIAUSIOSIOSE
+	# dgsk., vyr. gim.
+	[AO]	>	MIAUSIEJI	# geidþia > geidþiamiausieji
+	[AO]	>	MIAUSIØJØ
+	[AO]	>	MIAUSIESIEMS
+	[AO]	>	MIAUSIUOSIUS
+	[AO]	>	MIAUSIAISIAIS	# ispell warn.: "too long"
+	[AO]	>	MIAUSIUOSIUOSE	# ispell warn.: "too long"
+
+	[^S] I	>	MIAUSIEJI	# myli > mylimiausieji
+	[^S] I	>	MIAUSIØJØ
+	[^S] I	>	MIAUSIESIEMS
+	[^S] I	>	MIAUSIUOSIUS
+	[^S] I	>	MIAUSIAISIAIS	# ispell warn.: "too long"
+	[^S] I	>	MIAUSIUOSIUOSE	# ispell warn.: "too long"
+
+	# dgsk., mot. gim.
+	[AO]	>	MIAUSIOSIOS	# geidþia > geidþiamiausiosios
+	[AO]	>	MIAUSIØJØ
+	[AO]	>	MIAUSIOSIOMS
+	[AO]	>	MIAUSIÀSIAS
+	[AO]	>	MIAUSIOSIOMIS	# ispell warn.: "too long"
+	[AO]	>	MIAUSIOSIOSE
+
+	[^S] I	>	MIAUSIOSIOS	# myli > mylimiausiosios
+	[^S] I	>	MIAUSIØJØ
+	[^S] I	>	MIAUSIOSIOMS
+	[^S] I	>	MIAUSIÀSIAS
+	[^S] I	>	MIAUSIOSIOMIS	# ispell warn.: "too long"
+	[^S] I	>	MIAUSIOSIOSE
+
 
 			#######################
 			#######################
