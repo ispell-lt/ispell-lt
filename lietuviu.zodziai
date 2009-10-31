@@ -289,7 +289,7 @@ anatomiðkas/ANQ
 anèiukas/D
 andalûzietë/D
 androgininis/BN
-anegdotinis/BN
+anekdotinis/BN
 anekdotas/D
 anekdotinis/BN
 anekdotiðkas/ANQ
@@ -388,7 +388,6 @@ antisanitarinis/B
 antisëlinis/BN
 antisemitinis/BN
 antisemitiðkas/ANQ
-antisemitistinis/BN
 antiseptinis/BN
 antis/IM
 antisocialinis/BN
@@ -559,7 +558,7 @@ arabiðkas/AQN
 arbata/D
 arbatëlë/D
 arbatinukas/D
-arbatþolë/D
+arbatþolës/D
 arbitraþinis/BN
 arbûzas/D
 archajiðkas/AQ
@@ -827,7 +826,6 @@ australiðkas/AQN
 austras/DN
 austrë/DN
 austriðkas/AQN
-autentikacija/D
 autentiðkas/AQN
 autoavarija/D
 autobusas/D
@@ -1058,7 +1056,6 @@ bendraklasis/D
 bendramintë/D
 bendramintis/D
 bendras/AQN
-bendrasavininkas/D
 bendratis/MI
 bendraturtë/D
 bendraturtis/D
@@ -1197,8 +1194,6 @@ boksas/D
 boksininkas/D
 boksinis/BN
 bokðtas/D
-bomþas/D
-bomþë/D
 bonistika/D
 bordiûrinis/BN
 borealinis/BN
@@ -1283,14 +1278,12 @@ bulgaras/DN
 bulgarë/DN
 bulgariðkas/AQN
 bulius/D
-bulkutë/D
 bulvë/D
 bulvinis/BN
 burbulas/D
 burë/D
 bûrëja/D
 bûrelis/D
-burgariðkas/AQN
 bûrys/D
 burlentë/D
 burna/D
@@ -1396,7 +1389,6 @@ cilindrinis/BN
 cinamonas/D
 cinkas/D
 èiobrelis/D
-èiombë/D
 èionykðtis/DN
 cirkas/D
 cirkuliacija/DN
@@ -1682,7 +1674,6 @@ didelis/AQN
 didis/AQN
 didmena/D
 didmiestis/D
-didþëjus/D
 didþiulis/B
 diedas/D
 dieglinis/BN
@@ -1863,7 +1854,6 @@ dublikatas/D
 dubuo/V
 duèë/D
 dûdmaiðininkas/D
-dûdonietë/D
 duetas/D
 dugnas/D
 dujinë/D
@@ -1888,7 +1878,6 @@ duobë/D
 duodecimalinis/BN
 duodeninis/BN
 duoklë/D
-duombazë/D
 duomuo/V
 duona/D
 duonelë/D
@@ -1904,7 +1893,6 @@ durpynas/D
 durtinis/B
 durtuvas/D
 duðas/D
-duðia/D
 duslus/AQN
 dusulys/D
 dûþtantis/BN
@@ -1949,7 +1937,7 @@ dþiaugsmingas/AQN
 dþiazas/D
 dþinas/D
 dþinë/D
-dþinsas/D
+dþinsai/D
 dþinsinis/B
 dþipas/D
 dþiugus/AQN
@@ -1969,7 +1957,7 @@ egiptietis/D
 egiptietiðkas/AQN
 eglë/D
 eglinis/B
-egliðakis/D
+egliðakë/D
 eglynas/D
 eglutë/D
 egoistinis/BN
@@ -2389,9 +2377,6 @@ gaisrininkas/D
 gaiva/D
 gaivus/ANQ
 galas/D
-galeganë/DN
-galeganas/DN
-galeganiðkas/AQN
 galerija/D
 galia/DN
 galiausiai
@@ -2432,7 +2417,6 @@ ganykla/D
 ganytoja/D
 ganytojas/D
 garantas/D
-garantë/D
 garantija/D
 garantinis/B
 garas/D
@@ -2455,8 +2439,6 @@ garsumas/D
 garsus/AQN
 garveþiukas/D
 garveþys/D
-gaspadorinë/D
-gaspadorius/D
 gastritas/D
 gastroenterologas/D
 gastroenterologë/D
@@ -2557,7 +2539,6 @@ gigabaitas/D
 gigabitas/D
 gigahercas/D
 gigantas/D
-gigantë/D
 gigavatas/D
 gija/D
 gikas/D
@@ -2760,7 +2741,6 @@ grupiokas/D
 grupuotë/D
 gruzinas/D
 gruziniðkas/ANQ
-guarana/D
 gubernija/D
 gudrybë/D
 gudrus/AQN
@@ -2774,7 +2754,6 @@ guminis/B
 guolis/D
 gurkðnis/D
 gurmanas/D
-gurmanë/D
 gûsis/D
 guvus/AQN
 habilitacija/D
@@ -2863,7 +2842,6 @@ identitetas/D
 ideografinis/BN
 ideologija/D
 ádiegëjas/D
-ádiegiklis/D
 ádirbis/D
 ádomus/AQN
 áeiga/D
@@ -2928,7 +2906,6 @@ imperatorius/D
 imperija/D
 imperinis/BN
 implantacija/D
-implementacija/D
 implikacija/D
 implozinis/BN
 importas/D
@@ -2985,12 +2962,10 @@ infragarsinis/BN
 infrastruktûra/D
 infrastruktûrinis/BN
 inhaliacija/D
-inicialas/D
-inicializacija/D
+inicialai/D
 iniciatyva/D
 iniciatyvinis/BQ
 iniciatyvus/AQN
-iniciatorëD
 iniciatorë/D
 iniciatorius/D
 ánirðis/D
@@ -3125,12 +3100,12 @@ iðkarpa/D
 iðkarpinë/D
 iðkart
 áskiepis/D
-iðkilmë/D
+iðkilmës/D
 iðkilmingas/AQN
 iðkilus/AQN
 iðkirptë/D
 iðklotinë/D
-iðlaida/D
+iðlaidos/D
 iðlaikytinë/D
 iðlaikytinis/D
 islamas/D
@@ -3308,7 +3283,6 @@ jungtis/IM
 jungtukas/D
 jungtukinis/BN
 jungtuvës/D
-junjoratas/D
 juodaodë/D
 juodaodis/D
 juodaplaukë/D
@@ -3353,7 +3327,6 @@ kadastrinis/BN
 kadencija/D
 kadras/D
 kadugys/D
-kaifas/DN
 kailis/D
 kailiukas/D
 kaimas/D
@@ -3496,7 +3469,6 @@ kapitonë/D
 kaprizas/D
 kaprizingas/AQN
 kapðelis/D
-kapðis/D
 kapsulë/D
 kapsulinis/BN
 karabininis/BN
@@ -3513,7 +3485,6 @@ karavanas/D
 karbiuratorininkas/D
 karbolinis/BN
 karbonatinis/BN
-karèiama/D
 kardas/D
 kardialinis/BN
 kardinalumas/D
@@ -3576,7 +3547,6 @@ karûna/D
 karuselë/D
 karutis/D
 karvë/D
-karvedë/D
 karvedys/D
 karvelis/D
 karvutë/D
@@ -3932,7 +3902,6 @@ kombinacija/D
 kombinacinis/BN
 kombinatas/D
 kombinatorinis/BN
-komdanda/D
 komedija/D
 komendantinis/B
 komentaras/D
@@ -3956,9 +3925,7 @@ kompasas/D
 kompensacija/D
 kompensacinis/BN
 kompetencija/D
-kompetencijos/D
 kompetentingas/AQN
-kompetetingas/AN
 kompiliatorius/D
 kompiuterija/D
 kompiuterininkas/D
@@ -3979,7 +3946,6 @@ kompozitorius/D
 kompresas/D
 kompresija/D
 kompresorius/D
-kompromatas/D
 kompromisas/D
 komuna/D
 komunalinis/BN
@@ -4022,7 +3988,6 @@ konkurencija/D
 konkurencingas/AQN
 konkurencingumas/DN
 konkurencinis/BN
-konkurentabilus/AQN
 konkurentas/D
 konkurentë/D
 konkurentinis/BN
@@ -4172,7 +4137,7 @@ kraujagyslë/D
 kraujagyslinis/BN
 kraujas/D
 kraujospûdis/D
-kraujosrûva/D
+kraujosruva/D
 kraujotaka/D
 kraupus/AQN
 krautuvë/D
@@ -4231,13 +4196,11 @@ kritika/D
 kritikas/D
 kritinis/BN
 kritiðkas/AQN
-kritulys/D
 krizë/D
 krizinis/BN
 kryptis/MI
 kryþelis/D
 kryþiaþodis/D
-kryþietis/D
 kryþius/D
 kryþkelë/D
 kryþmë/D
@@ -4278,7 +4241,6 @@ kubilas/D
 kubilëlis/D
 kubilius/D
 kubinis/B
-kûdas/AQN
 kûdikis/D
 kûdra/D
 kuilys/D
@@ -4303,7 +4265,7 @@ kultûrinis/BN
 kultûrologas/D
 kultûrologë/D
 kultûrologija/D
-kûlverstis/D
+kûlvirstis/D
 kumelë/D
 kumeliukas/D
 kumpis/D
@@ -4371,7 +4333,6 @@ kvapas/D
 kvapnus/AQN
 kvartalas/D
 kvartalinis/BN
-kvartalynë/D
 kvarterinis/BN
 kvaziportretas/D
 kvepalai/D
@@ -4501,8 +4462,6 @@ lëbautojas/D
 ledas/D
 ledinis/BN
 ledinukas/D
-legalas/DN
-legalë/DN
 legalus/AQN
 legenda/D
 legionierë/D
@@ -4691,7 +4650,6 @@ logiðkas/AQN
 logopedas/D
 logopedë/D
 logotipas/D
-lokalë/D
 lokalizacija/D
 lokalus/AQN
 lokys/D
@@ -4854,7 +4812,6 @@ matmuo/V
 matomumas/D
 matrica/D
 matuoklis/D
-maudymukas/D
 maudynës/D
 mauras/DN
 mauriðkas/AQN
@@ -4954,7 +4911,6 @@ melsvas/AQ
 menas/D
 mënesiena/D
 mënesinis/B
-mënesis/D
 meningokokinis/BN
 menininkas/D
 menininkë/D
@@ -5057,7 +5013,6 @@ mikrorajonas/D
 mikroschema/D
 mikroskopinis/B
 mikrovatas/D
-mikðeris/D
 milicija/D
 milicininkas/D
 milicininkë/D
@@ -5122,7 +5077,6 @@ mizanscena/D
 mygtukas/D
 mylëtojas/DN
 mylia/D
-myþalas/D
 mobilizacija/D
 mobilizacinis/B
 mobilus/AQN
@@ -5238,7 +5192,7 @@ musytë/D
 muskatas/D
 muskatinis/B
 muðtinis/BN
-muðtynë/D
+muðtynës/D
 musulmonas/D
 musulmonë/D
 musulmoniðkas/AQN
@@ -5275,7 +5229,6 @@ namudinis/BN
 namukas/D
 namutis/D
 naras/D
-naratyvas/D
 narcizas/D
 narë/D
 narys/D
@@ -5329,7 +5282,7 @@ navikas/D
 neapykanta/D
 nebëginis/BN
 nebylus/AQ
-nebrendyla/D
+nebrendila/D
 nebulinis/BN
 nedaug
 nedaugelis/D
@@ -5559,7 +5512,6 @@ olandiðkas/AQN
 olimpiada/D
 olimpinis/BN
 omletas/D
-omuo/V
 onkologas/D
 onkologija/D
 onkologinis/BN
@@ -5601,7 +5553,6 @@ organizacija/D
 organizacinis/BN
 organizatorë/D
 organizatorius/D
-organizcija/D
 organizmas/D
 orgazminis/BN
 orientacija/D
@@ -5703,7 +5654,6 @@ pakartotinis/BN
 pakauðinis/BN
 pakauðis/D
 pakelë/D
-pakelys/D
 paketas/D
 paketëlis/D
 paketinis/BN
@@ -5754,7 +5704,7 @@ palydovinis/B
 palmë/D
 palminis/BN
 paltas/D
-palûkana/D
+palûkanos/D
 pamaina/D
 pamatas/D
 pamatinis/B
@@ -5970,7 +5920,6 @@ patrauklus/AQN
 patriarchalinis/BN
 patriotas/D
 patriotë/D
-patrulë/D
 patrulis/D
 patvorinis/BN
 patvorys/D
@@ -5980,7 +5929,7 @@ paukðtis/D
 paukðtynas/D
 paukðtvanagis/D
 pauzë/D
-pavadys/D
+pavadis/D
 pavaduotoja/D
 pavaduotojas/D
 pavakarë/D
@@ -5994,7 +5943,6 @@ pavarinis/BN
 pavasarinis/B
 pavasaris/D
 pavasariðkas/AQN
-pavaðuokietis/D
 paveikslas/D
 paveikslëlis/D
 paveiksliukas/D
@@ -6088,7 +6036,7 @@ perdirbëjas/D
 perëja/D
 perekðlë/D
 perëmëjas/D
-perëmëjë/D
+perëmëja/D
 pergalë/D
 pergalingas/AQN
 pergamentas/D
@@ -6213,15 +6161,11 @@ pilotë/D
 pilstymas/DN
 pilvas/D
 pilvukas/D
-pimpalas/D
-pimpaliukas/D
-pimpis/D
-pimpukas/D
 pingvinas/D
 pinigas/D
 pinigëlis/D
 piniginis/B
-pinklë/D
+pinklës/D
 pintinë/D
 pionierë/D
 pionierius/D
@@ -6433,7 +6377,6 @@ porininkas/D
 porinis/BN
 poryt
 pornografija/D
-portabilus/AQN
 portalas/D
 portalinis/BN
 portfelis/D
@@ -6493,7 +6436,6 @@ praeitis/MI
 praeivë/D
 praeivis/D
 pragiedrulis/D
-pragiedrulys/D
 pragmatikas/D
 pragmatikë/D
 pragmatiðkas/AQN
@@ -6634,7 +6576,6 @@ prieðleidybinis/BN
 prieðmenstruacinis/BN
 prieðoperacinis/BN
 prieðpaskutinis/BN
-prieðpastata/D
 prieðpieèiai/D
 prieððventinis/B
 prieðtaringas/AQN
@@ -6707,7 +6648,6 @@ profesionalë/DN
 profesionalus/AQN
 profesorë/D
 profesorius/D
-profiklaktinis/B
 profilaktika/D
 profilaktinis/BN
 profilinis/B
@@ -6834,8 +6774,9 @@ puristinis/BN
 purus/AQN
 purvas/D
 purvinas/AQN
-pusantras/D
+pusantro
 pusantros
+pusantrø
 pusbangis/D
 pusbrolis/D
 pusdalyvinis/BN
@@ -6874,7 +6815,9 @@ pusrutulis/D
 pusseserë/D
 pustaðkis/D
 pustonis/D
-pustreèia/D
+pustreèio
+pustreèios
+pustreèiø
 pustulinis/BN
 pusvalandis/D
 pusþalis/B
@@ -6983,7 +6926,6 @@ ratlankis/D
 ratukas/D
 rauda/D
 raudonas/AQ
-raukiniuotas/AQN
 raukðlë/D
 raukðlelë/D
 raukðlëtas/AQN
@@ -7054,7 +6996,6 @@ reintegracija/D
 reisas/D
 reiðkinys/D
 reitingas/D
-reivas/D
 rejestras/D
 reketas/D
 reketininkas/D
@@ -7076,10 +7017,9 @@ rektorius/D
 rekultivacija/D
 rekuperacinis/BN
 rekursinis/BN
-rekursyvus/A
 rekvizitas/D
-relevantiðkas/AN
 reliacinis/BN
+relevantiðkas/AN
 reliatyvus/AQN
 religija/D
 religingas/AQN
@@ -7112,7 +7052,6 @@ repeticija/D
 replës/D
 replika/D
 reportaþas/D
-repozitorija/D
 reprezentacija/D
 reprezentacinis/BN
 reprodukcija/D
@@ -7196,7 +7135,7 @@ rinktinis/BN
 risèia/D
 riðlus/AQN
 ristûnas/D
-riðulys/D
+ryðulys/D
 ritë/D
 ritininis/BN
 ritinys/D
@@ -7238,7 +7177,6 @@ rokenrolas/D
 rokenrolinis/BN
 rokiruotë/D
 rokiðkënas/DN
-rokiðkënë/DN
 rokokinis/BN
 rolë/D
 romanas/D
@@ -7319,7 +7257,7 @@ sàauginis/BN
 ðabloninis/BN
 ðabloniðkas/AQN
 sacharozë/D
-ðachmatas/D
+ðachmatai/D
 ðachtinis/B
 sadistas/D
 sadistë/D
@@ -7415,7 +7353,6 @@ sandara/D
 sandarus/AQN
 sandëlis/D
 sandëliukas/D
-sandëlys/D
 sandëris/D
 sandoris/D
 sandûra/D
@@ -7449,7 +7386,6 @@ sargë/D
 sargienë/D
 sargyba/D
 sargybinis/D
-sarija/D			## upës pavadinimas?
 sàryðinis/BN
 sàryðis/D
 ðarlatanas/D
@@ -7472,7 +7408,6 @@ satanistinis/BN
 ðaudyklinis/BN
 sauga/D
 saugas/D
-saugë/D
 saugiklis/D
 saugykla/D
 saugotoja/D
@@ -7636,7 +7571,6 @@ senelis/D
 seneliukas/D
 seniai/N
 seniokas/D
-seniokiðkas/AQN
 senis/D
 seniûnas/D
 seniûnë/D
@@ -7656,7 +7590,6 @@ senukas/D
 senukë/D
 senutë/D
 senvagë/D
-senvagis/D
 ðepetys/D
 sepsinis/BN
 septintokas/D
@@ -7692,7 +7625,6 @@ sesija/D
 sëslus/AQN
 ðeðtadieninis/BN
 ðeðtadienis/D
-ðeðtakursis/D
 ðeðtokas/D
 sesuo/M
 sesutë/D
@@ -7808,9 +7740,9 @@ sirgalë/D
 sirgalius/D
 ðáryt
 sistema/D
-sistematiðkas/AQN
 sisteminis/BN
 sistemiðkas/AQN
+sistematiðkas/AQN
 ðita/D
 ðitaip
 situacija/D
@@ -7882,7 +7814,7 @@ skaitomumas/D
 skaitovas/D
 skaitovë/D
 skaitvardis/D
-skalbinys/D
+skalbiniai/D
 skalbykla/D
 skalda/D
 skaldymas/D
@@ -7960,7 +7892,6 @@ sklaida/D
 sklandus/AQN
 skleidëja/D
 skleidëjas/D
-skleistë/D
 skleistinë/D
 sklendë/D
 sklerotinis/BN
@@ -8001,7 +7932,7 @@ skrylius/D
 skrynelë/D
 skrofuliozinis/BN
 skruostikaulis/D
-skruotas/D
+skruostas/D
 skruzdëlynas/D
 skuba/D
 skubus/AQN
@@ -8173,7 +8104,6 @@ spalvingas/AQN
 spalvingumas/D
 spalvinis/BN
 spalvotas/AQN
-spalvumas/D
 spanguolë/D
 ðparagas/D
 ðparaginis/BN
@@ -8230,7 +8160,6 @@ spynelë/D
 spyninis/BN
 spyris/D
 spondëjinis/BN
-sponsorius/D
 spontaniðkas/AQN
 sportas/D
 sportbatis/D
@@ -8347,7 +8276,6 @@ stilius/D
 stimulas/D
 stimuliatorius/D
 stipendija/D
-stipendijëlë/D
 stipinas/D
 stiprintuvas/D
 stiprybë/D
@@ -8406,7 +8334,6 @@ stulpelis/D
 subatominis/BN
 subjektas/D
 subjektyvus/ANQ
-subkontraktorius/D
 subsidiarinis/BN
 subsidija/D
 substantyvinis/BN
@@ -8479,7 +8406,6 @@ suoliukas/D
 suomë/D
 suomis/D
 ðuo/V
-superkonkursas/D
 supirkëja/D
 supirkëjas/D
 supirktuvës/D
@@ -8528,7 +8454,7 @@ svarbus/AQN
 ðvarkas/D
 ðvarkelis/D
 svarstis/D
-svarstyklë/D
+svarstyklës/D
 svarus/AQN
 ðvarus/AQN
 sveèias/AQN
@@ -8628,7 +8554,6 @@ talonas/D
 talonëlis/D
 talpa/D
 talpykla/D
-talpyklë/D
 tamprus/AQN
 tamsa/D
 tamsiaodis/BN
@@ -8668,7 +8593,7 @@ tarpasmeninis/BN
 tarpbibliotekinis/BN
 tarpdantinis/BN
 tarpdisciplininis/BN
-tarpdurys/D
+tarpduris/D
 tarpelis/D
 tarpininkas/D
 tarpininkë/D
@@ -8717,7 +8642,6 @@ techninis/BN
 techniðkas/AQN
 technologija/D
 technologinis/BN
-technologizuotas/AQN
 teiginys/D
 teikëja/D
 teikëjas/D
@@ -8745,10 +8669,9 @@ tekstas/D
 tekstilë/D
 tekstinis/BN
 tekstynas/D
-tekstualus/AQ
 tekstukas/D
 tekstûra/D
-tektis/MIN
+netektis/MI
 tektoninis/BN
 telefaksas/D
 telefonas/D
@@ -8802,8 +8725,6 @@ terabitas/D
 terakotinis/BN
 terapeutas/D
 terapija/D
-terba/D
-terbelë/D
 tercetas/D
 teritorija/D
 teritorinis/BQ
@@ -8961,7 +8882,6 @@ tonusas/D
 topinis/BN
 topologija/D
 torakalinis/BN
-toroidinis/B
 torpedinis/B
 torpidinis/BN			## labai jau spec. terminas arba torpedinis/BN
 tortas/D
@@ -9003,12 +8923,10 @@ transportas/D
 transporterinis/BN
 transvestitas/D
 transvestitë/D
-tranzakcija/D
+transakcija/D
 tranzitas/D
 tranzitinis/BN
 tranzityvinis/BN
-tranzuotoja/D
-tranzuotojas/D
 trapecinis/BN
 trapus/AQN
 trasa/D
@@ -9066,7 +8984,6 @@ triukðmelis/D
 triukðmingas/AQN
 triûsas/D
 triuðiena/D
-triusikëliai/D
 triuðis/D
 trivialus/AQN
 trykðte
@@ -9081,7 +8998,7 @@ trombozë/D
 trosinis/BN
 troðkinys/D
 troðkulys/D
-trukdis/D
+trukdys/D
 trûkis/D
 trukmë/D
 trûkumas/D
@@ -9179,9 +9096,7 @@ ukrainietiðkas/AQN
 ûkvedys/D
 ultimatyvus/AQN
 ultimatumas/D
-ultrailgas/AN
 ultratriatlonas/D
-ultratrumpas/AN 
 ultravioletinis/BN
 ûminis/BN
 ûmumas/D
@@ -9463,8 +9378,6 @@ vedinys/D
 vedybinis/BN
 vedybos/D
 vedlys/D
-veganas/D
-veganiðkas/AN
 vegetaras/D
 vegetarë/D
 vegetariðkas/ANQ
@@ -9542,7 +9455,7 @@ verðis/D
 verslas/DN
 verslininkas/D
 verslininkë/D
-vertalas/D
+vertinys/D
 vertas/AQN
 vertë/D
 vertëjas/D
@@ -9617,7 +9530,7 @@ vienkiemis/D
 vienmarðkinis/DN
 vienmintis/DN
 vienodas/AQN
-vienoliktokas/D
+vienuoliktokas/D
 vienpartinis/BN
 vienpusis/DN
 vienpusiðkas/AQN
@@ -9681,7 +9594,6 @@ violetinis/B
 virëja/D
 virëjas/D
 viryklë/D
-virðaibis/D
 virðelis/D
 virðininkas/D
 virðininkë/D
@@ -9701,7 +9613,7 @@ virtuvëlë/D
 virtuvinis/B
 virulentinis/BN
 virusas/D
-virvagalis/D
+virvagalys/D
 virvë/D
 virvelë/D
 virvutë/D
@@ -9715,14 +9627,13 @@ visata/D
 visavertis/BND
 visavertiðkumas/DN
 visaþinis/BN
-visaþistas/D
-visaþistë/D
+vizaþistas/D	# vlkk: http://www.vlkk.lt/lit/3625
+vizaþistë/D	 
 visceralinis/BN
 viðèiukas/D
 visiðkas/AQN
 visokeriopas/AN
 viðta/D
-vistiek
 viðtiena/D
 visuma/D
 visuomenë/D
@@ -9781,7 +9692,8 @@ voveraitë/D
 voverë/D
 voþtuvas/D
 vulgarus/AQN
-þabanga/D
+þabangai/D
+þabangos/D
 þadas/D
 þadintuvas/D
 þaibas/D
@@ -9818,8 +9730,8 @@ zarasietis/DN
 þarna/D
 þarnynas/D
 þàsis/MK
-þàstas/D
-þàstikaulis/D
+þastas/D
+þastikaulis/D
 þavesys/D
 þavingas/AQ
 zefyras/D
@@ -9888,7 +9800,6 @@ zenitas/D
 þirgynas/D
 þirklës/D
 þirnis/D
-þiûryklë/D
 þiurkë/D
 þiurkinis/BN
 þiûronas/D
@@ -9939,7 +9850,6 @@ zoomorfinis/BN
 þudikë/D
 zuikelis/D
 zuikis/D
-þuklë/D
 þûklë/D
 þurnalas/D
 þurnalinis/BN
