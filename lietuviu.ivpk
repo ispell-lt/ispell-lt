@@ -8699,6 +8699,12 @@ besarmatis/D
 besarmatë/D
 besaulis/BN
 besielis/BN
+besijuokë/P
+besijuokia/E
+besijuokti/T
+besimëgauja/E
+besimëgauti/T
+besimëgavo/P
 beskatikis/D
 beskatikë/D
 beskausmis/BN
@@ -26104,7 +26110,6 @@ juokavo/PNX
 juokdariðkas/AQN
 juokdarys/D
 juokdarë/D
-juokia/ESX
 juokiasi/E
 juokina/ENX
 juokingas/AQN
@@ -26114,11 +26119,9 @@ juokinti/TNX
 juokom
 juokomis
 juoksmas/D
-juokti/TSX
 juoktis/T
 juokuoja/ENX
 juokuoti/TNX
-juokë/PSX
 juokësi/P
 juosi/ENX
 juosia/ENX
@@ -38210,11 +38213,8 @@ máslingas/AQN
 máslingumas/D
 máslë/D
 mæsti/TNX
-mëgauja/ESX
 mëgaujasi/E
-mëgauti/TSX
 mëgautis/T
-mëgavo/PSX
 mëgavosi/P
 mëgdþioja/ENX
 mëgdþiojasi/E
@@ -38790,6 +38790,12 @@ neatmenamas/AQN
 neatskiriamas/AQN
 nebe
 nebent
+nebesijuokë/P 
+nebesijuokia/E 
+nebesijuokti/T 
+nebesimëgauja/E
+nebesimëgauti/T
+nebesimëgavo/P
 nebrendila/D
 nebrendëlis/D
 nebrendëlë/D
@@ -39130,6 +39136,15 @@ nesantaika/D
 nesantarvë/D
 nesantuokinis/BN
 nesavas/AQN
+#nesijuokë/PX  # X: [tebe, te, be]nesijuokë turbût niekas ir nepasigestø...
+nesijuokë/P
+#nesijuokia/EX  # X: [tebe, te, be]nesijuokia turbût niekas ir nepasigestø...
+nesijuokia/E
+#nesijuokti/TX  # X: [tebe, te, be]nesijuokti turbût niekas ir nepasigestø...
+nesijuokti/T
+nesimëgauja/E
+nesimëgauti/T
+nesimëgavo/P
 nesitveria/ENX
 nesitverti/TNX
 nesitvërë/PNX
@@ -42120,6 +42135,9 @@ nusiganë/YNX
 nusigaubia/ENX
 nusigaubti/TNX
 nusigaubë/PNX
+nusigàsti/TNX
+nusigàsta/ENX
+nusigando/PNX
 nusigiedrina/ENX
 nusigiedrino/PNX
 nusigiedrinti/TNX
@@ -42834,6 +42852,9 @@ nuskambino/PNX
 nuskambinti/TNX
 nuskambëjo/PNX
 nuskambëti/TNX
+nuskambti/TNX
+nuskambo/PNX
+nuskambsta/ENX
 nuskandina/ESX
 nuskandino/PSX
 nuskandinti/TSX
@@ -49017,9 +49038,6 @@ pasijudina/ENX
 pasijudino/PNX
 pasijudinti/TNX
 pasijuokia/ENX
-pasijuokia/ENX
-pasijuokpasijuokë/PNX
-pasijuokti/TNX
 pasijuokti/TNX
 pasijuokë/PNX
 pasijuosia/ENX
@@ -81780,6 +81798,12 @@ teatriðkumas/D
 teatrologas/D
 teatrologija/D
 teatrologë/D
+tebesijuokë/P
+tebesijuokia/E 
+tebesijuokti/T 
+tebesimëgauja/E
+tebesimëgauti/T
+tebesimëgavo/P
 technecis/D
 technika/D
 technikas/D
@@ -82220,6 +82244,12 @@ terðtis/T
 terðë/PSX
 terðësi/P
 tesi/ENX
+tesijuokë/P 
+tesijuokia/E 
+tesijuokti/T 
+tesimëgauja/E
+tesimëgauti/T
+tesimëgavo/P
 testas/D
 testatorius/D
 testatorë/D
@@ -89243,7 +89273,7 @@ vaiposi/E
 vaipysena/D
 vaipyti/TSX
 vaipytis/T
-vaipë/PSX
+vaipë/YSX
 vaipësi/P
 vaipûnas/D
 vaipûnë/D
