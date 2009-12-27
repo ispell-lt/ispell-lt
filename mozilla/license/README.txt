@@ -1,6 +1,6 @@
 This dictionary is based on the Ispell-lt dictionary from
-http://ieva.mif.vu.lt/~alga/lt/ispell/
-http://sraige.mif.vu.lt/cvs/ispell-lt/
+ftp://ftp.akl.lt/ispell-lt/
+https://code.launchpad.net/~ispell-lt/ispell-lt/trunk
 
 MySpell dictionaries are available in post 0.5 cvs version
 
