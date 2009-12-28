@@ -4,20 +4,11 @@
      xmlns:em="http://www.mozilla.org/2004/em-rdf#">
   <Description about="urn:mozilla:install-manifest">
     <em:id>lt@dictionaries.addons.mozilla.org</em:id>
-    <em:name>Lithuanian Spell Checking Dictionary</em:name>
+    <em:name>Lietuvių kalbos rašybos tikrinimo žodynas</em:name>
     <em:version>@VERSION@</em:version>
-    <em:creator>Albertas Agejevas &lt;albertas@akl.lt&gt;</em:creator>
+    <em:creator>Albertas Agejevas</em:creator>
 @CONTRIBUTORS@
     <em:homepageURL>https://code.launchpad.net/ispell-lt</em:homepageURL>
-    <em:localized>
-      <Description>
-        <em:locale>lt</em:locale>
-        <em:name>Lietuvių kalbos rašybos tikrinimo žodynas</em:name>
-        <em:creator>Albertas Agejevas &lt;albertas@akl.lt&gt;</em:creator>
-@CONTRIBUTORS@
-        <em:homepageURL>https://code.launchpad.net/ispell-lt</em:homepageURL>
-      </Description>
-    </em:localized>
     <em:targetApplication>
       <Description>
         <!-- Firefox -->

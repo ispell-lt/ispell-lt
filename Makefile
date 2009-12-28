@@ -70,7 +70,7 @@ clean:
 	aspell/lt.wl aspell/lt.cwl aspell/lt_affix.dat aspell/lt.rws \
 	aspell/README aspell/configure aspell/Makefile aspell/Makefile.pre \
 	aspell/lt.multi aspell/lietuviu.alias aspell/lithuanian.alias \
-	dictionaries install.rdf install.js 
+	dictionaries install.rdf install.js tmp.*
 
 install: lietuviu.hash
 	install -c -g 0 -o 0 -m 0644 lietuviu.hash $(installdir)
@@ -117,11 +117,13 @@ dist-myspell: myspell
 	rm -rf lt_LT-$(VERSION)
 
 dist-xpi: myspell
-	mkdir -p dictionaries
+	mkdir dictionaries
 	cp lt_LT.dic dictionaries/lt.dic
 	cp lt_LT.aff dictionaries/lt.aff
-	echo "s/</\\\\\\\\\\&lt;/" > tmp.sed
-	echo "s/>/\\\\\\\\\\&gt;/" >> tmp.sed
+#no e-mail addresses in the xpi file.
+#	echo "s/</\\\\\\\\\\&lt;/" > tmp.sed
+#	echo "s/>/\\\\\\\\\\&gt;/" >> tmp.sed
+	echo "s/ <.*$$//" > tmp.sed
 	echo "s/^.*$$/    <em:contributor>&<\\\\\\\\\\/em:contributor>/" >> tmp.sed
 	tail -n+7 THANKS | sed -f tmp.sed > tmp.thanks
 	sed -i ":a;$$!N;s/\n/\\\n/;ta;" tmp.thanks
@@ -133,9 +135,8 @@ dist-xpi: myspell
 	echo "s/@FENNECVERSION@/"$(FENNECVERSION)"/" >> tmp.sed
 	sed -f tmp.sed mozilla/install.rdf.in > install.rdf
 	sed "s/@VERSION@/"$(VERSION)"/" mozilla/install.js.in > install.js
-	zip lt.zip install.rdf install.js README.EN COPYING dictionaries/lt.*
+	zip mozilla-spellcheck-lt-$(VERSION).xpi install.rdf install.js README.EN COPYING dictionaries/lt.*
 	rm -rf dictionaries install.rdf install.js
-	mv lt.zip mozilla-spellcheck-lt-$(VERSION).xpi
 
 dist-hyph:
 	zip -Dj hyph_lt_LT.zip hyph/hyph_lt_LT.dic hyph/README_hyph_lt_LT.txt
