@@ -8,6 +8,11 @@ VERSION=1.2.1
 #+cvs`date -u +%Y%m%d`
 DATE=`date -u +%Y\-%m\-%d`
 
+FIREFOXVERSION=3.7a1pre
+THUNDERBIRDVERSION=3.1a1pre
+SEAMONKEYVERSION=2.1a1pre
+FENNECVERSION=1.0.*
+
 SORTWORDS = \
 	lietuviu.zodziai \
 	lietuviu.jargon	\
@@ -61,10 +66,11 @@ sort:
 
 clean:
 	rm -f lietuviu.dict.stat lietuviu.dict.cnt lietuviu.hash lietuviu.dict \
-	lt_LT.aff lt_LT.dic *.tar.gz *.zip  *.tar.bz2 \
+	lt_LT.aff lt_LT.dic *.tar.gz *.zip  *.tar.bz2 *.xpi \
 	aspell/lt.wl aspell/lt.cwl aspell/lt_affix.dat aspell/lt.rws \
 	aspell/README aspell/configure aspell/Makefile aspell/Makefile.pre \
-	aspell/lt.multi aspell/lietuviu.alias aspell/lithuanian.alias
+	aspell/lt.multi aspell/lietuviu.alias aspell/lithuanian.alias \
+	dictionaries install.rdf install.js 
 
 install: lietuviu.hash
 	install -c -g 0 -o 0 -m 0644 lietuviu.hash $(installdir)
@@ -89,13 +95,6 @@ dist-src:
 	tar zcvf ispell-lt-$(VERSION).tar.gz ispell-lt-$(VERSION)
 	rm -rf ispell-lt-$(VERSION)
 
-dist-myspell: myspell
-	mkdir lt_LT-$(VERSION)
-	cp lt_LT.dic lt_LT.aff README.EN  INSTRUKCIJOS.txt lt_LT-$(VERSION)
-	echo "DICT lt LT lt_LT" > lt_LT-$(VERSION)/dictionary.lst
-	zip -r lt_LT-$(VERSION).zip lt_LT-$(VERSION)
-	rm -rf lt_LT-$(VERSION)
-
 dist-aspell: clean aspell
 	echo "s/^version .*-/version "$(VERSION)"-/" > tmp.tmp
 	echo "s/^source-version .*/source-version "$(VERSION)"/" >> tmp.tmp
@@ -110,8 +109,35 @@ dist-aspell: clean aspell
 	mv aspell-dist/*.tar.bz2 ./
 	rm -rf aspell-dist
 
+dist-myspell: myspell
+	mkdir lt_LT-$(VERSION)
+	cp lt_LT.dic lt_LT.aff README.EN  INSTRUKCIJOS.txt lt_LT-$(VERSION)
+	echo "DICT lt LT lt_LT" > lt_LT-$(VERSION)/dictionary.lst
+	zip -r lt_LT-$(VERSION).zip lt_LT-$(VERSION)
+	rm -rf lt_LT-$(VERSION)
+
+dist-xpi: myspell
+	mkdir -p dictionaries
+	cp lt_LT.dic dictionaries/lt.dic
+	cp lt_LT.aff dictionaries/lt.aff
+	echo "s/</\\\\\\\\\\&lt;/" > tmp.sed
+	echo "s/>/\\\\\\\\\\&gt;/" >> tmp.sed
+	echo "s/^.*$$/    <em:contributor>&<\\\\\\\\\\/em:contributor>/" >> tmp.sed
+	tail -n+7 THANKS | sed -f tmp.sed > tmp.thanks
+	sed -i ":a;$$!N;s/\n/\\\n/;ta;" tmp.thanks
+	sed "s/.*/s\\/@CONTRIBUTORS@\\/&\\//" tmp.thanks > tmp.sed
+	echo "s/@VERSION@/"$(VERSION)"/" >> tmp.sed
+	echo "s/@FIREFOXVERSION@/"$(FIREFOXVERSION)"/" >> tmp.sed
+	echo "s/@THUNDERBIRDVERSION@/"$(THUNDERBIRDVERSION)"/" >> tmp.sed
+	echo "s/@SEAMONKEYVERSION@/"$(SEAMONKEYVERSION)"/" >> tmp.sed
+	echo "s/@FENNECVERSION@/"$(FENNECVERSION)"/" >> tmp.sed
+	sed -f tmp.sed mozilla/install.rdf.in > install.rdf
+	sed "s/@VERSION@/"$(VERSION)"/" mozilla/install.js.in > install.js
+	zip lt.zip install.rdf install.js README.EN COPYING dictionaries/lt.*
+	rm -rf dictionaries install.rdf install.js
+	mv lt.zip mozilla-spellcheck-lt-$(VERSION).xpi
+
 dist-hyph:
 	zip -Dj hyph_lt_LT.zip hyph/hyph_lt_LT.dic hyph/README_hyph_lt_LT.txt
 
-dists: dist-aspell dist-myspell dist-src dist-hyph 
-
+dists: dist-aspell dist-myspell dist-src dist-xpi dist-hyph
