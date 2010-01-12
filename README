@@ -199,40 +199,87 @@ rankomis, taigi štai taisyklės tiems, kurie flagus dės rankomis.
    absoliutus/AQN
    visaapimantis/BN
 
-4. Jei tai veiksmažodis, turėsite nurodyti iš karto 3 laikus:
-   bendratį, esamąjį, ir būtąjį kartinį.  Jums padės interaktyvi Perl
-   programėlė tools/verb, esanti šiame pakete.  Į stderr ji išveda
-   užklausas, nuskaito atsakymus iš stdin, ir eilutes, kurias reikia
-   įrašyti į žodyną išveda į stdout.  Toliau šitą punktą galite
-   praleisti, jis paliekamas tiems, kurie domisi afiksų failo sandara.
+4. Jei tai veiksmažodis, turėsite nurodyti iš karto 3 žodžio formas (laikus):
+   bendratį, esamąjį, ir būtąjį kartinį.  
 
-   Veiksmažodžiams, kurių būsimojo laiko 3a. vienaskaita yra trumpa,
-   bendratis žymima /U. Komentaras iš failo:  
-   # Čia veiksmažodžiai, kurių bendraty ir es. l. ilgi balsiai Ū,Y, 
-   # o būt. k. l. -- trumpi
-   #	gyti gyja gijo		-- gis
-   #	lyti lyja lijo		-- lis
-   #	griūti griūva griuvo 	-- grius
-   #	pūti pūva puvo		-- pus
-   #	žūti žūva žuvo		-- žus
-   #
-   #    plg. -- nėra „ū“, „y“
-   #	siūti siuva siuvo	-- siūs
-   #	vyti veja vijo		-- vys
+   #############################
+   ##        Bendratis        ##
+   #############################
 
-   Visų kitų veiksmažodžių bendratis žymima /T.
+   Visų veiksmažodžių bendratis žymima /T.
+   Tačiau jei bendratis baigiasi -YTI arba -ŪTI, reikia * papildomai*
+   pridėti: 
+   	    U, jei būsimojo laiko III asmuo turi trumpas balses (i, u);
+	    W, jei būsimoje laiko III asmuo turi ilgas balses (y, ū).
+   
+   Pvz.: 
+   	   l-YTI: lyti/TU, nes lIs; 
+	   g-YTI: gyti/TU, nes gIs;
+	   p-ŪTI: pūti/TU, nes pUs;
 
+           sak-YTI: sakyti/TW, nes sakYs
+	   siūti:   siūti/TW, nes siūs
+	   
+  Verta įsidėmėti šias taisykles (ualgiman.dtiltas.lt):
+
+  	Dviskiemeniai veiksmažodžiai, kurių bendraties kamienas 
+  baigiasi y, ū, būsimojo laiko III asmenyje turi i, u.
+  (*išimtys*: vyti, veja, vijo > vys, siūti, siuva, siuvo > siūs)
+
+  	Visų veiksmažodžių, turinčių šaknyje i, u, būsimojo laiko 
+  III asmuo išlaiko bendraties balsę. 
+  Pvz.:	siusti – sius, risti – ris, skusti – skus.
+
+  	Visų veiksmažodžių, turinčių šaknyje y, ū, būsimojo laiko 
+  III asmuo išlaiko bendraties balsę. 
+  Pvz.: dygti – dygs, nykti – nyks, grūsti – grūs, pūsti – pūs.
+
+  Taip pat verta įsidėmėti ir tai, kad bene visi (?) daugiaskiemeniai 
+ (daugiau nei 2) veiksmažodžiai būsimojo laiko III asmens galūnėje 
+  turi tokią pačią balsę, kaip ir bendraties kamiene: 
+  	 sa'ky'ti > sakys, tram'dy'ti > tramdys, ar'dy'ti > ardys, ...
+
+  Vadovaujantis dvisikiemenių/daugiaskiemenių žodžių darybos 
+  taisykle/dėsningumu svarbu atskirti koks žodis yra šakninis ir kiek 
+  jis turi skiemenų, nes tai netaikoma priešdėliniams dariniams, pvz:
+
+         palyti, užlyti, nulyti, ... (dviskiemenis šakninis žodis lyti)
+	 užsibūti, pabūti, išbūti, ... (dviskiemenis šakninis žodis būti)
+	 užmatyti, numatyti, permatyti ... (triskiemenis žodis matyti)
+	 
+
+   #############################
+   ##     Esamasis laikas     ##
+   #############################
    Visų veiksmažodžių esamasis laikas žymimas /E.
    
-   Veiksmažodžių su bendratimi -yti, būtasis kartinis žymimas /Y.
+   #############################
+   ## Būtasis kartinis laikas ##
+   #############################
+   Veiksmažodžių su bendratimi -YTI, būtasis kartinis žymimas /Y.
    Visų kitų veiksmažodžių būtasis kartinis laikas žymimas /P.
 
-   Sangrąžiniams veiksmažodžiams reikia nurodyti /S, o visiems kitiems
-   /N.  /S -is ir -si galūnių nepadarys, užtat padarys priešdėlius
-   nesi- ir besi-. Ir prie /N, ir prie /S reikia pridėti flagą /X,
-   formoms su be-, te- ir tebe-.
 
-   gyti/UNX
+   ## Dalelytės-priešdėliai ir sangrąžinės formos ##
+
+   Sangrąžiniams veiksmažodžiams (formoms; norint tokias gauti) turbūt 
+   verta pridėti /S (dalelytės: ne, nebe, nesi, nebesi, besi, tebesi)
+   Pvz.: 
+   	 moko/S > nebesimoko, besimoko, tebesimoko, ...
+
+   o nesangrąžiniams (visiems kitiems) /N (dalelytės: ne, nebe)
+   Pvz.: 
+   	 kilti/TN, kyla/EN > nebekilti, nekilti, nebekyla, nekyla
+
+   Jei žodis turi formas su be, te, tebe, tai verta pridėti /X 
+   (dalelytės: be, te, tebe)
+   Pvz.: 
+   	 sakyti/X, matyti/X > tebesakyti, tesakyti, tematyti, tebematyti, ...   
+   Priešdėlinių dalelyčių žymas galima derinti, pvz.: sako/SX, kabo/NX ...
+
+   Keli veiksmažodžių darybos (afiksų žymų) pavyzdžiai:
+
+   gyti/TUNX
    gyja/ENX
    gijo/YNX
 
@@ -244,15 +291,25 @@ rankomis, taigi štai taisyklės tiems, kurie flagus dės rankomis.
    myli/ESX
    mylėjo/PSX
 
-   Sangrąžines formas reikia nurodyti ir atskirai:
+   Sangrąžines formas (šakninius žodžius) reikia nurodyti atskirai/papildomai 
+   ir jiems priskirti visų laikų veiksmažodžių afiksų žymas kaip ir 
+   pagrindinei (nesangrąžinei) veiksmažodžio formai, pvz:
+   
+   mylėti/T
+   myli/E
+   mylėjo/P
 
    mylėtis/T
    mylisi/E
    mylėjosi/P
 
-   Čia /S nededam, kad neišeitų dvigubos sangrąžos kaip „besimylisi“.
-   Ir /N ir /X nededam, kad neišeitų „nemylisi“, ar „bemylisi“ nes teisingos formos yra
-   „nesimyli“ ir „besimyli“, padaromos iš „myli/ESX“
+   Sangrąžiniams šakniniams žodžiams dalelyčių S, N ir X žymos *nepridedamos*, 
+   kad nesigautų dvigubos sangrąžos ir/ar neteisingos formos, pvz.: 
+      besimylisi, tebesimylisi, nemylisi, bemylisi
+
+   Teisingas sangrąžines formas generuoja pagrindinis (nesangrąžinis) 
+   veiksmažodis su (sangrąžinių) dalelyčių afikso žyma S, pvz.:
+   myli/ES > nebesimyli, besimyli, besimyli, tebesimyli, ...
    
 
 Kaip ir viskas.  Visi įvardžiai ir skaitvardžiai jau yra žodyne.  Jei
