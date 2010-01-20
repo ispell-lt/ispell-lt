@@ -237,397 +237,328 @@ suffixes
 # -----------------------------------------------------------------------------
 #
 #
+# 
+#
 
+##############################################################################
 # 1 paradigma  (vyras, pirðtas, langas, miðkas)
+#
 
-	[^IJ] A S	>	-AS,O		# stalas > stalo
-	[^IJ] A S	>	-AS,UI		# stalas > stalui
-	[^IJ] A S	>	-AS,À		# stalas > stalà
-	[^IJ] A S	>	-AS,U		# stalas > stalu
-	[^IJ] A S	>	-AS,E		# stalas > stale
-
-	[^IJ] A S	>	-AS,AI		# stalas > stalai
-	[^IJ] A S	>	-AS,Ø		# stalas > stalø
-	[^IJ] A S	>	-AS,AMS		# stalas > stalams
-	[^IJ] A S	>	-AS,US		# stalas > stalus
-	[^IJ] A S	>	-AS,AIS		# stalas > stalais
-	[^IJ] A S	>	-AS,UOSE	# stalas > staluose
+	# vnsk., vyr. gim.
+	A S		>	-AS,O		# stalas > stalo
+	A S		>	-AS,UI
+	A S		>	-AS,À
+	A S		>	-AS,U
+	[^IJ] A S	>	-AS,E
 
 
-# 2 paradigma (elnias, kelias, vëjas, galvijas)
+	# dgsk., vyr. gim.
+	A S		>	-S,I		# stalai, langai
+	A S		>	-AS,Ø
+	A S		>	-S,MS
+	A S		>	-AS,US
+	A S		>	-S,IS
+	A S		>	-AS,UOSE
 
-	I A S	>	-IAS,IO		# elnias > elnio
-	I A S	>	-IAS,IUI	# elnias > elniui
-	I A S	>	-IAS,IÀ		# elnias > elnià
-	I A S	>	-IAS,IU		# elnias > elniu
-	I A S	>	-IAS,YJE	# elnias > elnyje
-	I A S	>	-IAS,I		# elnias > elni
-	I A S	>	-IAS,Y		# kelias > kely		FIXME
+##############################################################################
+# 2 paradigma (elnias, kelias, velnias; vëjas, galvijas)
+# (vnsk. K.-Án. ir visà dgsk. iðkaito 1 paradigma)
+#
 
-	I A S	>	-IAS,IAI	# elnias > elniai
-	I A S	>	-IAS,IØ		# elnias > elniø
-	I A S	>	-IAS,IAMS	# elnias > elniams
-	I A S	>	-IAS,IUS	# elnias > elnius
-	I A S	>	-IAS,IAIS	# elnias > elniais
-	I A S	>	-IAS,IUOSE	# elnias > elniuose
+	# vnsk., vyr. gim.
+	#I A S		>	-AS,O		# elnias > elnio
+	#I A S		>	-AS,UI
+	#I A S		>	-AS,À
+	#I A S		>	-AS,U
+	I A S		>	-IAS,YJE
+	#I A S		>	-AS,""		# attn: keli, elni, velni -- ??
+	I A S		>	-IAS,Y		# elny, kely
 
-	J A S	>	-JAS,JO		# vejas > vejo
-	J A S	>	-JAS,JUI
-	J A S	>	-JAS,JÀ
-	J A S	>	-JAS,JU
-	J A S	>	-JAS,JUJE
-	J A S	>	-JAS,JYJE	# vëjuje/vëjyje
-	J A S	>	-JAS,JAU
+	#J A S		>	-AS,O		# vëjo, galvijo
+	#J A S		>	-AS,UI
+	#J A S		>	-AS,À
+	#J A S		>	-AS,U
+	J A S		>	-AS,UJE		# vëjuje/vëjyje
+	J A S		>	-AS,YJE	
+	J A S		>	-AS,AU
 
-	J A S	>	-JAS,JAI	# galvijas > galvijai
-	J A S	>	-JAS,JØ
-	J A S	>	-JAS,JAMS
-	J A S	>	-JAS,JUS
-	J A S	>	-JAS,JAIS
-	J A S	>	-JAS,JUOSE
+	# dgsk., vyr. gim.
+	#I A S		>	-S,I		# elniai, keliai
+	#I A S		>	-AS,Ø
+	#I A S		>	-S,MS
+	#I A S		>	-AS,US
+	#I A S		>	-S,IS
+	#I A S		>	-AS,UOSE
 
+	#J A S		>	-S,I		# galvijai
+	#J A S		>	-AS,Ø
+	#J A S		>	-S,MS
+	#J A S		>	-AS,US
+	#J A S		>	-S,IS
+	#J A S		>	-AS,UOSE
+
+
+##############################################################################
 # 3 paradigma (brolis, peilis, arklys, bûrys)
+#
+# (turbût neverta trumpinti vietininkà (YJE > Y)...)
+#
 
-	[^DTJ] I S	>	-IS,IO		# peilis > peilio
-	[^DTJ] I S	>	-IS,IUI		# peilis > peiliui
-	[^DTJ] I S	>	-IS,IU		# peilis > peiliu
-	[^DTJ] I S	>	-IS,IAI		# peilis > peiliai
-	[^J] I S	>	-IS,Á		# peilis > peilá
-	[^J] I S	>	-IS,YJE		# peilis > peilyje
-	[^J] I S	>	-IS,Y		# peilis > peily
-	[^J] I S	>	-IS,I		# peilis > peili
-
-	J I S	>	-IS,O		# atvejis > atvejo
-	J I S	>	-IS,UI		# atvejis > atvejui
-	J I S	>	-IS,U		# atvejis > atveju
-	J I S	>	-IS,AI		# atvejis > atvejai
-	J I S	>	-IS,Á		# atvejis > atvejá
-	J I S	>	-IS,YJE		# atvejis > atvejyje
-	J I S	>	-IS,Y		# atvejis > atvejy
-	J I S	>	-IS,I		# atvejis > atveji
-
-	T I S		>	-TIS,ÈIO	#
-	T I S		>	-TIS,ÈIUI	#
-	T I S		>	-TIS,ÈIU
-	T I S		>	-TIS,ÈIAI
+	# vnsk., vyr. gim.
+	[^DJT] I S	>	-S,O		# peilis > peilio
+	[^DJT] I S	>	-S,UI
+	I S	 	>	-IS,Á
+	[^DJT] I S	>	-S,U
+	I S	  	>	-IS,YJE
+	#I S		>	-IS,Y		# attn.: peily, broly -- ???
+	I S		>	-S,""
 
 	D I S		>	-DIS,DÞIO	# skrandis > skrandþio
-	D I S		>	-DIS,DÞIUI	# skrandis > skrandþiui
+	D I S		>	-DIS,DÞIUI
 	D I S		>	-DIS,DÞIU
-	D I S		>	-DIS,DÞIAI
 
-	[^DTJ] I S	> 	-IS,IAI
-	[^DTJ] I S	>	-IS,IØ
-	[^DTJ] I S	>	-IS,IAMS
-	[^DTJ] I S	>	-IS,IUS
-	[^DTJ] I S	>	-IS,IAIS
-	[^DTJ] I S	>	-IS,IUOSE
+	J I S		>	-IS,O		# atvejis > atvejo
+	J I S		>	-IS,UI
+	#J I S		>	-IS,Á
+	J I S		>	-IS,U
+	#J I S		>	-IS,YJE
+	#J I S		>	-IS,Y		# attn.: atvejy -- ???
+	#J I S		>	-S,""
 
-	J I S	> 	-IS,AI
-	J I S	>	-IS,Ø
-	J I S	>	-IS,AMS
-	J I S	>	-IS,US
-	J I S	>	-IS,AIS
-	J I S	>	-IS,UOSE
+	T I S		>	-TIS,ÈIO	# dangtis > dangèio	
+	T I S		>	-TIS,ÈIUI
+	T I S		>	-TIS,ÈIU
 
-	D I S		> 	-DIS,DÞIAI
-	D I S		>	-DIS,DÞIØ
-	D I S		>	-DIS,DÞIAMS
-	D I S		>	-DIS,DÞIUS
-	D I S		>	-DIS,DÞIAIS
-	D I S		>	-DIS,DÞIUOSE
+	# *** (-ys) ***
+	[^DJT] Y S	>	-YS,IO		# arklys > arklio
+	[^DJT] Y S	>	-YS,IUI
+	Y S		>	-YS,Á
+	[^DJT] Y S	>	-YS,IU
+	Y S		>	-S,JE
+	Y S		>	-Y,""
 
-	T I S		> 	-TIS,ÈIAI
+	D Y S		>	-YS,ÞIO		# vyzdys > vyzdþio
+	D Y S		>	-YS,ÞIUI
+	D Y S		>	-YS,ÞIU
+
+	J Y S		>	-YS,O		# þvejys > þvejo
+	J Y S		>	-YS,UI
+	J Y S		>	-YS,U
+
+	T Y S		>	-TYS,ÈIO	# þaltys > þalèio
+	T Y S		>	-TYS,ÈIUI
+	T Y S		>	-TYS,ÈIU
+
+
+	# dgsk., vyr. gim.
+	[^DTJ] I S	> 	-S,AI		# peilis > peiliai
+	[^DTJ] I S	>	-S,Ø
+	[^DTJ] I S	>	-S,AMS
+	[^DTJ] I S	>	-S,US
+	[^DTJ] I S	>	-S,AIS
+	[^DTJ] I S	>	-S,UOSE
+
+	D I S		> 	-IS,ÞIAI	# skrandþiai
+	D I S		>	-IS,ÞIØ
+	D I S		>	-IS,ÞIAMS
+	D I S		>	-IS,ÞIUS
+	D I S		>	-IS,ÞIAIS
+	D I S		>	-IS,ÞIUOSE
+
+	J I S	 	> 	-IS,AI		# atvejai
+	J I S		>	-IS,Ø
+	J I S		>	-IS,AMS
+	J I S		>	-IS,US
+	J I S		>	-IS,AIS
+	J I S		>	-IS,UOSE
+
+	T I S		> 	-TIS,ÈIAI	# dangèiai
 	T I S		>	-TIS,ÈIØ
 	T I S		>	-TIS,ÈIAMS
 	T I S		>	-TIS,ÈIUS
 	T I S		>	-TIS,ÈIAIS
 	T I S		>	-TIS,ÈIUOSE
 
-	[^DTJ] Y S	>	-YS,IO		# arklys > arklio
-	[^DTJ] Y S	>	-YS,IUI		# arklys > arkliui
-	[^DTJ] Y S	>	-YS,IU		# arklys > arkliu
-	Y S		>	-YS,Á
-	Y S		>	-YS,YJE
-	Y S		>	-YS,Y
-	T Y S		>	-TYS,ÈIO
-	T Y S		>	-TYS,ÈIUI
-	T Y S		>	-TYS,ÈIU
-	D Y S		>	-DYS,DÞIUI
-	D Y S		>	-DYS,DÞIO
-	D Y S		>	-DYS,DÞIU
-	J Y S		>	-YS,O
-	J Y S		>	-YS,UI
-	J Y S		>	-YS,U
-
-	[^DTJ] Y S	> 	-YS,IAI
+	# *** (-ys) ***
+	[^DTJ] Y S	> 	-YS,IAI		# arklys > arkliai
 	[^DTJ] Y S	>	-YS,IØ
 	[^DTJ] Y S	>	-YS,IAMS
 	[^DTJ] Y S	>	-YS,IUS
 	[^DTJ] Y S	>	-YS,IAIS
 	[^DTJ] Y S	>	-YS,IUOSE
 
-	D Y S		> 	-DYS,DÞIAI
-	D Y S		>	-DYS,DÞIØ
-	D Y S		>	-DYS,DÞIAMS
-	D Y S		>	-DYS,DÞIUS
-	D Y S		>	-DYS,DÞIAIS
-	D Y S		>	-DYS,DÞIUOSE
+	D Y S		> 	-YS,ÞIAI	# vyzdþiai
+	D Y S		>	-YS,ÞIØ
+	D Y S		>	-YS,ÞIAMS
+	D Y S		>	-YS,ÞIUS
+	D Y S		>	-YS,ÞIAIS
+	D Y S		>	-YS,ÞIUOSE
 
-	T Y S		> 	-TYS,ÈIAI
+	J Y S		> 	-YS,AI		# atvejai
+	J Y S		>	-YS,Ø
+	J Y S		>	-YS,AMS
+	J Y S		>	-YS,US
+	J Y S		>	-YS,AIS
+	J Y S		>	-YS,UOSE
+
+	T Y S		> 	-TYS,ÈIAI	# þalèiai
 	T Y S		>	-TYS,ÈIØ
 	T Y S		>	-TYS,ÈIAMS
 	T Y S		>	-TYS,ÈIUS
 	T Y S		>	-TYS,ÈIAIS
 	T Y S		>	-TYS,ÈIUOSE
 
-	J Y S	> 	-YS,AI
-	J Y S	>	-YS,Ø
-	J Y S	>	-YS,AMS
-	J Y S	>	-YS,US
-	J Y S	>	-YS,AIS
-	J Y S	>	-YS,UOSE
-
-
+##############################################################################
 # 4 paradigma (turgus, sûnus, dangus)
+#
+# (dgsk. galininkas sutampa su vnsk. vardininku)
+#
 
-	[^I] U S	>	-US,AUS
-	[^I] U S	>	-US,UI
-	[^I] U S	>	-US,Ø
-	[^I] U S	>	-US,UMI
-	[^I] U S	>	-US,UJE
-	[^I] U S	>	-US,UJ
-	[^I] U S	>	-US,AU
+	# vnsk., vyr. gim.
+	U S		>	-US,AUS		# sûnus > sûnaus
+	U S		>	-S,I
+	U S		>	-US,Ø
+	U S		>	-S,MI
+	U S		>	-S,JE
+	U S		>	-S,J
+	U S		>	-US,AU
 
-	[^I] U S	>	-US,ÛS
-	[^I] U S	>	-US,Ø
-	[^I] U S	>	-US,UMS
-	[^I] U S	>	-US,US
-	[^I] U S	>	-US,UMIS
-	[^I] U S	>	-US,UOSE
+	# dgsk., vyr. gim.
+	[^IJ] U S	>	-US,ÛS		# sûnûs
+	U S		>	-US,Ø
+	[^IJ] U S	>	-S,MS
+	# U S		>	-US,US
+	[^IJ] U S	>	-S,MIS
+	U S		>	-S,OSE
 
+
+##############################################################################
 # 5 paradigma (koridorius, sodþius, pavojus)
+#
+# (visà vnsk. ir dgsk. K.,Vt. iðkaito 4 paradigmos taisyklës)
+# (dgsk. galininkas sutampa su vnsk. vardininku)
+#
 
-	I U S	>	-IUS,IAUS
-	I U S	>	-IUS,IUI
-	I U S	>	-IUS,IØ
-	I U S	>	-IUS,IUMI
-	I U S	>	-IUS,IUJE
-	I U S	>	-IUS,IUJ
-	I U S	>	-IUS,IAU
+	# vnsk., vyr. gim.
+	#[IJ] U S	>	-US,AUS		# derliaus, pavojaus
+	#[IJ] U S	>	-S,I
+	#[IJ] U S	>	-US,Ø
+	#[IJ] U S	>	-S,MI
+	#[IJ] U S	>	-S,JE
+	#[IJ] U S	>	-S,J
+	#[IJ] U S	>	-US,AU
 
-	I U S	>	-IUS,IAI
-	I U S	>	-IUS,IØ
-	I U S	>	-IUS,IAMS
-	I U S	>	-IUS,IUS
-	I U S	>	-IUS,IAIS
-	I U S	>	-IUS,IUOSE
+	# dgsk., vyr. gim.
+	[IJ] U S	>	-US,AI		# derliai, pavojai
+	#[IJ] U S	>	-US,Ø
+	[IJ] U S	>	-US,AMS
+	#[IJ] U S	>	-US,US
+	[IJ] U S	>	-US,AIS
+	#[IJ] U S	>	-S,OSE
 
-	J U S	>	-JUS,JAUS	# pavojus > pavojaus
-	J U S	>	-JUS,JUI
-	J U S	>	-JUS,JØ
-	J U S	>	-JUS,JUMI
-	J U S	>	-JUS,JUJE
-	J U S	>	-JUS,JUJ
-	J U S	>	-JUS,JAU
 
-	J U S	>	-JUS,JAI
-	J U S	>	-JUS,JØ
-	J U S	>	-JUS,JAMS
-	J U S	>	-JUS,JUS
-	J U S	>	-JUS,JAIS
-	J U S	>	-JUS,JUOSE
 
-##############################################################
-# Daugiskaitiniai daiktavardþiai: visa vyriðka giminë atrodo
-# taip pat, iðskyrus 11 paradigmà
+##############################################################################
+# 6 paradigma (jûra, ranka, galva, auðra) ir dalis 7-os
+#
 
-	A I	>	-AI,Ø
-	A I	>	-AI,AMS
-	A I	>	-AI,US
-	A I	>	-AI,AIS
-	A I	>	-AI,UOSE
+	# vnsk., mot. gim.
+	A		>	-A,OS		# jûra > jûros
+	A		>	-A,AI
+	A		>	-A,À
+	A		>	-A,OJE
+	A		>	-A,OJ
 
-	Û S	>	-ÛS,Ø
-	Û S	>	-ÛS,UMS
-	Û S	>	-ÛS,US
-	Û S	>	-ÛS,UMIS
-	Û S	>	-ÛS,UOSE
+	# dgsk., mot. gim.
+	A		>	-A,Ø		# jurø
+	A		>	-A,OMS
+	A		>	-A,OM		# Ðnek.
+	A		>	S
+	A		>	-A,OMIS
+	A		>	-A,OSE
 
-# 6 paradigma (jûra, reanka, galva, auðra)
-# o taip pat dalis 7-os
+	O S		>	-OS,Ø		# lubos > lubø
+	O S		>	-S,MS
+	O S		>	-S,M		# Ðnek.
+	O S		>	-OS,AS
+	O S		>	-S,MIS
+	O S		>	E
 
-	A	>	-A,OS
-	A	>	-A,AI
-	A	>	-A,À
-	A	>	-A,OJE
-	A	>	-A,OJ
 
-	A	>	-A,Ø
-	A	>	-A,OMS
-	A	>	-A,OM		# Ðnek.
-	A	>	-A,AS
-	A	>	-A,OMIS
-	A	>	-A,OSE
+##############################################################################
+# 7 paradigma (vyðnia, þinia, marti, pati)
+# -(i)a  sutampa su 6 paradigma
+#
 
-	O S	>	-OS,Ø
-	O S	>	-OS,OMS
-	O S	>	-OS,OM		# Ðnek.
-	O S	>	-OS,AS
-	O S	>	-OS,OMIS
-	O S	>	-OS,OSE
+	# vnsk., mot. gim.
+	T I		>	-TI,ÈIOS	# marti > marèios
+	T I		>	-TI,ÈIAI
+	T I		>	-TI,ÈIÀ
+	T I		>	-TI,ÈIA
+	T I		>	-TI,ÈIOJE
+	T I		>	-TI,ÈIOJ
 
-# 7 paradigma (sauja, vyðnia, þinia, marti, pati)
+	# dgsk., mot. gim.
+	#T I		>	-TI,ÈIOS
+	T I		>	-TI,ÈIØ
+	T I		>	-TI,ÈIOMS
+	T I		>	-TI,ÈIOM	# Ðnek.
+	T I		>	-TI,ÈIAS
+	T I		>	-TI,ÈIOMIS
+	T I		>	-TI,ÈIOSE
 
-# sauja, vayðnia, þinia sutampa su 1 paradigma
 
-	T I	>	-TI,ÈIOS	# marti > marèios
-	T I	>	-TI,ÈIAI
-	T I	>	-TI,ÈIÀ
-	T I	>	-TI,ÈIA
-	T I	>	-TI,ÈIOJE
-	T I	>	-TI,ÈIOJ
-
-	T I	>	-TI,ÈIØ
-	T I	>	-TI,ÈIOMS
-	T I	>	-TI,ÈIOM	# Ðnek.
-	T I	>	-TI,ÈIAS
-	T I	>	-TI,ÈIOMIS
-	T I	>	-TI,ÈIOSE
-
+##############################################################################
 # 8 paradigma (gervë, dëdë, bitë)
-
-	Ë	>	-Ë,ËS
-	Ë	>	-Ë,EI
-	Ë	>	-Ë,Æ
-	Ë	>	-Ë,E
-	Ë	>	-Ë,ËJE
-	Ë	>	-Ë,ËJ		# Ðnek.?
-
-	[^DT] Ë	>	-Ë,IØ
-	T Ë	>	-TË,ÈIØ
-	D Ë	>	-DË,DÞIØ
-	Ë	>	-Ë,ËMS
-	Ë	>	-Ë,ËM		# Ðnek.?
-	Ë	>	-Ë,ES
-	Ë	>	-Ë,ËMIS
-	Ë	>	-Ë,ËSE
-
-	[^DT] Ë S	>	-ËS,IØ
-	T Ë S	>	-TËS,ÈIØ
-	D Ë S	>	-DËS,DÞIØ
-	Ë S	>	-ËS,ËMS
-	Ë S	>	-ËS,ES
-	Ë S	>	-ËS,ËMIS
-	Ë S	>	-ËS,ËSE
-
-#  Prasideda ádomybës:
 #
-#  *  valè-iø ar nakt-ø
-#  *  ak-iø     ar aus-ø
-#     (minkðta)   (kieta)
 
-		#####################################
-		#####################################
+	# vnsk., mot. gim.
+	Ë		>	S		# këdë > këdës
+	Ë		>	-Ë,EI
+	Ë		>	-Ë,Æ
+	Ë		>	-Ë,E
+	Ë		>	JE
+	Ë		>	J		# Ðnek.?
 
+	# dgsk., mot. gim.
+	#Ë		>	S		# këdë > këdës
+	[^DT] Ë		>	-Ë,IØ		# gerviø
+	D Ë		>	-Ë,ÞIØ		# këdþiø
+	T Ë		>	-TË,ÈIØ		# bièiø
 
-			       flag *I:
+	Ë		>	MS
+	Ë		>	M		# Ðnek.?
+	Ë		>	-Ë,ES
+	Ë		>	MIS
+	Ë		>	SE
 
-		#####################################
-		#####################################
-
-# minkðtasis variantas (þvëriø, valèiø)
-	[^DT] I S		>	-IS,IØ		# akis > akiø
-	D I S			>	-DIS,DÞIØ	# ðirdis > ðirdþiø
-	T I S			>	-TIS,ÈIØ	# valtis > valèiø
-
-# daugiskaitiniai daiktavardþiai
-	[^DT] Y S		>	-YS,IØ
-	D Y S			>	-DYS,DÞIØ
-	T Y S			>	-TYS,ÈIØ
-
-
-		#####################################
-		#####################################
-
-			       flag *K:
-
-		#####################################
-		#####################################
-
-# kietasis variantas (naktø; ausø)
-	I S		>	-IS,Ø		# ausis > ausø
-# daugiskaitiniai daiktavardþiai
-	Y S		>	-YS,Ø		# durys > durø
+	[^DT] Ë S	>	-ËS,IØ		# rogës > rogiø
+	T Ë S		>	-TËS,ÈIØ	# kelnaitës > kelnaièiø
+	D Ë S		>	-DËS,DÞIØ	# slidës > slidþiø
+	Ë S		>	-S,MS
+	Ë S		>	-ËS,ES
+	Ë S		>	-S,MIS
+	Ë S		>	E
 
 
-		#####################################
-		#####################################
-
-			       flag *M:
-
-		#####################################
-		#####################################
-# moteriðka
-##############################
-#  9 paradigma (þuvis, akis)
+##############################################################################
+# Daugiskaitiniai daiktavardþiai
+# (visa vyriðka giminë vienoda, iðskyrus 11 paradigmà)
 #
-	[^DT] I S	>	-IS,IAI		# krosnis > krosniai
-	D I S		>	-DIS,DÞIAI	# ðirdis > ðirdþiai
-	T I S		>	-TIS,ÈIAI	# naktis > nakèiai
 
-# ðitas blokas atrodo taip pat 9 ir 10 paradigmai, cut&paste
-	I S		>	-IS,IES
-	I S		>	-IS,Á
-	I S		>	-IS,IMI
-	I S		>	-IS,YJE
-	I S		>	-IS,Y
-	I S		>	-IS,IE
+	A I		>	-AI,Ø		# miltai > miltø
+	A I		>	-I,MS
+	A I		>	-AI,US
+	A I		>	S
+	A I		>	-AI,UOSE
 
-	I S		>	-IS,YS
-	I S		>	-IS,IMS
-	I S		>	-IS,IMIS
-	I S		>	-IS,YSE
-
-# daugiskaitiniai daiktavardþiai
-
-	Y S		>	-YS,IMS
-	Y S		>	-YS,IS
-	Y S		>	-YS,IMIS
-	Y S		>	-YS,YSE
+	Û S		>	-ÛS,Ø		# pietûs > pietø
+	Û S		>	-ÛS,UMS
+	Û S		>	-ÛS,US
+	Û S		>	-ÛS,UMIS
+	Û S		>	-ÛS,UOSE
 
 
-
-#############################################################################
-# 12 paradigma (sesuo, duktë)
-#
-	U O	>	-UO,ERS		# sesuo > sesers
-	U O	>	-UO,ERIAI
-	U O	>	-UO,ERÁ
-	U O	>	-UO,ERIMI
-	U O	>	-UO,ERYJE
-	U O	>	-UO,ERIE
-
-	U O	>	-UO,ERYS
-	U O	>	-UO,ERØ
-	U O	>	-UO,ERIMS
-	U O	>	-UO,ERIS
-	U O	>	-UO,ERIMIS
-	U O	>	-UO,ERYSE
-
-	Ë	>	-Ë,ERS		# duktë > dukters
-	Ë	>	-Ë,ERIAI
-	Ë	>	-Ë,ERÁ
-	Ë	>	-Ë,ERIMI
-	Ë	>	-Ë,ERYJE
-	Ë	>	-Ë,ERIE
-
-	Ë	>	-Ë,ERYS
-	Ë	>	-Ë,ERØ
-	Ë	>	-Ë,ERIMS
-	Ë	>	-Ë,ERIS
-	Ë	>	-Ë,ERIMIS
-	Ë	>	-Ë,ERYSE
 
 
 		#####################################
@@ -638,73 +569,262 @@ suffixes
 		#####################################
 		#####################################
 
-#########################################################################
+##############################################################################
+# Vyriðkos  giminës daiktavardþiai (-is, -uo)
+# (poþymis -- vnsk. K. linksnis: -is > -ies)
+#
+
+##############################################################################
 # 10 paradigma
 # vyriðka (þvëris, dantis, debiesis)
+#
+
+
+	# vnsk. 
+	I S		>	-S,ES		# dantis > danties
 
 	[^DT] I S	>	-IS,IUI		# debesis > debesiui
 	T I S		>	-TIS,ÈIUI	# dantis > danèiui
-	D I S		>	-DIS,DÞIUI
+	D I S		>	-DIS,DÞIUI	# (v1.2.1 þodyne nëra)
 
-# ðitas blokas atrodo taip pat 9 ir 10 paradigmai, cut&paste
-	I S		>	-IS,IES
 	I S		>	-IS,Á
-	I S		>	-IS,IMI
+	I S		>	-S,MI
 	I S		>	-IS,YJE
 	I S		>	-IS,Y
-	I S		>	-IS,IE
+	I S		>	-S,E
 
+	# dgsk. 
 	I S		>	-IS,YS
-	I S		>	-IS,IMS
-	I S		>	-IS,IMIS
+	I S		>	-S,MS
+	#I S		>	-IS,IS
+	I S		>	-S,MIS
 	I S		>	-IS,YSE
 
 
-#############################################################################
+##############################################################################
 # 11 paradigma (akmuo, vanduo, ðuo)
+#
 
-	[^Ð] U O	>      -UO,ENS
-	[^Ð] U O	>      -UO,ENIUI
-	[^Ð] U O	>      -UO,ENÁ
-	[^Ð] U O	>      -UO,ENIU
-	[^Ð] U O	>      -UO,ENIMI
-	[^Ð] U O	>      -UO,ENYJE
-	[^Ð] U O	>      -UO,ENY
-	[^Ð] U O	>      -UO,ENIE
+	# vnsk. 
+	[^NÐ] U O	>      -UO,ENS		# vandens
+	[^NÐ] U O	>      -UO,ENIUI
+	[^NÐ] U O	>      -UO,ENÁ
+	[^NÐ] U O	>      -UO,ENIU
+	[^NÐ] U O	>      -UO,ENIMI
+	[^NÐ] U O	>      -UO,ENYJE
+	[^NÐ] U O	>      -UO,ENY
+	[^NÐ] U O	>      -UO,ENIE
 
-	[^Ð] U O	>      -UO,ENYS
-	[^Ð] U O	>      -UO,ENØ
-	[^Ð] U O	>      -UO,ENIMIS
-	[^Ð] U O	>      -UO,ENIMS
-	[^Ð] U O	>      -UO,ENIS
-	[^Ð] U O	>      -UO,ENYSE
-
-	# daugiskaitinës formos
-	Y S	>      -YS,YS
-	Y S	>      -YS,Ø
-	Y S	>      -YS,IMS
-	Y S	>      -YS,IMIS
-	Y S	>      -YS,IS
-	Y S	>      -YS,YSE
+	# dgsk. 
+	[^NÐ] U O	>      -UO,ENYS		# vandenys
+	[^NÐ] U O	>      -UO,ENØ
+	[^NÐ] U O	>      -UO,ENIMS
+	[^NÐ] U O	>      -UO,ENIS
+	[^NÐ] U O	>      -UO,ENIMIS
+	[^NÐ] U O	>      -UO,ENYSE
 
 
-# Padarykim tokià garbæ vienam þodþiui, visgi geriausias þmogaus
-# draugas...
+	######################################################################
+	# Dvi iðimtys (v1.2.1 þodynas): mënuo, ðuo
+	# (jei jø bûtø daugiau, tektø galvoti kaip tai iðspræsti)
+	#
 
-	Ð U O	>      -UO,UNS
-	Ð U O	>      -UO,UNIUI
-	Ð U O	>      -UO,UNÁ
-	Ð U O	>      -UO,UNIU
-	Ð U O	>      -UO,UNIMI
-	Ð U O	>      -UO,UNYJE
-	Ð U O	>      -UO,UNY
-	Ð U O	>      -UO,UNIE
+	# vnsk. 
+	N U O		>      -UO,ESIO		# mënuo > mënesio
+	N U O		>      -UO,ESIUI
+	N U O		>      -UO,ESÁ
+	N U O		>      -UO,ESIU
+	N U O		>      -UO,ESYJE
+	N U O		>      -UO,ESY
+	N U O		>      -UO,ESI
 
-	Ð U O	>      -UO,UNYS
-	Ð U O	>      -UO,UNØ
-	Ð U O	>      -UO,UNIMIS
-	Ð U O	>      -UO,UNIS
-	Ð U O	>      -UO,UNYSE
+	# dgsk. 
+	N U O		>      -UO,ESIAI
+	N U O		>      -UO,ESIØ
+	N U O		>      -UO,ESIAMS
+	N U O		>      -UO,ESIUS
+	N U O		>      -UO,ESIAIS
+	N U O		>      -UO,ESIUOSE
+
+
+	# Padarykim tokià garbæ vienam þodþiui, visgi geriausias þmogaus
+	# draugas...
+
+	# vnsk. 
+	Ð U O		>      -O,NS
+	Ð U O		>      -O,NIUI
+	Ð U O		>      -O,NÁ
+	Ð U O		>      -O,NIU
+	Ð U O		>      -O,NIMI
+	Ð U O		>      -O,NYJE
+	Ð U O		>      -O,NY
+	Ð U O		>      -O,NIE
+
+	# dgsk. 
+	Ð U O		>      -O,NYS
+	Ð U O		>      -O,NØ
+	Ð U O		>      -O,NIMS
+	Ð U O		>      -O,NIS
+	Ð U O		>      -O,NIMIS
+	Ð U O		>      -O,NYSE
+
+
+##############################################################################
+# Daugiskaitiniai daiktavardþiai
+# 
+	#Y S		>      -YS,YS		# antruonys
+	Y S		>      -YS,Ø
+	Y S		>      -YS,IMS
+	Y S		>      -YS,IS
+	Y S		>      -YS,IMIS
+	Y S		>      -YS,YSE
+
+
+
+
+		#####################################
+		#####################################
+
+			       flag *M:
+
+		#####################################
+		#####################################
+
+##############################################################################
+# Moteriðkos giminës daiktavardþiai (-is, -uo, -ë)
+# (poþymis -- vnsk. K. linksnis: -is > -ies, -ë > -ers)
+#
+
+##############################################################################
+#  9 paradigma (þuvis, akis)
+#
+
+	# vnsk. 
+	I S		>	-S,ES		# valtis > valties   
+
+	[^DT] I S	>	-S,AI		# krosnis > krosniai
+	D I S		>	-IS,ÞIAI	# ðirdis > ðirdþiai
+	T I S		>	-TIS,ÈIAI	# naktis > nakèiai
+
+	I S		>	-IS,Á
+	I S		>	-S,MI
+	I S		>	-IS,YJE
+	I S		>	-IS,Y
+	I S		>	-S,E
+
+	# dgsk. 
+	I S		>	-IS,YS		# valtis > valtys
+	# dgsk. K.: /I arba /K
+	I S		>	-S,MS
+	#I S		>	-IS,IS
+	I S		>	-S,MIS
+	I S		>	-IS,YSE
+
+
+##############################################################################
+# 12 paradigma (sesuo, duktë)
+#
+	# vnsk. 
+	Ë		>	-Ë,ERS		# duktë > dukters
+	Ë		>	-Ë,ERIAI
+	Ë		>	-Ë,ERÁ
+	Ë		>	-Ë,ERIMI
+	Ë		>	-Ë,ERYJE
+	Ë		>	-Ë,ERIE
+
+	U O		>	-UO,ERS		# sesuo > sesers
+	U O		>	-UO,ERIAI
+	U O		>	-UO,ERÁ
+	U O		>	-UO,ERIMI
+	U O		>	-UO,ERYJE
+	U O		>	-UO,ERIE
+
+
+	# dgsk. 
+	Ë		>	-Ë,ERYS		# dukterys
+	Ë		>	-Ë,ERØ
+	Ë		>	-Ë,ERIMS
+	Ë		>	-Ë,ERIS
+	Ë		>	-Ë,ERIMIS
+	Ë		>	-Ë,ERYSE
+
+	U O		>	-UO,ERYS	# seserys
+	U O		>	-UO,ERØ
+	U O		>	-UO,ERIMS
+	U O		>	-UO,ERIS
+	U O		>	-UO,ERIMIS
+	U O		>	-UO,ERYSE
+
+
+##############################################################################
+# Daugiskaitiniai daiktavardþiai
+# 
+	
+	#Y S		>	-YS,YS		# sultys
+	# dgsk. K.: /I arba /K
+	Y S		>	-YS,IMS		# sultys > sultims	
+	Y S		>	-YS,IS
+	Y S		>	-YS,IMIS
+	Y S		>	-YS,YSE
+
+
+
+
+		#####################################
+		#####################################
+
+
+			       flag *I:
+
+		#####################################
+		#####################################
+
+
+##############################################################################
+#  ¥Minkðtasis´ (/V arba /M) daiktavardþiø dgsk. kilmininko linksnis:
+#
+#  (kieta)			 (minkðta)
+#  aus-is > aus-ø 	 	 ak-is > ak-iø 
+#  nakt-is > nakt-ø 	 	 av-is > av-iø
+#  dant-is > dant-ø              þvër-is > þvër-iø  
+#
+
+	[^DT] I S	>	-S,Ø		# akis > akiø; þvëriø
+	D I S		>	-IS,ÞIØ		# ðirdis > ðirdþiø
+	T I S		>	-TIS,ÈIØ	# valtis > valèiø
+
+	## dgsk. daiktavardþiai
+	[^DT] Y S	>	-YS,IØ		# trûnys > trûniø
+	D Y S		>	-YS,ÞIØ		# suodys > suodþiø
+	T Y S		>	-TYS,ÈIØ	# sultys > sulèiø
+
+
+
+		#####################################
+		#####################################
+
+			       flag *K:
+
+		#####################################
+		#####################################
+
+
+##############################################################################
+#  ¥Kietasis´ (/V arba /M) daiktavardþiø dgsk. kilmininko linksnis:
+#
+#  (kieta)			 (minkðta)
+#  aus-is > aus-ø 	 	 ak-is > ak-iø 
+#  nakt-is > nakt-ø 	 	 av-is > av-iø
+#  dant-is > dant-ø              þvër-is > þvër-iø  
+#
+
+	I S		>	-IS,Ø		# ausis > ausø; dantø
+
+	## dgsk. daiktavardþiai
+	Y S		>	-YS,Ø		# durys > durø
+
+
+
 
 
 #################################################################################
@@ -715,12 +835,12 @@ suffixes
 #
 # 		       BÛDVARDÞIØ GIMINIØ POROS
 # -------------------------------------------------------------------------------
-# Linksniuotë	Paradigma Vyr. galûnë	| Mot. galûnë	Paradigma   Linksniuotë
+# Linksniuotë	Paradigma   Vyr. galûnë	| Mot. galûnë	Paradigma   Linksniuotë
 # -------------------------------------------------------------------------------
-# i(a)		1	  -as		| -a		6	(i)o
-# 		2	  -ias		| -ia		7
-# 		3-4	  -is, -ys	| -ë		9	ë
-# i(u)		5	  -us		| -i		8	io
+#   i(a)	    1	      -as	|     -a	    6	        (i)o
+# 		    2	      -ias	|     -ia	    7
+# 		   3-4	      -is, -ys	|     -ë	    9		ë
+#   i(u)	    5	      -us	|     -i	    8		io
 # -------------------------------------------------------------------------------
 # Pvz.:
 # geras, gera;
