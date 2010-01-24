@@ -1682,8 +1682,8 @@ diametrinis/BN
 diapazonas/D
 diaterminis/BN
 dichromatinis/BN
-didelis/AQN
-didis/AQN
+didelis/AN
+didis/AN
 didmena/D
 didmiestis/D
 didþiulis/B
@@ -2980,7 +2980,7 @@ infrastruktûrinis/BN
 inhaliacija/D
 inicialai/D
 iniciatyva/D
-iniciatyvinis/BQ
+iniciatyvinis/BN
 iniciatyvus/AQN
 iniciatorë/D
 iniciatorius/D
@@ -3448,7 +3448,7 @@ kanalas/D
 kanalizacija/D
 kanalizacinis/BN
 kanapë/D
-kanceliarinis/BQ
+kanceliarinis/BN
 kancerogeninis/BN
 kanèia/D
 kancleris/D
@@ -5572,7 +5572,7 @@ optimistiðkas/AQN
 optimizacija/D
 opus/AQN
 oralinis/BN
-oranþinis/BQ
+oranþinis/BN
 oras/D
 oratorinis/BN
 orderis/D
@@ -5889,8 +5889,8 @@ paskirtis/IM
 paskyra/D
 paskola/D
 paskubomis
-paskutinis/BQN
-paskutinis/D
+paskutinis/BN
+#paskutinis/D
 paslaptingas/AQN
 paslaptis/MI
 paslauga/D
@@ -8770,7 +8770,7 @@ terapeutas/D
 terapija/D
 tercetas/D
 teritorija/D
-teritorinis/BQ
+teritorinis/BN
 terjeras/D
 terminalas/D
 terminalinis/BN
@@ -9545,7 +9545,7 @@ viceprezidentë/D
 videofilmas/D
 vidinis/BN
 vidurdienis/D
-vidurinis/BQ
+vidurinis/BN
 vidurys/D
 vidurkis/D
 vidurnaktis/D
@@ -9557,7 +9557,7 @@ vidutiniokë/D
 vidutinis/B
 vidutiniðkas/AQN
 viela/D
-vienalaikis/BQ
+vienalaikis/BN
 vienalytis/BND
 vienareikðmis/BN
 vienareikðmiðkas/AQN
