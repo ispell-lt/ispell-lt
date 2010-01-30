@@ -1108,7 +1108,7 @@ bespalvis/BN
 betarpiðkas/AQN
 betonas/D
 betoninis/B
-beturtis/BD
+beturtis/D
 bevaisis/B
 bevardis/BND
 bevertis/BD
@@ -2868,7 +2868,7 @@ ieðkovë/D
 ieðmininkas/D
 ieðmininkë/D
 ieva/D
-ágaliotinis/B
+ágaliotinis/BD
 ágaliotojas/D
 ágeidis/D
 ágriova/D
@@ -3273,7 +3273,7 @@ jausmas/D
 jautis/D
 jautrumas/D
 jautrus/AQN
-javainis/BN
+javinis/BN
 javas/D
 jëga/D
 jëgos/D
@@ -4845,7 +4845,8 @@ maudynës/D
 mauras/DN
 mauriðkas/AQN
 maþakraujystë/D
-maþametis/BND
+maþametis/D
+maþametë/D
 maþas/AQN
 maþens
 mazgas/DN
@@ -6179,7 +6180,8 @@ pilis/IM
 pilkapis/D
 pilkas/AQ
 pilkuma/D
-pilnametis/BND
+pilnametis/D
+pilnametë/D
 pilnametystë/DN
 pilnas/AQN
 pilnateisis/BN
@@ -7454,7 +7456,7 @@ saujelë/D
 ðauksmininkas/D
 ðaukðtas/D
 ðaukðtelis/D
-ðauktinis/BN
+ðauktinis/BND
 ðauktukas/D
 saulë/D
 ðaulë/D
@@ -7492,7 +7494,8 @@ savaip
 savaitë/D
 savaitgalis/D
 savaitinis/B
-savanaudis/BND			## (bûdvardþiams trûksta vietininko ir ðauksmininko)
+savanaudis/D
+savanaudë/D
 savanoris/D
 savanoriðkas/AQN
 savarankiðkas/AQN
@@ -8319,7 +8322,8 @@ stipendija/D
 stipinas/D
 stiprintuvas/D
 stiprybë/D
-stipruolis/B
+stipruolis/D
+stipruolë/D
 stiprus/AQN
 stiuardesë/D
 styga/D

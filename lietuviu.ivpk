@@ -5156,7 +5156,7 @@ atjaunëjo/PNX
 atjaunëti/TNX
 atjausti/TNX
 atjauta/D
-atjautus/AQN
+atjautus/AN
 atjautë/PNX
 atjauèia/ENX
 atjoja/ENX
@@ -7029,8 +7029,8 @@ atþagariomis
 atþagarioti/TNX
 atþagaris/BN
 atþagaris/D
-atþagariumas/D
 atþagarë/D
+atþagariumas/D
 atþagarðeris/D
 atþagarðerë/D
 atþaibavo/PNX
@@ -8612,6 +8612,7 @@ bepienë/D
 bepig
 bepigu
 bepinigis/BN
+bepinigis/D
 bepinigë/D
 bepirðtis/D
 bepirðtë/D
@@ -9155,6 +9156,7 @@ blazgatija/ENX
 blazgatijo/YNX
 blazgatyti/TWNX
 blaðka/D
+blaðkas/D
 blaðko/ENX
 blaðko/ESX
 blaðkosi/E
@@ -10369,7 +10371,8 @@ bûdas/D
 bûdina/ENX
 bûdingas/AQN
 bûdingumas/D
-bûdininkas/AQN
+bûdininkas/D
+bûdininkë/D
 bûdino/PNX
 bûdinti/TNX
 bûdinys/D
@@ -12033,7 +12036,7 @@ deðinas/AQN
 deðiniarankis/D
 deðiniarankë/D
 deðininis/BN
-deðinys/AQN
+#deðinys/AQN		# iðkaitytas; þr. lietuviu.aff /Q koment.
 deðinë/D
 deðinëja/ENX
 deðinëjo/PNX
@@ -12083,7 +12086,7 @@ didaktika/D
 didaktinis/BN
 didburnis/BN
 didburë/D
-didelis/AN
+#didelis/AN		# iðkaitytas; þr. lietuviu.aff /A koment.
 didenybë/D
 didgalvis/BN
 didikas/D
@@ -12094,7 +12097,7 @@ didingumas/D
 didino/PNX
 didinti/TNX
 didintuvas/D
-didis/AQN
+#didis/AQN		# iðkaitytas; þr. lietuviu.aff /Q koment.
 didlaukis/D
 didlaukë/D
 didmeistris/D
@@ -19660,7 +19663,7 @@ ikringas/AQN
 ikrius/D
 ikrë/D
 iktolinis/BN
-ikvienas/AQN
+ikvienas/AN
 ikðiol
 ikðiolei
 ikðiolinis/BN
@@ -20176,7 +20179,8 @@ inþinierë/D
 ipritas/D
 ir
 iracionalus/AQN
-iranietis/BN
+iranietis/D
+iranietë/D
 iranënas/D
 iranënë/D
 irgi
@@ -26415,7 +26419,7 @@ kairumas/D
 kairuolis/D
 kairuolë/D
 kairus/AQN
-kairys/AQN
+#kairys/AQN		# iðkaitytas; þr. lietuviu.aff /Q koment.
 kairys/D
 kairë/D
 kairëja/ENX
@@ -49958,7 +49962,7 @@ pasitrina/ENX
 pasitrinti/TNX
 pasitrynë/PNX
 pasiturimas/AQN
-pasiturintis/AN
+#pasiturintis/AN	# þr. lietuviu.aff /A koment.
 pasitursina/ENX
 pasitursino/PNX
 pasitursinti/TNX
@@ -92137,6 +92141,7 @@ vislumas/D
 vislus/AQN
 viso/PNX
 visokeriopas/AQN
+visokiausias/AN
 visokeriopumas/D
 visovë/D
 vispusiðkas/AQN
