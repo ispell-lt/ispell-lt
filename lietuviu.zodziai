@@ -298,7 +298,7 @@ anekdotinis/BN
 anekdotas/D
 anekdotinis/BN
 anekdotiðkas/ANQ
-aneksuotas/AN
+#aneksuotas/AN		# yra aneksuoti/T
 anemiðkas/ANQ
 anestetikas/D
 anestezija/D
@@ -484,7 +484,7 @@ apgavikë/D
 apgavikiðkas/ANQ
 apgavystë/D
 apgrabus/ANQ
-apgraibomis/BN
+apgraibomis/N
 apibrëþtis/MI
 apibrëþtumas/D
 apikalinis/BN
@@ -505,7 +505,6 @@ apytikslis/BN
 apytuðtis/B
 apyvarta/D
 apyvartos/D
-apkaltinamas/AQN
 apkepas/D
 apklausa/D
 apkrova/D
@@ -1318,7 +1317,7 @@ buveinë/D
 cechas/D
 ceilonietë/DN
 ceilonietis/DN
-ceilonietiðkas/AQN
+ceilonietiðkas/AN
 èekas/D
 èekis/D
 èekiðkas/ANQ
@@ -1907,7 +1906,6 @@ durtuvas/D
 duðas/D
 duslus/AQN
 dusulys/D
-dûþtantis/BN
 dvaras/D
 dvasia/D
 dvasingas/AQN
@@ -2499,7 +2497,6 @@ gelmë/D
 gelminis/BN
 gelsvas/AQ
 geltonas/AQ
-gelþinis/BN
 gemalinis/BN
 genas/D
 generalinis/B
@@ -2814,7 +2811,7 @@ higieninis/BN
 higienistas/D
 himnas/D
 hiperbolinis/BN
-hiperbolizuotas/AQN
+hiperbolizuotas/AN
 hipertonija/D
 hipnozë/D
 hipnozinis/BN
@@ -4432,7 +4429,7 @@ lakðtingala/D
 lakûnas/D
 lakus/AQN
 laminarinis/BN
-laminuotas/AQN
+laminuotas/AN
 landynë/D
 langas/D
 langelis/D
@@ -5401,7 +5398,7 @@ niuansas/D
 niûfaundlendas/D
 niûrus/AQN
 niurzglys/D
-nykstamas/AQN
+nykstamas/AN
 nykðtys/D
 nykus/AQN
 nomenklatûrinis/BN
@@ -6284,7 +6281,6 @@ platyn
 platus/AQN
 plaukas/D
 plaukikas/D
-plaukiojantis/B
 plaukuèiai/D
 plauðinis/B
 plaustelis/D
@@ -6465,7 +6461,7 @@ pradinukë/D
 pradmenys/D
 pradþia/D
 pradþiamokslis/DN
-praeitas/A
+#praeitas/A
 praeitis/MI
 praeivë/D
 praeivis/D
@@ -7646,7 +7642,6 @@ serozinis/BN
 serpantinas/D
 sertifikatas/D
 sertifikatinis/B
-sertifikuotas/AN
 serverinis/BN
 serveris/D
 servetëlë/D
@@ -7878,7 +7873,6 @@ skarmalas/D
 skarmalë/D
 skarmalius/D
 skatikas/D
-skatintinas/AN
 skaudus/AQN
 skausmas/D
 skausmingas/AQN
@@ -8480,7 +8474,6 @@ sutuoktinis/D
 sutuoktuvës/D
 suvalkietë/D
 suvalkietis/D
-suvarstomas/AQN
 suvenyras/D
 suvestinë/D
 ðûvis/D
@@ -8872,7 +8865,7 @@ tinklinis/BN
 tipas/D
 tipinis/BN
 tipiðkas/AQN
-tipizuotas/AQN
+tipizuotas/AN
 tipografinis/BN
 tirada/D
 tiras/D
