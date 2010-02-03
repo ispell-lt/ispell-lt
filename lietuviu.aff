@@ -5086,6 +5086,8 @@ suffixes
 # (mot. g. dgsk. vardininkas sutampa su mot. g. vnsk. kilmininku)
 # (mot. g. dgsk. kilmininkas sutampa su vyr. g. dgsk. kilmininku)
 #
+# (sngr. dalyviø mot. gim. vnsk. sutampa su bût. kart. laiko padalyviu)
+#
 
 	# vnsk., vyr. gim.
 	O		>	-O,ÆS		# ðoko > ðokæs
@@ -5152,8 +5154,25 @@ suffixes
 
 
 	## Sangràþiniai ##
-	O S I		>	-OSI,ÆSI	# suposi > supæsi
-	Ë S I		>	-ËSI,ÆSI	# tarësi > taræsi
+
+	# vnsk., vyr. gim.
+	Ë S I		>	-ËSI,ÆSIS	# tarësi > taræsis
+	O S I		>	-OSI,ÆSIS	# suposi > supæsis
+
+	# vnsk., mot. gim.
+	#Ë S I		>	-ËSI,USIS	# tarusis
+	#O S I		>	-OSI,USIS	# supusis
+
+	# dgsk., vyr. gim.
+	Ë S I		>	-ËSI,ÆSI	# taræsi
+	O S I		>	-OSI,ÆSI	# supæsi
+
+	# dgsk., mot. gim.
+	Ë S I		>	-ËSI,USIOSI	# tarusiosi
+	O S I		>	-OSI,USIOSI	# supusiosi
+
+
+
 
 
 
@@ -5233,8 +5252,10 @@ suffixes
 ##############################################################################
 # Daiktavardþiai su priesaga -imas
 #
-# (sangràþinës formos daugiskaita turi tik vardininko, kilmininko ir 
-#  ðauksmininko linksnius, o kiti ir nevartotini ir abejotini)
+# L.V.: sangràþinës formos daugiskaita turi tik vardininko ir kilmininko 
+# linksnius ir tai retais atvejais, nes abstrakcijos (abstrakèios reikðmës 
+# daiktavardþiai) daþniausiai neskaièiuojamos; kiti linksniai ir nevartotini 
+# ir turbût neteisingi...
 #
 
 	## Nesangràþiniai ##
@@ -5321,7 +5342,7 @@ suffixes
 #  dalyviai suminkðtëja: 
 #
 #     valg(-yti,-ë), dar(-yti,-ë) > valg(-IUsius,-IUsiems), 
-#                                   dar(-IUsius,-IUsiems) ...
+#                                    dar(-IUsius,-IUsiems) ...
 #
 #  plg.: neð(-ti,-ë), ðok(-ti,-o) > neð(-Usius,-Usiems), ðok(-Usius,-Usiems)
 #
@@ -5401,7 +5422,7 @@ suffixes
 	[^DT] Ë S I	>	-ËSI,IAUSI	# mokësi > mokiausi
 
   	# Vnsk., II asm.
-	Ë S I		>	-SI,EISI	# mokeisi
+	Ë S I		>	-ËSI,EISI	# mokeisi
 
   	# Dgsk., I asm.
 	Ë S I		>	-SI,MËS		# mokëmës
@@ -5432,6 +5453,8 @@ suffixes
 # (mot. g. dgsk. vardininkas sutampa su mot. g. vnsk. kilmininku)
 # (mot. g. dgsk. kilmininkas sutampa su vyr. g. dgsk. kilmininku)
 #
+# (sngr. dalyviø mot. gim. vnsk. sutampa su bût. kart. laiko padalyviu)
+# 
 
 
 	# vnsk., vyr. gim.
@@ -5554,6 +5577,26 @@ suffixes
 	T Ë		>	-TË,ÈIUSIAS
 	T Ë		>	-TË,ÈIUSIOMIS
 	T Ë		>	-TË,ÈIUSIOSE
+
+
+	## Sangràþiniai ##
+
+	# vnsk., vyr. gim.
+	Ë S I		>	-ËSI,ÆSIS	# taisësi > taisæsis
+	O S I		>	-OSI,ÆSIS	# gëdijosi > gëdijæsis
+
+	# vnsk., mot. gim.
+	#Ë S I		>	-ËSI,IUSIS	# taisiusis
+	#O S I		>	-OSI,USIS	# gëdijusis
+
+	# dgsk., vyr. gim.
+	Ë S I		>	-ËSI,ÆSI	# taisæsi
+	O S I		>	-OSI,ÆSI	# gëdijæsi
+
+	# dgsk., mot. gim.
+	Ë S I		>	-ËSI,IUSIOSI	# taisiusiosi
+	O S I		>	-OSI,USIOSI	# gëdijusiosi
+
 
 
 
@@ -5692,8 +5735,10 @@ suffixes
 ##############################################################################
 # Daiktavardþiai su priesagomis -imas, -ymas
 #
-# (sangràþinës formos daugiskaita turi tik vardininko, kilmininko ir 
-#  ðauksmininko linksnius, o kiti ir nevartotini ir abejotini)
+# L.V.: sangràþinës formos daugiskaita turi tik vardininko ir kilmininko 
+# linksnius ir tai retais atvejais, nes abstrakcijos (abstrakèios reikðmës 
+# daiktavardþiai) daþniausiai neskaièiuojamos; kiti linksniai ir nevartotini 
+# ir turbût neteisingi...
 #
 
 	## Nesangràþiniai ##
