@@ -4614,82 +4614,89 @@ suffixes
         [AOI] S I 	>       -SI,MASI	# einasi > einamasi
 
 
+
 ##############################################################################
-# Bûdvardþiø aukðtesnysis laipsnis
+#  L.V.: https://blueprints.launchpad.net/ispell-lt/+spec/verb2adjective
+#  (atsisakyta bûdvarþiø (laipsniø) darybos, nes ji netikslinga)
 #
-# Bûdvardþiø darybos èia (turbût) nereikia. T.y. savaime bûdvardinti visø 
-# dalyviø nevertëtø, nes taip prikuriama (daug) nenaudojamø, dirbtiniø formø.
-# Pvz.: norimesnis, tylimesnis, sakomesnis ir t.t.
+#  Jei ateityje prisireiktø (vargu), tai reikëtø paðalinti komentaro þymas
+#  #~N5~
+##############################################################################
+
+
+##############################################################################
+# Neávardþiuotiniø bûdvardþiø aukðtesnysis laipsnis
 #
 # (mot. g. dgsk. vardininkas sutampa su mot. g. dgsk. kilmininku)
 # (mot. g. dgsk. kilmininkas sutampa su vyr. g. dgsk. kilmininku)
 #
-	# vnsk., vyr. gim.
-	[AO]	 	>	MESNIS		# geidþia > geidþiamesnis
-	[AO]		>	MESNIO
-	[AO]		>	MESNIAM
-	[AO]		>	MESNÁ
-	[AO]		>	MESNIU
-	[AO]		>	MESNIAME
 
-	[^S] I		>	MESNIS		# myli > mylimesnis
-	[^S] I		>	MESNIO
-	[^S] I		>	MESNIAM
-	[^S] I		>	MESNÁ
-	[^S] I		>	MESNIU
-	[^S] I		>	MESNIAME
+#~N5~	# vnsk., vyr. gim.
+#~N5~	[AO]	 	>	MESNIS		# geidþia > geidþiamesnis
+#~N5~	[AO]		>	MESNIO
+#~N5~	[AO]		>	MESNIAM
+#~N5~	[AO]		>	MESNÁ
+#~N5~	[AO]		>	MESNIU
+#~N5~	[AO]		>	MESNIAME
 
-	# vnsk., mot. gim.
-	[AO]		>	MESNË		# geidþia > geidþiamesnë
-	[AO]		>	MESNËS
-	[AO]		>	MESNEI
-	[AO]		>	MESNÆ
-	[AO]		>	MESNE
-	[AO]		>	MESNËJE
-	[AO]		>	MESNËJ
+#~N5~	[^S] I		>	MESNIS		# myli > mylimesnis
+#~N5~	[^S] I		>	MESNIO
+#~N5~	[^S] I		>	MESNIAM
+#~N5~	[^S] I		>	MESNÁ
+#~N5~	[^S] I		>	MESNIU
+#~N5~	[^S] I		>	MESNIAME
 
-	[^S] I		>	MESNË		# myli > mylimesnë
-	[^S] I		>	MESNËS
-	[^S] I		>	MESNEI
-	[^S] I		>	MESNÆ
-	[^S] I		>	MESNE
-	[^S] I		>	MESNËJE
-	[^S] I		>	MESNËJ
+#~N5~	# vnsk., mot. gim.
+#~N5~	[AO]		>	MESNË		# geidþia > geidþiamesnë
+#~N5~	[AO]		>	MESNËS
+#~N5~	[AO]		>	MESNEI
+#~N5~	[AO]		>	MESNÆ
+#~N5~	[AO]		>	MESNE
+#~N5~	[AO]		>	MESNËJE
+#~N5~	[AO]		>	MESNËJ
+
+#~N5~	[^S] I		>	MESNË		# myli > mylimesnë
+#~N5~	[^S] I		>	MESNËS
+#~N5~	[^S] I		>	MESNEI
+#~N5~	[^S] I		>	MESNÆ
+#~N5~	[^S] I		>	MESNE
+#~N5~	[^S] I		>	MESNËJE
+#~N5~	[^S] I		>	MESNËJ
 
 
-	# dgsk., vyr. gim.
-	[AO]		>	MESNI		# geidþia > geidþiamesni
-	[AO]		>	MESNIØ
-	[AO]		>	MESNIEMS
-	[AO]		>	MESNIUS
-	[AO]		>	MESNIAIS
-	[AO]		>	MESNIUOSE
+#~N5~	# dgsk., vyr. gim.
+#~N5~	[AO]		>	MESNI		# geidþia > geidþiamesni
+#~N5~	[AO]		>	MESNIØ
+#~N5~	[AO]		>	MESNIEMS
+#~N5~	[AO]		>	MESNIUS
+#~N5~	[AO]		>	MESNIAIS
+#~N5~	[AO]		>	MESNIUOSE
 
-	[^S] I		>	MESNI		# myli > mylimesni
-	[^S] I		>	MESNIØ
-	[^S] I		>	MESNIEMS
-	[^S] I		>	MESNIUS
-	[^S] I		>	MESNIAIS
-	[^S] I		>	MESNIUOSE
+#~N5~	[^S] I		>	MESNI		# myli > mylimesni
+#~N5~	[^S] I		>	MESNIØ
+#~N5~	[^S] I		>	MESNIEMS
+#~N5~	[^S] I		>	MESNIUS
+#~N5~	[^S] I		>	MESNIAIS
+#~N5~	[^S] I		>	MESNIUOSE
 
-	# dgsk., mot. gim.
-	#[AO]		>	MESNËS		# geidþia > geidþiamesnës
-	#[AO]		>	MESNIØ
-	[AO]		>	MESNËMS
-	[AO]		>	MESNES
-	[AO]		>	MESNËMIS
-	[AO]		>	MESNËSE
+#~N5~	# dgsk., mot. gim.
+#~N5~	#[AO]		>	MESNËS		# geidþia > geidþiamesnës
+#~N5~	#[AO]		>	MESNIØ
+#~N5~	[AO]		>	MESNËMS
+#~N5~	[AO]		>	MESNES
+#~N5~	[AO]		>	MESNËMIS
+#~N5~	[AO]		>	MESNËSE
 
-	#[^S] I		>	MESNËS		# myli > mylimesnës
-	#[^S] I		>	MESNIØ
-	[^S] I		>	MESNËMS
-	[^S] I		>	MESNES
-	[^S] I		>	MESNËMIS
-	[^S] I		>	MESNËSE
+#~N5~	#[^S] I		>	MESNËS		# myli > mylimesnës
+#~N5~	#[^S] I		>	MESNIØ
+#~N5~	[^S] I		>	MESNËMS
+#~N5~	[^S] I		>	MESNES
+#~N5~	[^S] I		>	MESNËMIS
+#~N5~	[^S] I		>	MESNËSE
 
 
 ##############################################################################
-# Bûdvardþiø aukðèiausias laipsnis
+# Neávardþiuotiniø bûdvardþiø aukðèiausiasis laipsnis
 #
 #  (mot. g. vnsk. galininkas sutampa su vyr. g. vnsk. galininku)
 #  (mot. g. vnsk. ánagininkas sutampa su mot. g. vnsk. vardininku)
@@ -4697,71 +4704,72 @@ suffixes
 #  (mot. g. dgsk. kilmininkas sutampa su vyr. g. dgsk. kilmininku)
 #  (mot. g. dgsk. galininkas sutampa su vyr. g. vnsk. vardininku)
 #
-	# vnsk., vyr. gim.
-	[AO]	      	>	MIAUSIAS	# geidþia > geidþiamiausias
-	[AO]		>	MIAUSIO
-	[AO]		>	MIAUSIAM
-	[AO]		>	MIAUSIÀ
-	[AO]		>	MIAUSIU
-	[AO]		>	MIAUSIAME
 
-	[^S] I		>	MIAUSIAS	# myli > mylimiausias
-	[^S] I		>	MIAUSIO
-	[^S] I		>	MIAUSIAM
-	[^S] I		>	MIAUSIÀ
-	[^S] I		>	MIAUSIU
-	[^S] I		>	MIAUSIAME
+#~N5~	# vnsk., vyr. gim.
+#~N5~	[AO]	      	>	MIAUSIAS	# geidþia > geidþiamiausias
+#~N5~	[AO]		>	MIAUSIO
+#~N5~	[AO]		>	MIAUSIAM
+#~N5~	[AO]		>	MIAUSIÀ
+#~N5~	[AO]		>	MIAUSIU
+#~N5~	[AO]		>	MIAUSIAME
 
-	# vnsk., mot. gim.
-	[AO]		>	MIAUSIA		# geidþia > geidþiamiausia
-	[AO]		>	MIAUSIOS
-	[AO]		>	MIAUSIAI
-	#[AO]		>	MIAUSIÀ
-	#[AO]		>	MIAUSIA
-	[AO]		>	MIAUSIOJE
-	[AO]		>	MIAUSIOJ
+#~N5~	[^S] I		>	MIAUSIAS	# myli > mylimiausias
+#~N5~	[^S] I		>	MIAUSIO
+#~N5~	[^S] I		>	MIAUSIAM
+#~N5~	[^S] I		>	MIAUSIÀ
+#~N5~	[^S] I		>	MIAUSIU
+#~N5~	[^S] I		>	MIAUSIAME
 
-	[^S] I		>	MIAUSIA		# myli > mylimiausia
-	[^S] I		>	MIAUSIOS
-	[^S] I		>	MIAUSIAI
-	#[^S] I		>	MIAUSIÀ
-	#[^S] I		>	MIAUSIA
-	[^S] I		>	MIAUSIOJE
-	[^S] I		>	MIAUSIOJ
+#~N5~	# vnsk., mot. gim.
+#~N5~	[AO]		>	MIAUSIA		# geidþia > geidþiamiausia
+#~N5~	[AO]		>	MIAUSIOS
+#~N5~	[AO]		>	MIAUSIAI
+#~N5~	#[AO]		>	MIAUSIÀ
+#~N5~	#[AO]		>	MIAUSIA
+#~N5~	[AO]		>	MIAUSIOJE
+#~N5~	[AO]		>	MIAUSIOJ
 
-	# dgsk., vyr. gim.
-	[AO]		>	MIAUSI		# geidþia > geidþiamiausi
-	[AO]		>	MIAUSIØ
-	[AO]		>	MIAUSIEMS
-	[AO]		>	MIAUSIUS
-	[AO]		>	MIAUSIAIS
-	[AO]		>	MIAUSIUOSE
+#~N5~	[^S] I		>	MIAUSIA		# myli > mylimiausia
+#~N5~	[^S] I		>	MIAUSIOS
+#~N5~	[^S] I		>	MIAUSIAI
+#~N5~	#[^S] I		>	MIAUSIÀ
+#~N5~	#[^S] I		>	MIAUSIA
+#~N5~	[^S] I		>	MIAUSIOJE
+#~N5~	[^S] I		>	MIAUSIOJ
 
-	[^S] I		>	MIAUSI		# myli > mylimiausi
-	[^S] I		>	MIAUSIØ
-	[^S] I		>	MIAUSIEMS
-	[^S] I		>	MIAUSIUS
-	[^S] I		>	MIAUSIAIS
-	[^S] I		>	MIAUSIUOSE
+#~N5~	# dgsk., vyr. gim.
+#~N5~	[AO]		>	MIAUSI		# geidþia > geidþiamiausi
+#~N5~	[AO]		>	MIAUSIØ
+#~N5~	[AO]		>	MIAUSIEMS
+#~N5~	[AO]		>	MIAUSIUS
+#~N5~	[AO]		>	MIAUSIAIS
+#~N5~	[AO]		>	MIAUSIUOSE
 
-	# dgsk., mot. gim.
-	#[AO]		>	MIAUSIOS	# geidþia > geidþiamiausios
-	#[AO]		>	MIAUSIØ
-	[AO]		>	MIAUSIOMS
-	#[AO]		>	MIAUSIAS
-	[AO]		>	MIAUSIOMIS
-	[AO]		>	MIAUSIOSE
+#~N5~	[^S] I		>	MIAUSI		# myli > mylimiausi
+#~N5~	[^S] I		>	MIAUSIØ
+#~N5~	[^S] I		>	MIAUSIEMS
+#~N5~	[^S] I		>	MIAUSIUS
+#~N5~	[^S] I		>	MIAUSIAIS
+#~N5~	[^S] I		>	MIAUSIUOSE
 
-	#[^S] I		>	MIAUSIOS	# myli > mylimiausios
-	#[^S] I		>	MIAUSIØ
-	[^S] I		>	MIAUSIOMS
-	#[^S] I		>	MIAUSIAS
-	[^S] I		>	MIAUSIOMIS
-	[^S] I		>	MIAUSIOSE
+#~N5~	# dgsk., mot. gim.
+#~N5~	#[AO]		>	MIAUSIOS	# geidþia > geidþiamiausios
+#~N5~	#[AO]		>	MIAUSIØ
+#~N5~	[AO]		>	MIAUSIOMS
+#~N5~	#[AO]		>	MIAUSIAS
+#~N5~	[AO]		>	MIAUSIOMIS
+#~N5~	[AO]		>	MIAUSIOSE
+
+#~N5~	#[^S] I		>	MIAUSIOS	# myli > mylimiausios
+#~N5~	#[^S] I		>	MIAUSIØ
+#~N5~	[^S] I		>	MIAUSIOMS
+#~N5~	#[^S] I		>	MIAUSIAS
+#~N5~	[^S] I		>	MIAUSIOMIS
+#~N5~	[^S] I		>	MIAUSIOSE
 
 
 ##############################################################################
-# Esamojo laiko neveikiamojo dalyviø ávardþiuotinës formos
+# Esamojo laiko neveikiamøjø dalyviø ávardþiuotinës formos
 #
 # (mot. g. dgsk. vardininkas sutampa su mot. g. vnsk. kilmininku)
 # (mot. g. dgsk. kilmininkas sutampa su vyr. g. dgsk. kilmininku)
@@ -4831,80 +4839,81 @@ suffixes
 
 
 ##############################################################################
-# Aukðtesnysis laipsnis
+# Ávardþiuotiniø bûdvardþiø aukðtesnysis laipsnis
 #
-# senesnëse ispell versijose (iki 3.3.02) kai kurios taisyklës generuodavo (?)
-# perspëjimus dël per ilgø eiluèiø (komentarai: ispell warn.: "too long")
+# L.V.: senesnëse ispell versijose (iki 3.3.02) kai kurios taisyklës 
+# generuodavo (?) perspëjimus dël per ilgø eiluèiø 
+# (komentarai: ispell warn.: "too long")
 # 
 # (mot. g. dgsk. vardininkas sutampa su mot. g. vnsk. kilmininku)
 # (mot. g. dgsk. kilmininkas sutampa su vyr. g. dgsk. kilmininku)
 #
 
-	# vnsk., vyr. gim.
-	[AO]		>	MESNYSIS	# geidþia > geidþiamesnysis
-	[AO]		>	MESNIOJO
-	[AO]		>	MESNIAJAM
-	[AO]		>	MESNÁJÁ
-	[AO]		>	MESNIUOJU
-	[AO]		>	MESNIAJAME
+#~N5~	# vnsk., vyr. gim.
+#~N5~	[AO]		>	MESNYSIS	# geidþia > geidþiamesnysis
+#~N5~	[AO]		>	MESNIOJO
+#~N5~	[AO]		>	MESNIAJAM
+#~N5~	[AO]		>	MESNÁJÁ
+#~N5~	[AO]		>	MESNIUOJU
+#~N5~	[AO]		>	MESNIAJAME
 
-	[^S] I		>	MESNYSIS	# myli > mylimesnysis
-	[^S] I		>	MESNIOJO
-	[^S] I		>	MESNIAJAM
-	[^S] I		>	MESNÁJÁ
-	[^S] I		>	MESNIUOJU
-	[^S] I		>	MESNIAJAME
+#~N5~	[^S] I		>	MESNYSIS	# myli > mylimesnysis
+#~N5~	[^S] I		>	MESNIOJO
+#~N5~	[^S] I		>	MESNIAJAM
+#~N5~	[^S] I		>	MESNÁJÁ
+#~N5~	[^S] I		>	MESNIUOJU
+#~N5~	[^S] I		>	MESNIAJAME
 
-	# vnsk., mot. gim.
-	[AO]		>	MESNIOJI	# geidþia > geidþiamesnioji
-	[AO]		>	MESNIOSIOS
-	[AO]		>	MESNIAJAI
-	[AO]		>	MESNIÀJÀ
-	[AO]		>	MESNIÀJA
-	[AO]		>	MESNIOJOJE
-	[AO]		>	MESNIOJOJ
+#~N5~	# vnsk., mot. gim.
+#~N5~	[AO]		>	MESNIOJI	# geidþia > geidþiamesnioji
+#~N5~	[AO]		>	MESNIOSIOS
+#~N5~	[AO]		>	MESNIAJAI
+#~N5~	[AO]		>	MESNIÀJÀ
+#~N5~	[AO]		>	MESNIÀJA
+#~N5~	[AO]		>	MESNIOJOJE
+#~N5~	[AO]		>	MESNIOJOJ
 
-	[^S] I		>	MESNIOJI	# myli > mylimesnioji
-	[^S] I		>	MESNIOSIOS
-	[^S] I		>	MESNIAJAI
-	[^S] I		>	MESNIÀJÀ
-	[^S] I		>	MESNIÀJA
-	[^S] I		>	MESNIOJOJE
-	[^S] I		>	MESNIOJOJ
+#~N5~	[^S] I		>	MESNIOJI	# myli > mylimesnioji
+#~N5~	[^S] I		>	MESNIOSIOS
+#~N5~	[^S] I		>	MESNIAJAI
+#~N5~	[^S] I		>	MESNIÀJÀ
+#~N5~	[^S] I		>	MESNIÀJA
+#~N5~	[^S] I		>	MESNIOJOJE
+#~N5~	[^S] I		>	MESNIOJOJ
 
-	# dgsk., vyr. gim.
-	[AO]		>	MESNIEJI	# geidþia > geidþiamesnieji
-	[AO]		>	MESNIØJØ
-	[AO]		>	MESNIESIEMS
-	[AO]		>	MESNIUOSIUS
-	[AO]		>	MESNIAISIAIS
-	[AO]		>	MESNIUOSIUOSE	# ispell warn.: "too long"
+#~N5~	# dgsk., vyr. gim.
+#~N5~	[AO]		>	MESNIEJI	# geidþia > geidþiamesnieji
+#~N5~	[AO]		>	MESNIØJØ
+#~N5~	[AO]		>	MESNIESIEMS
+#~N5~	[AO]		>	MESNIUOSIUS
+#~N5~	[AO]		>	MESNIAISIAIS
+#~N5~	[AO]		>	MESNIUOSIUOSE	# ispell warn.: "too long"
 
-	[^S] I		>	MESNIEJI	# myli > mylimesnieji
-	[^S] I		>	MESNIØJØ
-	[^S] I		>	MESNIESIEMS
-	[^S] I		>	MESNIUOSIUS
-	[^S] I		>	MESNIAISIAIS
-	[^S] I		>	MESNIUOSIUOSE	# ispell warn.: "too long"
+#~N5~	[^S] I		>	MESNIEJI	# myli > mylimesnieji
+#~N5~	[^S] I		>	MESNIØJØ
+#~N5~	[^S] I		>	MESNIESIEMS
+#~N5~	[^S] I		>	MESNIUOSIUS
+#~N5~	[^S] I		>	MESNIAISIAIS
+#~N5~	[^S] I		>	MESNIUOSIUOSE	# ispell warn.: "too long"
 
-	# dgsk., mot. gim.
-	#[AO]		>	MESNIOSIOS	# geidþia > geidþiamesniosios
-	#[AO]		>	MESNIØJØ
-	[AO]		>	MESNIOSIOMS
-	[AO]		>	MESNIÀSIAS
-	[AO]		>	MESNIOSIOMIS
-	[AO]		>	MESNIOSIOSE
+#~N5~	# dgsk., mot. gim.
+#~N5~	#[AO]		>	MESNIOSIOS	# geidþia > geidþiamesniosios
+#~N5~	#[AO]		>	MESNIØJØ
+#~N5~	[AO]		>	MESNIOSIOMS
+#~N5~	[AO]		>	MESNIÀSIAS
+#~N5~	[AO]		>	MESNIOSIOMIS
+#~N5~	[AO]		>	MESNIOSIOSE
 		
-	#[^S] I		>	MESNIOSIOS	# myli > mylimesnioji
-	#[^S] I		>	MESNIØJØ
-	[^S] I		>	MESNIOSIOMS
-	[^S] I		>	MESNIÀSIAS
-	[^S] I		>	MESNIOSIOMIS
-	[^S] I		>	MESNIOSIOSE
+#~N5~	#[^S] I		>	MESNIOSIOS	# myli > mylimesnioji
+#~N5~	#[^S] I		>	MESNIØJØ
+#~N5~	[^S] I		>	MESNIOSIOMS
+#~N5~	[^S] I		>	MESNIÀSIAS
+#~N5~	[^S] I		>	MESNIOSIOMIS
+#~N5~	[^S] I		>	MESNIOSIOSE
 
 
 ##############################################################################
-# Aukðèiausias laipsnis
+# Ávardþiuotiniø bûdvardþiø aukðèiausiasis laipsnis
 #
 # senesnëse ispell versijose (iki 3.3.02) kai kurios taisyklës generuodavo (?)
 # perspëjimus dël per ilgø eiluèiø (komentarai: ispell warn.: "too long")
@@ -4913,67 +4922,67 @@ suffixes
 # (mot. g. dgsk. kilmininkas sutampa su vyr. g. dgsk. kilmininku)
 #
 
-	# vnsk., vyr. gim.
-	[AO]		>	MIAUSIASIS	# geidþia > geidþiamiausiasis
-	[AO]		>	MIAUSIOJO
-	[AO]		>	MIAUSIAJAM
-	[AO]		>	MIAUSIÀJÁ
-	[AO]		>	MIAUSIUOJU
-	[AO]		>	MIAUSIAJAME
+#~N5~	# vnsk., vyr. gim.
+#~N5~	[AO]		>	MIAUSIASIS	# geidþia > geidþiamiausiasis
+#~N5~	[AO]		>	MIAUSIOJO
+#~N5~	[AO]		>	MIAUSIAJAM
+#~N5~	[AO]		>	MIAUSIÀJÁ
+#~N5~	[AO]		>	MIAUSIUOJU
+#~N5~	[AO]		>	MIAUSIAJAME
 
-	[^S] I		>	MIAUSIASIS	# myli > mylimiausiasis
-	[^S] I		>	MIAUSIOJO
-	[^S] I		>	MIAUSIAJAM
-	[^S] I		>	MIAUSIÀJÁ
-	[^S] I		>	MIAUSIUOJU	
-	[^S] I		>	MIAUSIAJAME
+#~N5~	[^S] I		>	MIAUSIASIS	# myli > mylimiausiasis
+#~N5~	[^S] I		>	MIAUSIOJO
+#~N5~	[^S] I		>	MIAUSIAJAM
+#~N5~	[^S] I		>	MIAUSIÀJÁ
+#~N5~	[^S] I		>	MIAUSIUOJU	
+#~N5~	[^S] I		>	MIAUSIAJAME
 
-	# vnsk., mot. gim.
-	[AO]		>	MIAUSIOJI	# geidþia > geidþiamiausioji
-	[AO]		>	MIAUSIOSIOS
-	[AO]		>	MIAUSIAJAI
-	[AO]		>	MIAUSIÀJÀ
-	[AO]		>	MIAUSIÀJA
-	[AO]		>	MIAUSIOJOJE
-	[AO]		>	MIAUSIOJOJ
+#~N5~	# vnsk., mot. gim.
+#~N5~	[AO]		>	MIAUSIOJI	# geidþia > geidþiamiausioji
+#~N5~	[AO]		>	MIAUSIOSIOS
+#~N5~	[AO]		>	MIAUSIAJAI
+#~N5~	[AO]		>	MIAUSIÀJÀ
+#~N5~	[AO]		>	MIAUSIÀJA
+#~N5~	[AO]		>	MIAUSIOJOJE
+#~N5~	[AO]		>	MIAUSIOJOJ
 
-	[^S] I		>	MIAUSIOJI	# myli > mylimiausioji
-	[^S] I		>	MIAUSIOSIOS
-	[^S] I		>	MIAUSIAJAI
-	[^S] I		>	MIAUSIÀJÀ
-	[^S] I		>	MIAUSIÀJA
-	[^S] I		>	MIAUSIOJOJE
-	[^S] I		>	MIAUSIOJOJ
+#~N5~	[^S] I		>	MIAUSIOJI	# myli > mylimiausioji
+#~N5~	[^S] I		>	MIAUSIOSIOS
+#~N5~	[^S] I		>	MIAUSIAJAI
+#~N5~	[^S] I		>	MIAUSIÀJÀ
+#~N5~	[^S] I		>	MIAUSIÀJA
+#~N5~	[^S] I		>	MIAUSIOJOJE
+#~N5~	[^S] I		>	MIAUSIOJOJ
 
-	# dgsk., vyr. gim.
-	[AO]		>	MIAUSIEJI	# geidþia > geidþiamiausieji
-	[AO]		>	MIAUSIØJØ
-	[AO]		>	MIAUSIESIEMS
-	[AO]		>	MIAUSIUOSIUS
-	[AO]		>	MIAUSIAISIAIS	# ispell warn.: "too long"
-	[AO]		>	MIAUSIUOSIUOSE	# ispell warn.: "too long"
+#~N5~	# dgsk., vyr. gim.
+#~N5~	[AO]		>	MIAUSIEJI	# geidþia > geidþiamiausieji
+#~N5~	[AO]		>	MIAUSIØJØ
+#~N5~	[AO]		>	MIAUSIESIEMS
+#~N5~	[AO]		>	MIAUSIUOSIUS
+#~N5~	[AO]		>	MIAUSIAISIAIS	# ispell warn.: "too long"
+#~N5~	[AO]		>	MIAUSIUOSIUOSE	# ispell warn.: "too long"
 
-	[^S] I		>	MIAUSIEJI	# myli > mylimiausieji
-	[^S] I		>	MIAUSIØJØ
-	[^S] I		>	MIAUSIESIEMS
-	[^S] I		>	MIAUSIUOSIUS
-	[^S] I		>	MIAUSIAISIAIS	# ispell warn.: "too long"
-	[^S] I		>	MIAUSIUOSIUOSE	# ispell warn.: "too long"
+#~N5~	[^S] I		>	MIAUSIEJI	# myli > mylimiausieji
+#~N5~	[^S] I		>	MIAUSIØJØ
+#~N5~	[^S] I		>	MIAUSIESIEMS
+#~N5~	[^S] I		>	MIAUSIUOSIUS
+#~N5~	[^S] I		>	MIAUSIAISIAIS	# ispell warn.: "too long"
+#~N5~	[^S] I		>	MIAUSIUOSIUOSE	# ispell warn.: "too long"
 
-	# dgsk., mot. gim.
-	#[AO]		>	MIAUSIOSIOS	# geidþia > geidþiamiausiosios
-	#[AO]		>	MIAUSIØJØ
-	[AO]		>	MIAUSIOSIOMS
-	[AO]		>	MIAUSIÀSIAS
-	[AO]		>	MIAUSIOSIOMIS	# ispell warn.: "too long"
-	[AO]		>	MIAUSIOSIOSE
+#~N5~	# dgsk., mot. gim.
+#~N5~	#[AO]		>	MIAUSIOSIOS	# geidþia > geidþiamiausiosios
+#~N5~	#[AO]		>	MIAUSIØJØ
+#~N5~	[AO]		>	MIAUSIOSIOMS
+#~N5~	[AO]		>	MIAUSIÀSIAS
+#~N5~	[AO]		>	MIAUSIOSIOMIS	# ispell warn.: "too long"
+#~N5~	[AO]		>	MIAUSIOSIOSE
 
-	#[^S] I		>	MIAUSIOSIOS	# myli > mylimiausiosios
-	#[^S] I		>	MIAUSIØJØ
-	[^S] I		>	MIAUSIOSIOMS
-	[^S] I		>	MIAUSIÀSIAS
-	[^S] I		>	MIAUSIOSIOMIS	# ispell warn.: "too long"
-	[^S] I		>	MIAUSIOSIOSE
+#~N5~	#[^S] I		>	MIAUSIOSIOS	# myli > mylimiausiosios
+#~N5~	#[^S] I		>	MIAUSIØJØ
+#~N5~	[^S] I		>	MIAUSIOSIOMS
+#~N5~	[^S] I		>	MIAUSIÀSIAS
+#~N5~	[^S] I		>	MIAUSIOSIOMIS	# ispell warn.: "too long"
+#~N5~	[^S] I		>	MIAUSIOSIOSE
 
 
 			#######################

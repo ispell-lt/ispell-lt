@@ -3055,3 +3055,49 @@ kairëlesniàja
 kairesniàja
 kairiàja
 kairiausia
+
+
+
+##############################################################################
+# 
+# L.V.: https://blueprints.launchpad.net/ispell-lt/+spec/verb2adjective
+# subûdvardëjusios veiksmaþodþiø ið lietuviu.ivpk formos (bûdvardþiai);
+# afiksø esamojo laiko (/E) taisyklëse atsisakyta bûdvardþiø darybos, nes
+# ne visi (*maþuma* -- ið ~20 tûkst. tik ~ 150) veiksmaþodþiai bûdvardëja, tad 
+# tokia daryba yra netikslinga (kenksminga), nes prigeneruoja labai daug 
+# neteisingø formø.
+# Pastebëtina, kad net ir ðie (~150) bûdvardþiai (nemaþa jø dalis) vargiai gali 
+# bûti (vartojami kaip) kokybiniai, nors morfolema ir mano kitaip. Dël ðios 
+# prieþasties buvo pasiremta tekstynu; kriterijus -- trys daþniausi gramatiniai 
+# linksniai (vardininkas, kilmininkas, galininkas), bent du ið jø.
+#
+apèiuopiamas/AQN
+geidþiamas/AQN
+juntamas/AQN
+mylimas/AQN
+neigiamas/AQN
+pakenèiamas/AQN
+pastebimas/AQN
+patikimas/AQN
+prieinamas/AQN
+priklausomas/AQN
+sukalbamas/AQN
+suprantamas/AQN
+teigiamas/AQN
+tinkamas/AQN
+ámanomas/AQN
+átikimas/AQN
+átikinamas/AQN
+þinomas/AQN
+
+
+
+
+
+
+
+
+
+
+
+
