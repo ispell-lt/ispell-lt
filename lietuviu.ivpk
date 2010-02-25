@@ -1222,7 +1222,7 @@ antrokas/D
 antropologas/D
 antropologija/D
 antropologë/D
-antruonys/D
+antruonys/VI
 antrur
 antràkart
 antràsyk
@@ -7061,7 +7061,7 @@ audimas/D
 audinys/D
 audinë/D
 auditorija/D
-audmenys/D
+audmenys/VK
 audra/D
 audrapaukðtis/D
 audraðauklis/D
@@ -7507,7 +7507,7 @@ aðinis/BN
 aðiratis/D
 aðis/MI
 aðmeninis/BN
-aðmenys/D
+aðmenys/VK
 aðtriabriaunis/BN
 aðtriadantis/BN
 aðtrialieþuvis/BN
@@ -14326,7 +14326,6 @@ dëtinis/BN
 dëtis/MI
 dëtis/T
 dëtuvë/D
-dëtys/D
 dëvi/ENX
 dëvisi/E
 dëvëjo/PNX
@@ -16495,10 +16494,10 @@ geleþiuojasi/E
 geleþiuoti/TSX
 geleþiuotis/T
 geleþtë/D
-geleþuonys/D
+geleþuonys/VI
 geleþë/D
 gelia/ENX
-gelmenys/D
+gelmenys/MK
 gelmë/D
 gelmëlaivis/D
 gelnija/ENX
@@ -28107,7 +28106,7 @@ kepdino/PNX
 kepdinti/TNX
 kepeninis/BN
 kepeninë/D
-kepenys/D
+kepenys/MK
 kepenë/D
 kepersa/D
 kepersavo/PNX
@@ -32063,7 +32062,6 @@ krûtinkaulis/D
 krûtinplëvë/D
 krûtinë/D
 krûtis/MK
-krûtys/D
 krûva/D
 krûvis/D
 krûða/D
@@ -39203,7 +39201,7 @@ neðiotoja/D
 neðiotojas/D
 neðiotë/D
 neðlovë/D
-neðmenys/D
+neðmuo/VK
 neðti/TNX
 neðti/TSX
 neðtis/T
@@ -43801,7 +43799,7 @@ nyrojo/PNX
 nyroti/TNX
 nyrëjo/PNX
 nyrëti/TNX
-nytys/D
+nytis/MI
 nyzga/ENX
 nyþta/ENX
 në
@@ -54890,7 +54888,7 @@ pirðtis/T
 pirðtukas/D
 pirðtuotas/AQN
 pirðtuotë/D
-pirðys/D
+pirðys/MI
 pirðèiukas/D
 pistoletas/D
 pistoletininkas/D
@@ -56636,7 +56634,7 @@ pradinukë/D
 pradirba/ENX
 pradirbo/PNX
 pradirbti/TNX
-pradmuo/V
+pradmuo/VK
 pradmë/D
 pradrasko/ENX
 pradraskyti/TWNX
@@ -63191,9 +63189,8 @@ putlintojas/D
 putlumas/D
 putlus/AQN
 putmena/D
-putmenys/D
 putmetalis/D
-putmuo/V
+putmuo/VK
 putnagas/D
 putnoja/ENX
 putnojo/PNX
@@ -65166,7 +65163,7 @@ rieda/ENX
 riedlentininkas/D
 riedlentininkë/D
 riedlentë/D
-riedmenys/D
+riedmenys/VK
 riedmuða/D
 riedulynas/D
 riedulys/D
@@ -69805,7 +69802,7 @@ smaukësi/P
 smegduobë/D
 smegeningas/AQN
 smegeninë/D
-smegenys/D
+smegenys/MK
 smego/PNX
 smegt
 smegtelëja/ENX
@@ -74826,7 +74823,7 @@ sultingumas/D
 sultininë/D
 sultinys/D
 sultonas/D
-sultys/D
+sultys/MI
 sulujo/PNX
 suluoðina/ENX
 suluoðino/PNX
@@ -75448,7 +75445,7 @@ suodinosi/P
 suodinti/TSX
 suodintis/T
 suodligë/D
-suodys/D
+suodys/MI
 suodë/D
 suodþiuotas/AQN
 suodþius/D
@@ -80642,7 +80639,7 @@ sëdinëja/ENX
 sëdinëjo/PNX
 sëdinëti/TNX
 sëdisi/E
-sëdmuo/V
+sëdmuo/VK
 sëdo/PSX
 sëdom
 sëdomis
@@ -80715,7 +80712,7 @@ sëlinëja/ENX
 sëlinëjo/PNX
 sëlinëti/TNX
 sëmeninis/BN
-sëmenys/D
+sëmenys/VK
 sëmë/D
 sëmë/PSX
 sëmësi/P
@@ -83779,7 +83776,7 @@ trûnija/ENX
 trûnijo/YNX
 trûnumas/D
 trûnus/AQN
-trûnys/D
+trûnys/MI
 trûnyti/TWNX
 trûnëjo/PNX
 trûnëti/TNX
@@ -96560,7 +96557,7 @@ zûzë/PNX
 ëdinëjo/PNX
 ëdinëti/TNX
 ëdis/D
-ëdmenys/D
+ëdmenys/VK
 ëdra/D
 ëdrauja/ENX
 ëdrauti/TNX
@@ -97152,7 +97149,7 @@ zûzë/PNX
 ðermeninis/BN
 ðermeninë/D
 ðermenis/D
-ðermenys/D
+ðermenys/MK
 ðermukðniauja/ENX
 ðermukðniauti/TNX
 ðermukðniavo/PNX
@@ -100591,7 +100588,7 @@ zûzë/PNX
 þiodina/ENX
 þiodino/PNX
 þiodinti/TNX
-þiodmenys/D
+þiodmenys/VK
 þiodo/ENX
 þiodyti/TWNX
 þiodë/YNX
@@ -100607,9 +100604,8 @@ zûzë/PNX
 þiojosi/P
 þiojëjo/PNX
 þiojëti/TNX
-þiomenys/D
 þiomenë/D
-þiomuo/V
+þiomuo/VK
 þiopla/D
 þioplas/AQN
 þioplina/ENX

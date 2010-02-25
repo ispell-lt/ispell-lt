@@ -394,7 +394,7 @@ suffixes
 	D Y S		>	-YS,ÞIAIS
 	D Y S		>	-YS,ÞIUOSE
 
-	J Y S		> 	-YS,AI		# atvejai
+	J Y S		> 	-YS,AI		# þvejai
 	J Y S		>	-YS,Ø
 	J Y S		>	-YS,AMS
 	J Y S		>	-YS,US
@@ -610,7 +610,17 @@ suffixes
 	[^NÐ] U O	>      -UO,ENIUI
 	[^NÐ] U O	>      -UO,ENÁ
 	[^NÐ] U O	>      -UO,ENIU
-	[^NÐ] U O	>      -UO,ENIMI
+
+	# L.V.: retas, tarminis ir turbût nevartotinas bendrinëje kalboje
+	# linksnio variantas, iðskyrus kelias iðimtis: ðuo, sesuo.
+	# Keliø ðaltiniø linksniuoèiø lentelëse tokio linksnio varianto 
+	# neradau, o tekstyne ið ~80 -uo þodþiø, paþástami tik 7 ir tie 
+	# retai (tik po syká ar porà) pavartoti: 
+	#    akmenimi (6), asmenimi (4), raumenimi (1), raðmenimi (1), 
+	#    skaitmenimi (2), skiemenimi (1), vandenimi (2).
+	#
+	#[^NÐ] U O	>      -UO,ENIMI	
+
 	[^NÐ] U O	>      -UO,ENYJE
 	[^NÐ] U O	>      -UO,ENY
 	[^NÐ] U O	>      -UO,ENIE
@@ -624,56 +634,56 @@ suffixes
 	[^NÐ] U O	>      -UO,ENYSE
 
 
-	######################################################################
-	# Dvi iðimtys (v1.2.1 þodynas): mënuo, ðuo
-	# (jei jø bûtø daugiau, tektø galvoti kaip tai iðspræsti)
-	#
+######################################################################
+# L.V. dvi iðimtys (v1.2.1 þodynas): mënuo, ðuo
+# (taupiau iðkaityti ir pridëti þodþius á þodynà)
+#
 
-	# vnsk. 
-	N U O		>      -UO,ESIO		# mënuo > mënesio
-	N U O		>      -UO,ESIUI
-	N U O		>      -UO,ESÁ
-	N U O		>      -UO,ESIU
-	N U O		>      -UO,ESYJE
-	N U O		>      -UO,ESY
-	N U O		>      -UO,ESI
+#	# vnsk. 
+# 	N U O		>      -UO,ESIO		# mënuo > mënesio
+# 	N U O		>      -UO,ESIUI
+# 	N U O		>      -UO,ESÁ
+# 	N U O		>      -UO,ESIU
+# 	N U O		>      -UO,ESYJE
+# 	N U O		>      -UO,ESY
+# 	N U O		>      -UO,ESI
 
-	# dgsk. 
-	N U O		>      -UO,ESIAI
-	N U O		>      -UO,ESIØ
-	N U O		>      -UO,ESIAMS
-	N U O		>      -UO,ESIUS
-	N U O		>      -UO,ESIAIS
-	N U O		>      -UO,ESIUOSE
+# 	# dgsk. 
+# 	N U O		>      -UO,ESIAI
+# 	N U O		>      -UO,ESIØ
+# 	N U O		>      -UO,ESIAMS
+# 	N U O		>      -UO,ESIUS
+# 	N U O		>      -UO,ESIAIS
+# 	N U O		>      -UO,ESIUOSE
 
 
-	# Padarykim tokià garbæ vienam þodþiui, visgi geriausias þmogaus
-	# draugas...
+# 	# A.G.: Padarykim tokià garbæ vienam þodþiui, visgi geriausias þmogaus
+#	# draugas...
 
-	# vnsk. 
-	Ð U O		>      -O,NS
-	Ð U O		>      -O,NIUI
-	Ð U O		>      -O,NÁ
-	Ð U O		>      -O,NIU
-	Ð U O		>      -O,NIMI
-	Ð U O		>      -O,NYJE
-	Ð U O		>      -O,NY
-	Ð U O		>      -O,NIE
+# 	# vnsk. 
+# 	Ð U O		>      -O,NS
+# 	Ð U O		>      -O,NIUI
+# 	Ð U O		>      -O,NÁ
+# 	Ð U O		>      -O,NIU
+# 	Ð U O		>      -O,NIMI
+# 	Ð U O		>      -O,NYJE
+# 	Ð U O		>      -O,NY
+# 	Ð U O		>      -O,NIE
 
-	# dgsk. 
-	Ð U O		>      -O,NYS
-	Ð U O		>      -O,NØ
-	Ð U O		>      -O,NIMS
-	Ð U O		>      -O,NIS
-	Ð U O		>      -O,NIMIS
-	Ð U O		>      -O,NYSE
+# 	# dgsk. 
+# 	Ð U O		>      -O,NYS
+# 	Ð U O		>      -O,NØ
+# 	Ð U O		>      -O,NIMS
+# 	Ð U O		>      -O,NIS
+# 	Ð U O		>      -O,NIMIS
+# 	Ð U O		>      -O,NYSE
 
 
 ##############################################################################
 # Daugiskaitiniai daiktavardþiai
 # 
 	#Y S		>      -YS,YS		# antruonys
-	Y S		>      -YS,Ø
+	#Y S		>      -YS,Ø		# dgsk. K.: /I arba /K
 	Y S		>      -YS,IMS
 	Y S		>      -YS,IS
 	Y S		>      -YS,IMIS

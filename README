@@ -2,10 +2,17 @@
 
 	   Lietuviškų ispell afiksų lentelių README failas
 
-		 Albertas Agejevas <alga@uosis.mif.vu.lt>
-                 Gediminas Paulauskas <menesis@delfi.lt>
+	   	      	     Albertas Agejevas <alga@uosis.mif.vu.lt>
+			     Gediminas Paulauskas <menesis@delfi.lt>
+	
+			     2002 m. balandžio 6 d., v. 0.4
 
-			   2002 m. balandžio 6 d., v. 0.4
+
+         		     Laimonas Vėbra <laimonas.vebra@gmail.com>
+			     (koreguota, papildyta 2010 m.)
+
+
+
 
 		1. Kas čia yra ir kam to reikia?
 
@@ -134,49 +141,73 @@ Visos šitos taisyklės yra suprogramuotos Gedimino Paulausko skripte
 tools/spellai, bet dažnai efektyviau būna tiesiog pridėti žodį
 rankomis, taigi štai taisyklės tiems, kurie flagus dės rankomis.
 
-0.  Jeigu žodis gali turėti priešdėlius ne-, nebe-, uždėkite flagą /N:
-    gera/N
+0.  Jeigu žodis gali turėti priešdėlius ne-, nebe-, pridėkite žymą /N,
+    pvz.:
+        gera/N
+	toli/N
 
-1.  Jei žodis nekaitomas, dėkite į žodyną be jokių flagų.
+1.  Jei žodis nekaitomas, pridėkite jį į žodyną be jokių žymų.
 
-2.  Jei tai daiktavardis ir ji nesibaigia galūnėmis -is, -uo, flagas yra /D:
-    stalas/D
-    kėdė/D
-    paskalos/D
+2.  Jei tai daiktavardis ir žodis nesibaigia galūnėmis -is, -uo, tai 
+    reikia pridėti žymą /D, pvz.:
 
-    Kaip matote, daugiskaitinės formos taip pat palaikomos.  Dėja,
-    vienaskaitinės formos neišskirtos, taigi teks iškęsti tai, kad visi
-    daiktavardžiai turės daugiskaitas.
+    	   stalas/D
+	   kėdė/D
+	   paskalos/D
 
-2a. Jeigu daiktavardis vyriškos giminės, vienaskaitos vardininkas
-    baigiasi -is, o vien. kilmininke galūnė yra -io (peilis; peilio),
-    irgi dėkite /D
-    peilis/D
-    brolis/D
+    Daiktavardžių daugiskaita iškaitoma savaime. Pridėjus vienaskaitinį 
+    daiktavardį reikia turėti omenyje, kad bus generuojamos ir jo daugiskaitos
+    formos (klaidingos ar nevartojamos); jei tai (tikrai) nepageidautina dėl 
+    akivaizdžių klaidų, tai derėtų tokio daiktavardžio visas formas pridėti 
+    atskirai, be jokių žymų.
+ 
 
-2b. Jei tai daiktavardis su vien. vard. galūnėmis -is, -uo, ar net (-ė,
-    -ers -- duktė, dukters), turite nuspręsti du dalykus: tai vyriška
-    giminė (flagas V), ar moteriška (flagas M), ir jei v. v. galūnė yra
-    -is, ar daugiskaitos kilmininke galūnė minkšta, ar kieta
-    (akis->akių, ausis->ausų).  Minkšta (-ių) žymima flagu I, kieta
-    (-ų) žymima K.
+2a. Jeigu daiktavardis yra vyriškos giminės ir vnsk. vardininkas baigiasi -is, 
+    o vnsk. kilmininko galūnė yra -io (peilis; peilio), tai taip pat reikia 
+    pridėti /D žymą, pvz.:
+        
+	kailis/D
+	peilis/D
+    	brolis/D
 
-    duktė/M
-    sesuo/M
-    akis/MI
-    ausis/MK
-    valtis/MI
-    vanduo/V
-    šuo/V
-    vagis/V
-    žvėris/V
-    dantis/V
-    debesis/V
+2b. Jei tai: 
+    - daiktavardis su vnsk. vardininko galūnėmis -is, -uo, -ė (jei vnsk. 
+       kilmininkas yra su galūne -ers, pvz.: duktė, dukters);
+    
+    - daugiskaitinis daiktavardis, kurio galūnė -ys (pvz.: nešmenys, sėmenys); 
 
-3. Jei tai būdvardis, ir jis nesibaigia galūne -is, dėkite flagą /A.
-   Jei jis jis baigiasi -is, pažiūrėkite, į ką jis panašesnis:
-   didelis, dideliems -- flagas A
-   medinis, mediniams -- flagas B.
+    reikia nuspręsti du dalykus: 
+
+    -  tai vyriška (žyma /V), ar moteriška (žyma /M) giminė, 
+       pvz.: akis/M, dantis/V.
+
+	IR
+
+    -  jei vnsk. vardininko galūnė yra  -is, arba tai daugiskaitinis 
+       daiktavardis su galūne -ys, tai ar dgsk. kilmininke galūnė yra minkšta
+       (-ių, žyma /I), ar kieta (-ų, žyma /K). 
+       Pvz.: akis -> ak-ių (minkšta /I), ausis -> aus-ų (kieta /K). 
+
+    Keletas tokių daiktavardžių žymėjimo pavyzdžių:			      
+
+    	antruonys/VI	# dgsk. daiktavardis	    
+    	sėmenys/VK  	# dgsk. daiktavardis
+        duktė/M
+	sesuo/M
+	akis/MI
+    	ausis/MK
+    	valtis/MI
+    	vanduo/V
+    	vagis/VI
+    	žvėris/VI
+    	dantis/VI
+    	debesis/VK
+
+
+3. Jei tai būdvardis, ir jis nesibaigia galūne -is, pridėkite žymą /A.
+   Jei būdvardis yra su galūne -is, patikrinkite jo dgsk. naudininko linksnį:
+       didelis, didel-iems -- žyma /A
+       medinis, medin-iams -- žyma /B.
 
    Dabar jei galima įsivaizduoti būdvardžio bevardę giminę
    (geras->gera), įvardžiuotines formas (geras->gerasis),
@@ -222,15 +253,15 @@ rankomis, taigi štai taisyklės tiems, kurie flagus dės rankomis.
 	   
   Verta įsidėmėti šias taisykles (ualgiman.dtiltas.lt):
 
-  	Dviskiemeniai veiksmažodžiai, kurių bendraties kamienas 
+      - Dviskiemeniai veiksmažodžiai, kurių bendraties kamienas 
   baigiasi y, ū, būsimojo laiko III asmenyje turi i, u.
   (*išimtys*: vyti, veja, vijo > vys, siūti, siuva, siuvo > siūs)
 
-  	Visų veiksmažodžių, turinčių šaknyje i, u, būsimojo laiko 
+      - Visų veiksmažodžių, turinčių šaknyje i, u, būsimojo laiko 
   III asmuo išlaiko bendraties balsę. 
   Pvz.:	siusti – sius, risti – ris, skusti – skus.
 
-  	Visų veiksmažodžių, turinčių šaknyje y, ū, būsimojo laiko 
+      - Visų veiksmažodžių, turinčių šaknyje y, ū, būsimojo laiko 
   III asmuo išlaiko bendraties balsę. 
   Pvz.: dygti – dygs, nykti – nyks, grūsti – grūs, pūsti – pūs.
 
