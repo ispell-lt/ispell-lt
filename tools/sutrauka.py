@@ -1,94 +1,236 @@
 #!/usr/bin/env python
 # -*- coding: iso-8859-13 -*-
+#
+# Autorius: Albertas Agejevas, 2003
+# Koregavo: Laimonas Vëbra, 2010
+#
 """
-Sutraukia skirtingus afiksus prie vieno þodþio:
-baigtis/D
-baigtis/T  ----> baigtis/DT
+ispell-lt projekto/þodyno árankis.
+Suglaudþia/sutraukia prieðdëlinius veiksmaþodþius, pvz.: 
+    pa|eina, nu|eina, at|eina, ... -> eina/bef...
 
-Be ðito MySpell varikliukas pamirðta vienà ið formø.
+o taip ir skirtingas tokio paèio þodþio afikso þymas, pvz.:
+    dviratis/D, dviratis/B -> dviratis/DB 
 
-Naudojimas panaðus kaip cat programos: stdin arba failø vardai.
+Þodþiai ir jø þymos glaudþiamos tik suderinamø (kalbos daliø) 
+grupëse. Dabar tai: veiksmaþodþiai, bûdvardþiai ir likæ.  Taip 
+padaryta todël, kad veiksmaþodþiai gali turëti aibæ prieðdëliniø 
+þymø ir kartu su kitos kalbos þymomis gali generuoti daug 
+neteisingø formø, arba daþnos bûdvardþiø /N þymos ne visuomet 
+tinka daiktavardþiams (ir kt.), pvz.:
 
-$Id: sutrauka.py,v 1.5 2005/01/03 16:22:10 kebil Exp $
+    jungë/D       (daiktavardis)
+    jungë/Pef...  (bût. k. l. veiksmaþodis)
+
+    jungë/DPef... generuotø neteisingas formas: 
+        {prieðdëliai}{daikt. 'jungë' linksniai}
+
+    baltaodis/BDN -> ne[be]baltaodþiui (daiktavardis) -- blogai,    
+                  -> ne[be]baltaodþiam (bûdvardis)    -- gerai.
+
+Naudojimas:
+    ./sutrauka þodynas.txt > sutraukta.txt
+    cat þodynas.txt | ./sutrauka > sutraukta.txt
+
 """
-from sets import Set
-import fileinput
+import os
 import sys
+import fileinput
+
 from locale import setlocale, getdefaultlocale, LC_COLLATE, strxfrm
 
+# sets modulis paseno ir nuo v2.6+ sistemoje (built-in) já keièia
+# set/frozenset tipai; importuojant pasenusá -- áspëjama (warning).
+if sys.version_info < (2, 6):
+    from sets import Set
+
+
+wcount = 0  # constringed words count
+bcount = 0  # saved bytes count
+
+
+def _stats(word, cflags, var=0):
+    global wcount, bcount
+    
+    # Statistika (sutaupyta þodþiø ir vietos)... 
+    #
+    # Kiek sutaupoma vietos (bcount) suskliaudþiant þodá:
+    # þodþio ilgis + bendrø þymø kiekis + _papildomi_ (2 arba 1)
+    # priklausomai nuo varianto:
+    #   - kai þodis be afiksø -- sutaupoma: '/', '\n' (2)
+    #   - kai [var]iantas > 0 -- prieðdëlinis veiksmaþodis ir
+    #                            sutaupoma:      '\n' (1)
+    #                            ('/' keièia prieðdëlio afikso þyma)
+    #
+    wcount += 1
+    bcount += len(word) + len(cflags) + (2 if not (var and cflags) else 1)
+
+
+
+def _set(arg=''):
+    if sys.version_info < (2, 6):
+        return Set(arg)  
+    else:
+        return set(arg)
+
+
 def sutrauka(lines, outfile=sys.stdout, myspell=True):
+    i = 0
+    adjes = {}
+    verbs = {}
     words = {}
 
-    try:
-        setlocale(LC_COLLATE, getdefaultlocale())
-    except:
-        print >> sys.stderr, "Could not set locale"
 
-    i=0
+    vflags = _set("TYEP")  # verb flags -- veiksmaþodþiø gr. þymos.
+    aflags = _set("AB")    # adjective flags -- bûdvardþiø gr. þymos.
+
+    # Debug
+    #f = open('./sutrauka.err', 'w')
+    
+    # win lokalës atpaþinimo/nustatymo problemos...
+    locale = getdefaultlocale()
+    if os.name is "nt":
+        locale = "Lithuanian"
+
+    try:
+        setlocale(LC_COLLATE, locale)
+    except:
+        sys.stderr.write("Could not set locale\n")
+
+
+    sys.stderr.write("\n--- " + sys.argv[0] + ' ' + 
+                     '-' * (60 - len(sys.argv[0]) - 5) + 
+                     "\nReading ")        
+
     for line in lines:
-        i += 1
-        if not i % 5000:
+        # Skaitymo progresas...
+        if not lines.lineno() % 5000:
             sys.stderr.write(".")
             sys.stderr.flush()
+
+        # Ignoruojamos tuðèios ir komentaro eilutës.
         line = line.strip()
         line = line.split("#")[0]
         if not line:
             continue
+        
+        # Eilutë skeliama á þodá ir jo þymø rinkiná.
         sp = line.split("/")
         word = sp[0]
         if len(sp) > 1:
-            flags = Set(sp[1])
+            wflags = _set(sp[1])
         else:
-            flags = Set()
-
-        if word not in words:
-            words[word] = flags
+            wflags = _set()
+       
+        # Veiksmaþodþiai ir bûdvardþiai á atskirus dict.
+        if vflags & wflags:
+            d = verbs
+        elif aflags & wflags:
+            d = adjes
         else:
-            words[word].update(flags)
+            d = words
 
-    sys.stderr.write("\n")
-    i = 0
-    prefcount = 0
-    for word in words.keys():
+        # Þodis pridedamas á dict arba jei jau yra -- suliejamos þymos
+        if word not in d:
+            d[word] = wflags
+        else:
+            swflags = d[word]  # stored word flags
+           
+            # Debug
+            #f.write("Skliaudþiamas þodis '{0}':\n\t"
+            #        "aff: {1}\n\taff: {2}\n".format(word, wflags, swflags))
+
+            _stats(word, swflags & wflags)
+            swflags.update(wflags)
+
+
+    sys.stderr.write("\nProcessing ")
+
+    # Suskliaudþiami prieðdëliniai veiksmaþodþiai
+    d = verbs
+    for word in d.keys():
+        # Apdorojimo progresas...
         i += 1
-        if not i % 5000:
+        if not (i % 5000):
             sys.stderr.write(".")
             sys.stderr.flush()
-        for flag, pref in priesdeliai:
+       
+        # Þodis (jau) galëjo bûti paðalintas ið words dict...
+        if word not in d:
+            continue
+
+        # Þodþio afiksø þymø rinkinys.
+        wflags = d[word]
+                
+        # Kiekvienam þodyno þodþiui derinami/tikrinami visi prieðdëliai.
+        for pflag, pref in prefixes:
+
             if word.startswith(pref):
-                rd = word[len(pref):]
-                rd2 = None
-                if pref.endswith("si"):
-                    rd2 = word[len(pref)-2:]
-                if (word in words and rd in words and
-                    rd2 not in words and words[word] <= words[rd]
-                    and Set("TYEPU") & words[word]):
-                    words[rd].update(words[word])
-                    words[rd].add(flag)
-                    del words[word]
-                    prefcount += 1
 
-    print >> sys.stderr
-    #print >> sys.stderr, prefcount, "sutraukimai"
+                # Jei pref sangràþinis prieðdëlis, tai þodis atmetus paprastàjá 
+                # (nesangràþiná) prieðdëlá, pvz.: ið{si}|urbia -> siurbia.
+                # Kai toks þodis yra þodyne, tai situacija netriviali, nes 
+                # þodyne yra trys þodþio formos: su prieðdëliu, be prieðdëlio 
+                # ir be sangràþinio prieðdëlio.  Tampa nebeaiðku koká prieðdëlá 
+                # (sangràþiná ar ne) ir kokiam þodþiui pritaikyti; tokiø 
+                # þodþiø savaime suskliausti neámanoma, pvz.:
+                #     ið{si}|urbia, siurbia, urbia (ið|siurbia ar iðsi|urbia?)
+		#     at{si}|joja, sijoja, joja;   (at|sijoja ar atsi|joja?)
+                #
+                # (word without reflexive prefix part)
+                #
+                wrpword = word[len(pref)-2:] if pref.endswith("si") else None
+    
+                # Þodis be prieðdëlio, pvz.: per|ðoko -> ðoko.
+                # (word without prefix) 
+                wpword = word[len(pref):]                
 
-    rez = []
-    for word, flags in words.items():
+                if wpword in d:
+                    wpflags = d[wpword]
+                    
+                    if (wrpword not in d and 
+                        wflags.issubset(wpflags)):
+
+                        _stats(word, wflags & wpflags, 1)
+
+                        # Suliejamos afiksø þymos ir pridedama prieðdëlio þyma.
+                        wpflags.update(wflags)
+                        wpflags.add(pflag)
+
+                   
+                        # Þodis sukliaustas (prie ðakninio þodþio sulietos 
+                        # þymos, pridëta prieðdëlio afikso þyma).  Paðaliname 
+                        # prieðdëliná þodá ið 'verbs' dict ir baigiame 
+                        # prieðdëliø ciklà, nes prieðdëliai unikalûs ir þodþio
+                        # pradþia nebegali sutapti su jokiu kitu prieðdëliu.
+                        del d[word]
+                        break
+
+    sys.stderr.write(" done.\nWords constringed: {0}, "
+                     "bytes saved: {1}.\n".format(wcount, bcount) + 
+                     '-' * 60 + '\n')
+
+    res = []
+    for word, flags in words.items() + verbs.items() + adjes.items():
         if flags:
             f = list(flags)
             f.sort()
             end = "/" + "".join(f)
         else:
             end = ""
-        rez.append((strxfrm(word), word + end))
-    rez.sort()
 
+        res.append((strxfrm(word), word + end))
+
+    res.sort()
+
+    # myspell'o þodyno pradþioje -- þodþiø kiekis.
     if myspell:
-        print >> outfile, len(rez)
+        print >> outfile, len(res)
 
-    for word in rez:
+    for word in res:
         print >> outfile, word[1]
 
-priesdeliai = (
+prefixes = (
     ("a", "ap"),
     ("b", "at"),
     ("c", "á"),
