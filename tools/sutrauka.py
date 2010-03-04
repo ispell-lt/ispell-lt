@@ -184,20 +184,46 @@ def sutrauka(lines, outfile=sys.stdout, myspell=True):
                 # Þodis be prieðdëlio, pvz.: per|ðoko -> ðoko.
                 # (word without prefix) 
                 wpword = word[len(pref):]                
-
+                
                 if wpword in d:
                     wpflags = d[wpword]
-                    
-                    if (wrpword not in d and 
-                        wflags.issubset(wpflags)):
-
+   
+                    if wrpword not in words:
+                        # and wflags.issubset(wpflags))
+                        #
+                        # Skliaudþiant prieðdëlinius veiksmaþodþius dël /X /N 
+                        # prieðdëliniø dalelyèiø (ispell apribojimo jas 
+                        # pridedant/jungiant) prarandamos kelios prieðdëlinio 
+                        # veiksmaþodþio formos, pvz:
+                        #   pavartyti/X  >  te|pa|vartyti, tebe|pa|vartyti, 
+                        #                   be|pa|vartyti, ...
+                        # vs
+                        #    vartyti/Xf  >  tevartyti, tebevartyti, 
+                        #                   bevartyti, ...
+                        #
+                        # Todël skliaudþiant nebûtina tikrinti ar sutampa þodþiø
+                        # (prieðdëlinio ir ðakninio) þymø aibës; praradimas vyksta, 
+                        # net jei jos sutampa, o netikrinant, t.y. susitaikius su
+                        # ir taip vykstanèiu prieðdëliniø dariniø/formø: 
+                        #  [tebe, be, te, nebe] {prieðdëlis} þodis 
+                        #
+                        # praradimu, þodynà suglaudinamas dar virð 50 kB.
+                        #
+                        # ARBA atvirkðèiai -- siekiant, kad nebûtø praradimø, kaip 
+                        # tik nereikëtø tokiø þodþiø (jei prieðdëlinis þodis turi 
+                        # /X, /N þymas) glaudinti.
+                        
+                        # Debug
+                        #    f.write("\nNeskliaudþiamas þodis '{0}|{1}', nes nesiderina afiksai:"
+                        #            "\n\t(su prieðd.) aff: {2}"
+                        #            "\n\t(be prieðd.) aff: {3}\n".format(pref, wpword, wflags, wpflags))
+                        
                         _stats(word, wflags & wpflags, 1)
 
                         # Suliejamos afiksø þymos ir pridedama prieðdëlio þyma.
                         wpflags.update(wflags)
                         wpflags.add(pflag)
-
-                   
+                 
                         # Þodis sukliaustas (prie ðakninio þodþio sulietos 
                         # þymos, pridëta prieðdëlio afikso þyma).  Paðaliname 
                         # prieðdëliná þodá ið 'verbs' dict ir baigiame 
@@ -232,7 +258,9 @@ def sutrauka(lines, outfile=sys.stdout, myspell=True):
 
 prefixes = (
     ("a", "ap"),
+    ("a", "api"),
     ("b", "at"),
+    ("b", "ati"),
     ("c", "á"),
     ("d", "ið"),
     ("e", "nu"),

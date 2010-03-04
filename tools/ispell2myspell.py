@@ -8,7 +8,6 @@ Copyright (C) 2002 by Albertas Agejevas
 
 Usage:  ./ispell2myspell.py lietuviu.aff > lt_LT.aff
 
-$Id: ispell2myspell.py,v 1.6 2007/05/10 00:07:52 alga Exp $
 """
 
 import sys
@@ -97,6 +96,9 @@ class AffixTable:
                     cut = rule[sep+1:comma].lower()
                     sep = comma + 1
                 paste = rule[sep:].lower()
+                if paste == '""':
+                    paste = 0
+
                 rule = (context, cut, paste)
 
                 rules = self.flags[self.state + self.flag]['rules']
