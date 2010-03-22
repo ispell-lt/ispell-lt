@@ -5,13 +5,24 @@
 #
 
 VERSION=1.2.1
-#+cvs`date -u +%Y%m%d`
 DATE=`date -u +%Y\-%m\-%d`
 
 FIREFOXVERSION=3.7a1pre
 THUNDERBIRDVERSION=3.1a1pre
 SEAMONKEYVERSION=2.1a1pre
 FENNECVERSION=1.0.*
+
+# L.V.:
+# Cygwin'e pasigauna sort.exe ið system32...
+#ifeq ($(shell uname -o), Cygwin)
+#	SORT = /bin/sort -u
+#else
+#	SORT = sort -u
+#endif
+#
+# O galø gale -- sort.py
+SORT = tools/sort.py -u --clean --smart
+
 
 SORTWORDS = \
 	lietuviu.zodziai \
@@ -39,11 +50,19 @@ lt_LT.dic: lietuviu.dict
 lt_LT.aff: lietuviu.aff
 	tools/ispell2myspell.py lietuviu.aff > lt_LT.aff
 
+# L.V.:
+# Nereikia nukabinëti komentarø ir rikiuoti þodynø; tai daro pati sutrauka.py 
+#
 lietuviu.dict: $(WORDS)
-	cat  $(WORDS) | \
-	grep -v '^[[:space:]]*#\|^[[:space:]]*$$\|XXX' | \
-	sed -e 's/\#.*//' | \
-	sort -u | tools/sutrauka.py > lietuviu.dict
+	cat $(WORDS) | tools/sutrauka.py > lietuviu.dict
+#
+# old, orig:
+#cat  $(WORDS) | \
+#grep -v '^[[:space:]]*#\|^[[:space:]]*$$\|XXX' | \
+#sed -e 's/\#.*//' | \
+#$(SORT) | tools/sutrauka.py > lietuviu.dict
+
+
 
 lietuviu.hash: lietuviu.dict lietuviu.aff
 	buildhash lietuviu.dict lietuviu.aff lietuviu.hash
@@ -57,12 +76,30 @@ liet-utf8.aff: lietuviu.aff
 liet-utf8.hash: liet-utf8.dict liet-utf8.aff
 	buildhash $^ $@
 
+# sort:
+# L.V.:
+# Jei jau kaþkur, kaþkada ir kaþkodël prisireikia ar prisireiktø surikiuotø 
+# þodynø (nors tai sudarko komentarø blokus ir/ar þodþiø sekcijas þodynø 
+# failuose, kitaip tariant visà potencialià þodynø struktûrà, todël orig. 
+# failø perraðyti nevalia ar nereikëtø), tai reikëtø rikiuoti pagal lt 
+# abëcëlës rikiavimo tvarkà, o tai _universaliai_ moka tik tools/sort.py
+# Taip pat derëtø paðalinti tuðèias, o galbût ir komentarø eilutes; tuomet 
+# orig. þodynø perraðyti tikrai nevalia.
+#
+# (todël surikiuoti þodynai pervadinami originalui prikabinant .sorted)
+#
 sort:
-	test -n "$$LC_COLLATE" -a "$$LC_COLLATE" != "C"
 	for file in $(SORTWORDS) ; do \
-		sort -u $$file > tmp-$$file; \
-		mv tmp-$$file $$file; \
+		$(SORT) $$file > $$file.sorted; \
 	done
+
+#
+# old, orig:
+#test -n "$$LC_COLLATE" -a "$$LC_COLLATE" != "C"
+#for file in $(SORTWORDS) ; do \
+#	$(SORT) $$file > tmp-$$file; \
+#	mv tmp-$$file $$file; \
+#done
 
 clean:
 	rm -f lietuviu.dict.stat lietuviu.dict.cnt lietuviu.hash lietuviu.dict \

@@ -109,12 +109,12 @@ def sutrauka(lines, outfile=sys.stdout, myspell=True):
             sys.stderr.flush()
 
         # Ignoruojamos tuðèios ir komentaro eilutës.
-        line = line.strip()
         line = line.split("#")[0]
+        line = line.strip()
         if not line:
             continue
-        
-        # Eilutë skeliama á þodá ir jo þymø rinkiná.
+       
+	# Eilutë skeliama á þodá ir jo þymø rinkiná.
         sp = line.split("/")
         word = sp[0]
         if len(sp) > 1:

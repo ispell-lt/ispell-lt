@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # -*- coding: iso-8859-13 -*-
 """
 ispell2myspell.py -- Converts an affix table from ispell format
