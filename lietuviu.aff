@@ -335,7 +335,7 @@ suffixes
 	Y S		>	-YS,Á
 	[^DJT] Y S	>	-YS,IU
 	Y S		>	-S,JE
-	Y S		>	-Y,""
+	Y S		>	-S,""
 
 	D Y S		>	-YS,ÞIO		# vyzdys > vyzdþio
 	D Y S		>	-YS,ÞIUI

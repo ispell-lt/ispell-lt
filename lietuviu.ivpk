@@ -10395,7 +10395,7 @@ bûtinas/AQN
 bûtinumas/D
 bûtinybë/D
 bûtis/MI
-bûtis/TU
+bûtis/T
 bûtybë/D
 bûvasi/E
 bûvi/ENX
@@ -19071,7 +19071,7 @@ gyslë/D
 gysta/ENX
 gysti/TNX
 gyti/TUNX
-gytis/TU
+gytis/T
 gyvagimis/BN
 gyvalioja/ENX
 gyvaliojo/PNX
@@ -29795,7 +29795,7 @@ kliûtininkas/D
 kliûtininkë/D
 kliûtinis/BN
 kliûtis/MI
-kliûtis/TU
+kliûtis/T
 kliûvasi/E
 kloaka/D
 klodas/D
@@ -35266,7 +35266,7 @@ lyti/TUNX
 lyti/TUNXaedfihkjloqprtv
 lytinis/BN
 lytis/MI
-lytis/TU
+lytis/T
 lytiðkas/AQN
 lytlauþa/D
 lytëjo/PNX
@@ -38203,7 +38203,7 @@ mënuleigis/D
 mënuliasëklis/D
 mënulis/D
 mënulþuvë/D
-mënuo/V
+#mënuo/V
 mërinëja/ENX
 mërinëjo/PNX
 mërinëti/TNX
@@ -39201,7 +39201,7 @@ neðiotoja/D
 neðiotojas/D
 neðiotë/D
 neðlovë/D
-neðmuo/VK
+neðmuo/V
 neðti/TNX
 neðti/TSX
 neðtis/T
@@ -56634,7 +56634,7 @@ pradinukë/D
 pradirba/ENX
 pradirbo/PNX
 pradirbti/TNX
-pradmuo/VK
+pradmuo/V
 pradmë/D
 pradrasko/ENX
 pradraskyti/TWNX
@@ -63190,7 +63190,7 @@ putlumas/D
 putlus/AQN
 putmena/D
 putmetalis/D
-putmuo/VK
+putmuo/V
 putnagas/D
 putnoja/ENX
 putnojo/PNX
@@ -80639,7 +80639,7 @@ sëdinëja/ENX
 sëdinëjo/PNX
 sëdinëti/TNX
 sëdisi/E
-sëdmuo/VK
+sëdmuo/V
 sëdo/PSX
 sëdom
 sëdomis
@@ -98884,7 +98884,7 @@ zûzë/PNX
 ðunystë/D
 ðunëkas/D
 ðunþolë/D
-ðuo/V
+#ðuo/V
 ðuoleigis/D
 ðuoliaduobë/D
 ðuoliavo/PNX
@@ -100605,7 +100605,7 @@ zûzë/PNX
 þiojëjo/PNX
 þiojëti/TNX
 þiomenë/D
-þiomuo/VK
+þiomuo/V
 þiopla/D
 þioplas/AQN
 þioplina/ENX

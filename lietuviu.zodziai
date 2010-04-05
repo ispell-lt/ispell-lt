@@ -1637,7 +1637,7 @@ deðinë/D
 deðinën
 deðiniarankis/D
 deðininis/B
-deðinys/AQ
+#deðinys/AQ
 dëslumas/DN
 dësningas/AQN
 dësnis/D
@@ -1681,8 +1681,8 @@ diametrinis/BN
 diapazonas/D
 diaterminis/BN
 dichromatinis/BN
-didelis/AN
-didis/AN
+#didelis/AN
+#didis/AN
 didmena/D
 didmiestis/D
 didþiulis/B
@@ -3359,7 +3359,7 @@ kairë/D
 kairën
 kairiarankis/D
 kairinis/B
-kairys/AQ
+#kairys/AQ
 kaiðtinis/BN
 kaita/D
 kaitra/D
@@ -4951,7 +4951,7 @@ menstruacinis/BN
 mentalitetas/D
 mentë/D
 mënulis/D
-mënuo/V
+#mënuo/V
 meras/D
 merga/D
 mergaitë/D
@@ -6458,7 +6458,7 @@ pradininkë/D
 pradinis/BN
 pradinukas/D
 pradinukë/D
-pradmuo/VK
+pradmuo/V
 pradþia/D
 pradþiamokslis/DN
 #praeitas/A
@@ -7536,7 +7536,7 @@ scholastinis/BN
 seansas/D
 seborëjinis/BN
 sëdynë/D
-sëdmuo/VK
+sëdmuo/V
 ðefas/D
 segmentas/D
 segmentinis/BN
@@ -8443,7 +8443,7 @@ suolelis/D
 suoliukas/D
 suomë/D
 suomis/D
-ðuo/V
+#ðuo/V
 supirkëja/D
 supirkëjas/D
 supirktuvës/D
