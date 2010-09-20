@@ -16,6 +16,7 @@ man
 mane
 manim
 manimi
+manim
 manyje
 mes
 mûsø
@@ -30,6 +31,7 @@ tavo
 tau
 tave
 tavimi
+tavim
 tavyje
 jûs
 jûsø
@@ -103,10 +105,6 @@ tamsta/D
 abejos/D
 abiejose
 
-#katruodu/C	     	# retas   
-#katriedvi/C		# neþinomas
-#kuriuodu/C		# retas
-#kuriedvi/C		# neþinomas
 
 pats
 paties
@@ -202,6 +200,27 @@ abiejuose
 abi
 abidvi
 
+katruodu	     	# retas   
+katrødviejø
+katriedviem
+katriemdviem
+
+kuriuodu		# retas
+kuriødviejø
+kuriedviem
+kuriemdviem
+
+kuriedvi		# retas
+kuriødviejø
+kuriodviem
+kuriomdviem
+
+katriedvi		# retas, tekstynui neþinomas
+katrødviejø
+katrodviem
+katromdviem
+
+
 ðis
 ðio
 ðiam
@@ -269,6 +288,10 @@ kaþkuriai
 kaþkuriose
 kaþkurioje
 kaþkuria
+
+# kiekiniai/kelintiniai ávardþiai, nors linksniuojami kaip skaitvardþiai
+keliolika/H 
+kelioliktas/H
 
 
 # ávardþiuotiniai ávardþiai
@@ -448,14 +471,9 @@ tai
 taigi
 tad
 kai
-kada
 iki
 lig
 ligi
-kol
-kolei
-tol
-tolei
 vos
 nes
 kadangi
@@ -467,13 +485,8 @@ nors
 tegu
 tegul
 kaip
-kiek
-kodël
-kur
 lyg
 tartum
-tarytum
-tarsi
 it
 negu
 nekaip
@@ -484,6 +497,24 @@ jog
 # vis dëlto
 dëlto
 uþtat
+
+
+# prieveiksmiai
+kol
+kolei
+tol
+tolei
+ðiol
+ðiolei
+aukðtëliau
+kada
+kur
+kiek
+kodël
+tarsi
+tarytum
+kitàryt
+
 
 # prielinksniai
 anot

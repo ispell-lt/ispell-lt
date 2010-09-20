@@ -19,6 +19,7 @@ abonentas/D
 abonentinis/B
 aborigenas/D
 abortas/D
+abrazyvinis/BN
 abriedëlis/D
 abriedukas/D
 absoliutus/AQN
@@ -1843,6 +1844,7 @@ dràsus/AQN
 draudëja/D
 draudëjas/D
 draugas/D
+draugelis/D
 draugë/D
 draugija/D
 draugiðkas/AQN
@@ -1850,6 +1852,7 @@ draugystë/D
 drausmë/D
 drausmingas/ANQ
 drausminis/BN
+draustumas/Da
 drebutinis/BN
 drebutis/D
 drëgmë/D
@@ -1872,6 +1875,7 @@ dualistinis/BN
 dublikatas/D
 dubuo/V
 duèë/D
+dûdelë/D
 dûdmaiðininkas/D
 duetas/D
 dugnas/D
@@ -2071,7 +2075,9 @@ elektrikas/D
 elektrinis/B
 elektrocheminis/BN
 elektrodinaminis/BN
+elektrolitinis/BN
 elektromagnetinis/BN
+elektromagnetizmas/D
 elektromechaninis/BN
 elektronika/D
 elektroninis/B
@@ -2143,6 +2149,8 @@ epitetas/D
 epizodas/D
 epizodinis/BN
 epocha/D
+epoksidas/D
+epoksidinis/BN
 epuðinis/BN
 eratinis/BN
 erdvë/D
@@ -2921,6 +2929,7 @@ imbierinis/BN
 imigrantas/D
 imitacija/D
 imitacinis/BN
+impedansas/D
 ámoka/DN
 ámonë/D
 imperatorius/D
@@ -2968,6 +2977,8 @@ industrija/D
 inercija/D
 inertiðkumas/D
 infantilinis/BN
+infantilus/AQN
+infantiliðkumas/D
 infarktas/D
 infekcija/D
 infekcinis/BN
@@ -3006,6 +3017,7 @@ instaliacija/D
 instancija/D
 instinktas/D
 institucija/D
+institucinis/BN
 institutas/D
 instrukcija/D
 instruktaþinis/BN
@@ -3052,6 +3064,8 @@ intervencinis/BN
 interviu
 intervokalinis/BN
 intymus/AQN
+intoksikacija/D
+intoksikacinis/BN
 intonacija/D
 intramolekulinis/BN
 intranzityvinis/BN
@@ -3068,12 +3082,14 @@ invazinis/BN
 inventorius/D
 inventorizacija/D
 inversinis/BN
+inverteris/D
 investicija/D
 investicinis/B
 investuotoja/D
 investuotojas/D
 inþinerija/D
 inþinerinis/BN
+inþineriðkas/AN
 inþinierë/D
 inþinierius/D
 áprastas/AQN
@@ -3508,6 +3524,7 @@ karavanas/D
 karbiuratorininkas/D
 karbolinis/BN
 karbonatinis/BN
+karcinoma/D
 kardas/D
 kardialinis/BN
 kardinalumas/D
@@ -3830,6 +3847,8 @@ klasta/D
 klastingas/AQN
 klastinis/BN
 klausa/D
+klausëja/D
+klausëjas/D
 klausimas/D
 klausimëlis/D
 klausimynas/D
@@ -3973,6 +3992,7 @@ kompozitorë/D
 kompozitorius/D
 kompresas/D
 kompresija/D
+kompresinis/BN
 kompresorius/D
 kompromisas/D
 komuna/D
@@ -4075,6 +4095,7 @@ konvencinis/BN
 konventas/D
 konvergavimas/D
 konverteris/D
+konversija/D
 konvulsinis/BN
 kooperatinis/B
 kooperatyvas/D
@@ -4273,6 +4294,7 @@ kubilëlis/D
 kubilius/D
 kubinis/B
 kûdikis/D
+kûdikëlis/D
 kûdra/D
 kuilys/D
 kûjinis/BN
@@ -4426,6 +4448,7 @@ laiptinë/D
 laiðkas/D
 laiðkelis/D
 laiðkininkas/D
+laiðkutis/D
 laisvalaikis/D
 laisvamanë/D
 laisvamanis/D
@@ -4566,6 +4589,8 @@ liberalas/D
 liberaldemokratas/D
 liberaldemokratë/D
 liberalus/AQN
+libertarizmas/D
+libertaristinis/BN
 licencija/D
 licenzija/D
 liekana/D
@@ -4603,6 +4628,9 @@ limfmazgis/D
 limitas/D
 limuzinas/D
 linas/D
+linèas/D
+linèiuotojas/D
+linèiuotoja/D
 lindynë/D
 linelis/D
 lingvistas/D
@@ -5000,6 +5028,7 @@ metalistas/D
 metalurginis/BN
 metamfetaminas/D
 metas/D
+metastazë/D
 meteorologija/D
 metikas/D
 metikë/D
@@ -5015,6 +5044,7 @@ metras/D
 metraðtis/D
 metrikacija/D
 metrika/D
+metrologinis/BN
 metropolinis/BN
 metropolitas/D
 metukas/D
@@ -5384,6 +5414,7 @@ neurologë/D
 neurologija/D
 neurologinis/BN
 neuronas/D
+neuropatija/D
 neuropatinis/BN
 neurotiðkas/AQN
 neurotoksiðkas/AQN
@@ -5559,6 +5590,7 @@ olandiðkas/AQN
 olimpiada/D
 olimpinis/BN
 omletas/D
+ommetras/D
 onkologas/D
 onkologija/D
 onkologinis/BN
@@ -5566,6 +5598,7 @@ onomatopëjinis/BN
 ontologinis/BN
 opaligë/D
 opalinis/BN
+opiatas/D
 operacija/D
 operacinë/D
 operacinis/B
@@ -5587,6 +5620,7 @@ optimistas/D
 optimistinis/BN
 optimistiðkas/AQN
 optimizacija/D
+optronas/D
 opus/AQN
 oralinis/BN
 oranþinis/BN
@@ -5624,6 +5658,10 @@ ortopedas/D
 ortopedë/D
 orumas/D
 osmosinis/BN
+oscilografas/D
+oscilograma/D
+osciliatorius/D
+oscilografija/D
 ovalas/D
 ovalus/AQN
 oþiaragis/D
@@ -5794,6 +5832,7 @@ papirosinis/BN
 paplotëlis/D
 paplûdimys/D
 paprastas/AQN
+paprastutis/BN
 paprogramë/D
 paprotys/D
 papuoðalas/D
@@ -5873,6 +5912,8 @@ pasaka/D
 pasakorë/D
 pasakorius/D
 pasala/D
+pasikliautinas/AQN
+pastoliai/D
 paðalietë/D
 paðalietis/D
 paðalinis/B
@@ -6393,6 +6434,7 @@ polimerinis/BN
 polinis/BN
 polinkis/D
 polisemantinis/BN
+poliðkumas/D
 politechnika/D
 politika/D
 politikas/D
@@ -6537,6 +6579,7 @@ praþûtingas/AQN
 praþûtis/MI
 praþuvëlë/D
 praþuvëlis/D
+preciziðkas/AQN
 predikatas/D
 predikatinis/BN
 preferencinis/BN
@@ -6856,6 +6899,7 @@ puðynas/D
 puðynëlis/D
 pusjuodis/BD
 puskrûminis/BN
+puskvadratis/D
 puslaidininkinis/BN
 puslankis/D
 puslapis/D
@@ -7038,6 +7082,7 @@ regionas/D
 regioninis/BN
 registracija/D
 registracinis/BN
+registrinis/BN
 registras/D
 registratûra/D
 reglamentacija/D
@@ -7383,6 +7428,7 @@ salotinë/D
 salotinis/B
 ðalpa/D
 ðaltas/AQN
+ðaltibarðèiai/D
 ðaltinëlis/D
 ðaltinis/D
 ðaltis/D
@@ -7717,6 +7763,7 @@ sidabras/D
 sidabrinis/BN
 ðiek
 siekis/D
+siekiamas/AQN
 siela/D
 sielvartas/D
 ðiemet
@@ -8125,6 +8172,7 @@ socialdemokratë/D
 socialinis/BN
 socialliberalas/D
 socialliberalë/D
+socializacija/D
 socialus/AQN
 sociologas/D
 sociologinis/BN
@@ -8909,6 +8957,7 @@ tipografinis/BN
 tirada/D
 tiras/D
 tiraþas/D
+tiristorius/D
 tiroidinis/BN
 tironas/D
 tironë/D
@@ -9153,7 +9202,11 @@ tvarkyklë/D
 tvarkytoja/D
 tvarkytojas/D
 tvartas/D
+tvartelis/D
+tvartukas/D
 tvenkinys/D
+tvenkinëlis/D
+tvenkinukas/D
 tvirtas/AQN
 tvirtovë/D
 tvirtybë/D

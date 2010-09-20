@@ -8,12 +8,14 @@ didþëjus/D
 dûdonietë/D		# ??
 duombazë/D
 dûðia/D
+failiukas/D
 galeganë/DN		# ??
 galeganas/DN		# ??
 galeganiðkas/AQN	# ??
 garantë/D		# tik vyr. g.?
 gaspadorinë/D
 gaspadorius/D
+griekas/D
 guarana/D
 ádiegiklis/D
 implementacija/D
@@ -78,6 +80,7 @@ virðaibis/D
 
 AB
 AbiWord
+abrazyvus/AQN
 adminas/D # XXX
 Adobe
 ADSL
@@ -106,6 +109,8 @@ audio
 autofigûra/D
 autotekstas/D
 ÀÞERTY
+bachûras/D
+bachuras/D
 baitinis/BN
 bajeris/D # XXX
 Balsa
@@ -129,6 +134,12 @@ CAB
 CAD
 Canon
 CASE
+cackinti/TSX
+cackintis/T
+cackina/ESX
+cackinasi/E
+cackino/PSX
+cackinosi/P
 Cc
 CD
 cedila/D
@@ -224,6 +235,9 @@ Free # XXX
 Fryðkë/D # XXX
 ftp
 g
+gaidinti/TNXfr
+gaidina/ENXfr
+gaidino/PNXfr
 Galeon
 garnitûra/D
 garsis/D
@@ -370,6 +384,7 @@ makrovirusas/D
 malaèius/D
 Mandrake
 MandrakeSoft
+marketinginis/BN # http://www.vlkk.lt/lit/5676
 MathML
 MB
 MDMA
@@ -406,6 +421,12 @@ NNTP
 Novell
 nr
 NT
+nuskausminti/TNX
+nuskausmina/ENX
+nuskausmino/PNX
+nusikliedëti/TNX
+nusikliedi/ENX
+nusikliedëjo/PNX
 nVidia
 OAF
 OCSP
@@ -418,9 +439,13 @@ OpenBSD
 OpenGL
 OpenLDAP
 OpenOffice
+optopora/D
 ORBit
 org
 OS
+osciliuoti/TNX
+osciliuoja/ENX
+osciliavo/PNX
 Outlook
 pabièiui
 page
@@ -428,17 +453,26 @@ pagelbiklis/D
 paiðytojas/D
 pakatalogiais/D
 pakatalogis/D
+pakrûmy
+pakrûmyje
 paleidyklë/D
 papkë/D
 parinkiklis/D
 parinktuvas/D
 Pascal
+pasikliautinis/BN
+pasiploninti/TNX
+pasiplonino/PNX
+pasiplonina/ENX
 paþingsninis/BN
 PC
 PCI
 PDF
 pdf
 Pentium
+perfrazuoti/TNX
+perfrazuoja/ENX
+perfrazavo/PNX
 Perl
 permanentinis/BN
 PGN
@@ -453,6 +487,7 @@ png
 PnP
 poaplankis/D
 polangis/D
+poliarumas/D
 POP
 portas/D
 posàlygis/D
@@ -468,6 +503,9 @@ programeris/D
 programiðius/D
 proxy
 pseudografikos/D
+pseudomokslas/D
+pseudomokslinis/BN
+pseudomoksliðkas/AN
 pub
 Public
 puslapinis/BN
@@ -547,6 +585,9 @@ ssh
 SSL
 SSRS
 stabda/D
+stagnuoti/TNX
+stagnuoja/ENX
+stagnavo/PNX
 StarOffice
 stdout
 stilinis/BN
@@ -560,8 +601,14 @@ Sun
 SunOS
 superkompiuteris/D
 SuSE
+susiregistruoti/TNX
+susiregistruoja/ENX
+susiregistravo/PNX
 SVGA
 swap
+ðveisti/TSX
+ðveièia/ESX
+ðveitë/PSX
 t
 Tab
 Tahoma
@@ -618,6 +665,9 @@ ViM
 virðaplankis/D
 virðkatalogis/D
 vizualizavimas/D
+vynioti/Tr
+vynioja/Er
+vyniojo/Pr
 vyr
 VRK
 VU
