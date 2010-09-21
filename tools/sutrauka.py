@@ -4,6 +4,8 @@
 # Autorius: Albertas Agejevas, 2003
 # Koregavo: Laimonas Vëbra, 2010
 #
+# Pastaba: veikia su Python v2.3+
+#
 """
 ispell-lt projekto/þodyno árankis.
 Suglaudþia/sutraukia prieðdëlinius veiksmaþodþius, pvz.: 
@@ -62,9 +64,15 @@ def _stats(word, cflags, var=0):
     #                            sutaupoma:      '\n' (1)
     #                            ('/' keièia prieðdëlio afikso þyma)
     #
-    wcount += 1
-    bcount += len(word) + len(cflags) + (2 if not (var and cflags) else 1)
 
+    wcount += 1
+
+    if not (var and cflags):
+        le = 2
+    else:
+        le = 1
+
+    bcount += len(word) + len(cflags) + le
 
 
 def _set(arg=''):
@@ -137,8 +145,9 @@ def sutrauka(lines, outfile=sys.stdout, myspell=True):
             swflags = d[word]  # stored word flags
            
             # Debug
-            #f.write("Skliaudþiamas þodis '{0}':\n\t"
-            #        "aff: {1}\n\taff: {2}\n".format(word, wflags, swflags))
+            #f.write("Skliaudþiamas þodis '%s':\n\t"
+            #        "aff: %s\n\t"
+            #        "aff: %s\n" % (word, wflags, swflags))
 
             _stats(word, swflags & wflags)
             swflags.update(wflags)
@@ -179,7 +188,11 @@ def sutrauka(lines, outfile=sys.stdout, myspell=True):
                 #
                 # (word without reflexive prefix part)
                 #
-                wrpword = word[len(pref)-2:] if pref.endswith("si") else None
+                if pref.endswith("si"):
+                    wrpword = word[len(pref)-2:]     
+                else:
+                    wrpword = None
+                
     
                 # Þodis be prieðdëlio, pvz.: per|ðoko -> ðoko.
                 # (word without prefix) 
@@ -214,10 +227,12 @@ def sutrauka(lines, outfile=sys.stdout, myspell=True):
                         # /X, /N þymas) glaudinti.
                         
                         # Debug
-                        #    f.write("\nNeskliaudþiamas þodis '{0}|{1}', nes nesiderina afiksai:"
-                        #            "\n\t(su prieðd.) aff: {2}"
-                        #            "\n\t(be prieðd.) aff: {3}\n".format(pref, wpword, wflags, wpflags))
-                        
+                        #f.write("\nNeskliaudþiamas þodis '%s|%s', "
+                        #        "nes nesiderina afiksai:\n\t"
+                        #        "(su prieðd.) aff: %s\n\t"
+                        #        "(be prieðd.) aff: %s\n" % \
+                        #            (pref, wpword, wflags, wpflags))
+                                
                         _stats(word, wflags & wpflags, 1)
 
                         # Suliejamos afiksø þymos ir pridedama prieðdëlio þyma.
@@ -232,9 +247,9 @@ def sutrauka(lines, outfile=sys.stdout, myspell=True):
                         del d[word]
                         break
 
-    sys.stderr.write(" done.\nWords constringed: {0}, "
-                     "bytes saved: {1}.\n".format(wcount, bcount) + 
-                     '-' * 60 + '\n')
+    sys.stderr.write(" done.\n"    
+                     "Words constringed: %d, "
+                     "bytes saved: %d.\n" % (wcount, bcount) + '-' * 60 + '\n')
 
     res = []
     for word, flags in words.items() + verbs.items() + adjes.items():
