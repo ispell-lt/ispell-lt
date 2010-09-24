@@ -1888,6 +1888,9 @@ kapoti/TNXabcdefjklrvwx
 kariauja/ENXbdeflnv
 kariauti/TNXbdeflnv
 kariavo/PNXbdeflnv
+karksëti/TNXdfjkv
+karksi/ENXdfjkv
+karksëjo/PNXdfjkv
 kartoja/ESXbfnr
 kartojasi/E
 kartojo/PSXbfnr
@@ -2465,6 +2468,9 @@ lauþytis/T
 lauþyti/TWSXabcdefhijklmnopqrtuvwx
 lauþo/ESXabcdefhijklmnopqrtuvwx
 lauþosi/E
+lauþtelëti/T
+lauþtelëja/E
+lauþtelëjo/P
 lauþtis/T
 lauþti/TSXbcdefhijklmnoqtvw
 lavina/ESXdfipr
@@ -3632,6 +3638,12 @@ rengtis/T
 rengti/TSXacdefhjkmopqrtv
 renka/ESXbdefhjknprtvw
 renkasi/E
+renovuoti/TSX
+renovuotis/T
+renovuoja/ESX
+renovuojasi/E
+renovavo/PSX
+renovavosi/P
 repeèkoja/ENXbcdefijpx
 repeèkojo/PNXbcdefijpx
 repeèkoti/TNXbcdefijpx
