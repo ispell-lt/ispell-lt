@@ -2495,6 +2495,7 @@ apmaukðlinti/TNX
 apmauna/ENX
 apmausti/TNX
 apmauti/TNX
+apmautas/D
 apmautë/D
 apmazgoja/ENX
 apmazgojo/PNX
@@ -2502,7 +2503,6 @@ apmazgoti/TNX
 apmaþina/ENX
 apmaþino/PNX
 apmaþinti/TNX
-apmaþtas/D
 apmaþëjo/ENX
 apmaþëjo/PNX
 apmaþëti/TNX
@@ -7024,7 +7024,7 @@ atþagarioti/TNX
 atþagaris/BN
 atþagaris/D
 atþagarë/D
-atþagariumas/D
+atþagarumas/D
 atþagarðeris/D
 atþagarðerë/D
 atþaibavo/PNX
@@ -8808,7 +8808,7 @@ beþvaigþdis/BN
 biatlonas/D
 biatlonininkas/D
 biatlonininkë/D
-biblija/D
+Biblija/D
 biblinis/BN
 bibliofilas/D
 bibliofilë/D
@@ -11359,7 +11359,7 @@ daugiur
 daugkart
 daugkartinis/BN
 daugmaþ
-daugmilijoninis/BN
+#daugmilijoninis/BN		# DLKÞ: daugiamilijoninis 
 daugmuo/V
 daugnora/D
 daugnoris/D
@@ -11420,7 +11420,6 @@ dauþëti/TNX
 davatka/D
 davatkiðkas/AQN
 davatkiðkumas/D
-davatkystë/D
 daviklis/D
 davinys/D
 davinëja/ENX
@@ -11463,7 +11462,7 @@ debesingas/AQN
 debesingumas/D
 debesis/VK
 debesiuotas/AQN
-debesiuotumas/D
+#debesiuotumas/D		# DLKÞ debesuotumas
 debesiûkðtis/D
 debesuoja/ESXaf
 debesuojasi/E
@@ -12621,7 +12620,7 @@ doktoratas/D
 doktrina/D
 dokumentacija/D
 dokumentalistika/D
-dokumentalumas/D
+#dokumentalumas/D		# dokumentalus/AQN
 dokumentalus/AQN
 dokumentas/D
 dokumentavo/PNX
@@ -13850,7 +13849,7 @@ dvicolis/BN
 dvideginis/D
 dvideðimteriopas/AQN
 dvideðimtinis/BN
-dvideðimtkapeikis/D
+#dvideðimtkapeikis/D		# nëra (D)LKÞ, tekstyne; perkelta á .jargon
 dvideðimtmetis/BN
 dvideðimtmetis/D
 dvidienis/BN
@@ -13931,7 +13930,6 @@ dviprasmiðkas/AQN
 dviprasmiðkumas/D
 dviprasmybë/D
 dvipusis/BN
-dviragis/BN
 dvirankis/BN
 dviratininkas/D
 dviratininkë/D
@@ -15480,7 +15478,6 @@ flora/D
 flotilë/D
 fluoras/D
 flygelis/D
-fojë/D
 fokstrotas/D
 fokusas/D
 fokusininkas/D
@@ -16514,7 +16511,7 @@ gelstelëja/ENX
 gelstelëjo/PNX
 gelstelëti/TNX
 gelsti/TNX
-gelsvakasis/BN
+gelsvakasë/D
 gelsvapelekis/BN
 gelsvaplaukis/BN
 gelsvas/AQN
@@ -18585,7 +18582,7 @@ grësmingumas/D
 grësmë/D
 grësti/TNX
 grësë/PNX
-grëva/D
+#grëva/D		# LKÞ, tekstyne nëra, tik DLKÞ; perkelta á lietuviu.zodziai
 grûda/ENX
 grûda/ESX
 grûdalas/D
@@ -26008,7 +26005,7 @@ juodintis/T
 juodinys/D
 juodis/D
 juodkaklis/BN
-juodkartis/BN
+#juodkartis/BN		# DLKÞ nëra; perkelta á lietuviu.zodziai
 juodkepuris/BN
 juodkerðis/BN
 juodligë/D
@@ -26860,7 +26857,7 @@ kamðèiatraukis/D
 kamðësi/Y
 kamþa/D
 kana/D
-kanabukas/D
+kanabëkas/D
 kanabëkavo/PNX
 kanabëkuoja/ENX
 kanabëkuoti/TNX
@@ -26882,7 +26879,7 @@ kanappienis/D
 kanapynas/D
 kanapë/D
 kanapëtas/AQN
-kanarulë/D
+kanarëlë/D
 kanauninkas/D
 kanceliarija/D
 kanceliarinis/BN
@@ -27371,7 +27368,7 @@ kartotinis/BN
 kartotinis/D
 kartotis/T
 kartu
-kartulis/D
+kartëlis/D
 kartulys/D
 kartumas/D
 kartumynas/D
@@ -27607,7 +27604,7 @@ kateris/D
 katilas/D
 katilinë/D
 katilius/D
-katilulis/D
+katilëlis/D
 katinas/D
 katodas/D
 katodinis/BN
@@ -27792,7 +27789,7 @@ kazachas/D
 kazachë/D
 kazeinas/D
 kazematas/D
-kazlukas/D
+kazlëkas/D
 kazokas/D
 kazuistika/D
 kazuistinis/BN
@@ -27833,7 +27830,7 @@ kebeliojosi/P
 kebelioti/TSX
 kebeliotis/T
 kebelis/D
-kebenukas/D
+kebenëkas/D
 keberioja/ESX
 keberiojasi/E
 keberiojo/PSX
@@ -27898,7 +27895,7 @@ keikûnas/D
 keikûnë/D
 keimarys/D
 keipa/ENX
-keipingas/D
+kempingas/D
 keipo/PNX
 keipsta/ENX
 keipti/TNX
@@ -28161,7 +28158,7 @@ kepurëja/ENX
 kepurëjo/PNX
 kepurëtas/AQN
 kepurëti/TNX
-kepustas/D
+kepëstas/D
 kepykla/D
 kepë/PNX
 kepësi/P
@@ -28366,7 +28363,7 @@ keturmetis/D
 keturnagis/BN
 keturnytas/AQN
 keturnytis/D
-keturpudis/BN
+keturpëdis/BN
 keturpësèia
 keturpësèias/AQN
 keturrankis/BN
@@ -28547,7 +28544,7 @@ kiauðiniuotas/AQN
 kiauðino/PNX
 kiauðintakis/D
 kiauðinti/TNX
-kiauðinulis/D
+kiauðinëlis/D
 kiauðtakis/D
 kibeklis/D
 kibernetika/D
@@ -28575,7 +28572,7 @@ kibirkðtinosi/P
 kibirkðtinti/TNX
 kibirkðtintis/T
 kibirkðtis/MI
-kibirkðtulë/D
+kibirkðtëlë/D
 kibirkðèiavo/PNX
 kibirkðèiuoja/ENX
 kibirkðèiuoti/TNX
@@ -28788,7 +28785,7 @@ kimðti/TSX
 kimðtinis/BN
 kimðtis/T
 kimðtuvas/D
-kina/D
+#kina/D			# ??
 kinas/D
 kinda/ENX
 kinematika/D
@@ -28946,8 +28943,8 @@ kirminauja/ENX
 kirminauti/TNX
 kirminavo/PNX
 kirmis/MI
-kirmulius/D
-kirmulë/D
+kirmëlius/D
+kirmëlë/D
 kirmvarpa/D
 kirmyti/TWNX
 kirmëja/ENX
@@ -29230,7 +29227,7 @@ klaikðtis/D
 klaikðtë/D
 klaipo/ENX
 klaiposi/E
-klaipupis/D
+klampupis/D
 klaipyti/TWNX
 klaipytis/T
 klaipë/YNX
@@ -29471,7 +29468,7 @@ kleiðiojo/PNX
 kleiðioti/TNX
 kleiðiuoja/ENX
 kleiðiuoti/TNX
-kleiðas/AQN
+#kleiðas/AQN			# ?? nëra (D)LKÞ
 klejoja/ENX
 klejojo/PNX
 klejonë/D
@@ -30520,7 +30517,7 @@ kolonizacija/D
 kolonizavo/PNX
 kolonizuoja/ENX
 kolonizuoti/TNX
-kolonulë/D
+kolonëlë/D
 koloratûrinis/BN
 koloratûra/D
 kolorimetras/D
@@ -30940,7 +30937,7 @@ kopininkë/D
 kopinëja/ENX
 kopinëjo/PNX
 kopinëti/TNX
-koplytulë/D
+koplytëlë/D
 koplyèia/D
 koptelëja/ENX
 koptelëjo/PNX
@@ -32492,7 +32489,7 @@ kurjeris/D
 kurjerë/D
 kurkia/ENX
 kurkinas/D
-kurkla/D
+kurklë/D
 kurklys/D
 kurksi/ENX
 kurksëjo/PNX
@@ -32579,14 +32576,14 @@ kurtinys/D
 kurtis/D
 kurtis/T
 kurto/PNX
-kurtokas/AQN
+#kurtokas/AQN		# kurèias/AQN
 kurtus/AQN
 kuruoja/ENX
 kuruoti/TNX
 kurègalis/D
-kurèias/D
+kurèias/AQN
 kurèiatovis/D
-kurèiumas/D
+#kurèiumas/D		# nëra (D)LKÞ	
 kurèius/D
 kurènebylis/D
 kurènebylystë/D
@@ -35966,7 +35963,7 @@ markstësi/P
 markumas/D
 markus/AQN
 markë/D
-marlë/D
+#marlë/D		# LKÞ nëra; yra lietuviu.zodziai
 marma/ENX
 marmakas/D
 marmalas/D
@@ -36609,7 +36606,7 @@ melioruoti/TNX
 melioruotoja/D
 melioruotojas/D
 melisa/D
-melitas/D
+mëlitas/D
 melodija/D
 melodingas/AQN
 melodingumas/D
@@ -37396,8 +37393,6 @@ mizantropas/D
 mizantropija/D
 mizantropë/D
 mizgo/PNX
-mièiurininkas/D
-mièiurininkë/D
 mièmanas/D
 miðinys/D
 miðkakirtys/D
@@ -39210,7 +39205,7 @@ neðiotoja/D
 neðiotojas/D
 neðiotë/D
 neðlovë/D
-neðmuo/V
+neðmenys/VK
 neðti/TNX
 neðti/TSX
 neðtis/T
@@ -43808,7 +43803,7 @@ nyrojo/PNX
 nyroti/TNX
 nyrëjo/PNX
 nyrëti/TNX
-nytis/MI
+nytys/MI
 nyzga/ENX
 nyþta/ENX
 në
@@ -54481,8 +54476,6 @@ piktaðirdis/D
 piktaðirdë/D
 piktaþodþiauja/ENX
 piktaþodþiauti/TNX
-piktaþodþiautoja/D
-piktaþodþiautojas/D
 piktaþodþiavo/PNX
 piktdþiuga/D
 piktdþiugiauja/ENX
@@ -67077,7 +67070,7 @@ saviþudiðkas/AQN
 saviþudybë/D
 saviþudystë/D
 saviþudë/D
-savokinis/BN
+sàvokinis/BN
 savotiðkas/AQN
 savotiðkumas/D
 savumas/D
@@ -68968,9 +68961,12 @@ skreplys/D
 skresti/TNX
 skreto/PNX
 skriauda/D
-skriaudumas/D
+#skriaudimas/D		# skriaudë/P..
+#skriaudumas/D		# skriaudus/AQN
 skriaudus/AQN
 skriaudë/PNX
+skriaudëjas/D
+skriaudëja/D
 skriaudësi/P
 skriaudþia/ENX
 skriaudþiasi/E
@@ -69616,8 +69612,10 @@ slëpë/PSX
 slëpësi/P
 slësna/D
 slësnuma/D
-slësnumas/D
+slesnuma/D
+#slësnumas/D		# slësnus
 slësnus/AQN
+slesnus/AQN
 slûgina/ENX
 slûgino/PNX
 slûginti/TNX
@@ -78914,7 +78912,7 @@ sutrimitavo/PNX
 sutrimituoja/ENX
 sutrimituoti/TNX
 sutrina/ENX
-sutrinas/AQN
+#sutrinas/AQN		# srutinas, tik LKÞ; perkelta á lietuviu.zodziai
 sutrinka/ENX
 sutrinko/PNX
 sutrinksi/ENX
@@ -80667,7 +80665,7 @@ sëdëtoja/D
 sëdëtojas/D
 sëdûnas/D
 sëdûnë/D
-sëdþia/D
+#sëdþia/MI		# tik LKÞ, perkelta lietuviu.zodziai
 sëja/D
 sëja/ENX
 sëjasi/E
@@ -81032,7 +81030,7 @@ talkus/AQN
 talkðo/ENX
 talkðojo/PNX
 talkðoti/TNX
-talmudas/D
+Talmudas/D
 talmudistas/D
 talmudistë/D
 talonas/D
@@ -81353,7 +81351,8 @@ tarpslankstelinis/BN
 tarpsluoksnis/D
 tarpsnis/D
 tarpsta/ENX
-tarpstotë/D
+tarpstotis/D
+#tarpstotë/D		# tik LKÞ, perkelta á lietuviu.zodziai
 tarpstulpis/D
 tarptautina/ENX
 tarptautininkas/D
@@ -81381,7 +81380,7 @@ tarpukalëdis/D
 tarpukaris/D
 tarpukarë/D
 tarpukelë/D
-tarpukiðkis/D
+#tarpukiðkis/D		# tik LKÞ, perkelta á lietuviu.zodziai		
 tarpukojis/D
 tarpulangë/D
 tarpumas/D
@@ -83122,8 +83121,6 @@ tretininkas/D
 tretininkë/D
 tretinis/BN
 treèdalis/D
-treèiaatskyrininkis/D
-treèiaatskyrininkë/D
 treèiadienis/BN
 treèiadienis/D
 treèiaeilis/BN
@@ -84732,8 +84729,8 @@ ugniukas/D
 ugras/D
 ugrë/D
 ui
-uiguras/D
-uigurë/D
+uigûras/D
+uigûrë/D
 uis
 uitena/D
 uiti/TNX
@@ -84831,7 +84828,7 @@ uodinëjo/PNX
 uodinëti/TNX
 uodis/D
 uodukas/D
-uoduotas/AQN
+#uoduotas/AQN		# tik LKÞ, perkelta á lietuviu.zodziai
 uodë/PNX
 uodþia/ENX
 uoga/D
@@ -85618,7 +85615,7 @@ uþgargaþëjo/PNX
 uþgargaþëti/TNX
 uþgargëjo/PNX
 uþgargëti/TNX
-uþgatvis/D
+#uþgatvis/D		# tik LKÞ, perkelta á lietuviu.zodziai
 uþgaubia/ENX
 uþgaubsto/ENX
 uþgaubstyti/TWNX
@@ -89290,7 +89287,7 @@ vaiðintoja/D
 vaiðintojas/D
 vaiðnumas/D
 vaiðnus/AQN
-vaiðumas/D
+#vaiðumas/D		# vaiðus/AQN
 vaiðus/AQN
 vaje
 vajoja/ENX
@@ -91006,8 +91003,8 @@ vienakryptis/BN
 vienakë/D
 vienalaidis/BN
 vienalaikis/BN
-vienalaikiðkas/AQN
-vienalaikiðkumas/D
+#vienalaikiðkas/AQN		# tik LKÞ; perkelta á lietuviu.zodziai
+#vienalaikiðkumas/D		# vienalaikiðkas/AQN
 vienalaipsnis/BN
 vienalangis/BN
 vienaluomis/BN
@@ -91192,7 +91189,7 @@ vienpirðtis/BN
 vienplaukis/BN
 vienprasmis/BN
 vienprasmiðkas/AQN
-vienprasmiðkumas/D
+#vienprasmiðkumas/D		# vienprasmiðkas/AQN
 vienpusis/BN
 vienragis/BN
 vienrankis/BN
@@ -91205,7 +91202,7 @@ viensiûlis/BN
 vienskiemenis/BN
 vienspalvis/BN
 vienspalviðkas/AQN
-vienspalviðkumas/D
+#vienspalviðkumas/D		# vienspalviðkas/AQN
 viensparnis/BN
 vienstiebis/BN
 vienstypis/BN
@@ -91965,7 +91962,7 @@ visai
 visaip
 visaliaudinis/BN
 visapusiðkas/AQN
-visapusiðkumas/D
+#visapusiðkumas/D		# visapusiðkas/AQN
 visaregis/BN
 visata/D
 visateisis/BN
@@ -91998,7 +91995,6 @@ vislumas/D
 vislus/AQN
 viso/PNX
 visokeriopas/AQN
-visokiausias/AN
 visokeriopumas/D
 visovë/D
 vispusiðkas/AQN
@@ -92561,7 +92557,7 @@ vëjavaikiauti/TNX
 vëjavaikiavo/PNX
 vëjavaikis/D
 vëjavaikiðkas/AQN
-vëjavaikiðkumas/D
+#vëjavaikiðkumas/D		# vëjavaikiðkas/AQN
 vëjavaikystë/D
 vëjavaikë/D
 vëjavarta/D
@@ -96823,7 +96819,7 @@ zûzë/PNX
 ðaltkalviavo/PNX
 ðaltkalvis/D
 ðaltkalvystë/D
-ðaltmena/D
+ðaltiena/D
 ðaltmetis/D
 ðaltmirys/D
 ðaltmirë/D
@@ -97497,7 +97493,7 @@ zûzë/PNX
 ðiluviðkis/D
 ðiluviðkë/D
 ðilynë/D
-ðilë/D
+#ðilë/D			# ðilas; tik LKÞ, perkelta á lietuviu.zodziai
 ðimpa/ENX
 ðimpanzë/D
 ðimtadalis/D
@@ -97882,7 +97878,7 @@ zûzë/PNX
 ðlapinti/TNX
 ðlapinti/TSX
 ðlapintis/T
-ðlapiumas/D
+#ðlapumas/D		# ðlapias/AQN
 ðlapiuoja/ENX
 ðlapiuoti/TNX
 ðlaplë/D
@@ -98293,8 +98289,8 @@ zûzë/PNX
 ðmeiþtas/D
 ðmeiþti/TNX
 ðmeiþë/PNX
-ðmekðta/D
-ðmekðtas/D
+ðiekðta/D
+ðiekðtas/D
 ðmigoja/ENX
 ðmigojo/PNX
 ðmigoti/TNX
@@ -99203,7 +99199,7 @@ zûzë/PNX
 ðvieèia/ENX
 ðvieèia/ESX
 ðvieèiasi/E
-ðvieþiapienis/BN
+ðvieþiapienis/BN	
 ðvieþias/AQN
 ðvieþiena/D
 ðvieþina/ENX
@@ -99863,7 +99859,7 @@ zûzë/PNX
 þalis/D
 þalitvorë/D
 þaliukë/D
-þaliumas/D
+#þaliumas/D		# tik LKÞ; perkelta á lietuviu.zodziai
 þaliuoja/ENX
 þaliuojasi/E
 þaliuokë/D
@@ -100480,7 +100476,7 @@ zûzë/PNX
 þieþmariðkis/D
 þieþmariðkë/D
 þieþula/D
-þieþulingas/AQN
+#þieþulingas/AQN		# tik LKÞ; perkelta á lietuviu.zodziai
 þieþulë/D
 þigas/D
 þikleris/D

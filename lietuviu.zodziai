@@ -1,4 +1,4 @@
-karvedë/D
+xkarvedë/D
 gigantë/D
 gurmanë/D
 patrulë/D
@@ -1538,6 +1538,7 @@ daugybinis/B
 daugkartinis/B
 dauguma/D
 daugumas/D
+davatkystë/D
 davinys/D
 daþas/D
 daþnas/AQN
@@ -1939,6 +1940,7 @@ dvimetrinis/B
 dvipartinis/BN
 dviprasmiðkumas/D
 dvipusis/BN
+dviragis/BN
 dviratininkas/D
 dviratininkë/D
 dviratis/D
@@ -2723,6 +2725,7 @@ greitkelis/D
 greit/N
 grësmë/D
 grësmingas/AQN
+grëva/D			# DLKÞ: dramblotas þmogus, kelmas, griozdas, griaumedis
 greta/D
 gretimas/AN
 griauèiai/D
@@ -3332,6 +3335,7 @@ juodaodë/D
 juodaodis/D
 juodaplaukë/D
 juodas/AQ
+juodkartis/BN
 juodraðtis/D
 juodukas/D
 juokas/D
@@ -5061,6 +5065,8 @@ metukas/D
 mezginys/D
 mezolitinis/BN
 mezozojinis/BN
+mièiurininkas/D
+mièiurininkë/D
 miegalius/D
 miegas/D
 miegmaiðis/D
@@ -5413,6 +5419,7 @@ neðëjas/D
 neðikas/D
 neðikë/D
 nesklandumas/D
+neðmuo/VK		# neðmenë, neðulys; tik LKÞ;
 nëðtumas/D
 neðvankybë/D
 netikëlis/D
@@ -5462,6 +5469,7 @@ niurzglys/D
 nykstamas/AN
 nykðtys/D
 nykus/AQN
+nytis/MI		# vnsk. tik LKÞ
 nomenklatûrinis/BN
 nominacija/D
 nominalas/D
@@ -6236,6 +6244,8 @@ pikselis/D
 piktadarë/D
 piktadarys/D
 piktas/AQN
+piktaþodþiautoja/D
+piktaþodþiautojas/D
 piktybinis/BN
 piktybiðkas/AQN
 piktograma/D
@@ -7631,6 +7641,7 @@ seansas/D
 seborëjinis/BN
 sëdynë/D
 sëdmuo/V
+sëdþia/MI		# tik LKÞ
 ðefas/D
 segmentas/D
 segmentinis/BN
@@ -7801,6 +7812,7 @@ sijonas/D
 sijonëlis/D
 ðákart
 ðikna/D
+ðilë/D			# ðilas; tik LKÞ
 ðildytuvas/D
 ðilelis/D
 silicinis/BN
@@ -8569,6 +8581,7 @@ sutema/D
 sutenerë/D
 suteneris/D
 sutiktuvës/D
+sutrinas/AQN		# srutinas, tik LKÞ;
 sutuoktinë/D
 sutuoktinis/D
 sutuoktuvës/D
@@ -8687,7 +8700,7 @@ taktinis/B
 talentas/D
 talentingas/AQN
 talka/D
-talmudas/D
+Talmudas/D
 talmudistinis/BN
 talonas/D
 talonëlis/D
@@ -8741,9 +8754,11 @@ tarpkolûkinis/B
 tarppirðtinis/BN
 tarpskilvelinis/BN
 tarpsnis/D
+tarpstotë/D
 tarptautinis/BN
 tarpueilinis/BN
 tarpukaris/D
+tarpukiðkis/D		# tarpkojis, vieta tarp kiðkø; tik LKÞ
 tarpuniversitetinis/BN
 tarpusavis/D
 tarpvietë/D
@@ -9265,6 +9280,7 @@ universitetas/D
 uodas/D
 uodë/D
 uodega/D
+uoduotas/AQN		# tik LKÞ
 uoga/D
 uogienë/D
 uola/D
@@ -9306,6 +9322,7 @@ uþduotis/IM
 uþeiga/D
 uþgaida/D
 uþgaulus/AQN
+uþgatvis/D		# tik LKÞ
 uþimtumas/D
 uþkaboris/D
 uþkampis/D
@@ -9665,6 +9682,8 @@ vidutiniðkas/AQN
 viela/D
 vienalaikis/BN
 vienalytis/BND
+vienalaikiðkas/AQN		# tik LKÞ;
+#vienalaikiðkumas/D		# vienalaikiðkas/AQN
 vienareikðmis/BN
 vienareikðmiðkas/AQN
 vienaskaita/D
@@ -9787,6 +9806,7 @@ visceralinis/BN
 viðèiukas/D
 visiðkas/AQN
 visokeriopas/AN
+visokiausias/AN
 viðta/D
 viðtiena/D
 visuma/D
@@ -9869,6 +9889,7 @@ vulgarus/AQN
 þalias/AQN
 þaliava/D
 þalingas/AQN
+þaliumas/D		# tik LKÞ
 þaliuzë/D
 þalsvas/AQ
 þaltys/D
@@ -9935,6 +9956,7 @@ zenitas/D
 þievelë/D
 þievinis/BN
 þieþirba/D
+þieþulingas/AQN		# tik LKÞ
 þilas/AQN
 þilvitis/D
 þinelë/D
