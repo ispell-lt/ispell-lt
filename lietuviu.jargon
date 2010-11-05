@@ -1,4 +1,5 @@
 autentikacija/D		# ??
+antblauzdinis/B
 bendrasavininkis/D	# vlkk: http://www.vlkk.lt/lit/594
 bomþas/D
 bomþë/D
@@ -6,6 +7,7 @@ bulkutë/D
 èiombë/D
 didþëjus/D
 dûdonietë/D		# ??
+dujinë/D
 duombazë/D
 dûðia/D
 dvideðimtkapeikis/D
@@ -328,7 +330,7 @@ JPEG
 jpg
 JPM
 JT
-juodraðtinë/D
+juodraðtinis/BN
 jutiklinis/BN
 kandidatinis/BN
 katakana/D
@@ -528,7 +530,7 @@ pseudomoksliðkas/AN
 pub
 Public
 puslapinis/BN
-pustoninis/D
+pustoninis/BN
 PVM
 pvz
 Qmail

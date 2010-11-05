@@ -1,4 +1,4 @@
-xkarvedë/D
+karvedë/D
 gigantë/D
 gurmanë/D
 patrulë/D
@@ -146,7 +146,7 @@ akumuliatorius/D
 akuotuotas/ANQ
 akuðerë/D
 akuðerija/D
-akuðerinë/D
+#akuðerinë/D			# bdv.; yra akuðerinis/BN
 akuðerinis/BN
 akuðeris/D
 akustinis/BN
@@ -352,11 +352,12 @@ ansamblis/D
 anðlaginis/BN
 antagonistinis/BN
 antagonizmas/D
-antakinis/D
+antakinis/BN
+#antakinis/D			# bdv.; yra antakinis/BN
 antakis/D
 Antaninës/D
 antarktinis/B
-antblauzdinis/D
+#antblauzdinis/D		# nëra nei (D)LKÞ, nei tekstyne; perkelta á .jargon
 antelë/D
 antena/D
 antenatalinis/BN
@@ -417,7 +418,8 @@ antradienis/D
 antraeilis/BN
 antraip
 antrakursis/BN
-antrakursis/D
+antrakursis/D			# LKÞ pateikia ir dkt. formà
+antrakursë/D			# LKÞ pateikia ir dkt. formà  
 antrametis/BND
 antrankis/D
 antrarûðis/BN
@@ -669,10 +671,11 @@ aðtuntainis/B
 aðtuntfinalis/D
 aðtuntokas/D
 aðtuonetainis/B
-aðtuoniasdeðimtmetë/D
-aðtuoniasdeðimtmetis/D
+#aðtuoniasdeðimtmetë/D		# bdv.
+aðtuoniasdeðimtmetis/BD
 aðtuoniolikmetis/D
-aðtuonvietis/BD
+#aðtuonvietis/BD		# bdv.	
+aðtuonvietis/B			# bdv.	
 ataka/D
 ataksinis/BN
 ataskaita/D
@@ -811,7 +814,8 @@ aukðtakulnis/BN
 aukðtas/AQN
 aukðtas/D
 aukðtaûgis/BN
-aukðtaûgis/D
+#aukðtaûgis/D			# bdv.
+aukðtaûgis/B			# bdv.
 aukðtielninkas/A
 aukðtis/D
 aukðtybë/D
@@ -1051,7 +1055,7 @@ belgas/DN
 belgiðkas/AQN
 bemolinis/BN
 benamë/D
-benamis/D
+benamis/BD			 # LKÞ pateikia ir dkt. formà
 bendraamþë/D
 bendraamþis/D
 bendraautorius/D
@@ -1112,8 +1116,10 @@ betonas/D
 betoninis/B
 beturtis/D
 bevaisis/B
-bevardis/BND
-bevertis/BD
+bevardis/BD			# LKÞ pateikia ir dkt. formà
+bevardë/D
+#bevertis/BD
+bevertis/B			# bdv.
 bevielis/B
 beviltiðkas/AQ
 beþdþionë/D
@@ -1400,7 +1406,8 @@ cilindrinis/BN
 cinamonas/D
 cinkas/D
 èiobrelis/D
-èionykðtis/DN
+#èionykðtis/DN			# bdv.
+èionykðtis/BN
 cirkas/D
 cirkuliacija/DN
 cirkuliacinis/BN
@@ -1515,20 +1522,22 @@ datulë/D
 dauba/D
 daug
 daugelis/D
-daugiaaukðtis/BD
+#daugiaaukðtis/BD		# bdv.
+daugiaaukðtis/B
 daugiabutis/BD
 daugiadienis/B
 daugiakalbystë/D
 daugiakampis/D
-daugiametis/BD
+#daugiametis/BD			# bdv.
+daugiametis/B
 daugianacionalinis/B
 daugiapartinis/BN
 daugiau
 daugiausia
 daugiausiai
-daugiavaikë/D
+#daugiavaikë/D			# bdv.
 daugiavaikis/B
-daugiavaikis/D
+#daugiavaikis/D			# bdv.
 daugiavartotojiðkas/AQN
 daugiklis/D
 daugiskaita/D
@@ -1662,8 +1671,10 @@ detoksikacija/D
 detonacinis/BN
 dëtuvë/D
 devizas/D
-devynaukðtis/D
-devyniolikmetis/D
+#devynaukðtis/D			# bdv.
+devynaukðtis/B
+devyniolikmetis/BD		# LKÞ pateikia ir dkt. formà
+devyniolikmetë/D
 dëþë/D
 dëþelë/D
 dezideratyvinis/BN
@@ -1765,7 +1776,8 @@ diskoteka/D
 diskretus/AQN
 diskriminacinis/BN
 diskursas/D
-diskursinis/D
+#diskursinis/D			# bdv.
+diskursinis/BN
 diskursiðkas/AQN
 diskusija/D
 disonansas/D
@@ -1787,7 +1799,8 @@ dizainas/D
 dizaineris/D
 dizenterinis/BN
 dydis/D
-dykas/D
+#dykas/D			# bdv.
+dykas/AQN
 dykinëtojas/D
 dykinëtoja/D
 dykuma/D
@@ -1819,7 +1832,8 @@ donorë/D
 donorystë/D
 dopingas/D
 doras/AQN
-dorëlis/D
+nedorëlis/D
+nedorëlë/D
 dorëninis/BN
 dorybë/D
 dorovingas/AQN
@@ -1881,7 +1895,7 @@ dûdelë/D
 dûdmaiðininkas/D
 duetas/D
 dugnas/D
-dujinë/D
+#dujinë/D			# bdv.; (D)LKÞ nepateikia dkt. formos; perkelta á .jargon
 dujininkas/D
 dujininkë/D
 dujinis/B
@@ -1934,7 +1948,8 @@ dviese
 dvigubas/A
 dvikova/D
 dvilypumas/D
-dvimatis/BD
+#dvimatis/BD			# bdv.
+dvimatis/B
 dvimetis/D
 dvimetrinis/B
 dvipartinis/BN
@@ -1947,7 +1962,8 @@ dviratis/D
 dviratukas/D
 dvispalvis/B
 dvitaðkis/D
-dvivietis/BD
+#dvivietis/BD			# bdv.
+dvivietis/B
 dvylikaaukðtis/D
 dvyliktokas/D
 dvyliktokë/D
@@ -2920,7 +2936,8 @@ ikras/D
 ilgaamþiðkumas/D
 ilgaausis/B
 ilgalaikis/BN
-ilgametis/BND
+#ilgametis/BND			# bdv.
+ilgametis/BN
 ilgapirðtis/D
 ilgas/AQN
 ilgasnapis/B
@@ -3106,7 +3123,7 @@ inþinierius/D
 áprotis/D
 iracionalinis/BN
 áranga/D
-árankinë/D
+árankinë/D			# na, naujadaras...
 árankis/D
 áraðas/D
 árenginys/D
@@ -3143,7 +3160,7 @@ iðimtis/MI
 áskaita/D
 iðkamða/D
 iðkarpa/D
-iðkarpinë/D
+iðkarpinë/D			# naujadaras...
 iðkart
 áskiepis/D
 iðkilmës/D
@@ -3333,6 +3350,7 @@ jungtukinis/BN
 jungtuvës/D
 juodaodë/D
 juodaodis/D
+juodaplaukis/BD			# LKÞ pateikia ir dkt. formà
 juodaplaukë/D
 juodas/AQ
 juodkartis/BN
@@ -3737,7 +3755,8 @@ keturiasdeðimtmetis/D
 keturkojis/B
 keturlapis/BN
 keturmetis/D
-keturvietis/BD
+#keturvietis/BD			# bdv.
+keturvietis/B
 ketus/D
 ketvirtadalis/D
 ketvirtadienis/D
@@ -4493,7 +4512,8 @@ lankstus/AQN
 lapas/D
 lapë/D
 lapelis/D
-lapkritinë/D
+#lapkritinë/D			# bdv.
+lapkritinis/B
 lapkritis/D
 lapukas/D
 laringalinis/BN
@@ -4705,8 +4725,10 @@ lygiagretë/D
 lygiagretus/AQN
 lygiaplotis/B
 lygiaðonis/BN
-lygiavamzdis/D
-lygiavertis/BND
+#lygiavamzdis/D			# bdv.
+lygiavamzdis/B
+#lygiavertis/BND		# bdv.
+lygiavertis/BN
 lyginis/BN
 lyginys/D
 lygintuvas/D
@@ -4914,6 +4936,7 @@ mazochistas/D
 mazochistë/D
 mazochistinis/B
 mazochistiðkas/AQN
+maþulis/BD
 maþulë/D
 maþuma/D
 maþumëlë/D
@@ -5357,7 +5380,8 @@ naudotojas/D
 naujadaras/D
 naujagimis/D
 naujametinis/B
-naujametis/D
+#naujametis/D			# bdv.
+naujametis/BN
 naujamiestietë/D
 naujamiestietis/D
 naujarodietë/D
@@ -5412,8 +5436,8 @@ nërinys/D
 nervas/D
 nervingas/ANQ
 nervinis/BN
-nëðèia/D
-nëðèias/AN
+nëðèia/DN			# bdv., bet mot. gim., tad /D tinka labiau
+#nëðèias/AN
 neðëja/D
 neðëjas/D
 neðikas/D
@@ -5592,7 +5616,7 @@ obuolys/D
 oda/D
 odë/D
 odelë/D
-odinë/D
+#odinë/D			# bdv.
 odinis/B
 odontologinis/BN
 oficialus/AQN
@@ -5658,7 +5682,8 @@ organizmas/D
 orgazminis/BN
 orientacija/D
 orientacininkas/D
-orientacinis/D
+#orientacinis/D			# bdv.
+orientacinis/B
 orientalinis/BN
 originalas/D
 originalus/AQN
@@ -6123,12 +6148,15 @@ penas/D
 penicilinas/D
 penitenciarinis/BN
 penketukas/D
-penkiametis/BND
+#penkiametis/BND		# bdv.	
+penkiametis/B
 penkiasdeðimtmetis/D
-penkiolikmetis/D
+#penkiolikmetis/D		# bdv.	
+penkiolikmetis/B
 penktadalis/D
 penktadienis/D
-penktakursis/D
+#penktakursis/D			# bdv.
+penktakursis/B
 penktokas/D
 penktokë/D
 pensija/D
@@ -6265,7 +6293,8 @@ pilnametystë/DN
 pilnas/AQN
 pilnateisis/BN
 pilnatis/MI
-pilnavertis/BND
+#pilnavertis/BND		# bdv.
+pilnavertis/BN
 pilnavertiðkumas/DN
 pilnutëlis/BN
 pilnutinis/BN
@@ -6295,7 +6324,7 @@ pirkëjas/D
 pirkinys/D
 pirklys/D
 pirmadienis/D
-pirmaeilis/DN
+pirmaeilis/BDN			# LKÞ pateikia ir dkt. formà
 pirmagimë/D
 pirmagimis/D
 pirmàkart
@@ -6337,7 +6366,8 @@ pjûklas/D
 pjûklinis/BN
 pjûvis/D
 placenta/D
-plaèiajuostis/BD
+#plaèiajuostis/BD		# bdv.
+plaèiajuostis/BN
 plaèiakampis/BN
 plaèiaðakis/BN
 plakatas/D
@@ -6920,7 +6950,8 @@ pusiausvyra/D
 puðis/MK
 puðynas/D
 puðynëlis/D
-pusjuodis/BD
+#pusjuodis/BD			# bdv.
+pusjuodis/B
 puskrûminis/BN
 puskvadratis/D
 puslaidininkinis/BN
@@ -7615,6 +7646,7 @@ savireguliacija/D
 saviðvieta/D
 savitarpinis/BN
 savitarpis/D
+savitarpis/B			# LKÞ pateikia ir bdv. formà
 savitas/AQ
 savivalda/D
 savivaldybë/D
@@ -7757,7 +7789,8 @@ seselë/D
 ðeðëlis/D
 ðeðiasdeðimtinis/BN
 sesija/D
-ðeðiolikmetis/D
+#ðeðiolikmetis/D		# bdv.
+ðeðiolikmetis/B
 ðeðioliktainis/B
 sëslus/AQN
 ðeðtadieninis/BN
@@ -7819,7 +7852,7 @@ silicinis/BN
 ðilkas/D
 silkë/D
 ðilkinis/B
-silpnaregis/DN
+silpnaregis/BDN			# LKÞ pateikia ir dkt. formà
 silpnas/AQN
 silpnybë/D
 ðiltadarþinis/BN
@@ -8086,7 +8119,7 @@ skundas/D
 skundikas/D
 skundikë/D
 skurdas/DN
-skustagalvis/D
+skustagalvis/BD			# LKÞ pateikia ir dkt. formà
 skutas/D
 skutelis/D
 skuteris/D
@@ -8644,7 +8677,7 @@ sviedinys/D
 ðviesa/D
 ðvieselë/D
 ðviesiaplaukë/D
-ðviesiaplaukis/B
+ðviesiaplaukis/BD		# LKÞ pateikia ir dkt. formà
 ðviesoforas/D
 ðviesolaidis/D
 sviestas/D
@@ -9019,7 +9052,7 @@ tolëliau
 tolerantiðkas/AQN
 tolesnis
 toliaregë/D
-toliaregis/D
+toliaregis/BD			# LKÞ pateikia ir dkt. formà
 tolimas/AQN
 toli/N
 tolis/D
@@ -9107,7 +9140,8 @@ traumatologija/D
 trauminis/BN
 treèdalis/D
 treèiadienis/D
-treèiakursis/D
+#treèiakursis/D			# bdv.
+treèiakursis/B
 treèiokas/D
 treèiokë/D
 trejybë/D
@@ -9129,7 +9163,8 @@ trijulë/D
 trikampëlis/D
 trikampis/BD
 trikotaþas/D
-trimatis/BND
+#trimatis/BND			# bdv.
+trimatis/BN 
 trimetis/BND
 trimitas/D
 trintukas/D
@@ -9164,7 +9199,7 @@ trukmë/D
 trûkumas/D
 trumpalaikis/B
 trumparegë/D
-trumparegis/D
+trumparegis/BD			# LKÞ pateikia ir dkt. formà
 trumpas/AQN
 trumpikës/D
 trumputis/BD
@@ -9681,7 +9716,8 @@ vidutinis/B
 vidutiniðkas/AQN
 viela/D
 vienalaikis/BN
-vienalytis/BND
+#vienalytis/BND			# bdv.
+vienalytis/BN
 vienalaikiðkas/AQN              # tik LKÞ;
 #vienalaikiðkumas/D             # vienalaikiðkas/AQN
 vienareikðmis/BN
@@ -9699,12 +9735,14 @@ vienis/D
 vienybë/DN
 vienkartinis/BN
 vienkiemis/D
-vienmarðkinis/DN
+#vienmarðkinis/DN		# bdv.
+vienmarðkinis/BN
 vienmintis/DN
 vienodas/AQN
 vienuoliktokas/D
 vienpartinis/BN
-vienpusis/DN
+#vienpusis/DN			# bdv.
+vienpusis/BN
 vienpusiðkas/AQN
 viens
 vienspalvis/BN
@@ -9715,13 +9753,15 @@ vienturtis/DN
 vienuma/D
 vienuolë/D
 vienuolija/D
-vienuolikmetis/D
+#vienuolikmetis/D		# bdv.
+vienuolikmetis/B
 vienuolis/D
 vienuoliðkas/AQN
 vienuolynas/D
 vienuolystë/D
 vienutë/D
-vienvietis/BD
+vienvietis/BD			# LKÞ pateikia ir dkt. formà
+vienvietë/D
 vieðas/AQN
 vieðbutis/D
 vieðkelis/D
@@ -9797,7 +9837,8 @@ visaip
 visapusis/BN
 visapusiðkas/AQN
 visata/D
-visavertis/BND
+#visavertis/BND			# bdv.
+visavertis/BN
 visavertiðkumas/DN
 visaþinis/BN
 vizaþistas/D                    # vlkk: http://www.vlkk.lt/lit/3625
@@ -9830,7 +9871,7 @@ vykdytoja/D
 vykdytojas/D
 vynas/D
 vynininkas/D
-vyniotinis/D
+vyniotinis/BD			# LKÞ pateikia ir bdv. formà
 vyras/D
 vyresnybë/D
 vyriausias/AQ

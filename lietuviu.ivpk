@@ -7885,15 +7885,15 @@ balsvas/AQN
 #balsvumas/D                    # yra balsvas/.*Q
 balsynas/D
 balsë/D
-baltagalvis/D
-baltagalvë/D
-baltakaklis/D
-baltakaklë/D
-baltakaktis/D
-baltakaktë/D
-baltakartis/D
-baltakartë/D
-baltakelnis/D
+baltagalvis/B
+#baltagalvë/D			# baltagalvis/B -- bûdvardis
+baltakaklis/B
+#baltakaklë/D			# baltakaklis/B -- bûdvardis
+baltakaktis/B
+#baltakaktë/D			# baltakaktis/B -- bûdvardis
+baltakartis/BD			# LKÞ pateikia ir dkt. formà
+baltakartë/D			
+baltakelnis/BD			# LKÞ pateikia ir dkt. formà
 baltakelnë/D
 baltakiavo/PNX
 baltakis/BN
@@ -7903,14 +7903,14 @@ baltakraujystë/D
 baltakë/D
 baltalas/D
 baltalksnis/D
-baltanugaris/D
+baltanugaris/BD			# LKÞ pateikia ir dkt. formà
 baltanugarë/D
 baltaodis/BN
 baltaodis/D
 baltaodë/D
-baltaplaukis/D
-baltaplaukë/D
-baltapûkis/D
+baltaplaukis/B
+#baltaplaukë/D
+baltapûkis/BD			# LKÞ pateikia ir dkt. formà
 baltapûkë/D
 baltarankis/D
 baltarankë/D
@@ -7921,11 +7921,11 @@ baltasparnis/D
 baltaveidis/BN
 baltavo/PNX
 baltaðaknë/D
-baltaþiedis/D
+baltaþiedis/BD
 baltaþiedë/D
 balteglë/D
 balteklë/D
-baltgalvis/D
+baltgalvis/BD			# LKÞ pateikia ir dkt. formà
 baltgalvë/D
 balti/TNX
 baltika/D
@@ -7943,26 +7943,26 @@ baltistas/D
 baltistika/D
 baltistë/D
 baltizmas/D
-baltkaklis/D
-baltkaklë/D
-baltkaktis/D
-baltkaktë/D
-baltkartis/D
+baltkaklis/B
+#baltkaklë/D			# baltkaklis/B -- bûdvardis
+baltkaktis/B
+#baltkaktë/D			# baltkaktis/B -- bûdvardis
+baltkartis/BD			# LKÞ pateikia ir dkt. formà  
 baltkartë/D
-baltkelnis/D
+baltkelnis/BD			# LKÞ pateikia ir dkt. formà  
 baltkelnë/D
 baltmargis/BN
 baltmiðkis/D
 baltmolis/D
 baltmë/D
-baltnugaris/D
+baltnugaris/BD			# LKÞ pateikia ir dkt. formà
 baltnugarë/D
 baltodë/D
 #baltokas/AQN                   # yra baltas/.*Q
-baltplaukis/D
+baltplaukis/BD			# LKÞ pateikia ir dkt. formà
 baltplaukë/D
-baltpûkis/D
-baltpûkë/D
+baltpûkis/B
+#baltpûkë/D			# baltapûkis/B; LKÞ pateikia tik bdv. formà	
 baltsmëlis/D
 baltsparnis/BN
 baltukas/D
@@ -7986,7 +7986,7 @@ baltëti/TNX
 baltûnas/D
 baltûnë/D
 baltþemis/D
-baltþiedis/D
+baltþiedis/BD
 baltþiedë/D
 baluoja/ENX
 baluoti/TNX
@@ -12122,7 +12122,7 @@ didþiaturtë/D
 didþiavalstybinis/BN
 didþiavo/PSX
 didþiavosi/P
-didþiaþemis/D
+didþiaþemis/BD			# LKÞ pateikia ir dkt. formà		
 didþiaþemë/D
 didþiaþiedis/BN
 didþiedis/BN
@@ -13964,7 +13964,7 @@ dvitomis/BN
 dvitomis/D
 dvitraukis/BN
 dvitraukis/D
-dvitrynis/D
+dvitrynis/BD			# LKÞ pateikia ir bdv. formà
 dvitëjinis/BN
 dviuodegis/D
 dvivagis/BN
@@ -32248,7 +32248,7 @@ kumelaitë/D
 kumeldëlë/D
 kumeliavo/PSX
 kumeliavosi/P
-kumelinga/DN
+kumelinga/DN			# bûdvardis, bet tik mot. gim., tad labiau tinka /D
 kumeliukas/D
 kumeliuoja/ESX
 kumeliuojasi/E
@@ -38168,7 +38168,7 @@ mëlo/PNX
 mëlsta/ENX
 mëlti/TNX
 mëlynakis/BN
-mëlynanosis/D
+mëlynanosis/BD			# LKÞ pateikia ir bdv. formàx
 mëlynanosë/D
 mëlynas/AQN
 mëlynavo/PNX
@@ -38950,8 +38950,8 @@ nepamainomas/AQN
 #nepaprastas/AQN                # yra paprastas/.*N
 #nepaprastumas/D                # yra nepaprastas/.*Q
 #nepartinis/BN                  # yra partinis/.*N
-nepartinis/D
-nepartinë/D
+#nepartinis/D			# partinis/DN  
+#nepartinë/D			# partinë/DN 
 nepasëda/D
 nepatoginasi/E
 nepatoginosi/P
@@ -41339,7 +41339,7 @@ nuomarininkë/D
 nuomaris/D
 nuometavo/PNX
 nuometuoja/ENX
-nuometuota/D
+nuometuota/D			# bdv., bet mot. gim., tad /D tinka labiau
 nuometuoti/TNX
 nuomininkas/D
 nuomininkë/D
@@ -43822,7 +43822,7 @@ nëðinti/TSX
 nëðintis/T
 nëðis/D
 nëðtumas/D
-nëðèia/D
+nëðèia/D			# bdv., bet mot. gim., tad /D tinka labiau
 nû
 nûdien
 nûdiena/D
@@ -44210,7 +44210,7 @@ oþkavosi/P
 oþkelis/D
 oþkena/D
 oþkiena/D
-oþkinga/DN
+oþkinga/DN			# bdv., bet mot. gim., tad /D tinka labiau
 oþkiukas/D
 oþkuoja/ESX
 oþkuojasi/E
@@ -48294,8 +48294,8 @@ partietë/D
 partija/D
 partikuliarizmas/D
 partinis/BN
-partinis/D
-partinë/D
+partinis/DN
+partinë/DN
 partitûra/D
 partizanas/D
 partizanauja/ENX
@@ -48396,7 +48396,7 @@ parðelis/D
 parðiavo/PSX
 parðiavosi/P
 parðiena/D
-parðinga/D
+parðinga/D			# bdv., bet mot. gim., tad /D tinka labiau
 parðiukas/D
 parðiuoja/ESX
 parðiuojasi/E
@@ -67435,8 +67435,8 @@ septyngubas/AQN
 septyniaaukðtis/BN
 septyniagalvis/BN
 septyniakampis/BN
-septynialypis/D
-septynialypë/D
+septynialypis/BN
+#septynialypë/D			# bdv. septynialypis/B
 septyniasdeðimtmetis/BN
 septyniasdeðimtmetis/D
 septyniaþenklis/BN
@@ -67449,8 +67449,8 @@ septyniskart
 septynissyk
 septynkampis/BN
 septynkovë/D
-septynlypis/D
-septynlypë/D
+septynlypis/BN
+#septynlypë/D			# bdv. septynlypis/B
 septynmetis/BN
 septynmylis/BN
 seradëlë/D
@@ -67537,7 +67537,7 @@ siaurakrûtinis/BN
 siauralapis/BN
 siauranosis/BN
 siaurapjûklis/D
-siauraprotis/D
+siauraprotis/BD			# LKÞ pateikia ir bdv. formà
 siauraprotiðkas/AQN
 #siauraprotiðkumas/D            # yra siauraprotiðkas/.*Q
 siauraprotystë/D
@@ -70099,7 +70099,7 @@ snapuotas/AQN
 snaputis/D
 snargliavo/PSX
 snargliavosi/P
-snarglinas/D
+snarglinas/AN
 snargliuoja/ESX
 snargliuojasi/E
 snargliuotas/AQN
@@ -82166,7 +82166,7 @@ teðloti/TNX
 teðluojasi/E
 teðluotas/AQN
 teðluotis/T
-teðmeninga/D
+teðmeninga/D			# bdv., bet mot. gim., tad /D tinka labiau
 teðmuo/V
 teþa/ENX
 teþina/ENX
@@ -96612,7 +96612,7 @@ zûzë/PNX
 ëriavo/PSX
 ëriavosi/P
 ëriena/D
-ëringa/DN
+ëringa/DN			# bdv., bet mot. gim., tad /D tinka labiau
 ëriukas/D
 ëriuoja/ESX
 ëriuojasi/E
@@ -97219,7 +97219,7 @@ zûzë/PNX
 ðeðiasdeðimtmetis/BN
 ðeðiasdeðimtmetis/D
 ðeðiastygis/BN
-ðeðiatomis/D
+ðeðiatomis/BD			# LKÞ pateikia ir dkt. formà
 ðeðiatomë/D
 ðeðiavietis/BN
 ðeðiaþenklis/BN
