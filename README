@@ -238,18 +238,18 @@ rankomis, taigi štai taisyklės tiems, kurie flagus dės rankomis.
    #############################
 
    Visų veiksmažodžių bendratis žymima /T.
-   Tačiau jei bendratis baigiasi -YTI arba -ŪTI, reikia * papildomai*
+   Tačiau jei bendratis baigiasi -YTI arba -ŪTI, reikia *papildomai*
    pridėti: 
-   	    U, jei būsimojo laiko III asmuo turi trumpas balses (i, u);
-	    W, jei būsimoje laiko III asmuo turi ilgas balses (y, ū).
+   	    /U, jei būsimojo laiko III asmuo turi trumpas balses (i, u);
+	    /W, jei būsimoje laiko III asmuo turi ilgas balses (y, ū).
    
    Pvz.: 
-   	   l-YTI: lyti/TU, nes lIs; 
-	   g-YTI: gyti/TU, nes gIs;
-	   p-ŪTI: pūti/TU, nes pUs;
+   	   l-YTI: lyti, lIs; lyti/TU
+	   g-YTI: gyti, gIs; gyti/TU
+	   p-ŪTI: pŪti, pUs; pūti/TU
 
-           sak-YTI: sakyti/TW, nes sakYs
-	   siūti:   siūti/TW, nes siūs
+           sak-YTI: sakyti, sakYs; sakyti/TW
+	   siūti:    siūti,  siūs; siūti/TW
 	   
   Verta įsidėmėti šias taisykles (ualgiman.dtiltas.lt):
 
@@ -268,7 +268,7 @@ rankomis, taigi štai taisyklės tiems, kurie flagus dės rankomis.
   Taip pat verta įsidėmėti ir tai, kad bene visi (?) daugiaskiemeniai 
  (daugiau nei 2) veiksmažodžiai būsimojo laiko III asmens galūnėje 
   turi tokią pačią balsę, kaip ir bendraties kamiene: 
-  	 sa'ky'ti > sakys, tram'dy'ti > tramdys, ar'dy'ti > ardys, ...
+  	 sa'kY'ti > sakYs, tram'dY'ti > tramdYs, nu'ščiŪ'ti > nuščiŪs, ...
 
   Vadovaujantis dvisikiemenių/daugiaskiemenių žodžių darybos 
   taisykle/dėsningumu svarbu atskirti koks žodis yra šakninis ir kiek 
@@ -284,17 +284,21 @@ rankomis, taigi štai taisyklės tiems, kurie flagus dės rankomis.
    #############################
    Visų veiksmažodžių esamasis laikas žymimas /E.
    
+
    #############################
    ## Būtasis kartinis laikas ##
    #############################
-   Veiksmažodžių su bendratimi -YTI, būtasis kartinis žymimas /Y.
+   Jei veiksmažodis yra {-YTI,-Ė}(pvz.: laik-YTI, laik-Ė): /Y.
    Visų kitų veiksmažodžių būtasis kartinis laikas žymimas /P.
 
 
-   ## Dalelytės-priešdėliai ir sangrąžinės formos ##
 
-   Sangrąžiniams veiksmažodžiams (formoms; norint tokias gauti) turbūt 
-   verta pridėti /S (dalelytės: ne, nebe, nesi, nebesi, besi, tebesi)
+   ###########################
+   ## Dalelytės-priešdėliai ##
+   ###########################
+
+   Sangrąžiniams priešdėliniam veiksmažodžiams (formoms; norint tokias gauti) 
+   reikia pridėti /S (dalelytės: ne, nebe, nesi, nebesi, besi, tebesi)
    Pvz.: 
    	 moko/S > nebesimoko, besimoko, tebesimoko, ...
 
@@ -306,6 +310,7 @@ rankomis, taigi štai taisyklės tiems, kurie flagus dės rankomis.
    (dalelytės: be, te, tebe)
    Pvz.: 
    	 sakyti/X, matyti/X > tebesakyti, tesakyti, tematyti, tebematyti, ...   
+  
    Priešdėlinių dalelyčių žymas galima derinti, pvz.: sako/SX, kabo/NX ...
 
    Keli veiksmažodžių darybos (afiksų žymų) pavyzdžiai:
@@ -322,25 +327,44 @@ rankomis, taigi štai taisyklės tiems, kurie flagus dės rankomis.
    myli/ESX
    mylėjo/PSX
 
-   Sangrąžines formas (šakninius žodžius) reikia nurodyti atskirai/papildomai 
-   ir jiems priskirti visų laikų veiksmažodžių afiksų žymas kaip ir 
-   pagrindinei (nesangrąžinei) veiksmažodžio formai, pvz:
+  
+   #################################
+   ## Sangrąžiniai veiksmažodžiai ## 
+   ## (-tis,-asi,-isi,-osi,-ėsi)  ##   
+   #################################
    
-   mylėti/T
-   myli/E
-   mylėjo/P
+   Jei veiksmažodis turi ir sangrąžinę formą (pvz.: laykyti > laikytis, 
+   laiko > laikosi, laikė > laikėsi), tai prie šakninio veiksmažodžio 
+   reikia papildomai pridėti žym-ą(-as):
 
-   mylėtis/T
-   mylisi/E
-   mylėjosi/P
+   	- bendračiai (visais atvejais):  /R
 
-   Sangrąžiniams šakniniams žodžiams dalelyčių S, N ir X žymos *nepridedamos*, 
-   kad nesigautų dvigubos sangrąžos ir/ar neteisingos formos, pvz.: 
-      besimylisi, tebesimylisi, nemylisi, bemylisi
+	- esamajam l.:  
+       	     * kai žodis baigiasi -i:  /O; 
+	     * visais kitais atvejais: /R.
 
-   Teisingas sangrąžines formas generuoja pagrindinis (nesangrąžinis) 
-   veiksmažodis su (sangrąžinių) dalelyčių afikso žyma S, pvz.:
-   myli/ES > nebesimyli, besimyli, besimyli, tebesimyli, ...
+	- būtajam l. : 
+	     * kai žodis baigiasi -o arba
+	       tai veiksmažodis {-yti, -ė}: /O;
+	     * visais kitais atvejais: /R.	  
+   
+   (automatizmas: visiems veiksmažodžiams su žyma /Y, sngr. formai pridėti /O)
+
+   Pažymėtina, kad sangrąžinių žodžių afiksų žymos (/R, /O) nedalyvauja 
+   cross-product su kitomis afiksų žymomis, t.y. generuojant žodžius nesudaromi
+   priešdėliniai dariniai, pvz.: 
+     nerti/TRa > ap{nerti, ...}, *tačiau* tik {nertis, ...}, be priešdėlio ap.
+
+
+   Pavyzdžiai:		  		 
+   	mylėti/TR  (mylėtis, ...)
+	myli/ER    (mylisi, ...) 
+   	mylėjo/PO  (mylėjosi; mylėj-O, todėl /O)
+
+	skalbė/PR  (skalbėsi; bndr. skalb-ti, t.y. tai ne {-yti,ė}, todėl /R)
+	skaitė/YO  (skaitėsi; bndr. skait-YTI, o būt. l.: skait-Ė, todėl /O)
+	kirmijo/PO (kirmijosi; kirmij-O, todėl /O);
+
    
 
 Kaip ir viskas.  Visi įvardžiai ir skaitvardžiai jau yra žodyne.  Jei

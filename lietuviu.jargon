@@ -1,22 +1,22 @@
-autentikacija/D		# ??
+autentikacija/D                 # ??
 antblauzdinis/B
-bendrasavininkis/D	# vlkk: http://www.vlkk.lt/lit/594
+bendrasavininkis/D              # vlkk: http://www.vlkk.lt/lit/594
 bomþas/D
 bomþë/D
 bulkutë/D
 èiombë/D
 didþëjus/D
-dûdonietë/D		# ??
+dûdonietë/D                     # ??
 dujinë/D
 duombazë/D
 dûðia/D
 dvideðimtkapeikis/D
 failiukas/D
 fotopinis/BN
-galeganë/DN		# ??
-galeganas/DN		# ??
-galeganiðkas/AQN	# ??
-garantë/D		# tik vyr. g.?
+galeganë/DN                     # ??
+galeganas/DN                    # ??
+galeganiðkas/AQN                # ??
+garantë/D                       # tik vyr. g.?
 gaspadorinë/D
 gaspadorius/D
 griekas/D
@@ -43,20 +43,20 @@ mikðeris/D
 myþalas/D
 naratyvas/D
 pakelys/D
-#pavaðuokietis/D	# ??
+#pavaðuokietis/D                # ??
 pimpalas/D
 pimpaliukas/D
 pimpis/D
 pimpukas/D
 portabilus/AQN
-#prieðpastata/D		# ??
+#prieðpastata/D                 # ??
 raukiniuotas/AQN
 reivas/D
 rekursyvus/A
 repozitorija/D
-riedmuo/V		# lkþ nepaþásta, tekstyne tik 2...
+riedmuo/V                       # lkþ nepaþásta, tekstyne tik 2...
 rokiðkënë/DN
-sarija/D		# upës pavadinimas?
+sarija/D                        # upës pavadinimas?
 seniokiðkas/AQN
 ðeðtakursis/D
 skleistë/D
@@ -85,14 +85,14 @@ virðaibis/D
 AB
 AbiWord
 abrazyvus/AQN
-adminas/D # XXX
+adminas/D                       # XXX
 Adobe
 ADSL
 AGÐ
 aha
 AIDS
 AKL
-aliasas/D # XXX
+aliasas/D                       # XXX
 AltaVista
 ampersendas/D
 Amway
@@ -116,7 +116,7 @@ autotekstas/D
 bachûras/D
 bachuras/D
 baitinis/BN
-bajeris/D # XXX
+bajeris/D                       # XXX
 Balsa
 bendraaðis/BN
 BeOS
@@ -138,18 +138,15 @@ CAB
 CAD
 Canon
 CASE
-cackinti/TSX
-cackintis/T
-cackina/ESX
-cackinasi/E
-cackino/PSX
-cackinosi/P
+cackinti/TRSX
+cackina/ERSX
+cackino/POSX
 Cc
 CD
 cedila/D
 cha
 charset
-charsetas/D # XXX
+charsetas/D                     # XXX
 ciceras/D
 Cyrix
 CJK
@@ -184,22 +181,19 @@ defragmentavimas/D
 dekompiliatorius/D
 dekompiliavimas/D
 Delfi
-Delfis/D # XXX
+Delfis/D                        # XXX
 Delphi
-demineralizuoti/TN
-demineralizuotis/T
-demineralizuoja/EN
-demineralizuojasi/E
+demineralizuoti/TRN
+demineralizuoja/ERN
 demineralizacija/D
-demineralizavo/PN
-demineralizavosi/P
-depozitoriumas/D # XXX
+demineralizavo/PON
+depozitoriumas/D                # XXX
 derintuvë/D
 DeskJet
 DHCP
 DHTML
 direktorija/D
-distra/D # XXX
+distra/D                        # XXX
 distribucija/D
 distributyvas/D
 DLKÞ
@@ -224,7 +218,7 @@ el
 Elta/D
 Emacs
 email
-emailas/D # XXX
+emailas/D                       # XXX
 enter
 Epson
 ERD
@@ -238,12 +232,12 @@ faksograma/D
 FAQ
 FAT
 FIXME
-flagas/D # XXX
+flagas/D                        # XXX
 Fortran
-Foundation # XXX
+Foundation                      # XXX
 FreeBSD
-Free # XXX
-Fryðkë/D # XXX
+Free                            # XXX
+Fryðkë/D                        # XXX
 ftp
 g
 gaidinti/TNXfr
@@ -269,15 +263,15 @@ GPG
 GPL
 GRUB
 GSM
-hardas/D # XXX
+hardas/D                        # XXX
 Helix
-heðavimas/D # XXX
+heðavimas/D                     # XXX
 Hewlett
 hipertekstas/D
 hipertekstinis/BN
 hiragana/D
 hmm
-hostas/D # XXX
+hostas/D                        # XXX
 HotBot
 HOWTO
 HP
@@ -340,7 +334,7 @@ kbps
 KDE
 Kerberos
 Kermit
-kernelis/D # XXX
+kernelis/D                      # XXX
 keðas/D
 KGB
 KHz
@@ -374,7 +368,7 @@ Linux
 lyginumas/D
 LKI
 LKÞ
-loginas/D # XXX
+loginas/D                       # XXX
 Logitech
 logo
 logotipas/D
@@ -396,7 +390,7 @@ makrovirusas/D
 malaèius/D
 Mandrake
 MandrakeSoft
-marketinginis/BN # http://www.vlkk.lt/lit/5676
+marketinginis/BN                # http://www.vlkk.lt/lit/5676
 MathML
 MB
 MDMA
@@ -415,14 +409,11 @@ MIF
 mikroprocesorius/D
 MIME
 min
-mineralizuoti/TN
-meneralizuotis/T
-mineralizuoja/EN
-mineralizuojasi/E
-mineralizavo/PN
-mineralizavosi/P
+mineralizuoti/TRN
+mineralizuoja/ERN
+mineralizavo/PON
 Minolta
-mobiliakas/D # XXX
+mobiliakas/D                    # XXX
 modifikatorius/D
 Mozilla/D
 MP
@@ -539,12 +530,9 @@ RAM
 README
 ReiserFS
 reklamjuostë/D
-reljefina/ESX
-reljefinasi/E
-reljefino/PSX
-reljefinosi/P
-reljefintis/T
-reljefinti/TSX
+reljefina/ERSX
+reljefino/POSX
+reljefinti/TRSX
 RGB
 rikiuoklë/D
 Rimi
@@ -616,8 +604,8 @@ stilinis/BN
 strigtis/D
 struktûrograma/D
 stulpelinis/BN
-subj # XXX
-subpraktika/D # XXX
+subj                            # XXX
+subpraktika/D                   # XXX
 Suite
 Sun
 SunOS
@@ -639,12 +627,9 @@ tarpgrupinis/BN
 TCP
 telekonferencija/D
 teleportacija/D
-teleportuoti/TN
-teleportuotis/T
-teleportuoja/EN
-teleportuojasi/E
-teleportavo/PN
-teleportavosi/P
+teleportuoti/TRN
+teleportuoja/ERN
+teleportavo/PON
 telnetas/D
 Temple
 The
@@ -653,11 +638,11 @@ tikrintuvë/D
 tinklavietë/D
 tiuneris/D
 TODO
-tranzas/D # XXX
+tranzas/D                       # XXX
 treniruoklë/D
 treèiaatskyrininkis/D
 treèiaatskyrininkë/D
-triggers # XXX
+triggers                        # XXX
 troff
 Tue
 tûkst
@@ -704,7 +689,7 @@ VRK
 VU
 web
 Windows
-windowsai/D # XXX
+windowsai/D                     # XXX
 Word
 WWW
 www
@@ -725,169 +710,162 @@ ZUnit
 #-------------------------------------------------------------------------------
 # nëra tekstyne
 #
-administravosi/P
-administruojasi/E
-administruotis/T
-aeravosi/P
-aeruojasi/E
-aeruotis/T
-akceptavosi/P
-akceptuojasi/E
-akceptuotis/T
-apeliavosi/P
-apeliuojasi/E
-apeliuotis/T
-archyvavosi/P
-archyvuojasi/E
-archyvuotis/T
-autorizavosi/P
-autorizuojasi/E
-autorizuotis/T
-avëtis/T
-avëjosi/P
-avisi/E
-bauduotis/T
-bauduojasi/E
-baudavosi/P
-budisi/E
-budëjosi/P
-budëtis/T
-bûnasi/E
+administravo/O
+administruoja/R
+administruoti/R
+aeravo/O
+aeruoja/R
+aeruoti/R
+akceptavo/O
+akceptuoja/R
+akceptuoti/R
+apeliavo/O
+apeliuoja/R
+apeliuoti/R
+archyvavo/O
+archyvuoja/R
+archyvuoti/R
+autorizavo/O
+autorizuoja/R
+autorizuoti/R
+avëti/R
+avëjo/O
+avi/O
+budi/O
+budëjo/O
+budëti/R
+bûna/R
 dairë/YSXmr
 dairo/ESXmr
 dairyti/TSXmr
 darbuoti/TSXrv
 darbavo/PSXrv
 darbuoja/ESXrv
-dekoduojasi/E
-dekoduotis/T
-dekodavosi/P
+dekoduoja/R
+dekoduoti/R
+dekodavo/O
 drovëjo/PSXw
 drovëti/TSXw
 drovi/ESXw
-dûmijosi/Y
-dûmijasi/E
-dûmytis/T
-dþiûgaujasi/E
-dþiûgautis/T
-dþiûgavosi/P
+dûmijo/O
+dûmija/R
+dûmyti/R
+dþiûgauja/R
+dþiûgauti/R
+dþiûgavo/O
 elgti/TSXr
 elgë/PSXr
 elgia/ESXr
-eliminavosi/P
-eliminuojasi/E
-eliminuotis/T
-evoliucionavosi/P
-evoliucionuojasi/E
-evoliucionuotis/T
-faktorizavosi/P
-faktorizuojasi/E
-faktorizuotis/T
-fokusavosi/P
-fokusuojasi/E
-fokusuotis/T
-gyvuojasi/E
-gyvavosi/P
-gyvuotis/T
+eliminavo/O
+eliminuoja/R
+eliminuoti/R
+evoliucionavo/O
+evoliucionuoja/R
+evoliucionuoti/R
+faktorizavo/O
+faktorizuoja/R
+faktorizuoti/R
+fokusavo/O
+fokusuoja/R
+fokusuoti/R
+gyvuoja/R
+gyvavo/O
+gyvuoti/R
 habilitavo/PNX
 habilituoja/ENX
 habilituoti/TNX
-indeksavosi/P
-indeksuojasi/E
-indeksuotis/T
-inicijavosi/P
-inicijuojasi/E
-inicijuotis/T
-instaliavosi/P
-instaliuojasi/E
-instaliuotis/T
-invertavosi/P
-invertuotis/T
-invertuojasi/E
-jojasi/E
-jojosi/P
-jotis/T
-keliaujasi/E
-keliautis/T
-keliavosi/P
-klajojasi/E
-klajojosi/P
-klajotis/T
-koptis/T
-kopësi/P
-kopiasi/E
-krutëjosi/P
-krutëtis/T
-krutasi/E
-kvëpavosi/P
-kvëpuojasi/E
-kvëpuotis/T
-lipasi/E
-liposi/P
-liptis/T
-miegasi/E
-miegojosi/P
-miegotis/T
-paþástasi/E
-paþinosi/P
-paþintis/T
-pilotavosi/P
-pilotuojasi/E
-pilotuotis/T
-pleðia/ESXabcdehijklmnopqtuvwx
-pleðiasi/E
-pozuojasi/E
-pozavosi/P
-pozuotis/T
-ragautis/T
-ragavosi/P
-ragaujasi/E
-rikuojasi/E
-sàmonëjosi/P
-sàmonëjasi/E
-sàmonëtis/T
-simbolizavosi/P
-simbolizuojasi/E
-simbolizuotis/T
-skambasi/E
-skambëjosi/P
-skambëtis/T
-ðlamasi/E
-ðlamëjosi/P
-ðlamëtis/T
-ðliauþiasi/E
-ðliauþtis/T
-ðliauþësi/P
-studentautis/T
-studentaujasi/E
-studentavosi/P
-tabuliavosi/P
-tabuliuojasi/E
-tabuliuotis/T
-testuojasi/E
-testuotis/T
-testavosi/P
-tranzavosi/P
-tranzuojasi/E
-tranzuotis/T
-tupisi/E
-tupëjosi/P
-tupëtis/T
-vartotis/T
-vartojasi/E
-vartojosi/P
-vaþiavosi/P
-vaþiuojasi/E
-vaþiuotis/T
-þaistis/T
-þaidþiasi/E
-þaidësi/P
+indeksavo/O
+indeksuoja/R
+indeksuoti/R
+inicijavo/O
+inicijuoja/R
+inicijuoti/R
+instaliavo/O
+instaliuoja/R
+instaliuoti/R
+invertavo/O
+invertuoti/R
+invertuoja/R
+joja/R
+jojo/O
+joti/R
+keliauja/R
+keliauti/R
+keliavo/O
+klajoja/R
+klajojo/O
+klajoti/R
+kopti/R
+kopë/R
+kopia/R
+krutëjo/O
+krutëti/R
+kruta/R
+kvëpavo/O
+kvëpuoja/R
+kvëpuoti/R
+lipa/R
+lipo/O
+lipti/R
+miega/R
+miegojo/O
+miegoti/R
+paþásta/R
+paþino/O
+paþinti/R
+pilotavo/O
+pilotuoja/R
+pilotuoti/R
+pleðia/ERSXabcdehijklmnopqtuvwx
+pozuoja/R
+pozavo/O
+pozuoti/R
+ragauti/R
+ragavo/O
+ragauja/R
+rikuoja/R
+sàmonëjo/O
+sàmonëja/R
+sàmonëti/R
+simbolizavo/O
+simbolizuoja/R
+simbolizuoti/R
+skamba/R
+skambëjo/O
+skambëti/R
+ðlama/R
+ðlamëjo/O
+ðlamëti/R
+ðliauþia/R
+ðliauþti/R
+ðliauþë/R
+studentauti/R
+studentauja/R
+studentavo/O
+tabuliavo/O
+tabuliuoja/R
+tabuliuoti/R
+testuoja/R
+testuoti/R
+testavo/O
+tupi/O
+tupëjo/O
+tupëti/R
+vartoti/R
+vartoja/R
+vartojo/O
+vaþiavo/O
+vaþiuoja/R
+vaþiuoti/R
+þaisti/R
+þaidþia/R
+þaidë/R
 versijavo/NPX
 versijuoja/ENX
 versijuoti/NTX
-þingsniavosi/P
-þingsniuojasi/E
-þingsniuotis/T
+þingsniavo/O
+þingsniuoja/R
+þingsniuoti/R
 
 
 #-------------------------------------------------------------------------------
@@ -896,9 +874,9 @@ versijuoti/NTX
 animavo/PNX
 animuoja/ENX
 animuoti/TNX
-bauduoti/TSXadfkprvw
-bauduoja/ESXadfkprvw
-baudavo/PSXadfkprvw
+bauduoti/TRSXadfkprvw
+bauduoja/ERSXadfkprvw
+baudavo/POSXadfkprvw
 dekomponavo/PNXfr
 dekomponuoja/ENXfr
 dekomponuoti/TNXfr
@@ -908,42 +886,42 @@ dempinguoti/TNX
 driblinguoti/TNXfikq
 driblinguoja/ENXfikq
 driblingavo/PNXfikq
-galvojasi/E
-galvojosi/P
-galvotis/T
-generavosi/P
-generuojasi/E
-generuotis/T
-implantavosi/P
-implantuojasi/E
-implantuotis/T
-internacionalizavosi/P
-internacionalizuojasi/E
-internacionalizuotis/T
-interpretavosi/P
-interpretuojasi/E
-interpretuotis/T
-investavosi/P
-investuojasi/E
-investuotis/T
-liepsnojasi/E
-liepsnojosi/P
-liepsnotis/T
+galvoja/R
+galvojo/O
+galvoti/R
+generavo/O
+generuoja/R
+generuoti/R
+implantavo/O
+implantuoja/R
+implantuoti/R
+internacionalizavo/O
+internacionalizuoja/R
+internacionalizuoti/R
+interpretavo/O
+interpretuoja/R
+interpretuoti/R
+investavo/O
+investuoja/R
+investuoti/R
+liepsnoja/R
+liepsnojo/O
+liepsnoti/R
 parametrizavo/PNX
 parametrizuoja/ENX
 parametrizuoti/TNX
 prodiusuoti/TNXfjkv
 prodiusuoja/ENXfjkv
 prodiusavo/PNXfjkv
-putojosi/P
-putotis/T
-putojasi/E
-sëdëtis/T
-sëdëjosi/P
-sëdisi/E
-sponsoriauja/ENXfv	# http://www.vlkk.lt/lit/3130
+putojo/O
+putoti/R
+putoja/R
+sëdëti/R
+sëdëjo/O
+sëdi/O
+sponsoriauja/ENXfv              # http://www.vlkk.lt/lit/3130
 sponsoriauti/TNXfv
 sponsoriavo/PNXfv
-tranzavo/PSXabdefgkvw	# http://www.vlkk.lt/lit/88844
-tranzuoja/ESXabdefgkvw
-tranzuoti/TSXabdefgkvw
+tranzavo/POSXabdefgkvw
+tranzuoja/ERSXabdefgkvw
+tranzuoti/TRSXabdefgkvw

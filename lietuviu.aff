@@ -4127,7 +4127,6 @@ suffixes
 # moka, supa, neða, ðukuoja, traukia, kenèia
 #
 
-  	## Nesangràþiniai ##
 	# Vnsk./dgsk. III asm.: ðakninis þodis
 
   	# Vnsk., I asm.
@@ -4148,67 +4147,27 @@ suffixes
 	A		>	T		# ðnek.
 
 
-  	## Sangràþiniai ##	
-	# Vnsk./dgsk. III asm.: ðakninis þodis
-  	
-	# Vnsk., I asm.
-	A S I		>	-ASI,UOSI	# supasi > supuosi
-
-	# Vnsk., II asm.
-	[^I] A S I	>	-ASI,IESI	# supasi > supiesi
-	[^ÈÞ] I A S I	>	-ASI,ESI	# traukiasi > traukiesi
-	È I A S I	>	-ÈIASI,TIESI	# puèiasi > putiesi
-	[^D] Þ I A S I  >	-ASI,ESI	# grauþiesi, verþiesi
-	D Þ I A S I	>	-ÞIASI,IESI	# beldþiasi > beldiesi
-	
-	# Dgsk., I asm.
-	A S I		>	-SI,MËS
-
-	# Dgsk., II asm.
-	A S I		>	-SI,TËS
 
 ##############################################################################
 # II paradigma
 # sëdi, tiki, trinksi
 # 
-  	## Nesangràþiniai ##
+
 	# Vnsk. II, III, dgsk. III asm.: ðakninis þodis
 
   	# Vnsk., I asm.
-	[^AOI] S I	>	U		# karksi > karksiu
- 	[^DTS] I 	>	U		# guli > guliu
+ 	[^DT] I 	>	U		# guli > guliu
 	D I    		>	-I,ÞIU		# sëdi > sëdþiu
 	T I		>	-TI,ÈIU		# ðvyti > ðvyèiu
 
 	# Dgsk., I asm.
-	[^AOI] S I	>	ME		# þagsi > þagsime
-	[^AOI] S I	>	M		# ðnek.
-	[^S] I		>	ME		# sëdi > sëdime
-	[^S] I		>	M		# ðnek.
+	[AIO]	 	>	ME		# einame, mylime, sakome
+	[AIO]		>	M		# ðnek.
 
 	# Dgsk., II asm . 
-	[^AOI] S I	>	TE		# mirksi > mirksite
-	[^AOI] S I	>	T		# ðnek.
-	[^S] I		>	TE		# sëdi > sëdite
-	[^S] I		>	T		# ðnek.  
+	[AIO]	 	>	TE		# einate, mylite, sakote 
+	[AIO]		>	T		# ðnek.
 
-
-	## Sangràþiniai ##
-	# Vnsk./dgsk. III asm.:  ðakninis þodis
-
-	# Vnsk., I asm.
-	[^DT] I S I	>	-SI,UOSI	# tikisi > tikiuosi
-	D I S I		>	-ISI,ÞIUOSI	# girdisi > girdþiuosi
-	T I S I		>	-TISI,ÈIUOSI	# ðlykðtisi > ðlykðèiuosi
-	
-	# Vnsk., II asm.
-	I S I		>	-SI,ESI		# tikisi > tikiesi
-	
-	# Dgsk., I asm.
-	I S I		>	-SI,MËS		# tikisi > tikimës
-	
-	# Dgsk., II asm.
-	I S I		>	-SI,TËS		# gailisi > gailitës 
 
 
 ##############################################################################
@@ -4216,7 +4175,6 @@ suffixes
 # moko, bijo, þiopso
 #
 
-  	## Nesangràþiniai ##
 	# Vnsk./dgsk. III asm.: ðakninis þodis
 
 	# Vnsk., I asm.
@@ -4234,47 +4192,13 @@ suffixes
 	O		>	T		# ðnek.
 
 
-  	## Sangràþiniai ##
-	# Vnsk./dgsk. III asm.: ðakninis þodis
-
-	# Vnsk., I asm.
-	O S I		>	-OSI,AUSI	# bijosi > bijausi
-
-	# Vnsk., II asm.
-	O S I		>	-OSI,AISI	# mokosi > mokaisi
-
-	# Dgsk., I asm.
-	O S I		>	-SI,MËS		# sakosi > sakomës
-
-	# Dgsk., II asm.
-	O S I		>	-SI,TËS		# þinosi > þinotës
-
-
 ##############################################################################
 #  Esamojo laiko padalyvis
 #
-  	## Nesangràþiniai ##
 
-	A		>	NT		# einant
+	[AI]		>	NT		# einant, tylint
 	O		>	-O,ANT		# sakant
 
-	# > NT senesnëse versijose (iki v.3.3.02) kaþkodël neveik-ia(-ë) ?
-	#[^S] I		>	-I,INT	
-	#[^AOI] S I	>	-I,INT	
-
-	[^S] I		>	NT		# tyli -> tylint
-	[^AOI] S I	>	NT		# kriuksi > kriuksint
-
-	
-	## Sangràþiniai ##
-	
-	# sngr. forma sutampa su nesngr. veik.r. neávardþ. dalyviu
-	#A		>	-A,ANTIS 	# einantis 
-	#O		>	-O,ANTIS	# sakantis
-
-	O S I	  	>	-OSI,ANTIS	# matantis
-	A S I		>	-SI,NTIS	# sukantis
-	I S I		>	-SI,NTIS	# mylintis
 
 
 ##############################################################################
@@ -4285,13 +4209,14 @@ suffixes
 #
 
 	# vnsk., vyr. gim.
-	A 	 	>	NTIS		# dirba > dirbantis
-	A		>	-A,ÀS	  	# dirba > dirbàs
-	A		>	NÈIO
-	A		>	NÈIAM
-	A		>	NTÁ
-	A		>	NÈIU
-	A		>	NÈIAME
+	[AI] 	 	>	NTIS		# dirbantis, mylintis
+	A		>	-A,ÀS	  	# dirbàs
+	I		>	-I,ÁS		# tikás
+	[AI]		>	NÈIO
+	[AI]		>	NÈIAM
+	[AI]		>	NTÁ
+	[AI]		>	NÈIU
+	[AI]		>	NÈIAME
 
 	O		>	-O,ANTIS	# daro > darantis
 	O		>	-O,ÀS		# daro > daràs
@@ -4301,31 +4226,15 @@ suffixes
 	O		>	-O,ANÈIU
 	O		>	-O,ANÈIAME
 
-	[^S] I		>	NTIS		# tiki > tikintis
-	[^S] I		>	-I,ÁS		# tiki > tikás
-	[^S] I		>	NÈIO
-	[^S] I		>	NÈIAM
-	[^S] I		>	NTÁ
-	[^S] I		>	NÈIU
-	[^S] I		>	NÈIAME
-
-	[^AOI] S I	>	NTIS		# tiksi > tiksintis
-	[^AOI] S I	>	-I,ÁS		# þagsi > þagsás
-	[^AOI] S I	>	NÈIO
-	[^AOI] S I	>	NÈIAM
-	[^AOI] S I	>	NTÁ
-	[^AOI] S I	>	NÈIU
-	[^AOI] S I	>	NÈIAME
-
 
 	# vnsk., mot. gim.
-	A		>	NTI		# moka > mokanti
-	A		>	NÈIOS
-	A		>	NÈIAI
-	A		>	NÈIÀ
-	A		>	NÈIA
-	A		>	NÈIOJE
-	A		>	NÈIOJ
+	[AI]		>	NTI		# moka > mokanti
+	[AI]		>	NÈIOS
+	[AI]		>	NÈIAI
+	[AI]		>	NÈIÀ
+	[AI]		>	NÈIA
+	[AI]		>	NÈIOJE
+	[AI]		>	NÈIOJ
 
 	O		>	-O,ANTI		# daro > daranti
 	O		>	-O,ANÈIOS
@@ -4335,33 +4244,18 @@ suffixes
 	O		>	-O,ANÈIOJE
 	O		>	-O,ANÈIOJ
 
-	[^S] I		>	NTI		# tyli > tylinti
-	[^S] I		>	NÈIOS
-	[^S] I		>	NÈIAI
-	[^S] I		>	NÈIÀ
-	[^S] I		>	NÈIA
-	[^S] I		>	NÈIOJE
-	[^S] I		>	NÈIOJ
-
-	[^AOI] S I	>	NTI		# þagsi > þagsinti
-	[^AOI] S I	>	NÈIOS
-	[^AOI] S I	>	NÈIAI
-	[^AOI] S I	>	NÈIÀ
-	[^AOI] S I	>	NÈIA
-	[^AOI] S I	>	NÈIOJE
-	[^AOI] S I	>	NÈIOJ
-
 
 	# dgsk., vyr. gim.
-	A		>	NTYS		# moka > mokantys
-	A		>	-A,À		# renka > renkà
-	A		>	NÈIØ
-	A		>	NTIEMS
-	A		>	NÈIUS
-	A		>	NÈIAIS
-	A		>	NÈIUOSE
+	[AI]		>	NTYS		# mokantys
+	A		>	-A,À		# renkà
+	I		>	-I,Á		# tiká
+	[AI]		>	NÈIØ
+	[AI]		>	NTIEMS
+	[AI]		>	NÈIUS
+	[AI]		>	NÈIAIS
+	[AI]		>	NÈIUOSE
 
-	O		>	-O,ANTYS	# moko > mokantys
+	O		>	-O,ANTYS	# mokantys
 	O		>	-O,À
 	O		>	-O,ANÈIØ
 	O		>	-O,ANTIEMS
@@ -4369,30 +4263,14 @@ suffixes
 	O		>	-O,ANÈIAIS
 	O		>	-O,ANÈIUOSE
 
-	[^S] I		>	NTYS		# tyli > tylintys
-	[^S] I		>	-I,Á		# tiki > tiká
-	[^S] I		>	NÈIØ
-	[^S] I		>	NTIEMS
-	[^S] I		>	NÈIUS
-	[^S] I		>	NÈIAIS
-	[^S] I		>	NÈIUOSE
-
-	[^AOI] S I	>	INTYS		# þagsi > þagsintys
-	[^AOI] S I	>	-I,Á		# tiksi > tiksá
-	[^AOI] S I	>	NÈIØ
-	[^AOI] S I	>	NTIEMS
-	[^AOI] S I	>	NÈIUS
-	[^AOI] S I	>	NÈIAIS
-	[^AOI] S I	>	NÈIUOSE
-
 
 	# dgsk., mot. gim.
-	#A		>	NÈIOS		# moka > mokanèios
-	#A		>	NÈIØ
-	A		>	NÈIOMS
-	A		>	NÈIAS
-	A		>	NÈIOMIS
-	A		>	NÈIOSE
+	#[AI]		>	NÈIOS		# mokanèios, mylinèios
+	#[AI]		>	NÈIØ
+	[AI]		>	NÈIOMS
+	[AI]		>	NÈIAS
+	[AI]		>	NÈIOMIS
+	[AI]		>	NÈIOSE
 
 	#O		>	-O,ANÈIOS	# daro > daranèios
 	#O		>	-O,ANÈIØ
@@ -4400,20 +4278,6 @@ suffixes
 	O		>	-O,ANÈIAS
 	O		>	-O,ANÈIOMIS
 	O		>	-O,ANÈIOSE
-
-	#[^S] I		>	NÈIOS		# tyli > tylinèios
-	#[^S] I		>	NÈIØ
-	[^S] I		>	NÈIOMS
-	[^S] I		>	NÈIAS
-	[^S] I		>	NÈIOMIS
-	[^S] I		>	NÈIOSE
-
-	#[^AOI] S I	>	NÈIOS		# þagsi > þagsinèios
-	#[^AOI] S I	>	NÈIØ
-	[^AOI] S I	>	NÈIOMS
-	[^AOI] S I	>	NÈIAS
-	[^AOI] S I	>	NÈIOMIS
-	[^AOI] S I	>	NÈIOSE
 
 
 
@@ -4425,45 +4289,31 @@ suffixes
 #
 
 	# vnsk., vyr. gim.
-	A		>	NTYSIS		# dirba > dirbantysis
-	A		>	NÈIOJO
-	A		>	NÈIAJAM
-	A		>	NTÁJÁ
-	A		>	NÈIUOJU
-	A		>	NÈIAJAME
+	[AI]		>	NTYSIS		# dirbantysis, tikintysis
+	[AI]		>	NÈIOJO
+	[AI]		>	NÈIAJAM
+	[AI]		>	NTÁJÁ
+	[AI]		>	NÈIUOJU
+	[AI]		>	NÈIAJAME
 
-	O		>	-O,ANTYSIS	# daro > darantysis
+	O		>	-O,ANTYSIS	# darantysis
 	O		>	-O,ANÈIOJO
 	O		>	-O,ANÈIAJAM
 	O		>	-O,ANTÁJÁ
 	O		>	-O,ANÈIUOJU
 	O		>	-O,ANÈIAJAME
 
-	[^S] I		>	NTYSIS		# tiki > tikintysis
-	[^S] I		>	NÈIOJO
-	[^S] I		>	NÈIAJAM
-	[^S] I		>	NTÁJÁ	
-	[^S] I		>	NÈIUOJU
-	[^S] I		>	NÈIAJAME
-
-	[^AOI] S I	>	NTYSIS		# tiksi > tiksintysis
-	[^AOI] S I	>	NÈIOJO
-	[^AOI] S I	>	NÈIAJAM
-	[^AOI] S I	>	NTÁJÁ	
-	[^AOI] S I	>	NÈIUOJU
-	[^AOI] S I	>	NÈIAJAME
-
 
 	# vnsk., mot. gim.
-	A		>	NÈIOJI		# moka > mokanèioji
-	A		>	NÈIOSIOS
-	A		>	NÈIAJAI
-	A		>	NÈIÀJÀ
-	A		>	NÈIÀJA
-	A		>	NÈIOJOJE
-	A		>	NÈIOJOJ
+	[AI]		>	NÈIOJI		# mokanèioji, tikinèioji
+	[AI]		>	NÈIOSIOS
+	[AI]		>	NÈIAJAI
+	[AI]		>	NÈIÀJÀ
+	[AI]		>	NÈIÀJA
+	[AI]		>	NÈIOJOJE
+	[AI]		>	NÈIOJOJ
 
-	O		>	-O,ANÈIOJI	# daro > daranèioji
+	O		>	-O,ANÈIOJI	# daranèioji
 	O		>	-O,ANÈIOSIOS
 	O		>	-O,ANÈIAJAI
 	O		>	-O,ANÈIÀJÀ
@@ -4471,81 +4321,38 @@ suffixes
 	O		>	-O,ANÈIOJOJE
 	O		>	-O,ANÈIOJOJ
 
-	[^S] I		>	NÈIOJI		# tiki > tikinèioji
-	[^S] I		>	NÈIOSIOS
-	[^S] I		>	NÈIAJAI
-	[^S] I		>	NÈIÀJÀ
-	[^S] I		>	NÈIÀJA
-	[^S] I		>	NÈIOJOJE
-	[^S] I		>	NÈIOJOJ
-
-	[^AOI] S I	>	NÈIOJI		# tiksi > tiksinèioji
-	[^AOI] S I	>	NÈIOSIOS
-	[^AOI] S I	>	NÈIAJAI
-	[^AOI] S I	>	NÈIÀJÀ
-	[^AOI] S I	>	NÈIÀJA
-	[^AOI] S I	>	NÈIOJOJE
-	[^AOI] S I	>	NÈIOJOJ
-
 
 	# dgsk., vyr. gim.
-	A		>	NTIEJI		# dirba > dirbantieji
-	A		>	NÈIØJØ
-	A		>	NTIESIEMS
-	A		>	NÈIUOSIUS
-	A		>	NÈIAISIAIS
-	A		>	NÈIUOSIUOSE
+	[AI]		>	NTIEJI		# dirbantieji, tikintieji
+	[AI]		>	NÈIØJØ
+	[AI]		>	NTIESIEMS
+	[AI]		>	NÈIUOSIUS
+	[AI]		>	NÈIAISIAIS
+	[AI]		>	NÈIUOSIUOSE
 
-	O		>	-O,ANTIEJI	# daro > darantieji
+	O		>	-O,ANTIEJI	# darantieji
 	O		>	-O,ANÈIØJØ
 	O		>	-O,ANTIESIEMS
 	O		>	-O,ANÈIUOSIUS
 	O		>	-O,ANÈIAISIAIS
 	O		>	-O,ANÈIUOSIUOSE
 
-	[^S] I		>	NTIEJI		# tiki > tikintieji
-	[^S] I		>	NÈIØJØ
-	[^S] I		>	NTIESIEMS
-	[^S] I		>	NÈIUOSIUS
-	[^S] I		>	NÈIAISIAIS
-	[^S] I		>	NÈIUOSIUOSE
-
-	[^AOI] S I	>	NTIEJI		# tiksi > tiksintieji
-	[^AOI] S I	>	NÈIØJØ
-	[^AOI] S I	>	NTIESIEMS
-	[^AOI] S I	>	NÈIUOSIUS
-	[^AOI] S I	>	NÈIAISIAIS
-	[^AOI] S I	>	NÈIUOSIUOSE
 
 
 	# dgsk., mot. gim.
-	#A		>	NÈIOSIOS	# moka > mokanèiosios
-	#A		>	NÈIØJØ
-	A		>	NÈIOSIOMS
-	A		>	NÈIÀSIAS
-	A		>	NÈIOSIOMIS
-	A		>	NÈIOSIOSE
+	#[AI]		>	NÈIOSIOS	# dirbanèiosios, tikinèiosios
+	#[AI]		>	NÈIØJØ
+	[AI]		>	NÈIOSIOMS
+	[AI]		>	NÈIÀSIAS
+	[AI]		>	NÈIOSIOMIS
+	[AI]		>	NÈIOSIOSE
 
-	#O		>	-O,ANÈIOSIOS	# daro > daranèiosios
+	#O		>	-O,ANÈIOSIOS	# daranèiosios
 	#O		>	-O,ANÈIØJØ
 	O		>	-O,ANÈIOSIOMS
 	O		>	-O,ANÈIÀSIAS
 	O		>	-O,ANÈIOSIOMIS
 	O		>	-O,ANÈIOSIOSE
-
-	#[^S] I		>	NÈIOSIOS	# tiki > tikinèiosios
-	#[^S] I		>	NÈIØJØ
-	[^S] I		>	NÈIOSIOMS
-	[^S] I		>	NÈIÀSIAS
-	[^S] I		>	NÈIOSIOMIS
-	[^S] I		>	NÈIOSIOSE
-
-	#[^AOI] S I	>	NÈIOSIOS	# tiksi > tiksinèiosios
-	#[^AOI] S I	>	NÈIØJØ		
-	[^AOI] S I	>	NÈIOSIOMS
-	[^AOI] S I	>	NÈIÀSIAS
-	[^AOI] S I	>	NÈIOSIOMIS
-	[^AOI] S I	>	NÈIOSIOSE
 
 
 ##############################################################################
@@ -4560,69 +4367,39 @@ suffixes
 #  
 #
 	# vnsk., vyr. gim.
-	[AO]		>	MAS		# eina > einamas
-	[AO]	      	>	MO
-	[AO]	      	>	MAM
-	[AO]	      	>	MÀ
-	[AO]	      	>	MU
-	[AO]	      	>	MAME
-
-	[^S] I	      	>	MAS		# myli > mylimas
-	[^S] I	      	>	MO
-	[^S] I	      	>	MAM
-	[^S] I	      	>	MÀ
-	[^S] I	      	>	MU
-	[^S] I	      	>	MAME
+	[AIO]		>	MAS		# einamas, mylimas, sakomas
+	[AIO]	      	>	MO
+	[AIO]	      	>	MAM
+	[AIO]	      	>	MÀ
+	[AIO]	      	>	MU
+	[AIO]	      	>	MAME
 
 	# vnsk., mot. gim.
-	[AO]		>	MA		# eina > einama
-	[AO]		>	MOS
-	[AO]		>	MAI
-	#[AO]		>	MÀ
-	#[AO]		>	MA
-	[AO]		>	MOJE
-	[AO]		>	MOJ
+	[AIO]		>	MA		# einama, mylima, sakoma
+	[AIO]		>	MOS
+	[AIO]		>	MAI
+	#[AIO]		>	MÀ
+	#[AIO]		>	MA
+	[AIO]		>	MOJE
+	[AIO]		>	MOJ
 
-	[^S] I		>	MA		# myli > mylima
-	[^S] I		>	MOS
-	[^S] I		>	MAI
-	#[^S] I		>	MÀ
-	#[^S] I		>	MA
-	[^S] I		>	MOJE
-	[^S] I		>	MOJ
 
 	# dgsk., vyr. gim.
-	[AO]		>	MI		# eina > einami
-	[AO]		>	MØ
-	[AO]		>	MIEMS
-	[AO]		>	MUS
-	[AO]		>	MAIS
-	[AO]		>	MUOSE
+	[AIO]		>	MI		# einami, mylimi, sakomi
+	[AIO]		>	MØ
+	[AIO]		>	MIEMS
+	[AIO]		>	MUS
+	[AIO]		>	MAIS
+	[AIO]		>	MUOSE
 
-	[^S] I		>	MI		# myli > mylimi
-	[^S] I		>	MØ
-	[^S] I		>	MIEMS
-	[^S] I		>	MUS
-	[^S] I		>	MAIS
-	[^S] I		>	MUOSE
 	
 	# dgsk., mot. gim.
-	#[AO]		>	MOS		# eina > einamos
-	#[AO]		>	MØ
-	[AO]		>	MOMS
-	#[AO]		>	MAS
-	[AO]		>	MOMIS
-	[AO]		>	MOSE
-
-	#[^S] I		>	MOS		# myli > mylimos
-	#[^S] I		>	MØ
-	[^S] I		>	MOMS
-	#[^S] I		>	MAS
-	[^S] I		>	MOMIS
-	[^S] I		>	MOSE
-
-	# sngr., neveik. rûð., bevrd. gim.
-        [AOI] S I 	>       -SI,MASI	# einasi > einamasi
+	#[AIO]		>	MOS		# einamos, mylimos, sakomos
+	#[AIO]		>	MØ
+	[AIO]		>	MOMS
+	#[AIO]		>	MAS
+	[AIO]		>	MOMIS
+	[AIO]		>	MOSE
 
 
 
@@ -4643,67 +4420,41 @@ suffixes
 #
 
 #~N5~	# vnsk., vyr. gim.
-#~N5~	[AO]	 	>	MESNIS		# geidþia > geidþiamesnis
-#~N5~	[AO]		>	MESNIO
-#~N5~	[AO]		>	MESNIAM
-#~N5~	[AO]		>	MESNÁ
-#~N5~	[AO]		>	MESNIU
-#~N5~	[AO]		>	MESNIAME
+#~N5~	[AIO]	 	>	MESNIS		# einamesnis, ...
+#~N5~	[AIO]		>	MESNIO
+#~N5~	[AIO]		>	MESNIAM
+#~N5~	[AIO]		>	MESNÁ
+#~N5~	[AIO]		>	MESNIU
+#~N5~	[AIO]		>	MESNIAME
 
-#~N5~	[^S] I		>	MESNIS		# myli > mylimesnis
-#~N5~	[^S] I		>	MESNIO
-#~N5~	[^S] I		>	MESNIAM
-#~N5~	[^S] I		>	MESNÁ
-#~N5~	[^S] I		>	MESNIU
-#~N5~	[^S] I		>	MESNIAME
 
 #~N5~	# vnsk., mot. gim.
-#~N5~	[AO]		>	MESNË		# geidþia > geidþiamesnë
-#~N5~	[AO]		>	MESNËS
-#~N5~	[AO]		>	MESNEI
-#~N5~	[AO]		>	MESNÆ
-#~N5~	[AO]		>	MESNE
-#~N5~	[AO]		>	MESNËJE
-#~N5~	[AO]		>	MESNËJ
-
-#~N5~	[^S] I		>	MESNË		# myli > mylimesnë
-#~N5~	[^S] I		>	MESNËS
-#~N5~	[^S] I		>	MESNEI
-#~N5~	[^S] I		>	MESNÆ
-#~N5~	[^S] I		>	MESNE
-#~N5~	[^S] I		>	MESNËJE
-#~N5~	[^S] I		>	MESNËJ
+#~N5~	[AIO]		>	MESNË		# einamesnë, ...
+#~N5~	[AIO]		>	MESNËS
+#~N5~	[AIO]		>	MESNEI
+#~N5~	[AIO]		>	MESNÆ
+#~N5~	[AIO]		>	MESNE
+#~N5~	[AIO]		>	MESNËJE
+#~N5~	[AIO]		>	MESNËJ
 
 
 #~N5~	# dgsk., vyr. gim.
-#~N5~	[AO]		>	MESNI		# geidþia > geidþiamesni
-#~N5~	[AO]		>	MESNIØ
-#~N5~	[AO]		>	MESNIEMS
-#~N5~	[AO]		>	MESNIUS
-#~N5~	[AO]		>	MESNIAIS
-#~N5~	[AO]		>	MESNIUOSE
+#~N5~	[AIO]		>	MESNI		# einamesni, ...
+#~N5~	[AIO]		>	MESNIØ
+#~N5~	[AIO]		>	MESNIEMS
+#~N5~	[AIO]		>	MESNIUS
+#~N5~	[AIO]		>	MESNIAIS
+#~N5~	[AIO]		>	MESNIUOSE
 
-#~N5~	[^S] I		>	MESNI		# myli > mylimesni
-#~N5~	[^S] I		>	MESNIØ
-#~N5~	[^S] I		>	MESNIEMS
-#~N5~	[^S] I		>	MESNIUS
-#~N5~	[^S] I		>	MESNIAIS
-#~N5~	[^S] I		>	MESNIUOSE
 
 #~N5~	# dgsk., mot. gim.
-#~N5~	#[AO]		>	MESNËS		# geidþia > geidþiamesnës
-#~N5~	#[AO]		>	MESNIØ
-#~N5~	[AO]		>	MESNËMS
-#~N5~	[AO]		>	MESNES
-#~N5~	[AO]		>	MESNËMIS
-#~N5~	[AO]		>	MESNËSE
+#~N5~	#[AIO]		>	MESNËS		# einamesnës, ...
+#~N5~	#[AIO]		>	MESNIØ
+#~N5~	[AIO]		>	MESNËMS
+#~N5~	[AIO]		>	MESNES
+#~N5~	[AIO]		>	MESNËMIS
+#~N5~	[AIO]		>	MESNËSE
 
-#~N5~	#[^S] I		>	MESNËS		# myli > mylimesnës
-#~N5~	#[^S] I		>	MESNIØ
-#~N5~	[^S] I		>	MESNËMS
-#~N5~	[^S] I		>	MESNES
-#~N5~	[^S] I		>	MESNËMIS
-#~N5~	[^S] I		>	MESNËSE
 
 
 ##############################################################################
@@ -4717,66 +4468,38 @@ suffixes
 #
 
 #~N5~	# vnsk., vyr. gim.
-#~N5~	[AO]	      	>	MIAUSIAS	# geidþia > geidþiamiausias
-#~N5~	[AO]		>	MIAUSIO
-#~N5~	[AO]		>	MIAUSIAM
-#~N5~	[AO]		>	MIAUSIÀ
-#~N5~	[AO]		>	MIAUSIU
-#~N5~	[AO]		>	MIAUSIAME
-
-#~N5~	[^S] I		>	MIAUSIAS	# myli > mylimiausias
-#~N5~	[^S] I		>	MIAUSIO
-#~N5~	[^S] I		>	MIAUSIAM
-#~N5~	[^S] I		>	MIAUSIÀ
-#~N5~	[^S] I		>	MIAUSIU
-#~N5~	[^S] I		>	MIAUSIAME
+#~N5~	[AIO]	      	>	MIAUSIAS	# einamiausias, ...
+#~N5~	[AIO]		>	MIAUSIO
+#~N5~	[AIO]		>	MIAUSIAM
+#~N5~	[AIO]		>	MIAUSIÀ
+#~N5~	[AIO]		>	MIAUSIU
+#~N5~	[AIO]		>	MIAUSIAME
 
 #~N5~	# vnsk., mot. gim.
-#~N5~	[AO]		>	MIAUSIA		# geidþia > geidþiamiausia
-#~N5~	[AO]		>	MIAUSIOS
-#~N5~	[AO]		>	MIAUSIAI
-#~N5~	#[AO]		>	MIAUSIÀ
-#~N5~	#[AO]		>	MIAUSIA
-#~N5~	[AO]		>	MIAUSIOJE
-#~N5~	[AO]		>	MIAUSIOJ
-
-#~N5~	[^S] I		>	MIAUSIA		# myli > mylimiausia
-#~N5~	[^S] I		>	MIAUSIOS
-#~N5~	[^S] I		>	MIAUSIAI
-#~N5~	#[^S] I		>	MIAUSIÀ
-#~N5~	#[^S] I		>	MIAUSIA
-#~N5~	[^S] I		>	MIAUSIOJE
-#~N5~	[^S] I		>	MIAUSIOJ
+#~N5~	[AIO]		>	MIAUSIA		# einamiausia, ...
+#~N5~	[AIO]		>	MIAUSIOS
+#~N5~	[AIO]		>	MIAUSIAI
+#~N5~	#[AIO]		>	MIAUSIÀ
+#~N5~	#[AIO]		>	MIAUSIA
+#~N5~	[AIO]		>	MIAUSIOJE
+#~N5~	[AIO]		>	MIAUSIOJ
 
 #~N5~	# dgsk., vyr. gim.
-#~N5~	[AO]		>	MIAUSI		# geidþia > geidþiamiausi
-#~N5~	[AO]		>	MIAUSIØ
-#~N5~	[AO]		>	MIAUSIEMS
-#~N5~	[AO]		>	MIAUSIUS
-#~N5~	[AO]		>	MIAUSIAIS
-#~N5~	[AO]		>	MIAUSIUOSE
-
-#~N5~	[^S] I		>	MIAUSI		# myli > mylimiausi
-#~N5~	[^S] I		>	MIAUSIØ
-#~N5~	[^S] I		>	MIAUSIEMS
-#~N5~	[^S] I		>	MIAUSIUS
-#~N5~	[^S] I		>	MIAUSIAIS
-#~N5~	[^S] I		>	MIAUSIUOSE
+#~N5~	[AIO]		>	MIAUSI		# einamiausi, ...
+#~N5~	[AIO]		>	MIAUSIØ
+#~N5~	[AIO]		>	MIAUSIEMS
+#~N5~	[AIO]		>	MIAUSIUS
+#~N5~	[AIO]		>	MIAUSIAIS
+#~N5~	[AIO]		>	MIAUSIUOSE
 
 #~N5~	# dgsk., mot. gim.
-#~N5~	#[AO]		>	MIAUSIOS	# geidþia > geidþiamiausios
-#~N5~	#[AO]		>	MIAUSIØ
-#~N5~	[AO]		>	MIAUSIOMS
-#~N5~	#[AO]		>	MIAUSIAS
-#~N5~	[AO]		>	MIAUSIOMIS
-#~N5~	[AO]		>	MIAUSIOSE
+#~N5~	#[AIO]		>	MIAUSIOS	# einamiausios, ...
+#~N5~	#[AIO]		>	MIAUSIØ
+#~N5~	[AIO]		>	MIAUSIOMS
+#~N5~	#[AIO]		>	MIAUSIAS
+#~N5~	[AIO]		>	MIAUSIOMIS
+#~N5~	[AIO]		>	MIAUSIOSE
 
-#~N5~	#[^S] I		>	MIAUSIOS	# myli > mylimiausios
-#~N5~	#[^S] I		>	MIAUSIØ
-#~N5~	[^S] I		>	MIAUSIOMS
-#~N5~	#[^S] I		>	MIAUSIAS
-#~N5~	[^S] I		>	MIAUSIOMIS
-#~N5~	[^S] I		>	MIAUSIOSE
 
 
 ##############################################################################
@@ -4787,66 +4510,37 @@ suffixes
 #
 
 	# vnsk., vyr. gim.
-	[AO]		>	MASIS		# geidþia > geidþiamasis
-	[AO]		>	MOJO
-	[AO]		>	MAJAM
-	[AO]		>	MÀJÁ
-	[AO]		>	MUOJU
-	[AO]		>	MAJAME
-
-	[^S] I		>	MASIS		# myli > mylimasis
-	[^S] I		>	MOJO
-	[^S] I		>	MAJAM
-	[^S] I		>	MÀJÁ
-	[^S] I		>	MUOJU
-	[^S] I		>	MAJAME
+	[AIO]		>	MASIS		# einamasis, ...
+	[AIO]		>	MOJO
+	[AIO]		>	MAJAM
+	[AIO]		>	MÀJÁ
+	[AIO]		>	MUOJU
+	[AIO]		>	MAJAME
 
 	# vnsk., mot. gim.
-	[AO]		>	MOJI		# geidþia > geidþiamoji
-	[AO]		>	MOSIOS
-	[AO]		>	MAJAI
-	[AO]		>	MÀJÀ
-	[AO]		>	MÀJA
-	[AO]		>	MOJOJE
-	[AO]		>	MOJOJ
-
-	[^S] I		>	MOJI		# myli > mylimoji
-	[^S] I		>	MOSIOS
-	[^S] I		>	MAJAI
-	[^S] I		>	MÀJÀ
-	[^S] I		>	MÀJA
-	[^S] I		>	MOJOJE
-	[^S] I		>	MOJOJ
+	[AIO]		>	MOJI		# einamoji, ...
+	[AIO]		>	MOSIOS
+	[AIO]		>	MAJAI
+	[AIO]		>	MÀJÀ
+	[AIO]		>	MÀJA
+	[AIO]		>	MOJOJE
+	[AIO]		>	MOJOJ
 
 	# dgsk., vyr. gim.
-	[AO]		>	MIEJI		# geidþia > geidþiamieji
-	[AO]		>	MØJØ
-	[AO]		>	MIESIEMS
-	[AO]		>	MUOSIUS
-	[AO]		>	MAISIAIS
-	[AO]		>	MUOSIUOSE
-
-	[^S] I		>	MIEJI		# myli > mylimieji
-	[^S] I		>	MØJØ
-	[^S] I		>	MIESIEMS
-	[^S] I		>	MUOSIUS
-	[^S] I		>	MAISIAIS
-	[^S] I		>	MUOSIUOSE
+	[AIO]		>	MIEJI		# einamieji, ...
+	[AIO]		>	MØJØ
+	[AIO]		>	MIESIEMS
+	[AIO]		>	MUOSIUS
+	[AIO]		>	MAISIAIS
+	[AIO]		>	MUOSIUOSE
 
 	# dgsk., mot. gim.
-	#[AO]		>	MOSIOS		# geidþia > geidþiamosios
-	#[AO]		>	MØJØ
-	[AO]		>	MOSIOMS
-	[AO]		>	MÀSIAS
-	[AO]		>	MOSIOMIS
-	[AO]		>	MOSIOSE
-
-	#[^S] I		>	MOSIOS		# myli > mylimosios
-	#[^S] I		>	MØJØ
-	[^S] I		>	MOSIOMS
-	[^S] I		>	MÀSIAS
-	[^S] I		>	MOSIOMIS
-	[^S] I		>	MOSIOSE
+	#[AIO]		>	MOSIOS		# einamosios, ...
+	#[AIO]		>	MØJØ
+	[AIO]		>	MOSIOMS
+	[AIO]		>	MÀSIAS
+	[AIO]		>	MOSIOMIS
+	[AIO]		>	MOSIOSE
 
 
 ##############################################################################
@@ -4861,66 +4555,37 @@ suffixes
 #
 
 #~N5~	# vnsk., vyr. gim.
-#~N5~	[AO]		>	MESNYSIS	# geidþia > geidþiamesnysis
-#~N5~	[AO]		>	MESNIOJO
-#~N5~	[AO]		>	MESNIAJAM
-#~N5~	[AO]		>	MESNÁJÁ
-#~N5~	[AO]		>	MESNIUOJU
-#~N5~	[AO]		>	MESNIAJAME
-
-#~N5~	[^S] I		>	MESNYSIS	# myli > mylimesnysis
-#~N5~	[^S] I		>	MESNIOJO
-#~N5~	[^S] I		>	MESNIAJAM
-#~N5~	[^S] I		>	MESNÁJÁ
-#~N5~	[^S] I		>	MESNIUOJU
-#~N5~	[^S] I		>	MESNIAJAME
+#~N5~	[AIO]		>	MESNYSIS	# einamesnysis, ...
+#~N5~	[AIO]		>	MESNIOJO
+#~N5~	[AIO]		>	MESNIAJAM
+#~N5~	[AIO]		>	MESNÁJÁ
+#~N5~	[AIO]		>	MESNIUOJU
+#~N5~	[AIO]		>	MESNIAJAME
 
 #~N5~	# vnsk., mot. gim.
-#~N5~	[AO]		>	MESNIOJI	# geidþia > geidþiamesnioji
-#~N5~	[AO]		>	MESNIOSIOS
-#~N5~	[AO]		>	MESNIAJAI
-#~N5~	[AO]		>	MESNIÀJÀ
-#~N5~	[AO]		>	MESNIÀJA
-#~N5~	[AO]		>	MESNIOJOJE
-#~N5~	[AO]		>	MESNIOJOJ
-
-#~N5~	[^S] I		>	MESNIOJI	# myli > mylimesnioji
-#~N5~	[^S] I		>	MESNIOSIOS
-#~N5~	[^S] I		>	MESNIAJAI
-#~N5~	[^S] I		>	MESNIÀJÀ
-#~N5~	[^S] I		>	MESNIÀJA
-#~N5~	[^S] I		>	MESNIOJOJE
-#~N5~	[^S] I		>	MESNIOJOJ
+#~N5~	[AIO]		>	MESNIOJI	# einamesnioji, ...
+#~N5~	[AIO]		>	MESNIOSIOS
+#~N5~	[AIO]		>	MESNIAJAI
+#~N5~	[AIO]		>	MESNIÀJÀ
+#~N5~	[AIO]		>	MESNIÀJA
+#~N5~	[AIO]		>	MESNIOJOJE
+#~N5~	[AIO]		>	MESNIOJOJ
 
 #~N5~	# dgsk., vyr. gim.
-#~N5~	[AO]		>	MESNIEJI	# geidþia > geidþiamesnieji
-#~N5~	[AO]		>	MESNIØJØ
-#~N5~	[AO]		>	MESNIESIEMS
-#~N5~	[AO]		>	MESNIUOSIUS
-#~N5~	[AO]		>	MESNIAISIAIS
-#~N5~	[AO]		>	MESNIUOSIUOSE	# ispell warn.: "too long"
-
-#~N5~	[^S] I		>	MESNIEJI	# myli > mylimesnieji
-#~N5~	[^S] I		>	MESNIØJØ
-#~N5~	[^S] I		>	MESNIESIEMS
-#~N5~	[^S] I		>	MESNIUOSIUS
-#~N5~	[^S] I		>	MESNIAISIAIS
-#~N5~	[^S] I		>	MESNIUOSIUOSE	# ispell warn.: "too long"
+#~N5~	[AIO]		>	MESNIEJI	# einamesnieji, ...
+#~N5~	[AIO]		>	MESNIØJØ
+#~N5~	[AIO]		>	MESNIESIEMS
+#~N5~	[AIO]		>	MESNIUOSIUS
+#~N5~	[AIO]		>	MESNIAISIAIS
+#~N5~	[AIO]		>	MESNIUOSIUOSE	# ispell warn.: "too long"
 
 #~N5~	# dgsk., mot. gim.
-#~N5~	#[AO]		>	MESNIOSIOS	# geidþia > geidþiamesniosios
-#~N5~	#[AO]		>	MESNIØJØ
-#~N5~	[AO]		>	MESNIOSIOMS
-#~N5~	[AO]		>	MESNIÀSIAS
-#~N5~	[AO]		>	MESNIOSIOMIS
-#~N5~	[AO]		>	MESNIOSIOSE
-		
-#~N5~	#[^S] I		>	MESNIOSIOS	# myli > mylimesnioji
-#~N5~	#[^S] I		>	MESNIØJØ
-#~N5~	[^S] I		>	MESNIOSIOMS
-#~N5~	[^S] I		>	MESNIÀSIAS
-#~N5~	[^S] I		>	MESNIOSIOMIS
-#~N5~	[^S] I		>	MESNIOSIOSE
+#~N5~	#[AIO]		>	MESNIOSIOS	# einamesniosios, ...
+#~N5~	#[AIO]		>	MESNIØJØ
+#~N5~	[AIO]		>	MESNIOSIOMS
+#~N5~	[AIO]		>	MESNIÀSIAS
+#~N5~	[AIO]		>	MESNIOSIOMIS
+#~N5~	[AIO]		>	MESNIOSIOSE
 
 
 ##############################################################################
@@ -4934,66 +4599,38 @@ suffixes
 #
 
 #~N5~	# vnsk., vyr. gim.
-#~N5~	[AO]		>	MIAUSIASIS	# geidþia > geidþiamiausiasis
-#~N5~	[AO]		>	MIAUSIOJO
-#~N5~	[AO]		>	MIAUSIAJAM
-#~N5~	[AO]		>	MIAUSIÀJÁ
-#~N5~	[AO]		>	MIAUSIUOJU
-#~N5~	[AO]		>	MIAUSIAJAME
-
-#~N5~	[^S] I		>	MIAUSIASIS	# myli > mylimiausiasis
-#~N5~	[^S] I		>	MIAUSIOJO
-#~N5~	[^S] I		>	MIAUSIAJAM
-#~N5~	[^S] I		>	MIAUSIÀJÁ
-#~N5~	[^S] I		>	MIAUSIUOJU	
-#~N5~	[^S] I		>	MIAUSIAJAME
+#~N5~	[AIO]		>	MIAUSIASIS	# einamiausiasis, ...
+#~N5~	[AIO]		>	MIAUSIOJO
+#~N5~	[AIO]		>	MIAUSIAJAM
+#~N5~	[AIO]		>	MIAUSIÀJÁ
+#~N5~	[AIO]		>	MIAUSIUOJU
+#~N5~	[AIO]		>	MIAUSIAJAME
 
 #~N5~	# vnsk., mot. gim.
-#~N5~	[AO]		>	MIAUSIOJI	# geidþia > geidþiamiausioji
-#~N5~	[AO]		>	MIAUSIOSIOS
-#~N5~	[AO]		>	MIAUSIAJAI
-#~N5~	[AO]		>	MIAUSIÀJÀ
-#~N5~	[AO]		>	MIAUSIÀJA
-#~N5~	[AO]		>	MIAUSIOJOJE
-#~N5~	[AO]		>	MIAUSIOJOJ
-
-#~N5~	[^S] I		>	MIAUSIOJI	# myli > mylimiausioji
-#~N5~	[^S] I		>	MIAUSIOSIOS
-#~N5~	[^S] I		>	MIAUSIAJAI
-#~N5~	[^S] I		>	MIAUSIÀJÀ
-#~N5~	[^S] I		>	MIAUSIÀJA
-#~N5~	[^S] I		>	MIAUSIOJOJE
-#~N5~	[^S] I		>	MIAUSIOJOJ
+#~N5~	[AIO]		>	MIAUSIOJI	# einamiausioji, ...
+#~N5~	[AIO]		>	MIAUSIOSIOS
+#~N5~	[AIO]		>	MIAUSIAJAI
+#~N5~	[AIO]		>	MIAUSIÀJÀ
+#~N5~	[AIO]		>	MIAUSIÀJA
+#~N5~	[AIO]		>	MIAUSIOJOJE
+#~N5~	[AIO]		>	MIAUSIOJOJ
 
 #~N5~	# dgsk., vyr. gim.
-#~N5~	[AO]		>	MIAUSIEJI	# geidþia > geidþiamiausieji
-#~N5~	[AO]		>	MIAUSIØJØ
-#~N5~	[AO]		>	MIAUSIESIEMS
-#~N5~	[AO]		>	MIAUSIUOSIUS
-#~N5~	[AO]		>	MIAUSIAISIAIS	# ispell warn.: "too long"
-#~N5~	[AO]		>	MIAUSIUOSIUOSE	# ispell warn.: "too long"
-
-#~N5~	[^S] I		>	MIAUSIEJI	# myli > mylimiausieji
-#~N5~	[^S] I		>	MIAUSIØJØ
-#~N5~	[^S] I		>	MIAUSIESIEMS
-#~N5~	[^S] I		>	MIAUSIUOSIUS
-#~N5~	[^S] I		>	MIAUSIAISIAIS	# ispell warn.: "too long"
-#~N5~	[^S] I		>	MIAUSIUOSIUOSE	# ispell warn.: "too long"
+#~N5~	[AIO]		>	MIAUSIEJI	# einamiausieji, ...
+#~N5~	[AIO]		>	MIAUSIØJØ
+#~N5~	[AIO]		>	MIAUSIESIEMS
+#~N5~	[AIO]		>	MIAUSIUOSIUS
+#~N5~	[AIO]		>	MIAUSIAISIAIS	# ispell warn.: "too long"
+#~N5~	[AIO]		>	MIAUSIUOSIUOSE	# ispell warn.: "too long"
 
 #~N5~	# dgsk., mot. gim.
-#~N5~	#[AO]		>	MIAUSIOSIOS	# geidþia > geidþiamiausiosios
-#~N5~	#[AO]		>	MIAUSIØJØ
-#~N5~	[AO]		>	MIAUSIOSIOMS
-#~N5~	[AO]		>	MIAUSIÀSIAS
-#~N5~	[AO]		>	MIAUSIOSIOMIS	# ispell warn.: "too long"
-#~N5~	[AO]		>	MIAUSIOSIOSE
+#~N5~	#[AIO]		>	MIAUSIOSIOS	# einamiausiosios, ...
+#~N5~	#[AIO]		>	MIAUSIØJØ
+#~N5~	[AIO]		>	MIAUSIOSIOMS
+#~N5~	[AIO]		>	MIAUSIÀSIAS
+#~N5~	[AIO]		>	MIAUSIOSIOMIS	# ispell warn.: "too long"
+#~N5~	[AIO]		>	MIAUSIOSIOSE
 
-#~N5~	#[^S] I		>	MIAUSIOSIOS	# myli > mylimiausiosios
-#~N5~	#[^S] I		>	MIAUSIØJØ
-#~N5~	[^S] I		>	MIAUSIOSIOMS
-#~N5~	[^S] I		>	MIAUSIÀSIAS
-#~N5~	[^S] I		>	MIAUSIOSIOMIS	# ispell warn.: "too long"
-#~N5~	[^S] I		>	MIAUSIOSIOSE
 
 
 			#######################
@@ -5008,6 +4645,17 @@ suffixes
 #
 #			 Bûtasis kartinis laikas
 #
+# Bûtojo kartinio laiko þyma, JEI veiksmaþodis NËRA {-yti/-ë};
+# (kai veiksmaþodis yra {-yti/-ë}, tai jam skirta þyma /Y)
+#
+#  Jei b. k. laike -ë, o bendratyje -yti, tai b. k. laiko 
+#  dalyviai suminkðtëja (tokiems veiksmaþodþiais skirta þyma /Y): 
+#
+#     valg(-yti,-ë), dar(-yti,-ë) > valg(-IUsius,-IUsiems), 
+#                                    dar(-IUsius,-IUsiems) ...
+#
+#  plg.: neð(-ti,-ë), ðok(-ti,-o) > neð(-Usius,-Usiems), ðok(-Usius,-Usiems)
+#
 ##############################################################################
 #
 
@@ -5016,7 +4664,6 @@ suffixes
 # tikëjo, kentëjo, supo, ðukavo, saugojo
 # 
 
-	## Nesangràþiniai ##
 	# Vnsk./dgsk. III asm.: ðakninis þodis
 
   	# Vnsk., I asm.
@@ -5033,27 +4680,12 @@ suffixes
 	O		>	TE
 	O		>	T
 
-	## Sangràþiniai ##
-	# Vnsk./dgsk. III asm.: ðakninis þodis
-
-  	# Vnsk., I asm.
-	O S I		>	-OSI,AUSI
-
-  	# Vnsk., II asm.
-	O S I		>	-OSI,AISI
-
-  	# Dgsk., I asm.
-	O S I		>	-SI,MËS
-
-  	# Dgsk., II asm.
-	O S I		>	-SI,TËS
 
 ##############################################################################
 # IV paradigma
 # neðë, keitë
 #
 
-	## Nesangràþiniai ##
 	# Vnsk./dgsk. III asm.: ðakninis þodis
 
   	# Vnsk., I asm.
@@ -5072,32 +4704,12 @@ suffixes
 	Ë		>	TE		# beldëte, beldët
 	Ë		>	T
 
-  	## Sangràþiniai ##
-	# Vnsk./dgsk. III asm.: ðakninis þodis
-
-	# Vnsk., I asm.
-	[^DT] Ë S I	>	-ËSI,IAUSI	# neðësi > neðiausi
-	D Ë S I		>	-ËSI,ÞIAUSI	# beldësi > beldþiausi
-	T Ë S I		>	-TËSI,ÈIAUSI	# keitësi > keièiausi
-
-	# Vnsk., II asm.
-	Ë S I		>	-ËSI,EISI	# keiteisi
-
-	# Dgsk., I asm.
-	Ë S I		>	-SI,MËS		# keitëmës
-	
-	# Dgsk., II asm.
-	Ë S I		>	-SI,TËS		# keitëtës
-
 
 ##############################################################################
 # Bûtojo kartinio laiko padalyvis
 #
-	O		>	-O,US		# gerti > gërus
-	Ë		>	-Ë,US		# gerti > gërus
-
-	O S I		>	-OSI,USIS	# mylëjosi > mylëjusis
-	Ë S I		>	-ËSI,USIS	# vylësi > vylusis
+	O		>	-O,US		# buvo > buvus
+	Ë		>	-Ë,US		# gërë > gërus
 
 
 ##############################################################################
@@ -5171,27 +4783,6 @@ suffixes
 	Ë		>	-Ë,USIAS
 	Ë		>	-Ë,USIOMIS
 	Ë		>	-Ë,USIOSE
-
-
-	## Sangràþiniai ##
-
-	# vnsk., vyr. gim.
-	Ë S I		>	-ËSI,ÆSIS	# tarësi > taræsis
-	O S I		>	-OSI,ÆSIS	# suposi > supæsis
-
-	# vnsk., mot. gim.
-	#Ë S I		>	-ËSI,USIS	# tarusis
-	#O S I		>	-OSI,USIS	# supusis
-
-	# dgsk., vyr. gim.
-	Ë S I		>	-ËSI,ÆSI	# taræsi
-	O S I		>	-OSI,ÆSI	# supæsi
-
-	# dgsk., mot. gim.
-	Ë S I		>	-ËSI,USIOSI	# tarusiosi
-	O S I		>	-OSI,USIOSI	# supusiosi
-
-
 
 
 
@@ -5272,13 +4863,8 @@ suffixes
 ##############################################################################
 # Daiktavardþiai su priesaga -imas
 #
-# L.V.: sangràþinës formos daugiskaita turi tik vardininko ir kilmininko 
-# linksnius ir tai retais atvejais, nes abstrakcijos (abstrakèios reikðmës 
-# daiktavardþiai) daþniausiai neskaièiuojamos; kiti linksniai ir nevartotini 
-# ir turbût neteisingi...
 #
 
-	## Nesangràþiniai ##
 
 	# vnsk., vyr. gim.
 	O		>	-O,IMAS		# tikëjimas
@@ -5311,38 +4897,6 @@ suffixes
 	Ë		>	-Ë,IMUOSE
 
 
-	## Sangràþiniai ##
-
-	# vnsk., vyr. gim.
-	O S I		>	-OSI,IMASIS	# muðimasis
-	O S I		>	-OSI,IMOSI
-	O S I		>	-OSI,IMUISI
-	O S I		>	-OSI,IMÀSI
-	O S I		>	-OSI,IMUSI
-	O S I		>	-OSI,IMESI
-
-	Ë S I		>	-ËSI,IMASIS	# keitimasis
-	Ë S I		>	-ËSI,IMOSI
-	Ë S I		>	-ËSI,IMUISI
-	Ë S I		>	-ËSI,IMÀSI
-	Ë S I		>	-ËSI,IMUSI
-	Ë S I		>	-ËSI,IMESI
-
-	# dgsk., vyr. gim.
-	O S I		>	-OSI,IMAISI	# mûðimaisi
-	O S I		>	-OSI,IMØSI
-	#O S I		>	-OSI,IMAMSIS
-	#O S I		>	-OSI,IMUSIS
-	#O S I		>	-OSI,IMAISIS
-	#O S I		>	-OSI,IMUOSESI
-
-	Ë S I		>	-ËSI,IMAISI	# keitimaisi
-	Ë S I		>	-ËSI,IMØSI
-	#Ë S I		>	-ËSI,IMAMSIS
-	#Ë S I		>	-ËSI,IMUSIS
-	#Ë S I		>	-ËSI,IMAISIS
-	#Ë S I		>	-ËSI,IMUOSESI
-
 
 			#######################
 			#######################
@@ -5356,7 +4910,7 @@ suffixes
 #
 #			 Bûtasis kartinis laikas
 #
-#  P þyma, skirta veiksmaþodþiams su bendratimi -yti.
+# Bûtojo kartinio laiko þyma, JEI veiksmaþodis YRA {-yti/-ë};
 #
 #  Jei b. k. laike -ë, o bendratyje -yti, tai b. k. laiko 
 #  dalyviai suminkðtëja: 
@@ -5369,43 +4923,6 @@ suffixes
 ##############################################################################
 #
 
-##############################################################################
-# III paradigma
-# gijo, vijo, lijo, rûdijo, kerðijo, ðaknijo, kirmijo, ...
-#
-
-	## Nesangràþiniai ##
-	# Vnsk./dgsk. III asm.: ðakninis þodis
-
-  	# Vnsk., I asm.
-	O		>	-O,AU		# vijo > vijau
-
-  	# Vnsk., II asm.
-	O		>	-O,AI		# vijai
-
-  	# Dgsk., I asm.
-	O		>	ME		# vijome, vijom
-	O		>	M
-
-  	# Dgsk., I asm.
-	O		>	TE		# vijote, vijot
-	O		>	T
-
-
-	## Sangràþiniai ##
-	# Vnsk./dgsk. III asm.: ðakninis þodis
-
-  	# Vnsk., I asm.
-	O S I		>	-OSI,AUSI	# vijosi > vijausi
-
-  	# Vnsk., II asm.
-	O S I		>	-OSI,AISI	# vijaisi
-
-  	# Dgsk., I asm.
-	O S I		>	-SI,MËS		# vijomës
-
-  	# Dgsk., II asm.
-	O S I		>	-SI,TËS		# vijotës
 
 
 ##############################################################################
@@ -5413,58 +4930,33 @@ suffixes
 # mokë, laikë, darë, sakë, skaitë, skaldë ...
 #
 
-	## Nesangràþiniai ##
 	# Vnsk./dgsk. III asm.: ðakninis þodis
 
-  	# Vnsk., I asm.
+ 	# Vnsk., I asm.
 	D Ë		>	-Ë,ÞIAU		# skaldë > skaldþiau
 	T Ë		>	-TË,ÈIAU	# skaitë > skaièiau
 	[^DT] Ë		>	-Ë,IAU		# sakë > sakiau
 
-  	# Vnsk., II asm.
+ 	# Vnsk., II asm.
 	Ë		>	-Ë,EI		# sakei
 
-  	# Dgsk., I asm.
+ 	# Dgsk., I asm.
 	Ë		>	ME		# sakëme, sakëm
 	Ë		>	M
 
-  	# Dgsk., II asm.
+ 	# Dgsk., II asm.
 	Ë		>	TE		# sakëte, sakët
 	Ë		>	T
 
-
-	## Sangràþiniai ##
-	# Vnsk./dgsk. III asm.: ðakninis þodis
-
-  	# Vnsk., I asm.
-	D Ë S I		>	-ËSI,ÞIAUSI	# rodësi > rodþiausi
-	T Ë S I		>	-TËSI,ÈIAUSI	# raitësi > raièiausi
-	[^DT] Ë S I	>	-ËSI,IAUSI	# mokësi > mokiausi
-
-  	# Vnsk., II asm.
-	Ë S I		>	-ËSI,EISI	# mokeisi
-
-  	# Dgsk., I asm.
-	Ë S I		>	-SI,MËS		# mokëmës
-
-  	# Dgsk., II asm.
-	Ë S I		>	-SI,TËS		# mokëtës
 
 
 ##############################################################################
 # Bûtojo kartinio laiko padalyvis
 #
 #
-	O		>	-O,US		# kirmijo > kirmijus
 	D Ë		>	-Ë,ÞIUS		# rodë > rodþius
 	T Ë		>	-TË,ÈIUS	# matë > maèius
 	[^DT] Ë		>	-Ë,IUS		# laikë > laikius
-
-	O S I		>	-OSI,USIS	# vijosi > vijusis
-	[^DT] Ë S I	> 	-ËSI,IUSIS	# laikësi > laikiusis
-	
-	D Ë S I		>	-ËSI,ÞIUSIS	# rodësi > rodþiusis
-	T Ë S I		>	-TËSI,ÈIUSIS	# raitësi > raièiusis
 
 
 ##############################################################################
@@ -5478,13 +4970,6 @@ suffixes
 
 
 	# vnsk., vyr. gim.
-	O		>	-O,ÆS		# vijo > vijæs
-	O		>	-O,USIO
-	O		>	-O,USIAM
-	O		>	-O,USÁ
-	O		>	-O,USIU
-	O		>	-O,USIAME
-
 	Ë		>	-Ë,ÆS		# sakæs, skaldæs, skaitæs
 
 	[^DT] Ë		>	-Ë,IUSIO
@@ -5507,14 +4992,6 @@ suffixes
 	
 
 	# vnsk., mot. gim.
-	O		>	-O,USI		# vijo > vijusi
-	O		>	-O,USIOS
-	O		>	-O,USIAI
-	O		>	-O,USIÀ
-	O		>	-O,USIA
-	O		>	-O,USIOJE
-	O		>	-O,USIOJ
-
 	[^DT] Ë		>	-Ë,IUSI		# sakë > sakiusi
 	[^DT] Ë		>	-Ë,IUSIOS
 	[^DT] Ë		>	-Ë,IUSIAI
@@ -5541,13 +5018,6 @@ suffixes
 
 
 	# dgsk., vyr. gim.
-	O		>	-O,Æ		# vijo > vijæ
-	O		>	-O,USIØ
-	O		>	-O,USIEMS
-	O		>	-O,USIUS
-	O		>	-O,USIAIS
-	O		>	-O,USIUOSE
-
 	Ë		>	-Ë,Æ		# sakæ, skaldæ, skaitæ
 
 	[^DT] Ë		>	-Ë,IUSIØ
@@ -5570,13 +5040,6 @@ suffixes
 
 
 	# dgsk., mot. gim.
-	#O		>	-O,USIOS	# vijo > vijusios
-	#O		>	-O,USIØ
-	O		>	-O,USIOMS
-	O		>	-O,USIAS
-	O		>	-O,USIOMIS
-	O		>	-O,USIOSE
-
 	#[^DT] Ë	>	-Ë,IUSIOS	# sakë > sakiusios
 	#[^DT] Ë	>	-Ë,IUSIØ
 	[^DT] Ë		>	-Ë,IUSIOMS
@@ -5599,25 +5062,6 @@ suffixes
 	T Ë		>	-TË,ÈIUSIOSE
 
 
-	## Sangràþiniai ##
-
-	# vnsk., vyr. gim.
-	Ë S I		>	-ËSI,ÆSIS	# taisësi > taisæsis
-	O S I		>	-OSI,ÆSIS	# gëdijosi > gëdijæsis
-
-	# vnsk., mot. gim.
-	#Ë S I		>	-ËSI,IUSIS	# taisiusis
-	#O S I		>	-OSI,USIS	# gëdijusis
-
-	# dgsk., vyr. gim.
-	Ë S I		>	-ËSI,ÆSI	# taisæsi
-	O S I		>	-OSI,ÆSI	# gëdijæsi
-
-	# dgsk., mot. gim.
-	Ë S I		>	-ËSI,IUSIOSI	# taisiusiosi
-	O S I		>	-OSI,USIOSI	# gëdijusiosi
-
-
 
 
 ##############################################################################
@@ -5628,13 +5072,6 @@ suffixes
 #
 
 	# vnsk., vyr. gim.
-	O		>	-O,USYSIS	# vijo > vijusysis
-	O		>	-O,USIOJO
-	O		>	-O,USIAJAM
-	O		>	-O,USÁJÁ
-	O		>	-O,USIUOJU
-	O		>	-O,USIAJAME
-
 	[^DT] Ë		>	-Ë,IUSYSIS	# sakë > sakiusysis
 	[^DT] Ë		>	-Ë,IUSIOJO
 	[^DT] Ë		>	-Ë,IUSIAJAM
@@ -5658,14 +5095,6 @@ suffixes
 
 
 	# vnsk., mot. gim.
-	O		>	-O,USIOJI	# vijo > vijusioji
-	O		>	-O,USIOSIOS
-	O		>	-O,USIAJAI
-	O		>	-O,USIÀJÀ
-	O		>	-O,USIÀJA
-	O		>	-O,USIOJOJE
-	O		>	-O,USIOJOJ
-
 	[^DT] Ë		>	-Ë,IUSIOJI	# sakë > sakiusioji
 	[^DT] Ë		>	-Ë,IUSIOSIOS
 	[^DT] Ë		>	-Ë,IUSIAJAI
@@ -5692,13 +5121,6 @@ suffixes
 
 
 	# dgsk., vyr. gim.
-	O		>	-O,USIEJI	# vijo > vijusieji
-	O		>	-O,USIØJØ
-	O		>	-O,USIESIEMS
-	O		>	-O,USIUOSIUS
-	O		>	-O,USIAISIAIS
-	O		>	-O,USIUOSIUOSE
-
 	[^DT] Ë		>	-Ë,IUSIEJI	# sakë > sakiusieji
 	[^DT] Ë		>	-Ë,IUSIØJØ
 	[^DT] Ë		>	-Ë,IUSIESIEMS
@@ -5722,13 +5144,6 @@ suffixes
 
 
 	# dgsk., mot. gim.
-	#O		>	-O,USIOSIOS	# vijo > vijusiosios
-	#O		>	-O,USIØJØ
-	O		>	-O,USIOSIOMS
-	O		>	-O,USIÀSIAS
-	O		>	-O,USIOSIOMIS
-	O		>	-O,USIOSIOSE
-
 	#[^DT] Ë	>	-Ë,IUSIOSIOS	# sakë > sakiusiosios
 	#[^DT] Ë	>	-Ë,IUSIØJØ
 	[^DT] Ë		>	-Ë,IUSIOSIOMS
@@ -5755,22 +5170,9 @@ suffixes
 ##############################################################################
 # Daiktavardþiai su priesagomis -imas, -ymas
 #
-# L.V.: sangràþinës formos daugiskaita turi tik vardininko ir kilmininko 
-# linksnius ir tai retais atvejais, nes abstrakcijos (abstrakèios reikðmës 
-# daiktavardþiai) daþniausiai neskaièiuojamos; kiti linksniai ir nevartotini 
-# ir turbût neteisingi...
 #
 
-	## Nesangràþiniai ##
-
 	# vnsk., vyr. gim.
-	O		>	-O,IMAS		# rijo > rijimas
-	O		>	-O,IMO
-	O		>	-O,IMUI
-	O		>	-O,IMÀ
-	O		>	-O,IMU
-	O		>	-O,IME
-
 	Ë		>	-Ë,YMAS		# valgymas
 	Ë		>	-Ë,YMO
 	Ë		>	-Ë,YMUI
@@ -5779,53 +5181,12 @@ suffixes
 	Ë		>	-Ë,YME
 
 	# dgsk., vyr. gim.
-	O		>	-O,IMAI		# rijo > rijimai
-	O		>	-O,IMØ
-	O		>	-O,IMAMS
-	O		>	-O,IMUS
-	O		>	-O,IMAIS
-	O		>	-O,IMUOSE
-
 	Ë		>	-Ë,YMAI		# valgë > valgymai
 	Ë		>	-Ë,YMØ
 	Ë		>	-Ë,YMAMS
 	Ë		>	-Ë,YMUS
 	Ë		>	-Ë,YMAIS
 	Ë		>	-Ë,YMUOSE
-
-
-	## Sangràþiniai ##
-
-	# vnsk., vyr. gim.
-	Ë S I		>	-ËSI,YMASIS	# skaitësi > skaitymasis
-	Ë S I		>	-ËSI,YMOSI
-	Ë S I		>	-ËSI,YMUISI
-	Ë S I		>	-ËSI,YMÀSI
-	Ë S I		>	-ËSI,YMUSI
-	Ë S I		>	-ËSI,YMESI
-
-	O S I		>	-OSI,IMASIS	# vijosi > vyjimasis
-	O S I		>	-OSI,IMOSI
-	O S I		>	-OSI,IMUISI
-	O S I		>	-OSI,IMÀSI
-	O S I		>	-OSI,IMUSI
-	O S I		>	-OSI,IMESI
-
-
-	# dgsk., vyr. gim.
-	Ë S I		>	-ËSI,YMAISI	# maivësi > maivymaisi
-	Ë S I		>	-ËSI,YMØSI
-	#Ë S I		>	-ËSI,YMAMSIS
-	#Ë S I		>	-ËSI,YMUSIS
-	#Ë S I		>	-ËSI,YMAISIS
-	#Ë S I		>	-ËSI,YMUOSESI
-
-	O S I		>	-OSI,IMAISI	# vijosi > vyjimaisi
-	O S I		>	-OSI,IMØSI
-	#O S I		>	-OSI,IMAMSIS
-	#O S I		>	-OSI,IMUSIS
-	#O S I		>	-OSI,IMAISIS
-	#O S I		>	-OSI,IMUOSESI
 
 
 
@@ -5852,7 +5213,6 @@ suffixes
 # Bûtasis daþninis laikas
 #
 
-	## Nesangràþiniai ##
 
   	# Vnsk., I asm.
 	T I		>	-TI,DAVAU	# eiti > eidavau
@@ -5872,23 +5232,6 @@ suffixes
 	T I		>	-TI,DAVOT
 
 
-	## Sangràþiniai ##
-
-  	# Vnsk., I asm.
-	T I S		>	-TIS,DAVAUSI	# imtis > imdavausi
-
-  	# Vnsk., II asm.
-	T I S		>	-TIS,DAVAISI	# imdavaisi
-
-	# Vnsk./Dgsk., III asm.
-	T I S	        >	-TIS,DAVOSI	# imdavosi
-
-	# Dgsk., I asm.
-	T I S		>	-TIS,DAVOMËS	# imdavomës
-
-	# Dgsk., II asm.
-	T I S		>	-TIS,DAVOTËS	# imdavotës
-
 
 ##############################################################################
 # Bûsimasis laikas
@@ -5897,7 +5240,6 @@ suffixes
 # kad bûtø generuojamas korektiðkas bûsimojo laiko III asmuo;
 # (þr. U, W taisykliø apraðymus)
 #
-	## Nesangràþiniai ##
 
   	# Vnsk., I asm.
 	[^SÐZÞ] T I	>	-TI,SIU		# eiti > eisiu
@@ -5945,44 +5287,11 @@ suffixes
 	Þ T I		>	-ÞTI,ÐIT
 
 
-	## Sangràþiniai ##
-
-  	# Vnsk., I asm.
-	[^SÐZÞ] T I S	>	-TIS,SIUOSI	# imtis > imsiuosi
-	[SÐ] T I S    	>	-TIS,IUOSI	# vesiuosi, neðiuosi
-	Z T I S	    	>	-ZTIS,SIUOSI	# megsiuosi
-	Þ T I S		>	-ÞTIS,ÐIUOSI	# veðiuosi
-
-  	# Vnsk., II asm.
-	[^SÐZÞ] T I S	>	-TIS,SIESI	# imsiesi
-	[SÐ] T I S    	>	-TIS,IESI	# vesiesi, neðiesi
-	Z T I S	    	>	-ZTIS,SIESI	# megsiesi
-	Þ T I S		>	-ÞTIS,ÐIESI	# veðiesi
-
-  	# Vnsk./Dgsk., III asm.
-	[^SÐZÞ] T I S	>	-TIS,SIS	# imsis
-	[SÐ] T I S    	>	-TIS,IS		# vesis, neðis
-	Z T I S	    	>	-ZTIS,SIS	# megsis
-	Þ T I S		>	-ÞTIS,ÐIS	# veðis
-
-  	# Dgsk., I asm.
-	[^SÐZÞ] T I S	>	-TIS,SIMËS	# imsimës
-	[SÐ] T I S    	>	-TIS,IMËS	# vesimës, neðimës
-	Z T I S	    	>	-ZTIS,SIMËS	# megsimës
-	Þ T I S		>	-ÞTIS,ÐIMËS	# veðimës
-
-  	# Dgsk., II asm.
-	[^SÐZÞ] T I S	>	-TIS,SITËS	# imsitës
-	[SÐ] T I S    	>	-TIS,ITËS	# vesitës, neðitës
-	Z T I S	    	>	-ZTIS,SITËS	# megsitës
-	Þ T I S		>	-ÞTIS,ÐITËS	# veðitës
-
 
 ##############################################################################
 # Tariamoji nuosaka
 #
 
-	## Nesangràþiniai ##
 
   	# Vnsk., I asm.
 	T I		>	-TI,ÈIAU	# eiti > eièiau
@@ -6007,32 +5316,11 @@ suffixes
 	#T I		>	-I,UT		# vargu ar verta
 
 
-	## Sangràþiniai ##
-
-  	# Vnsk., I asm.
-	T I S		>	-TIS,ÈIAUSI	# rinktis > rinkèiausi
-
-  	# Vnsk., II asm.
-	T I S		>	-IS,UMEISI	# rinktumeisi, rinktumeis
-	T I S		>	-IS,UMEIS
-
-  	# Vnsk./Dgsk., III asm.
-	T I S	        >	-IS,ØSI		# rinktøsi
-
-	# Dgsk., I asm.
-	T I S		>	-IS,UMËMËS	# rinktumëmës, rinktumës
-	T I S		>	-IS,UMËS
-
-	# Dgsk., II asm.
-	T I S		>	-IS,UMËTËS	# rinktumëtës, rinktutës
-	T I S		>	-IS,UTËS
-
 
 ##############################################################################
 # Liepiamoji nuosaka
 #
 
-	## Nesangràþiniai ##
 
   	# Vnsk., II asm.
 	[^KG] T I	>	-TI,K		# eiti > eik
@@ -6061,29 +5349,11 @@ suffixes
 	G T I		>	-GTI,KIT
 
 
-	## Sangràþiniai ##
-
-  	# Vnsk., II asm.
-	[^KG] T I S	>	-TIS,KIS	# siøstis > siøskis
-	K T I S	  	>	-TIS,IS		# trauktis > traukis
-	G T I S		>	-GTIS,KIS	# rengtis > renkis
-
-  	# Dgsk., I asm.
-	[^KG] T I S	>	-TIS,KIMËS	# siøskimës
-	K T I S		>	-TIS,IMËS	# traukimës
-	G T I S		>	-GTIS,KIMËS	# renkimës
-
-  	# Dgsk., II asm.
-	[^KG] T I S	>	-TIS,KITËS	# siøskitës
-	K T I S		>	-TIS,ITËS	# traukitës
-	G T I S		>	-GTIS,KITËS	# renkitës
-
 
 ##############################################################################
 # Pusdalyvis
 #
 
-	## Nesangràþiniai ##
 
   	# Vnsk.
 	T I		>	-TI,DAMAS	# eiti > eidamas, eidama
@@ -6092,17 +5362,6 @@ suffixes
   	# Dgsk.
 	T I		>	-TI,DAMI	# eiti > eidami, eidamos
 	T I		>	-TI,DAMOS
-
-
-	## Sangràþiniai ##
-
-  	# Vnsk.
-	T I S		>	-TIS,DAMASIS	# rinktis > rinkdamasis
-	T I S		>	-TIS,DAMASI	# rinktis > rinkdamasi
-
-  	# Dgsk.
-	T I S		>	-TIS,DAMIESI	# rinkdamiesi
-	T I S		>	-TIS,DAMOSI	# rinkdamosi
 
 
 ##############################################################################
@@ -6115,7 +5374,6 @@ suffixes
 # (mot. g. dgsk. galininkas sutampa su vyr. g. vnsk. vardininku)
 #
 
-	## Nesangràþiniai ##
 
 	# vnsk., vyr. gim.
 	T I		>	-I,AS		# mylëti > mylëtas
@@ -6148,11 +5406,6 @@ suffixes
 	#T I		>	-I,AS
 	T I		>	-I,OMIS
 	T I		>	-I,OSE
-
-
-	## Sangràþiniai ##
-
-        T I S   	>       -IS,ASI		# mylëtasi
 
 
 ##############################################################################
@@ -6243,6 +5496,7 @@ suffixes
 #################################################################
 #  Sangràþiniai dalyviai
 #
+#  A.A.: 
 #  Paliekami skaitytojui kaip pratimas...
 #  Að paraðysiu ¥besimokantis´ vietoj ¥mokàsis´.
 #  Bet ten tiktai vardininkus visø laikø reikia padaryti.
@@ -6253,7 +5507,6 @@ suffixes
 # Bûtojo daþninio laiko padalyvis
 #
 	T I		>	-TI,DAVUS	# eiti > eidavus
-	T I S		>	-TIS,DAVUSIS	# rinkdavusis
 
 
 ##############################################################################
@@ -6902,6 +6155,7 @@ suffixes
 			#######################
 
 ############################################################################## 
+# L.V.:
 # Bendraties, kuri baigiasi -ûti/-yti, þyma (pridedama papildomai prie T);
 # bûsimojo laiko III asmens afiksas
 # (jei/kai b. l. III asmenyje yra *ilgos* balsës y, û: sakys, pûs, ...)
@@ -6916,3 +6170,468 @@ suffixes
 #	vyti > vys, siûti > siûs
 #
       	[ÛY] T I	>	-TI,S
+
+
+
+			#######################
+			#######################
+			
+				flag R:
+
+			#######################
+			#######################
+
+############################################################################## 
+# L.V.:
+# Sangràþiniai veiksmaþodþiai; papildoma þyma prie pagrindiniø veiksmaþodþio
+# formø, kuri generuoja sangràþines formas (ir kitas sangràþines 
+# veiksmaþodinës kilmës/darybos dalis):
+#
+#  Bendratis:
+#    -ti -> tis :  mylë-ti -> mylë-tis, maty-ti -> maty-tis
+#
+#  Esamasis laikas:
+#    -a  -> asi :  ein-a   -> ein-asi,  neð-a   -> neð-asi
+#    -o  -> osi :  sak-o   -> sak-osi,  mylëj-o -> mylëj-osi
+#
+#  Bûtasis laikas:
+#    -ë  -> ësi :  tar-ë   -> tar-ësi,  lenk-ë  -> lenk-ësi
+#
+# Paþymëtina, kad nesigauna visos sangràþiniø formø darybos sutraukti po viena
+# afikso þyma (nes sutampa galûnës), todël:
+#
+#  - Esamajo laiko veiksmaþodþiams, kurie baigiasi -i, reikia pridëti þymà /O;
+#  - Bûtojo laiko veiksmaþodþiams, kurie baigiasi -o, reikia pridëti þymà /O;
+#  - Bûtojo laiko veiksmaþodþiams (kai bndr. -yti) -ë, reikia pridëti þymà /O.
+#
+# (þr. /O afiksø taisykliø komentarus)
+#
+# Paþymëtina, kad afikso þyma be þvaigþdutës '*', t.y. generuojant þodþius ðis 
+# afiksas nejungiamas su kitais (cross-product); tokioms (neprieðdëlinëms)  
+# sangràþinëms veiksmaþodþiø formoms nelipdomi (nes netinka, nedera) prieðdëliai,
+# dalelytës.
+#
+
+	#####################
+  	##    Bendratis    ##
+	#####################
+
+	# Sngr. forma ið bendraties
+	T I		>	S		# imti > imtis
+
+
+	## Bût. daþninis laikas ##
+
+  	# Vnsk., I asm.
+	T I		>	-TI,DAVAUSI	# imti > imdavausi
+
+  	# Vnsk., II asm.
+	T I		>	-TI,DAVAISI	# imdavaisi
+
+	# Vnsk./Dgsk., III asm.
+	T I	        >	-TI,DAVOSI	# imdavosi
+
+	# Dgsk., I asm.
+	T I		>	-TI,DAVOMËS	# imdavomës
+
+	# Dgsk., II asm.
+	T I		>	-TI,DAVOTËS	# imdavotës
+
+
+
+	## Bûsimasis laikas ##
+
+  	# Vnsk., I asm.
+	[^SÐZÞ] T I	>	-TI,SIUOSI	# imti > imsiuosi
+	[SÐ] T I    	>	-TI,IUOSI	# vesiuosi, neðiuosi
+	Z T I	    	>	-ZTI,SIUOSI	# megsiuosi
+	Þ T I		>	-ÞTI,ÐIUOSI	# veðiuosi
+
+  	# Vnsk., II asm.
+	[^SÐZÞ] T I	>	-TI,SIESI	# imsiesi
+	[SÐ] T I    	>	-TI,IESI	# vesiesi, neðiesi
+	Z T I	    	>	-ZTI,SIESI	# megsiesi
+	Þ T I		>	-ÞTI,ÐIESI	# veðiesi
+
+  	# Vnsk./Dgsk., III asm.
+	[^SÐZÞ] T I	>	-TI,SIS		# imsis
+	[SÐ] T I    	>	-TI,IS		# vesis, neðis
+	Z T I	    	>	-ZTI,SIS	# megsis
+	Þ T I		>	-ÞTI,ÐIS	# veðis
+
+  	# Dgsk., I asm.
+	[^SÐZÞ] T I	>	-TI,SIMËS	# imsimës
+	[SÐ] T I    	>	-TI,IMËS	# vesimës, neðimës
+	Z T I	    	>	-ZTI,SIMËS	# megsimës
+	Þ T I		>	-ÞTI,ÐIMËS	# veðimës
+
+  	# Dgsk., II asm.
+	[^SÐZÞ] T I	>	-TI,SITËS	# imsitës
+	[SÐ] T I    	>	-TI,ITËS	# vesitës, neðitës
+	Z T I	    	>	-ZTI,SITËS	# megsitës
+	Þ T I		>	-ÞTI,ÐITËS	# veðitës
+
+
+
+	## Tariamoji nuosaka ##
+	
+  	# Vnsk., I asm.
+	T I		>	-TI,ÈIAUSI	# rinkti > rinkèiausi
+
+  	# Vnsk., II asm.
+	T I		>	-I,UMEISI	# rinktumeisi, rinktumeis
+	T I		>	-I,UMEIS
+
+  	# Vnsk./Dgsk., III asm.
+	T I	        >	-I,ØSI		# rinktøsi
+
+	# Dgsk., I asm.
+	T I		>	-I,UMËMËS	# rinktumëmës, rinktumës
+	T I		>	-I,UMËS
+
+	# Dgsk., II asm.
+	T I		>	-I,UMËTËS	# rinktumëtës, rinktutës
+	T I		>	-I,UTËS
+
+
+
+	## Liepiamoji nuosaka ##
+
+  	# Vnsk., II asm.
+	[^KG] T I	>	-TI,KIS		# siøsti > siøskis
+	K T I	  	>	-TI,IS		# traukti > traukis
+	G T I		>	-GTI,KIS	# rengti > renkis
+
+  	# Dgsk., I asm.
+	[^KG] T I	>	-TI,KIMËS	# siøskimës
+	K T I		>	-TI,IMËS	# traukimës
+	G T I		>	-GTI,KIMËS	# renkimës
+
+  	# Dgsk., II asm.
+	[^KG] T I	>	-TI,KITËS	# siøskitës
+	K T I		>	-TI,ITËS	# traukitës
+	G T I		>	-GTI,KITËS	# renkitës
+
+
+
+	## Pusdalyvis ##
+
+  	# Vnsk.
+	T I		>	-TI,DAMASIS	# rinkti > rinkdamasis
+	T I		>	-TI,DAMASI	# rinkti > rinkdamasi
+
+  	# Dgsk.
+	T I		>	-TI,DAMIESI	# rinkdamiesi
+	T I		>	-TI,DAMOSI	# rinkdamosi
+
+
+
+	## Bût. k. laiko neveikiamasis dalyvis ##
+
+        T I	   	>       -I,ASI		# mylëtasi
+
+
+
+	## Bût. d. laiko padalyvis ##
+
+	T I		>	-TI,DAVUSIS	# rinkdavusis
+
+
+
+	#####################
+  	## Esamasis laikas ##
+	#####################
+
+	# Sngr. forma ið esamojo laiko (ðakninis þodis)
+	[AO]	       	> 	SI		# neðasi, raðosi
+	
+
+	# Vnsk./dgsk. III asm.: ðakninis þodis
+  	
+	# Vnsk., I asm.
+	A		>	-A,UOSI		# supa > supuosi
+	O		>	-O,AUSI		# bijo > bijausi
+
+	# Vnsk., II asm.
+	[^I] A		>	-A,IESI		# supa > supiesi
+	[^ÈÞ] I A	>	-A,ESI		# traukia > traukiesi
+	È I A 		>	-ÈIA,TIESI	# puèia > putiesi
+	[^D] Þ I A	>	-A,ESI		# grauþiesi, verþiesi
+	D Þ I A	 	>	-ÞIA,IESI	# beldþia > beldiesi
+
+	O		>	-O,AISI		# moko > mokaisi
+	
+	# Dgsk., I asm.
+	[AO]		>	MËS		# supamës, raðomës
+	
+	# Dgsk., II asm.
+	[AO]		>	TËS		# supatës, raðotës
+	
+
+
+		
+	## Padalyvis ##
+
+	# Sngr. forma sutampa su nesngr. veik.r. neávardþ. dalyviu
+	# (nors jei sngr. þyma /R ne papildoma prie /E, tai...) 
+	A		>	NTIS		# sukantis
+	O	  	>	-O,ANTIS	# matantis
+
+
+
+	## Neveik. dalyvis ##
+
+	# Neveik. rûð., bevrd. gim.
+	[AO]  	  	>       MASI		# einamasi, raðomasi
+        
+
+
+
+	####################
+	## Bûtasis laikas ##
+	####################
+
+
+	# Sngr. forma ið esamojo laiko (ðakninis þodis)
+	Ë	       	> 	SI		# raðë > raðësi, neðë > neðësi
+
+	# Vnsk./dgsk. III asm.: ðakninis þodis
+
+  	# Vnsk., I asm.
+	[^DT] Ë	 	>	-Ë,IAUSI	# neðë  > neðiausi
+	D Ë		>	-Ë,ÞIAUSI	# beldë > beldþiausi
+	T Ë		>	-TË,ÈIAUSI	# keitë > keièiausi
+
+  	# Vnsk., II asm.
+	Ë		>	-Ë,EISI		# keiteisi
+
+  	# Dgsk., I asm.
+	Ë		>	MËS		# keitëmës
+
+  	# Dgsk., II asm.
+	Ë		>	TËS		# keitëtës
+
+
+
+	## Padalyvis ##
+
+	Ë		>	-Ë,USIS	    	# vylë > vylusis
+
+
+
+	## Dalyvis ##
+
+	# (mot. gim. vnsk. sutampa su bût. kart. laiko padalyviu)
+
+	# Vnsk., vyr. gim.
+	Ë		>	-Ë,ÆSIS		# tarë > taræsis
+
+	# Vnsk., mot. gim.
+	#Ë		>	-Ë,USIS		# tarusis
+
+	# Dgsk., vyr. gim.
+	Ë		>	-Ë,ÆSI		# taræsi
+
+	# Dgsk., mot. gim.
+	Ë		>	-Ë,USIOSI	# tarusiosi
+
+
+
+	## Daiktavardis ##
+
+	# Vnsk., vyr. gim.
+	Ë		>	-Ë,IMASIS	# keitimasis
+	Ë		>	-Ë,IMOSI
+	Ë		>	-Ë,IMUISI
+	Ë		>	-Ë,IMÀSI
+	Ë		>	-Ë,IMUSI
+	Ë		>	-Ë,IMESI
+
+	# Dgsk., vyr. gim.
+	Ë		>	-Ë,IMAISI	# keitimaisi
+	Ë		>	-Ë,IMØSI
+	#Ë		>	-Ë,IMAMSIS
+	#Ë		>	-Ë,IMUSIS
+	#Ë		>	-Ë,IMAISIS
+	#Ë		>	-Ë,IMUOSESI
+
+
+	
+
+
+			#######################
+			#######################
+
+				flag O:
+
+			#######################
+			#######################
+
+############################################################################## 
+# L.V.: 
+# Sangràþiniai veiksmaþodþiai. 
+#
+# Esamojo laiko formos þyma, JEI:
+#  - ji baigiasi -i (pvz.: tyl-i, tik-i, myl-i);
+#
+# Bûtojo laiko formos þyma, JEI:
+#  - ji baigiasi -o (pvz.: buv-o, vëlav-o, dirb-o); 
+# ARBA, JEI:
+#  - ji baigiasi -ë, o bendratyje -yti. ({rað-yti; rað-ë}, {mat-yti; mat-ë}).
+#    (automatizmas: jei veiksmaþodis su /Y þyma, tai sangràþai lipdome /O)
+#
+#         o -> osi :  mylëj-o -> mylëj-osi, aiðkin-o -> aiðkin-osi;
+#  ë (-yti) -> ësi :    sak-ë -> sak-ësi,     laik-ë -> laik-ësi;
+# 
+# Nesigauna visos sangràþiniø formø darybos sutraukti po viena afikso þyma, 
+# nes sutampa galûnës (konkreèiai -o, esamajame ir bûtajame laikuose). Taip pat
+# skiriasi veiksmaþodþiø {-yti, -ë} daryba, nuo kitø, pvz:
+#  {rað-yti; rað-ë}    > rað-iusis, rað-ymasis, kt. 
+#  versus 
+#  {skalb-ti; skalb-ë} > skalb-usis, skalb-imasis, kt.
+#
+#
+# Paþymëtina, kad afikso þyma be þvaigþdutës '*', t.y. generuojant þodþius ðis 
+# afiksas nejungiamas su kitais (cross-product); tokioms (neprieðdëlinëms)  
+# sangràþinëms veiksmaþodþiø formoms nelipdomi (nes netinka, nedera) prieðdëliai,
+# dalelytës.
+#
+
+
+	#####################
+  	## Esamasis laikas ##
+	#####################
+
+	# Sngr. forma ið esamojo laiko (ðakninis þodis)
+	I	       	> 	SI		# mylisi
+
+	# Vnsk./dgsk. III asm.: ðakninis þodis
+
+	# Vnsk., I asm.
+	[^DT] I		>	UOSI		# tiki > tikiuosi
+	D I		>	-I,ÞIUOSI	# girdi > girdþiuosi
+	T I		>	-TI,ÈIUOSI	# ðlykðti > ðlykðèiuosi
+
+	# Vnsk., II asm.
+	I		>	ESI		# tiki > tikiesi
+
+	# Dgsk., I asm.
+	I		>	MËS		# tikimës
+	
+	# Dgsk., II asm.
+	I		>	TËS		# tikitës
+
+
+	## Padalyvis ##
+
+	I		>	NTIS		# mylintis
+
+
+	## Neveik. dalyvis ##
+
+	# Neveik. rûð., bevrd. gim.
+	I  	  	>       MASI		# mylimasi, tikimasi
+
+
+
+
+	####################
+	## Bûtasis laikas ##
+	####################
+
+	# Sngr. forma ið bûtojo laiko (ðakninis þodis)
+	[ËO]		>	SI     		# dirbosi, vijosi, mylëjosi
+
+
+	# Vnsk./dgsk. III asm.: ðakninis þodis
+
+  	# Vnsk., I asm.
+	[^DT] Ë	 	>	-Ë,IAUSI	# neðë  > neðiausi
+	D Ë		>	-Ë,ÞIAUSI	# beldë > beldþiausi
+	T Ë		>	-TË,ÈIAUSI	# keitë > keièiausi
+
+	O		>	-O,AUSI		# dirbausi, vijausi
+
+  	# Vnsk., II asm.
+	Ë		>	-Ë,EISI		# keiteisi
+	O		>	-O,AISI		# dirbaisi, vijaisi
+
+
+  	# Dgsk., I asm.
+	[ËO]		>	MËS		# dirbomës, vijomës
+
+  	# Dgsk., II asm.
+	[ËO]		>	TËS		# dirbotës, vijotës
+
+
+
+	## Padalyvis ##
+
+	[^DT] Ë		> 	-Ë,IUSIS	# laikë  > laikiusis
+	D Ë		>	-Ë,ÞIUSIS	# rodë   > rodþiusis
+	T Ë		>	-TË,ÈIUSIS	# raitë  > raièiusis
+
+	O		>	-O,USIS		# mylëjo > mylëjusis
+
+
+
+	## Dalyvis ##
+
+	# (mot. gim. vnsk. sutampa su bût. kart. laiko padalyviu)
+
+	# Vnsk., vyr. gim.
+	Ë		>	-Ë,ÆSIS		# laikë > laikæsis
+	O		>	-O,ÆSIS		# supo  > supæsis
+
+	# Vnsk., mot. gim.
+	#Ë		>	-Ë,IUSIS	# taisiusis
+	#O		>	-O,USIS		# supusis
+
+
+	# Dgsk., vyr. gim.
+	Ë		>	-Ë,ÆSI		# laikæsi
+	O		>	-O,ÆSI		# supæsi
+
+	# Dgsk., mot. gim.
+	Ë		>	-Ë,IUSIOSI	# taisiusiosi
+	O		>	-O,USIOSI	# supusiosi
+
+
+
+	## Daiktavardis ##
+
+	# L.V.: daugiskaita turi tik vardininko ir kilmininko linksnius ir tai 
+	# retais atvejais, nes abstrakcijos (abstrakèios reikðmës daiktavardþiai) 
+	# daþniausiai neskaièiuojamos.
+
+	# Vnsk., vyr. gim.
+	Ë		>	-Ë,YMASIS	# skaitë > skaitymasis
+	Ë		>	-Ë,YMOSI
+	Ë		>	-Ë,YMUISI
+	Ë		>	-Ë,YMÀSI
+	Ë		>	-Ë,YMUSI
+	Ë		>	-Ë,YMESI
+
+	O		>	-O,IMASIS	# vijimasis
+	O		>	-O,IMOSI
+	O		>	-O,IMUISI
+	O		>	-O,IMÀSI
+	O		>	-O,IMUSI
+	O		>	-O,IMESI
+
+
+	# Dgsk., vyr. gim.
+	Ë		>	-Ë,YMAISI	# skaitymaisi
+	Ë		>	-Ë,YMØSI
+	#Ë		>	-Ë,YMAMSIS
+	#Ë		>	-Ë,YMUSIS
+	#Ë		>	-Ë,YMAISIS
+	#Ë		>	-Ë,YMUOSESI
+
+	O		>	-O,IMAISI	# vijimaisi
+	O		>	-O,IMØSI
+	#O		>	-O,IMAMSIS
+	#O		>	-O,IMUSIS
+	#O		>	-O,IMAISIS
+	#O		>	-O,IMUOSESI
+
