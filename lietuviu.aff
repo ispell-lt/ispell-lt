@@ -280,7 +280,7 @@ suffixes
 	#J A S		>	-AS,U
 	J A S		>	-AS,UJE		# vëjuje/vëjyje
 	J A S		>	-AS,YJE	
-	J A S		>	-AS,AU
+	J A S		>	-S,U
 
 	# dgsk., vyr. gim.
 	#I A S		>	-S,I		# elniai, keliai
@@ -313,9 +313,9 @@ suffixes
 	#I S		>	-IS,Y		# attn.: peily, broly -- ???
 	I S		>	-S,""
 
-	D I S		>	-DIS,DÞIO	# skrandis > skrandþio
-	D I S		>	-DIS,DÞIUI
-	D I S		>	-DIS,DÞIU
+	D I S		>	-IS,ÞIO		# skrandis > skrandþio
+	D I S		>	-IS,ÞIUI
+	D I S		>	-IS,ÞIU
 
 	J I S		>	-IS,O		# atvejis > atvejo
 	J I S		>	-IS,UI
@@ -464,7 +464,7 @@ suffixes
 
 	# vnsk., mot. gim.
 	A		>	-A,OS		# jûra > jûros
-	A		>	-A,AI
+	A		>	I
 	A		>	-A,À
 	A		>	-A,OJE
 	A		>	-A,OJ
@@ -534,7 +534,7 @@ suffixes
 
 	[^DT] Ë S	>	-ËS,IØ		# rogës > rogiø
 	T Ë S		>	-TËS,ÈIØ	# kelnaitës > kelnaièiø
-	D Ë S		>	-DËS,DÞIØ	# slidës > slidþiø
+	D Ë S		>	-ËS,ÞIØ		# slidës > slidþiø
 	Ë S		>	-S,MS
 	Ë S		>	-ËS,ES
 	Ë S		>	-S,MIS
@@ -583,9 +583,9 @@ suffixes
 	# vnsk. 
 	I S		>	-S,ES		# dantis > danties
 
-	[^DT] I S	>	-IS,IUI		# debesis > debesiui
+	[^DT] I S	>	-S,UI		# debesis > debesiui
 	T I S		>	-TIS,ÈIUI	# dantis > danèiui
-	D I S		>	-DIS,DÞIUI	# (v1.2.1 þodyne nëra)
+	D I S		>	-IS,ÞIUI	# (v1.2.1 þodyne nëra)
 
 	I S		>	-IS,Á
 	I S		>	-S,MI
@@ -687,7 +687,7 @@ suffixes
 	Y S		>      -YS,IMS
 	Y S		>      -YS,IS
 	Y S		>      -YS,IMIS
-	Y S		>      -YS,YSE
+	Y S		>      E
 
 
 
@@ -775,7 +775,7 @@ suffixes
 	Y S		>	-YS,IMS		# sultys > sultims	
 	Y S		>	-YS,IS
 	Y S		>	-YS,IMIS
-	Y S		>	-YS,YSE
+	Y S		>	E
 
 
 
@@ -837,56 +837,55 @@ suffixes
 
 
 
-#################################################################################
+##############################################################################
 #
 # 			      Bûdvardis
 #
-#################################################################################
+##############################################################################
 #
 # 		       BÛDVARDÞIØ GIMINIØ POROS
-# -------------------------------------------------------------------------------
-# Linksniuotë	Paradigma   Vyr. galûnë	| Mot. galûnë	Paradigma   Linksniuotë
-# -------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
+# Linksniuotë	Paradigma   Vyr. galûnë	| Mot. galûnë	Paradigma  Linksniuotë
+# ----------------------------------------------------------------------------
 #   i(a)	    1	      -as	|     -a	    6	        (i)o
 # 		    2	      -ias	|     -ia	    7
 # 		   3-4	      -is, -ys	|     -ë	    9		ë
 #   i(u)	    5	      -us	|     -i	    8		io
-# -------------------------------------------------------------------------------
-# Pvz.:
-# geras, gera;
-# þalias, þalia;
-# geresnis, geresnë;
-# kairys, kairë;
-# didelis, didelë;
-# medinis, medinë;
-# graþus, graþi.
+# ----------------------------------------------------------------------------
 #
-#################################################################################
+# Pvz.:
+# geras  (1), gera   (6);
+# þalias (2), þalia  (7);
+# medinis(3), medinë (9);
+# kairys (4), kairë  (9);
+# graþus (5), graþi  (8).
+#
+##############################################################################
 
 		#####################################
 		#####################################
 
-			       flag *A:
+			       flag *B:
 
 		#####################################
 		#####################################
 
-#################################################################################
+##############################################################################
 # Þr. /Q taisykliø komentarus.
-# -dis, -jis, -tis, -ys, -dþias /A þodþiai (labai) reti; jø tëra keletas: 
+# -dis, -jis, -tis, -ys, -dþias /BU þodþiai (labai) reti; jø tëra keletas: 
 # 	'didis', 'kairys', 'deðinys', 'bergþdþias' 
 # Ðie (iðimèiø) þodþiai iðkaityti ir visos jø formos pridëtos á þodynà, todël 
-# atitinkamos afiksø taisyklës (kolkas) nereikalingos (uþkomentuotos) -- þymiai 
+# atitinkamos afiksø taisyklës kolkas nereikalingos (uþkomentuotos); þymiai 
 # sumaþëja hash ir aff failai. 
 #
-# Jei ateityje atsirastø daugiau tokiø (-tis, -dis, -ys) /A þodþiø, tai reikëtø 
-# paðalinti ðias komentarø þymas:
+# Jei ateityje atsirastø daugiau tokiø (-tis, -dis, -ys) /B þodþiø, tai 
+# reikëtø paðalinti ðias komentarø þymas:
 #
 #	#~N0~      -is, -dis (v1.2.1 þodyno iðimtis yra þodis 'didis')
 #	#~N3~      -ys       (v1.2.1 þodyno iðimtys: 'kairys', 'deðinys')
 #	#~N4~      -dþias    (v1.2.1 þodyno iðimtis yra þodis 'bergþdþias')
 #
-#################################################################################
+##############################################################################
 
 ##############################################################################
 # 1 paradigma (aukðtas, geras)
@@ -1004,24 +1003,39 @@ suffixes
 
 
 ##############################################################################
-# 3 paradigma (didelis, kairys)
+# 3-4 paradigmos 
+# (didelis, kairys, medinis, apymaþis, baltakaklis, bevaisis, bedantis)
+#
+# Ðitai klasei prikauso sudurtiniai ir prieðdëlius 'apy', 'po' turintys
+# bûdvardþiai, ir dar kai kurie.
+#
 #
 # (-tis v1.2.1 þodyne nëra, o 'pasiturintis' formas padaro turi/Er)
 #
 
     	# vnsk., vyr. gim.
-#~N0~	[^D] I S	>	-S,O		# didelis > didelio
-#~N0~	[^D] I S	>	-S,AM
-#~N0~	[^D] I S	>	-IS,Á
-#~N0~	[^D] I S	>	-S,U
-#~N0~	[^D] I S	>	-S,AME
-#~N0~	[^D] I S	>	-S,""		# dideli; Ð. linksnis
+	[^DJT] I S	>	-S,O		# bevielio, guminio
+	[^DJT] I S	>	-S,AM
+	I S	 	>	-IS,Á
+	[^DJT] I S	>	-S,U
+	[^DJT] I S	>	-S,AME
+	I S	 	>	-S,""		# ðauksm. l.
 
-#~N0~	D I S		>	-IS,ÞIO		# didis > didþio
-#~N0~	D I S		>	-IS,ÞIAM
-#~N0~	D I S		>	-IS,Á
-#~N0~	D I S		>	-IS,ÞIU
-#~N0~	D I S		>	-IS,ÞIAME
+	D I S		>	-IS,ÞIO		# didþio, bevardþio
+	D I S		>	-IS,ÞIAM
+	D I S		>	-IS,ÞIU
+	D I S		>	-IS,ÞIAME
+
+	J I S	       >	-IS,O		# bekojo
+	J I S	       >	-IS,AM
+	J I S	       >	-IS,U
+	J I S	       >	-IS,AME
+
+	T I S	       >	-TIS,ÈIO	# beverèio
+	T I S	       >	-TIS,ÈIAM
+	T I S	       >	-TIS,ÈIU
+	T I S	       >	-TIS,ÈIAME
+
 
 #~N3~	Y S		>	-YS,IO		# kairys > kairio
 #~N3~	Y S		>	-YS,IAM
@@ -1031,22 +1045,43 @@ suffixes
 
 
     	# dgsk., vyr. gim.
-#~N0~	[^D] I S	>	-S,""		# didelis > dideli
-#~N0~	#[^D] I S	>	-S,AI		# dideliai
-#~N0~	[^D] I S	>	-S,Ø
-#~N0~	[^D] I S	>	-S,EMS
-#~N0~	[^D] I S	>	-S,EM		# ðnek.
-#~N0~	[^D] I S	>	-S,US
-#~N0~	[^D] I S	>	-S,AIS
-#~N0~	[^D] I S	>	-S,UOSE
+	[^DJT] I S	>	-S,AI		# dideliai
+	[^DJT] I S	>	-S,Ø
+	
+	# N. l. /U: molin-iams
+	# N. l. /W: didel-iems
+	
+	[^DJT] I S	>	-S,US
+	[^DJT] I S	>	-S,AIS
+	[^DJT] I S	>	-S,UOSE
 
-#~N0~	D I S		>	-S,""		# didis > didi
-#~N0~	D I S		>	-IS,ÞIØ
-#~N0~	D I S		>	-S,EMS
-#~N0~	D I S		>	-S,EM		# ðnek.
-#~N0~	D I S		>	-IS,ÞIUS
-#~N0~	D I S		>	-IS,ÞIAIS
-#~N0~	D I S		>	-IS,ÞIUOSE
+	D I S	 	>	-IS,ÞIAI	# bevardþiai
+	D I S		>	-IS,ÞIØ
+	
+	# N. l. /U: bevardþ-iams, vienveidþ-iams 
+	# N. l. /W: did-iems
+	
+	D I S		>	-IS,ÞIUS
+	D I S		>	-IS,ÞIAIS
+	D I S		>	-IS,ÞIUOSE
+
+	J I S		>	-IS,AI		# bekojai
+	J I S		>	-IS,Ø
+
+	# N. l. /U: bekoj-ams, grynakrauj-ams
+		
+	J I S		>	-IS,US
+	J I S		>	-IS,AIS
+	J I S		>	-IS,UOSE
+
+	T I S		>	-TIS,ÈIAI	# beverèiai
+	T I S		>	-TIS,ÈIØ
+
+	# N. l. /U: beverè-iams, vienkrypè-iams
+
+	T I S		>	-TIS,ÈIUS
+	T I S		>	-TIS,ÈIAIS
+	T I S		>	-TIS,ÈIUOSE
 
 #~N3~	Y S		>	-YS,I		# kairys > kairi
 #~N3~	Y S		>	-YS,IØ
@@ -1057,7 +1092,7 @@ suffixes
 #~N3~	Y S		>	-YS,IUOSE
 
 ##############################################################################
-# 9 paradigma (didelë, kairë)
+# 9 paradigma (didelë, kairë, medinë)
 #
 # (mot. g. dgsk. vardininkas sutampa su mot. g. vnsk. kilmininku)
 # (mot. g. dgsk. kilmininkas sutampa su vyr. g. dgsk. kilmininku)
@@ -1065,14 +1100,13 @@ suffixes
 
 
 	# vnsk., mot. gim.
-#~N0~	[^D] I S	>	-IS,Ë		# didelis > didelë
-#~N0~	[^D] I S	>	-IS,ËS
-#~N0~	[^D] I S	>	-IS,IAI
-#~N0~	[^D] I S	>	-IS,Æ
-#~N0~	[^D] I S	>	-IS,E
-#~N0~	[^D] I S	>	-IS,ËJE
-#~N0~	[^D] I S	>	-IS,ËJ
-#~N0~	#[^D] I S	>	-IS,E
+	I S		>	-IS,Ë		# medinis > medinë
+	I S		>	-IS,ËS
+	I S		>	-IS,EI
+	I S		>	-IS,Æ
+	I S		>	-IS,E
+	I S		>	-IS,ËJE
+	I S		>	-IS,ËJ
 
 #~N3~	Y S		>	-YS,Ë		# kairys > kairë
 #~N3~	Y S		>	-YS,ËS
@@ -1085,13 +1119,17 @@ suffixes
 
 
 	# dgsk., mot. gim.
-#~N0~	#[^D] I S	>	-IS,ËS		# didelis > didelës
-#~N0~	#[^D] I S	>	-S,Ø
-#~N0~	[^D] I S	>	-IS,ËMS
-#~N0~	[^D] I S	>	-IS,ES
-#~N0~	[^D] I S	>	-IS,ËMIS
-#~N0~	[^D] I S	>	-IS,ËSE
-#~N0~	#[^D] I S	>	-IS,ËS
+	#I S		>	-IS,ËS		# medinës
+	
+	#[^DJT] I S	>	-S,Ø
+	#D I S		>	-IS,ÞIØ
+	#J I S		>	-IS,Ø
+	#T I S		>	-TIS,ÈIØ
+
+	I S		>	-IS,ËMS
+	I S		>	-IS,ES
+	I S		>	-IS,ËMIS
+	I S		>	-IS,ËSE
 
 
 #~N3~	#Y S		>	-YS,ËS		# kairys > kairës
@@ -1133,14 +1171,14 @@ suffixes
 
 	[^DJT] U S	>	-US,IØ		# graþiø
 	D U S		>	-US,ÞIØ		# saldþiø
-	J U S		>	-JUS,JØ		# gajø
+	#J U S		>	-US,Ø		# gajø
 	T U S	 	>	-TUS,ÈIØ	# plaèiø
 
 	U S		>	-US,IEMS
 	U S		>	-US,IEM		# ðnek.
 
 	[^DJT] U S	>	-US,IUS		# graþius
-	D U S		>	-DUS,DÞIUS	# saldþius
+	D U S		>	-US,ÞIUS	# saldþius
 	#J U S		>	-JUS,JUS	# gajus
 	T U S	 	>	-TUS,ÈIUS	# plaèius
 
@@ -1164,7 +1202,7 @@ suffixes
 
 
     	# vnsk., mot. gim.
-	[^DJT] U S	>	-US,I		# graþus > graþi
+	U S		>	-US,I		# graþi, saldi, raji, plati
 	[^DJT] U S	>	-US,IOS
 	[^DJT] U S	>	-US,IAI
 	[^DJT] U S	>	-US,IÀ
@@ -1172,7 +1210,6 @@ suffixes
 	[^DJT] U S	>	-US,IOJE
 	[^DJT] U S	>	-US,IOJ		# ðnek.
 
-	D U S	 	>	-US,I		# saldi
 	D U S		>	-US,ÞIOS
 	D U S		>	-US,ÞIAI
 	D U S		>	-US,ÞIÀ
@@ -1180,7 +1217,6 @@ suffixes
 	D U S		>	-US,ÞIOJE
 	D U S		>	-US,ÞIOJ	# ðnek.
 
-	J U S		>	-US,I		# raji
 	J U S		>	-US,OS
 	J U S		>	-US,AI
 	J U S		>	-US,À
@@ -1188,7 +1224,6 @@ suffixes
 	J U S		>	-US,OJE
 	J U S		>	-US,OJ		# ðnek.
 
-	T U S		>	-US,I		# plati
 	T U S		>	-TUS,ÈIOS
 	T U S		>	-TUS,ÈIAI
 	T U S		>	-TUS,ÈIÀ
@@ -1228,110 +1263,6 @@ suffixes
 
 
 
-		#####################################
-		#####################################
-
-			       flag *B:
-
-		#####################################
-		#####################################
-
-##############################################################################
-# 4 paradigma (medinis, apymaþis, baltakaklis, bevaisis, bedantis)
-#
-# Ðitai klasei prikauso sudurtiniai ir prieðdëlius apy- po- turintys
-# bûdvardþiai, ir dar kai kurie.
-#
-
-	# vnsk., vyr. gim.
-	[^DJT] I S	>	-S,O		# bevaisis > bevaisio
-	[^DJT] I S	>	-S,AM
-	[^DJT] I S	>	-IS,Á
-	[^DJT] I S	>	-S,U
-	[^DJT] I S	>	-S,AME
-	I S		> 	-S,""  		# ðauks. 
-
-	D I S	 	>	-IS,ÞIO		# bevardis > bevardþio
-	D I S		>	-IS,ÞIAM
-	D I S		>	-IS,Á
-	D I S		>	-IS,ÞIU
-	D I S		>	-IS,ÞIAME
-
-	J I S	       >	-IS,O		# bekojis > bekojo
-	J I S	       >	-IS,AM
-	J I S	       >	-IS,Á
-	J I S	       >	-IS,U
-	J I S	       >	-IS,AME
-
-	T I S	       >	-TIS,ÈIO	# bevertis > beverèio
-	T I S	       >	-TIS,ÈIAM
-	T I S	       >	-IS,Á
-	T I S	       >	-TIS,ÈIU
-	T I S	       >	-TIS,ÈIAME
-
-
-	# dgsk., vyr. gim.
-	[^DJT] I S	>	-S,AI		# bevaisis > bevaisiai
-	[^DJT] I S	>	-S,Ø
-	[^DJT] I S	>	-S,AMS
-	[^DJT] I S	>	-S,US
-	[^DJT] I S	>	-S,AIS
-	[^DJT] I S	>	-S,UOSE
-
-	D I S	 	>	-IS,ÞIAI	# bevardþiai
-	D I S		>	-IS,ÞIØ
-	D I S		>	-IS,ÞIAMS
-	D I S		>	-IS,ÞIUS
-	D I S		>	-IS,ÞIAIS
-	D I S		>	-IS,ÞIUOSE
-
-	J I S		>	-IS,AI		# bekojai
-	J I S		>	-IS,Ø
-	J I S		>	-IS,AMS
-	J I S		>	-IS,US
-	J I S		>	-IS,AIS
-	J I S		>	-IS,UOSE
-
-	T I S		>	-TIS,ÈIAI	# beverèiai
-	T I S		>	-TIS,ÈIØ
-	T I S		>	-TIS,ÈIAMS
-	T I S		>	-TIS,ÈIUS
-	T I S		>	-TIS,ÈIAIS
-	T I S		>	-TIS,ÈIUOSE
-
-
-##############################################################################
-# 9 paradigma (ir geresnë, ir medinë)
-#
-# (mot. g. dgsk. vardininkas sutampa su mot. g. vnsk. kilmininku)
-# (mot. g. dgsk. kilmininkas sutampa su vyr. g. dgsk. kilmininku)
-#
-
-	# vnsk., mot. gim.
-	I S		>	-IS,Ë		# medinis > medinë
-	I S		>	-IS,ËS
-	I S		>	-IS,EI
-	I S		>	-IS,Æ
-	I S		>	-IS,E
-	I S		>	-IS,ËJE
-	I S		>	-IS,ËJ
-
-
-	# dgsk., mot. gim.
-	#I S		>	-IS,ËS		# medinës
-	
-	#[^DJT] I S	>	-S,Ø
-	#D I S		>	-IS,ÞIØ
-	#J I S		>	-IS,Ø
-	#T I S		>	-TIS,ÈIØ
-
-	I S		>	-IS,ËMS
-	I S		>	-IS,ES
-	I S		>	-IS,ËMIS
-	I S		>	-IS,ËSE
-
-
-
 
 		#####################################
 		#####################################
@@ -1364,13 +1295,13 @@ suffixes
 # *dauguma* lietuviðkø þodþiø jau yra surinkta, áskaitant ir retus 
 # bei minimas iðimtis), galima daryti pakankamai pagrástà iðvadà, kad ðiø 
 # þodþiø afiksø taisyklës yra netikslingos, neefektyvios -- tokiø þodþiø 
-# (iðimèiø), labai tikëtina, neatsiras ar jau tikrai nepadaugës iki 
-# keleto-keliolikos, o taisykles uþkomentavus hash failas sumaþëja gana 
-# þymiai ~350 kB (~7%), lt_LT.aff sumaþëja ~13 kB (~10%).
+# (iðimèiø), labai tikëtina, neatsiras ar vargu ar pagusës iki keliolikos, 
+# deðimèiø, o taisykles uþkomentavus hash failas sumaþëja gana þymiai 
+# ~350 kB (~7%), lt_LT.aff sumaþëja ~13 kB (~10%).
 #
 # Iðimèiø þodþiai: 'didis', 'bergþdþias', 'kairys', 'deðinys' iðkaityti 
 # ir visos jø formos pridëtos á þodynà; jis padidëja sàlyginai neþymiai 
-# (prieaulis ~30 kB (~2%), kai/nes pats þodynas yra ~1,3 MB)
+# (prieaulis ~30 kB (~2%), kai pats þodynas yra ~1,3 MB)
 # 
 # Jei ateityje (atsiradus daugiau tokiø þodþiø) ðiø taisykliø darybos vistik 
 # prisireiktø, tai reikëtø paðalinti ðias komentaro þymas:
@@ -2202,7 +2133,7 @@ suffixes
 	[^I] A S	>	-AS,ËLESNEI
 	[^I] A S	>	-AS,ËLESNÆ
 	[^I] A S	>	-AS,ËLESNE
-	[^I] A S	>	-AS,ËLESNIOJE
+	[^I] A S	>	-AS,ËLESNËJE
 
 	[^ÈÞ] I A S	>	-IAS,ËLESNË		# þalëlesnë
 	[^ÈÞ] I A S	>	-IAS,ËLESNËS
@@ -2237,7 +2168,7 @@ suffixes
 	U S		>	-US,ËLESNEI
 	U S		>	-US,ËLESNÆ
 	U S		>	-US,ËLESNE
-	U S		>	-US,ËLESNIOJE
+	U S		>	-US,ËLESNËJE
 
 #~N3~	Y S		>	-YS,ËLESNË		# kairëlesnë
 #~N3~	Y S		>	-YS,ËLESNËS
@@ -3409,9 +3340,9 @@ suffixes
 	A S		>	-S,I		# geras > gerai 
 
 #~N0~	[^DJT] I S	>	-S,AI		# attn.: v1.2.1 þodyne nëra
-#~N0~	D I S	>	-IS,ÞIAI	# didþiai
-#~N1~	J I S	>	-IS,AI		# v1.2.1 þodyne nëra
-#~N2~	T I S	>	-TIS,ÈIAI	# v1.2.1 þodyne nëra
+#~N0~	D I S	 	>	-IS,ÞIAI	# didþiai
+#~N1~	J I S		>	-IS,AI		# v1.2.1 þodyne nëra
+#~N2~	T I S		>	-TIS,ÈIAI	# v1.2.1 þodyne nëra
 
 
 	[^J] U S	>	-US,IAI		# mandagiai
@@ -3427,9 +3358,9 @@ suffixes
 	T A S		>	-TAS,ÈIAU	# greièiau
 
 #~N0~	[^DJT] I S	>	-IS,IAU		# v1.2.1 þodyne nëra
-#~N0~	D I S	>	-IS,ÞIAU	# didis > didþiau
-#~N1~	J I S	>	-IS,AU		# v1.2.1 þodyne nëra
-#~N2~	T I S	>	-TIS,ÈIAU	# v1.2.1 þodyne nëra
+#~N0~	D I S	 	>	-IS,ÞIAU	# didis > didþiau
+#~N1~	J I S		>	-IS,AU		# v1.2.1 þodyne nëra
+#~N2~	T I S		>	-TIS,ÈIAU	# v1.2.1 þodyne nëra
 
 
 	[^DTJ] U S	>	-US,IAU		# mandagiau
@@ -3797,7 +3728,7 @@ suffixes
 	A S		>	-S,M
 	A S		>	-AS,À
 	A S		>	-AS,U
-	A S		>	-AS,AME
+	A S		>	-S,ME
 
 	# vnsk., mot. gim.
 	A S		>	-S,""		# pirma
@@ -3818,7 +3749,7 @@ suffixes
 	È I A S		>	-ÈIAS,TIEMS
 
 	A S		>	-AS,US
-	A S		>	-AS,AIS
+	A S		>	-S,IS
 	A S		>	-AS,UOSE
 
 
@@ -3916,7 +3847,7 @@ suffixes
 # 2 paradigma
 # kitas, visas, vienas, kiekvienas, tûlas, tam tikras, manas, tavas, savas
 #
-# (uþkomentuota, nes daryba sutampa su sutampa su bûdvardþiu /A)
+# (uþkomentuota, nes daryba sutampa su sutampa su bûdvardþiu /B)
 #
 #
 # 	A S		>	-AS,O
@@ -6130,7 +6061,7 @@ suffixes
 			#######################
 
 ############################################################################## 
-# Bendraties, kuri baigiasi -ûti/-yti, þyma (pridedama papildomai prie T); 
+# 1. Bendraties, kuri baigiasi -ûti/-yti, þyma (pridedama papildomai prie T); 
 # bûsimojo laiko III asmens afiksas 
 # (jei/kai b. l. III asmenyje yra *trumpos* balsës i, u: 
 # lyti> lis, gyti > gis, þûti > þus, ...
@@ -6141,9 +6072,24 @@ suffixes
 # y, û, bûsimojo laiko III asmenyje turi i, u.
 # (*iðimtys*: vyti, veja, vijo > vys, siûti, siuva, siuvo > siûs)
 #
+#
+# 2. Bûdvardþiø, kurie baigiasi -is, þyma (papildomai pridedama prie /B); 
+# pridedama, kai dgsk. naudininkas baigiasi -(i)ams: 
+#     þodin-iams, þolëdþ-iams, dvikoj-ams, vienmaè-iams. 
+#
 
+	# veiksmaþodþiø bûsimojo laiko III asmuo
       	Û T I		>	-ÛTI,US
 	Y T I		>	-YTI,IS
+
+
+	# bûdvardþiai, kuriø dgsk. N. -(i)ams
+	[^DJT] I S	>	-S,AMS		# þodiniams
+
+	D I S		>	-IS,ÞIAMS	# þolëdþiams
+	J I S		>	-IS,AMS		# dvikojams
+	T I S		>	-TIS,ÈIAMS	# vienmaèiams
+
 
 
 			#######################
@@ -6156,7 +6102,7 @@ suffixes
 
 ############################################################################## 
 # L.V.:
-# Bendraties, kuri baigiasi -ûti/-yti, þyma (pridedama papildomai prie T);
+# 1. Bendraties, kuri baigiasi -ûti/-yti, þyma (pridedama papildomai prie T);
 # bûsimojo laiko III asmens afiksas
 # (jei/kai b. l. III asmenyje yra *ilgos* balsës y, û: sakys, pûs, ...)
 #
@@ -6169,8 +6115,18 @@ suffixes
 #
 #	vyti > vys, siûti > siûs
 #
+# 2. Bûdvardþiø, kurie baigiasi -is, þyma (papildomai pridedama prie /B); 
+# pridedama, kai dgsk. naudininkas baigiasi -iems: 
+#     did-iems, didel-iems, pasiturint-iems (bene ir visi þodyno þodþiai...)
+#
+
+	# veiksmaþodþiø bûsimojo laiko III asmuo
       	[ÛY] T I	>	-TI,S
 
+
+	# bûdvardþiai, kuriø dgsk. N. -iems
+	I S		>	-S,EMS		# didiems
+	I S		>	-S,EM		# ðnek.
 
 
 			#######################

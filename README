@@ -204,31 +204,37 @@ rankomis, taigi štai taisyklės tiems, kurie flagus dės rankomis.
     	debesis/VK
 
 
-3. Jei tai būdvardis, ir jis nesibaigia galūne -is, pridėkite žymą /A.
-   Jei būdvardis yra su galūne -is, patikrinkite jo dgsk. naudininko linksnį:
-       didelis, didel-iems -- žyma /A
-       medinis, medin-iams -- žyma /B.
+3. Jei tai būdvardis, tai pridėkite žymą /B.
+   Jei būdvardis yra su galūne -is, tai *papildomai* reikia pridėti žymą, 
+   pagal jo dgsk. naudininko linksnį:
+       didelis, didel-iems -- žyma /W; didelis/BW.
+       medinis, medin-iams -- žyma /U; medinis/BU.
 
-   Dabar jei galima įsivaizduoti būdvardžio bevardę giminę
-   (geras->gera), įvardžiuotines formas (geras->gerasis),
-   prieveiksmius su -ai (geras->gerai), laipsnius
+   Toliau, jei galima įsivaizduoti būdvardžio bevardę giminę
+   (geras -> gera), įvardžiuotines formas (geras -> gerasis),
+   prieveiksmius su -ai (geras -> gerai), laipsnius
    (geras, geresnis, geriausias) ir t.t., tai būdvardis vadinamas
-   kokybiniu, ir turi būti žymimas flagu Q.   Atrodo, visi A yra ir Q,
-   bet faktas, kad B nėra Q.
+   kokybiniu, ir jam *papildomai* reikėtų pridėti žymą /Q. 
+   Panašu, kad beveik visi būdvardžiai, kurie nesibaigia galūne -is,
+   yra arba gali būti (kaitybos požiūriu; net jei kai kurios formos
+   yra keistos, nevartojamos) KOKYBINIAI būdvardžiai. 
+   Priešingai: būdvardžiai, kurie baigiasi galūne -is, yra nekokybiniai 
+   būdvardžiai, t.y. SANTYKINIAI būdvardžiai. Jie dažniausiai padaryti 
+   iš kokio nors daiktavardžio ir nurodo daikto santykį su kitu: 
+      baltakaklis -> turintis baltą kaklą;
+      medinis     -> padarytas iš medžio.
 
-   B yra nekokybiniai būdvardžiai, vadinami santykiniais.  Jie
-   dažniausiai padaryti iš kokio nors daiktavardžio ir nurodo daikto
-   santykį su kitu (baltakaklis -> turintis baltą kaklą,
-   medinis -> padarytas iš medžio).
+   Keletas būdvardžių žymėjimo pavyzdžių:   
 
-   geras/AQN
-   gražus/AQN
-   saldus/AQN
-   žydraakis/BN 
-   medinis/BN
-   abstraktus/AQN
-   absoliutus/AQN
-   visaapimantis/BN
+   geras/BQN
+   gražus/BQN
+   saldus/BQN
+   žydraakis/BUN 
+   medinis/BUN
+   didelis/BWN
+   abstraktus/BQN
+   absoliutus/BQN
+   visaapimantis/BUN
 
 4. Jei tai veiksmažodis, turėsite nurodyti iš karto 3 žodžio formas (laikus):
    bendratį, esamąjį, ir būtąjį kartinį.  

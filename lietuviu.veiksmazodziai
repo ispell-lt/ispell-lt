@@ -3986,7 +3986,7 @@ skaitinëjo/POSXabcdefhijklmnopqrtvx
 #skaitinëjosi/P                 # sngr. skaitinëjo/.*O
 skaitinëti/TRSXabcdefhijklmnopqrtvx
 #skaitinëtis/T                  # sngr. skaitinëti/.*R
-skaityti/TRWSXcdefhjklmnoqrtvx
+skaityti/TRWSXacdefhjklmnoqrtvx
 #skaitytis/T                    # sngr. skaityti/.*R
 skaito/ERSXcdefhjklmnoqrtvx
 #skaitosi/E                     # sngr. skaito/.*R
@@ -4433,6 +4433,9 @@ stumia/ERSXbcdefghijklnopqrstuvwx
 #stumiasi/E                     # sngr. stumia/.*R
 stumti/TRSXbcdefghijklnopqrstuvwx
 #stumtis/T                      # sngr. stumti/.*R
+sudëtingëti/TNf
+sudëtingëja/ENf
+sudëtingëjo/PNf
 suka/ERSXabcdefhijklmnopqrtuvwx
 #sukasi/E                       # sngr. suka/.*R
 sukèiauja/ENXfjv
@@ -4676,6 +4679,9 @@ svyruoti/TNXbcdefjko
 ðturmavo/PNX
 ðturmuoja/ENX
 ðturmuoti/TNX
+ðûdintiTNXadjkmpvw
+ðûdina/ENXadjkmpvw
+ðûdino/PNXadjkmpvw
 ðûkalioja/ENXfr
 ðûkaliojo/PNXfr
 ðûkalioti/TNXfr
@@ -5263,8 +5269,8 @@ valo/ESXadefimpqruv
 vardija/ENXcdf
 vardijo/PNXcdf
 vardina/ENXcdfhjou
-vardino/PNXcdfhj
-vardinti/TNXcdfhj
+vardino/PNXcdfhjo
+vardinti/TNXcdfhjo
 vardyti/TWNXcdf
 varë/SYOXabcdefghjklmnoqsuvw
 #varësi/Y                       # sngr. varë/.*O

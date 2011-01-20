@@ -1,5 +1,5 @@
 autentikacija/D                 # ??
-antblauzdinis/B
+antblauzdinis/BU
 bendrasavininkis/D              # vlkk: http://www.vlkk.lt/lit/594
 bomþas/D
 bomþë/D
@@ -12,10 +12,10 @@ duombazë/D
 dûðia/D
 dvideðimtkapeikis/D
 failiukas/D
-fotopinis/BN
+fotopinis/BUN
 galeganë/DN                     # ??
 galeganas/DN                    # ??
-galeganiðkas/AQN                # ??
+galeganiðkas/BQN                # ??
 garantë/D                       # tik vyr. g.?
 gaspadorinë/D
 gaspadorius/D
@@ -30,10 +30,10 @@ kapðis/D
 karèema/D
 #komdanda/D
 kompromatas/D
-konkurentabilus/AQN
+konkurentabilus/BQN
 kritulys/D
 kryþietis/D
-kûdas/AQN
+kûdas/BQN
 kvartalynë/D
 legalas/DN
 legalë/DN
@@ -48,16 +48,16 @@ pimpalas/D
 pimpaliukas/D
 pimpis/D
 pimpukas/D
-portabilus/AQN
+portabilus/BQN
 #prieðpastata/D                 # ??
-raukiniuotas/AQN
+raukiniuotas/BQN
 reivas/D
-rekursyvus/A
+rekursyvus/B
 repozitorija/D
 riedmuo/V                       # lkþ nepaþásta, tekstyne tik 2...
 rokiðkënë/DN
 sarija/D                        # upës pavadinimas?
-seniokiðkas/AQN
+seniokiðkas/BQN
 ðeðtakursis/D
 skleistë/D
 spalvumas/D
@@ -66,25 +66,25 @@ stipendijëlë/D
 subkontraktorius/D
 superkonkursas/D
 talpyklë/D
-technologizuotas/AQN
-tekstualus/AQ
+technologizuotas/BQN
+tekstualus/BQ
 terba/D
 terbelë/D
-toroidinis/B
+toroidinis/BU
 tranzuotoja/D
 tranzuotojas/D
 triusikëliai/D
-ultrailgas/AN
-ultratrumpas/AN 
+ultrailgas/BN
+ultratrumpas/BN 
 veganas/D
-veganiðkas/AN
+veganiðkas/BN
 vertalas/D
 virðaibis/D
 þiûryklë/D
 
 AB
 AbiWord
-abrazyvus/AQN
+abrazyvus/BQN
 adminas/D                       # XXX
 Adobe
 ADSL
@@ -97,16 +97,16 @@ AltaVista
 ampersendas/D
 Amway
 ANSI
-antivirusinis/BN
+antivirusinis/BUN
 Apache
 API
 Apple
 archyvavimas/D
 ASCII
-asemblerinis/B
+asemblerinis/BU
 ATI
 atmintukas/D
-atributyvus/AN
+atributyvus/BN
 atstata/D
 atv
 audio
@@ -115,10 +115,10 @@ autotekstas/D
 ÀÞERTY
 bachûras/D
 bachuras/D
-baitinis/BN
+baitinis/BUN
 bajeris/D                       # XXX
 Balsa
-bendraaðis/BN
+bendraaðis/BUN
 BeOS
 beta/D
 Bezjë
@@ -133,7 +133,7 @@ braiþyklë/D
 brutto
 BSA
 BSD
-burbulinis/BN
+burbulinis/BUN
 CAB
 CAD
 Canon
@@ -166,14 +166,14 @@ CUPS
 CVS
 d
 daryklë/D
-daugiaabonentis/BN
-daugiaadresis/BN
-daugiabaitis/BN
-daugiadalis/BN
-daugiadokumentis/BN
-daugiaprocesis/BN
-daugiaprocesoris/BN
-daugiaprogramis/BN
+daugiaabonentis/BUN
+daugiaadresis/BUN
+daugiabaitis/BUN
+daugiadalis/BUN
+daugiadokumentis/BUN
+daugiaprocesis/BUN
+daugiaprocesoris/BUN
+daugiaprogramis/BUN
 DBMS
 DBVS
 Debian
@@ -204,11 +204,17 @@ domenas/D
 doroklë/D
 DOS
 draiveris/D
+draudiminis/BUN
 DSL
 DTML
+durnas/BQN
+durnius/D
+durnë/D
+durnelis/D
+#durnumas/D                     # yra durnas/.*Q
 DVD
-dvibaitis/BN
-dviraidis/BN
+dvibaitis/BUN
+dviraidis/BUN
 Dvorakas/D
 egzas/D
 EIDE
@@ -222,12 +228,12 @@ emailas/D                       # XXX
 enter
 Epson
 ERD
-ergonominis/BN
+ergonominis/BUN
 ES
 Ethernet
 Evolution
 Excel
-faksinis/BN
+faksinis/BUN
 faksograma/D
 FAQ
 FAT
@@ -237,6 +243,7 @@ Fortran
 Foundation                      # XXX
 FreeBSD
 Free                            # XXX
+frikcija/D
 Fryðkë/D                        # XXX
 ftp
 g
@@ -268,7 +275,7 @@ Helix
 heðavimas/D                     # XXX
 Hewlett
 hipertekstas/D
-hipertekstinis/BN
+hipertekstinis/BUN
 hiragana/D
 hmm
 hostas/D                        # XXX
@@ -324,9 +331,9 @@ JPEG
 jpg
 JPM
 JT
-juodraðtinis/BN
-jutiklinis/BN
-kandidatinis/BN
+juodraðtinis/BUN
+jutiklinis/BUN
+kandidatinis/BUN
 katakana/D
 kB
 kBps
@@ -338,19 +345,22 @@ kernelis/D                      # XXX
 keðas/D
 KGB
 KHz
+kirbtelëti/TN
+kirbteli/EN
+kirbtelëjo/PN
 Kylix
 Kyocera
-klientserverinis/BN
+klientserverinis/BUN
 kliringas/D
-kliringinis/BN
+kliringinis/BUN
 KOffice
 kompas/D
-komponentinis/BN
+komponentinis/BUN
 konclageris/D
-konfigûracinis/BN
+konfigûracinis/BUN
 konfigûravimas/D
 konsolë/D
-konsolinis/BN
+konsolinis/BUN
 koprocesorius/D
 kredencialai/D
 KTU
@@ -375,7 +385,7 @@ logotipas/D
 LRV
 Lt
 LTSR
-lustinis/BN
+lustinis/BUN
 m
 Macintosh
 MacOS
@@ -390,7 +400,7 @@ makrovirusas/D
 malaèius/D
 Mandrake
 MandrakeSoft
-marketinginis/BN                # http://www.vlkk.lt/lit/5676
+marketinginis/BUN                # http://www.vlkk.lt/lit/5676
 MathML
 MB
 MDMA
@@ -398,8 +408,9 @@ mën
 metafailas/D
 metagairë/D
 metarinkmena/D
-metmenys/D
-mezopinis/BN
+metamodelis/D
+metmenys/VK
+mezopinis/BUN
 MGL
 MHz
 Microsoft
@@ -452,6 +463,7 @@ OpenLDAP
 OpenOffice
 optopora/D
 ORBit
+ordinarus/BN
 org
 OS
 osciliuoti/TNX
@@ -472,11 +484,11 @@ parabenas/D
 parinkiklis/D
 parinktuvas/D
 Pascal
-pasikliautinis/BN
+pasikliautinis/BUN
 pasiploninti/TNX
 pasiplonino/PNX
 pasiplonina/ENX
-paþingsninis/BN
+paþingsninis/BUN
 PC
 PCI
 PDF
@@ -486,7 +498,7 @@ perfrazuoti/TNX
 perfrazuoja/ENX
 perfrazavo/PNX
 Perl
-permanentinis/BN
+permanentinis/BUN
 PGN
 PGP
 Pine
@@ -498,6 +510,7 @@ PM
 png
 PnP
 poaplankis/D
+pogarantinis/BN
 polangis/D
 poliarumas/D
 POP
@@ -511,17 +524,20 @@ PPP
 pr
 pribambasas/D
 prieðsàlygis/D
+prioritetizuoti/TN
+prioritetizuoja/EN
+prioritetizavo/PN
 programeris/D
 programiðius/D
 proxy
 pseudografikos/D
 pseudomokslas/D
-pseudomokslinis/BN
-pseudomoksliðkas/AN
+pseudomokslinis/BUN
+pseudomoksliðkas/BN
 pub
 Public
-puslapinis/BN
-pustoninis/BN
+puslapinis/BUN
+pustoninis/BUN
 PVM
 pvz
 Qmail
@@ -547,7 +563,7 @@ saistyklë/D
 saitas/D
 saitvietë/D
 sàlaja/D
-sàlajinis/BN
+sàlajinis/BUN
 Samsung
 SASL
 SBA
@@ -561,18 +577,19 @@ servino/PNXfk
 servinti/TNXfk
 SGML
 Sharp
+sidriukas/D
 siejiklis/D
 symlinkas/D
 SysV
 skaitmeninimas/D
 skaitmeniðkai
-skotopinis/BN
+skotopinis/BUN
 skriptas/D
 skriptukas/D
-skritulinis/BN
+skritulinis/BUN
 Slackware
 slankjuostë/D
-slaptaþodinis/BN
+slaptaþodinis/BUN
 SLIP
 SMB
 SMP
@@ -600,10 +617,10 @@ stagnuoja/ENX
 stagnavo/PNX
 StarOffice
 stdout
-stilinis/BN
+stilinis/BUN
 strigtis/D
 struktûrograma/D
-stulpelinis/BN
+stulpelinis/BUN
 subj                            # XXX
 subpraktika/D                   # XXX
 Suite
@@ -623,7 +640,7 @@ t
 Tab
 Tahoma
 taisinys/D
-tarpgrupinis/BN
+tarpgrupinis/BUN
 TCP
 telekonferencija/D
 teleportacija/D
@@ -633,7 +650,7 @@ teleportavo/PON
 telnetas/D
 Temple
 The
-tikralaikis/BN
+tikralaikis/BUN
 tikrintuvë/D
 tinklavietë/D
 tiuneris/D
@@ -668,7 +685,7 @@ validatorius/D
 validavo/PNX
 validuoja/ENX
 validuoti/TNX
-variantinis/BN
+variantinis/BUN
 vCard
 vediklis/D
 vertyklë/D
@@ -676,7 +693,7 @@ VFAT
 VGA
 VÁ
 video
-vienbaitis/BN
+vienbaitis/BUN
 ViM
 virðaplankis/D
 virðkatalogis/D
@@ -910,6 +927,8 @@ liepsnoti/R
 parametrizavo/PNX
 parametrizuoja/ENX
 parametrizuoti/TNX
+posteriori
+priori
 prodiusuoti/TNXfjkv
 prodiusuoja/ENXfjkv
 prodiusavo/PNXfjkv
