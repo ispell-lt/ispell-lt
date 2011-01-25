@@ -8,7 +8,7 @@
     <em:version>@VERSION@</em:version>
     <em:creator>Albertas Agejevas</em:creator>
 @CONTRIBUTORS@
-    <em:homepageURL>https://code.launchpad.net/ispell-lt</em:homepageURL>
+    <em:homepageURL>https://launchpad.net/ispell-lt</em:homepageURL>
     <em:unpack>true</em:unpack> 
     <em:targetApplication>
       <Description>
