@@ -4,7 +4,7 @@
 #  Copyright (C) 2000-2002 Albertas Agejevas
 #
 
-VERSION=1.2.1
+VERSION=1.3
 DATE=`date -u +%Y\-%m\-%d`
 
 FIREFOXVERSION=4.0.*
@@ -115,6 +115,11 @@ install: lietuviu.hash
 
 aspell: lietuviu.dict lt_LT.aff
 	cp lt_LT.aff aspell/lt_affix.dat
+	echo "s/^version .*-/version "$(VERSION)"-/" > tmp.sed
+	echo "s/^source-version .*/source-version "$(VERSION)"/" >> tmp.sed
+	sed -f tmp.sed aspell/info > aspell/tmp.info
+	cp aspell/tmp.info aspell/info
+	rm -f tmp.sed aspell/tmp.info
 	cd aspell; ../tools/proc
 	cd aspell; ./configure
 	cp lietuviu.dict aspell/lt.wl
@@ -133,15 +138,11 @@ dist-src:
 	rm -rf ispell-lt-$(VERSION)
 
 dist-aspell: clean aspell
-	echo "s/^version .*-/version "$(VERSION)"-/" > tmp.tmp
-	echo "s/^source-version .*/source-version "$(VERSION)"/" >> tmp.tmp
-	sed 's/+cvs/.cvs/g' tmp.tmp > tmp.sed
-	sed -f tmp.sed aspell/info > aspell/tmp.info
-	cp aspell/tmp.info aspell/info
-	rm -f tmp.* aspell/tmp.info
 	mkdir aspell-dist
+	mkdir aspell-dist/doc
+	cp README.EN aspell-dist/doc/README.txt
 	cp -fr aspell/* aspell-dist
-	rm -rf aspell-dist/CVS aspell-dist/doc/CVS
+	cat COPYING >> aspell-dist/Copyright
 	$(MAKE) -C aspell-dist dist-nogen
 	mv aspell-dist/*.tar.bz2 ./
 	rm -rf aspell-dist
