@@ -22,7 +22,7 @@ version 1.2.1-0
 source-version 1.2.1
 complete true
 accurate true
-url ftp://ftp.akl.lt/ispell-lt/
+url https://launchpad.net/ispell-lt/+download/
 alias lt lithuanian lietuviu
 dict:
   name lt

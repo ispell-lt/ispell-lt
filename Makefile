@@ -106,8 +106,8 @@ clean:
 	lt_LT.aff lt_LT.dic *.tar.gz *.zip  *.tar.bz2 *.xpi \
 	aspell/lt.wl aspell/lt.cwl aspell/lt_affix.dat aspell/lt.rws \
 	aspell/README aspell/configure aspell/Makefile aspell/Makefile.pre \
-	aspell/lt.multi aspell/lietuviu.alias aspell/lithuanian.alias \
-	dictionaries install.rdf install.js tmp.*
+	aspell/lt.multi aspell/lietuviu.alias aspell/lithuanian.alias
+	rm -rf dictionaries install.rdf install.js tmp.*
 
 install: lietuviu.hash
 	install -c -g 0 -o 0 -m 0644 lietuviu.hash $(installdir)

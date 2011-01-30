@@ -5,7 +5,7 @@ You are looking at the dictionaries and affix files for spellchecking
 of Lithuanian texts.
 
 The latest version of the affix tables and dictionaries can be found
-at ftp://ftp.akl.lt/ispell-lt/ .  The mailing list of the project is
+at http://launchpad.net/ispell-lt .  The mailing list of the project is
 available at https://lists.akl.lt/mailman/listinfo/ispell-lt . Bazaar
 is used for version control and it is available at
 https://code.launchpad.net/~ispell-lt/ispell-lt/trunk

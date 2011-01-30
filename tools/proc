@@ -52,6 +52,7 @@ sub error ( $ ) {
 my ($line_length,$error_count,$multi_errors);
 sub line_length() {75}
 sub error_message ($;$) {
+  local $_;
   my $error;
   my $parms = $_[1];
   my $warn = defined $parms->{warn} ? $parms->{warn} : false;
@@ -162,7 +163,7 @@ my %global_insr =
      name_native => {check=>any, required=>false},
      email => {required=>false, check=>[".+ at .+",generic]},
      maintainer => {required=>false,
-                    oneof=>['true', 'false'], default=>'false'},
+                    oneof=>['true', 'false', 'aspell'], default=>'false'},
      pre => sub {},
      post => sub {
        push @authors, $info;
@@ -1112,18 +1113,25 @@ chmod 0755, 'configure';
 sub README() {
   my $lang_name = $info->{name_english};
   $lang_name .= " ($info->{name_native})" if $info->{name_native} ne $info->{name_english};
+  my $aspell_maintainer_list;
   my $maintainer_list;
   my $author_list;
   foreach (@authors) {
-    my $which = $_->{maintainer} eq 'true' ? \$maintainer_list : \$author_list;
+    my $which =  $_->{maintainer} eq 'aspell' ? \$aspell_maintainer_list
+        : $_->{maintainer} eq 'true' ? \$maintainer_list
+        : \$author_list;
     $$which .= "  $_->{name}";
     $$which .= " ($_->{name_native})" if exists $_->{name_native};
     $$which .= " <$_->{email}>" if exists $_->{email};
     $$which .= "\n";
   }
   my $author_info;
-  if ($maintainer_list) {
-    $author_info  = "Maintained By:\n$maintainer_list";
+  if ($aspell_maintainer_list) {
+    $author_info = "Aspell Dictionary Maintained By:\n$aspell_maintainer_list";
+    $author_info .= "Original Word List Maintained By:\n$maintainer_list" if $maintainer_list;
+    $author_info .= "Original Word List Also By:\n$author_list" if $author_list;
+  } elsif ($maintainer_list) {
+    $author_info = "Maintained By:\n$maintainer_list";
     $author_info .= "Original Word List Also By:\n$author_list" if $author_list;
   } else {
     $author_info = "Original Word List By:\n$author_list";
@@ -1155,7 +1163,7 @@ sub README() {
   chop $dict_list;
   my $extra_info;
   $extra_info .= "Wordlist URL: $info->{url}\n" if exists $info->{url};
-  $extra_info .= "Source Verson: $info->{source_version}\n" if exists $info->{source_version};
+  $extra_info .= "Source Version: $info->{source_version}\n" if exists $info->{source_version};
   $extra_info .= "Source URL: $info->{source_url}\n" if exists $info->{source_url};
 
   if ($info->{complete} eq 'true' && $info->{accurate} eq 'true') {

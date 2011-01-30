@@ -1,5 +1,5 @@
 Lithuanian MySpell dictionaries are downloaded from 
-ftp://ftp.akl.lt/ispell-lt/
+http://launchpad.net/ispell-lt/
 https://code.launchpad.net/~ispell-lt/ispell-lt/trunk
 
 MySpell dictionaries are available in post 0.5 cvs version
