@@ -103,11 +103,13 @@ sort:
 
 clean:
 	rm -f lietuviu.dict.stat lietuviu.dict.cnt lietuviu.hash lietuviu.dict \
-	lt_LT.aff lt_LT.dic *.tar.gz *.zip  *.tar.bz2 *.xpi \
+	lt_LT.aff lt_LT.dic *.tar.gz *.zip  *.tar.bz2 *.xpi *.oxt \
 	aspell/lt.wl aspell/lt.cwl aspell/lt_affix.dat aspell/lt.rws \
 	aspell/README aspell/configure aspell/Makefile aspell/Makefile.pre \
 	aspell/lt.multi aspell/lietuviu.alias aspell/lithuanian.alias
 	rm -rf dictionaries install.rdf install.js tmp.*
+	rm -rf description.xml dictionaries.xcu hyph_lt.dic lt.aff lt.dic \
+	README_hyph.EN META-INF
 
 install: lietuviu.hash
 	install -c -g 0 -o 0 -m 0644 lietuviu.hash $(installdir)
@@ -154,6 +156,7 @@ dist-myspell: myspell
 	zip -r lt_LT-$(VERSION).zip lt_LT-$(VERSION)
 	rm -rf lt_LT-$(VERSION)
 
+# Priedas Mozillos produktams
 dist-xpi: myspell
 	mkdir -p dictionaries
 	cp lt_LT.dic dictionaries/lt.dic
@@ -171,7 +174,20 @@ dist-xpi: myspell
 	zip mozilla-spellcheck-lt-$(VERSION).xpi install.rdf install.js README.EN COPYING dictionaries/lt.*
 	rm -rf dictionaries install.rdf install.js tmp.sed
 
+# Priedas OpenOffice.org ir LibreOffice paketams
+dist-oxt: myspell
+	mkdir -p META-INF
+	cp openoffice/manifest.xml META-INF/
+	cp openoffice/dictionaries.xcu .
+	sed 's/@VERSION@/$(VERSION)/' openoffice/description.xml.in > description.xml
+	cp lt_LT.dic lt.dic
+	cp lt_LT.aff lt.aff
+	cp hyph/hyph_lt_LT.dic hyph_lt.dic
+	cp hyph/README_hyph_lt_LT.txt README_hyph.EN
+	zip openoffice-spellcheck-lt-$(VERSION).oxt description.xml dictionaries.xcu hyph_lt.dic lt.aff lt.dic README.EN README_hyph.EN META-INF/manifest.xml 
+	rm -rf description.xml dictionaries.xcu hyph_lt.dic lt.aff lt.dic README_hyph.EN META-INF
+
 dist-hyph:
 	zip -Dj hyph_lt_LT.zip hyph/hyph_lt_LT.dic hyph/README_hyph_lt_LT.txt
 
-dists: dist-aspell dist-myspell dist-src dist-xpi dist-hyph
+dists: dist-aspell dist-myspell dist-src dist-xpi dist-oxt dist-hyph
