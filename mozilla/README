@@ -1,8 +1,0 @@
-Komanda 'make' sukuria instaliaciná failà, skirtà mozillos 
-spellchecker moduliui. http://spellchecker.mozdev.org/
-
-Reikia, kad jau bûtø sukompiliuoti lt_LT.aff ir lt_LT.dic failai. 
-Sistemoje turi bûti ádëtas zip archyvatorius.
-
-'make install' kol kas nieko nedaro.
-'make clean' iðvalo instaliacijà
