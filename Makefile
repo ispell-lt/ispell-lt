@@ -155,14 +155,11 @@ dist-myspell: myspell
 	rm -rf lt_LT-$(VERSION)
 
 dist-xpi: myspell
-	mkdir dictionaries
+	mkdir -p dictionaries
 	cp lt_LT.dic dictionaries/lt.dic
 	cp lt_LT.aff dictionaries/lt.aff
-#no e-mail addresses in the xpi file.
-#	echo "s/</\\\\\\\\\\&lt;/" > tmp.sed
-#	echo "s/>/\\\\\\\\\\&gt;/" >> tmp.sed
 	echo "s/ <.*$$//" > tmp.sed
-	echo "s/^.*$$/    <em:contributor>&<\\\\\\\\\\/em:contributor>/" >> tmp.sed
+	echo "s/^.*$$/    <em:contributor>&<\\\\\\\\\/em:contributor>/" >> tmp.sed
 	tail -n+7 THANKS | sed -f tmp.sed > tmp.thanks
 	sed -i ":a;$$!N;s/\n/\\\n/;ta;" tmp.thanks
 	sed "s/.*/s\\/@CONTRIBUTORS@\\/&\\//" tmp.thanks > tmp.sed
