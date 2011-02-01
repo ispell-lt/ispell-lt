@@ -117,7 +117,7 @@
 	Dabar veikia su python v2.3+ (bandyta su win32 versijomis: v2.3.5,
 	v2.6.1)
 
-2010-09-19  Rimas Kudelis <rq@sugar>
+2010-09-19  Rimas Kudelis <rq@akl.lt>
 
 	* Makefile,
 	* mozilla/install.rdf.in: [87.1.1] Mozillos paketo atnaujinimai.
@@ -432,7 +432,7 @@
 	Trūko kai kurių veiksmažodžių formų (veržiasi, gūžiasi, ...): 
 	[^D] Ž I A S I  > -ASI,ESI.
 
-2009-12-28  Rimas Kudelis <rq@sugar>
+2009-12-28  Rimas Kudelis <rq@akl.lt>
 
 	* Makefile,
 	* mozilla/install.rdf.in: [72] 
@@ -447,7 +447,7 @@
 	
 	Dar pora patvarkymų dėl mozillos, reikiamiems skriptams uždėta +x
 
-2009-12-28  Rimas Kudelis <rq@sugar>
+2009-12-28  Rimas Kudelis <rq@akl.lt>
 
 	* mozilla/install.js.in,
 	* mozilla/install.rdf.in: Added.
@@ -471,7 +471,7 @@
 	
 	Papildyta: 44 daiktavardžiai, 3 būdvardžiai ir 9 vardai.
 
-2009-12-27  Rimas Kudelis <rq@sugar>
+2009-12-27  Rimas Kudelis <rq@akl.lt>
 
 	* lietuviu.jargon: [67] 
 	
