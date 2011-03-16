@@ -1,145 +1,332 @@
 
 
-	   Lietuviškų ispell afiksų lentelių README failas
+	   Lietuviškųjų ispell afiksų taisyklių README failas
 
 	   	      	     Albertas Agejevas <alga@uosis.mif.vu.lt>
 			     Gediminas Paulauskas <menesis@delfi.lt>
 	
-			     2002 m. balandžio 6 d., v. 0.4
-
+			     Parašyta: 2002 m. balandžio 6 d.
 
          		     Laimonas Vėbra <laimonas.vebra@gmail.com>
-			     (koreguota, papildyta 2010 m.)
+			     (perrašyta, papildyta: 2010, 2011 m.)
 
 
 
+	1. Kas tai yra ir kam to reikia?
 
-		1. Kas čia yra ir kam to reikia?
+	ispell, tai rašybos tikrinimo programa (spell checker), originaliai 
+skirta veikti *nix sistemose, tačiau ilgainiui paplitusi aibėje OS, naudojama 
+įvairių teksto rengimo programų. ispell veikia gana paprastai: nagrinėjamas 
+kiekvienas teksto žodis ir tikrinama, ar toks žodis yra teisingas (yra žodyne).
+Jei nėra, tai siūlomi panašiausi žodžiai iš žodyno. Siūlomi („panašūs“) žodžiai
+gaunami kaitaliojant nežinomo žodžio gretimas raides vietomis, keičiant kokią 
+nors vieną raidę kita, įterpiant tarpą ar kokią raidę.
 
-lietuviu.aff yra afiksų lentelė ispell programai.  ispell yra spell
-checkeris (rašybos tikrinimo programa) Unix sistemoms.  Jis
-veikia labai primityviai: ima iš teksto po vieną žodį ir tikrina, ar
-toks žodis yra žodyne.  Jei nėra, pasiūlo panašiausius žodžius iš
-žodyno.  "Panašūs" žodžiai gaunami sukeičiant gretimas raides
-vietomis, pakeičiant kokią nors vieną raidę, arba įterpiant tarpą
-ar kokią raidę.
+	Lietuvių kalba yra sintetinio tipo, tad žodžio reikšmė priklauso nuo jo
+formos, priešingai nei anglų arba vokiečių kalbos, vadinamos analitinėmis, 
+kuriose žodžio reikšmė išaiškėja tiktai kitų žodžių kontekste. Dėl to 
+analitinėse kalbose pakanka tiesiog tikrinti kiekvieną žodį žodyne, o 
+sintetinių kalbų (lietuvių kalbos) atveju žodynuose nesaugomos/nepateikiamos 
+visos įmanomos žodžių formos, nes jos vargiai juose išsitektų (žodynai būtų 
+milžiniški). Pavyzdžiui, lietuvių kalboje yra tokios kaitomos žodžių klasės:
 
-Lietuvių kalba yra sintetinio tipo, tai yra žodžio reikšmė priklauso
-nuo jo formos, priešingai negu anglų arba vokiečių kalbos, vadinamos
-analitinėmis, kuriose žodžio reikšmė išaiškėja tiktai kitų žodžių
-kontekste.  Dėl to anglų kalboje pakanka tiesiog tikrinti kiekvieną
-žodį, ar jis yra žodyne.  O štai lietuvių kalbos žodynuose
-nepateikiamos visos įmanomos žodžių formos.  Lietuvių kalboje yra
-tokios kaitomos žodžių klasės:
+	* daiktavardis (kaitomas skaičiais ir linksniais);
+	* būdvardis (giminė, skaičius ir linksnis);
+	   - įvardžiuotinės formos (giminė, skaičius ir linksnis);
+	   - laipsnių formos (giminė, skaičius ir linksnis);
+	   - ypatybės su priesaga -umas (gerumas) (skaičius ir linksnis);
+	   - vediniai su priesaga -okas -a (giminė, skaičius ir linksnis);
+	* įvardis (giminė, skaičius, linksnis);
+	   - keletas įvardžiuotinių formų;
+	* veiksmažodis
+	   - asmenuojamos formos: esamasis, būsimasis, būtasis kartinis ir
+	     dažninis laikai;
+	   - dalyviai, jų įvardžiuotinės formos, pusdalyviai (giminė, skaičius
+	     ir linksnis)
+	* skaitvardis (kiekiniai ir kelintiniai, kurie panašūs atitinkamai į
+	  daiktavardžius ir būdvardžius)
 
-* daiktavardis (kaitomas skaičiais ir linksniais);
-* būdvardis (giminė, skaičius ir linksnis);
-   - įvardžiuotinės formos (giminė, skaičius ir linksnis);
-   - laipsnių formos (giminė, skaičius ir linksnis);
-   - ypatybės su priesaga -umas (gerumas) (skaičius ir linksnis);
-   - vediniai su priesaga -okas -a (giminė, skaičius ir linksnis);
-* įvardis (giminė, skaičius, linksnis);
-   - keletas įvardžiuotinių formų;
-* veiksmažodis
-   - asmenuojamos formos: esamasis, būsimasis, būtasis kartinis ir
-     dažninis laikai;
-   - dalyviai, jų įvardžiuotinės formos, pusdalyviai (giminė, skaičius
-     ir linksnis)
-* skaitvardis (kiekiniai ir kelintiniai, kurie panašūs atitinkamai į
-  daiktavardžius ir būdvardžius)
+Taigi, daug įvairių formų su priešdėliais, dalelytėmis -- *daug* žodžių.
+*LABAI* daug žodžių. Įdomiosios statistikos dėlei galima paminėti, kad 
+dabartinį (2011 m; ispell-lt v1.2.1+) žodyną sudarytų virš 36 mln. žodžių,
+o žodynas būtų virš ~550 MB dydžio, t.y. nepraktiškai didelis, milžiniškas.
 
-Kokybinis būdvardis turi apie 170 formų, o pridėjus priešdėlį ne-, jų
-kiekis iškart padvigubėja.  Taigi, jeigu norėtume padaryti failą su
-visomis visų žodžių formomis, jis būtų nepagrįstai didelis.  Laimei,
-ispell palaiko dalyką, vadinamą afiksų sutraukimu.  Tai reiškia, kad
-žodyne laikomas tiktai šakninis žodis su nuorodomis, kokios galūnės ar
-priesagos prie to žodžio gali būti kabinamos.
+Laimei, ispell programa moka kaityti (generuoti) žodžius, pagal tam tikras
+-- afiksų -- taisykles. Tai reiškia, kad žodyne įrašomas tiktai šakninis 
+žodis su žymomis, kurios apibrėžia/nurodo, kaip tas žodis bus kaitomas 
+(linksniai, laipsniai, laikai, kt. formos, priešdėliai, kt.). 
+lietuviu.aff faile ir yra aprašytos tos kaitybos/kūrybos, t.y. afiksų 
+taisyklės.
 
-Čia pateikiamoje afiksų lentelėje yra surašytos visų kaitomų lietuvių
-kalbos žodžių kaitymo taisyklės, taigi žodyne tereikia nurodyti
-šakninį žodį, o visos formos bus generuojamos automatiškai.
-
-
-	2. Kaip naudotis ispell'u?
-
-buildhash programos pagalba iš žodyno failo ir afiksų failų padaromas
-hash failas, kuris vėliau ispell'o visada ir naudojamas.  Pakeitus
-žodyną ar afiksus hash'ą reikia „surinkti“ iš naujo, norint, kad
-pakeitimai įsigaliotų.
-
-	buildhash lietuviu.dict lietuviu.aff lietuviu.hash
-
-Norėdami padaryti hash'ą iš visų žodynų, įskaitant žargono ir
-šnekamosios kalbos, parašykite
-
-	make
-
-Dabar paleisdami ispell'ą, -d opcija galime nurodyti, kad jis naudotųsi
-mūsų lietuvišku hash'u:
-
-	ispell -d lietuviu
-
-Jei norite padaryti sistemai globalų hash'ą, dėkite jį į
-/usr/lib/ispell.  Tada galima bus nurodyti tiktai hash failo vardą, o
-ne pilną kelią.  Tai galite padaryti komanda 
-
-	make install
-
-Jei apsisprendėte naudoti lietuviu žodyną, galite į profailą įsirašyti
-DICTIONARY=lietuviu. Debiane tai daroma paprasčiau: kaip root'as paleiskite
-komandą
-
-	/usr/sbin/update-ispell-dictionary
-
-Jei norite ispell'u patikrinti kokį nors failą, darykite taip:
-
-	ispell -d lietuviu rašliava.txt
-
-Jei norite ispell'u patikrinti kokį nors UTF-8 koduotės failą, naudodami UTF-8
-terminalą bei lokalę, darykite taip:
-
-        ispell -d lietuviu -Tutf8 rašliava.txt
-
-KSpell biblioteka pati tą raktą bando, kai yra nurodyta tokia koduotė KSpell
-konfigūravimo parinktyse.  Jei ispell su tuo raktu neveikia, bandoma be rakto,
-tikintis, kad ispell žodyno ir tikrinamo teksto koduotės sutaps.  Paskui yra
-perkoduojama kaip reikia pagal KDE lokalės nustatymus.  KDE 2.2.1 konfigūruojant
-kspell dar galima nurodyti ISO 8859-13 žodyno koduotę tam pačiam rezultatui
-pasiekti, ankstesnėse versijose deja tokios galimybės nėra.
+	ispell-lt afiksų taisyklėmis negeneruojami deminutyvai (mažybiniai 
+priesaginiai dariniai); tokie žodžiai turi būti būti nurodomi žodyne kaip 
+atskiri žodžiai. Dauguma įvardžių ir skaitvardžių jau yra žodyne 
+(lietuviu.ivairus).
+	ispell programos licencija yra "The BSD Licence". Tokia pati licencija 
+taikoma ir ispell-lt afiksų/žodynų failams.
 
 
-	3. Būsena
 
-Tikiuosi, afiksų faile yra nurodytos visos lietuviškų žodžių kaitymo
-taisyklės ir keletas žodžių darybos taisyklių. Kaip flag'ai naudojamos
-ir mažosios raidės, taigi ispell turi būti sukompiliuotas su
-MASKBITS opcija lygia 64, tuo tarpu, kai reikšmė pagal nutylėjimą yra
-32, tai yra raidžių dydis flaguose yra ignoruojamas.  Jei norite
-patikrinti, su kokia MASKBITS buvo sukompiliuotas jūsų ispell,
-surinkite komandą
+	2. Kas yra ispell-lt pakete, kaip ir kur tai veikia
+
+./etc kataloge yra įvairūs susijusių (aspell, myspell, mozilla, openoffice)
+paketų konfigūracijos, šablonų ir kt. failai.
+
+./tools kataloge yra įvairios programos, skirtos ispell-lt paketui formuoti
+ir kt. apdorojimo reikmėms. 
+
+./tools/utils kataloge yra įvairios pagalbinės programos, palengvinančios 
+žodynų rinkimą, tikrinimą, tvarkymą, tačiau nebūtinos pagrindinėms ispell-lt 
+formavimo ir apdorojimo reikmėms.
+
+./ (šakniniame) kataloge yra ispell-lt žodynų ir kt. (licencijos, readme, 
+makefile, etc) failai.
+
+ispell-lt žodynai:
+
+	* lietuviu.ivpk (Dabartinės lietuvių kalbos žodynas; parengtas LKI, o
+	  į ispell-lt pateko IVPK dėka);
+
+	* lietuviu.veiksmazodziai (tik veiksmažodžiai);
+
+	* lietuviu.zodziai (būdv., daikt., kt., bet ne veiksmažodžiai);
+
+	* lietuviu.ivairus (įvardžiai, dalelytės, nekaitomi, kt. išimtys)
+
+	* lietuviu.jargon (žargono žodynas; čia patenka neteiktinos, 
+	  netaisyklingos, bet vartojamos formos);
+
+	* lietuviu.vardai (vietovardžiai, vardai, pavardės)
+
+
+
+	2.1 Reikalavimai:
+
+OS: Linux (*nix), MS Windows (Cygwin/GnuWin/MinGW-Msys).
+ispell (v3.1+), python (v2.3+), gnu make (v3.78+). 
+aspell žodynui parengti: Perl (v5.6+), aspell (v0.50+).
+
+
+MS Windows aplinkoje:
+    * Cygwin (rekomenduotina); turi viską, ko reikia ar gali prireikti: 
+        shell, core/file utils, ispell, aspell, t.t.
+
+    ARBA alternatyvos:
+	
+    * GnuWin32:
+      ispell-lt reikmėms reikės šių paketų: 
+        Make, CoreUtils, FindUtils, Sed, Grep, Tar, Zip, Gzip, Cpio, Libiconv.
+      
+      2011 m GnuWin32 neplatina/nesiūlo jokio shell'o, todėl papildomai 
+      būtina įsidiegti win32 bash/zsh/kt. ir atitinkamai nustatyti Makefile 
+      SHELL kintamojo reikšmę į exe failo pavadinimą (pvz.: SHELL = zsh.exe). 
+      Būtina sąlyga -- programa turi būti randama aplinkos kintamajame PATH 
+      nurodytuose kataloguose. Kita išeitis -- pervadinti shell programą į 
+      sh.exe ir perkleti šį failą į GnuWin32 'bin' (ar kitą, nurodytą PATH 
+      kelyje) katalogą.
+
+     * MinGW Msys: http://www.mingw.org/ (mingw-get)
+       ispell-lt reikmėms reikės šių paketų: 
+       msys-core, core-utils, make, findutils, libintl, libiconv, regex, 
+       termcap, bash/dash, sed, grep, less, tar, zip, gzip.
+
+      - unix shell win32: 
+          win-zsh (http://zsh-nt.sourceforge.net);
+	  MinGW-Msys bash/dash; 	
+          zsh.exe (http://unxutils.sourceforge.net/UnxUpdates.zip).
+
+      - ispell win32:
+          ispell v3.3.02 platinama su W32Tex:
+	  http://w32tex.org/w32/ispell-3.3.02-w32.tar.xz
+	  (v3.1.20, v3.2.06 galima rasti w32TeX ftp archyvuose ar webarchive)
+
+
+	Afiksų taisyklėse žymos yra didžiosios ir mažosios raidės, todėl 
+ispell turi būti sukompiliuotas su MASKBITS opcija lygia 64; kai ši reikšmė 
+(tam tikrais atvejais galbūt ir numatytoji) yra 32, tai didžiosios ir mažosios
+raidės neskiriamos, todėl tokia ispell programa veiks nekorektiškai su 
+ispell-lt parengtais žodynais. Norėdami patikrinti, su kokia MASKBITS reikšme 
+buvo sukompiliuota ispell programa, surinkite komandą:
 
 	ispell -vv | grep MASKBITS
 
-Nėra deminutyvinių (mažybinių) priesagų palaikymo -- deminutyvai turi
-būti nurodomi žodyne kaip atskiri žodžiai.
-
-Kartu su lentelėmis pateikiamas žodynas.  lietuviu.base faile yra
-pagalbiniai lietuvių kalbos žodeliai, įskaitant įvardžius,
-skaitvardžius, dalelytes, jungtukus ir prielinksnius.  lietuviu.words
-faile yra mano paties ir keleto bendraminčių iš savų rašinių pririnktų
-žodžių krūvelė.
-
-Kviečiu visus vartotojus siųsti man savo surinktų žodžių, kurių nėra
-mano žodyne, rinkinius (jie yra ~/.ispell_lietuviu arba ~/.ispell_default
-failuose).  Kartu galėsime padaryti visai vartotiną lietuvišką žodyną
-spell checkeriams!
 
 
-	4. Kaip pridėti į žodyną naujus žodžius? 
+	3. Kaip pasidaryti ispell žodyną, arba ką daryti su ispell-lt
 
-Visos šitos taisyklės yra suprogramuotos Gedimino Paulausko skripte
-tools/spellai, bet dažnai efektyviau būna tiesiog pridėti žodį
-rankomis, taigi štai taisyklės tiems, kurie flagus dės rankomis.
+Norėdami tiesiog pasidaryti lietuvių kalbos ispell žodyną, surinkite:
+
+	make
+	
+ir iš visų žodynų, įskaitant ir lietuviu.jargon (!), bus pagaminti 
+žodynų failai: 
+	lietuviu.hash -- ispell hash formato žodynas (skirta ispell programai)
+
+	build/myspell/{lt_LT.aff, lt_LT.dic} -- myspell afiksų taisyklės ir 
+	žodynas (t.y. skirta Aspell, Mozilla, OpenOffice ir kt.)
+
+Norėdami įdiegti ispell (lietuviu.hash) žodyną sistemoje (globaliai), 
+surinkite:
+	
+	make install
+
+Jei nusprendėte, kad 'lietuviu' žodynas bus pagrindinis, tai galite į savo 
+ar sistemos profilio failą (~/.bash_profile, ~/.profile, /etc/profile) įrašyti:
+	DICTIONARY=lietuviu
+ir nebereikės kiekvienąsyk ispell programai nurodyti žodyno -d raktu. Debian 
+Linux tai daroma paprasčiau -- root naudotojo teisėmis surinkite komandą:
+	/usr/sbin/update-ispell-dictionary
+
+
+Norėdami išvalyti katalogą, t.y. pašalinti failus, kurie buvo sukurti 
+ankstesnių make komandų, surinkite:
+
+	make clean
+
+
+	4. Kaip naudotis ispell programa?
+
+Reikėtų paskaitinėti (o kilus neaiškumams ar norint pasigilinti -- skaityti) 
+ispell manual'us:
+
+	man ispell
+	man 5 ispell
+
+tačiau pagrindinės, parankiausios komandos yra šios:
+
+	* (interaktyvus) žodžių tikrinimas; skaitoma po žodį arba prašoma 
+	  įvesti žodžius ir (pa)tikrinama ar jie yra teisingi, parodoma iš
+	  kokio šakninio žodyno žodžio yra padaryti žodžiai, pasiūlomi 
+	  artimiausi korketiški variantai:
+
+		ispell -d {zodynas} {tekstinis_failas}
+
+	  Pvz.: 
+		`ispell -d lietuviu` 
+		(įvedami žodžiai tikrinami interaktyviai; naudojamas 
+		 globalus žodynas 'lietuviu')
+
+		`ispell -d lietuviu rašliava.txt` 
+		(interaktyvus ir nuoseklus 'rašliava.txt' teksto tikrinimas; 
+		 naudojamas globalus žodynas 'lietuviu')
+
+
+		`ispell -d ./some/local/path/lietuviu rašliava.txt` 
+		(interaktyvus ir nuoseklus 'rašliava.txt' teksto tikrinimas; 
+		 naudojamas *lokalus*, nurodytame kataloge/vietoje esantis 
+		 žodynas, t.y. hash failas 'lietuviu.hash'. Pažymėtina, kad 
+		 nurodant žodyno vietą ir pavadinimą, nebūtina pridėti/nurodyti 
+		 failo plėtinį '.hash')
+
+
+		`cat words.txt | ispell -d lietuviu [-a]` 
+		(neinteraktyviai patikrinami 'words.txt' žodžiai; vienas žodis 
+		 eilutėje. Išsamiau: man ispell)
+				
+
+		Jei norite patikrinti utf-8 koduotės tekstą, tai galite 
+		pasinaudoti lietuviu.aff faile aprašytomis formatavimo 
+		taisyklėmis būtent šiam atvejui (t.y.: utf-8 -> iso-8859-13):
+
+		`ispell -d lietuviu -Tutf8 rašliava.txt`
+		(-T nurodo naudoti 'utf8' pavadintą formatuoklį, kuris 
+		 aprašytas 'lietuviu.aff'. Tokiu atveju, tekste esančios UTF-8 
+		 koduotės LT abėcėlės raidės yra verčiamos į ISO-8859-13 
+		 koduotę, t.y. tokią, kokią supranta ispell programa; 
+		 tikrinimas tampa įmanomas be pačio/viso teksto konvertavimo 
+		 iš vienos koduotės į kitą)
+		
+		
+		Ankstesni (~2000 m) paaiškinimai, galbūt nebeaktualūs:
+
+		KSpell biblioteka -T raktą bando, kai yra nurodyta (tokia)
+ 		koduotė KSpell konfigūravimo parinktyse.  Jei ispell su tokiu 
+		raktu neveikia, bandoma be (-T) rakto, tikintis, kad ispell 
+		žodyno ir tikrinamo teksto koduotės sutaps. Po to yra 
+		atitinkamai perkoduojama pagal KDE lokalės nustatymus. 
+		KDE 2.2.1, konfigūruojant KSpell, dar galima nurodyti 
+		žodyno koduotę (ISO-8859-13); ankstesnėse versijose, deja, 
+		tokios galimybės nėra.
+
+
+		Analogiškai (tikrinant įvairių koduočių tekstą), galite 
+		tikrinamą tekstą iš pradžių perversti į ISO-8859-13 (CP1257)
+		koduotę:
+		
+		 # ISO-8859-4 -> ISO-8859-13 (CP1257)
+		`cat rašliava.txt | 
+		 iconv -f "ISO-8859-4" -t "ISO-8859-13" > rašliava.txt.cp1257`
+
+		 # CP775 (DOS Baltic Rim) -> ISO-8859-13 (CP1257)
+		`cat rašliava.txt | 
+		 iconv -f "CP775" -t "ISO-8859-13" > rašliava.txt.cp1257`
+
+		 # UTF-8 -> ISO-8859-13 (CP1257)
+		`cat rašliava.txt | 
+		 iconv -f "UTF-8" -t "ISO-8859-13" > rašliava.txt.cp1257`
+
+
+		`ispell -d lietuviu rašliava.txt.cp1257` 
+
+
+	* sudaryti/išvesti klaidingų žodžių sąrašą, t.y. parodyti visus 
+	  žodžius, kurie ispell manymu, pagal nurodytą žodyną, yra klaidingi:
+
+		ispell -d {zodynas} -l
+		
+	  Pvz.:
+		`echo žąsiss žąsis žąsių žąsų | ispell -d lietuviu -l`
+		> žąsiss
+		> žąsių
+		
+
+	* išskleisti žod(-į,-žius), t.y., pagal prie žodžio nurodytas afiksų 
+	  žymas ir afiksų taisykles, sugeneruoti visą ždodžių aibę:
+	
+		ispell -d {zodynas} -e
+
+	  Pvz.:
+		`echo stalas/D | ispell -d lietuviu -e`
+		(išskleidžiamas žodis stalas/D; globalus žodynas 'lietuviu')		
+		> stalas stalų stalą stalu stalus stalams stalais stalo stalui 
+		> stalai staluose stale
+
+		`cat words.txt | ispell -d lietuviu -e` 
+		(išskleidžiami words.txt žodžiai; globalus žodynas 'lietuviu')
+
+
+
+	* nurodytam žodžiui sudaryti visus įmanomus žodžių ir afiksų žymų 
+	  derinių variantus, kurie generuoja nurodytą žodį. Ne visi 
+	  sugeneruotų variantų žodžiai yra teisingi žodžiai, kaip ir ne visi 
+	  sugeneruoti deriniai generuoja korektiškas žodžių formas, net jei 
+	  viena ar kelios yra korektiškos. Tokia galimybė daugiau skirta 
+	  sudarant žodynus ir nagrinėjant kokie žodžio ir afiksų deriniai 
+	  generuoja tam tikras žodžių formas.
+	
+		ispell -d {zodynas} -c
+	
+	  Pvz.:
+		`echo stalui | ispell -d lietuviu -c`
+		> stalui staluis/B staluis/D staluias/B staluia/E stalus/D 
+		> stalua/E staluus/B staluas/H staluas/B stalas/D
+
+
+
+	5. Kaip pridėti į žodyną naujus žodžius? 
+
+Galite pasinaudoti žodžių pridėjimui skirta programa:
+
+	/tools/utils/spell.py
+
+o šios taisyklės, paaiškinimai daugiau skirti tiems, kurie žymas norės
+pridėti rankomis. Afiksų taisyklės ir žymų reikšmės gana išsamiai 
+pakomentuotos (ar yra aiškios iš pačių taisyklių) afiksų taisyklių faile 
+'lietuviu.aff', tačiau prieš tai vertėtų paskaityti apie ispell afiksų 
+taisykles (formatą):
+
+	man 5 ispell
+
 
 0.  Jeigu žodis gali turėti priešdėlius ne-, nebe-, pridėkite žymą /N,
     pvz.:
@@ -373,53 +560,55 @@ rankomis, taigi štai taisyklės tiems, kurie flagus dės rankomis.
 
    
 
-Kaip ir viskas.  Visi įvardžiai ir skaitvardžiai jau yra žodyne.  Jei
-ko nors iš jų padermės ten nėra -- rašykit!  
+Raginame visus naudotojus pasidalinti savo surinktais žodžiais, kurių nėra 
+ispell-lt žodynuose. Siųskite savo asmeninius žodynėlius ispell-lt projekto
+autoriams/dalyviams, arba registruokite pavienius žodžius ispell-lt 
+Launchpad tinklapyje:
+	
+	https://bugs.launchpad.net/ispell-lt
+	(Nauji žodžiai)
 
 
-Ispell'as dar turi keletą naudingų režimų žodynų sudarinėtojams.
-"ispell -d lietuviu -e" išskleidinės afiksus pagal taisykles,
-skaitydamas žodžius iš stdin, rašydamas į stdout:
+Jūsų asmeniniai ispell žodynėliai Linux/Unix sistemose yra:
+	~/.ispell_lietuviu
+	~/.ispell_default 
 
-[alga@peleda ispell-lt]$ echo pavyzdys/D | ispell -d ./lietuviu -e
-pavyzdys pavyzdyje pavyzdžiuose pavyzdžiai pavyzdžiui pavyzdžio
-pavyzdžiais pavyzdžiams pavyzdžius pavyzdžiu pavyzdy pavyzdį pavyzdžių
+Windows sistemose, jei naudojate Cygwin, pvz.:
+	"C:\cygwin\home\Jonas\.ispell_lietuviu
 
-[alga@peleda ispell-lt]$ echo mylėti/TS | ispell -d ./lietuviu -e 
-mylėti besimylėti besimylėdavusia besimylėsiančia besimylėdavusiąja
-besimylėsiančiąja besimylėsimąja besimylėtąja besimylėdama
-besimylėsima besimylėtina besimylėta besimylėdavusioje besimylėsiančioje
-[...]
-Iš viso /TS padaro 1701 formą :-)
+Jei naudojatės Mozilla programomis, tai savo profilio kataloge reikėtų 
+ieškoti failo 'persdict.dat', pvz.:
 
-Dar yra nelabai naudinga, bet įdomi galimybė -- ispell'as bando
-sutraukti afiksus, atspėti, pagal kokias taisykles sudarytas žodis:
+	~/.mozilla/firefox/bn1s0oz5.default/presdict.dat
 
-[alga@peleda ispell-lt]$ echo mylimasis | ispell -d ./lietuviu -c
-mylimasis mylimasiti/T mylimasisti/T mylimasiti/Y mylimasisti/Y
-mylimasys/M mylimasys/V mylimasi/H mylimasyti/Y mylimastis/T
-mylimastis/Y mylimas/Q mylimas/H myli/E
+	"C:\Documents and Settings\Jonas\Application Data\Mozilla\SeaMonkey\
+	 Profiles\bn1s0oz5.default\persdict.dat" 
 
-[alga@peleda ispell-lt]$ echo besikiškiakopūstėliaudavusiuosiuose |
-ispell -d ./lietuviu -c
-besikiškiakopūstėliaudavusiuosiuose [niam] kiškiakopūstėliauti/ST
-kiškiakopūstėliauti/SY [niam]  besikiškiakopūstėliaudavo/U
-besikiškiakopūstėliauti/T besikiškiakopūstėliauti/Y
+OpenOffice programos meniu: 'Tools > Options > Language Settings > 
+Writing Aids > 	User-defined dictionaries' bus matyti visi naudotojo 
+žodynėliai, o šių žodynėlių katalogai, OpenOffice v2.x, v3.x yra: 
 
-Dabar galime pasidžiaugti, kad ispell'as atspėjo iš trisdešimto karto -- tai 
-buvo
+	~/.openoffice.org/2/user/wordbook/
+	"%USER_PROFILE%\Application data\OpenOffice.org\2\user\wordbook\"
 
-myli/E ir kiškiakopūstėliauti/ST
+	~/.openoffice.org/3/user/wordbook/
+	"%USER_PROFILE%\Application data\OpenOffice.org\3\user\wordbook\"
 
-Jei ieškosit info apie ispell, jums padės tiktai ispell'o man page'ai
-(errm, vadovo puslapiai :-) iš 1-os sekcijos ir 5-os sekcijos (po BSD --
-4 o ne 5).  Yra ispell'o info dokumentacija, bet joje yra tiktai
-paviršutiniškas vartotojo vadovas ir jokios techninės informacijos,
-net Copyright'ų.  Beje, ispell'as išleistas su BSD licenzija. Tokia
-licenzija taikoma ir afiksų/žodynų failams.
+	(čia %USER_PROFILE% -- Windows naudotojo paskyros katalogas, 
+	 pvz.: "C:\Documents and Settings\Jonas\")
 
-Atleiskit, kad šitas aprašymas išėjo toks sumaltas ir sunkiai
-suprantamas.  Gal dienos šviesoj ir ką geresnio būčiau sukūręs.  Bet
-vargu. 
+todėl, pavyzdžiui, naudotojo žodynėliai 'standard', 'mano_lt', 'mano1', 
+OpenOffice 3.x, bus:
 
-Albertas Agejevas <alga@uosis.mif.vu.lt>
+	~/.openoffice.org/3/user/wordbook/
+	    * mano1.dic
+	    * mano_lt.dic
+	    * standard.dic
+
+	arba (Windows sistemose):
+
+	"%USER_PROFILE%\Application data\OpenOffice.org\3\user\wordbook\
+	    * mano1.dic
+	    * mano_lt.dic
+	    * standard.dic
+

@@ -1,5 +1,5 @@
-#!/usr/bin/perl
-
+#!/usr/bin/env perl
+##!/usr/bin/perl
 ################################################################
 #
 # Aspell Word List Package proc 
@@ -8,18 +8,23 @@
 # 2004-08-10
 #
 
+
+use PerlIO;
 use Data::Dumper;
 use IO::File;
 
 use Encode qw(is_utf8 decode_utf8 encode_utf8 decode encode resolve_alias);
 
 use utf8;
-use open ':utf8';
+use open IO => ':unix :utf8';
 
 use strict;
 use warnings;
 no warnings qw(uninitialized utf8);
 no locale;
+
+use constant MSWIN  => (grep /$^O/i, ('mswin32', 'cygwin')) ? 1 : 0;
+use constant CYGWIN => ($^O =~ /cygwin/i) ? 1 : 0;
 
 my $VERSION = "0.60.4";
 
@@ -36,6 +41,8 @@ foreach my $arg (@ARGV) {
     $check_mode = 'unsafe';
   }
 }
+
+
 
 ################################################################
 #
@@ -749,11 +756,13 @@ traverse
     return map {"$_->{name}.$_->{type}"} @{$dicts{$name}->{dicts}};
   };
 
+my $nul = (MSWIN && !CYGWIN) ? 'NUL' : '/dev/null';
 my $word_list_compress_working = 
-  system("$prezip > /dev/null 2> /dev/null") != -1 ? true : false;
+  system("$prezip > $nul 2 > $nul") != -1 ? true : false;
 error_message("Unable to execute prezip-bin.  I will not be able "
 	      ."to check the integrity of the *.cwl files.")
   unless $word_list_compress_working;
+
 
 if ($check_mode ne 'unsafe' && $word_list_compress_working) {
   foreach my $wl (keys %word_lists) {
@@ -932,15 +941,23 @@ foreach my $key (sort keys %word_lists) {
   push @{$files{rws}}, "$key.rws";
 }
 
+
+# aspell works only with \n (config/word) text files; \r
+# messes things up (as getdata_pair() doesn't unescape strings) 
+# ironically prezip-bin (cygwin/gnuwin build) on windows 
+# outputs \r\n...
+# (need to explicitly convert newlines)
+my $conv = MSWIN ? '| dos2unix' : '';
+
 $make .= <<"---";
 
 .SUFFIXES: .cwl .rws .wl
 
 .cwl.rws:
-	\${PREZIP}$prezip_d < \$< | \${ASPELL} \${ASPELL_FLAGS} --lang=$lang create master ./\$@
+	\${PREZIP}$prezip_d < \$< $conv | \${ASPELL} \${ASPELL_FLAGS} --lang=$lang create master ./\$@
 
 .wl.cwl:
-	cat \$< | LC_COLLATE=C sort -u | \${PREZIP}$prezip_c > \$@
+	cat \$< | LC_COLLATE=C /bin/sort -u | \${PREZIP}$prezip_c > \$@
 
 .pz:
 	\${PREZIP}$prezip_d < \$< > \$@
@@ -986,7 +1003,7 @@ uninstall:
 	-cd ${DESTDIR}${datadir}/ && rm ${data_files}
 
 dist: ${cwl_files}
-	perl proc
+	perl proc.pl
 	./configure
 	@make dist-nogen
 

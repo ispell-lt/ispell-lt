@@ -1,7 +1,40 @@
-guess 		-- pagal žodžio išvestines formas bando nustatyti, kokie flagai
-			reikalingi
-try 		-- parodo, kas bus pritaikius taisyklę žodžiui 
-spellai 	-- interaktyvus skriptas, pagal atsakymus į klausimus sudeda teisingus flagus
-updated		-- randa byloje vienodus, bet su skirtingais flagais, žodžius
-proc            -- skriptas iš 'aspell-lang' paketo (ftp://ftp.gnu.org/gnu/aspell/),
-			skirtas aspell ditributyvo generavimui
+utils/	kataloge yra įvairios parankinės, papildomos programėlės, kurios 
+	nebūtinos ispell-lt žodynams apdoroti ir laidoms parengti, tačiau
+	palengvina žodynų rinkimą, žodžių tikrinimą ir pan.:
+
+	* validator/	žodžių paieška/tikrinimas VDU KLC tekstyne;
+
+	* guess.sh	pagal žodžio išvestines formas bando nustatyti, kokios
+			afiksų žymos reikalingos;
+
+	* spell.py	interaktyvi programėlė, kuri palengvina darbą pridedant 
+			naujus žodžius į žodyną; skaitomi (iš failo ar įvedami) 
+			žodžiai, jie nagrinėjami, užduodami klausimai (kokia 
+			kalbos dalis, priešdėliai ir t.t.), o pagal pagal 
+			atsakymus, žodžiams pridedamos atitinkamos afiksų 
+			žymos.
+
+	* try.sh	nurodžius žodį/žymą, sugeneruoja visas formas, kurias
+			generuoja globalusis ispell žodynas, pagal prie žodžio 
+			nurodytą afikso žymą; 
+
+	* updated.sh	nurodytame faile randa vienodus žodžius, kurie turi 
+			skirtingas afiksų žymas;
+
+
+* ispell2myspell
+		programa skirta konvertuoti afiksų taisykles iš ispell formato 
+		į myspell (naudojama OpenOffice ir kt.);
+
+* proc.pl	'aspell-lang' paketo (ftp://ftp.gnu.org/gnu/aspell/) programa,
+		skirta aspell žodynų (aspell-lt paketo) generavimui;
+
+* sort.py	rikiavimo programa. Moka pašalinti komentarus, besikartojančias
+		eilutes. Alternatyva /bin/sort, nes Cygwin aplinkoje sort 
+		veikia nekorektiškai;
+
+* sutrauka.py	ispell-lt žodynų sutraukimo/glaudinimo programa -- priešdėlinės
+		formos sutraukiamos prie šakninio žodžio pridedant atitinkamą 
+		priešdėlio afikso žymą.
+
+
