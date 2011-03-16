@@ -1,3 +1,100 @@
+2011-03-16  Laimonas Vėbra  <laimonas.vebra@gmail.com>
+
+	* AUTHORS:
+	* MANIFEST:
+	* README:
+	* THANKS:
+	* COPYING:
+	* Makefile:
+	* etc/MANIFEST.in:
+	* etc/aspell:
+	* etc/hyph:
+	* etc/mozilla:
+	* etc/openoffice:
+	* etc/aspell/info:
+	* etc/myspell:
+	* etc/myspell/dictionary.lst:
+	* tools/utils:
+	* tools/README:
+	* tools/sort.py:
+	* tools/proc.pl:
+	* tools/utils/guess.sh:
+	* tools/utils/spell.py:
+	* tools/utils/try.sh:
+	* tools/utils/updated.sh:
+	* tools/utils/validator:
+
+	Pertvarkyta projekto katalogų struktūra (daugiau tvarkos, aiškumo; 
+	mažiau šakninių katalogų). Atitinkamai pertvarkytas Makefile ir susiję 
+	failai; suderinta veikti mswin aplinkoje (Cygwin, GnuWin32, 
+	MinGW/Msys). Pašalintas	MANIFEST (dabar jis generuojamas Makefile'e iš
+	etc/MANIFEST.in). Perrašytas README, pridėtas AUTHORS failas,
+	papildytas ChangeLog, kt. pataisymai.
+
+2011-02-02  Rimas Kudelis  <rq@akl.lt>
+
+	* openoffice:
+	* openoffice/description.xml.in:
+	* openoffice/dictionaries.xcu:
+	* openoffice/manifest.xml:
+	* Makefile:
+	* README.EN:
+
+	OpenOffice.org/LibreOffice priedo generavimas, „Mozillos“ xpi 
+	generavimo pataisymas. README.EN faile pataisytas projekto 
+	svetainės adresas iš http į https (vis tiek permeta).
+
+
+2011-02-01  Rimas Kudelis  <rq@sugar>
+
+	* mozilla/Makefile:
+	* mozilla/README:
+	* mozilla/install.js:
+	* mozilla/license:
+	* mozilla/license/README.txt:
+	* mozilla/license/license.txt:
+
+	Ištrinti seni failai iš „mozilla“ aplanko. Šiuolaikinio XPI 
+	generavimas dabar yra vienas iš galimų `make` taikinių.
+
+2011-01-31  Kęstutis Biliūnas  <kebil@kaunas.init.lt>
+
+	* aspell/doc:
+	* aspell/doc/README.txt:
+	* Makefile:
+	* aspell/Copyright:
+	* aspell/info:
+
+	Pataisytas aspell paketo formavimas
+
+2011-01-30  Kęstutis Biliūnas  <kebil@kaunas.init.lt>
+
+	* Makefile:
+	* README.EN:
+	* aspell/doc/README.txt:
+	* aspell/info:
+	* mozilla/license/license.txt:
+	* tools/proc:
+
+	Atnaujintas tools/proc failas;
+	Nuorodos į http://ftp.akl.lt/ispell-lt/ pakeistos nuorodomis į 
+	http://launchpad.net/ispell-lt .
+
+2011-01-26  Laimonas Vėbra  <laimonas.vebra@gmail.com>
+
+	* ChangeLog:
+
+	Laidai parengtas ChangeLog failas. Pakako `bzr log -v --gnu` 
+	ir paredaguoti, paformatuoti.
+
+2011-01-25  Rimas Kudelis  <rq@sugar>
+
+	* Makefile:
+	* mozilla/install.rdf.in:
+
+	Mozillos programų versijų atnaujinimas, code.launchpad.net 
+	pataisyta į launchpad.net Mozillos install.rdf faile. 
+
 2011-01-20  Laimonas Vėbra <laimonas.vebra@gmail.com>
 
 	* README,

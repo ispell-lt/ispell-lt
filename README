@@ -122,7 +122,7 @@ MS Windows aplinkoje:
       SHELL kintamojo reikšmę į exe failo pavadinimą (pvz.: SHELL = zsh.exe). 
       Būtina sąlyga -- programa turi būti randama aplinkos kintamajame PATH 
       nurodytuose kataloguose. Kita išeitis -- pervadinti shell programą į 
-      sh.exe ir perkleti šį failą į GnuWin32 'bin' (ar kitą, nurodytą PATH 
+      sh.exe ir perkelti šį failą į GnuWin32 'bin' (ar kitą, nurodytą PATH 
       kelyje) katalogą.
 
      * MinGW Msys: http://www.mingw.org/ (mingw-get)
@@ -197,7 +197,7 @@ tačiau pagrindinės, parankiausios komandos yra šios:
 	* (interaktyvus) žodžių tikrinimas; skaitoma po žodį arba prašoma 
 	  įvesti žodžius ir (pa)tikrinama ar jie yra teisingi, parodoma iš
 	  kokio šakninio žodyno žodžio yra padaryti žodžiai, pasiūlomi 
-	  artimiausi korketiški variantai:
+	  artimiausi korektiški variantai:
 
 		ispell -d {zodynas} {tekstinis_failas}
 
@@ -281,7 +281,7 @@ tačiau pagrindinės, parankiausios komandos yra šios:
 		
 
 	* išskleisti žod(-į,-žius), t.y., pagal prie žodžio nurodytas afiksų 
-	  žymas ir afiksų taisykles, sugeneruoti visą ždodžių aibę:
+	  žymas ir afiksų taisykles, sugeneruoti visą žodžių aibę:
 	
 		ispell -d {zodynas} -e
 
@@ -463,7 +463,7 @@ taisykles (formatą):
   turi tokią pačią balsę, kaip ir bendraties kamiene: 
   	 sa'kY'ti > sakYs, tram'dY'ti > tramdYs, nu'ščiŪ'ti > nuščiŪs, ...
 
-  Vadovaujantis dvisikiemenių/daugiaskiemenių žodžių darybos 
+  Vadovaujantis dviskiemenių/daugiaskiemenių žodžių darybos 
   taisykle/dėsningumu svarbu atskirti koks žodis yra šakninis ir kiek 
   jis turi skiemenų, nes tai netaikoma priešdėliniams dariniams, pvz:
 
@@ -526,7 +526,7 @@ taisykles (formatą):
    ## (-tis,-asi,-isi,-osi,-ėsi)  ##   
    #################################
    
-   Jei veiksmažodis turi ir sangrąžinę formą (pvz.: laykyti > laikytis, 
+   Jei veiksmažodis turi ir sangrąžinę formą (pvz.: laikyti > laikytis, 
    laiko > laikosi, laikė > laikėsi), tai prie šakninio veiksmažodžio 
    reikia papildomai pridėti žym-ą(-as):
 
@@ -543,9 +543,9 @@ taisykles (formatą):
    
    (automatizmas: visiems veiksmažodžiams su žyma /Y, sngr. formai pridėti /O)
 
-   Pažymėtina, kad sangrąžinių žodžių afiksų žymos (/R, /O) nedalyvauja 
-   cross-product su kitomis afiksų žymomis, t.y. generuojant žodžius nesudaromi
-   priešdėliniai dariniai, pvz.: 
+   Pažymėtina, kad sangrąžinių žodžių afiksų žymos (/R, /O) nekryžminamos 
+   (nedalyvauja  cross-product) su kitomis afiksų žymomis, t.y. generuojant 
+   žodžius nesudaromi priešdėliniai dariniai, pvz.: 
      nerti/TRa > ap{nerti, ...}, *tačiau* tik {nertis, ...}, be priešdėlio ap.
 
 

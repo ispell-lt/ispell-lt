@@ -10,11 +10,10 @@ utils/	kataloge yra įvairios parankinės, papildomos programėlės, kurios
 	* spell.py	interaktyvi programėlė, kuri palengvina darbą pridedant 
 			naujus žodžius į žodyną; skaitomi (iš failo ar įvedami) 
 			žodžiai, jie nagrinėjami, užduodami klausimai (kokia 
-			kalbos dalis, priešdėliai ir t.t.), o pagal pagal 
-			atsakymus, žodžiams pridedamos atitinkamos afiksų 
-			žymos.
+			kalbos dalis, priešdėliai ir t.t.), o pagal atsakymus, 
+                        žodžiams pridedamos atitinkamos afiksų žymos.
 
-	* try.sh	nurodžius žodį/žymą, sugeneruoja visas formas, kurias
+	* try.sh	nurodžius žodį/žymą, išveda visas formas, kurias
 			generuoja globalusis ispell žodynas, pagal prie žodžio 
 			nurodytą afikso žymą; 
 
