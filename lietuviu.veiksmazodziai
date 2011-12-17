@@ -28,9 +28,24 @@ agituoja/ERSX
 #agituojasi/E                   # sngr. agituoja/.*R
 agituoti/TRSX
 #agituotis/T                    # sngr. agituoti/.*R
+aigyti/TWRSek			# yra DLKÞ  
+aigo/ERSek
+aigë/YOSek
+aikðtinti/TRNdix		# yra DLKÞ  
+aikðtina/ERNdix
+aikðtino/PONdix
 aimanavo/PNXefijklouvx
 aimanuoja/ENXefijklouvx
 aimanuoti/TNXefijklouvx
+aimatoti/RN
+aimatoja/RN
+aimatojo/ON
+aipti/TNae			# yra DLKÞ  
+aipsta/ENae
+aipo/PNae
+aisterëti/TN			# yra DLKÞ	
+aisterëja/EN
+aisterëjo/PN
 aistrina/ERSXac
 #aistrinasi/E                   # sngr. aistrina/.*R
 aistrino/POSXac
@@ -70,6 +85,9 @@ aklimatizuoja/ERSX
 #aklimatizuojasi/E              # sngr. aklimatizuoja/.*R
 aklimatizuoti/TRSX
 #aklimatizuotis/T               # sngr. aklimatizuoti/.*R
+akluoti/TNl			# yra DLKÞ  
+akluoja/ENl
+aklavo/PNl
 akmenëja/ENXc
 akmenëjo/PNXc
 akmenëti/TNXc
