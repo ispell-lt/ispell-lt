@@ -28,7 +28,7 @@
 
 include AUTHORS ChangeLog COPYING INSTRUKCIJOS.txt README* THANKS Makefile
 include lietuviu.* 
-exclude *.hash *.dict *.cnt *.stat 
+exclude *.hash *.dict *.cnt 
 
 graft etc
 graft tools

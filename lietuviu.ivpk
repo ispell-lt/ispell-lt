@@ -435,8 +435,6 @@ akiuotas/BQN
 akiuoti/TNX
 akivaizda/D
 akivaizdinis/BUN
-akivaizdininkas/DN
-akivaizdininkë/DN
 akivaizdybë/D
 #akivaizdumas/D                 # yra akivaizdus/.*Q
 akivaizdus/BQN
@@ -42192,6 +42190,8 @@ navikinis/BUN
 ne
 në
 #neabejotinas/BQN               # yra abejotinas/.*N
+neakivaizdininkas/D
+neakivaizdininkë/D
 #neakivaizdinis/BUN              # yra akivaizdinis/.*N
 neapykanta/D
 #neapkenèia/ENX                 # yra apkenèia/.*N

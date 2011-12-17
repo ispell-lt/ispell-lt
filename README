@@ -490,7 +490,7 @@ taisykles (formatą):
    ## Dalelytės-priešdėliai ##
    ###########################
 
-   Sangrąžiniams priešdėliniams veiksmažodžiams (formoms; norint tokias gauti) 
+   Sangrąžiniams priešdėliniam veiksmažodžiams (formoms; norint tokias gauti) 
    reikia pridėti /S (dalelytės: ne, nebe, nesi, nebesi, besi, tebesi)
    Pvz.: 
    	 moko/S > nebesimoko, besimoko, tebesimoko, ...
@@ -506,26 +506,15 @@ taisykles (formatą):
   
    Priešdėlinių dalelyčių žymas galima derinti, pvz.: sako/SX, kabo/NX ...
 
-   #
-   # Priešdėliai:
-   #
-   #  	       | ap | at | į | iš | nu | pa | par | per | pra | pri | su | už |
-   # --------------------------------------------------------------------------
-   # papsrast. |  a |  b | c |  d |  e |  f |  g  |  h	|  i  |  j  |  k |  l |
-   # su sngr.  |  m |  n | o |  p |  q |  r |  s  |  t	|  u  |  v  |  w |  x |
-   #
-   # (žr. lietuviu.aff)
-   #
-
    Keli veiksmažodžių darybos (afiksų žymų) pavyzdžiai:
 
    gyti/TUNX
    gyja/ENX
-   gijo/YNXadl	> {ap}gijo, {iš}gijo, {už}gijo, ...
+   gijo/YNX
 
    valgyti/TNX
    valgo/ENX
-   valgė/YNXq	> {nusi}valgė, ...
+   valgė/YNX
    
    mylėti/TSX
    myli/ESX
