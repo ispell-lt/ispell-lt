@@ -4,10 +4,10 @@
 
 VERSION = 1.3
 
-FIREFOXVERSION     = 4.0.*
-THUNDERBIRDVERSION = 3.3a3pre
-SEAMONKEYVERSION   = 2.1b2
-FENNECVERSION      = 4.0b4
+FIREFOXVERSION     = 22.*
+THUNDERBIRDVERSION = 22.*
+SEAMONKEYVERSION   = 2.19.*
+FFMOBILEVERSION    = 22.*
 
 DATE = `date -u +%Y\-%m\-%d`
 
@@ -436,7 +436,7 @@ dist-xpi: myspell
 	    -e 's/@FIREFOXVERSION@/$(FIREFOXVERSION)/' \
 	    -e 's/@THUNDERBIRDVERSION@/$(THUNDERBIRDVERSION)/' \
 	    -e 's/@SEAMONKEYVERSION@/$(SEAMONKEYVERSION)/' \
-	    -e 's/@FENNECVERSION@/$(FENNECVERSION)/' \
+	    -e 's/@FFMOBILEVERSION@/$(FFMOBILEVERSION)/' \
 	    $(D_CONF)/$(D_MOZILLA)/install.rdf.in > $(D_DST_T)/install.rdf
 	sed -e 's/@VERSION@/$(VERSION)/' \
 	    $(D_CONF)/$(D_MOZILLA)/install.js.in > $(D_DST_T)/install.js

@@ -14,7 +14,7 @@
 
 	1. Kas tai yra ir kam to reikia?
 
-	ispell, tai rašybos tikrinimo programa (spell checker), originaliai 
+	ispell – tai rašybos tikrinimo programa (spell checker), originaliai 
 skirta veikti *nix sistemose, tačiau ilgainiui paplitusi aibėje OS, naudojama 
 įvairių teksto rengimo programų. ispell veikia gana paprastai: nagrinėjamas 
 kiekvienas teksto žodis ir tikrinama, ar toks žodis yra teisingas (yra žodyne).
@@ -23,7 +23,7 @@ gaunami kaitaliojant nežinomo žodžio gretimas raides vietomis, keičiant koki
 nors vieną raidę kita, įterpiant tarpą ar kokią raidę.
 
 	Lietuvių kalba yra sintetinio tipo, tad žodžio reikšmė priklauso nuo jo
-formos, priešingai nei anglų arba vokiečių kalbos, vadinamos analitinėmis, 
+formos, priešingai nei anglų arba vokiečių kalbose, vadinamose analitinėmis, 
 kuriose žodžio reikšmė išaiškėja tiktai kitų žodžių kontekste. Dėl to 
 analitinėse kalbose pakanka tiesiog tikrinti kiekvieną žodį žodyne, o 
 sintetinių kalbų (lietuvių kalbos) atveju žodynuose nesaugomos/nepateikiamos 
@@ -46,16 +46,16 @@ milžiniški). Pavyzdžiui, lietuvių kalboje yra tokios kaitomos žodžių klas
 	* skaitvardis (kiekiniai ir kelintiniai, kurie panašūs atitinkamai į
 	  daiktavardžius ir būdvardžius)
 
-Taigi, daug įvairių formų su priešdėliais, dalelytėmis -- *daug* žodžių.
+Taigi, daug įvairių formų su priešdėliais, dalelytėmis – *daug* žodžių.
 *LABAI* daug žodžių. Įdomiosios statistikos dėlei galima paminėti, kad 
 dabartinį (2011 m; ispell-lt v1.2.1+) žodyną sudarytų virš 36 mln. žodžių,
 o žodynas būtų virš ~550 MB dydžio, t.y. nepraktiškai didelis, milžiniškas.
 
 Laimei, ispell programa moka kaityti (generuoti) žodžius, pagal tam tikras
--- afiksų -- taisykles. Tai reiškia, kad žodyne įrašomas tiktai šakninis 
+(afiksų) taisykles. Tai reiškia, kad žodyne įrašomas tiktai šakninis 
 žodis su žymomis, kurios apibrėžia/nurodo, kaip tas žodis bus kaitomas 
 (linksniai, laipsniai, laikai, kt. formos, priešdėliai, kt.). 
-lietuviu.aff faile ir yra aprašytos tos kaitybos/kūrybos, t.y. afiksų 
+lietuviu.aff faile ir yra aprašytos šios kaitybos/kūrybos, t.y. afiksų 
 taisyklės.
 
 	ispell-lt afiksų taisyklėmis negeneruojami deminutyvai (mažybiniai 
@@ -69,17 +69,17 @@ taikoma ir ispell-lt afiksų/žodynų failams.
 
 	2. Kas yra ispell-lt pakete, kaip ir kur tai veikia
 
-./etc kataloge yra įvairūs susijusių (aspell, myspell, mozilla, openoffice)
+./etc aplanke yra įvairūs susijusių (aspell, myspell, mozilla, openoffice)
 paketų konfigūracijos, šablonų ir kt. failai.
 
-./tools kataloge yra įvairios programos, skirtos ispell-lt paketui formuoti
+./tools aplanke yra įvairios programos, skirtos ispell-lt paketui formuoti
 ir kt. apdorojimo reikmėms. 
 
-./tools/utils kataloge yra įvairios pagalbinės programos, palengvinančios 
+./tools/utils aplanke yra įvairios pagalbinės programos, palengvinančios 
 žodynų rinkimą, tikrinimą, tvarkymą, tačiau nebūtinos pagrindinėms ispell-lt 
 formavimo ir apdorojimo reikmėms.
 
-./ (šakniniame) kataloge yra ispell-lt žodynų ir kt. (licencijos, readme, 
+./ (šakniniame) aplanke yra ispell-lt žodynų ir kt. (licencijos, readme, 
 makefile, etc) failai.
 
 ispell-lt žodynai:
@@ -120,10 +120,10 @@ MS Windows aplinkoje:
       2011 m GnuWin32 neplatina/nesiūlo jokio shell'o, todėl papildomai 
       būtina įsidiegti win32 bash/zsh/kt. ir atitinkamai nustatyti Makefile 
       SHELL kintamojo reikšmę į exe failo pavadinimą (pvz.: SHELL = zsh.exe). 
-      Būtina sąlyga -- programa turi būti randama aplinkos kintamajame PATH 
-      nurodytuose kataloguose. Kita išeitis -- pervadinti shell programą į 
+      Būtina sąlyga – programa turi būti randama aplinkos kintamąjame PATH 
+      nurodytuose aplankuose. Kita išeitis – pervadinti shell programą į 
       sh.exe ir perkelti šį failą į GnuWin32 'bin' (ar kitą, nurodytą PATH 
-      kelyje) katalogą.
+      kelyje) aplanką.
 
      * MinGW Msys: http://www.mingw.org/ (mingw-get)
        ispell-lt reikmėms reikės šių paketų: 
@@ -160,10 +160,10 @@ Norėdami tiesiog pasidaryti lietuvių kalbos ispell žodyną, surinkite:
 	
 ir iš visų žodynų, įskaitant ir lietuviu.jargon (!), bus pagaminti 
 žodynų failai: 
-	lietuviu.hash -- ispell hash formato žodynas (skirta ispell programai)
+	lietuviu.hash – ispell hash formato žodynas (skirtas ispell programai)
 
 	build/myspell/{lt_LT.aff, lt_LT.dic} -- myspell afiksų taisyklės ir 
-	žodynas (t.y. skirta Aspell, Mozilla, OpenOffice ir kt.)
+	žodynas (t.y. skirta Myspell, Mozilla, OpenOffice ir kt.)
 
 Norėdami įdiegti ispell (lietuviu.hash) žodyną sistemoje (globaliai), 
 surinkite:
@@ -178,7 +178,7 @@ Linux tai daroma paprasčiau -- root naudotojo teisėmis surinkite komandą:
 	/usr/sbin/update-ispell-dictionary
 
 
-Norėdami išvalyti katalogą, t.y. pašalinti failus, kurie buvo sukurti 
+Norėdami išvalyti aplanką, t.y. pašalinti failus, kurie buvo sukurti 
 ankstesnių make komandų, surinkite:
 
 	make clean
@@ -213,7 +213,7 @@ tačiau pagrindinės, parankiausios komandos yra šios:
 
 		`ispell -d ./some/local/path/lietuviu rašliava.txt` 
 		(interaktyvus ir nuoseklus 'rašliava.txt' teksto tikrinimas; 
-		 naudojamas *lokalus*, nurodytame kataloge/vietoje esantis 
+		 naudojamas *lokalus*, nurodytame aplanke/vietoje esantis 
 		 žodynas, t.y. hash failas 'lietuviu.hash'. Pažymėtina, kad 
 		 nurodant žodyno vietą ir pavadinimą, nebūtina pridėti/nurodyti 
 		 failo plėtinį '.hash')
@@ -338,7 +338,7 @@ taisykles (formatą):
 2.  Jei tai daiktavardis ir žodis nesibaigia galūnėmis -is, -uo, tai 
     reikia pridėti žymą /D, pvz.:
 
-    	   stalas/D
+	   stalas/D
 	   kėdė/D
 	   paskalos/D
 
@@ -355,7 +355,7 @@ taisykles (formatą):
         
 	kailis/D
 	peilis/D
-    	brolis/D
+	brolis/D
 
 2b. Jei tai: 
     - daiktavardis su vnsk. vardininko galūnėmis -is, -uo, -ė (jei vnsk. 
@@ -379,9 +379,9 @@ taisykles (formatą):
 
     	antruonys/VI	# dgsk. daiktavardis	    
     	sėmenys/VK  	# dgsk. daiktavardis
-        duktė/M
-	sesuo/M
-	akis/MI
+    	duktė/M
+    	sesuo/M
+    	akis/MI
     	ausis/MK
     	valtis/MI
     	vanduo/V
@@ -576,7 +576,7 @@ Jūsų asmeniniai ispell žodynėliai Linux/Unix sistemose yra:
 Windows sistemose, jei naudojate Cygwin, pvz.:
 	"C:\cygwin\home\Jonas\.ispell_lietuviu
 
-Jei naudojatės Mozilla programomis, tai savo profilio kataloge reikėtų 
+Jei naudojatės Mozilla programomis, tai savo profilio aplanke reikėtų 
 ieškoti failo 'persdict.dat', pvz.:
 
 	~/.mozilla/firefox/bn1s0oz5.default/presdict.dat
@@ -586,7 +586,7 @@ ieškoti failo 'persdict.dat', pvz.:
 
 OpenOffice programos meniu: 'Tools > Options > Language Settings > 
 Writing Aids > 	User-defined dictionaries' bus matyti visi naudotojo 
-žodynėliai, o šių žodynėlių katalogai, OpenOffice v2.x, v3.x yra: 
+žodynėliai, o šių žodynėlių aplankai, OpenOffice v2.x, v3.x yra: 
 
 	~/.openoffice.org/2/user/wordbook/
 	"%USER_PROFILE%\Application data\OpenOffice.org\2\user\wordbook\"
@@ -594,7 +594,7 @@ Writing Aids > 	User-defined dictionaries' bus matyti visi naudotojo
 	~/.openoffice.org/3/user/wordbook/
 	"%USER_PROFILE%\Application data\OpenOffice.org\3\user\wordbook\"
 
-	(čia %USER_PROFILE% -- Windows naudotojo paskyros katalogas, 
+	(čia %USER_PROFILE% -- Windows naudotojo paskyros aplankas, 
 	 pvz.: "C:\Documents and Settings\Jonas\")
 
 todėl, pavyzdžiui, naudotojo žodynėliai 'standard', 'mano_lt', 'mano1', 
