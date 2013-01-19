@@ -426,7 +426,7 @@ dist-xpi: myspell
 	cp -f $(D_BUILD)/$(D_MYSPELL)/lt_LT.dic $(D_DST_T)/dictionaries/lt.dic
 	cp -f $(D_BUILD)/$(D_MYSPELL)/lt_LT.aff $(D_DST_T)/dictionaries/lt.aff
 	cp -f README.EN COPYING $(D_DST_T)/
-	tail -n+7 THANKS | sed -E -e \
+	tail -n+3  AUTHORS | sed -E -e \
 	    's/^\s*\<(.*)\>\s*<.*$$/    <$(CT)>\1<\/$(CT)>/' > \
 	    $(D_TMP)/contributors.txt
 	sed \
