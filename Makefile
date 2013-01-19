@@ -369,7 +369,7 @@ dist-myspell: myspell
 	cp -f $(D_BUILD)/$(D_MYSPELL)/lt_LT.dic \
 	      $(D_BUILD)/$(D_MYSPELL)/lt_LT.aff \
 	      $(D_DST_TS)
-	cp -f README.EN INSTRUKCIJOS.txt $(D_DST_TS)
+	cp -f README.EN $(D_DST_TS)
 #	cp -f AUTHORS $(D_DST_TS)
 	cp -f $(D_CONF)/$(D_MYSPELL)/dictionary.lst $(D_DST_TS)
 	cd $(D_DST_T); zip -r $(dist_pkg_myspell) ./
