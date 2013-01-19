@@ -26,7 +26,7 @@
 # graft dir                            - include all files under dir 
 #
 
-include AUTHORS ChangeLog COPYING INSTRUKCIJOS.txt README* THANKS Makefile
+include AUTHORS ChangeLog COPYING README* Makefile
 include lietuviu.* 
 exclude *.hash *.dict *.cnt *.stat 
 
