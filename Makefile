@@ -43,12 +43,12 @@ DICTS = lietuviu.zodziai \
 	lietuviu.ivairus
 
 
-## kai kas permetama á gilesnius katalogus (fiziniø target'ø paieğka)
+## kai kas permetama Ä¯ gilesnius katalogus (fiziniÅ³ target'Å³ paieÅ¡ka)
 vpath % $(D_BUILD)
 vpath % $(D_BUILD)/$(D_MYSPELL)
 
 
-## dinamiğkai suformuojami/keièiami, tad nereikëtø iğoriğkai nustatyti
+## dinamiÅ¡kai suformuojami/keiÄiami, tad nereikÄ—tÅ³ iÅ¡oriÅ¡kai nustatyti
 override D_DST   =
 override D_DST_T =
 
@@ -64,13 +64,13 @@ FIND := find
 ## universalus variantas, tinkantis ir win ir *nix
 exists = $(shell which $1 > $(DEV_NULL) 2> $(DEV_NULL) && echo 1)
 
-## Nors GnuWin turi dos2unix, taèiau gana archaiğkà versijà v0.9, kuri 
-## kreivai veikia su temp failais. stdio.h:P_tmpdir reikğmë (turbût /tmp) 
-## neteisingai interpretuojama ir tmpnam() graşina failø pavadinimus root'e.
-## (jei ateityje GnuWin atnaujins versijà, tai vertëtø naudotis ğia programa)
+## Nors GnuWin turi dos2unix, taÄiau gana archaiÅ¡kÄ… versijÄ… v0.9, kuri 
+## kreivai veikia su temp failais. stdio.h:P_tmpdir reikÅ¡mÄ— (turbÅ«t /tmp) 
+## neteisingai interpretuojama ir tmpnam() graÅ¾ina failÅ³ pavadinimus root'e.
+## (jei ateityje GnuWin atnaujins versijÄ…, tai vertÄ—tÅ³ naudotis Å¡ia programa)
 dos2unix = tr -d '\r' < $1 > $1.new; mv -f $1.new $1
 
-## kiek saugesnio ğalinimo komanda; neiğğokama aukğèiau esamojo katalogo
+## kiek saugesnio Å¡alinimo komanda; neiÅ¡Å¡okama aukÅ¡Äiau esamojo katalogo
 deldir = $(FIND) . -depth -path './$(1)' -type d -exec rm -rf '{}' ';'
 ## man find: "processing filenames in such a way that file or directory  
 ## names containing single or double quotes, spaces or newlines are 
@@ -85,11 +85,11 @@ deldir = $(FIND) . -depth -path './$(1)' -type d -exec rm -rf '{}' ';'
 
 
 ## L.V.:
-## Apskritai, Windows/Cygwin aplinkoje, kartais kyla problemø. Kad ir dël \r\n. 
-## Aspell, pavyzdşiui, sutrinka skaitydamas config ir turbût kt. failus su
-## \r\n, o ávairûs (python, perl) script'ai, native aplinkoje, şinoma, iğveda
+## Apskritai, Windows/Cygwin aplinkoje, kartais kyla problemÅ³. Kad ir dÄ—l \r\n. 
+## Aspell, pavyzdÅ¾iui, sutrinka skaitydamas config ir turbÅ«t kt. failus su
+## \r\n, o Ä¯vairÅ«s (python, perl) script'ai, native aplinkoje, Å¾inoma, iÅ¡veda
 ## \r\n. Na ir kiti suderinamumo aspektai. 
-## (tai OS/ENV check kodas neiğvengiamas...)
+## (tai OS/ENV check kodas neiÅ¡vengiamas...)
 ifneq (%COMSPEC%, $(shell echo %COMSPEC%))
     MSWIN  = 1
     SHELL_CMD = 1
@@ -128,8 +128,8 @@ endif
 
 ifdef MSWIN
     ifndef SHELL_SH
-        ## reiğkia PATH nerado sh.exe; dar yra ğansø, kad yra koks *sh
-        ## (paskutinë galimybë -- reikalavimas; reikia Unix shell'o)
+        ## reiÅ¡kia PATH nerado sh.exe; dar yra Å¡ansÅ³, kad yra koks *sh
+        ## (paskutinÄ— galimybÄ— -- reikalavimas; reikia Unix shell'o)
         ifeq (1, $(call exists,bash))
             SHELL = bash.exe
         else
@@ -152,21 +152,21 @@ ifdef MSWIN
     SHELL_SH = 1
 
     ifdef GNUWIN
-        ## atskirus langus iğmeta gal tik win-zsh; nepakenks, jei script'ai 
-        ## bus kvieèiami su iğskirtinai nurodytu interpretatoriumi
+        ## atskirus langus iÅ¡meta gal tik win-zsh; nepakenks, jei script'ai 
+        ## bus kvieÄiami su iÅ¡skirtinai nurodytu interpretatoriumi
         PYCMD = python
         PLCMD = perl
     endif
 
-    ## Kai kà, pvz. find gali pasigauti iğ system32; reikia nurodyti visà 
-    ## kelià. Kabutës bûtinos, nes GnuWin programos graşina ne posix path 
+    ## Kai kÄ…, pvz. find gali pasigauti iÅ¡ system32; reikia nurodyti visÄ… 
+    ## keliÄ…. KabutÄ—s bÅ«tinos, nes GnuWin programos graÅ¾ina ne posix path 
     ## ir backslash'ai yra (su)interpretuojami shell'o.
     BINDIR := $(shell dirname `which uname`)
     FIND := '$(BINDIR)/find'
 endif
       
 
-## jei nëra (i|a)spell -- eliminuosime atitinkamus target'us
+## jei nÄ—ra (i|a)spell -- eliminuosime atitinkamus target'us
 ifeq (1, $(call exists,buildhash))
     HAVE_ISPELL = 1
 else
@@ -185,7 +185,7 @@ endif
 
 
 ##############################################
-## Şodynø (ispell/myspell/aspell) target'ai ##
+## Å½odynÅ³ (ispell/myspell/aspell) target'ai ##
 ##############################################
 
 
@@ -271,15 +271,15 @@ endif
 
 
 # L.V.:
-# Jei jau kaşkur, kaşkada ir kaşkodël prisireikia ar prisireiktø surikiuotø 
-# şodynø (nors tai sudarko komentarø blokus ir/ar şodşiø sekcijas şodynø 
-# failuose, kitaip tariant visà potencialià şodynø struktûrà, todël orig. 
-# failø perrağyti nevalia ar nereikëtø), tai reikëtø rikiuoti pagal lt 
-# abëcëlës rikiavimo tvarkà, o tai _universaliai_ moka tik tools/sort.py
-# Taip pat derëtø pağalinti tuğèias, o galbût ir komentarø eilutes; tuomet 
-# orig. şodynø perrağyti tikrai nevalia.
+# Jei jau kaÅ¾kur, kaÅ¾kada ir kaÅ¾kodÄ—l prisireikia ar prisireiktÅ³ surikiuotÅ³ 
+# Å¾odynÅ³ (nors tai sudarko komentarÅ³ blokus ir/ar Å¾odÅ¾iÅ³ sekcijas Å¾odynÅ³ 
+# failuose, kitaip tariant visÄ… potencialiÄ… Å¾odynÅ³ struktÅ«rÄ…, todÄ—l orig. 
+# failÅ³ perraÅ¡yti nevalia ar nereikÄ—tÅ³), tai reikÄ—tÅ³ rikiuoti pagal lt 
+# abÄ—cÄ—lÄ—s rikiavimo tvarkÄ…, o tai _universaliai_ moka tik tools/sort.py
+# Taip pat derÄ—tÅ³ paÅ¡alinti tuÅ¡Äias, o galbÅ«t ir komentarÅ³ eilutes; tuomet 
+# orig. Å¾odynÅ³ perraÅ¡yti tikrai nevalia.
 #
-# (todël surikiuoti şodynai pervadinami originalui prikabinant .sorted)
+# (todÄ—l surikiuoti Å¾odynai pervadinami originalui prikabinant .sorted)
 #
 sort:
 	for file in $(DICTS) ; do \
@@ -339,16 +339,16 @@ dist-src: MANIFEST
 ifdef GNUWIN
 	mkdir -p $(D_DST_T)
 	cpio -p -du $(D_DST_T) < $(D_BUILD)/MANIFEST 2> /dev/null
-# cpio (bent jau v2.6, GnuWin) keikiasi (function not implemented) turbût 
-# ketindamas nustatyti teises ir kuriamiems katalogams kaşkodël nustato 0444;
-# (vëliau rm -rf negali pağalinti tokiø katalogø)
+# cpio (bent jau v2.6, GnuWin) keikiasi (function not implemented) turbÅ«t 
+# ketindamas nustatyti teises ir kuriamiems katalogams kaÅ¾kodÄ—l nustato 0444;
+# (vÄ—liau rm -rf negali paÅ¡alinti tokiÅ³ katalogÅ³)
 # Negana to, GnuWin tar'as (v1.13) dar pats nemoka gzip'inti...
 	cd $(D_DST_T); $(FIND) . -type d -exec chmod 0777 '{}' ';'
 	cd $(D_DST_T)/../; tar -cvf $(dist_pkg_ispell).tar $(dist_pkg_ispell)
 	cd $(D_DST_T)/../; gzip  -f $(dist_pkg_ispell).tar
 	mv -f $(D_DST_T)/../$(dist_pkg_ispell).tar.gz $(D_DST)
 else
-# Modernioje aplinkoje viskas gerokai paprasèiau; tiesa, tam reikia bent jau 
+# Modernioje aplinkoje viskas gerokai paprasÄiau; tiesa, tam reikia bent jau 
 # gnu tar 1.20 (2008 m)
 	tar -czvf $(D_DST)/$(dist_pkg_ispell).tar.gz \
 	    --transform=s,^,$(dist_pkg_ispell)/, \
