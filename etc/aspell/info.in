@@ -18,11 +18,10 @@ author:
   email laimonas.vebra at gmail com
   maintainer true
 copyright Free Software
-version 1.3.0-0
-source-version 1.3.0
+version @VERSION@
 complete true
 accurate true
-url https://launchpad.net/ispell-lt/+download/
+url https://launchpad.net/ispell-lt
 alias lt lithuanian lietuviu
 dict:
   name lt

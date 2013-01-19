@@ -251,17 +251,17 @@ aspell: D_DST := $(D_BUILD)/$(D_ASPELL)
 ## ---------------------------------------------------------------------------
 aspell: lt_LT.aff lietuviu.dict
 	mkdir -p $(D_DST)
-	cp -f $(D_CONF)/$(D_ASPELL)/* $(D_DST)
+	cp -f $(D_CONF)/$(D_ASPELL)/lt.dat $(D_DST)
 	cp -f lietuviu.dict $(D_DST)/lt.wl
 	cp -f $(D_BUILD)/$(D_MYSPELL)/lt_LT.aff $(D_DST)/lt_affix.dat
 ifdef MSWIN
 	$(call dos2unix,$(D_DST)/lt.wl)
 	$(call dos2unix,$(D_DST)/lt_affix.dat)
 endif
-	sed -i -E \
-            -e 's/^((source-)?version\s+)[[:alnum:]._]*(-)?/\1$(VERSION)\3/' \
-    	    $(D_DST)/info
+	sed -e 's/@VERSION@/$(VERSION)/' \
+	    $(D_CONF)/$(D_ASPELL)/info.in > $(D_DST)/info
 	@cp -f $(D_TOOLS)/proc.pl $(D_DST)
+	@cp -f COPYING $(D_DST)/Copyright
 	cd $(D_DST); LC_ALL=C $(PLCMD) ./proc.pl
 	cd $(D_DST); ./configure
 	$(MAKE) -C $(D_DST) lt.rws
@@ -369,8 +369,8 @@ dist-myspell: myspell
 	cp -f $(D_BUILD)/$(D_MYSPELL)/lt_LT.dic \
 	      $(D_BUILD)/$(D_MYSPELL)/lt_LT.aff \
 	      $(D_DST_TS)
-	cp -f README.EN $(D_DST_TS)
-#	cp -f AUTHORS $(D_DST_TS)
+	cp -f README.EN $(D_DST_TS)/README
+	cp -f AUTHORS COPYING ChangeLog $(D_DST_TS)
 	cp -f $(D_CONF)/$(D_MYSPELL)/dictionary.lst $(D_DST_TS)
 	cd $(D_DST_T); zip -r $(dist_pkg_myspell) ./
 	mv -f $(D_DST_T)/$(dist_pkg_myspell) $(D_DST)
@@ -387,9 +387,8 @@ dist-aspell: aspell
 	mkdir -p $(D_DST)
 	mkdir -p $(D_DST_T)/doc
 	cp -fr $(D_BUILD)/$(D_ASPELL)/* $(D_DST_T)
-	cat COPYING >> $(D_DST_T)/Copyright
-#	cp -f AUTHORS $(D_DST_T)
-	cp -f README.EN $(D_DST_T)/doc/README.txt
+	cp -f README.EN $(D_DST_T)/doc/README
+	cp -f AUTHORS ChangeLog $(D_DST_T)
 	$(MAKE) -C $(D_DST_T) dist-nogen
 	mv -f $(D_DST_T)/*.tar.bz2 $(D_DST)
 	$(call deldir,$(D_DST_T))
@@ -425,7 +424,8 @@ dist-xpi: myspell
 	mkdir -p $(D_DST_T)/dictionaries
 	cp -f $(D_BUILD)/$(D_MYSPELL)/lt_LT.dic $(D_DST_T)/dictionaries/lt.dic
 	cp -f $(D_BUILD)/$(D_MYSPELL)/lt_LT.aff $(D_DST_T)/dictionaries/lt.aff
-	cp -f README.EN COPYING $(D_DST_T)/
+	cp -f README.EN $(D_DST_T)/README
+	cp -f COPYING $(D_DST_T)
 	tail -n+5 AUTHORS | sed -E -e \
 	    's/^\s*\<(.*)\>\s*<.*$$/    <$(CT)>\1<\/$(CT)>/' > \
 	    $(D_TMP)/contributors.txt
@@ -445,7 +445,7 @@ dist-xpi: myspell
 	$(call deldir,$(D_DST_T))
 
 
-## Priedas OpenOffice.org ir LibreOffice paketams
+## Priedas OpenOffice ir LibreOffice paketams
 .PHONY: dist-oxt
 ## ---------------------------------------------------------------------------
 dist-oxt: D_DST   := $(D_DIST)/$(D_OOFFICE)
@@ -456,7 +456,6 @@ dist-oxt: myspell
 	mkdir -p $(D_DST_T)/META-INF
 	cp -f $(D_BUILD)/$(D_MYSPELL)/lt_LT.dic $(D_DST_T)/lt.dic
 	cp -f $(D_BUILD)/$(D_MYSPELL)/lt_LT.aff $(D_DST_T)/lt.aff
-#	cp -f AUTHORS $(D_DST_T)
 	cp -f $(D_CONF)/$(D_OOFFICE)/manifest.xml $(D_DST_T)/META-INF
 	cp -f $(D_CONF)/$(D_OOFFICE)/dictionaries.xcu $(D_DST_T)
 	sed -e 's/@VERSION@/$(VERSION)/' \
@@ -464,7 +463,9 @@ dist-oxt: myspell
 	      $(D_DST_T)/description.xml
 	cp -f $(D_CONF)/$(D_HYPH)/hyph_lt_LT.dic $(D_DST_T)/hyph_lt.dic
 	cp -f $(D_CONF)/$(D_HYPH)/README_hyph_lt_LT.txt \
-	      $(D_DST_T)/README_hyph.EN
+	      $(D_DST_T)/README_hyph
+	cp -f README.EN $(D_DST_T)/README
+	cp -f AUTHORS COPYING $(D_DST_T)
 	cd $(D_DST_T); zip -r $(dist_pkg_ooffice) ./
 	mv -f $(D_DST_T)/$(dist_pkg_ooffice) $(D_DST)
 	$(call deldir,$(D_DST_T))
