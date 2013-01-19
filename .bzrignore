@@ -1,0 +1,13 @@
+tmp/
+dist/
+build/
+etc/aspell/*
+lietuviu.dict
+lietuviu.dict.cnt
+lietuviu.dict.stat
+lietuviu.hash
+lietuviu.stat
+lt_LT.aff
+lt_LT.dic
+etc/aspell/Makefile
+
