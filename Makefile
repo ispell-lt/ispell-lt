@@ -438,11 +438,10 @@ dist-xpi: myspell
 	    -e 's/@SEAMONKEYVERSION@/$(SEAMONKEYVERSION)/' \
 	    -e 's/@FFMOBILEVERSION@/$(FFMOBILEVERSION)/' \
 	    $(D_CONF)/$(D_MOZILLA)/install.rdf.in > $(D_DST_T)/install.rdf
-	sed -e 's/@VERSION@/$(VERSION)/' \
-	    $(D_CONF)/$(D_MOZILLA)/install.js.in > $(D_DST_T)/install.js
 	cd $(D_DST_T); zip -r $(dist_pkg_mozilla) ./
 	mv -f $(D_DST_T)/$(dist_pkg_mozilla) $(D_DST)
 	$(call deldir,$(D_DST_T))
+	@rm -f $(D_TMP)/contributors.txt
 
 
 ## Priedas OpenOffice ir LibreOffice paketams
