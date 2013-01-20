@@ -30,7 +30,7 @@ D_OOFFICE = openoffice
 
 dist_pkg_hyph    := hyph_lt_LT.zip
 dist_pkg_ispell  := ispell-lt-$(VERSION)
-dist_pkg_myspell := myspell-lt_LT-$(VERSION).zip
+dist_pkg_myspell := myspell-lt-$(VERSION).zip
 dist_pkg_mozilla := mozilla-spellcheck-lt-$(VERSION).xpi
 dist_pkg_ooffice := openoffice-spellcheck-lt-$(VERSION).oxt
 
@@ -360,7 +360,7 @@ endif
 ## ---------------------------------------------------------------------------
 dist-myspell: D_DST    := $(D_DIST)/$(D_MYSPELL)
 dist-myspell: D_DST_T  := $(D_TMP)/$(D_MYSPELL)
-dist-myspell: D_DST_TS := $(D_DST_T)/"lt_LT-$(VERSION)"
+dist-myspell: D_DST_TS := $(D_DST_T)/"myspell-lt-$(VERSION)"
 
 ## ---------------------------------------------------------------------------
 dist-myspell: myspell
