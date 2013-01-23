@@ -2,14 +2,12 @@
 ##  Makefile for Lithuanian ispell dictionary
 ##
 
-VERSION = 1.3
+VERSION = 1.3.0-$(shell date -u +%Y\.%m\.%d)
 
 FIREFOXVERSION     = 22.*
 THUNDERBIRDVERSION = 22.*
 SEAMONKEYVERSION   = 2.19.*
 FFMOBILEVERSION    = 22.*
-
-DATE = `date -u +%Y\-%m\-%d`
 
 D_BUILD	  = build
 D_CONF	  = etc
