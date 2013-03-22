@@ -106,25 +106,27 @@ endif
 
 uname_o := $(shell uname -o 2> $(DEV_NULL))
 
-ifeq (Cygwin, $(uname_o))
-    CYGWIN = 1
-else 
-ifeq (MinGW, $(uname_o))
-    ## GnuWin32 rinkinys
-    GNUWIN = 1
-else
-ifeq (Msys, $(uname_o))
-    ## MinGW msys rinkinys
-    MSYS = 1
-else
-    $(info On WINDOWS you will need Cygwin or MinGW/Msys or GnuWin32 \
-	   utils and unix shell)
-endif
-endif
-endif
 
 
 ifdef MSWIN
+    ifeq (Cygwin, $(uname_o))
+        CYGWIN = 1
+    else
+    ifeq (MinGW, $(uname_o))
+        ## GnuWin32 rinkinys
+        GNUWIN = 1
+    else
+    ifeq (Msys, $(uname_o))
+        ## MinGW msys rinkinys
+        MSYS = 1
+    else
+        $(info On WINDOWS you will need Cygwin or MinGW/Msys or GnuWin32 \
+	       utils and unix shell)
+    endif
+    endif
+    endif
+
+
     ifndef SHELL_SH
         ## reiškia PATH nerado sh.exe; dar yra šansų, kad yra koks *sh
         ## (paskutinė galimybė -- reikalavimas; reikia Unix shell'o)
