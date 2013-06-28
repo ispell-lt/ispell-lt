@@ -3,8 +3,8 @@
 	<version value="@VERSION@" />
 	<identifier value="org.openoffice.lt.hunspell.dictionaries" />
 	<display-name>
-		<name lang="en">Lithuanian spelling dictionary</name>
-		<name lang="lt">Lietuvių kalbos rašybos tikrinimo žodynas</name>
+		<name lang="en">Lithuanian spelling dictionary and hyphenation rules</name>
+		<name lang="lt">Lietuvių kalbos rašybos tikrinimo žodynas ir skiemenavimo taisyklės</name>
 	</display-name>
 	<platform value="all" />
 		<dependencies>
