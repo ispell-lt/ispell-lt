@@ -4,10 +4,11 @@
 
 VERSION = 1.3.1-$(shell date -u +%Y\.%m\.%d)
 
-FIREFOXVERSION     = 24.*
-THUNDERBIRDVERSION = 24.*
-SEAMONKEYVERSION   = 2.21.*
-FFMOBILEVERSION    = 24.*
+FIREFOXVERSION     = 43.*
+THUNDERBIRDVERSION = 43.*
+SEAMONKEYVERSION   = 2.38.*
+## Fennec is the codename of Firefox for Android
+FENNECVERSION      = 40.0
 
 D_BUILD	  = build
 D_CONF	  = etc
@@ -426,7 +427,7 @@ dist-xpi: myspell
 	cp -f $(D_BUILD)/$(D_MYSPELL)/lt_LT.aff $(D_DST_T)/dictionaries/lt.aff
 	cp -f README.EN $(D_DST_T)/README
 	cp -f COPYING $(D_DST_T)
-	tail -n+5 AUTHORS | sed -E -e \
+	tail -n+4 AUTHORS | sed -E -e \
 	    's/^\s*\<(.*)\>\s*<.*$$/    <$(CT)>\1<\/$(CT)>/' > \
 	    $(D_TMP)/contributors.txt
 	sed \
@@ -436,7 +437,7 @@ dist-xpi: myspell
 	    -e 's/@FIREFOXVERSION@/$(FIREFOXVERSION)/' \
 	    -e 's/@THUNDERBIRDVERSION@/$(THUNDERBIRDVERSION)/' \
 	    -e 's/@SEAMONKEYVERSION@/$(SEAMONKEYVERSION)/' \
-	    -e 's/@FFMOBILEVERSION@/$(FFMOBILEVERSION)/' \
+	    -e 's/@FENNECVERSION@/$(FENNECVERSION)/' \
 	    $(D_CONF)/$(D_MOZILLA)/install.rdf.in > $(D_DST_T)/install.rdf
 	cd $(D_DST_T); zip -r $(dist_pkg_mozilla) ./
 	mv -f $(D_DST_T)/$(dist_pkg_mozilla) $(D_DST)

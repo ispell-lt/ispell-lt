@@ -7,6 +7,7 @@
     <em:name>Lietuvių kalbos rašybos tikrinimo žodynas</em:name>
     <em:version>@VERSION@</em:version>
     <em:creator>Albertas Agejevas</em:creator>
+    <em:type>64</em:type>
 @CONTRIBUTORS@
     <em:homepageURL>https://launchpad.net/ispell-lt</em:homepageURL>
     <em:unpack>true</em:unpack> 
@@ -36,10 +37,26 @@
     </em:targetApplication>
     <em:targetApplication>
       <Description>
-        <!-- Firefox Mobile -->
+        <!-- Firefox for Android -->
         <em:id>{a23983c0-fd0e-11dc-95ff-0800200c9a66}</em:id>
         <em:minVersion>1.0a1</em:minVersion>
-        <em:maxVersion>@FFMOBILEVERSION@</em:maxVersion>
+        <em:maxVersion>@FENNECVERSION@</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    <em:targetApplication>
+      <Description>
+        <!-- KompoZer -->
+        <em:id>{20aa4150-b5f4-11de-8a39-0800200c9a66}</em:id>
+        <em:minVersion>0.7.99</em:minVersion>
+        <em:maxVersion>1.0+</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    <em:targetApplication>
+      <Description>
+        <!-- BlueGriffon -->
+        <em:id>bluegriffon@disruptive-innovations.com</em:id>
+        <em:minVersion>0.1pre</em:minVersion>
+        <em:maxVersion>*</em:maxVersion>
       </Description>
     </em:targetApplication>
   </Description>
