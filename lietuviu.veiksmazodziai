@@ -99,6 +99,9 @@ aktyvuoti/TRSX
 aktualina/ENX
 aktualino/PNX
 aktualinti/TNX
+aktualizuoti/T
+aktualizuoja/E
+aktualizavo/P
 akumuliavo/POSX
 #akumuliavosi/P                 # sngr. akumuliavo/.*O
 akumuliuoja/ERSX
@@ -1103,6 +1106,7 @@ dþiûgavo/PSNXfinrv
 dþiugina/ENXefiu
 dþiugino/PNXefiu
 dþiuginti/TNXefiu
+dþiûna/ENXadefhijkl
 dþiûsta/ENXadefhijkl
 dþiûti/TUNXaedfhkqpsrutwv
 dþiûva/ENXaedfhkqpsrutwv
@@ -1634,6 +1638,9 @@ harmonizuoja/ERSX
 #harmonizuojasi/E               # sngr. harmonizuoja/.*R
 harmonizuoti/TRSX
 #harmonizuotis/T                # sngr. harmonizuoti/.*R
+hermetizavo/PNlp
+hermetizuoja/ENlp
+hermetizuoti/TNlp
 hipnotizavo/PNXlx
 hipnotizuoja/ENXlx
 hipnotizuoti/TNXlx
@@ -2232,6 +2239,9 @@ konvertuoja/ERSXhkntvw
 #konvertuojasi/E                # sngr. konvertuoja/.*R
 konvertuoti/TRSXhkntvw
 #konvertuotis/T                 # sngr. konvertuoti/.*R
+konvojuoti/TNe
+konvojuoja/ENe
+konvojavo/PNe
 koordinavo/POSXfkrtw
 #koordinavosi/P                 # sngr. koordinavo/.*O
 koordinuoja/ERSXfkrtw
@@ -2542,6 +2552,9 @@ lëtëti/TNXfkl
 lëtina/ESXfhjkrtvx
 lëtino/PSXfhjkrtvx
 lëtinti/TSXfhjkrtvx
+liberalizuoti/TN
+liberalizuoja/EN
+liberalizavo/PN
 licencijavo/PNX
 licencijuoja/ENX
 licencijuoti/TNX
@@ -3060,6 +3073,9 @@ nustemba/ENX
 nustygo/PNX
 nustygsta/ENX
 nustygti/TNX
+oksiduoti/TRSm
+oksiduoja/ERSm
+oksidavo/POSm
 okupavo/PNXv
 okupuoja/ENXv
 okupuoti/TNXv
@@ -3347,6 +3363,9 @@ pluðëti/TNXbf
 poilsiauja/ESXfnqrtv
 poilsiauti/TSXfnqrtv
 poilsiavo/PSXfnqrtv
+poliarizuoti/TRS
+poliarizuoja/ERS
+poliarizavo/POS
 populiarëja/ENXd
 populiarëjo/PNXd
 populiarëti/TNXd
@@ -3386,6 +3405,9 @@ praðyti/TRWSXdfjklnoprtvwx
 praðo/ERSXdfjklnoprtvwx
 #praðosi/E                      # sngr. praðo/.*R
 prato/PNXbcfhjkmw
+pratæsinëja/EN
+pratæsinëjo/PN
+pratæsinëti/TN
 prausë/PRSXabdemnpq
 #prausësi/P                     # sngr. prausë/.*R
 prausia/ERSXabdemnpq
@@ -3466,6 +3488,9 @@ purtyti/TRWSXdefjkqrvw
 #purtytis/T                     # sngr. purtyti/.*R
 purto/ERSXdefjkqrvw
 #purtosi/E                      # sngr. purto/.*R
+puslapiuoti/TN
+puslapiuoja/EN
+puslapiavo/PN
 pusryèiauja/ENXfv
 pusryèiauti/TNXfv
 pusryèiavo/PNXfv
@@ -3628,6 +3653,9 @@ reklamuoti/TRSXdfhprtvx
 rekomendavo/PNXfx
 rekomenduoja/ENXfx
 rekomenduoti/TNXfx
+rekuperuoti/TN
+rekuperuoja/EN
+rekuperavo/PN
 rëkti/TNXadfhlp
 rëmë/PRSXabcfjklnorwx
 #rëmësi/P                       # sngr. rëmë/.*R
@@ -5126,6 +5154,9 @@ tuokti/TRSXdekpw
 tupëjo/PSXbdefimqvw
 tupëti/TSXbdefimqvw
 tupi/ESXbdefimqvw
+tupinëja/ENaf
+tupinëjo/PNaf
+tupinëti/TNaf
 turëjo/POSXadefikr
 #turëjosi/P                     # sngr. turëjo/.*O
 turëti/TRSXadefikr

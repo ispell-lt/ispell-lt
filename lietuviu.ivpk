@@ -13033,7 +13033,6 @@ diplominis/BUN
 diplomuotas/BQN
 diptichas/D
 dirba/ERNX
-dirbantysis/D
 #dirbasi/E                      # sngr. dirba/.*R
 dirbdina/ERNX
 #dirbdinasi/E                   # sngr. dirbdina/.*R
@@ -18657,9 +18656,9 @@ gramatinis/BUN
 gramatiðkas/BQN
 grambuoliukas/D
 grambuolys/D
-gramdë/YNX
-gramdyti/TWNX
-gramdo/ENX
+gramdë/YNXeq
+gramdyti/TWNXeq
+gramdo/ENXeq
 gramofonas/D
 gramozdas/D
 gramozdija/ENX
@@ -34367,11 +34366,11 @@ konfrontavo/PNX
 konfrontuoja/ENX
 konfrontuoti/TNX
 konfûzas/D
-konfûzija/ERSX
+konfûzija/ERSXk
 #konfûzijasi/E                  # sngr. konfûzija/.*R
-konfûzijo/POSX
+konfûzijo/POSXk
 #konfûzijosi/P                  # sngr. konfûzijo/.*O
-konfûzyti/TRWSX
+konfûzyti/TRWSXk
 #konfûzytis/T                   # sngr. konfûzyti/.*R
 konglomeratas/D
 kongresas/D
@@ -73265,16 +73264,16 @@ smaugti/TRNX
 smaugti/TRSX
 #smaugtis/T                     # sngr. smaugti/.*R
 smaugulys/D
-smaukë/YNX
-smaukë/PRNX
+smaukë/YONX			# smaukyti
+smaukë/PNX			# smaukti  
 #smaukësi/P                     # sngr. smaukë/.*R
 smaukia/ERNX
 #smaukiasi/E                    # sngr. smaukia/.*R
 smaukioja/ENX
 smaukiojo/PNX
 smaukioti/TNX
-smaukyti/TWNX
-smauko/ENX
+smaukyti/TRWNX
+smauko/ERNX
 smauktelëja/ENX
 smauktelëjo/PNX
 smauktelëti/TNX
@@ -97881,8 +97880,8 @@ vilnakirpis/BUN
 vilnëtas/BQN
 vilnietë/D
 vilnietis/D
-vilnija/ENX
-vilnijo/PNX
+vilnija/ENXe
+vilnijo/PNXe
 vilnina/ENX
 vilningas/BQN
 vilninis/BUN
@@ -97894,7 +97893,7 @@ vilniðkë/D
 vilniðkis/BUN
 vilniðkis/D
 vilnytas/BQN
-vilnyti/TWNX
+vilnyti/TWNXe
 vilnonas/D
 vilnonis/BUN
 vilnotas/BQN
