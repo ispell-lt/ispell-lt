@@ -2,29 +2,32 @@
 ##  Makefile for Lithuanian ispell dictionary
 ##
 
-VERSION = 1.3.1-$(shell date -u +%Y\.%m\.%d)
 
-FIREFOXVERSION     = 43.*
-THUNDERBIRDVERSION = 43.*
-SEAMONKEYVERSION   = 2.38.*
+# Kintamuosius (ypač, kurių reikšmes nustato išorinės programos)
+# geriau naudoti ne rekursiškai išplečiamus, t.y. su ':='
+
+VERSION := 1.3.1-$(shell date -u +%Y\.%m\.%d)
+
+FIREFOXVERSION     := 43.*
+THUNDERBIRDVERSION := 43.*
+SEAMONKEYVERSION   := 2.38.*
 ## Fennec is the codename of Firefox for Android
-FENNECVERSION      = 40.0
+FENNECVERSION      := 40.0
 
-D_BUILD   = build
-D_CONF    = etc
-D_DIST    = dist
-D_SRC     = src
-D_TMP     = tmp
-D_TOOLS   = tools
-D_INSTALL = `ispell -vv | grep LIBDIR | cut -d '"' -f2`
+D_BUILD   := build
+D_CONF    := etc
+D_DIST    := dist
+D_SRC     := src
+D_TMP     := tmp
+D_TOOLS   := tools
+D_INSTALL := `ispell -vv | grep LIBDIR | cut -d '"' -f2`
 
-## Directories; konkretus target'as pagal reikmes
-## pri(si)lipdo: etc/, build/, dist/, kt.
-D_ASPELL  = aspell
-D_HYPH    = hyph
-D_MYSPELL = myspell
-D_MOZILLA = mozilla
-D_OOFFICE = openoffice
+## Kategoriniai pakatalogiai
+D_ASPELL  := aspell
+D_HYPH    := hyph
+D_MYSPELL := myspell
+D_MOZILLA := mozilla
+D_OOFFICE := openoffice
 
 
 dist_pkg_hyph    := hyph_lt_LT.zip
@@ -34,15 +37,15 @@ dist_pkg_mozilla := mozilla-spellcheck-lt-$(VERSION).xpi
 dist_pkg_ooffice := openoffice-spellcheck-lt-$(VERSION).oxt
 
 
-DICTS = lietuviu.zodziai \
-	lietuviu.jargon \
-	lietuviu.vardai \
-	lietuviu.veiksmazodziai \
-	lietuviu.ivpk \
-	lietuviu.ivairus
+DICTS := lietuviu.zodziai \
+         lietuviu.jargon \
+         lietuviu.vardai \
+         lietuviu.veiksmazodziai \
+         lietuviu.ivpk \
+         lietuviu.ivairus
 
 
-## kai kas permetama į gilesnius katalogus (fizinių target'ų paieška)
+## kai kas (ką make turėtų rasti) yra gilesniuose kataloguose
 vpath % $(D_BUILD)
 vpath % $(D_BUILD)/$(D_MYSPELL)
 
@@ -55,40 +58,24 @@ override D_DST_T =
 SORT := $(PYCMD) $(D_TOOLS)/sort.py -u --clean --smart
 FIND := find
 
-#####################
-## Kvazi funkcijos ##
-#####################
+##########################
+## Pagalbinės funkcijos ##
+##########################
 
-## ar (executable) failas randamas PATH kelyje; toks
-## universalus variantas, tinkantis ir win ir *nix
+## Ar (executable) failas yra PATH
 exists = $(shell which $1 > $(DEV_NULL) 2> $(DEV_NULL) && echo 1)
 
-## Nors GnuWin turi dos2unix, tačiau gana archaišką versiją v0.9, kuri
-## kreivai veikia su temp failais. stdio.h:P_tmpdir reikšmė (turbūt /tmp)
-## neteisingai interpretuojama ir tmpnam() gražina failų pavadinimus root'e.
-## (jei ateityje GnuWin atnaujins versiją, tai vertėtų naudotis šia programa)
+## dos2unix ne visada būna įdiegta
 dos2unix = tr -d '\r' < $1 > $1.new; mv -f $1.new $1
 
 ## kiek saugesnio šalinimo komanda; neiššokama aukščiau esamojo katalogo
 deldir = $(FIND) . -depth -path './$(1)' -type d -exec rm -rf '{}' ';'
-## man find: "processing filenames in such a way that file or directory
-## names containing single or double quotes, spaces or newlines are
-## correctly handled."
-#deldir = $(FIND) . -path './$1' -type d -print0 | xargs -0 rm -rf
-
 
 
 ###################
 ## Init, patikra ##
 ###################
 
-
-## L.V.:
-## Apskritai, Windows/Cygwin aplinkoje, kartais kyla problemų. Kad ir dėl \r\n.
-## Aspell, pavyzdžiui, sutrinka skaitydamas config ir turbūt kt. failus su
-## \r\n, o įvairūs (python, perl) script'ai, native aplinkoje, žinoma, išveda
-## \r\n. Na ir kiti suderinamumo aspektai.
-## (tai OS/ENV check kodas neišvengiamas...)
 ifneq (%COMSPEC%, $(shell echo %COMSPEC%))
     MSWIN  = 1
     SHELL_CMD = 1
@@ -106,7 +93,6 @@ endif
 
 
 uname_o := $(shell uname -o 2> $(DEV_NULL))
-
 
 
 ifdef MSWIN
@@ -153,15 +139,11 @@ ifdef MSWIN
     SHELL_SH = 1
 
     ifdef GNUWIN
-        ## atskirus langus išmeta gal tik win-zsh; nepakenks, jei script'ai
-        ## bus kviečiami su išskirtinai nurodytu interpretatoriumi
         PYCMD = python
         PLCMD = perl
     endif
 
-    ## Kai ką, pvz. find gali pasigauti iš system32; reikia nurodyti visą
-    ## kelią. Kabutės būtinos, nes GnuWin programos gražina ne posix path
-    ## ir backslash'ai yra (su)interpretuojami shell'o.
+    ## find gali pasigauti iš system32; reikia nurodyti visą kelią.
     BINDIR := $(shell dirname `which uname`)
     FIND := '$(BINDIR)/find'
 endif
@@ -172,7 +154,7 @@ ifeq (1, $(call exists,buildhash))
     HAVE_ISPELL = 1
 else
     $(info buildhash not found; make targets omitted: \
-	   '%.hash', 'utf8' 'install'.)
+           '%.hash', 'utf8' 'install'.)
 endif
 
 
@@ -180,7 +162,7 @@ ifeq (1, $(call exists,aspell))
     HAVE_ASPELL = 1
 else
     $(info aspell not found; make targets omitted: \
-	   'aspell', 'dist-aspell'.)
+           'aspell', 'dist-aspell'.)
 endif
 
 
@@ -190,7 +172,7 @@ endif
 ##############################################
 
 
-## numatytasis (pirmasis) target'as: ispell hash'as ir myspell
+## numatytasis (pirmasis) target'as: ispell ir myspell
 .PHONY: all
 ifdef HAVE_ISPELL
     all: lietuviu.hash
@@ -227,7 +209,7 @@ liet-utf8.aff: lietuviu.aff
 # PY_ICONV -- atsarginis konverteris, jei aff2utf8.awk nerastų tinkamo,
 # o lokalė C, nes antraip „warning: Invalid multibyte data detected.“
 	LC_ALL=C gawk -v PY_ICONV=$(D_TOOLS)/iconv.py \
-		      -f $(D_TOOLS)/aff2utf8.awk $< > $@
+	              -f $(D_TOOLS)/aff2utf8.awk $< > $@
 
 
 
@@ -277,19 +259,13 @@ endif
 
 
 # L.V.:
-# Jei jau kažkur, kažkada ir kažkodėl prisireikia ar prisireiktų surikiuotų
-# žodynų (nors tai sudarko komentarų blokus ir/ar žodžių sekcijas žodynų
-# failuose, kitaip tariant visą potencialią žodynų struktūrą, todėl orig.
-# failų perrašyti nevalia ar nereikėtų), tai reikėtų rikiuoti pagal lt
-# abėcėlės rikiavimo tvarką, o tai _universaliai_ moka tik tools/sort.py
-# Taip pat derėtų pašalinti tuščias, o galbūt ir komentarų eilutes; tuomet
-# orig. žodynų perrašyti tikrai nevalia.
-#
-# (todėl surikiuoti žodynai pervadinami originalui prikabinant .sorted)
-#
+# Žodynų rikiavimas sudarko potencialią struktūrą (komentarų blokus ir/ar žodžių
+# sekcijas žodynų failuose), todėl orig. failų perrašyti nereikėtų.
+# (orig. žodynai neperrašomi, surikiuotiesiems .sorted plėtinys)
+# Korektiškai ir protingai (šalinant komentarus) rikiuoja tik tools/sort.py
 sort:
 	for file in $(DICTS) ; do \
-		$(SORT) $$file > $$file.sorted; \
+	    $(SORT) $$file > $$file.sorted; \
 	done
 
 
