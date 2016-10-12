@@ -10,15 +10,15 @@ SEAMONKEYVERSION   = 2.38.*
 ## Fennec is the codename of Firefox for Android
 FENNECVERSION      = 40.0
 
-D_BUILD	  = build
-D_CONF	  = etc
+D_BUILD   = build
+D_CONF    = etc
 D_DIST    = dist
 D_SRC     = src
 D_TMP     = tmp
 D_TOOLS   = tools
 D_INSTALL = `ispell -vv | grep LIBDIR | cut -d '"' -f2`
 
-## Directories; konkretus target'as pagal reikmes 
+## Directories; konkretus target'as pagal reikmes
 ## pri(si)lipdo: etc/, build/, dist/, kt.
 D_ASPELL  = aspell
 D_HYPH    = hyph
@@ -63,16 +63,16 @@ FIND := find
 ## universalus variantas, tinkantis ir win ir *nix
 exists = $(shell which $1 > $(DEV_NULL) 2> $(DEV_NULL) && echo 1)
 
-## Nors GnuWin turi dos2unix, tačiau gana archaišką versiją v0.9, kuri 
-## kreivai veikia su temp failais. stdio.h:P_tmpdir reikšmė (turbūt /tmp) 
+## Nors GnuWin turi dos2unix, tačiau gana archaišką versiją v0.9, kuri
+## kreivai veikia su temp failais. stdio.h:P_tmpdir reikšmė (turbūt /tmp)
 ## neteisingai interpretuojama ir tmpnam() gražina failų pavadinimus root'e.
 ## (jei ateityje GnuWin atnaujins versiją, tai vertėtų naudotis šia programa)
 dos2unix = tr -d '\r' < $1 > $1.new; mv -f $1.new $1
 
 ## kiek saugesnio šalinimo komanda; neiššokama aukščiau esamojo katalogo
 deldir = $(FIND) . -depth -path './$(1)' -type d -exec rm -rf '{}' ';'
-## man find: "processing filenames in such a way that file or directory  
-## names containing single or double quotes, spaces or newlines are 
+## man find: "processing filenames in such a way that file or directory
+## names containing single or double quotes, spaces or newlines are
 ## correctly handled."
 #deldir = $(FIND) . -path './$1' -type d -print0 | xargs -0 rm -rf
 
@@ -84,10 +84,10 @@ deldir = $(FIND) . -depth -path './$(1)' -type d -exec rm -rf '{}' ';'
 
 
 ## L.V.:
-## Apskritai, Windows/Cygwin aplinkoje, kartais kyla problemų. Kad ir dėl \r\n. 
+## Apskritai, Windows/Cygwin aplinkoje, kartais kyla problemų. Kad ir dėl \r\n.
 ## Aspell, pavyzdžiui, sutrinka skaitydamas config ir turbūt kt. failus su
 ## \r\n, o įvairūs (python, perl) script'ai, native aplinkoje, žinoma, išveda
-## \r\n. Na ir kiti suderinamumo aspektai. 
+## \r\n. Na ir kiti suderinamumo aspektai.
 ## (tai OS/ENV check kodas neišvengiamas...)
 ifneq (%COMSPEC%, $(shell echo %COMSPEC%))
     MSWIN  = 1
@@ -153,19 +153,19 @@ ifdef MSWIN
     SHELL_SH = 1
 
     ifdef GNUWIN
-        ## atskirus langus išmeta gal tik win-zsh; nepakenks, jei script'ai 
+        ## atskirus langus išmeta gal tik win-zsh; nepakenks, jei script'ai
         ## bus kviečiami su išskirtinai nurodytu interpretatoriumi
         PYCMD = python
         PLCMD = perl
     endif
 
-    ## Kai ką, pvz. find gali pasigauti iš system32; reikia nurodyti visą 
-    ## kelią. Kabutės būtinos, nes GnuWin programos gražina ne posix path 
+    ## Kai ką, pvz. find gali pasigauti iš system32; reikia nurodyti visą
+    ## kelią. Kabutės būtinos, nes GnuWin programos gražina ne posix path
     ## ir backslash'ai yra (su)interpretuojami shell'o.
     BINDIR := $(shell dirname `which uname`)
     FIND := '$(BINDIR)/find'
 endif
-      
+
 
 ## jei nėra (i|a)spell -- eliminuosime atitinkamus target'us
 ifeq (1, $(call exists,buildhash))
@@ -222,8 +222,13 @@ lietuviu.dict: $(DICTS)
 liet-utf8.dict: lietuviu.dict
 	iconv -f ISO-8859-13 -t UTF-8 $< > $@
 
+
 liet-utf8.aff: lietuviu.aff
-	iconv -f ISO-8859-13 -t UTF-8 $< > $@
+# PY_ICONV -- atsarginis konverteris, jei aff2utf8.awk nerastų tinkamo,
+# o lokalė C, nes antraip „warning: Invalid multibyte data detected.“
+	LC_ALL=C gawk -v PY_ICONV=$(D_TOOLS)/iconv.py \
+		      -f $(D_TOOLS)/aff2utf8.awk $< > $@
+
 
 
 ## myspell
@@ -272,12 +277,12 @@ endif
 
 
 # L.V.:
-# Jei jau kažkur, kažkada ir kažkodėl prisireikia ar prisireiktų surikiuotų 
-# žodynų (nors tai sudarko komentarų blokus ir/ar žodžių sekcijas žodynų 
-# failuose, kitaip tariant visą potencialią žodynų struktūrą, todėl orig. 
-# failų perrašyti nevalia ar nereikėtų), tai reikėtų rikiuoti pagal lt 
+# Jei jau kažkur, kažkada ir kažkodėl prisireikia ar prisireiktų surikiuotų
+# žodynų (nors tai sudarko komentarų blokus ir/ar žodžių sekcijas žodynų
+# failuose, kitaip tariant visą potencialią žodynų struktūrą, todėl orig.
+# failų perrašyti nevalia ar nereikėtų), tai reikėtų rikiuoti pagal lt
 # abėcėlės rikiavimo tvarką, o tai _universaliai_ moka tik tools/sort.py
-# Taip pat derėtų pašalinti tuščias, o galbūt ir komentarų eilutes; tuomet 
+# Taip pat derėtų pašalinti tuščias, o galbūt ir komentarų eilutes; tuomet
 # orig. žodynų perrašyti tikrai nevalia.
 #
 # (todėl surikiuoti žodynai pervadinami originalui prikabinant .sorted)
@@ -327,7 +332,7 @@ clean: clean-build clean-dist clean-tmp
 .PHONY: dists
 dists: dist-src dist-myspell dist-hyph dist-xpi dist-oxt
 ifdef HAVE_ASPELL
-    dists: dist-aspell 
+    dists: dist-aspell
 endif
 
 .PHONY: dist-src
@@ -335,12 +340,12 @@ endif
 dist-src: D_DST   := $(D_DIST)/$(D_SRC)
 dist-src: D_DST_T := $(D_TMP)/$(dist_pkg_ispell)
 ## ---------------------------------------------------------------------------
-dist-src: MANIFEST 
+dist-src: MANIFEST
 	mkdir -p $(D_DST)
 ifdef GNUWIN
 	mkdir -p $(D_DST_T)
-	cpio -p -du $(D_DST_T) < $(D_BUILD)/MANIFEST 2> /dev/null
-# cpio (bent jau v2.6, GnuWin) keikiasi (function not implemented) turbūt 
+	cpio -p -du $(D_DST_T) < $(D_BUILD)/MANIFEST 2> $(DEV_NULL)
+# cpio (bent jau v2.6, GnuWin) keikiasi (function not implemented) turbūt
 # ketindamas nustatyti teises ir kuriamiems katalogams kažkodėl nustato 0444;
 # (vėliau rm -rf negali pašalinti tokių katalogų)
 # Negana to, GnuWin tar'as (v1.13) dar pats nemoka gzip'inti...
@@ -349,7 +354,7 @@ ifdef GNUWIN
 	cd $(D_DST_T)/../; gzip  -f $(dist_pkg_ispell).tar
 	mv -f $(D_DST_T)/../$(dist_pkg_ispell).tar.gz $(D_DST)
 else
-# Modernioje aplinkoje viskas gerokai paprasčiau; tiesa, tam reikia bent jau 
+# Modernioje aplinkoje viskas gerokai paprasčiau; tiesa, tam reikia bent jau
 # gnu tar 1.20 (2008 m)
 	tar -czvf $(D_DST)/$(dist_pkg_ispell).tar.gz \
 	    --transform=s,^,$(dist_pkg_ispell)/, \
@@ -480,11 +485,9 @@ MANIFEST:
 	       author = "-", author_email = "-")' \
 	sdist --no-defaults \
 	      --manifest-only \
-              --template $(D_CONF)/MANIFEST.in --manifest $(D_BUILD)/MANIFEST
+	      --template $(D_CONF)/MANIFEST.in --manifest $(D_BUILD)/MANIFEST
 	sed -i -e '1d' $(D_BUILD)/MANIFEST
 ifdef MSWIN
 	sed -i -e 's/\\/\//g' $(D_BUILD)/MANIFEST
 	$(call dos2unix,$(D_BUILD)/MANIFEST)
 endif
-                	
-

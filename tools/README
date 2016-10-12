@@ -21,7 +21,13 @@ utils/	kataloge yra įvairios parankinės, papildomos programėlės, kurios
 			skirtingas afiksų žymas;
 
 
-* ispell2myspell
+* aff2utf8.awk  gawk programa, korektiškai konvertuojanti latin7 koduotės affiksų
+                taisykles į utf-8;
+
+* iconv.py      analogiška iconv programa (nors paprastesnė), jei nėra pačios iconv
+                arba ji negali būti panaudota kai kurioms reikmėms (aff2utf8.awk);
+
+* ispell2myspell.py
 		programa skirta konvertuoti afiksų taisykles iš ispell formato 
 		į myspell (naudojama OpenOffice ir kt.);
 
