@@ -265,8 +265,12 @@ def sutrauka(lines, outfile=sys.stdout, myspell=True):
                     break
 
     wlist = []
+    NS = set('NS')
     for word, flags in chain(items(words), items(verbs), items(adjes)):
         if flags:
+            # /S perdengia /N, todël abiejø nereikia
+            if NS < flags:
+                flags.remove('N')
             fl = list(flags)
             fl.sort()
             word += "/" + "".join(fl)
