@@ -1,0 +1,101 @@
+# -*- coding: utf-8 -*-
+#
+# Lithuanian MySpell affix file (without affix table) used by ispell2myspell.
+#
+# Possible options (as of MySpell 3.0):
+#
+# SET           Set character encoding of  words and morphemes in affix and
+#               dictionary files.
+#
+# TRY           MySpell can suggest right word forms, when they differ from the
+#               bad input word by one TRY character. The parameter of TRY is
+#               case sensitive.
+#
+# COMPUNDFLAG   Words signed with COMPOUNDFLAG may be in compound words (except
+#               when word shorter than COMPOUNDMIN). Affixes with COMPOUNDFLAG
+#               also permits compounding of affixed words.
+#
+# COMPOUNDMIN   Minimum length of words used for compounding. Default value is
+#               3 letters.
+#
+# REP           This table specifies modifications to try first. First REP is
+#               the header of this table and one or more REP data line are
+#               following it. With this table, MySpelll can suggest the right
+#               forms for the typical spelling mistakes when the incorrect form
+#               differs by more than 1 letter from the right form. For example
+#               a possible English replacement table definition to handle
+#               misspelled consonants:
+#
+#                       REP 8
+#                       REP f ph
+#                       REP ph f
+#                       REP f gh
+#                       REP gh f
+#                       REP j dg
+#                       REP dg j
+#                       REP k ch
+#                       REP ch k
+#
+#               Note I: It's very useful to define replacements for the most
+#               typical one-character mistakes, too: with REP you can add
+#               higher priority to a subset of the TRY suggestions (suggestion
+#               list begins with the REP suggestions).
+#
+# MAP           We can define language-dependent information on characters
+#               that should be considered related (i.e. nearer than other
+#               chars not in the set) in the affix file (.aff) by a map table.
+#               With this table, MySpell can suggest the right forms for words,
+#               which incorrectly choose the wrong letter from a related set
+#               more than once in a word (see REP).
+#
+#               For  example a possible mapping could be for the German
+#               umlauted ü versus the regular u; the word Frühstück really
+#               should be written with umlauted u's and not regular ones
+#
+#                       MAP 1
+#                       MAP uü
+#
+# Ignored (set) by ispell2myspell; different charset might be requested.
+#SET ISO8859-13
+#
+
+# TODO: update set with character frequencies derived from:
+# http://donelaitis.vdu.lt/publikacijos/Dazninis_zodynas.pdf
+TRY iastnokreuldvėmgpjšbyžūczfčhąįųęwxq
+
+REP 29
+REP ą a         # vowels
+REP a ą
+REP ę e
+REP e ę
+REP ė e
+REP e ė
+REP į i
+REP i į
+REP į y
+REP y į
+REP y i
+REP i y
+REP ų u
+REP u ų
+REP ų ū
+REP ū ų
+REP ū u
+REP u ū
+REP o uo        # diphtongs and other compounds
+REP e ie
+REP e ia
+REP ia e
+REP ė ie
+REP š s         # consonants
+REP š ž
+REP k g
+REP g k
+REP z s
+REP s z
+
+MAP 4
+MAP aą          # related chars; TODO: add nearby mistype relations
+MAP eęė
+MAP iįy
+MAP uūų

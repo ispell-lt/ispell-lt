@@ -219,6 +219,7 @@ myspell: lt_LT.dic lt_LT.aff
 
 ## ---------------------------------------------------------------------------
 lt_LT.%: D_DST := $(D_BUILD)/$(D_MYSPELL)
+lt_LT.%: MY_AFF := etc/myspell/myspell.aff
 ## ---------------------------------------------------------------------------
 lt_LT.dic: lietuviu.dict
 	mkdir -p $(D_DST)
@@ -227,7 +228,10 @@ lt_LT.dic: lietuviu.dict
 
 lt_LT.aff: lietuviu.aff
 	mkdir -p $(D_DST)
-	$(PYCMD) $(D_TOOLS)/ispell2myspell.py $^ > $(D_DST)/$@
+	$(PYCMD) $(D_TOOLS)/ispell2myspell.py -c $(MY_AFF) -s $^ > $(D_DST)/$@
+ifdef MSWIN
+	$(call dos2unix,$(D_DST)/$@)
+endif
 
 
 ## aspell

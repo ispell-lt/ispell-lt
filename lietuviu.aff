@@ -1,21 +1,23 @@
+# -*- coding: iso-8859-13 -*-
 #
 # Lietuviðka afiksø lentelë ispell programai
 # Lithuanian affix table for ispell(1)
 #
 # Copyright (C) 2000-2003 Albertas Agejevas
-#
-# $Id: lietuviu.aff,v 1.23 2006/01/02 15:19:21 laimis Exp $
+# Copyright (C) 2009-2016 Laimonas Vëbra
 #
 # Taisyklës ið V. Ambrazas ir kiti
-# ¥Dabartinës lietuviø kalbos gramatika, V. 1994´
+# ¥Dabartinës lietuviø kalbos gramatika´, 1994, 2006´
 #
-#  Dël failo formato skaitykite ispell(5)
+# Apie failo formatà skaitykite: ispell(5)
 #
-
-# Here's a record of flags used, in case you want to add new ones.
+# Naudojamø afiksø þymø suvestinë:
 #
-#            ABCDEFGHIJKLMNOPQRSTUVWXYZ
-# Used:      +++++--++-+-++-++-++++-++-
+#            a b c d e f g h i j k l m n o p q r s t u v w x y z
+# naudojama: + + + + + + + + + + + + + + + + + + + + + + + + - -
+#
+#            A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+# naudojama: + + + + + - - + + - + - + + + + + + + + + + + + + -
 #
 
 compoundwords	off
