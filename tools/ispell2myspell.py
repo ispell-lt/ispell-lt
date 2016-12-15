@@ -9,7 +9,7 @@
 #
 # Based on original work of Albertas Agejevas, (c) 2002
 """
-Converts ispell affix file to OpenOffice's MySpell format. 
+Converts ispell affix file to OpenOffice's MySpell format.
 See <https://www.openoffice.org/lingucomponent/affix.readme>
 """
 
@@ -40,15 +40,15 @@ Options:
                               (decode input from ENCODING to Unicode)
   -e ENCODING, --enc=ENCODING
                               the encoding of the output (MYSPELL_AFF_FILE).
-                              (encode output from Unicode to ENCODING)  
-  -s, --sort                  
+                              (encode output from Unicode to ENCODING)
+  -s, --sort
                               Sort affix flags. Default: original order.
 
   -v, --version               Output version information and exit.
 
 Notes:
   MYCONFIG must be in utf-8 (it's converted to --enc).
-  
+
   Input encoding can be specified in ISPELL_AFF_FILE comments according
   to PEP263 spec., e.g.:  # -*- coding: <encoding> -*-
 
@@ -56,10 +56,9 @@ Notes:
 
 """)
 
-            
 
 class AffixTable:
-    
+
     def __init__(self, ispell_aff_file, src_enc):
         self.affs = {}
 
@@ -69,10 +68,10 @@ class AffixTable:
 
         self._in = codecs.open(ispell_aff_file, "r", src_enc)
         self._read_in()
-        
+
     def _get_line(self):
         """
-        Gets and returns next non-empty lowercased line (with comments stripped
+        Gets and returns next non-empty line (with comments stripped
         and whitespaces removed) or "" if EOF.
         """
         line = None
@@ -99,7 +98,7 @@ class AffixTable:
             if s:
                 return s.strip("\"'") or 0
             return 0
-            
+
         while self._get_line():
 
             m = self.type_re.search(self.line)
@@ -116,7 +115,7 @@ class AffixTable:
             if m:
                 rules = []
                 opt, flag = m.groups()
-                # original affix flags order 
+                # original affix flags order
                 self.affs[atype]['flags'].append(flag)
                 self.affs[atype][flag] = {
                     'rules': rules,
@@ -153,8 +152,7 @@ class AffixTable:
                     continue
                 ml.append(line)
             my_aff.close()
-                    
-        
+
         out.write("SET %s\n" % dst_enc.upper())
 
         # dump base myspell config (aff) file
@@ -199,7 +197,7 @@ def main():
     sort_aff = False
     src_enc = dst_enc = None
     myspell_cfg_file =  None
-    
+
     for opt, arg in opts:
         if opt in ("-h, --help"):
             print(__usage_full)
@@ -236,21 +234,21 @@ def main():
                 src_enc = m.group(1)
                 break
         f.close()
-        
+
     if src_enc:
         src_enc = _encoding_name(src_enc)
     else:
         print("Unknown ispell aff file encoding: "
                   "missing --enc arg and not specified in file.")
         sys.exit(3)
-                
+
     if dst_enc:
         dst_enc = _encoding_name(dst_enc)
     else:
         dst_enc = src_enc
         sys.stderr.write("Output (myspell aff) encoding not specified; "
-                             "assuming the same as input '%s'.\n" % dst_enc) 
-        
+                             "assuming the same as input '%s'.\n" % dst_enc)
+
     conv = AffixTable(ispell_aff_file, src_enc)
     conv.dump_myspell_aff(myspell_cfg_file, dst_enc, sort_aff)
 
