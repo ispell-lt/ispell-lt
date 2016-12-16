@@ -196,10 +196,12 @@ install: lietuviu.hash
 endif
 
 
-
-
 lietuviu.dict: $(DICTS)
 	cat $(DICTS) | $(PYCMD) $(D_TOOLS)/sutrauka.py > $@
+ifdef MSWIN
+	$(call dos2unix,$@)
+endif
+
 
 liet-utf8.dict: lietuviu.dict
 	iconv -f ISO-8859-13 -t UTF-8 $< > $@
@@ -251,7 +253,7 @@ ifdef MSWIN
 	$(call dos2unix,$(D_DST)/lt_affix.dat)
 endif
 	sed -e 's/@VERSION@/$(VERSION)/' \
-	    $(D_CONF)/$(D_ASPELL)/info.in > $(D_DST)/info
+	     $(D_CONF)/$(D_ASPELL)/info.in > $(D_DST)/info
 	@cp -f $(D_TOOLS)/proc.pl $(D_DST)
 	@cp -f COPYING $(D_DST)/Copyright
 	cd $(D_DST); LC_ALL=C $(PLCMD) ./proc.pl
