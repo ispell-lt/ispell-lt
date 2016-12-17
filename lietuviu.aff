@@ -957,19 +957,16 @@ suffixes
 
 
         # dgsk., vyr. gim.
-        [^ÈÞ] I A S     >       -AS,""          # þalias > þali
+        [^D] [^È] I A S >       -AS,""          # þalias > þali
         È I A S         >       -ÈIAS,TI        # plokðèias > plokðti
-        [^D] Þ I A S    >       -AS,""          # ðvieþias > ðvieþi
 #~N4~   D Þ I A S       >       -ÞIAS,I         # bergþdþias > bergþdi
 
         #I A S          >       -AS,Ø
 
-        [^ÈÞ] I A S     >       -AS,EMS
-        [^ÈÞ] I A S     >       -AS,EM          # ðnek. þaliem
+        [^D] [^È] I A S >       -AS,EMS
+        [^D] [^È] I A S >       -AS,EM          # ðnek. þaliem
         È I A S         >       -ÈIAS,TIEMS
         È I A S         >       -ÈIAS,TIEM      # ðnek. plokðtiem
-        [^D] Þ I A S    >       -AS,EMS
-        [^D] Þ I A S    >       -AS,EM          # ðnek. ðvieþiem
 #~N4~   D Þ I A S       >       -ÞIAS,IEMS
 #~N4~   D Þ I A S       >       -ÞIAS,IEM       # ðnek. bergþdiem
 
@@ -1312,6 +1309,11 @@ suffixes
 #       #~N2~      -tis      (v1.2.1 þodyne nëra þodþiø)
 #       #~N3~      -ys       (v1.2.1 þodyne iðimtys: 'deðinys', 'kairys')
 #       #~N4~      -dþias    (v1.2.1 þodyno iðimtis yra þodis 'bergþdþias')
+#
+# ~N4~ atveju dar reikëtø pataisyti ir papildyti afiksø taisykles:
+#
+#       [^È] I A S     -> [^ÈÞ] I A S
+#       [^D] Þ I A S   (pridëti; -þias þodþiams, pvz. ðvieþias)
 
 ##############################################################################
 # Ávardþiuotiniø bûdvardþiø nelyginamasis laipsnis
@@ -1335,17 +1337,17 @@ suffixes
 
         # dgsk., vyr. gim.
         [^I] A S        >       -AS,IEJI        # geras > gerieji
-        [^ÈÞ] I A S     >       -AS,EJI         # þalias > þalieji
+        [^È] I A S      >       -AS,EJI         # þalias > þalieji
         È I A S         >       -ÈIAS,TIEJI     # pësèias > pëstieji
-        [^D] Þ I A S    >       -AS,EJI         # ðvieþias > ðvieþieji
+
 #~N4~   D Þ I A S       >       -ÞIAS,IEJI      # bergþdþias > bergþdieji
 
         A S             >       -AS,ØJØ
 
         [^I] A S        >       -AS,IESIEMS     # geriesiems
-        [^ÈÞ] I A S     >       -AS,ESIEMS      # þaliesiems
+        [^È] I A S      >       -AS,ESIEMS      # þaliesiems
         È I A S         >       -ÈIAS,TIESIEMS  # pëstiesiems
-        [^D] Þ I A S    >       -AS,ESIEMS      # ðvieþiesiems
+
 #~N4~   D Þ I A S       >       -ÞIAS,IESIEMS   # bergþdiesiems
 
         A S             >       -AS,UOSIUS
@@ -1656,12 +1658,12 @@ suffixes
         [^I] A S        >       -AS,ESNIU
         [^I] A S        >       -AS,ESNIAME
 
-        [^ÈÞ] I A S     >       -IAS,ESNIS      # þalesnis
-        [^ÈÞ] I A S     >       -IAS,ESNIO
-        [^ÈÞ] I A S     >       -IAS,ESNIAM
-        [^ÈÞ] I A S     >       -IAS,ESNÁ
-        [^ÈÞ] I A S     >       -IAS,ESNIU
-        [^ÈÞ] I A S     >       -IAS,ESNIAME
+        [^È] I A S      >       -IAS,ESNIS      # þalesnis
+        [^È] I A S      >       -IAS,ESNIO
+        [^È] I A S      >       -IAS,ESNIAM
+        [^È] I A S      >       -IAS,ESNÁ
+        [^È] I A S      >       -IAS,ESNIU
+        [^È] I A S      >       -IAS,ESNIAME
 
         È I A S         >       -ÈIAS,TESNIS    # plokðtesnis
         È I A S         >       -ÈIAS,TESNIO
@@ -1707,12 +1709,12 @@ suffixes
         [^I] A S        >       -AS,ESNE
         [^I] A S        >       -AS,ESNËJE
 
-        [^ÈÞ] I A S     >       -IAS,ESNË       # þalesnë
-        [^ÈÞ] I A S     >       -IAS,ESNËS
-        [^ÈÞ] I A S     >       -IAS,ESNEI
-        [^ÈÞ] I A S     >       -IAS,ESNÆ
-        [^ÈÞ] I A S     >       -IAS,ESNE
-        [^ÈÞ] I A S     >       -IAS,ESNËJE
+        [^È] I A S      >       -IAS,ESNË       # þalesnë
+        [^È] I A S      >       -IAS,ESNËS
+        [^È] I A S      >       -IAS,ESNEI
+        [^È] I A S      >       -IAS,ESNÆ
+        [^È] I A S      >       -IAS,ESNE
+        [^È] I A S      >       -IAS,ESNËJE
 
         È I A S         >       -ÈIAS,TESNË     # plokðtesnë
         È I A S         >       -ÈIAS,TESNËS
@@ -1758,12 +1760,12 @@ suffixes
         [^I] A S        >       -AS,ESNIAIS
         [^I] A S        >       -AS,ESNIUOSE
 
-        [^ÈÞ] I A S     >       -IAS,ESNI       # þalesni
-        [^ÈÞ] I A S     >       -IAS,ESNIØ
-        [^ÈÞ] I A S     >       -IAS,ESNIEMS
-        [^ÈÞ] I A S     >       -IAS,ESNIUS
-        [^ÈÞ] I A S     >       -IAS,ESNIAIS
-        [^ÈÞ] I A S     >       -IAS,ESNIUOSE
+        [^È] I A S      >       -IAS,ESNI       # þalesni
+        [^È] I A S      >       -IAS,ESNIØ
+        [^È] I A S      >       -IAS,ESNIEMS
+        [^È] I A S      >       -IAS,ESNIUS
+        [^È] I A S      >       -IAS,ESNIAIS
+        [^È] I A S      >       -IAS,ESNIUOSE
 
         È I A S         >       -ÈIAS,TESNI     # plokðtesni
         È I A S         >       -ÈIAS,TESNIØ
@@ -1809,12 +1811,12 @@ suffixes
         [^I] A S        >       -AS,ESNËMIS
         [^I] A S        >       -AS,ESNËSE
 
-        #[^ÈÞ] I A S    >       -IAS,ESNËS      # þaliesnës
-        #[^ÈÞ] I A S    >       -IAS,ESNIØ
-        [^ÈÞ] I A S     >       -IAS,ESNËMS
-        [^ÈÞ] I A S     >       -IAS,ESNES
-        [^ÈÞ] I A S     >       -IAS,ESNËMIS
-        [^ÈÞ] I A S     >       -IAS,ESNËSE
+        #[^È] I A S     >       -IAS,ESNËS      # þalesnës
+        #[^È] I A S     >       -IAS,ESNIØ
+        [^È] I A S      >       -IAS,ESNËMS
+        [^È] I A S      >       -IAS,ESNES
+        [^È] I A S      >       -IAS,ESNËMIS
+        [^È] I A S      >       -IAS,ESNËSE
 
         #È I A S        >       -ÈIAS,TESNËS    # plokðtesnës
         #È I A S        >       -ÈIAS,TESNIØ
@@ -1867,12 +1869,12 @@ suffixes
         [^I] A S        >       -AS,ESNIUOJU
         [^I] A S        >       -AS,ESNIAJAME
 
-        [^ÈÞ] I A S     >       -IAS,ESNYSIS            # þalesnysis
-        [^ÈÞ] I A S     >       -IAS,ESNIOJO
-        [^ÈÞ] I A S     >       -IAS,ESNIAJAM
-        [^ÈÞ] I A S     >       -IAS,ESNÁJÁ
-        [^ÈÞ] I A S     >       -IAS,ESNIUOJU
-        [^ÈÞ] I A S     >       -IAS,ESNIAJAME
+        [^È] I A S      >       -IAS,ESNYSIS            # þalesnysis
+        [^È] I A S      >       -IAS,ESNIOJO
+        [^È] I A S      >       -IAS,ESNIAJAM
+        [^È] I A S      >       -IAS,ESNÁJÁ
+        [^È] I A S      >       -IAS,ESNIUOJU
+        [^È] I A S      >       -IAS,ESNIAJAME
 
         È I A S         >       -ÈIAS,TESNYSIS          # plokðtesnysis
         È I A S         >       -ÈIAS,TESNIOJO
@@ -1919,13 +1921,13 @@ suffixes
         [^I] A S        >       -AS,ESNIOJOJ
         [^I] A S        >       -AS,ESNIOJOJE
 
-        [^ÈÞ] I A S     >       -IAS,ESNIOJI            # þalesnioji
-        [^ÈÞ] I A S     >       -IAS,ESNIOSIOS
-        [^ÈÞ] I A S     >       -IAS,ESNIAJAI
-        [^ÈÞ] I A S     >       -IAS,ESNIÀJÀ
-        [^ÈÞ] I A S     >       -IAS,ESNIÀJA
-        [^ÈÞ] I A S     >       -IAS,ESNIOJOJ
-        [^ÈÞ] I A S     >       -IAS,ESNIOJOJE
+        [^È] I A S      >       -IAS,ESNIOJI            # þalesnioji
+        [^È] I A S      >       -IAS,ESNIOSIOS
+        [^È] I A S      >       -IAS,ESNIAJAI
+        [^È] I A S      >       -IAS,ESNIÀJÀ
+        [^È] I A S      >       -IAS,ESNIÀJA
+        [^È] I A S      >       -IAS,ESNIOJOJ
+        [^È] I A S      >       -IAS,ESNIOJOJE
 
         È I A S         >       -ÈIAS,TESNIOJI          # plokðtesnioji
         È I A S         >       -ÈIAS,TESNIOSIOS
@@ -1976,12 +1978,12 @@ suffixes
         [^I] A S        >       -AS,ESNIAISIAIS
         [^I] A S        >       -AS,ESNIUOSIUOSE
 
-        [^ÈÞ] I A S     >       -IAS,ESNIEJI            # þalesnieji
-        [^ÈÞ] I A S     >       -IAS,ESNIØJØ
-        [^ÈÞ] I A S     >       -IAS,ESNIESIEMS
-        [^ÈÞ] I A S     >       -IAS,ESNIUOSIUS
-        [^ÈÞ] I A S     >       -IAS,ESNIAISIAIS
-        [^ÈÞ] I A S     >       -IAS,ESNIUOSIUOSE
+        [^È] I A S      >       -IAS,ESNIEJI            # þalesnieji
+        [^È] I A S      >       -IAS,ESNIØJØ
+        [^È] I A S      >       -IAS,ESNIESIEMS
+        [^È] I A S      >       -IAS,ESNIUOSIUS
+        [^È] I A S      >       -IAS,ESNIAISIAIS
+        [^È] I A S      >       -IAS,ESNIUOSIUOSE
 
         È I A S         >       -ÈIAS,TESNIEJI          # plokðtesnieji
         È I A S         >       -ÈIAS,TESNIØJØ
@@ -2027,12 +2029,12 @@ suffixes
         [^I] A S        >       -AS,ESNIOSIOMIS
         [^I] A S        >       -AS,ESNIOSIOSE
 
-        #[^ÈÞ] I A S    >       -IAS,ESNIOSIOS          # þalesniosios
-        #[^ÈÞ] I A S    >       -IAS,ESNIØJØ
-        [^ÈÞ] I A S     >       -IAS,ESNIOSIOMS
-        [^ÈÞ] I A S     >       -IAS,ESNIÀSIAS
-        [^ÈÞ] I A S     >       -IAS,ESNIOSIOMIS
-        [^ÈÞ] I A S     >       -IAS,ESNIOSIOSE
+        #[^È] I A S     >       -IAS,ESNIOSIOS          # þalesniosios
+        #[^È] I A S     >       -IAS,ESNIØJØ
+        [^È] I A S      >       -IAS,ESNIOSIOMS
+        [^È] I A S      >       -IAS,ESNIÀSIAS
+        [^È] I A S      >       -IAS,ESNIOSIOMIS
+        [^È] I A S      >       -IAS,ESNIOSIOSE
 
         #È I A S        >       -ÈIAS,TESNIOSIOS        # plokðtesniosios
         #È I A S        >       -ÈIAS,TESNIØJØ
@@ -2085,12 +2087,12 @@ suffixes
         [^I] A S        >       -AS,ËLESNIU
         [^I] A S        >       -AS,ËLESNIAME
 
-        [^ÈÞ] I A S     >       -IAS,ËLESNIS            # þalëlesnis
-        [^ÈÞ] I A S     >       -IAS,ËLESNIO
-        [^ÈÞ] I A S     >       -IAS,ËLESNIAM
-        [^ÈÞ] I A S     >       -IAS,ËLESNÁ
-        [^ÈÞ] I A S     >       -IAS,ËLESNIU
-        [^ÈÞ] I A S     >       -IAS,ËLESNIAME
+        [^È] I A S      >       -IAS,ËLESNIS            # þalëlesnis
+        [^È] I A S      >       -IAS,ËLESNIO
+        [^È] I A S      >       -IAS,ËLESNIAM
+        [^È] I A S      >       -IAS,ËLESNÁ
+        [^È] I A S      >       -IAS,ËLESNIU
+        [^È] I A S      >       -IAS,ËLESNIAME
 
         È I A S         >       -ÈIAS,TËLESNIS          # plokðtëlesnis
         È I A S         >       -ÈIAS,TËLESNIO
@@ -2136,12 +2138,12 @@ suffixes
         [^I] A S        >       -AS,ËLESNE
         [^I] A S        >       -AS,ËLESNËJE
 
-        [^ÈÞ] I A S     >       -IAS,ËLESNË             # þalëlesnë
-        [^ÈÞ] I A S     >       -IAS,ËLESNËS
-        [^ÈÞ] I A S     >       -IAS,ËLESNEI
-        [^ÈÞ] I A S     >       -IAS,ËLESNÆ
-        [^ÈÞ] I A S     >       -IAS,ËLESNE
-        [^ÈÞ] I A S     >       -IAS,ËLESNËJE
+        [^È] I A S      >       -IAS,ËLESNË             # þalëlesnë
+        [^È] I A S      >       -IAS,ËLESNËS
+        [^È] I A S      >       -IAS,ËLESNEI
+        [^È] I A S      >       -IAS,ËLESNÆ
+        [^È] I A S      >       -IAS,ËLESNE
+        [^È] I A S      >       -IAS,ËLESNËJE
 
         È I A S         >       -ÈIAS,TËLESNË           # plokðtëlesnë
         È I A S         >       -ÈIAS,TËLESNËS
@@ -2187,12 +2189,12 @@ suffixes
         [^I] A S        >       -AS,ËLESNIAIS
         [^I] A S        >       -AS,ËLESNIUOSE
 
-        [^ÈÞ] I A S     >       -IAS,ËLESNI             # þalëlesni
-        [^ÈÞ] I A S     >       -IAS,ËLESNIØ
-        [^ÈÞ] I A S     >       -IAS,ËLESNIEMS
-        [^ÈÞ] I A S     >       -IAS,ËLESNIUS
-        [^ÈÞ] I A S     >       -IAS,ËLESNIAIS
-        [^ÈÞ] I A S     >       -IAS,ËLESNIUOSE
+        [^È] I A S      >       -IAS,ËLESNI             # þalëlesni
+        [^È] I A S      >       -IAS,ËLESNIØ
+        [^È] I A S      >       -IAS,ËLESNIEMS
+        [^È] I A S      >       -IAS,ËLESNIUS
+        [^È] I A S      >       -IAS,ËLESNIAIS
+        [^È] I A S      >       -IAS,ËLESNIUOSE
 
         È I A S         >       -ÈIAS,TËLESNI           # plokðtëlesni
         È I A S         >       -ÈIAS,TËLESNIØ
@@ -2238,12 +2240,12 @@ suffixes
         [^I] A S        >       -AS,ËLESNËMIS
         [^I] A S        >       -AS,ËLESNËSE
 
-        #[^ÈÞ] I A S    >       -IAS,ËLESNËS            # þalëlesnës
-        #[^ÈÞ] I A S    >       -IAS,ËLESNIØ
-        [^ÈÞ] I A S     >       -IAS,ËLESNËMS
-        [^ÈÞ] I A S     >       -IAS,ËLESNES
-        [^ÈÞ] I A S     >       -IAS,ËLESNËMIS
-        [^ÈÞ] I A S     >       -IAS,ËLESNËSE
+        #[^È] I A S     >       -IAS,ËLESNËS            # þalëlesnës
+        #[^È] I A S     >       -IAS,ËLESNIØ
+        [^È] I A S      >       -IAS,ËLESNËMS
+        [^È] I A S      >       -IAS,ËLESNES
+        [^È] I A S      >       -IAS,ËLESNËMIS
+        [^È] I A S      >       -IAS,ËLESNËSE
 
         #È I A S        >       -ÈIAS,TËLESNËS          # plokðtëlesnës
         #È I A S        >       -ÈIAS,TËLESNIØ
@@ -2296,12 +2298,12 @@ suffixes
         [^I] A S        >       -AS,ËLESNIUOJU
         [^I] A S        >       -AS,ËLESNIAJAME
 
-        [^ÈÞ] I A S     >       -IAS,ËLESNYSIS          # þalëlesnysis
-        [^ÈÞ] I A S     >       -IAS,ËLESNIOJO
-        [^ÈÞ] I A S     >       -IAS,ËLESNIAJAM
-        [^ÈÞ] I A S     >       -IAS,ËLESNÁJÁ
-        [^ÈÞ] I A S     >       -IAS,ËLESNIUOJU
-        [^ÈÞ] I A S     >       -IAS,ËLESNIAJAME
+        [^È] I A S      >       -IAS,ËLESNYSIS          # þalëlesnysis
+        [^È] I A S      >       -IAS,ËLESNIOJO
+        [^È] I A S      >       -IAS,ËLESNIAJAM
+        [^È] I A S      >       -IAS,ËLESNÁJÁ
+        [^È] I A S      >       -IAS,ËLESNIUOJU
+        [^È] I A S      >       -IAS,ËLESNIAJAME
 
         È I A S         >       -ÈIAS,TËLESNYSIS        # plokðtëlesnysis
         È I A S         >       -ÈIAS,TËLESNIOJO
@@ -2348,13 +2350,13 @@ suffixes
         [^I] A S        >       -AS,ËLESNIOJOJ
         [^I] A S        >       -AS,ËLESNIOJOJE
 
-        [^ÈÞ] I A S     >       -IAS,ËLESNIOJI          # þalëlesnioji
-        [^ÈÞ] I A S     >       -IAS,ËLESNIOSIOS
-        [^ÈÞ] I A S     >       -IAS,ËLESNIAJAI
-        [^ÈÞ] I A S     >       -IAS,ËLESNIÀJÀ
-        [^ÈÞ] I A S     >       -IAS,ËLESNIÀJA
-        [^ÈÞ] I A S     >       -IAS,ËLESNIOJOJE
-        [^ÈÞ] I A S     >       -IAS,ËLESNIOJOJ
+        [^È] I A S      >       -IAS,ËLESNIOJI          # þalëlesnioji
+        [^È] I A S      >       -IAS,ËLESNIOSIOS
+        [^È] I A S      >       -IAS,ËLESNIAJAI
+        [^È] I A S      >       -IAS,ËLESNIÀJÀ
+        [^È] I A S      >       -IAS,ËLESNIÀJA
+        [^È] I A S      >       -IAS,ËLESNIOJOJE
+        [^È] I A S      >       -IAS,ËLESNIOJOJ
 
         È I A S         >       -ÈIAS,TËLESNIOJI        # plokðtëlesnioji
         È I A S         >       -ÈIAS,TËLESNIOSIOS
@@ -2405,12 +2407,12 @@ suffixes
         [^I] A S        >       -AS,ËLESNIAISIAIS
         [^I] A S        >       -AS,ËLESNIUOSIUOSE
 
-        [^ÈÞ] I A S     >       -IAS,ËLESNIEJI          # þalëlesnieji
-        [^ÈÞ] I A S     >       -IAS,ËLESNIØJØ
-        [^ÈÞ] I A S     >       -IAS,ËLESNIESIEMS
-        [^ÈÞ] I A S     >       -IAS,ËLESNIUOSIUS
-        [^ÈÞ] I A S     >       -IAS,ËLESNIAISIAIS
-        [^ÈÞ] I A S     >       -IAS,ËLESNIUOSIUOSE
+        [^È] I A S      >       -IAS,ËLESNIEJI          # þalëlesnieji
+        [^È] I A S      >       -IAS,ËLESNIØJØ
+        [^È] I A S      >       -IAS,ËLESNIESIEMS
+        [^È] I A S      >       -IAS,ËLESNIUOSIUS
+        [^È] I A S      >       -IAS,ËLESNIAISIAIS
+        [^È] I A S      >       -IAS,ËLESNIUOSIUOSE
 
         È I A S         >       -ÈIAS,TËLESNIEJI        # plokðtëlesnieji
         È I A S         >       -ÈIAS,TËLESNIØJØ
@@ -2456,12 +2458,12 @@ suffixes
         [^I] A S        >       -AS,ËLESNIOSIOMIS
         [^I] A S        >       -AS,ËLESNIOSIOSE
 
-        #[^ÈÞ] I A S    >       -IAS,ËLESNIOSIOS        # þalëlesniosios
-        #[^ÈÞ] I A S    >       -IAS,ËLESNIØJØ
-        [^ÈÞ] I A S     >       -IAS,ËLESNIOSIOMS
-        [^ÈÞ] I A S     >       -IAS,ËLESNIÀSIAS
-        [^ÈÞ] I A S     >       -IAS,ËLESNIOSIOMIS
-        [^ÈÞ] I A S     >       -IAS,ËLESNIOSIOSE
+        #[^È] I A S     >       -IAS,ËLESNIOSIOS        # þalëlesniosios
+        #[^È] I A S     >       -IAS,ËLESNIØJØ
+        [^È] I A S      >       -IAS,ËLESNIOSIOMS
+        [^È] I A S      >       -IAS,ËLESNIÀSIAS
+        [^È] I A S      >       -IAS,ËLESNIOSIOMIS
+        [^È] I A S      >       -IAS,ËLESNIOSIOSE
 
         #È I A S        >       -ÈIAS,TËLESNIOSIOS      # plokðtëlesniosios
         #È I A S        >       -ÈIAS,TËLESNIØJØ
@@ -3412,12 +3414,12 @@ suffixes
         [^I] A S        >       -AS,UMU
         [^I] A S        >       -AS,UME
 
-        [^ÈÞ] I A S     >       -IAS,UMAS       # þalumas
-        [^ÈÞ] I A S     >       -IAS,UMO
-        [^ÈÞ] I A S     >       -IAS,UMUI
-        [^ÈÞ] I A S     >       -IAS,UMÀ
-        [^ÈÞ] I A S     >       -IAS,UMU
-        [^ÈÞ] I A S     >       -IAS,UME
+        [^È] I A S      >       -IAS,UMAS       # þalumas
+        [^È] I A S      >       -IAS,UMO
+        [^È] I A S      >       -IAS,UMUI
+        [^È] I A S      >       -IAS,UMÀ
+        [^È] I A S      >       -IAS,UMU
+        [^È] I A S      >       -IAS,UME
 
         È I A S         >       -ÈIAS,TUMAS     # kurtumas
         È I A S         >       -ÈIAS,TUMO
@@ -3449,12 +3451,12 @@ suffixes
         [^I] A S        >       -AS,UMAIS
         [^I] A S        >       -AS,UMUOSE
 
-        [^ÈÞ] I A S     >       -IAS,UMAI       # þalumai
-        [^ÈÞ] I A S     >       -IAS,UMØ
-        [^ÈÞ] I A S     >       -IAS,UMAMS
-        [^ÈÞ] I A S     >       -IAS,UMUS
-        [^ÈÞ] I A S     >       -IAS,UMAIS
-        [^ÈÞ] I A S     >       -IAS,UMUOSE
+        [^È] I A S      >       -IAS,UMAI       # þalumai
+        [^È] I A S      >       -IAS,UMØ
+        [^È] I A S      >       -IAS,UMAMS
+        [^È] I A S      >       -IAS,UMUS
+        [^È] I A S      >       -IAS,UMAIS
+        [^È] I A S      >       -IAS,UMUOSE
 
         È I A S         >       -ÈIAS,TUMAI     # kurtumai
         È I A S         >       -ÈIAS,TUMØ
@@ -3492,8 +3494,8 @@ suffixes
 
         # prieveiksmiai
         [^I] A S        >       -AS,OKAI        # geras > gerokai
+        [^È] I A S      >       -IAS,OKAI       # þalias > þalokai
         È I A S         >       -ÈIAS,TOKAI     # staèias > statokai
-        [^ÈÞ] I A S     >       -IAS,OKAI       # þalias > þalokai
 #~N4~   D Þ I A S       >       -ÞIAS,OKAI      # bergþdþias > bergþdokai
         U S             >       -US,OKAI        # vangus > vangokai
 
@@ -3507,12 +3509,12 @@ suffixes
         [^I] A S        >       -AS,OKU
         [^I] A S        >       -AS,OKAME
 
-        [^ÈÞ] I A S     >       -IAS,OKAS       # þalokas
-        [^ÈÞ] I A S     >       -IAS,OKO
-        [^ÈÞ] I A S     >       -IAS,OKAM
-        [^ÈÞ] I A S     >       -IAS,OKÀ
-        [^ÈÞ] I A S     >       -IAS,OKU
-        [^ÈÞ] I A S     >       -IAS,OKAME
+        [^È] I A S      >       -IAS,OKAS       # þalokas
+        [^È] I A S      >       -IAS,OKO
+        [^È] I A S      >       -IAS,OKAM
+        [^È] I A S      >       -IAS,OKÀ
+        [^È] I A S      >       -IAS,OKU
+        [^È] I A S      >       -IAS,OKAME
 
         È I A S         >       -ÈIAS,TOKAS     # statokas
         È I A S         >       -ÈIAS,TOKO
@@ -3544,12 +3546,12 @@ suffixes
         #[^I] A S       >       -AS,OKA
         [^I] A S        >       -AS,OKOJE
 
-        [^ÈÞ] I A S     >       -IAS,OKA        # þaloka
-        [^ÈÞ] I A S     >       -IAS,OKOS
-        #[^ÈÞ] I A S    >       -IAS,OKAI
-        [^ÈÞ] I A S     >       -IAS,OKÀ
-        #[^ÈÞ] I A S    >       -IAS,OKA
-        [^ÈÞ] I A S     >       -IAS,OKOJE
+        [^È] I A S      >       -IAS,OKA        # þaloka
+        [^È] I A S      >       -IAS,OKOS
+        #[^È] I A S     >       -IAS,OKAI
+        [^È] I A S      >       -IAS,OKÀ
+        #[^È] I A S     >       -IAS,OKA
+        [^È] I A S      >       -IAS,OKOJE
 
         È I A S         >       -ÈIAS,TOKA      # statoka
         È I A S         >       -ÈIAS,TOKOS
@@ -3581,12 +3583,12 @@ suffixes
         [^I] A S        >       -AS,OKAIS
         [^I] A S        >       -AS,OKUOSE
 
-        [^ÈÞ] I A S     >       -IAS,OKI        # þaloki
-        [^ÈÞ] I A S     >       -IAS,OKØ
-        [^ÈÞ] I A S     >       -IAS,OKIEMS
-        [^ÈÞ] I A S     >       -IAS,OKUS
-        [^ÈÞ] I A S     >       -IAS,OKAIS
-        [^ÈÞ] I A S     >       -IAS,OKUOSE
+        [^È] I A S      >       -IAS,OKI        # þaloki
+        [^È] I A S      >       -IAS,OKØ
+        [^È] I A S      >       -IAS,OKIEMS
+        [^È] I A S      >       -IAS,OKUS
+        [^È] I A S      >       -IAS,OKAIS
+        [^È] I A S      >       -IAS,OKUOSE
 
         È I A S         >       -ÈIAS,TOKI      # statoki
         È I A S         >       -ÈIAS,TOKØ
@@ -3618,12 +3620,12 @@ suffixes
         [^I] A S        >       -AS,OKOMIS
         [^I] A S        >       -AS,OKOSE
 
-        #[^ÈÞ] I A S    >       -IAS,OKOS       # þalokos
-        #[^ÈÞ] I A S    >       -IAS,OKØ
-        [^ÈÞ] I A S     >       -IAS,OKOMS
-        #[^ÈÞ] I A S    >       -IAS,OKAS
-        [^ÈÞ] I A S     >       -IAS,OKOMIS
-        [^ÈÞ] I A S     >       -IAS,OKOSE
+        #[^È] I A S     >       -IAS,OKOS       # þalokos
+        #[^È] I A S     >       -IAS,OKØ
+        [^È] I A S      >       -IAS,OKOMS
+        #[^È] I A S     >       -IAS,OKAS
+        [^È] I A S      >       -IAS,OKOMIS
+        [^È] I A S      >       -IAS,OKOSE
 
         #È I A S        >       -ÈIAS,TOKOS     # statokos
         #È I A S        >       -ÈIAS,TOKØ

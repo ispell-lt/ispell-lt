@@ -1188,12 +1188,11 @@ zool
 #	#~N0~      -is, -dis (v1.2.1 þodyno iðimtis yra þodis 'didis')
 # 	#~N1~	   -jis      (v1.2.1 þodyne nëra þodþiø)
 # 	#~N2~      -tis      (v1.2.1 þodyne nëra þodþiø)
-#       #~N3~      -ys       (v1.2.1 þodyne iðimtys: 'deðinys', 'kairys')
+#   #~N3~      -ys       (v1.2.1 þodyne iðimtys: 'deðinys', 'kairys')
 # 	#~N4~      -dþias    (v1.2.1 þodyno iðimtis yra þodis 'bergþdþias') 
 #
 
-# be ávardþiuotiniø formø
-bergþdþias/BQN
+# 'bergþdþiam' nelipdyti /Q; afiksø iðimtis. Þemiau daþnesnës trûkst. formos.
 bergþdesnis/BWN
 bergþdþiausias/BN
 bergþdumas/DN
