@@ -3747,7 +3747,7 @@ suffixes
         A S             >       -AS,Ø
 
         [^I] A S        >       -AS,IEMS
-        È I A S         >       -ÈIAS,TIEMS
+        È I A S         >       -ÈIAS,TIEMS     # tretiems
 
         A S             >       -AS,US
         A S             >       -S,IS
@@ -3787,9 +3787,14 @@ suffixes
 
 
         # dgsk., vyr. gim.
-        A S             >       -AS,IEJI        # pirmieji
+        [^I ]A S        >       -AS,IEJI        # pirmieji
+        È I A S         >       -ÈIAS,TIEJI     # tretieji
+
         A S             >       -AS,ØJØ
-        A S             >       -AS,IESIEMS
+
+        [^I] A S        >       -AS,IESIEMS     # pirmiesiems
+        È I A S         >       -ÈIAS,TIESIEMS  # tretiesiems
+
         A S             >       -AS,UOSIUS
         A S             >       -S,ISIAIS
         A S             >       -AS,UOSIUOSE
