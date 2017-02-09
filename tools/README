@@ -1,45 +1,46 @@
-utils/	kataloge yra įvairios parankinės, papildomos programėlės, kurios 
-	nebūtinos ispell-lt žodynams apdoroti ir laidoms parengti, tačiau
-	palengvina žodynų rinkimą, žodžių tikrinimą ir pan.:
+utils/  kataloge yra įvairios parankinės, papildomos programėlės, kurios
+        nebūtinos ispell-lt žodynams apdoroti ir laidoms parengti, tačiau
+        palengvina žodynų rinkimą, žodžių tikrinimą ir pan.:
 
-	* validator/	žodžių paieška/tikrinimas VDU KLC tekstyne;
+        * validator/    žodžių paieška/tikrinimas VDU KLC tekstyne;
 
-	* guess.sh	pagal žodžio išvestines formas bando nustatyti, kokios
-			afiksų žymos reikalingos;
+        * compare.sh    generuojamų žodžių skirtumo/bendrumo palyginimas;
 
-	* spell.py	interaktyvi programėlė, kuri palengvina darbą pridedant 
-			naujus žodžius į žodyną; skaitomi (iš failo ar įvedami) 
-			žodžiai, jie nagrinėjami, užduodami klausimai (kokia 
-			kalbos dalis, priešdėliai ir t.t.), o pagal atsakymus, 
+        * guess.sh      pagal žodžio išvestines formas bando nustatyti, kokios
+                        afiksų žymos reikalingos;
+
+        * spell.py      interaktyvi programėlė, kuri palengvina darbą pridedant
+                        naujus žodžius į žodyną; skaitomi (iš failo ar įvedami)
+                        žodžiai, jie nagrinėjami, užduodami klausimai (kokia
+                        kalbos dalis, priešdėliai ir t.t.), o pagal atsakymus,
                         žodžiams pridedamos atitinkamos afiksų žymos.
 
-	* try.sh	nurodžius žodį/žymą, išveda visas formas, kurias
-			generuoja globalusis ispell žodynas, pagal prie žodžio 
-			nurodytą afikso žymą; 
+        * try.sh        nurodžius žodį/žymą, išveda visas formas, kurias
+                        generuoja globalusis ispell žodynas, pagal prie žodžio
+                        nurodytą afikso žymą;
 
-	* updated.sh	nurodytame faile randa vienodus žodžius, kurie turi 
-			skirtingas afiksų žymas;
+        * updated.sh    nurodytame faile randa vienodus žodžius, kurie turi
+                        skirtingas afiksų žymas;
 
 
-* aff2utf8.awk  gawk programa, korektiškai konvertuojanti latin7 koduotės affiksų
-                taisykles į utf-8;
+* aff2utf8.awk  gawk programa, korektiškai konvertuojanti latin7 koduotės
+                affiksų taisykles į utf-8;
 
-* iconv.py      analogiška iconv programa (nors paprastesnė), jei nėra pačios iconv
-                arba ji negali būti panaudota kai kurioms reikmėms (aff2utf8.awk);
+* iconv.py      analogiška iconv programa (nors paprastesnė), jei nėra pačios
+                iconv arba ji negali būti panaudota kai kurioms reikmėms
+                (aff2utf8.awk);
 
 * ispell2myspell.py
-		programa skirta konvertuoti afiksų taisykles iš ispell formato 
-		į myspell (naudojama OpenOffice ir kt.);
+                programa skirta konvertuoti afiksų taisykles iš ispell formato
+                į myspell (naudojama OpenOffice ir kt.);
 
-* proc.pl	'aspell-lang' paketo (ftp://ftp.gnu.org/gnu/aspell/) programa,
-		skirta aspell žodynų (aspell-lt paketo) generavimui;
+* proc.pl       'aspell-lang' paketo (ftp://ftp.gnu.org/gnu/aspell/) programa,
+                skirta aspell žodynų (aspell-lt paketo) generavimui;
 
-* sort.py	rikiavimo programa. Moka pašalinti komentarus, besikartojančias
-		eilutes. Alternatyva /bin/sort, nes Cygwin aplinkoje sort 
-		veikia nekorektiškai;
+* sort.py       rikiavimo programa. Moka pašalinti komentarus, besikartojančias
+                eilutes. Alternatyva /bin/sort, nes Cygwin aplinkoje sort
+                veikia nekorektiškai;
 
-* sutrauka.py	ispell-lt žodynų sutraukimo/glaudinimo programa -- priešdėlinės
-		formos sutraukiamos prie šakninio žodžio pridedant atitinkamą 
-		priešdėlio afikso žymą.
-
-
+* sutrauka.py   ispell-lt žodynų sutraukimo/glaudinimo programa -- priešdėlinės
+                formos sutraukiamos prie šakninio žodžio pridedant atitinkamą
+                priešdėlio afikso žymą.
