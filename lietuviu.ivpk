@@ -271,19 +271,28 @@ aikðtëja/ENX
 aikðtëjo/PNX
 aikðtelë/D
 aikðtëti/TNX
-#aikðtija/ESX
-aikðtija/R
-#aikðtijasi/E                   # sngr. aikðtija/R
-aikðtijo/O
-#aikðtijo/PSX
-#aikðtijosi/P                   # sngr. aikðtijo/O
+aikðtijasi/R
+besiaikðtija/E
+nesiaikðtija/E
+nebesiaikðtija/E
+tesiaikðtija/E
+tebesiaikðtija/E
+aikðtijosi/O
+besiaikðtijo/P
+nesiaikðtijo/P
+nebesiaikðtijo/P
+tesiaikðtijo/P
+tebesiaikðtijo/P
 aikðtingas/BQN
 #aikðtingumas/D                 # yra aikðtingas/.*Q
 aikðtis/MI
 aikðtynas/D
-aikðtyti/R
-#aikðtyti/TSX
-#aikðtytis/T                    # sngr. aikðtyti/R
+aikðtytis/R
+besiaikðtyti/TW
+nesiaikðtyti/TW
+nebesiaikðtyti/TW
+tesiaikðtyti/TW
+tebesiaikðtyti/TW
 aikðtus/BQN
 aiktelëja/ENX
 aiktelëjo/PNX
@@ -4485,11 +4494,19 @@ aritmometras/D
 arka/D
 arkada/D
 arkangelas/D
-arkë/YOSX
-#arkësi/Y                       # sngr. arkë/.*O
+arkësi/O
+besiarkë/Y
+nesiarkë/Y
+nebesiarkë/Y
+tesiarkë/Y
+tebesiarkë/Y
 arkivyskupas/D
-arkyti/TRWSX
-#arkytis/T                      # sngr. arkyti/.*R
+arkytis/R
+besiarkyti/TW
+nesiarkyti/TW
+nebesiarkyti/TW
+tesiarkyti/TW
+tebesiarkyti/TW
 arklena/D
 arklënas/D
 arkliaganys/D
@@ -4509,8 +4526,12 @@ arkliðkas/BQN
 arkliukas/D
 arkliûkðtis/D
 arklys/D
-arko/ERSX
-#arkosi/E                       # sngr. arko/.*R
+arkosi/R
+besiarko/E
+nesiarko/E
+nebesiarko/E
+tesiarko/E
+tebesiarko/E
 arktinis/BUN
 armada/D
 armatûra/D
@@ -5858,13 +5879,25 @@ atryti/TUNX
 atrodë/YNX
 atrodyti/TWNX
 atrodo/ENX
-atrofavo/POSX
-#atrofavosi/P                   # sngr. atrofavo/.*O
+atrofavosi/O
+besiatrofavo/P
+nesiatrofavo/P
+nebesiatrofavo/P
+tesiatrofavo/P
+tebesiatrofavo/P
 atrofija/D
-atrofuoja/ERSX
-#atrofuojasi/E                  # sngr. atrofuoja/.*R
-atrofuoti/TRSX
-#atrofuotis/T                   # sngr. atrofuoti/.*R
+atrofuojasi/R
+besiatrofuoja/E
+nesiatrofuoja/E
+nebesiatrofuoja/E
+tesiatrofuoja/E
+tebesiatrofuoja/E
+atrofuotis/R
+besiatrofuoti/T
+nesiatrofuoti/T
+nebesiatrofuoti/T
+tesiatrofuoti/T
+tebesiatrofuoti/T
 atropinas/D
 atropoja/ENX
 atropojo/PNX
@@ -7616,13 +7649,26 @@ baiminti/TRSX
 #baimintis/T                    # sngr. baiminti/.*R
 baisa/D
 baisas/D
-baisëjo/POSX
-#baisëjosi/P                    # sngr. baisëjo/.*O
+baisëjosi/O
+besibaisëjo/P
+nesibaisëjo/P
+nebesibaisëjo/P
+tesibaisëjo/P
+tebesibaisëjo/P
 baisëlë/D
 baisenybë/D
-baisëti/TRSX
-#baisëtis/T                     # sngr. baisëti/.*R
-baisi/ESX
+baisëtis/R
+besibaisëti/T
+nesibaisëti/T
+nebesibaisëti/T
+tesibaisëti/T
+tebesibaisëti/T
+baisisi/O
+besibaisi/E
+nesibaisi/E
+nebesibaisi/E
+tesibaisi/E
+tebesibaisi/E
 baisiai
 baisina/ERSX
 #baisinasi/E                    # sngr. baisina/.*R
@@ -7633,7 +7679,6 @@ baisino/POSX
 baisinti/TRSX
 #baisintis/T                    # sngr. baisinti/.*R
 baisis/D
-#baisisi/E                      # sngr. baisi/.*O
 baisybë/D
 #baisumas/D                     # yra baisus/.*Q
 baisûnas/D
@@ -7796,12 +7841,24 @@ balnoti/TRNX
 balo/PNX
 balokðnis/D
 balotas/BQN
-balotiravo/POSX
-#balotiravosi/P                 # sngr. balotiravo/.*O
-balotiruoja/ERSX
-#balotiruojasi/E                # sngr. balotiruoja/.*R
-balotiruoti/TRSX
-#balotiruotis/T                 # sngr. balotiruoti/.*R
+balotiravosi/O
+besibalotiravo/P
+nesibalotiravo/P
+nebesibalotiravo/P
+tesibalotiravo/P
+tebesibalotiravo/P
+balotiruojasi/R
+besibalotiruoja/E
+nesibalotiruoja/E
+nebesibalotiruoja/E
+tesibalotiruoja/E
+tebesibalotiruoja/E
+balotiruotis/R
+besibalotiruoti/T
+nesibalotiruoti/T
+nebesibalotiruoti/T
+tesibalotiruoti/T
+tebesibalotiruoti/T
 #balotumas/D                    # yra balotas/.*Q
 balsas/D
 balsaskylë/D
@@ -8184,16 +8241,28 @@ basnirèiomis
 basom
 basomis
 bast
-bastë/PRSX
+bastësi/O
+besibastë/Y
+nesibastë/Y
+nebesibastë/Y
+tesibastë/Y
+tebesibastë/Y
 bastelëja/ENX
 bastelëjo/PNX
 bastelëti/TNX
-#bastësi/P                      # sngr. bastë/.*R
 bastionas/D
-bastyti/TRWSX
-#bastytis/T                     # sngr. bastyti/.*R
-basto/ERSX
-#bastosi/E                      # sngr. basto/.*R
+bastytis/R
+besibastyti/TW
+nesibastyti/TW
+nebesibastyti/TW
+tesibastyti/TW
+tebesibastyti/TW
+bastosi/R
+besibasto/E
+nesibasto/E
+nebesibasto/E
+tesibasto/E
+tebesibasto/E
 bastûnas/D
 bastûnë/D
 bastutis/D
@@ -8250,12 +8319,24 @@ baudþiavininkas/D
 baudþiavininkë/D
 baudþiavinis/BUN
 baudþiaviðkas/BQN
-baugëja/ERSX
-#baugëjasi/E                    # sngr. baugëja/.*R
-baugëjo/POSX
-#baugëjosi/P                    # sngr. baugëjo/.*O
-baugëti/TRSX
-#baugëtis/T                     # sngr. baugëti/.*R
+baugëjasi/R
+besibaugëja/E
+nesibaugëja/E
+nebesibaugëja/E
+tesibaugëja/E
+tebesibaugëja/E
+baugëjosi/O
+besibaugëjo/P
+nesibaugëjo/P
+nebesibaugëjo/P
+tesibaugëjo/P
+tebesibaugëjo/P
+baugëtis/R
+besibaugëti/T
+nesibaugëti/T
+nebesibaugëti/T
+tesibaugëti/T
+tebesibaugëti/T
 baugina/ERSX
 #bauginasi/E                    # sngr. baugina/.*R
 baugino/POSX
@@ -8278,16 +8359,28 @@ bausti/TRNX
 bavaras/D
 bavarë/D
 bazaltas/D
-bazavo/POSX
-#bazavosi/P                     # sngr. bazavo/.*O
+bazavosi/O
+besibazavo/P
+nesibazavo/P
+nebesibazavo/P
+tesibazavo/P
+tebesibazavo/P
 bazë/D
 bazilika/D
 bazilikas/D
 bazinis/BUN
-bazuoja/ERSX
-#bazuojasi/E                    # sngr. bazuoja/.*R
-bazuoti/TRSX
-#bazuotis/T                     # sngr. bazuoti/.*R
+bazuojasi/R
+besibazuoja/E
+nesibazuoja/E
+nebesibazuoja/E
+tesibazuoja/E
+tebesibazuoja/E
+bazuotis/R
+besibazuoti/T
+nesibazuoti/T
+nebesibazuoti/T
+tesibazuoti/T
+tebesibazuoti/T
 baþnyèia/D
 baþnytininkas/D
 baþnytininkë/D
@@ -9053,12 +9146,24 @@ biþuterija/D
 bygzti/TNX
 byla/D
 bylina/D
-bylinëja/ERSX
-#bylinëjasi/E                   # sngr. bylinëja/.*R
-bylinëjo/POSX
-#bylinëjosi/P                   # sngr. bylinëjo/.*O
-bylinëti/TRSX
-#bylinëtis/T                    # sngr. bylinëti/.*R
+bylinëjasi/R
+besibylinëja/E
+nesibylinëja/E
+nebesibylinëja/E
+tesibylinëja/E
+tebesibylinëja/E
+bylinëjosi/O
+besibylinëjo/P
+nesibylinëjo/P
+nebesibylinëjo/P
+tesibylinëjo/P
+tebesibylinëjo/P
+bylinëtis/R
+besibylinëti/T
+nesibylinëti/T
+nebesibylinëti/T
+tesibylinëti/T
+tebesibylinëti/T
 bylininkas/D
 bylininkë/D
 byloja/ENX
@@ -9100,10 +9205,18 @@ bjûra/ENX
 bjuro/PNX
 bjurti/TNX
 blaivas/BQN
-blaivë/YOSXabedfikmopru
+blaivësi/O
+besiblaivë/Y
+nesiblaivë/Y
+nebesiblaivë/Y
+tesiblaivë/Y
+tebesiblaivë/Y
+apsiblaivë/Y
+iðsiblaivë/Y
+nusiblaivë/Y
+prasiblaivë/Y
 blaivëja/ENX
 blaivëjo/PNX
-#blaivësi/Y                     # sngr. blaivë/.*O
 blaivëti/TNX
 blaivina/ENX
 blaivininkas/D
@@ -9112,12 +9225,26 @@ blaivino/PNX
 blaivinti/TNX
 blaivybë/D
 blaivykla/D
-blaivyti/TRWSX
-blaivyti/TRWSXabedfikmopru
-#blaivytis/T                    # sngr. blaivyti/.*R
-blaivo/ERSX
-blaivo/ERSXabedfikmopru
-#blaivosi/E                     # sngr. blaivo/.*R
+blaivytis/R
+besiblaivyti/TW
+nesiblaivyti/TW
+nebesiblaivyti/TW
+tesiblaivyti/TW
+tebesiblaivyti/TW
+apsiblaivyti/TW
+iðsiblaivyti/TW
+nusiblaivyti/TW
+prasiblaivyti/TW
+blaivosi/R
+besiblaivo/E
+nesiblaivo/E
+nebesiblaivo/E
+tesiblaivo/E
+tebesiblaivo/E
+apsiblaivo/E
+iðsiblaivo/E
+nusiblaivo/E
+prasiblaivo/E
 #blaivumas/D                    # yra blaivas/.*Q
 blaivus/BQN
 blaka/D
@@ -9136,13 +9263,25 @@ blaktelëjo/PNX
 blaktelëti/TNX
 blakutë/D
 blanda/D
-blandë/PRSX
-#blandësi/P                     # sngr. blandë/.*R
+blandësi/O
+besiblandë/Y
+nesiblandë/Y
+nebesiblandë/Y
+tesiblandë/Y
+tebesiblandë/Y
 blandis/MI
-blandyti/TRWSX
-#blandytis/T                    # sngr. blandyti/.*R
-blando/ERSX
-#blandosi/E                     # sngr. blando/.*R
+blandytis/R
+besiblandyti/TW
+nesiblandyti/TW
+nebesiblandyti/TW
+tesiblandyti/TW
+tebesiblandyti/TW
+blandosi/R
+besiblando/E
+nesiblando/E
+nebesiblando/E
+tesiblando/E
+tebesiblando/E
 #blandumas/D                    # yra blandus/.*Q
 blandus/BQN
 blankas/D
@@ -9170,12 +9309,24 @@ blaðko/ERSX
 #blaðkumas/D                    # yra blaðkus/.*Q
 blaðkus/BQN
 blausa/D
-blausë/PRSX
-#blausësi/P                     # sngr. blausë/.*R
-blausia/ERSX
-#blausiasi/E                    # sngr. blausia/.*R
-blausti/TRSX
-#blaustis/T                     # sngr. blausti/.*R
+blausësi/R
+besiblausë/P
+nesiblausë/P
+nebesiblausë/P
+tesiblausë/P
+tebesiblausë/P
+blausiasi/R
+besiblausia/E
+nesiblausia/E
+nebesiblausia/E
+tesiblausia/E
+tebesiblausia/E
+blaustis/R
+besiblausti/T
+nesiblausti/T
+nebesiblausti/T
+tesiblausti/T
+tebesiblausti/T
 #blausumas/D                    # yra blausus/.*Q
 blausus/BQN
 blauzda/D
@@ -9425,12 +9576,24 @@ bobpalaikë/D
 bobramunis/D
 bobðë/D
 bobutë/D
-bodëjo/POSX
-#bodëjosi/P                     # sngr. bodëjo/.*O
-bodëti/TRSX
-#bodëtis/T                      # sngr. bodëti/.*R
-bodi/EOSX
-#bodisi/E                       # sngr. bodi/.*O
+bodëjosi/O
+besibodëjo/P
+nesibodëjo/P
+nebesibodëjo/P
+tesibodëjo/P
+tebesibodëjo/P
+bodëtis/R
+besibodëti/T
+nesibodëti/T
+nebesibodëti/T
+tesibodëti/T
+tebesibodëti/T
+bodisi/O
+besibodi/E
+nesibodi/E
+nebesibodi/E
+tesibodi/E
+tebesibodi/E
 bodo/O
 #bodosi/P                       # sngr. bodo/O
 bodus/BQN
@@ -9657,11 +9820,19 @@ brauktë/D
 braukti/TRNX
 #brauktis/T                     # sngr. braukti/.*R
 brauktuvë/D
-brauna/ERSX
-#braunasi/E                     # sngr. brauna/.*R
+braunasi/R
+besibrauna/E
+nesibrauna/E
+nebesibrauna/E
+tesibrauna/E
+tebesibrauna/E
 brauningas/D
-brauti/TRSX
-#brautis/T                      # sngr. brauti/.*R
+brautis/R
+besibrauti/T
+nesibrauti/T
+nebesibrauti/T
+tesibrauti/T
+tebesibrauti/T
 bravo
 brazda/ENX
 brazdas/D
@@ -9818,22 +9989,42 @@ brokuotoja/D
 brokuotojas/D
 brolëèia/D
 brolënas/D
-broliauja/ERSX
-#broliaujasi/E                  # sngr. broliauja/.*R
-broliauti/TRSX
-#broliautis/T                   # sngr. broliauti/.*R
+broliaujasi/R
+besibroliauja/E
+nesibroliauja/E
+nebesibroliauja/E
+tesibroliauja/E
+tebesibroliauja/E
+broliautis/R
+besibroliauti/T
+nesibroliauti/T
+nebesibroliauti/T
+tesibroliauti/T
+tebesibroliauti/T
 broliavaikis/D
-broliavo/POSX
-#broliavosi/P                   # sngr. broliavo/.*O
+broliavosi/O
+besibroliavo/P
+nesibroliavo/P
+nebesibroliavo/P
+tesibroliavo/P
+tebesibroliavo/P
 brolienë/D
 brolija/D
 brolis/D
 broliðkas/BQN
 #broliðkumas/D                  # yra broliðkas/.*Q
-broliuoja/ERSX
-#broliuojasi/E                  # sngr. broliuoja/.*R
-broliuoti/TRSX
-#broliuotis/T                   # sngr. broliuoti/.*R
+broliuojasi/R
+besibroliuoja/E
+nesibroliuoja/E
+nebesibroliuoja/E
+tesibroliuoja/E
+tebesibroliuoja/E
+broliuotis/R
+besibroliuoti/T
+nesibroliuoti/T
+nebesibroliuoti/T
+tesibroliuoti/T
+tebesibroliuoti/T
 brolybë/D
 brolystë/D
 brolvaikis/D
@@ -9853,8 +10044,12 @@ broðiûra/D
 broðiûravo/PNX
 broðiûruoja/ENX
 broðiûruoti/TNX
-brovë/PRSX
-#brovësi/P                      # sngr. brovë/.*R
+brovësi/R
+besibrovë/P
+nesibrovë/P
+nebesibrovë/P
+tesibrovë/P
+tebesibrovë/P
 brozdina/ERNX
 #brozdinasi/E                   # sngr. brozdina/.*R
 brozdino/PONX
@@ -10371,12 +10566,24 @@ campinti/TNX
 capena/ENX
 capeno/PNX
 capenti/TNX
-capinëja/ERSX
-#capinëjasi/E                   # sngr. capinëja/.*R
-capinëjo/POSX
-#capinëjosi/P                   # sngr. capinëjo/.*O
-capinëti/TRSX
-#capinëtis/T                    # sngr. capinëti/.*R
+capinëjasi/R
+besicapinëja/E
+nesicapinëja/E
+nebesicapinëja/E
+tesicapinëja/E
+tebesicapinëja/E
+capinëjosi/O
+besicapinëjo/P
+nesicapinëjo/P
+nebesicapinëjo/P
+tesicapinëjo/P
+tebesicapinëjo/P
+capinëtis/R
+besicapinëti/T
+nesicapinëti/T
+nebesicapinëti/T
+tesicapinëti/T
+tebesicapinëti/T
 caplys/D
 capnoja/ENX
 capnojo/PNX
@@ -10443,13 +10650,25 @@ cenzûruoti/TNX
 cepelinas/D
 ceremonialas/D
 ceremonija/D
-ceremonija/ERSX
-#ceremonijasi/E                 # sngr. ceremonija/.*R
-ceremonijo/POSX
-#ceremonijosi/P                 # sngr. ceremonijo/.*O
+ceremonijasi/R
+besiceremonija/E
+nesiceremonija/E
+nebesiceremonija/E
+tesiceremonija/E
+tebesiceremonija/E
+ceremonijosi/O
+besiceremonijo/P
+nesiceremonijo/P
+nebesiceremonijo/P
+tesiceremonijo/P
+tebesiceremonijo/P
 ceremoningas/BQN
-ceremonyti/TRWSX
-#ceremonytis/T                  # sngr. ceremonyti/.*R
+ceremonytis/R
+besiceremonyti/TW
+nesiceremonyti/TW
+nebesiceremonyti/TW
+tesiceremonyti/TW
+tebesiceremonyti/TW
 ceris/D
 cerkvë/D
 cezis/D
@@ -10869,12 +11088,26 @@ cvingtelëti/TNX
 èiaumojo/PNX
 èiaumoti/TNX
 èiaupas/D
-èiaupë/PRSX
-#èiaupësi/P                     # sngr. èiaupë/.*R
+èiaupësi/O
+besièiaupë/Y
+nesièiaupë/Y
+nebesièiaupë/Y
+tesièiaupë/Y
+tebesièiaupë/Y
+èiauposi/R
+besièiaupo/E
+nesièiaupo/E
+nebesièiaupo/E
+tesièiaupo/E
+tebesièiaupo/E
 èiaupia/ERSX
 #èiaupiasi/E                    # sngr. èiaupia/.*R
-èiaupyti/TRWSX
-#èiaupytis/T                    # sngr. èiaupyti/.*R
+èiaupytis/R
+besièiaupyti/TW
+nesièiaupyti/TW
+nebesièiaupyti/TW
+tesièiaupyti/TW
+tebesièiaupyti/TW
 èiaupoja/ENX
 èiaupojo/PNX
 èiaupoti/TNX
@@ -11108,12 +11341,24 @@ cvingtelëti/TNX
 èiulpsëjo/PNX
 èiulpsëti/TNX
 èiulpsi/ENX
-èiulpstë/PRSX
-#èiulpstësi/P                   # sngr. èiulpstë/.*R
-èiulpstyti/TRWSX
-#èiulpstytis/T                  # sngr. èiulpstyti/.*R
-èiulpsto/ERSX
-#èiulpstosi/E                   # sngr. èiulpsto/.*R
+èiulpstësi/O
+besièiulpstë/Y
+nesièiulpstë/Y
+nebesièiulpstë/Y
+tesièiulpstë/Y
+tebesièiulpstë/Y
+èiulpstytis/R
+besièiulpstyti/TW
+nesièiulpstyti/TW
+nebesièiulpstyti/TW
+tesièiulpstyti/TW
+tebesièiulpstyti/TW
+èiulpstosi/R
+besièiulpsto/E
+nesièiulpsto/E
+nebesièiulpsto/E
+tesièiulpsto/E
+tebesièiulpsto/E
 èiulpt
 èiulptelëja/ENX
 èiulptelëjo/PNX
@@ -11473,22 +11718,43 @@ dainuotinis/BUN
 #dainuotis/T                    # sngr. dainuoti/.*R
 dainuðka/D
 daira/D
-#dairë/YSX
-dairë/O
-#dairësi/Y                      # sngr. dairë/O
+dairësi/O
+besidairë/Y
+nesidairë/Y
+nebesidairë/Y
+tesidairë/Y
+tebesidairë/Y
 dairiai
-dairinëja/ERSX
-#dairinëjasi/E                  # sngr. dairinëja/.*R
-dairinëjo/POSX
-#dairinëjosi/P                  # sngr. dairinëjo/.*O
-dairinëti/TRSX
-#dairinëtis/T                   # sngr. dairinëti/.*R
-dairyti/R
-#dairyti/TWSX
-#dairytis/T                     # sngr. dairyti/R
-#dairo/ESX
-dairo/R
-#dairosi/E                      # sngr. dairo/R
+dairinëjasi/R
+besidairinëja/E
+nesidairinëja/E
+nebesidairinëja/E
+tesidairinëja/E
+tebesidairinëja/E
+dairinëjosi/O
+besidairinëjo/P
+nesidairinëjo/P
+nebesidairinëjo/P
+tesidairinëjo/P
+tebesidairinëjo/P
+dairinëtis/R
+besidairinëti/T
+nesidairinëti/T
+nebesidairinëti/T
+tesidairinëti/T
+tebesidairinëti/T
+dairytis/R
+besidairyti/TW
+nesidairyti/TW
+nebesidairyti/TW
+tesidairyti/TW
+tebesidairyti/TW
+dairosi/R
+besidairo/E
+nesidairo/E
+nebesidairo/E
+tesidairo/E
+tebesidairo/E
 dairus/BQN
 dakotas/D
 dakotë/D
@@ -11509,12 +11775,24 @@ dalba/D
 dalbina/ENX
 dalbino/PNX
 dalbinti/TNX
-dalbstë/PRSX
-#dalbstësi/P                    # sngr. dalbstë/.*R
-dalbstyti/TRWSX
-#dalbstytis/T                   # sngr. dalbstyti/.*R
-dalbsto/ERSX
-#dalbstosi/E                    # sngr. dalbsto/.*R
+dalbstësi/O
+besidalbstë/Y
+nesidalbstë/Y
+nebesidalbstë/Y
+tesidalbstë/Y
+tebesidalbstë/Y
+dalbstytis/R
+besidalbstyti/TW
+nesidalbstyti/TW
+nebesidalbstyti/TW
+tesidalbstyti/TW
+tebesidalbstyti/TW
+dalbstosi/R
+besidalbsto/E
+nesidalbsto/E
+nebesidalbsto/E
+tesidalbsto/E
+tebesidalbsto/E
 dalelë/D
 dalelytë/D
 dalgë/D
@@ -11633,9 +11911,12 @@ darbadienis/D
 darbas/D
 darbastalis/D
 darbavietë/D
-darbavo/O
-#darbavo/PSX
-#darbavosi/P                    # sngr. darbavo/O
+darbavosi/O
+besidarbavo/P
+nesidarbavo/P
+nebesidarbavo/P
+tesidarbavo/P
+tebesidarbavo/P
 darbdavë/D
 darbdavys/D
 darbëmë/D
@@ -11661,13 +11942,19 @@ darbðtuolë/D
 darbðtuolis/D
 darbðtus/BQN
 #darbumas/D                     # yra darbus/.*Q
-#darbuoja/ESX
-darbuoja/R
-#darbuojasi/E                   # sngr. darbuoja/R
+darbuojasi/R
+besidarbuoja/E
+nesidarbuoja/E
+nebesidarbuoja/E
+tesidarbuoja/E
+tebesidarbuoja/E
 darbuotë/D
-darbuoti/R
-#darbuoti/TSX
-#darbuotis/T                    # sngr. darbuoti/R
+darbuotis/R
+besidarbuoti/T
+nesidarbuoti/T
+nebesidarbuoti/T
+tesidarbuoti/T
+tebesidarbuoti/T
 darbus/BQN
 darda/ENX
 dardëjo/PNX
@@ -12213,12 +12500,24 @@ deklaravo/PNX
 deklaruoja/ENX
 deklaruoti/TNX
 dëklas/D
-deklasavo/POSX
-#deklasavosi/P                  # sngr. deklasavo/.*O
-deklasuoja/ERSX
-#deklasuojasi/E                 # sngr. deklasuoja/.*R
-deklasuoti/TRSX
-#deklasuotis/T                  # sngr. deklasuoti/.*R
+deklasavosi/O
+besideklasavo/P
+nesideklasavo/P
+nebesideklasavo/P
+tesideklasavo/P
+tebesideklasavo/P
+deklasuojasi/R
+besideklasuoja/E
+nesideklasuoja/E
+nebesideklasuoja/E
+tesideklasuoja/E
+tebesideklasuoja/E
+deklasuotis/R
+besideklasuoti/T
+nesideklasuoti/T
+nebesideklasuoti/T
+tesideklasuoti/T
+tebesideklasuoti/T
 dëklë/D
 dekolonizacija/D
 dekoltë/D
@@ -12366,17 +12665,29 @@ denatûruoti/TNX
 dendrologija/D
 dengë/PRNX
 dengë/PRSX
-dengëjo/POSX
-#dengëjosi/P                    # sngr. dengëjo/.*O
+dengëjosi/O
+besidengëjo/P
+nesidengëjo/P
+nebesidengëjo/P
+tesidengëjo/P
+tebesidengëjo/P
 #dengësi/P                      # sngr. dengë/.*R
-dengëti/TRSX
-#dengëtis/T                     # sngr. dengëti/.*R
-dengi/EOSX
+dengëtis/R
+besidengëti/T
+nesidengëti/T
+nebesidengëti/T
+tesidengëti/T
+tebesidengëti/T
+dengisi/O
+besidengi/E
+nesidengi/E
+nebesidengi/E
+tesidengi/E
+tebesidengi/E
 dengia/ERNX
 dengia/ERSX
 #dengiasi/E                     # sngr. dengia/.*R
 denginys/D
-#dengisi/E                      # sngr. dengi/.*O
 dengti/TRNX
 dengti/TRSX
 dengtinis/BUN
@@ -12760,8 +13071,12 @@ didþiareikðmis/BUN
 didþiaturtë/D
 didþiaturtis/D
 didþiavalstybinis/BUN
-didþiavo/POSX
-#didþiavosi/P                   # sngr. didþiavo/.*O
+didþiavosi/O
+besididþiavo/P
+nesididþiavo/P
+nebesididþiavo/P
+tesididþiavo/P
+tebesididþiavo/P
 didþiaþemë/D
 didþiaþemis/BUD                  # LKÞ pateikia ir dkt. formà
 didþiaþiedis/BUN
@@ -12770,12 +13085,20 @@ didþiulis/BUN
 didþiuma/D
 didþiûnas/D
 didþiûnë/D
-didþiuoja/ERSX
-#didþiuojasi/E                  # sngr. didþiuoja/.*R
+didþiuojasi/R
+besididþiuoja/E
+nesididþiuoja/E
+nebesididþiuoja/E
+tesididþiuoja/E
+tebesididþiuoja/E
 didþiuoklë/D
 didþiuoklis/D
-didþiuoti/TRSX
-#didþiuotis/T                   # sngr. didþiuoti/.*R
+didþiuotis/R
+besididþiuoti/T
+nesididþiuoti/T
+nebesididþiuoti/T
+tesididþiuoti/T
+tebesididþiuoti/T
 didþkukulis/D
 didþpeilis/D
 didþpinigë/D
@@ -12796,20 +13119,29 @@ diemedis/D
 diena/D
 diendarþis/D
 diengalis/BUN
-#dienija/ESX
-dienija/R
-#dienijasi/E                    # sngr. dienija/R
-dienijo/O
-#dienijo/PSX
-#dienijosi/P                    # sngr. dienijo/O
+dienijasi/R
+besidienija/E
+nesidienija/E
+nebesidienija/E
+tesidienija/E
+tebesidienija/E
+dienijosi/O
+besidienijo/P
+nesidienijo/P
+nebesidienijo/P
+tesidienijo/P
+tebesidienijo/P
 dieninga/N
 dienininkas/D
 dienininkë/D
 dieninis/BUN
 dienynas/D
-dienyti/R
-#dienyti/TWSX
-#dienytis/T                     # sngr. dienyti/R
+dienytis/R
+besidienyti/TW
+nesidienyti/TW
+nebesidienyti/TW
+tesidienyti/TW
+tebesidienyti/TW
 dienoja/ENX
 dienojo/PNX
 dienoraðtis/D
@@ -12826,24 +13158,48 @@ dietininkas/D
 dietininkë/D
 dietinis/BUN
 dievadirbys/D
-dievagoja/ERSX
-#dievagojasi/E                  # sngr. dievagoja/.*R
-dievagojo/POSX
-#dievagojosi/P                  # sngr. dievagojo/.*O
-dievagoti/TRSX
-#dievagotis/T                   # sngr. dievagoti/.*R
+dievagojasi/R
+besidievagoja/E
+nesidievagoja/E
+nebesidievagoja/E
+tesidievagoja/E
+tebesidievagoja/E
+dievagojosi/O
+besidievagojo/P
+nesidievagojo/P
+nebesidievagojo/P
+tesidievagojo/P
+tebesidievagojo/P
+dievagotis/R
+besidievagoti/T
+nesidievagoti/T
+nebesidievagoti/T
+tesidievagoti/T
+tebesidievagoti/T
 dievaitë/D
 dievaitis/D
 dievas/D
 dievaþ
 dievaþi
-dievaþija/ERSX
-#dievaþijasi/E                  # sngr. dievaþija/.*R
-dievaþijo/POSX
-#dievaþijosi/P                  # sngr. dievaþijo/.*O
+dievaþijasi/R
+besidievaþija/E
+nesidievaþija/E
+nebesidievaþija/E
+tesidievaþija/E
+tebesidievaþija/E
+dievaþijosi/O
+besidievaþijo/P
+nesidievaþijo/P
+nebesidievaþijo/P
+tesidievaþijo/P
+tebesidievaþijo/P
 dievaþin
-dievaþyti/TRWSX
-#dievaþytis/T                   # sngr. dievaþyti/.*R
+dievaþytis/R
+besidievaþyti/TW
+nesidievaþyti/TW
+nebesidievaþyti/TW
+tesidievaþyti/TW
+tebesidievaþyti/TW
 dieveniðkietë/D
 dieveniðkietis/D
 dieveris/MI
@@ -13391,12 +13747,25 @@ dokumentuotojas/D
 doleris/D
 dolomitas/D
 domë/D
-domëjo/POSX
-#domëjosi/P                     # sngr. domëjo/.*O
+domëjosi/O
+besidomëjo/P
+nesidomëjo/P
+nebesidomëjo/P
+tesidomëjo/P
+tebesidomëjo/P
 domesys/D
-domëti/TRSX
-#domëtis/T                      # sngr. domëti/.*R
-domi/EOSX
+domëtis/R
+besidomëti/T
+nesidomëti/T
+nebesidomëti/T
+tesidomëti/T
+tebesidomëti/T
+domisi/O
+besidomi/E
+nesidomi/E
+nebesidomi/E
+tesidomi/E
+tebesidomi/E
 domina/ENX
 dominas/D
 dominavo/PNX
@@ -13408,7 +13777,6 @@ domino/PNX
 dominti/TNX
 dominuoja/ENX
 dominuoti/TNX
-#domisi/E                       # sngr. domi/.*O
 domkratas/D
 #domumas/D                      # yra domus/.*Q
 domus/BQN
@@ -13793,12 +14161,24 @@ dribèioti/TNX
 dribdë/YNX
 dribdyti/TWNX
 dribdo/ENX
-dribina/ERSX
-#dribinasi/E                    # sngr. dribina/.*R
-dribino/POSX
-#dribinosi/P                    # sngr. dribino/.*O
-dribinti/TRSX
-#dribintis/T                    # sngr. dribinti/.*R
+dribinasi/R
+besidribina/E
+nesidribina/E
+nebesidribina/E
+tesidribina/E
+tebesidribina/E
+dribinosi/O
+besidribino/P
+nesidribino/P
+nebesidribino/P
+tesidribino/P
+tebesidribino/P
+dribintis/R
+besidribinti/T
+nesidribinti/T
+nebesidribinti/T
+tesidribinti/T
+tebesidribinti/T
 driblentë/D
 driblina/ENX
 driblino/PNX
@@ -13962,18 +14342,30 @@ drobë/D
 drobelë/D
 drobinis/BUN
 drova/D
-drovëjo/POSX
-#drovëjosi/P                    # sngr. drovëjo/.*O
-drovëti/TRSX
-#drovëtis/T                     # sngr. drovëti/.*R
-drovi/EOSX
+drovëjosi/O
+besidrovëjo/P
+nesidrovëjo/P
+nebesidrovëjo/P
+tesidrovëjo/P
+tebesidrovëjo/P
+drovëtis/R
+besidrovëti/T
+nesidrovëti/T
+nebesidrovëti/T
+tesidrovëti/T
+tebesidrovëti/T
+drovisi/O
+besidrovi/E
+nesidrovi/E
+nebesidrovi/E
+tesidrovi/E
+tebesidrovi/E
 drovina/ENX
 drovingas/BQN
 #drovingumas/D                  # yra drovingas/.*Q
 drovino/PNX
 drovinti/TNX
 drovis/D
-#drovisi/E                      # sngr. drovi/.*O
 #drovumas/D                     # yra drovus/.*Q
 drovus/BQN
 droþë/PRNX
@@ -14381,12 +14773,24 @@ dumplûnë/D
 dûmsiurbis/D
 dumslas/D
 dumðlë/D
-dumðlëja/ERSX
-#dumðlëjasi/E                   # sngr. dumðlëja/.*R
-dumðlëjo/POSX
-#dumðlëjosi/P                   # sngr. dumðlëjo/.*O
-dumðlëti/TRSX
-#dumðlëtis/T                    # sngr. dumðlëti/.*R
+dumðlëjasi/R
+besidumðlëja/E
+nesidumðlëja/E
+nebesidumðlëja/E
+tesidumðlëja/E
+tebesidumðlëja/E
+dumðlëjosi/O
+besidumðlëjo/P
+nesidumðlëjo/P
+nebesidumðlëjo/P
+tesidumðlëjo/P
+tebesidumðlëjo/P
+dumðlëtis/R
+besidumðlëti/T
+nesidumðlëti/T
+nebesidumðlëti/T
+tesidumðlëti/T
+tebesidumðlëti/T
 dûmtakis/D
 dumti/TRNX
 #dumtis/T                       # sngr. dumti/.*R
@@ -14409,12 +14813,24 @@ dunduliavo/PNX
 dundulis/D
 dunduliuoja/ENX
 dunduliuoti/TNX
-dungavo/POSX
-#dungavosi/P                    # sngr. dungavo/.*O
-dunguoja/ERSX
-#dunguojasi/E                   # sngr. dunguoja/.*R
-dunguoti/TRSX
-#dunguotis/T                    # sngr. dunguoti/.*R
+dungavosi/O
+besidungavo/P
+nesidungavo/P
+nebesidungavo/P
+tesidungavo/P
+tebesidungavo/P
+dunguojasi/R
+besidunguoja/E
+nesidunguoja/E
+nebesidunguoja/E
+tesidunguoja/E
+tebesidunguoja/E
+dunguotis/R
+besidunguoti/T
+nesidunguoti/T
+nebesidunguoti/T
+tesidunguoti/T
+tebesidunguoti/T
 dunksèioja/ENX
 dunksèiojo/PNX
 dunksèioti/TNX
@@ -15000,15 +15416,27 @@ dþerðkino/PNX
 dþerðkinti/TNX
 dþerþgë/PNX
 dþerþgia/ENX
-dþiaugë/PRSX
-#dþiaugësi/P                    # sngr. dþiaugë/.*R
-dþiaugia/ERSX
-#dþiaugiasi/E                   # sngr. dþiaugia/.*R
+dþiaugësi/R
+besidþiaugë/P
+nesidþiaugë/P
+nebesidþiaugë/P
+tesidþiaugë/P
+tebesidþiaugë/P
+dþiaugiasi/R
+besidþiaugia/E
+nesidþiaugia/E
+nebesidþiaugia/E
+tesidþiaugia/E
+tebesidþiaugia/E
 dþiaugsmas/D
 dþiaugsmingas/BQN
 #dþiaugsmingumas/D              # yra dþiaugsmingas/.*Q
-dþiaugti/TRSX
-#dþiaugtis/T                    # sngr. dþiaugti/.*R
+dþiaugtis/R
+besidþiaugti/T
+nesidþiaugti/T
+nebesidþiaugti/T
+tesidþiaugti/T
+tebesidþiaugti/T
 dþiauna/ERNX
 dþiauna/ERSXacbedfihlonqprutvx
 #dþiaunasi/E                    # sngr. dþiauna/.*R
@@ -15468,8 +15896,12 @@ elementarus/BQN
 elementas/D
 elementorius/D
 elevatorius/D
-elgë/PRSX
-#elgësi/P                       # sngr. elgë/.*R
+elgësi/R
+besielgë/P
+nesielgë/P
+nebesielgë/P
+tesielgë/P
+tebesielgë/P
 elgesys/D
 elgeta/D
 elgetauja/ENX
@@ -15477,11 +15909,19 @@ elgetauti/TNX
 elgetavo/PNX
 elgetiðkas/BQN
 elgetystë/D
-elgia/ERSX
-#elgiasi/E                      # sngr. elgia/.*R
+elgiasi/R
+besielgia/E
+nesielgia/E
+nebesielgia/E
+tesielgia/E
+tebesielgia/E
 elgsena/D
-elgti/TRSX
-#elgtis/T                       # sngr. elgti/.*R
+elgtis/R
+besielgti/T
+nesielgti/T
+nebesielgti/T
+tesielgti/T
+tebesielgti/T
 elipsë/D
 elipsinis/BUN
 elitas/D
@@ -15610,17 +16050,29 @@ eretikas/D
 eretikë/D
 erezija/D
 ergas/D
-ëriavo/POSX
-#ëriavosi/P                     # sngr. ëriavo/.*O
+ëriavosi/O
+besiëriavo/P
+nesiëriavo/P
+nebesiëriavo/P
+tesiëriavo/P
+tebesiëriavo/P
 ëriena/D
 erika/D
 ëringa/DN                       # bdv., bet mot. gim., tad /D tinka labiau
 eritrocitas/D
 ëriukas/D
-ëriuoja/ERSX
-#ëriuojasi/E                    # sngr. ëriuoja/.*R
-ëriuoti/TRSX
-#ëriuotis/T                     # sngr. ëriuoti/.*R
+ëriuojasi/R
+besiëriuoja/E
+nesiëriuoja/E
+nebesiëriuoja/E
+tesiëriuoja/E
+tebesiëriuoja/E
+ëriuotis/R
+besiëriuoti/T
+nesiëriuoti/T
+nebesiëriuoti/T
+tesiëriuoti/T
+tebesiëriuoti/T
 erkë/D
 erkutë/D
 ernis/D
@@ -16287,21 +16739,42 @@ gaidelis/D
 gaidgystë/D
 gaidiena/D
 gaidys/D
-#gaidrija/ESX
-gaidrija/R
-#gaidrijasi/E                   # sngr. gaidrija/R
-gaidrijo/O
-#gaidrijo/PSX
-#gaidrijosi/P                   # sngr. gaidrijo/O
-gaidrina/ERSX
-#gaidrinasi/E                   # sngr. gaidrina/.*R
-gaidrino/POSX
-#gaidrinosi/P                   # sngr. gaidrino/.*O
-gaidrinti/TRSX
-#gaidrintis/T                   # sngr. gaidrinti/.*R
-gaidryti/R
-#gaidryti/TWSX
-#gaidrytis/T                    # sngr. gaidryti/R
+gaidrijasi/R
+besigaidrija/E
+nesigaidrija/E
+nebesigaidrija/E
+tesigaidrija/E
+tebesigaidrija/E
+gaidrijosi/O
+besigaidrijo/P
+nesigaidrijo/P
+nebesigaidrijo/P
+tesigaidrijo/P
+tebesigaidrijo/P
+gaidrinasi/R
+besigaidrina/E
+nesigaidrina/E
+nebesigaidrina/E
+tesigaidrina/E
+tebesigaidrina/E
+gaidrinosi/O
+besigaidrino/P
+nesigaidrino/P
+nebesigaidrino/P
+tesigaidrino/P
+tebesigaidrino/P
+gaidrintis/R
+besigaidrinti/T
+nesigaidrinti/T
+nebesigaidrinti/T
+tesigaidrinti/T
+tebesigaidrinti/T
+gaidrytis/R
+besigaidryti/TW
+nesigaidryti/TW
+nebesigaidryti/TW
+tesigaidryti/TW
+tebesigaidryti/TW
 gaidrus/BQN
 gaidukas/D
 gaidþiagystë/D
@@ -16410,26 +16883,62 @@ gaivaliðkas/BQN
 #gaivaliðkumas/D                # yra gaivaliðkas/.*Q
 gaivaliuoja/ENX
 gaivaliuoti/TNX
-gaivaloja/ERSX
-#gaivalojasi/E                  # sngr. gaivaloja/.*R
-gaivalojo/POSX
-#gaivalojosi/P                  # sngr. gaivalojo/.*O
-gaivaloti/TRSX
-#gaivalotis/T                   # sngr. gaivaloti/.*R
-gaivëja/ERSX
-#gaivëjasi/E                    # sngr. gaivëja/.*R
-gaivëjo/POSX
-#gaivëjosi/P                    # sngr. gaivëjo/.*O
-gaivelëja/ERSX
-#gaivelëjasi/E                  # sngr. gaivelëja/.*R
-gaivelëjo/POSX
-#gaivelëjosi/P                  # sngr. gaivelëjo/.*O
-gaivelëti/TRSX
-#gaivelëtis/T                   # sngr. gaivelëti/.*R
+gaivalojasi/R
+besigaivaloja/E
+nesigaivaloja/E
+nebesigaivaloja/E
+tesigaivaloja/E
+tebesigaivaloja/E
+gaivalojosi/O
+besigaivalojo/P
+nesigaivalojo/P
+nebesigaivalojo/P
+tesigaivalojo/P
+tebesigaivalojo/P
+gaivalotis/R
+besigaivaloti/T
+nesigaivaloti/T
+nebesigaivaloti/T
+tesigaivaloti/T
+tebesigaivaloti/T
+gaivëjasi/R
+besigaivëja/E
+nesigaivëja/E
+nebesigaivëja/E
+tesigaivëja/E
+tebesigaivëja/E
+gaivëjosi/O
+besigaivëjo/P
+nesigaivëjo/P
+nebesigaivëjo/P
+tesigaivëjo/P
+tebesigaivëjo/P
+gaivelëjasi/R
+besigaivelëja/E
+nesigaivelëja/E
+nebesigaivelëja/E
+tesigaivelëja/E
+tebesigaivelëja/E
+gaivelëjosi/O
+besigaivelëjo/P
+nesigaivelëjo/P
+nebesigaivelëjo/P
+tesigaivelëjo/P
+tebesigaivelëjo/P
+gaivelëtis/R
+besigaivelëti/T
+nesigaivelëti/T
+nebesigaivelëti/T
+tesigaivelëti/T
+tebesigaivelëti/T
 gaivenis/D
 gaivesys/D
-gaivëti/TRSX
-#gaivëtis/T                     # sngr. gaivëti/.*R
+gaivëtis/R
+besigaivëti/T
+nesigaivëti/T
+nebesigaivëti/T
+tesigaivëti/T
+tebesigaivëti/T
 gaivina/ERNX
 #gaivinasi/E                    # sngr. gaivina/.*R
 gaivingas/BQN
@@ -16524,12 +17033,24 @@ galis/D
 galiûnas/D
 galiûnë/D
 galybë/D
-galynëja/ERSX
-#galynëjasi/E                   # sngr. galynëja/.*R
-galynëjo/POSX
-#galynëjosi/P                   # sngr. galynëjo/.*O
-galynëti/TRSX
-#galynëtis/T                    # sngr. galynëti/.*R
+galynëjasi/R
+besigalynëja/E
+nesigalynëja/E
+nebesigalynëja/E
+tesigalynëja/E
+tebesigalynëja/E
+galynëjosi/O
+besigalynëjo/P
+nesigalynëjo/P
+nebesigalynëjo/P
+tesigalynëjo/P
+tebesigalynëjo/P
+galynëtis/R
+besigalynëti/T
+nesigalynëti/T
+nebesigalynëti/T
+tesigalynëti/T
+tebesigalynëti/T
 galop
 galudienis/BUN
 galudirvis/D
@@ -16761,12 +17282,24 @@ garduolë/D
 garduolis/D
 gardus/BQN
 gardþiakvapis/BUN
-gardþiavo/POSX
-#gardþiavosi/P                  # sngr. gardþiavo/.*O
-gardþiuoja/ERSX
-#gardþiuojasi/E                 # sngr. gardþiuoja/.*R
-gardþiuoti/TRSX
-#gardþiuotis/T                  # sngr. gardþiuoti/.*R
+gardþiavosi/O
+besigardþiavo/P
+nesigardþiavo/P
+nebesigardþiavo/P
+tesigardþiavo/P
+tebesigardþiavo/P
+gardþiuojasi/R
+besigardþiuoja/E
+nesigardþiuoja/E
+nebesigardþiuoja/E
+tesigardþiuoja/E
+tebesigardþiuoja/E
+gardþiuotis/R
+besigardþiuoti/T
+nesigardþiuoti/T
+nebesigardþiuoti/T
+tesigardþiuoti/T
+tebesigardþiuoti/T
 garëja/ERNX
 #garëjasi/E                     # sngr. garëja/.*R
 garëjo/PONX
@@ -16984,12 +17517,24 @@ gaudus/BQN
 gaudutis/D
 gaudþia/ENX
 gauja/D
-gaujoja/ERSX
-#gaujojasi/E                    # sngr. gaujoja/.*R
-gaujojo/POSX
-#gaujojosi/P                    # sngr. gaujojo/.*O
-gaujoti/TRSX
-#gaujotis/T                     # sngr. gaujoti/.*R
+gaujojasi/R
+besigaujoja/E
+nesigaujoja/E
+nebesigaujoja/E
+tesigaujoja/E
+tebesigaujoja/E
+gaujojosi/O
+besigaujojo/P
+nesigaujojo/P
+nebesigaujojo/P
+tesigaujojo/P
+tebesigaujojo/P
+gaujotis/R
+besigaujoti/T
+nesigaujoti/T
+nebesigaujoti/T
+tesigaujoti/T
+tebesigaujoti/T
 gauna/ERNX
 gauna/ERSX
 #gaunasi/E                      # sngr. gauna/.*R
@@ -17063,17 +17608,29 @@ gedauja/ENX
 gedauti/TNX
 gedavo/PNX
 gedëjo/PNX
-gëdëjo/POSX
-#gëdëjosi/P                     # sngr. gëdëjo/.*O
+gëdëjosi/O
+besigëdëjo/P
+nesigëdëjo/P
+nebesigëdëjo/P
+tesigëdëjo/P
+tebesigëdëjo/P
 gedësis/D
 gedëti/TNX
-gëdëti/TRSX
-#gëdëtis/T                      # sngr. gëdëti/.*R
+gëdëtis/R
+besigëdëti/T
+nesigëdëti/T
+nebesigëdëti/T
+tesigëdëti/T
+tebesigëdëti/T
 gedëtoja/D
 gedëtojas/D
 gedi/ENX
-#gëdi/ESX
-gëdi/O
+gëdisi/O
+besigëdi/E
+nesigëdi/E
+nebesigëdi/E
+tesigëdi/E
+tebesigëdi/E
 gëdija/ERSX
 #gëdijasi/E                     # sngr. gëdija/.*R
 gëdijo/POSX
@@ -17083,7 +17640,6 @@ gëdingas/BQN
 #gëdingumas/D                   # yra gëdingas/.*Q
 gëdino/PNX
 gëdinti/TNX
-#gëdisi/E                       # sngr. gëdi/O
 gëdyti/TRWNX
 gëdyti/TRWSX
 #gëdytis/T                      # sngr. gëdyti/.*R
@@ -17321,13 +17877,25 @@ genys/D
 genocidas/D
 gentainë/D
 gentainis/D
-gentina/ERSX
-#gentinasi/E                    # sngr. gentina/.*R
+gentinasi/R
+besigentina/E
+nesigentina/E
+nebesigentina/E
+tesigentina/E
+tebesigentina/E
 gentinis/BUN
-gentino/POSX
-#gentinosi/P                    # sngr. gentino/.*O
-gentinti/TRSX
-#gentintis/T                    # sngr. gentinti/.*R
+gentinosi/O
+besigentino/P
+nesigentino/P
+nebesigentino/P
+tesigentino/P
+tebesigentino/P
+gentintis/R
+besigentinti/T
+nesigentinti/T
+nebesigentinti/T
+tesigentinti/T
+tebesigentinti/T
 gentis/MI
 gentiðkas/BQN
 gentystë/D
@@ -17378,17 +17946,30 @@ gerbûvis/D
 gërë/PRSX
 gerëja/ENX
 gerëjo/PNX
-gërëjo/POSX
-#gërëjosi/P                     # sngr. gërëjo/.*O
+gërëjosi/O
+besigërëjo/P
+nesigërëjo/P
+nebesigërëjo/P
+tesigërëjo/P
+tebesigërëjo/P
 #gërësi/P                       # sngr. gërë/.*R
 gerëti/TNX
-gërëti/TRSX
-#gërëtis/T                      # sngr. gërëti/.*R
+gërëtis/R
+besigërëti/T
+nesigërëti/T
+nebesigërëti/T
+tesigërëti/T
+tebesigërëti/T
 gergëris/D
 gergþdë/PNX
 gergþdþia/ENX
 gergþti/TNX
-gëri/EOSX
+gërisi/O
+besigëri/E
+nesigëri/E
+nebesigëri/E
+tesigëri/E
+tebesigëri/E
 geria/ERSX
 #geriasi/E                      # sngr. geria/.*R
 geriatrija/D
@@ -17408,7 +17989,6 @@ gërioja/ENX
 gëriojo/PNX
 gërioti/TNX
 gëris/D
-#gërisi/E                       # sngr. gëri/.*O
 gerybë/D
 gërybë/D
 gerybinis/BUN
@@ -17513,12 +18093,18 @@ giedravo/PNX
 giedrëja/ENX
 giedrëjo/PNX
 giedrëti/TNX
-#giedrija/ESX
-giedrija/R
-#giedrijasi/E                   # sngr. giedrija/R
-giedrijo/O
-#giedrijo/PSX
-#giedrijosi/P                   # sngr. giedrijo/O
+giedrijasi/R
+besigiedrija/E
+nesigiedrija/E
+nebesigiedrija/E
+tesigiedrija/E
+tebesigiedrija/E
+giedrijosi/O
+besigiedrijo/P
+nesigiedrijo/P
+nebesigiedrijo/P
+tesigiedrijo/P
+tebesigiedrijo/P
 giedrina/ERNX
 giedrina/ERSX
 #giedrinasi/E                   # sngr. giedrina/.*R
@@ -17529,9 +18115,12 @@ giedrinti/TRNX
 giedrinti/TRSX
 #giedrintis/T                   # sngr. giedrinti/.*R
 giedris/D
-giedryti/R
-#giedryti/TWSX
-#giedrytis/T                    # sngr. giedryti/R
+giedrytis/R
+besigiedryti/TW
+nesigiedryti/TW
+nebesigiedryti/TW
+tesigiedryti/TW
+tebesigiedryti/TW
 giedroja/ENX
 giedrojo/PNX
 giedroti/TNX
@@ -17612,8 +18201,12 @@ gimë/PRNXacbedfhjmlonqprx
 giminaitë/D
 giminaitis/D
 giminë/D
-giminiavo/POSX
-#giminiavosi/P                  # sngr. giminiavo/.*O
+giminiavosi/O
+besigiminiavo/P
+nesigiminiavo/P
+nebesigiminiavo/P
+tesigiminiavo/P
+tebesigiminiavo/P
 giminina/ENX
 giminingas/BQN
 #giminingumas/D                 # yra giminingas/.*Q
@@ -17622,10 +18215,18 @@ giminino/PNX
 gimininti/TNX
 giminiðkas/BQN
 #giminiðkumas/D                 # yra giminiðkas/.*Q
-giminiuoja/ERSX
-#giminiuojasi/E                 # sngr. giminiuoja/.*R
-giminiuoti/TRSX
-#giminiuotis/T                  # sngr. giminiuoti/.*R
+giminiuojasi/R
+besigiminiuoja/E
+nesigiminiuoja/E
+nebesigiminiuoja/E
+tesigiminiuoja/E
+tebesigiminiuoja/E
+giminiuotis/R
+besigiminiuoti/T
+nesigiminiuoti/T
+nebesigiminiuoti/T
+tesigiminiuoti/T
+tebesigiminiuoti/T
 giminystë/D
 #giminumas/D                    # yra giminus/.*Q
 giminus/BQN
@@ -18323,14 +18924,26 @@ gluodina/ENX
 gluodino/PNX
 gluodinti/TNX
 gluodnas/BQN
-gluosniavo/POSX
-#gluosniavosi/P                 # sngr. gluosniavo/.*O
+gluosniavosi/O
+besigluosniavo/P
+nesigluosniavo/P
+nebesigluosniavo/P
+tesigluosniavo/P
+tebesigluosniavo/P
 gluosninis/BUN
 gluosnis/D
-gluosniuoja/ERSX
-#gluosniuojasi/E                # sngr. gluosniuoja/.*R
-gluosniuoti/TRSX
-#gluosniuotis/T                 # sngr. gluosniuoti/.*R
+gluosniuojasi/R
+besigluosniuoja/E
+nesigluosniuoja/E
+nebesigluosniuoja/E
+tesigluosniuoja/E
+tebesigluosniuoja/E
+gluosniuotis/R
+besigluosniuoti/T
+nesigluosniuoti/T
+nebesigluosniuoti/T
+tesigluosniuoti/T
+tebesigluosniuoti/T
 gluosnynë/D
 gluosvë/D
 glust
@@ -18462,14 +19075,30 @@ gobtuvas/D
 gobus/BQN
 goda/D
 godas/D
-godëja/ERSX
-#godëjasi/E                     # sngr. godëja/.*R
-godëjo/POSX
-#godëjosi/P                     # sngr. godëjo/.*O
-godëti/TRSX
-#godëtis/T                      # sngr. godëti/.*R
-godi/EOSX
-#godisi/E                       # sngr. godi/.*O
+godëjasi/R
+besigodëja/E
+nesigodëja/E
+nebesigodëja/E
+tesigodëja/E
+tebesigodëja/E
+godëjosi/O
+besigodëjo/P
+nesigodëjo/P
+nebesigodëjo/P
+tesigodëjo/P
+tebesigodëjo/P
+godëtis/R
+besigodëti/T
+nesigodëti/T
+nebesigodëti/T
+tesigodëti/T
+tebesigodëti/T
+godisi/O
+besigodi/E
+nesigodi/E
+nebesigodi/E
+tesigodi/E
+tebesigodi/E
 godiðë/D
 godiðius/D
 godlapis/D
@@ -19052,15 +19681,27 @@ griebti/TRNX
 griebti/TRSX
 #griebtis/T                     # sngr. griebti/.*R
 griebtuvas/D
-grieèia/ERSX
-#grieèiasi/E                    # sngr. grieèia/.*R
+grieèiasi/R
+besigrieèia/E
+nesigrieèia/E
+nebesigrieèia/E
+tesigrieèia/E
+tebesigrieèia/E
 grieja/ENX
 griejo/PNX
 grienë/D
-griesti/TRSX
-#griestis/T                     # sngr. griesti/.*R
-grietë/PRSX
-#grietësi/P                     # sngr. grietë/.*R
+griestis/R
+besigriesti/T
+nesigriesti/T
+nebesigriesti/T
+tesigriesti/T
+tebesigriesti/T
+grietësi/R
+besigrietë/P
+nesigrietë/P
+nebesigrietë/P
+tesigrietë/P
+tebesigrietë/P
 grieti/TNX
 grietinë/D
 grietinëlë/D
@@ -19514,12 +20155,24 @@ gubernatûra/D
 gubernija/D
 gubo/PNX
 guboja/D
-guboja/ERSX
-#gubojasi/E                     # sngr. guboja/.*R
-gubojo/POSX
-#gubojosi/P                     # sngr. gubojo/.*O
-guboti/TRSX
-#gubotis/T                      # sngr. guboti/.*R
+gubojasi/R
+besiguboja/E
+nesiguboja/E
+nebesiguboja/E
+tesiguboja/E
+tebesiguboja/E
+gubojosi/O
+besigubojo/P
+nesigubojo/P
+nebesigubojo/P
+tesigubojo/P
+tebesigubojo/P
+gubotis/R
+besiguboti/T
+nesiguboti/T
+nebesiguboti/T
+tesiguboti/T
+tebesiguboti/T
 gûbriavo/PONX
 gûbriavo/POSX
 #gûbriavosi/P                   # sngr. gûbriavo/.*O
@@ -19664,8 +20317,12 @@ gumbasvogûnis/D
 gumbauodis/D
 gumbavaisis/D
 gumbavapsvë/D
-gumbavo/POSX
-#gumbavosi/P                    # sngr. gumbavo/.*O
+gumbavosi/O
+besigumbavo/P
+nesigumbavo/P
+nebesigumbavo/P
+tesigumbavo/P
+tebesigumbavo/P
 gumbëja/ENX
 gumbëjo/PNX
 gumbenë/D
@@ -19679,11 +20336,19 @@ gumbsojo/PNX
 gumbsoti/TNX
 gumbsta/ENX
 gumbti/TNX
-gumbuoja/ERSX
-#gumbuojasi/E                   # sngr. gumbuoja/.*R
+gumbuojasi/R
+besigumbuoja/E
+nesigumbuoja/E
+nebesigumbuoja/E
+tesigumbuoja/E
+tebesigumbuoja/E
 gumbuotas/BQN
-gumbuoti/TRSX
-#gumbuotis/T                    # sngr. gumbuoti/.*R
+gumbuotis/R
+besigumbuoti/T
+nesigumbuoti/T
+nebesigumbuoti/T
+tesigumbuoti/T
+tebesigumbuoti/T
 gumburas/D
 gumburiuotas/BQN
 gumburys/D
@@ -19954,12 +20619,24 @@ gvërinti/TNX
 gvero/PNX
 gversta/ENX
 gverti/TNX
-gvieðë/PRSX
-#gvieðësi/P                     # sngr. gvieðë/.*R
-gvieðia/ERSX
-#gvieðiasi/E                    # sngr. gvieðia/.*R
-gvieðti/TRSX
-#gvieðtis/T                     # sngr. gvieðti/.*R
+gvieðësi/R
+besigvieðë/P
+nesigvieðë/P
+nebesigvieðë/P
+tesigvieðë/P
+tebesigvieðë/P
+gvieðiasi/R
+besigvieðia/E
+nesigvieðia/E
+nebesigvieðia/E
+tesigvieðia/E
+tebesigvieðia/E
+gvieðtis/R
+besigvieðti/T
+nesigvieðti/T
+nebesigvieðti/T
+tesigvieðti/T
+tebesigvieðti/T
 gvildas/D
 gvildë/YNX
 gvildena/ENX
@@ -29047,12 +29724,24 @@ ypatus/BQN
 yra/ENX
 yrë/PRSX
 #yrësi/P                        # sngr. yrë/.*R
-yrinëja/ERSX
-#yrinëjasi/E                    # sngr. yrinëja/.*R
-yrinëjo/POSX
-#yrinëjosi/P                    # sngr. yrinëjo/.*O
-yrinëti/TRSX
-#yrinëtis/T                     # sngr. yrinëti/.*R
+yrinëjasi/R
+besiyrinëja/E
+nesiyrinëja/E
+nebesiyrinëja/E
+tesiyrinëja/E
+tebesiyrinëja/E
+yrinëjosi/O
+besiyrinëjo/P
+nesiyrinëjo/P
+nebesiyrinëjo/P
+tesiyrinëjo/P
+tebesiyrinëjo/P
+yrinëtis/R
+besiyrinëti/T
+nesiyrinëti/T
+nebesiyrinëti/T
+tesiyrinëti/T
+tebesiyrinëti/T
 yrininkas/D
 yrininkë/D
 yris/D
@@ -29303,15 +29992,24 @@ jovaluotas/BQN
 jovaluoti/TNX
 jovaras/D
 jovë/PNX
-#jovija/ESX
-jovija/R
-#jovijasi/E                     # sngr. jovija/R
-jovijo/O
-#jovijo/PSX
-#jovijosi/P                     # sngr. jovijo/O
-jovyti/R
-#jovyti/TWSX
-#jovytis/T                      # sngr. jovyti/R
+jovijasi/R
+besijovija/E
+nesijovija/E
+nebesijovija/E
+tesijovija/E
+tebesijovija/E
+jovijosi/O
+besijovijo/P
+nesijovijo/P
+nebesijovijo/P
+tesijovijo/P
+tebesijovijo/P
+jovytis/R
+besijovyti/TW
+nesijovyti/TW
+nebesijovyti/TW
+tesijovyti/TW
+tebesijovyti/TW
 jubiliatas/D
 jubiliatë/D
 jubiliejinis/BUN
@@ -29529,10 +30227,18 @@ juokavo/PNX
 juokdarë/D
 juokdariðkas/BQN
 juokdarys/D
-juokë/R
-#juokësi/P                      # sngr. juokë/R
-juokia/R
-#juokiasi/E                     # sngr. juokia/R
+juokësi/R
+besijuokë/P
+nesijuokë/P
+nebesijuokë/P
+tesijuokë/P
+tebesijuokë/P
+juokiasi/R
+besijuokia/E
+nesijuokia/E
+nebesijuokia/E
+tesijuokia/E
+tebesijuokia/E
 juokina/ENX
 juokingas/BQN
 #juokingumas/D                  # yra juokingas/.*Q
@@ -29541,8 +30247,12 @@ juokinti/TNX
 juokom
 juokomis
 juoksmas/D
-juokti/R
-#juoktis/T                      # sngr. juokti/R
+juoktis/R
+besijuokti/T
+nesijuokti/T
+nebesijuokti/T
+tesijuokti/T
+tebesijuokti/T
 juokuoja/ENX
 juokuoti/TNX
 juosë/PRNX
@@ -29669,12 +30379,24 @@ kabarkðtino/PNX
 kabarkðtinti/TNX
 kabarkðtuoja/ENX
 kabarkðtuoti/TNX
-kabaroja/R
-#kabarojasi/ENX                 # sngr. kabaroja/R
-kabarojo/O
-#kabarojosi/PNX                 # sngr. kabarojo/O
-kabaroti/R
-#kabarotis/TNX                  # sngr. kabaroti/R
+kabarojasi/R
+besikabaroja/E
+nesikabaroja/E
+nebesikabaroja/E
+tesikabaroja/E
+tebesikabaroja/E
+kabarojosi/O
+besikabarojo/P
+nesikabarojo/P
+nebesikabarojo/P
+tesikabarojo/P
+tebesikabarojo/P
+kabarotis/R
+besikabaroti/T
+nesikabaroti/T
+nebesikabaroti/T
+tesikabaroti/T
+tebesikabaroti/T
 kabaruoja/ERNX
 #kabaruojasi/ENX                # sngr. kabaruoja/.*R
 kabaruoti/TRNX
@@ -29737,16 +30459,25 @@ kac
 kacnoja/ENX
 kacnojo/PNX
 kacnoti/TNX
-kaèiavo/O
-#kaèiavo/PSX
-#kaèiavosi/P                    # sngr. kaèiavo/O
+kaèiavosi/O
+besikaèiavo/P
+nesikaèiavo/P
+nebesikaèiavo/P
+tesikaèiavo/P
+tebesikaèiavo/P
 kaèiukas/D
-#kaèiuoja/ESX
-kaèiuoja/R
-#kaèiuojasi/E                   # sngr. kaèiuoja/R
-kaèiuoti/R
-#kaèiuoti/TSX
-#kaèiuotis/T                    # sngr. kaèiuoti/R
+kaèiuojasi/R
+besikaèiuoja/E
+nesikaèiuoja/E
+nebesikaèiuoja/E
+tesikaèiuoja/E
+tebesikaèiuoja/E
+kaèiuotis/R
+besikaèiuoti/T
+nesikaèiuoti/T
+nebesikaèiuoti/T
+tesikaèiuoti/T
+tebesikaèiuoti/T
 kaèpëdë/D
 kaèuogë/D
 kad
@@ -30319,15 +31050,27 @@ kamðtis/D
 kamðus/BQN
 kamuoja/ERSX
 #kamuojasi/E                    # sngr. kamuoja/.*R
-kamuoliavo/POSX
-#kamuoliavosi/P                 # sngr. kamuoliavo/.*O
+kamuoliavosi/O
+besikamuoliavo/P
+nesikamuoliavo/P
+nebesikamuoliavo/P
+tesikamuoliavo/P
+tebesikamuoliavo/P
 kamuolinis/BUN
 kamuoliðkas/BQN
-kamuoliuoja/ERSX
-#kamuoliuojasi/E                # sngr. kamuoliuoja/.*R
+kamuoliuojasi/R
+besikamuoliuoja/E
+nesikamuoliuoja/E
+nebesikamuoliuoja/E
+tesikamuoliuoja/E
+tebesikamuoliuoja/E
 kamuoliuotas/BQN
-kamuoliuoti/TRSX
-#kamuoliuotis/T                 # sngr. kamuoliuoti/.*R
+kamuoliuotis/R
+besikamuoliuoti/T
+nesikamuoliuoti/T
+nebesikamuoliuoti/T
+tesikamuoliuoti/T
+tebesikamuoliuoti/T
 kamuolys/D
 kamuolvabalis/D
 kamuoti/TRSX
@@ -30532,17 +31275,26 @@ kapotoja/D
 kapotojas/D
 kapralas/D
 kaprizas/D
-#kaprizija/ESX
-kaprizija/R
-#kaprizijasi/E                  # sngr. kaprizija/R
-kaprizijo/O
-#kaprizijo/PSX
-#kaprizijosi/P                  # sngr. kaprizijo/O
+kaprizijasi/R
+besikaprizija/E
+nesikaprizija/E
+nebesikaprizija/E
+tesikaprizija/E
+tebesikaprizija/E
+kaprizijosi/O
+besikaprizijo/P
+nesikaprizijo/P
+nebesikaprizijo/P
+tesikaprizijo/P
+tebesikaprizijo/P
 kaprizingas/BQN
 #kaprizingumas/D                # yra kaprizingas/.*Q
-kaprizyti/R
-#kaprizyti/TWSX
-#kaprizytis/T                   # sngr. kaprizyti/R
+kaprizytis/R
+besikaprizyti/TW
+nesikaprizyti/TW
+nebesikaprizyti/TW
+tesikaprizyti/TW
+tebesikaprizyti/TW
 kapronas/D
 kaproninis/BUN
 kapsas/D
@@ -31314,30 +32066,66 @@ kebëkðt
 kebëkðtelëja/ENX
 kebëkðtelëjo/PNX
 kebëkðtelëti/TNX
-kebelioja/ERSX
-#kebeliojasi/E                  # sngr. kebelioja/.*R
-kebeliojo/POSX
-#kebeliojosi/P                  # sngr. kebeliojo/.*O
-kebelioti/TRSX
-#kebeliotis/T                   # sngr. kebelioti/.*R
+kebeliojasi/R
+besikebelioja/E
+nesikebelioja/E
+nebesikebelioja/E
+tesikebelioja/E
+tebesikebelioja/E
+kebeliojosi/O
+besikebeliojo/P
+nesikebeliojo/P
+nebesikebeliojo/P
+tesikebeliojo/P
+tebesikebeliojo/P
+kebeliotis/R
+besikebelioti/T
+nesikebelioti/T
+nebesikebelioti/T
+tesikebelioti/T
+tebesikebelioti/T
 kebelis/D
 kebenëkas/D
-keberioja/ERSX
-#keberiojasi/E                  # sngr. keberioja/.*R
-keberiojo/POSX
-#keberiojosi/P                  # sngr. keberiojo/.*O
+keberiojasi/R
+besikeberioja/E
+nesikeberioja/E
+nebesikeberioja/E
+tesikeberioja/E
+tebesikeberioja/E
+keberiojosi/O
+besikeberiojo/P
+nesikeberiojo/P
+nebesikeberiojo/P
+tesikeberiojo/P
+tebesikeberiojo/P
 keberiokðt
 keberiokðtelëja/ENX
 keberiokðtelëjo/PNX
 keberiokðtelëti/TNX
-keberioti/TRSX
-#keberiotis/T                   # sngr. keberioti/.*R
-kebernoja/ERSX
-#kebernojasi/E                  # sngr. kebernoja/.*R
-kebernojo/POSX
-#kebernojosi/P                  # sngr. kebernojo/.*O
-kebernoti/TRSX
-#kebernotis/T                   # sngr. kebernoti/.*R
+keberiotis/R
+besikeberioti/T
+nesikeberioti/T
+nebesikeberioti/T
+tesikeberioti/T
+tebesikeberioti/T
+kebernojasi/R
+besikebernoja/E
+nesikebernoja/E
+nebesikebernoja/E
+tesikebernoja/E
+tebesikebernoja/E
+kebernojosi/O
+besikebernojo/P
+nesikebernojo/P
+nebesikebernojo/P
+tesikebernojo/P
+tebesikebernojo/P
+kebernotis/R
+besikebernoti/T
+nesikebernoti/T
+nebesikebernoti/T
+tesikebernoti/T
+tebesikebernoti/T
 kebëþa/D
 këbla/D
 keblëja/ENX
@@ -31434,13 +32222,25 @@ kekëja/ENX
 kekëjo/PNX
 kekëtas/BQN
 kekëti/TNX
-kekiavo/POSX
-#kekiavosi/P                    # sngr. kekiavo/.*O
+kekiavosi/O
+besikekiavo/P
+nesikekiavo/P
+nebesikekiavo/P
+tesikekiavo/P
+tebesikekiavo/P
 kekiðkas/BQN
-kekiuoja/ERSX
-#kekiuojasi/E                   # sngr. kekiuoja/.*R
-kekiuoti/TRSX
-#kekiuotis/T                    # sngr. kekiuoti/.*R
+kekiuojasi/R
+besikekiuoja/E
+nesikekiuoja/E
+nebesikekiuoja/E
+tesikekiuoja/E
+tebesikekiuoja/E
+kekiuotis/R
+besikekiuoti/T
+nesikekiuoti/T
+nebesikekiuoti/T
+tesikekiuoti/T
+tebesikekiuoti/T
 keksas/D
 këksojo/PNX
 këksoti/TNX
@@ -31686,20 +32486,44 @@ kepurëjo/PNX
 kepurëtas/BQN
 kepurëti/TNX
 kepurinis/BUN
-kepurnëja/ERSX
-#kepurnëjasi/E                  # sngr. kepurnëja/.*R
-kepurnëjo/POSX
-#kepurnëjosi/P                  # sngr. kepurnëjo/.*O
-kepurnëti/TRSX
-#kepurnëtis/T                   # sngr. kepurnëti/.*R
+kepurnëjasi/R
+besikepurnëja/E
+nesikepurnëja/E
+nebesikepurnëja/E
+tesikepurnëja/E
+tebesikepurnëja/E
+kepurnëjosi/O
+besikepurnëjo/P
+nesikepurnëjo/P
+nebesikepurnëjo/P
+tesikepurnëjo/P
+tebesikepurnëjo/P
+kepurnëtis/R
+besikepurnëti/T
+nesikepurnëti/T
+nebesikepurnëti/T
+tesikepurnëti/T
+tebesikepurnëti/T
 kepurninkas/D
 kepurninkë/D
-kepurnoja/ERSX
-#kepurnojasi/E                  # sngr. kepurnoja/.*R
-kepurnojo/POSX
-#kepurnojosi/P                  # sngr. kepurnojo/.*O
-kepurnoti/TRSX
-#kepurnotis/T                   # sngr. kepurnoti/.*R
+kepurnojasi/R
+besikepurnoja/E
+nesikepurnoja/E
+nebesikepurnoja/E
+tesikepurnoja/E
+tebesikepurnoja/E
+kepurnojosi/O
+besikepurnojo/P
+nesikepurnojo/P
+nebesikepurnojo/P
+tesikepurnojo/P
+tebesikepurnojo/P
+kepurnotis/R
+besikepurnoti/T
+nesikepurnoti/T
+nebesikepurnoti/T
+tesikepurnoti/T
+tebesikepurnoti/T
 kæra/ENX
 keramika/D
 keramikas/D
@@ -31839,12 +32663,24 @@ kervinti/TNX
 kervoja/ENX
 kervojo/PNX
 kervoti/TNX
-kësina/ERSX
-#kësinasi/E                     # sngr. kësina/.*R
-kësino/POSX
-#kësinosi/P                     # sngr. kësino/.*O
-kësinti/TRSX
-#kësintis/T                     # sngr. kësinti/.*R
+kësinasi/R
+besikësina/E
+nesikësina/E
+nebesikësina/E
+tesikësina/E
+tebesikësina/E
+kësinosi/O
+besikësino/P
+nesikësino/P
+nebesikësino/P
+tesikësino/P
+tebesikësino/P
+kësintis/R
+besikësinti/T
+nesikësinti/T
+nebesikësinti/T
+tesikësinti/T
+tebesikësinti/T
 këslas/D
 kæsmas/D
 kesnoja/ENX
@@ -32718,12 +33554,24 @@ kiûþta/ENX
 kiuþti/TNX
 kiverst
 kivirèas/D
-kivirèija/ERSX
-#kivirèijasi/E                  # sngr. kivirèija/.*R
-kivirèijo/POSX
-#kivirèijosi/P                  # sngr. kivirèijo/.*O
-kivirèyti/TRWSX
-#kivirèytis/T                   # sngr. kivirèyti/.*R
+kivirèijasi/R
+besikivirèija/E
+nesikivirèija/E
+nebesikivirèija/E
+tesikivirèija/E
+tebesikivirèija/E
+kivirèijosi/O
+besikivirèijo/P
+nesikivirèijo/P
+nebesikivirèijo/P
+tesikivirèijo/P
+tebesikivirèijo/P
+kivirèytis/R
+besikivirèyti/TW
+nesikivirèyti/TW
+nebesikivirèyti/TW
+tesikivirèyti/TW
+tebesikivirèyti/TW
 kivirènus/BQN
 kivykðèioja/ENX
 kivykðèiojo/PNX
@@ -33816,12 +34664,24 @@ kniauktelëja/ENX
 kniauktelëjo/PNX
 kniauktelëti/TNX
 kniaukti/TNX
-kniaupë/PRSX
-#kniaupësi/P                    # sngr. kniaupë/.*R
-kniaupia/ERSX
-#kniaupiasi/E                   # sngr. kniaupia/.*R
-kniaupti/TRSX
-#kniauptis/T                    # sngr. kniaupti/.*R
+kniaupësi/R
+besikniaupë/P
+nesikniaupë/P
+nebesikniaupë/P
+tesikniaupë/P
+tebesikniaupë/P
+kniaupiasi/R
+besikniaupia/E
+nesikniaupia/E
+nebesikniaupia/E
+tesikniaupia/E
+tebesikniaupia/E
+kniauptis/R
+besikniaupti/T
+nesikniaupti/T
+nebesikniaupti/T
+tesikniaupti/T
+tebesikniaupti/T
 kniausë/YNX
 kniausë/PRSX
 #kniausësi/P                    # sngr. kniausë/.*R
@@ -35122,14 +35982,26 @@ krekëti/TNX
 krekia/R
 #krekiasi/E                     # sngr. krekia/R
 krekina/ENX
-krëkina/ERSX
-#krëkinasi/E                    # sngr. krëkina/.*R
+krëkinasi/R
+besikrëkina/E
+nesikrëkina/E
+nebesikrëkina/E
+tesikrëkina/E
+tebesikrëkina/E
 krekino/PNX
-krëkino/POSX
-#krëkinosi/P                    # sngr. krëkino/.*O
+krëkinosi/O
+besikrëkino/P
+nesikrëkino/P
+nebesikrëkino/P
+tesikrëkino/P
+tebesikrëkino/P
 krekinti/TNX
-krëkinti/TRSX
-#krëkintis/T                    # sngr. krëkinti/.*R
+krëkintis/R
+besikrëkinti/T
+nesikrëkinti/T
+nebesikrëkinti/T
+tesikrëkinti/T
+tebesikrëkinti/T
 kreknoja/ENX
 kreknojo/PNX
 kreknoti/TNX
@@ -35755,12 +36627,24 @@ kuitë/PRNX
 kuitë/PRSX
 kuitena/D
 #kuitësi/P                      # sngr. kuitë/.*R
-kuitinëja/ERSX
-#kuitinëjasi/E                  # sngr. kuitinëja/.*R
-kuitinëjo/POSX
-#kuitinëjosi/P                  # sngr. kuitinëjo/.*O
-kuitinëti/TRSX
-#kuitinëtis/T                   # sngr. kuitinëti/.*R
+kuitinëjasi/R
+besikuitinëja/E
+nesikuitinëja/E
+nebesikuitinëja/E
+tesikuitinëja/E
+tebesikuitinëja/E
+kuitinëjosi/O
+besikuitinëjo/P
+nesikuitinëjo/P
+nebesikuitinëjo/P
+tesikuitinëjo/P
+tebesikuitinëjo/P
+kuitinëtis/R
+besikuitinëti/T
+nesikuitinëti/T
+nebesikuitinëti/T
+tesikuitinëti/T
+tebesikuitinëti/T
 kuitiniavo/PNX
 kuitiniuoja/ENX
 kuitiniuoti/TNX
@@ -35800,12 +36684,24 @@ kukis/D
 kuklëja/ENX
 kuklëjo/PNX
 kuklëti/TNX
-kuklina/ERSX
-#kuklinasi/E                    # sngr. kuklina/.*R
-kuklino/POSX
-#kuklinosi/P                    # sngr. kuklino/.*O
-kuklinti/TRSX
-#kuklintis/T                    # sngr. kuklinti/.*R
+kuklinasi/R
+besikuklina/E
+nesikuklina/E
+nebesikuklina/E
+tesikuklina/E
+tebesikuklina/E
+kuklinosi/O
+besikuklino/P
+nesikuklino/P
+nebesikuklino/P
+tesikuklino/P
+tebesikuklino/P
+kuklintis/R
+besikuklinti/T
+nesikuklinti/T
+nebesikuklinti/T
+tesikuklinti/T
+tebesikuklinti/T
 #kuklumas/D                     # yra kuklus/.*Q
 kuklus/BQN
 kukmedis/D
@@ -35949,14 +36845,26 @@ kumeèiavo/PNX
 kumelaitë/D
 kumeldëlë/D
 kumelë/D
-kumeliavo/POSX
-#kumeliavosi/P                  # sngr. kumeliavo/.*O
+kumeliavosi/O
+besikumeliavo/P
+nesikumeliavo/P
+nebesikumeliavo/P
+tesikumeliavo/P
+tebesikumeliavo/P
 kumelinga/DN                    # bûdvardis, bet tik mot. gim., tad labiau tinka /D
 kumeliukas/D
-kumeliuoja/ERSX
-#kumeliuojasi/E                 # sngr. kumeliuoja/.*R
-kumeliuoti/TRSX
-#kumeliuotis/T                  # sngr. kumeliuoti/.*R
+kumeliuojasi/R
+besikumeliuoja/E
+nesikumeliuoja/E
+nebesikumeliuoja/E
+tesikumeliuoja/E
+tebesikumeliuoja/E
+kumeliuotis/R
+besikumeliuoti/T
+nesikumeliuoti/T
+nebesikumeliuoti/T
+tesikumeliuoti/T
+tebesikumeliuoti/T
 kumelys/D
 kumelðë/D
 kumetë/D
@@ -36077,16 +36985,28 @@ kuokinëti/TNX
 kuokino/PNX
 kuokinti/TNX
 kuokðtas/D
-kuokðtavo/POSX
-#kuokðtavosi/P                  # sngr. kuokðtavo/.*O
+kuokðtavosi/O
+besikuokðtavo/P
+nesikuokðtavo/P
+nebesikuokðtavo/P
+tesikuokðtavo/P
+tebesikuokðtavo/P
 kuokðtinis/BUN
 kuokðtis/D
 kuokðtiðkas/BQN
-kuokðtuoja/ERSX
-#kuokðtuojasi/E                 # sngr. kuokðtuoja/.*R
+kuokðtuojasi/R
+besikuokðtuoja/E
+nesikuokðtuoja/E
+nebesikuokðtuoja/E
+tesikuokðtuoja/E
+tebesikuokðtuoja/E
 kuokðtuotas/BQN
-kuokðtuoti/TRSX
-#kuokðtuotis/T                  # sngr. kuokðtuoti/.*R
+kuokðtuotis/R
+besikuokðtuoti/T
+nesikuokðtuoti/T
+nebesikuokðtuoti/T
+tesikuokðtuoti/T
+tebesikuokðtuoti/T
 kuoktelëja/ENX
 kuoktelëjo/PNX
 kuoktelëti/TNX
@@ -36105,12 +37025,24 @@ kuopia/ERNX
 kuopininkas/D
 kuopininkë/D
 kuopinis/BUN
-kuopoja/ERSX
-#kuopojasi/E                    # sngr. kuopoja/.*R
-kuopojo/POSX
-#kuopojosi/P                    # sngr. kuopojo/.*O
-kuopoti/TRSX
-#kuopotis/T                     # sngr. kuopoti/.*R
+kuopojasi/R
+besikuopoja/E
+nesikuopoja/E
+nebesikuopoja/E
+tesikuopoja/E
+tebesikuopoja/E
+kuopojosi/O
+besikuopojo/P
+nesikuopojo/P
+nebesikuopojo/P
+tesikuopojo/P
+tebesikuopojo/P
+kuopotis/R
+besikuopoti/T
+nesikuopoti/T
+nebesikuopoti/T
+tesikuopoti/T
+tebesikuopoti/T
 kuopti/TRNX
 #kuoptis/T                      # sngr. kuopti/.*R
 kuoras/D
@@ -36177,13 +37109,25 @@ kupriukas/D
 kuprius/D
 kuprys/D
 kuproèius/D
-kuproja/ERSX
-#kuprojasi/E                    # sngr. kuproja/.*R
-kuprojo/POSX
-#kuprojosi/P                    # sngr. kuprojo/.*O
+kuprojasi/R
+besikuproja/E
+nesikuproja/E
+nebesikuproja/E
+tesikuproja/E
+tebesikuproja/E
+kuprojosi/O
+besikuprojo/P
+nesikuprojo/P
+nebesikuprojo/P
+tesikuprojo/P
+tebesikuprojo/P
 kuprotas/BQN
-kuproti/TRSX
-#kuprotis/T                     # sngr. kuproti/.*R
+kuprotis/R
+besikuproti/T
+nesikuproti/T
+nebesikuproti/T
+tesikuproti/T
+tebesikuproti/T
 #kupso/ENX
 kûpso/ENX
 kûpsojo/PNX
@@ -36545,12 +37489,24 @@ kvapingas/BQN
 kvapino/PNX
 kvapinti/TNX
 kvapnus/BQN
-kvapstë/PRSX
-#kvapstësi/P                    # sngr. kvapstë/.*R
-kvapstyti/TRWSX
-#kvapstytis/T                   # sngr. kvapstyti/.*R
-kvapsto/ERSX
-#kvapstosi/E                    # sngr. kvapsto/.*R
+kvapstësi/O
+besikvapstë/Y
+nesikvapstë/Y
+nebesikvapstë/Y
+tesikvapstë/Y
+tebesikvapstë/Y
+kvapstytis/R
+besikvapstyti/TW
+nesikvapstyti/TW
+nebesikvapstyti/TW
+tesikvapstyti/TW
+tebesikvapstyti/TW
+kvapstosi/R
+besikvapsto/E
+nesikvapsto/E
+nebesikvapsto/E
+tesikvapsto/E
+tebesikvapsto/E
 #kvapumas/D                     # yra kvapus/.*Q
 kvapus/BQN
 kvar
@@ -36615,17 +37571,24 @@ kvëkðlë/D
 kvëkðlys/D
 kvëkðtë/PNX
 kvëkðti/TNX
-#kvempë/PSX
-kvempë/R
-#kvempësi/P                     # sngr. kvempë/R
-#kvempia/ESX
-kvempia/R
-#kvempiasi/E
-#kvempiasi/E                    # sngr. kvempia/R
-kvempti/R
-#kvempti/TSX
-#kvemptis/T
-#kvemptis/T                     # sngr. kvempti/R
+kvempësi/R
+besikvempë/P
+nesikvempë/P
+nebesikvempë/P
+tesikvempë/P
+tebesikvempë/P
+kvempiasi/R
+besikvempia/E
+nesikvempia/E
+nebesikvempia/E
+tesikvempia/E
+tebesikvempia/E
+kvemptis/R
+besikvempti/T
+nesikvempti/T
+nebesikvempti/T
+tesikvempti/T
+tebesikvempti/T
 kvëpavo/PNX
 kvëpèioja/ENX
 kvëpèiojo/PNX
@@ -36768,12 +37731,24 @@ kvoklinëti/TNX
 kvorta/D
 kvorumas/D
 kvosti/TNX
-kvoðëjo/POSX
-#kvoðëjosi/P                    # sngr. kvoðëjo/.*O
-kvoðëti/TRSX
-#kvoðëtis/T                     # sngr. kvoðëti/.*R
-kvoði/EOSX
-#kvoðisi/E                      # sngr. kvoði/.*O
+kvoðëjosi/O
+besikvoðëjo/P
+nesikvoðëjo/P
+nebesikvoðëjo/P
+tesikvoðëjo/P
+tebesikvoðëjo/P
+kvoðëtis/R
+besikvoðëti/T
+nesikvoðëti/T
+nebesikvoðëti/T
+tesikvoðëti/T
+tebesikvoðëti/T
+kvoðisi/O
+besikvoði/E
+nesikvoði/E
+nebesikvoði/E
+tesikvoði/E
+tebesikvoði/E
 kvoðt
 kvoðtelëja/ENX
 kvoðtelëjo/PNX
@@ -37497,16 +38472,28 @@ lazginti/TNX
 #lazgumas/D                     # yra lazgus/.*Q
 lazgus/BQN
 laþas/D
-laþina/ERSX
-#laþinasi/E                     # sngr. laþina/.*R
+laþinasi/R
+besilaþina/E
+nesilaþina/E
+nebesilaþina/E
+tesilaþina/E
+tebesilaþina/E
 laþininkas/D
 laþininkë/D
 laþinis/BUN
 laþinys/D
-laþino/POSX
-#laþinosi/P                     # sngr. laþino/.*O
-laþinti/TRSX
-#laþintis/T                     # sngr. laþinti/.*R
+laþinosi/O
+besilaþino/P
+nesilaþino/P
+nebesilaþino/P
+tesilaþino/P
+tebesilaþino/P
+laþintis/R
+besilaþinti/T
+nesilaþinti/T
+nebesilaþinti/T
+tesilaþinti/T
+tebesilaþinti/T
 laþybininkas/D
 laþybininkë/D
 lëbauja/ENX
@@ -39063,15 +40050,24 @@ maitoti/TNX
 maitvabalis/D
 maitvanagis/D
 maiva/D
-#maivë/YSX
-maivë/O
-#maivësi/Y                      # sngr. maivë/O
-maivyti/R
-#maivyti/TWSX
-#maivytis/T                     # sngr. maivyti/R
-#maivo/ESX
-maivo/R
-#maivosi/E                      # sngr. maivo/R
+maivësi/O
+besimaivë/Y
+nesimaivë/Y
+nebesimaivë/Y
+tesimaivë/Y
+tebesimaivë/Y
+maivytis/R
+besimaivyti/TW
+nesimaivyti/TW
+nebesimaivyti/TW
+tesimaivyti/TW
+tebesimaivyti/TW
+maivosi/R
+besimaivo/E
+nesimaivo/E
+nebesimaivo/E
+tesimaivo/E
+tebesimaivo/E
 majas/D
 majë/D
 majonezas/D
@@ -39300,15 +40296,27 @@ manevruoti/TRSXcedfihkjlo
 manga/D
 mangamedis/D
 manganas/D
-mangë/YOSX
-#mangësi/Y                      # sngr. mangë/.*O
+mangësi/O
+besimangë/Y
+nesimangë/Y
+nebesimangë/Y
+tesimangë/Y
+tebesimangë/Y
 mangina/ENX
 mangino/PNX
 manginti/TNX
-mangyti/TRWSX
-#mangytis/T                     # sngr. mangyti/.*R
-mango/ERSX
-#mangosi/E                      # sngr. mango/.*R
+mangytis/R
+besimangyti/TW
+nesimangyti/TW
+nebesimangyti/TW
+tesimangyti/TW
+tebesimangyti/TW
+mangosi/R
+besimango/E
+nesimango/E
+nebesimango/E
+tesimango/E
+tebesimango/E
 mangutas/D
 maniakas/D
 maniakë/D
@@ -39447,12 +40455,24 @@ marksistë/D
 marksistinis/BUN
 marksistiðkas/BQN
 marksizmas/D
-markstë/PRSX
-#markstësi/P                    # sngr. markstë/.*R
-markstyti/TRWSX
-#markstytis/T                   # sngr. markstyti/.*R
-marksto/ERSX
-#markstosi/E                    # sngr. marksto/.*R
+markstësi/O
+besimarkstë/Y
+nesimarkstë/Y
+nebesimarkstë/Y
+tesimarkstë/Y
+tebesimarkstë/Y
+markstytis/R
+besimarkstyti/TW
+nesimarkstyti/TW
+nebesimarkstyti/TW
+tesimarkstyti/TW
+tebesimarkstyti/TW
+markstosi/R
+besimarksto/E
+nesimarksto/E
+nebesimarksto/E
+tesimarksto/E
+tebesimarksto/E
 #markumas/D                     # yra markus/.*Q
 markus/BQN
 #marlë/D                        # LKÞ nëra; yra lietuviu.zodziai
@@ -39998,12 +41018,24 @@ medþioti/TRNX
 medþiotoja/D
 medþiotojas/D
 megafonas/D
-mëgauja/R
-#mëgaujasi/E                    # sngr. mëgauja/R
-mëgauti/R
-#mëgautis/T                     # sngr. mëgauti/R
-mëgavo/O
-#mëgavosi/P                     # sngr. mëgavo/O
+mëgaujasi/R
+besimëgauja/E
+nesimëgauja/E
+nebesimëgauja/E
+tesimëgauja/E
+tebesimëgauja/E
+mëgautis/R
+besimëgauti/T
+nesimëgauti/T
+nebesimëgauti/T
+tesimëgauti/T
+tebesimëgauti/T
+mëgavosi/O
+besimëgavo/P
+nesimëgavo/P
+nebesimëgavo/P
+tesimëgavo/P
+tebesimëgavo/P
 mëgdþioja/ERNX
 #mëgdþiojasi/E                  # sngr. mëgdþioja/.*R
 mëgdþiojo/PONX
@@ -40057,14 +41089,26 @@ meilikauti/TNX
 meilikautoja/D
 meilikautojas/D
 meilikavo/PNX
-meilina/ERSX
-#meilinasi/E                    # sngr. meilina/.*R
+meilinasi/R
+besimeilina/E
+nesimeilina/E
+nebesimeilina/E
+tesimeilina/E
+tebesimeilina/E
 meilingas/BQN
 #meilingumas/D                  # yra meilingas/.*Q
-meilino/POSX
-#meilinosi/P                    # sngr. meilino/.*O
-meilinti/TRSX
-#meilintis/T                    # sngr. meilinti/.*R
+meilinosi/O
+besimeilino/P
+nesimeilino/P
+nebesimeilino/P
+tesimeilino/P
+tebesimeilino/P
+meilintis/R
+besimeilinti/T
+nesimeilinti/T
+nebesimeilinti/T
+tesimeilinti/T
+tebesimeilinti/T
 meilyti/TWNX
 #meilumas/D                     # yra meilus/.*Q
 meilus/BQN
@@ -42074,12 +43118,24 @@ naða/D
 #naðaujasi/E
 #naðautis/T
 #naðavosi/P
-naðina/ERSX
-#naðinasi/E                     # sngr. naðina/.*R
-naðino/POSX
-#naðinosi/P                     # sngr. naðino/.*O
-naðinti/TRSX
-#naðintis/T                     # sngr. naðinti/.*R
+naðinasi/R
+besinaðina/E
+nesinaðina/E
+nebesinaðina/E
+tesinaðina/E
+tebesinaðina/E
+naðinosi/O
+besinaðino/P
+nesinaðino/P
+nebesinaðino/P
+tesinaðino/P
+tebesinaðino/P
+naðintis/R
+besinaðinti/T
+nesinaðinti/T
+nebesinaðinti/T
+tesinaðinti/T
+tebesinaðinti/T
 naðlaièiauja/ENX
 naðlaièiauti/TNX
 naðlaièiavo/PNX
@@ -42623,16 +43679,28 @@ neðë/PRSX
 neðikauja/ENX
 neðikauti/TNX
 neðikavo/PNX
-nëðina/ERSX
-#nëðinasi/E                     # sngr. nëðina/.*R
+nëðinasi/R
+besinëðina/E
+nesinëðina/E
+nebesinëðina/E
+tesinëðina/E
+tebesinëðina/E
 neðinëja/ENX
 neðinëjo/PNX
 neðinëti/TNX
 neðinys/D
-nëðino/POSX
-#nëðinosi/P                     # sngr. nëðino/.*O
-nëðinti/TRSX
-#nëðintis/T                     # sngr. nëðinti/.*R
+nëðinosi/O
+besinëðino/P
+nesinëðino/P
+nebesinëðino/P
+tesinëðino/P
+tebesinëðino/P
+nëðintis/R
+besinëðinti/T
+nesinëðinti/T
+nebesinëðinti/T
+tesinëðinti/T
+tebesinëðinti/T
 neðioja/ERNX
 #neðiojasi/E                    # sngr. neðioja/.*R
 neðiojo/PONX
@@ -42753,12 +43821,24 @@ niaukë/PRSX
 #niaukësi/P                     # sngr. niaukë/.*R
 niaukia/ERSX
 #niaukiasi/E                    # sngr. niaukia/.*R
-niaukstë/PRSX
-#niaukstësi/P                   # sngr. niaukstë/.*R
-niaukstyti/TRWSX
-#niaukstytis/T                  # sngr. niaukstyti/.*R
-niauksto/ERSX
-#niaukstosi/E                   # sngr. niauksto/.*R
+niaukstësi/O
+besiniaukstë/Y
+nesiniaukstë/Y
+nebesiniaukstë/Y
+tesiniaukstë/Y
+tebesiniaukstë/Y
+niaukstytis/R
+besiniaukstyti/TW
+nesiniaukstyti/TW
+nebesiniaukstyti/TW
+tesiniaukstyti/TW
+tebesiniaukstyti/TW
+niaukstosi/R
+besiniauksto/E
+nesiniauksto/E
+nebesiniauksto/E
+tesiniauksto/E
+tebesiniauksto/E
 niaukti/TRSX
 #niauktis/T                     # sngr. niaukti/.*R
 #niaukumas/D                    # yra niaukus/.*Q
@@ -47610,18 +48690,30 @@ oþgauris/D
 oþgrybis/D
 oþiaragis/D
 oþiarûtis/D
-oþiavo/POSX
-#oþiavosi/P                     # sngr. oþiavo/.*O
+oþiavosi/O
+besioþiavo/P
+nesioþiavo/P
+nebesioþiavo/P
+tesioþiavo/P
+tebesioþiavo/P
 oþiaþolë/D
 oþinis/BUN
 oþiðkas/BQN
 #oþiðkumas/D                    # yra oþiðkas/.*Q
 oþiukas/D
-oþiuoja/ERSX
-#oþiuojasi/E                    # sngr. oþiuoja/.*R
+oþiuojasi/R
+besioþiuoja/E
+nesioþiuoja/E
+nebesioþiuoja/E
+tesioþiuoja/E
+tebesioþiuoja/E
 oþiuotas/BQN
-oþiuoti/TRSX
-#oþiuotis/T                     # sngr. oþiuoti/.*R
+oþiuotis/R
+besioþiuoti/T
+nesioþiuoti/T
+nebesioþiuoti/T
+tesioþiuoti/T
+tebesioþiuoti/T
 oþys/D
 oþka/D
 oþkabarzdis/BUN
@@ -47637,17 +48729,29 @@ oþkaragis/D
 oþkaroþë/D
 oþkatvinkë/D
 oþkavilnis/BUN
-oþkavo/POSX
-#oþkavosi/P                     # sngr. oþkavo/.*O
+oþkavosi/O
+besioþkavo/P
+nesioþkavo/P
+nebesioþkavo/P
+tesioþkavo/P
+tebesioþkavo/P
 oþkelis/D
 oþkena/D
 oþkiena/D
 oþkinga/DN                      # bdv., bet mot. gim., tad /D tinka labiau
 oþkiukas/D
-oþkuoja/ERSX
-#oþkuojasi/E                    # sngr. oþkuoja/.*R
-oþkuoti/TRSX
-#oþkuotis/T                     # sngr. oþkuoti/.*R
+oþkuojasi/R
+besioþkuoja/E
+nesioþkuoja/E
+nebesioþkuoja/E
+tesioþkuoja/E
+tebesioþkuoja/E
+oþkuotis/R
+besioþkuoti/T
+nesioþkuoti/T
+nebesioþkuoti/T
+tesioþkuoti/T
+tebesioþkuoti/T
 oþnugaris/D
 oþragë/D
 oþragis/D
@@ -48066,8 +49170,12 @@ paèiauþia/ENX
 paèiauþyti/TWNX
 paèiauþo/ENX
 paèiauþti/TNX
-paèiavo/POSX
-#paèiavosi/P                    # sngr. paèiavo/.*O
+paèiavosi/O
+besipaèiavo/P
+nesipaèiavo/P
+nebesipaèiavo/P
+tesipaèiavo/P
+tebesipaèiavo/P
 paèirkðti/TNX
 paèirpë/PNX
 paèirpia/ENX
@@ -48093,10 +49201,18 @@ paèiulpë/PNX
 paèiulpia/ENX
 paèiulpti/TNX
 paèiumpa/ENX
-paèiuoja/ERSX
-#paèiuojasi/E                   # sngr. paèiuoja/.*R
-paèiuoti/TRSX
-#paèiuotis/T                    # sngr. paèiuoti/.*R
+paèiuojasi/R
+besipaèiuoja/E
+nesipaèiuoja/E
+nebesipaèiuoja/E
+tesipaèiuoja/E
+tebesipaèiuoja/E
+paèiuotis/R
+besipaèiuoti/T
+nesipaèiuoti/T
+nebesipaèiuoti/T
+tesipaèiuoti/T
+tebesipaèiuoti/T
 paèiuoþë/PNX
 paèiuoþëja/ENX
 paèiuoþëjo/PNX
@@ -51818,15 +52934,27 @@ parðas/D
 parðavedë/D
 parðavo/PNX
 parðelis/D
-parðiavo/POSX
-#parðiavosi/P                   # sngr. parðiavo/.*O
+parðiavosi/O
+besiparðiavo/P
+nesiparðiavo/P
+nebesiparðiavo/P
+tesiparðiavo/P
+tebesiparðiavo/P
 parðiena/D
 parðinga/D                      # bdv., bet mot. gim., tad /D tinka labiau
 parðiukas/D
-parðiuoja/ERSX
-#parðiuojasi/E                  # sngr. parðiuoja/.*R
-parðiuoti/TRSX
-#parðiuotis/T                   # sngr. parðiuoti/.*R
+parðiuojasi/R
+besiparðiuoja/E
+nesiparðiuoja/E
+nebesiparðiuoja/E
+tesiparðiuoja/E
+tebesiparðiuoja/E
+parðiuotis/R
+besiparðiuoti/T
+nesiparðiuoti/T
+nebesiparðiuoti/T
+tesiparðiuoti/T
+tebesiparðiuoti/T
 parðuoja/ENX
 parðuoti/TNX
 partempë/PNX
@@ -55824,14 +56952,26 @@ paþvyravo/PNX
 paþvyruoja/ENX
 paþvyruoti/TNX
 peèialanda/D
-peèiavo/POSX
-#peèiavosi/P                    # sngr. peèiavo/.*O
+peèiavosi/O
+besipeèiavo/P
+nesipeèiavo/P
+nebesipeèiavo/P
+tesipeèiavo/P
+tebesipeèiavo/P
 peèiûkas/D
 peèiûkë/D
-peèiuoja/ERSX
-#peèiuojasi/E                   # sngr. peèiuoja/.*R
-peèiuoti/TRSX
-#peèiuotis/T                    # sngr. peèiuoti/.*R
+peèiuojasi/R
+besipeèiuoja/E
+nesipeèiuoja/E
+nebesipeèiuoja/E
+tesipeèiuoja/E
+tebesipeèiuoja/E
+peèiuotis/R
+besipeèiuoti/T
+nesipeèiuoti/T
+nebesipeèiuoti/T
+tesipeèiuoti/T
+tebesipeèiuoti/T
 peèius/D
 pëda/D
 pedagogas/D
@@ -55870,13 +57010,25 @@ pëduotas/BQN
 pëduoti/TNX
 pëdþia/D
 peikë/PNX
-peikëja/ERSX
-#peikëjasi/E                    # sngr. peikëja/.*R
-peikëjo/POSX
-#peikëjosi/P                    # sngr. peikëjo/.*O
+peikëjasi/R
+besipeikëja/E
+nesipeikëja/E
+nebesipeikëja/E
+tesipeikëja/E
+tebesipeikëja/E
+peikëjosi/O
+besipeikëjo/P
+nesipeikëjo/P
+nebesipeikëjo/P
+tesipeikëjo/P
+tebesipeikëjo/P
 peikena/D
-peikëti/TRSX
-#peikëtis/T                     # sngr. peikëti/.*R
+peikëtis/R
+besipeikëti/T
+nesipeikëti/T
+nebesipeikëti/T
+tesipeikëti/T
+tebesipeikëti/T
 peikia/ENX
 peikti/TNX
 peikûnas/D
@@ -58840,13 +59992,25 @@ pleðkinti/TNX
 pleðkus/BQN
 plëðo/ERNX
 plëðo/ERSX
-plëðoja/ERSX
-#plëðojasi/E                    # sngr. plëðoja/.*R
-plëðojo/POSX
-#plëðojosi/P                    # sngr. plëðojo/.*O
+plëðojasi/R
+besiplëðoja/E
+nesiplëðoja/E
+nebesiplëðoja/E
+tesiplëðoja/E
+tebesiplëðoja/E
+plëðojosi/O
+besiplëðojo/P
+nesiplëðojo/P
+nebesiplëðojo/P
+tesiplëðojo/P
+tebesiplëðojo/P
 #plëðosi/E                      # sngr. plëðo/.*R
-plëðoti/TRSX
-#plëðotis/T                     # sngr. plëðoti/.*R
+plëðotis/R
+besiplëðoti/T
+nesiplëðoti/T
+nebesiplëðoti/T
+tesiplëðoti/T
+tebesiplëðoti/T
 #plëðrumas/D                    # yra plëðrus/.*Q
 plëðrûnas/D
 plëðrûnë/D
@@ -59145,12 +60309,24 @@ pliuðkenti/TRNX
 #pliuðkentis/T                  # sngr. pliuðkenti/.*R
 pliuðkesys/D
 pliuðkëti/TNX
-pliuðkina/ERSX
-#pliuðkinasi/E                  # sngr. pliuðkina/.*R
-pliuðkino/POSX
-#pliuðkinosi/P                  # sngr. pliuðkino/.*O
-pliuðkinti/TRSX
-#pliuðkintis/T                  # sngr. pliuðkinti/.*R
+pliuðkinasi/R
+besipliuðkina/E
+nesipliuðkina/E
+nebesipliuðkina/E
+tesipliuðkina/E
+tebesipliuðkina/E
+pliuðkinosi/O
+besipliuðkino/P
+nesipliuðkino/P
+nebesipliuðkino/P
+tesipliuðkino/P
+tebesipliuðkino/P
+pliuðkintis/R
+besipliuðkinti/T
+nesipliuðkinti/T
+nebesipliuðkinti/T
+tesipliuðkinti/T
+tebesipliuðkinti/T
 pliuðkis/D
 pliuðko/PNX
 #pliuðkumas/D                   # yra pliuðkus/.*Q
@@ -61376,12 +62552,24 @@ praðinëti/TNX
 praðinëtoja/D
 praðinëtojas/D
 praðinys/D
-praðydina/ERSX
-#praðydinasi/E                  # sngr. praðydina/.*R
-praðydino/POSX
-#praðydinosi/P                  # sngr. praðydino/.*O
-praðydinti/TRSX
-#praðydintis/T                  # sngr. praðydinti/.*R
+praðydinasi/R
+besipraðydina/E
+nesipraðydina/E
+nebesipraðydina/E
+tesipraðydina/E
+tebesipraðydina/E
+praðydinosi/O
+besipraðydino/P
+nesipraðydino/P
+nebesipraðydino/P
+tesipraðydino/P
+tebesipraðydino/P
+praðydintis/R
+besipraðydinti/T
+nesipraðydinti/T
+nebesipraðydinti/T
+tesipraðydinti/T
+tebesipraðydinti/T
 praðymas/D
 praðyti/TRWSX
 #praðytis/T                     # sngr. praðyti/.*R
@@ -66711,14 +67899,26 @@ puðkenti/TRSX
 #puðkentis/T                    # sngr. puðkenti/.*R
 puðkëti/TNX
 puðkina/ENX
-pûðkina/ERSX
-#pûðkinasi/E                    # sngr. pûðkina/.*R
+pûðkinasi/R
+besipûðkina/E
+nesipûðkina/E
+nebesipûðkina/E
+tesipûðkina/E
+tebesipûðkina/E
 puðkino/PNX
-pûðkino/POSX
-#pûðkinosi/P                    # sngr. pûðkino/.*O
+pûðkinosi/O
+besipûðkino/P
+nesipûðkino/P
+nebesipûðkino/P
+tesipûðkino/P
+tebesipûðkino/P
 puðkinti/TNX
-pûðkinti/TRSX
-#pûðkintis/T                    # sngr. pûðkinti/.*R
+pûðkintis/R
+besipûðkinti/T
+nesipûðkinti/T
+nebesipûðkinti/T
+tesipûðkinti/T
+tebesipûðkinti/T
 puðko/PNX
 puðkuliavo/PNX
 puðkuliuoja/ENX
@@ -66811,12 +68011,24 @@ puþino/PNX
 puþinti/TNX
 rabarbaras/D
 rabinas/D
-rabþdina/ERSX
-#rabþdinasi/E                   # sngr. rabþdina/.*R
-rabþdino/POSX
-#rabþdinosi/P                   # sngr. rabþdino/.*O
-rabþdinti/TRSX
-#rabþdintis/T                   # sngr. rabþdinti/.*R
+rabþdinasi/R
+besirabþdina/E
+nesirabþdina/E
+nebesirabþdina/E
+tesirabþdina/E
+tebesirabþdina/E
+rabþdinosi/O
+besirabþdino/P
+nesirabþdino/P
+nebesirabþdino/P
+tesirabþdino/P
+tebesirabþdino/P
+rabþdintis/R
+besirabþdinti/T
+nesirabþdinti/T
+nebesirabþdinti/T
+tesirabþdinti/T
+tebesirabþdinti/T
 rachitas/D
 rachitikas/D
 rachitikë/D
@@ -67086,12 +68298,24 @@ raituolë/D
 raituolis/D
 raituonëlis/D
 raituþëlis/D
-raivë/YOSX
-#raivësi/Y                      # sngr. raivë/.*O
-raivyti/TRWSX
-#raivytis/T                     # sngr. raivyti/.*R
-raivo/ERSX
-#raivosi/E                      # sngr. raivo/.*R
+raivësi/O
+besiraivë/Y
+nesiraivë/Y
+nebesiraivë/Y
+tesiraivë/Y
+tebesiraivë/Y
+raivytis/R
+besiraivyti/TW
+nesiraivyti/TW
+nebesiraivyti/TW
+tesiraivyti/TW
+tebesiraivyti/TW
+raivosi/R
+besiraivo/E
+nesiraivo/E
+nebesiraivo/E
+tesiraivo/E
+tebesiraivo/E
 raivulys/D
 raizgalioja/ENX
 raizgaliojo/PNX
@@ -67720,17 +68944,29 @@ razeta/D
 razina/D
 raþas/D
 raþavo/PNX
-ràþë/YOSX
+ràþësi/O
+besiràþë/Y
+nesiràþë/Y
+nebesiràþë/Y
+tesiràþë/Y
+tebesiràþë/Y
 raþenis/D
-#ràþësi/Y                       # sngr. ràþë/.*O
 raþiena/D
 raþieninis/BUN
 raþinë/D
 raþinis/BUN
-ràþyti/TRWSX
-#ràþytis/T                      # sngr. ràþyti/.*R
-ràþo/ERSX
-#ràþosi/E                       # sngr. ràþo/.*R
+ràþytis/R
+besiràþyti/TW
+nesiràþyti/TW
+nebesiràþyti/TW
+tesiràþyti/TW
+tebesiràþyti/TW
+ràþosi/R
+besiràþo/E
+nesiràþo/E
+nebesiràþo/E
+tesiràþo/E
+tebesiràþo/E
 ràþulys/D
 raþuoja/ENX
 raþuoti/TNX
@@ -68333,16 +69569,28 @@ reumatizmas/D
 rëva/D
 revalvacija/D
 revanðas/D
-revanðavo/POSX
-#revanðavosi/P                  # sngr. revanðavo/.*O
+revanðavosi/O
+besirevanðavo/P
+nesirevanðavo/P
+nebesirevanðavo/P
+tesirevanðavo/P
+tebesirevanðavo/P
 revanðinis/BUN
 revanðistas/D
 revanðistë/D
 revanðizmas/D
-revanðuoja/ERSX
-#revanðuojasi/E                 # sngr. revanðuoja/.*R
-revanðuoti/TRSX
-#revanðuotis/T                  # sngr. revanðuoti/.*R
+revanðuojasi/R
+besirevanðuoja/E
+nesirevanðuoja/E
+nebesirevanðuoja/E
+tesirevanðuoja/E
+tebesirevanðuoja/E
+revanðuotis/R
+besirevanðuoti/T
+nesirevanðuoti/T
+nebesirevanðuoti/T
+tesirevanðuoti/T
+tebesirevanðuoti/T
 reveransas/D
 revidavo/PNX
 reviduoja/ENX
@@ -69042,12 +70290,24 @@ ropojo/PNX
 ropom
 ropomis
 ropoti/TNX
-ropðèia/R
-#ropðèiasi/ENX                  # sngr. ropðèia/R
-ropðtë/R
-#ropðtësi/PNX                   # sngr. ropðtë/R
-ropðti/R
-#ropðtis/TNX                    # sngr. ropðti/R
+ropðèiasi/R
+besiropðèia/E
+nesiropðèia/E
+nebesiropðèia/E
+tesiropðèia/E
+tebesiropðèia/E
+ropðtësi/R
+besiropðtë/P
+nesiropðtë/P
+nebesiropðtë/P
+tesiropðtë/P
+tebesiropðtë/P
+ropðtis/R
+besiropðti/T
+nesiropðti/T
+nebesiropðti/T
+tesiropðti/T
+tebesiropðti/T
 ropuonis/MI
 rotacija/D
 rotacinis/BUN
@@ -69295,14 +70555,26 @@ rumþti/TRNX
 runa/D
 runda/ENX
 rungas/D
-rungèioja/ERSX
-#rungèiojasi/E                  # sngr. rungèioja/.*R
-rungèiojo/POSX
-#rungèiojosi/P                  # sngr. rungèiojo/.*O
+rungèiojasi/R
+besirungèioja/E
+nesirungèioja/E
+nebesirungèioja/E
+tesirungèioja/E
+tebesirungèioja/E
+rungèiojosi/O
+besirungèiojo/P
+nesirungèiojo/P
+nebesirungèiojo/P
+tesirungèiojo/P
+tebesirungèiojo/P
 rungèiom
 rungèiomis
-rungèioti/TRSX
-#rungèiotis/T                   # sngr. rungèioti/.*R
+rungèiotis/R
+besirungèioti/T
+nesirungèioti/T
+nebesirungèioti/T
+tesirungèioti/T
+tebesirungèioti/T
 rungë/PRNX
 rungë/PRSX
 #rungësi/P                      # sngr. rungë/.*R
@@ -69334,12 +70606,24 @@ ruoðë/PRSX
 #ruoðësi/P                      # sngr. ruoðë/.*R
 ruoðia/ERSX
 #ruoðiasi/E                     # sngr. ruoðia/.*R
-ruoðinëja/ERSX
-#ruoðinëjasi/E                  # sngr. ruoðinëja/.*R
-ruoðinëjo/POSX
-#ruoðinëjosi/P                  # sngr. ruoðinëjo/.*O
-ruoðinëti/TRSX
-#ruoðinëtis/T                   # sngr. ruoðinëti/.*R
+ruoðinëjasi/R
+besiruoðinëja/E
+nesiruoðinëja/E
+nebesiruoðinëja/E
+tesiruoðinëja/E
+tebesiruoðinëja/E
+ruoðinëjosi/O
+besiruoðinëjo/P
+nesiruoðinëjo/P
+nebesiruoðinëjo/P
+tesiruoðinëjo/P
+tebesiruoðinëjo/P
+ruoðinëtis/R
+besiruoðinëti/T
+nesiruoðinëti/T
+nebesiruoðinëti/T
+tesiruoðinëti/T
+tebesiruoðinëti/T
 ruoðinys/D
 ruoðykla/D
 ruoðti/TRSX
@@ -70342,17 +71626,29 @@ savimyla/D
 savimyliðkas/BQN
 savimoka/D
 savimonë/D
-savina/ERSX
-#savinasi/E                     # sngr. savina/.*R
+savinasi/R
+besisavina/E
+nesisavina/E
+nebesisavina/E
+tesisavina/E
+tebesisavina/E
 savinauda/D
 savininkas/D
 savininkë/D
 savininkiðkas/BQN
 #savininkiðkumas/D              # yra savininkiðkas/.*Q
-savino/POSX
-#savinosi/P                     # sngr. savino/.*O
-savinti/TRSX
-#savintis/T                     # sngr. savinti/.*R
+savinosi/O
+besisavino/P
+nesisavino/P
+nebesisavino/P
+tesisavino/P
+tebesisavino/P
+savintis/R
+besisavinti/T
+nesisavinti/T
+nebesisavinti/T
+tesisavinti/T
+tebesisavinti/T
 saviraida/D
 saviraiðka/D
 saviraðis/BUN
@@ -71113,12 +72409,24 @@ siela/D
 sielininkas/D
 sielininkë/D
 sielis/D
-sieloja/ERSX
-#sielojasi/E                    # sngr. sieloja/.*R
-sielojo/POSX
-#sielojosi/P                    # sngr. sielojo/.*O
-sieloti/TRSX
-#sielotis/T                     # sngr. sieloti/.*R
+sielojasi/R
+besisieloja/E
+nesisieloja/E
+nebesisieloja/E
+tesisieloja/E
+tebesisieloja/E
+sielojosi/O
+besisielojo/P
+nesisielojo/P
+nebesisielojo/P
+tesisielojo/P
+tebesisielojo/P
+sielotis/R
+besisieloti/T
+nesisieloti/T
+nebesisieloti/T
+tesisieloti/T
+tebesisieloti/T
 sielovada/D
 sielvartas/D
 sielvartauja/ENX
@@ -71569,12 +72877,18 @@ skaidrë/D
 skaidrëja/ENX
 skaidrëjo/PNX
 skaidrëti/TNX
-#skaidrija/ESX
-skaidrija/R
-#skaidrijasi/E                  # sngr. skaidrija/R
-skaidrijo/O
-#skaidrijo/PSX
-#skaidrijosi/P                  # sngr. skaidrijo/O
+skaidrijasi/R
+besiskaidrija/E
+nesiskaidrija/E
+nebesiskaidrija/E
+tesiskaidrija/E
+tebesiskaidrija/E
+skaidrijosi/O
+besiskaidrijo/P
+nesiskaidrijo/P
+nebesiskaidrijo/P
+tesiskaidrijo/P
+tebesiskaidrijo/P
 skaidriklis/D
 skaidrina/ERNX
 #skaidrinasi/E                  # sngr. skaidrina/.*R
@@ -71586,9 +72900,12 @@ skaidrintoja/D
 skaidrintojas/D
 skaidrintuvas/D
 skaidris/D
-skaidryti/R
-#skaidryti/TWSX
-#skaidrytis/T                   # sngr. skaidryti/R
+skaidrytis/R
+besiskaidryti/TW
+nesiskaidryti/TW
+nebesiskaidryti/TW
+tesiskaidryti/TW
+tebesiskaidryti/TW
 skaidruma/D
 #skaidrumas/D                   # yra skaidrus/.*Q
 skaidrus/BQN
@@ -71914,12 +73231,24 @@ skautininkë/D
 skeèia/ERNX
 skeèia/ERSX
 #skeèiasi/E                     # sngr. skeèia/.*R
-skëèioja/ERSX
-#skëèiojasi/E                   # sngr. skëèioja/.*R
-skëèiojo/POSX
-#skëèiojosi/P                   # sngr. skëèiojo/.*O
-skëèioti/TRSX
-#skëèiotis/T                    # sngr. skëèioti/.*R
+skëèiojasi/R
+besiskëèioja/E
+nesiskëèioja/E
+nebesiskëèioja/E
+tesiskëèioja/E
+tebesiskëèioja/E
+skëèiojosi/O
+besiskëèiojo/P
+nesiskëèiojo/P
+nebesiskëèiojo/P
+tesiskëèiojo/P
+tebesiskëèiojo/P
+skëèiotis/R
+besiskëèioti/T
+nesiskëèioti/T
+nebesiskëèioti/T
+tesiskëèioti/T
+tebesiskëèioti/T
 skelbèioja/ENX
 skelbèiojo/PNX
 skelbèioti/TNX
@@ -72787,12 +74116,24 @@ slainikavo/PNX
 slalomas/D
 slalomininkas/D
 slalomininkë/D
-slambë/YOSX
-#slambësi/Y                     # sngr. slambë/.*O
-slambyti/TRWSX
-#slambytis/T                    # sngr. slambyti/.*R
-slambo/ERSX
-#slambosi/E                     # sngr. slambo/.*R
+slambësi/O
+besislambë/Y
+nesislambë/Y
+nebesislambë/Y
+tesislambë/Y
+tebesislambë/Y
+slambytis/R
+besislambyti/TW
+nesislambyti/TW
+nebesislambyti/TW
+tesislambyti/TW
+tebesislambyti/TW
+slambosi/R
+besislambo/E
+nesislambo/E
+nebesislambo/E
+tesislambo/E
+tebesislambo/E
 slampa/D
 slampina/ENX
 slampinëja/ENX
@@ -72882,13 +74223,25 @@ slavybë/D
 slëga/D
 slëgas/D
 slëgë/PRNX
-slëgëja/ERSX
-#slëgëjasi/E                    # sngr. slëgëja/.*R
-slëgëjo/POSX
-#slëgëjosi/P                    # sngr. slëgëjo/.*O
+slëgëjasi/R
+besislëgëja/E
+nesislëgëja/E
+nebesislëgëja/E
+tesislëgëja/E
+tebesislëgëja/E
+slëgëjosi/O
+besislëgëjo/P
+nesislëgëjo/P
+nebesislëgëjo/P
+tesislëgëjo/P
+tebesislëgëjo/P
 #slëgësi/P                      # sngr. slëgë/.*R
-slëgëti/TRSX
-#slëgëtis/T                     # sngr. slëgëti/.*R
+slëgëtis/R
+besislëgëti/T
+nesislëgëti/T
+nebesislëgëti/T
+tesislëgëti/T
+tebesislëgëti/T
 slegia/ERNX
 slëgia/R
 #slegiasi/E                     # sngr. slegia/.*R
@@ -73755,12 +75108,24 @@ solfedþiavo/PNX
 solfedþio
 solfedþiuoja/ENX
 solfedþiuoti/TNX
-solidarizavo/POSX
-#solidarizavosi/P               # sngr. solidarizavo/.*O
-solidarizuoja/ERSX
-#solidarizuojasi/E              # sngr. solidarizuoja/.*R
-solidarizuoti/TRSX
-#solidarizuotis/T               # sngr. solidarizuoti/.*R
+solidarizavosi/O
+besisolidarizavo/P
+nesisolidarizavo/P
+nebesisolidarizavo/P
+tesisolidarizavo/P
+tebesisolidarizavo/P
+solidarizuojasi/R
+besisolidarizuoja/E
+nesisolidarizuoja/E
+nebesisolidarizuoja/E
+tesisolidarizuoja/E
+tebesisolidarizuoja/E
+solidarizuotis/R
+besisolidarizuoti/T
+nesisolidarizuoti/T
+nebesisolidarizuoti/T
+tesisolidarizuoti/T
+tebesisolidarizuoti/T
 #solidarumas/D                  # yra solidarus/.*Q
 solidarus/BQN
 #solidumas/D                    # yra solidus/.*Q
@@ -73814,12 +75179,24 @@ sotus/BQN
 sotvaras/D
 sovietizmas/D
 sovietybë/D
-spaigliavo/POSX
-#spaigliavosi/P                 # sngr. spaigliavo/.*O
-spaigliuoja/ERSX
-#spaigliuojasi/E                # sngr. spaigliuoja/.*R
-spaigliuoti/TRSX
-#spaigliuotis/T                 # sngr. spaigliuoti/.*R
+spaigliavosi/O
+besispaigliavo/P
+nesispaigliavo/P
+nebesispaigliavo/P
+tesispaigliavo/P
+tebesispaigliavo/P
+spaigliuojasi/R
+besispaigliuoja/E
+nesispaigliuoja/E
+nebesispaigliuoja/E
+tesispaigliuoja/E
+tebesispaigliuoja/E
+spaigliuotis/R
+besispaigliuoti/T
+nesispaigliuoti/T
+nebesispaigliuoti/T
+tesispaigliuoti/T
+tebesispaigliuoti/T
 spaiglys/D
 spaliavo/PNX
 spalinë/D
@@ -74159,22 +75536,46 @@ spyna/D
 spyrë/PRNX
 spyrë/PRSX
 #spyrësi/P                      # sngr. spyrë/.*R
-spyriavo/POSX
-#spyriavosi/P                   # sngr. spyriavo/.*O
+spyriavosi/O
+besispyriavo/P
+nesispyriavo/P
+nebesispyriavo/P
+tesispyriavo/P
+tebesispyriavo/P
 spyrinëja/ENX
 spyrinëjo/PNX
 spyrinëti/TNX
-spyrioja/ERSX
-#spyriojasi/E                   # sngr. spyrioja/.*R
-spyriojo/POSX
-#spyriojosi/P                   # sngr. spyriojo/.*O
-spyrioti/TRSX
-#spyriotis/T                    # sngr. spyrioti/.*R
+spyriojasi/R
+besispyrioja/E
+nesispyrioja/E
+nebesispyrioja/E
+tesispyrioja/E
+tebesispyrioja/E
+spyriojosi/O
+besispyriojo/P
+nesispyriojo/P
+nebesispyriojo/P
+tesispyriojo/P
+tebesispyriojo/P
+spyriotis/R
+besispyrioti/T
+nesispyrioti/T
+nebesispyrioti/T
+tesispyrioti/T
+tebesispyrioti/T
 spyris/D
-spyriuoja/ERSX
-#spyriuojasi/E                  # sngr. spyriuoja/.*R
-spyriuoti/TRSX
-#spyriuotis/T                   # sngr. spyriuoti/.*R
+spyriuojasi/R
+besispyriuoja/E
+nesispyriuoja/E
+nebesispyriuoja/E
+tesispyriuoja/E
+tebesispyriuoja/E
+spyriuotis/R
+besispyriuoti/T
+nesispyriuoti/T
+nebesispyriuoti/T
+tesispyriuoti/T
+tebesispyriuoti/T
 spyrys/D
 spyruoklë/D
 spyruokliavo/PNX
@@ -74671,15 +76072,24 @@ staigus/BQN
 staipalioja/ENX
 staipaliojo/PNX
 staipalioti/TNX
-staipë/O
-#staipë/PSX
-#staipësi/Y                     # sngr. staipë/O
-staipyti/R
-#staipyti/TWSX
-#staipytis/T                    # sngr. staipyti/R
-#staipo/ESX
-staipo/R
-#staiposi/E                     # sngr. staipo/R
+staipësi/O
+besistaipë/Y
+nesistaipë/Y
+nebesistaipë/Y
+tesistaipë/Y
+tebesistaipë/Y
+staipytis/R
+besistaipyti/TW
+nesistaipyti/TW
+nebesistaipyti/TW
+tesistaipyti/TW
+tebesistaipyti/TW
+staiposi/R
+besistaipo/E
+nesistaipo/E
+nebesistaipo/E
+tesistaipo/E
+tebesistaipo/E
 stajerë/D
 stajeris/D
 staklininkas/D
@@ -75014,12 +76424,24 @@ stiegë/D
 stiegë/PNX
 stiegia/ENX
 stiegti/TNX
-stiepë/PRSX
-#stiepësi/P                     # sngr. stiepë/.*R
-stiepia/ERSX
-#stiepiasi/E                    # sngr. stiepia/.*R
-stiepti/TRSX
-#stieptis/T                     # sngr. stiepti/.*R
+stiepësi/R
+besistiepë/P
+nesistiepë/P
+nebesistiepë/P
+tesistiepë/P
+tebesistiepë/P
+stiepiasi/R
+besistiepia/E
+nesistiepia/E
+nebesistiepia/E
+tesistiepia/E
+tebesistiepia/E
+stieptis/R
+besistiepti/T
+nesistiepti/T
+nebesistiepti/T
+tesistiepti/T
+tebesistiepti/T
 stiga/D
 stigo/PNX
 stigti/TNX
@@ -78488,12 +79910,24 @@ sulpë/PNX
 sulpëjo/PNX
 sulpëti/TNX
 sulpia/ENX
-sulpstë/PRSX
-#sulpstësi/P                    # sngr. sulpstë/.*R
-sulpstyti/TRWSX
-#sulpstytis/T                   # sngr. sulpstyti/.*R
-sulpsto/ERSX
-#sulpstosi/E                    # sngr. sulpsto/.*R
+sulpstësi/O
+besisulpstë/Y
+nesisulpstë/Y
+nebesisulpstë/Y
+tesisulpstë/Y
+tebesisulpstë/Y
+sulpstytis/R
+besisulpstyti/TW
+nesisulpstyti/TW
+nebesisulpstyti/TW
+tesisulpstyti/TW
+tebesisulpstyti/TW
+sulpstosi/R
+besisulpsto/E
+nesisulpsto/E
+nebesisulpsto/E
+tesisulpsto/E
+tebesisulpsto/E
 sulpti/TNX
 sultekis/D
 sultenë/D
@@ -83654,14 +85088,26 @@ svaigulys/D
 #svaigumas/D                    # yra svaigus/.*Q
 svaigus/BQN
 svainë/D
-svainiavo/POSX
-#svainiavosi/P                  # sngr. svainiavo/.*O
+svainiavosi/O
+besisvainiavo/P
+nesisvainiavo/P
+nebesisvainiavo/P
+tesisvainiavo/P
+tebesisvainiavo/P
 svainija/D
 svainis/D
-svainiuoja/ERSX
-#svainiuojasi/E                 # sngr. svainiuoja/.*R
-svainiuoti/TRSX
-#svainiuotis/T                  # sngr. svainiuoti/.*R
+svainiuojasi/R
+besisvainiuoja/E
+nesisvainiuoja/E
+nebesisvainiuoja/E
+tesisvainiuoja/E
+tebesisvainiuoja/E
+svainiuotis/R
+besisvainiuoti/T
+nesisvainiuoti/T
+nebesisvainiuoti/T
+tesisvainiuoti/T
+tebesisvainiuoti/T
 svainystë/D
 svaitëjo/PNX
 svaitëti/TNX
@@ -83712,12 +85158,24 @@ svastika/D
 svebas/D
 svebë/D
 sveèias/D
-sveèiavo/POSX
-#sveèiavosi/P                   # sngr. sveèiavo/.*O
-sveèiuoja/ERSX
-#sveèiuojasi/E                  # sngr. sveèiuoja/.*R
-sveèiuoti/TRSX
-#sveèiuotis/T                   # sngr. sveèiuoti/.*R
+sveèiavosi/O
+besisveèiavo/P
+nesisveèiavo/P
+nebesisveèiavo/P
+tesisveèiavo/P
+tebesisveèiavo/P
+sveèiuojasi/R
+besisveèiuoja/E
+nesisveèiuoja/E
+nebesisveèiuoja/E
+tesisveèiuoja/E
+tebesisveèiuoja/E
+sveèiuotis/R
+besisveèiuoti/T
+nesisveèiuoti/T
+nebesisveèiuoti/T
+tesisveèiuoti/T
+tebesisveèiuoti/T
 sveikas/BQN
 sveikata/D
 sveikatina/ERNX
@@ -83954,14 +85412,26 @@ svotas/D
 ðachuoja/ENX
 ðachuoti/TNX
 ðaipas/D
-ðaipë/YOSX
-#ðaipësi/Y                      # sngr. ðaipë/.*O
-ðaipyti/TRWSX
-#ðaipytis/T                     # sngr. ðaipyti/.*R
-ðaipo/ERSX
+ðaipësi/O
+besiðaipë/Y
+nesiðaipë/Y
+nebesiðaipë/Y
+tesiðaipë/Y
+tebesiðaipë/Y
+ðaipytis/R
+besiðaipyti/TW
+nesiðaipyti/TW
+nebesiðaipyti/TW
+tesiðaipyti/TW
+tebesiðaipyti/TW
+ðaiposi/R
+besiðaipo/E
+nesiðaipo/E
+nebesiðaipo/E
+tesiðaipo/E
+tebesiðaipo/E
 ðaipokas/D
 ðaipokë/D
-#ðaiposi/E                      # sngr. ðaipo/.*R
 ðaipûnas/D
 ðaipûnë/D
 ðaipus/BQN
@@ -84878,13 +86348,25 @@ svotas/D
 ðimtmetinis/BUN
 ðimtmetis/D
 ðimtûnë/D
-ðina/R
-#ðinasi/E                       # sngr. ðina/R
+ðinasi/R
+besiðina/E
+nesiðina/E
+nebesiðina/E
+tesiðina/E
+tebesiðina/E
 ðindra/D
-ðino/O
-#ðinosi/P                       # sngr. ðino/O
-ðinti/R
-#ðintis/T                       # sngr. ðinti/R
+ðintis/R
+besiðinti/T
+nesiðinti/T
+nebesiðinti/T
+tesiðinti/T
+tebesiðinti/T
+ðynësi/R
+besiðynë/P
+nesiðynë/P
+nebesiðynë/P
+tesiðynë/P
+tebesiðynë/P
 ðiokiàdien
 ðiokiadienis/BUN
 ðiokiadieniðkas/BQN
@@ -85452,18 +86934,30 @@ svotas/D
 ðlioptelëjo/PNX
 ðlioptelëti/TNX
 ðlitë/D
-ðlitina/ERSX
-#ðlitinasi/E                    # sngr. ðlitina/.*R
+ðlitinasi/R
+besiðlitina/E
+nesiðlitina/E
+nebesiðlitina/E
+tesiðlitina/E
+tebesiðlitina/E
 ðlitinëja/ENX
 ðlitinëjo/PNX
 ðlitinëti/TNX
 ðlitiniavo/PNX
 ðlitiniuoja/ENX
 ðlitiniuoti/TNX
-ðlitino/POSX
-#ðlitinosi/P                    # sngr. ðlitino/.*O
-ðlitinti/TRSX
-#ðlitintis/T                    # sngr. ðlitinti/.*R
+ðlitinosi/O
+besiðlitino/P
+nesiðlitino/P
+nebesiðlitino/P
+tesiðlitino/P
+tebesiðlitino/P
+ðlitintis/R
+besiðlitinti/T
+nesiðlitinti/T
+nebesiðlitinti/T
+tesiðlitinti/T
+tebesiðlitinti/T
 ðlitis/MI
 ðliuksëjo/PNX
 ðliuksëti/TNX
@@ -85694,12 +87188,24 @@ svotas/D
 ðmëklinëjo/PNX
 ðmëklinëti/TNX
 ðmëkliðkas/BQN
-ðmëkloja/ERSX
-#ðmëklojasi/E                   # sngr. ðmëkloja/.*R
-ðmëklojo/POSX
-#ðmëklojosi/P                   # sngr. ðmëklojo/.*O
-ðmëkloti/TRSX
-#ðmëklotis/T                    # sngr. ðmëkloti/.*R
+ðmëklojasi/R
+besiðmëkloja/E
+nesiðmëkloja/E
+nebesiðmëkloja/E
+tesiðmëkloja/E
+tebesiðmëkloja/E
+ðmëklojosi/O
+besiðmëklojo/P
+nesiðmëklojo/P
+nebesiðmëklojo/P
+tesiðmëklojo/P
+tebesiðmëklojo/P
+ðmëklotis/R
+besiðmëkloti/T
+nesiðmëkloti/T
+nebesiðmëkloti/T
+tesiðmëkloti/T
+tebesiðmëkloti/T
 ðmëkðèioja/ENX
 ðmëkðèiojo/PNX
 ðmëkðèioti/TNX
@@ -86981,12 +88487,24 @@ talkino/PNX
 talkinti/TNX
 talkintoja/D
 talkintojas/D
-talkstë/PRSX
-#talkstësi/P                    # sngr. talkstë/.*R
-talkstyti/TRWSX
-#talkstytis/T                   # sngr. talkstyti/.*R
-talksto/ERSX
-#talkstosi/E                    # sngr. talksto/.*R
+talkstësi/O
+besitalkstë/Y
+nesitalkstë/Y
+nebesitalkstë/Y
+tesitalkstë/Y
+tebesitalkstë/Y
+talkstytis/R
+besitalkstyti/TW
+nesitalkstyti/TW
+nebesitalkstyti/TW
+tesitalkstyti/TW
+tebesitalkstyti/TW
+talkstosi/R
+besitalksto/E
+nesitalksto/E
+nebesitalksto/E
+tesitalksto/E
+tebesitalksto/E
 talkðo/ENX
 talkðojo/PNX
 talkðoti/TNX
@@ -87404,15 +88922,27 @@ tarpþinybinis/BUN
 tarpþvaigþdinis/BUN
 tarsena/D
 tarsnis/D
-tarstë/PRSX
+tarstësi/O
+besitarstë/Y
+nesitarstë/Y
+nebesitarstë/Y
+tesitarstë/Y
+tebesitarstë/Y
 tarstelëja/ENX
 tarstelëjo/PNX
 tarstelëti/TNX
-#tarstësi/P                     # sngr. tarstë/.*R
-tarstyti/TRWSX
-#tarstytis/T                    # sngr. tarstyti/.*R
-tarsto/ERSX
-#tarstosi/E                     # sngr. tarsto/.*R
+tarstytis/R
+besitarstyti/TW
+nesitarstyti/TW
+nebesitarstyti/TW
+tesitarstyti/TW
+tebesitarstyti/TW
+tarstosi/R
+besitarsto/E
+nesitarsto/E
+nebesitarsto/E
+tesitarsto/E
+tebesitarsto/E
 tarða/D
 tarðalas/D
 tarðë/YOSX
@@ -87701,12 +89231,24 @@ teikmuo/V
 teikti/TRNX
 teikti/TRSX
 #teiktis/T                      # sngr. teikti/.*R
-teirauja/ERSX
-#teiraujasi/E                   # sngr. teirauja/.*R
-teirauti/TRSX
-#teirautis/T                    # sngr. teirauti/.*R
-teiravo/POSX
-#teiravosi/P                    # sngr. teiravo/.*O
+teiraujasi/R
+besiteirauja/E
+nesiteirauja/E
+nebesiteirauja/E
+tesiteirauja/E
+tebesiteirauja/E
+teirautis/R
+besiteirauti/T
+nesiteirauti/T
+nebesiteirauti/T
+tesiteirauti/T
+tebesiteirauti/T
+teiravosi/O
+besiteiravo/P
+nesiteiravo/P
+nebesiteiravo/P
+tesiteiravo/P
+tebesiteiravo/P
 teisë/D
 teisë/PRNX
 teisë/PRSX
@@ -87757,8 +89299,12 @@ teka/ENX
 tekëjo/PNX
 tekëlas/D
 tekëti/TNX
-tekiavo/POSX
-#tekiavosi/P                    # sngr. tekiavo/.*O
+tekiavosi/O
+besitekiavo/P
+nesitekiavo/P
+nebesitekiavo/P
+tesitekiavo/P
+tebesitekiavo/P
 tekina/ERNX
 tekinas/BQN
 #tekinasi/E                     # sngr. tekina/.*R
@@ -87774,10 +89320,18 @@ tekintojas/D
 tekis/D
 tekit
 tekite
-tekiuoja/ERSX
-#tekiuojasi/E                   # sngr. tekiuoja/.*R
-tekiuoti/TRSX
-#tekiuotis/T                    # sngr. tekiuoti/.*R
+tekiuojasi/R
+besitekiuoja/E
+nesitekiuoja/E
+nebesitekiuoja/E
+tesitekiuoja/E
+tebesitekiuoja/E
+tekiuotis/R
+besitekiuoti/T
+nesitekiuoti/T
+nebesitekiuoti/T
+tesitekiuoti/T
+tebesitekiuoti/T
 tëkmë/D
 tëkmingas/BQN
 teko/PNX
@@ -88683,14 +90237,26 @@ tyèia/D
 tyèininkas/D
 tyèininkë/D
 tyèinis/BUN
-tyèioja/ERSX
-#tyèiojasi/E                    # sngr. tyèioja/.*R
-tyèiojo/POSX
-#tyèiojosi/P                    # sngr. tyèiojo/.*O
+tyèiojasi/R
+besityèioja/E
+nesityèioja/E
+nebesityèioja/E
+tesityèioja/E
+tebesityèioja/E
+tyèiojosi/O
+besityèiojo/P
+nesityèiojo/P
+nebesityèiojo/P
+tesityèiojo/P
+tebesityèiojo/P
 tyèiom
 tyèiomis
-tyèioti/TRSX
-#tyèiotis/T                     # sngr. tyèioti/.*R
+tyèiotis/R
+besityèioti/T
+nesityèioti/T
+nebesityèioti/T
+tesityèioti/T
+tebesityèioti/T
 tyka/D
 tykina/ENX
 tykinëja/ENX
@@ -90375,12 +91941,24 @@ tvanko/ENX
 tvankso/ENX
 tvanksojo/PNX
 tvanksoti/TNX
-tvankstë/PRSX
-#tvankstësi/P                   # sngr. tvankstë/.*R
-tvankstyti/TRWSX
-#tvankstytis/T                  # sngr. tvankstyti/.*R
-tvanksto/ERSX
-#tvankstosi/E                   # sngr. tvanksto/.*R
+tvankstësi/O
+besitvankstë/Y
+nesitvankstë/Y
+nebesitvankstë/Y
+tesitvankstë/Y
+tebesitvankstë/Y
+tvankstytis/R
+besitvankstyti/TW
+nesitvankstyti/TW
+nebesitvankstyti/TW
+tesitvankstyti/TW
+tebesitvankstyti/TW
+tvankstosi/R
+besitvanksto/E
+nesitvanksto/E
+nebesitvanksto/E
+tesitvanksto/E
+tebesitvanksto/E
 tvanktis/D
 tvankuma/D
 #tvankumas/D                    # yra tvankus/.*Q
@@ -90790,12 +92368,24 @@ ukrainietybë/D
 ûksmino/PNX
 ûksminti/TNX
 ûksmynas/D
-ûkstë/PRSX
-#ûkstësi/P                      # sngr. ûkstë/.*R
-ûkstyti/TRWSX
-#ûkstytis/T                     # sngr. ûkstyti/.*R
-ûksto/ERSX
-#ûkstosi/E                      # sngr. ûksto/.*R
+ûkstësi/O
+besiûkstë/Y
+nesiûkstë/Y
+nebesiûkstë/Y
+tesiûkstë/Y
+tebesiûkstë/Y
+ûkstytis/R
+besiûkstyti/TW
+nesiûkstyti/TW
+nebesiûkstyti/TW
+tesiûkstyti/TW
+tebesiûkstyti/TW
+ûkstosi/R
+besiûksto/E
+nesiûksto/E
+nebesiûksto/E
+tesiûksto/E
+tebesiûksto/E
 ukð
 ûkt
 ûktelëja/ENX
@@ -94948,10 +96538,18 @@ vadavo/POSX
 #vadavosi/P                     # sngr. vadavo/.*O
 vadë/D
 vadeiva/D
-vadëja/ERSX
-#vadëjasi/E                     # sngr. vadëja/.*R
-vadëjo/POSX
-#vadëjosi/P                     # sngr. vadëjo/.*O
+vadëjasi/R
+besivadëja/E
+nesivadëja/E
+nebesivadëja/E
+tesivadëja/E
+tebesivadëja/E
+vadëjosi/O
+besivadëjo/P
+nesivadëjo/P
+nebesivadëjo/P
+tesivadëjo/P
+tebesivadëjo/P
 vadelëja/ERNX
 #vadelëjasi/E                   # sngr. vadelëja/.*R
 vadelëjo/PONX
@@ -94964,8 +96562,12 @@ vadeliojo/PNX
 vadelioti/TNX
 vadeliotoja/D
 vadeliotojas/D
-vadëti/TRSX
-#vadëtis/T                      # sngr. vadëti/.*R
+vadëtis/R
+besivadëti/T
+nesivadëti/T
+nebesivadëti/T
+tesivadëti/T
+tebesivadëti/T
 vadina/ERNX
 #vadinasi/E                     # sngr. vadina/.*R
 vadinëja/ERNX
@@ -95054,16 +96656,36 @@ vagotuvas/D
 vagutë/D
 vai
 vaidas/D
-vaidena/ERSX
-#vaidenasi/E                    # sngr. vaidena/.*R
-vaideno/POSX
-#vaidenosi/P                    # sngr. vaideno/.*O
-vaidenti/TRSX
-#vaidentis/T                    # sngr. vaidenti/.*R
-vaidija/ERSX
-#vaidijasi/E                    # sngr. vaidija/.*R
-vaidijo/POSX
-#vaidijosi/P                    # sngr. vaidijo/.*O
+vaidenasi/R
+besivaidena/E
+nesivaidena/E
+nebesivaidena/E
+tesivaidena/E
+tebesivaidena/E
+vaidenosi/O
+besivaideno/P
+nesivaideno/P
+nebesivaideno/P
+tesivaideno/P
+tebesivaideno/P
+vaidentis/R
+besivaidenti/T
+nesivaidenti/T
+nebesivaidenti/T
+tesivaidenti/T
+tebesivaidenti/T
+vaidijasi/R
+besivaidija/E
+nesivaidija/E
+nebesivaidija/E
+tesivaidija/E
+tebesivaidija/E
+vaidijosi/O
+besivaidijo/P
+nesivaidijo/P
+nebesivaidijo/P
+tesivaidijo/P
+tebesivaidijo/P
 vaidila/D
 vaidilauja/ENX
 vaidilauti/TNX
@@ -95090,8 +96712,12 @@ vaidinuoklis/D
 vaidyba/D
 vaidybinis/BUN
 vaidybiðkas/BQN
-vaidyti/TRWSX
-#vaidytis/T                     # sngr. vaidyti/.*R
+vaidytis/R
+besivaidyti/TW
+nesivaidyti/TW
+nebesivaidyti/TW
+tesivaidyti/TW
+tebesivaidyti/TW
 vaidmuo/V
 vaiduoklë/D
 vaiduoklis/D
@@ -95102,8 +96728,12 @@ vaikaitis/D
 vaikas/D
 vaikavedë/D
 vaikavedys/D
-vaikavo/POSX
-#vaikavosi/P                    # sngr. vaikavo/.*O
+vaikavosi/O
+besivaikavo/P
+nesivaikavo/P
+nebesivaikavo/P
+tesivaikavo/P
+tebesivaikavo/P
 vaikë/YOSX
 vaikëja/ENX
 vaikëjo/PNX
@@ -95161,13 +96791,21 @@ vaikðtinëti/TRNX
 vaikðtinëtoja/D
 vaikðtinëtojas/D
 vaikðtokas/D
-vaikuoja/ERSX
-#vaikuojasi/E                   # sngr. vaikuoja/.*R
+vaikuojasi/R
+besivaikuoja/E
+nesivaikuoja/E
+nebesivaikuoja/E
+tesivaikuoja/E
+tebesivaikuoja/E
 vaikuotas/BQN
 vaikuotë/D
-vaikuoti/TRSX
+vaikuotis/R
+besivaikuoti/T
+nesivaikuoti/T
+nebesivaikuoti/T
+tesivaikuoti/T
+tebesivaikuoti/T
 vaikuotis/D
-#vaikuotis/T                    # sngr. vaikuoti/.*R
 vaikûzas/D
 vaikvaikis/D
 vailokas/D
@@ -95193,13 +96831,25 @@ vainoti/TRSX
 #vainotis/T                     # sngr. vainoti/.*R
 vainutiðkë/D
 vainutiðkis/D
-vaipë/YOSX
-#vaipësi/Y                      # sngr. vaipë/.*O
+vaipësi/O
+besivaipë/Y
+nesivaipë/Y
+nebesivaipë/Y
+tesivaipë/Y
+tebesivaipë/Y
 vaipysena/D
-vaipyti/TRWSX
-#vaipytis/T                     # sngr. vaipyti/.*R
-vaipo/ERSX
-#vaiposi/E                      # sngr. vaipo/.*R
+vaipytis/R
+besivaipyti/TW
+nesivaipyti/TW
+nebesivaipyti/TW
+tesivaipyti/TW
+tebesivaipyti/TW
+vaiposi/R
+besivaipo/E
+nesivaipo/E
+nebesivaipo/E
+tesivaipo/E
+tebesivaipo/E
 vaipûnas/D
 vaipûnë/D
 vairakotis/D
@@ -95227,8 +96877,12 @@ vaisgrauþë/D
 vaisgrauþis/D
 vaisiakûnis/D
 vaisiapûdis/D
-vaisiavo/POSX
-#vaisiavosi/P                   # sngr. vaisiavo/.*O
+vaisiavosi/O
+besivaisiavo/P
+nesivaisiavo/P
+nebesivaisiavo/P
+tesivaisiavo/P
+tebesivaisiavo/P
 vaisienë/D
 vaisina/ERNX
 #vaisinasi/E                    # sngr. vaisina/.*R
@@ -95245,10 +96899,18 @@ vaisinti/TRNX
 vaisintoja/D
 vaisintojas/D
 vaisiukas/D
-vaisiuoja/ERSX
-#vaisiuojasi/E                  # sngr. vaisiuoja/.*R
-vaisiuoti/TRSX
-#vaisiuotis/T                   # sngr. vaisiuoti/.*R
+vaisiuojasi/R
+besivaisiuoja/E
+nesivaisiuoja/E
+nebesivaisiuoja/E
+tesivaisiuoja/E
+tebesivaisiuoja/E
+vaisiuotis/R
+besivaisiuoti/T
+nesivaisiuoti/T
+nebesivaisiuoti/T
+tesivaisiuoti/T
+tebesivaisiuoti/T
 vaisius/D
 vaisykla/D
 vaisynas/D
@@ -96957,8 +98619,12 @@ verstuvinis/BUN
 verðelis/D
 verðena/D
 verðenikë/D
-verðiavo/POSX
-#verðiavosi/P                   # sngr. verðiavo/.*O
+verðiavosi/O
+besiverðiavo/P
+nesiverðiavo/P
+nebesiverðiavo/P
+tesiverðiavo/P
+tebesiverðiavo/P
 verðidë/D
 verðiena/D
 verðingas/BQN
@@ -96967,10 +98633,18 @@ verðininkë/D
 verðis/D
 verðiðkas/BQN
 verðiukas/D
-verðiuoja/ERSX
-#verðiuojasi/E                  # sngr. verðiuoja/.*R
-verðiuoti/TRSX
-#verðiuotis/T                   # sngr. verðiuoti/.*R
+verðiuojasi/R
+besiverðiuoja/E
+nesiverðiuoja/E
+nebesiverðiuoja/E
+tesiverðiuoja/E
+tebesiverðiuoja/E
+verðiuotis/R
+besiverðiuoti/T
+nesiverðiuoti/T
+nebesiverðiuoti/T
+tesiverðiuoti/T
+tebesiverðiuoti/T
 verta/ENX
 vertas/BQN
 vertë/D
@@ -97694,8 +99368,12 @@ vikiuotas/BQN
 vikmedis/D
 vikontas/D
 vikontienë/D
-vikravo/O
-#vikravosi/PNX                  # sngr. vikravo/O
+vikravosi/O
+besivikravo/P
+nesivikravo/P
+nebesivikravo/P
+tesivikravo/P
+tebesivikravo/P
 vikraþygis/D
 vikrëja/ENX
 vikrëjo/PNX
@@ -97711,12 +99389,20 @@ vikris/D
 #vikrumas/D                     # yra vikrus/.*Q
 vikrûnas/D
 vikrûnë/D
-vikruoja/R
-#vikruojasi/ENX                 # sngr. vikruoja/R
+vikruojasi/R
+besivikruoja/E
+nesivikruoja/E
+nebesivikruoja/E
+tesivikruoja/E
+tebesivikruoja/E
 vikruolë/D
 vikruolis/D
-vikruoti/R
-#vikruotis/TNX                  # sngr. vikruoti/R
+vikruotis/R
+besivikruoti/T
+nesivikruoti/T
+nebesivikruoti/T
+tesivikruoti/T
+tebesivikruoti/T
 vikrus/BQN
 viksëjo/PNX
 viksena/ENX
@@ -99252,12 +100938,24 @@ zvimbuliuoti/TNX
 þaidykla/D
 þaidþia/ENX
 þaiginys/D
-þaimija/ERSX
-#þaimijasi/E                    # sngr. þaimija/.*R
-þaimijo/POSX
-#þaimijosi/P                    # sngr. þaimijo/.*O
-þaimyti/TRWSX
-#þaimytis/T                     # sngr. þaimyti/.*R
+þaimijasi/R
+besiþaimija/E
+nesiþaimija/E
+nebesiþaimija/E
+tesiþaimija/E
+tebesiþaimija/E
+þaimijosi/O
+besiþaimijo/P
+nesiþaimijo/P
+nebesiþaimijo/P
+tesiþaimijo/P
+tebesiþaimijo/P
+þaimytis/R
+besiþaimyti/TW
+nesiþaimyti/TW
+nebesiþaimyti/TW
+tesiþaimyti/TW
+tebesiþaimyti/TW
 þaislas/D
 þaislininkas/D
 þaislininkë/D
@@ -99734,13 +101432,25 @@ zvimbuliuoti/TNX
 þenklus/BQN
 þenðenis/D
 þentas/D
-þentina/ERSX
-#þentinasi/E                    # sngr. þentina/.*R
+þentinasi/R
+besiþentina/E
+nesiþentina/E
+nebesiþentina/E
+tesiþentina/E
+tebesiþentina/E
 þentinë/D
-þentino/POSX
-#þentinosi/P                    # sngr. þentino/.*O
-þentinti/TRSX
-#þentintis/T                    # sngr. þentinti/.*R
+þentinosi/O
+besiþentino/P
+nesiþentino/P
+nebesiþentino/P
+tesiþentino/P
+tebesiþentino/P
+þentintis/R
+besiþentinti/T
+nesiþentinti/T
+nebesiþentinti/T
+tesiþentinti/T
+tebesiþentinti/T
 þëralas/D
 þëravo/PNX
 þërë/PRNX
@@ -100568,17 +102278,28 @@ zvimbuliuoti/TNX
 þmogþudþiauti/TNX
 þmogþudþiavo/PNX
 þmona/D
-þmonëjo/POSX
-#þmonëjosi/P                    # sngr. þmonëjo/.*O
-þmonëti/TRSX
-#þmonëtis/T                     # sngr. þmonëti/.*R
-#þmoni/ESX
-þmoni/O
+þmonëjosi/O
+besiþmonëjo/P
+nesiþmonëjo/P
+nebesiþmonëjo/P
+tesiþmonëjo/P
+tebesiþmonëjo/P
+þmonëtis/R
+besiþmonëti/T
+nesiþmonëti/T
+nebesiþmonëti/T
+tesiþmonëti/T
+tebesiþmonëti/T
+þmonisi/O
+besiþmoni/E
+nesiþmoni/E
+nebesiþmoni/E
+tesiþmoni/E
+tebesiþmoni/E
 þmonija/D
 þmonina/ENX
 þmonino/PNX
 þmoninti/TNX
-#þmonisi/E                      # sngr. þmoni/O
 þmoniðkas/BQN
 þmoniðkëja/ENX
 þmoniðkëjo/PNX
@@ -100761,14 +102482,26 @@ zvimbuliuoti/TNX
 þvagulis/D
 þvagutis/D
 þvaigþdë/D
-þvaigþdëja/ERSX
-#þvaigþdëjasi/E                 # sngr. þvaigþdëja/.*R
-þvaigþdëjo/POSX
-#þvaigþdëjosi/P                 # sngr. þvaigþdëjo/.*O
+þvaigþdëjasi/R
+besiþvaigþdëja/E
+nesiþvaigþdëja/E
+nebesiþvaigþdëja/E
+tesiþvaigþdëja/E
+tebesiþvaigþdëja/E
+þvaigþdëjosi/O
+besiþvaigþdëjo/P
+nesiþvaigþdëjo/P
+nebesiþvaigþdëjo/P
+tesiþvaigþdëjo/P
+tebesiþvaigþdëjo/P
 þvaigþdëlapis/D
 þvaigþdëtas/BQN
-þvaigþdëti/TRSX
-#þvaigþdëtis/T                  # sngr. þvaigþdëti/.*R
+þvaigþdëtis/R
+besiþvaigþdëti/T
+nesiþvaigþdëti/T
+nebesiþvaigþdëti/T
+tesiþvaigþdëti/T
+tebesiþvaigþdëti/T
 þvaigþdininkas/D
 þvaigþdininkë/D
 þvaigþdinis/BUN

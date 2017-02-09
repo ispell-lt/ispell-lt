@@ -1,430 +1,432 @@
 
 
-	   Lietuviškųjų ispell afiksų taisyklių README failas
+           Lietuviškųjų ispell afiksų taisyklių README failas
 
-	   	      	     Albertas Agejevas <alga@uosis.mif.vu.lt>
-			     Gediminas Paulauskas <menesis@delfi.lt>
-	
-			     Parašyta: 2002 m. balandžio 6 d.
+                             Albertas Agejevas <alga@uosis.mif.vu.lt>
+                             Gediminas Paulauskas <menesis@delfi.lt>
 
-         		     Laimonas Vėbra <laimonas.vebra@gmail.com>
-			     (perrašyta, papildyta: 2010, 2011 m.)
+                             Parašyta: 2002 m. balandžio 6 d.
+
+                             Laimonas Vėbra <laimonas.vebra@gmail.com>
+                             (perrašyta, papildyta: 2010, 2011 m.)
 
 
 
-	1. Kas tai yra ir kam to reikia?
+        1. Kas tai yra ir kam to reikia?
 
-	ispell – tai rašybos tikrinimo programa (spell checker), originaliai 
-skirta veikti *nix sistemose, tačiau ilgainiui paplitusi aibėje OS, naudojama 
-įvairių teksto rengimo programų. ispell veikia gana paprastai: nagrinėjamas 
+        ispell – tai rašybos tikrinimo programa (spell checker), originaliai
+skirta veikti *nix sistemose, tačiau ilgainiui paplitusi aibėje OS, naudojama
+įvairių teksto rengimo programų. ispell veikia gana paprastai: nagrinėjamas
 kiekvienas teksto žodis ir tikrinama, ar toks žodis yra teisingas (yra žodyne).
 Jei nėra, tai siūlomi panašiausi žodžiai iš žodyno. Siūlomi („panašūs“) žodžiai
-gaunami kaitaliojant nežinomo žodžio gretimas raides vietomis, keičiant kokią 
+gaunami kaitaliojant nežinomo žodžio gretimas raides vietomis, keičiant kokią
 nors vieną raidę kita, įterpiant tarpą ar kokią raidę.
 
-	Lietuvių kalba yra sintetinio tipo, tad žodžio reikšmė priklauso nuo jo
-formos, priešingai nei anglų arba vokiečių kalbose, vadinamose analitinėmis, 
-kuriose žodžio reikšmė išaiškėja tiktai kitų žodžių kontekste. Dėl to 
-analitinėse kalbose pakanka tiesiog tikrinti kiekvieną žodį žodyne, o 
-sintetinių kalbų (lietuvių kalbos) atveju žodynuose nesaugomos/nepateikiamos 
-visos įmanomos žodžių formos, nes jos vargiai juose išsitektų (žodynai būtų 
+        Lietuvių kalba yra sintetinio tipo, tad žodžio reikšmė priklauso nuo jo
+formos, priešingai nei anglų arba vokiečių kalbose, vadinamose analitinėmis,
+kuriose žodžio reikšmė išaiškėja tiktai kitų žodžių kontekste. Dėl to
+analitinėse kalbose pakanka tiesiog tikrinti kiekvieną žodį žodyne, o
+sintetinių kalbų (lietuvių kalbos) atveju žodynuose nesaugomos/nepateikiamos
+visos įmanomos žodžių formos, nes jos vargiai juose išsitektų (žodynai būtų
 milžiniški). Pavyzdžiui, lietuvių kalboje yra tokios kaitomos žodžių klasės:
 
-	* daiktavardis (kaitomas skaičiais ir linksniais);
-	* būdvardis (giminė, skaičius ir linksnis);
-	   - įvardžiuotinės formos (giminė, skaičius ir linksnis);
-	   - laipsnių formos (giminė, skaičius ir linksnis);
-	   - ypatybės su priesaga -umas (gerumas) (skaičius ir linksnis);
-	   - vediniai su priesaga -okas -a (giminė, skaičius ir linksnis);
-	* įvardis (giminė, skaičius, linksnis);
-	   - keletas įvardžiuotinių formų;
-	* veiksmažodis
-	   - asmenuojamos formos: esamasis, būsimasis, būtasis kartinis ir
-	     dažninis laikai;
-	   - dalyviai, jų įvardžiuotinės formos, pusdalyviai (giminė, skaičius
-	     ir linksnis)
-	* skaitvardis (kiekiniai ir kelintiniai, kurie panašūs atitinkamai į
-	  daiktavardžius ir būdvardžius)
+        * daiktavardis (kaitomas skaičiais ir linksniais);
+        * būdvardis (giminė, skaičius ir linksnis);
+           - įvardžiuotinės formos (giminė, skaičius ir linksnis);
+           - laipsnių formos (giminė, skaičius ir linksnis);
+           - ypatybės su priesaga -umas (gerumas) (skaičius ir linksnis);
+           - vediniai su priesaga -okas -a (giminė, skaičius ir linksnis);
+        * įvardis (giminė, skaičius, linksnis);
+           - keletas įvardžiuotinių formų;
+        * veiksmažodis
+           - asmenuojamos formos: esamasis, būsimasis, būtasis kartinis ir
+             dažninis laikai;
+           - dalyviai, jų įvardžiuotinės formos, pusdalyviai (giminė, skaičius
+             ir linksnis)
+        * skaitvardis (kiekiniai ir kelintiniai, kurie panašūs atitinkamai į
+          daiktavardžius ir būdvardžius)
 
 Taigi, daug įvairių formų su priešdėliais, dalelytėmis – *daug* žodžių.
-*LABAI* daug žodžių. Įdomiosios statistikos dėlei galima paminėti, kad 
+*LABAI* daug žodžių. Įdomiosios statistikos dėlei galima paminėti, kad
 dabartinį (2011 m; ispell-lt v1.2.1+) žodyną sudarytų virš 36 mln. žodžių,
 o žodynas būtų virš ~550 MB dydžio, t.y. nepraktiškai didelis, milžiniškas.
 
 Laimei, ispell programa moka kaityti (generuoti) žodžius, pagal tam tikras
-(afiksų) taisykles. Tai reiškia, kad žodyne įrašomas tiktai šakninis 
-žodis su žymomis, kurios apibrėžia/nurodo, kaip tas žodis bus kaitomas 
-(linksniai, laipsniai, laikai, kt. formos, priešdėliai, kt.). 
-lietuviu.aff faile ir yra aprašytos šios kaitybos/kūrybos, t.y. afiksų 
+(afiksų) taisykles. Tai reiškia, kad žodyne įrašomas tiktai šakninis
+žodis su žymomis, kurios apibrėžia/nurodo, kaip tas žodis bus kaitomas
+(linksniai, laipsniai, laikai, kt. formos, priešdėliai, kt.).
+lietuviu.aff faile ir yra aprašytos šios kaitybos/kūrybos, t.y. afiksų
 taisyklės.
 
-	ispell-lt afiksų taisyklėmis negeneruojami deminutyvai (mažybiniai 
-priesaginiai dariniai); tokie žodžiai turi būti būti nurodomi žodyne kaip 
-atskiri žodžiai. Dauguma įvardžių ir skaitvardžių jau yra žodyne 
+        ispell-lt afiksų taisyklėmis negeneruojami deminutyvai (mažybiniai
+priesaginiai dariniai); tokie žodžiai turi būti būti nurodomi žodyne kaip
+atskiri žodžiai. Dauguma įvardžių ir skaitvardžių jau yra žodyne
 (lietuviu.ivairus).
-	ispell programos licencija yra "The BSD Licence". Tokia pati licencija 
+        ispell programos licencija yra "The BSD Licence". Tokia pati licencija
 taikoma ir ispell-lt afiksų/žodynų failams.
 
 
 
-	2. Kas yra ispell-lt pakete, kaip ir kur tai veikia
+        2. Kas yra ispell-lt pakete, kaip ir kur tai veikia
 
 ./etc aplanke yra įvairūs susijusių (aspell, myspell, mozilla, openoffice)
 paketų konfigūracijos, šablonų ir kt. failai.
 
 ./tools aplanke yra įvairios programos, skirtos ispell-lt paketui formuoti
-ir kt. apdorojimo reikmėms. 
+ir kt. apdorojimo reikmėms.
 
-./tools/utils aplanke yra įvairios pagalbinės programos, palengvinančios 
-žodynų rinkimą, tikrinimą, tvarkymą, tačiau nebūtinos pagrindinėms ispell-lt 
+./tools/utils aplanke yra įvairios pagalbinės programos, palengvinančios
+žodynų rinkimą, tikrinimą, tvarkymą, tačiau nebūtinos pagrindinėms ispell-lt
 formavimo ir apdorojimo reikmėms.
 
-./ (šakniniame) aplanke yra ispell-lt žodynų ir kt. (licencijos, readme, 
+./ (šakniniame) aplanke yra ispell-lt žodynų ir kt. (licencijos, readme,
 makefile, etc) failai.
 
 ispell-lt žodynai:
 
-	* lietuviu.ivpk (Dabartinės lietuvių kalbos žodynas; parengtas LKI, o
-	  į ispell-lt pateko IVPK dėka);
+        * lietuviu.ivpk (Dabartinės lietuvių kalbos žodynas; parengtas LKI, o
+          į ispell-lt pateko IVPK dėka);
 
-	* lietuviu.veiksmazodziai (tik veiksmažodžiai);
+        * lietuviu.veiksmazodziai (tik veiksmažodžiai);
 
-	* lietuviu.zodziai (būdv., daikt., kt., bet ne veiksmažodžiai);
+        * lietuviu.zodziai (būdv., daikt., kt., bet ne veiksmažodžiai);
 
-	* lietuviu.ivairus (įvardžiai, dalelytės, nekaitomi, kt. išimtys)
+        * lietuviu.ivairus (įvardžiai, dalelytės, nekaitomi, kt. išimtys)
 
-	* lietuviu.jargon (žargono žodynas; čia patenka neteiktinos, 
-	  netaisyklingos, bet vartojamos formos);
+        * lietuviu.jargon (žargono žodynas; čia patenka neteiktinos,
+          netaisyklingos, bet vartojamos formos);
 
-	* lietuviu.vardai (vietovardžiai, vardai, pavardės)
+        * lietuviu.vardai (vietovardžiai, vardai, pavardės)
 
 
 
-	2.1 Reikalavimai:
+        2.1 Reikalavimai:
 
 OS: Linux (*nix), MS Windows (Cygwin/GnuWin/MinGW-Msys).
-ispell (v3.1+), python (v2.3+), gnu make (v3.78+). 
+ispell (v3.1+), python (v2.3+), gnu make (v3.78+).
 aspell žodynui parengti: Perl (v5.6+), aspell (v0.50+).
 
 
 MS Windows aplinkoje:
-    * Cygwin (rekomenduotina); turi viską, ko reikia ar gali prireikti: 
+    * Cygwin (rekomenduotina); turi viską, ko reikia ar gali prireikti:
         shell, core/file utils, ispell, aspell, t.t.
 
     ARBA alternatyvos:
-	
+
     * GnuWin32:
-      ispell-lt reikmėms reikės šių paketų: 
+      ispell-lt reikmėms reikės šių paketų:
         Make, CoreUtils, FindUtils, Sed, Grep, Tar, Zip, Gzip, Cpio, Libiconv.
-      
-      2011 m GnuWin32 neplatina/nesiūlo jokio shell'o, todėl papildomai 
-      būtina įsidiegti win32 bash/zsh/kt. ir atitinkamai nustatyti Makefile 
-      SHELL kintamojo reikšmę į exe failo pavadinimą (pvz.: SHELL = zsh.exe). 
-      Būtina sąlyga – programa turi būti randama aplinkos kintamąjame PATH 
-      nurodytuose aplankuose. Kita išeitis – pervadinti shell programą į 
-      sh.exe ir perkelti šį failą į GnuWin32 'bin' (ar kitą, nurodytą PATH 
+
+      2011 m GnuWin32 neplatina/nesiūlo jokio shell'o, todėl papildomai
+      būtina įsidiegti win32 bash/zsh/kt. ir atitinkamai nustatyti Makefile
+      SHELL kintamojo reikšmę į exe failo pavadinimą (pvz.: SHELL = zsh.exe).
+      Būtina sąlyga – programa turi būti randama aplinkos kintamąjame PATH
+      nurodytuose aplankuose. Kita išeitis – pervadinti shell programą į
+      sh.exe ir perkelti šį failą į GnuWin32 'bin' (ar kitą, nurodytą PATH
       kelyje) aplanką.
 
      * MinGW Msys: http://www.mingw.org/ (mingw-get)
-       ispell-lt reikmėms reikės šių paketų: 
-       msys-core, core-utils, make, findutils, libintl, libiconv, regex, 
+       ispell-lt reikmėms reikės šių paketų:
+       msys-core, core-utils, make, findutils, libintl, libiconv, regex,
        termcap, bash/dash, sed, grep, less, tar, zip, gzip.
 
-      - unix shell win32: 
+      - unix shell win32:
           win-zsh (http://zsh-nt.sourceforge.net);
-	  MinGW-Msys bash/dash; 	
+          MinGW-Msys bash/dash;
           zsh.exe (http://unxutils.sourceforge.net/UnxUpdates.zip).
 
       - ispell win32:
           ispell v3.3.02 platinama su W32Tex:
-	  http://w32tex.org/w32/ispell-3.3.02-w32.tar.xz
-	  (v3.1.20, v3.2.06 galima rasti w32TeX ftp archyvuose ar webarchive)
+          http://w32tex.org/w32/ispell-3.3.02-w32.tar.xz
+          (v3.1.20, v3.2.06 galima rasti w32TeX ftp archyvuose ar webarchive)
 
 
-	Afiksų taisyklėse žymos yra didžiosios ir mažosios raidės, todėl 
-ispell turi būti sukompiliuotas su MASKBITS opcija lygia 64; kai ši reikšmė 
+        Afiksų taisyklėse žymos yra didžiosios ir mažosios raidės, todėl
+ispell turi būti sukompiliuotas su MASKBITS opcija lygia 64; kai ši reikšmė
 (tam tikrais atvejais galbūt ir numatytoji) yra 32, tai didžiosios ir mažosios
-raidės neskiriamos, todėl tokia ispell programa veiks nekorektiškai su 
-ispell-lt parengtais žodynais. Norėdami patikrinti, su kokia MASKBITS reikšme 
+raidės neskiriamos, todėl tokia ispell programa veiks nekorektiškai su
+ispell-lt parengtais žodynais. Norėdami patikrinti, su kokia MASKBITS reikšme
 buvo sukompiliuota ispell programa, surinkite komandą:
 
-	ispell -vv | grep MASKBITS
+        ispell -vv | grep MASKBITS
 
 
 
-	3. Kaip pasidaryti ispell žodyną, arba ką daryti su ispell-lt
+        3. Kaip pasidaryti ispell žodyną, arba ką daryti su ispell-lt
 
 Norėdami tiesiog pasidaryti lietuvių kalbos ispell žodyną, surinkite:
 
-	make
-	
-ir iš visų žodynų, įskaitant ir lietuviu.jargon (!), bus pagaminti 
-žodynų failai: 
-	lietuviu.hash – ispell hash formato žodynas (skirtas ispell programai)
+        make
 
-	build/myspell/{lt_LT.aff, lt_LT.dic} -- myspell afiksų taisyklės ir 
-	žodynas (t.y. skirta Myspell, Mozilla, OpenOffice ir kt.)
+ir iš visų žodynų, įskaitant ir lietuviu.jargon (!), bus pagaminti
+žodynų failai:
+        lietuviu.hash – ispell hash formato žodynas (skirtas ispell programai)
 
-Norėdami įdiegti ispell (lietuviu.hash) žodyną sistemoje (globaliai), 
+        build/myspell/{lt_LT.aff, lt_LT.dic} -- myspell afiksų taisyklės ir
+        žodynas (t.y. skirta Myspell, Mozilla, OpenOffice ir kt.)
+
+Norėdami įdiegti ispell (lietuviu.hash) žodyną sistemoje (globaliai),
 surinkite:
-	
-	make install
 
-Jei nusprendėte, kad 'lietuviu' žodynas bus pagrindinis, tai galite į savo 
+        make install
+
+Jei nusprendėte, kad 'lietuviu' žodynas bus pagrindinis, tai galite į savo
 ar sistemos profilio failą (~/.bash_profile, ~/.profile, /etc/profile) įrašyti:
-	DICTIONARY=lietuviu
-ir nebereikės kiekvienąsyk ispell programai nurodyti žodyno -d raktu. Debian 
+        DICTIONARY=lietuviu
+ir nebereikės kiekvienąsyk ispell programai nurodyti žodyno -d raktu. Debian
 Linux tai daroma paprasčiau -- root naudotojo teisėmis surinkite komandą:
-	/usr/sbin/update-ispell-dictionary
+        /usr/sbin/update-ispell-dictionary
 
 
-Norėdami išvalyti aplanką, t.y. pašalinti failus, kurie buvo sukurti 
+Norėdami išvalyti aplanką, t.y. pašalinti failus, kurie buvo sukurti
 ankstesnių make komandų, surinkite:
 
-	make clean
+        make clean
 
 
-	4. Kaip naudotis ispell programa?
+        4. Kaip naudotis ispell programa?
 
-Reikėtų paskaitinėti (o kilus neaiškumams ar norint pasigilinti -- skaityti) 
+Reikėtų paskaitinėti (o kilus neaiškumams ar norint pasigilinti -- skaityti)
 ispell manual'us:
 
-	man ispell
-	man 5 ispell
+        man ispell
+        man 5 ispell
 
 tačiau pagrindinės, parankiausios komandos yra šios:
 
-	* (interaktyvus) žodžių tikrinimas; skaitoma po žodį arba prašoma 
-	  įvesti žodžius ir (pa)tikrinama ar jie yra teisingi, parodoma iš
-	  kokio šakninio žodyno žodžio yra padaryti žodžiai, pasiūlomi 
-	  artimiausi korektiški variantai:
+        * (interaktyvus) žodžių tikrinimas; skaitoma po žodį arba prašoma
+          įvesti žodžius ir (pa)tikrinama ar jie yra teisingi, parodoma iš
+          kokio šakninio žodyno žodžio yra padaryti žodžiai, pasiūlomi
+          artimiausi korektiški variantai:
 
-		ispell -d {zodynas} {tekstinis_failas}
+                ispell -d {zodynas} {tekstinis_failas}
 
-	  Pvz.: 
-		`ispell -d lietuviu` 
-		(įvedami žodžiai tikrinami interaktyviai; naudojamas 
-		 globalus žodynas 'lietuviu')
+          Pvz.:
+                `ispell -d lietuviu`
+                (įvedami žodžiai tikrinami interaktyviai; naudojamas
+                 globalus žodynas 'lietuviu')
 
-		`ispell -d lietuviu rašliava.txt` 
-		(interaktyvus ir nuoseklus 'rašliava.txt' teksto tikrinimas; 
-		 naudojamas globalus žodynas 'lietuviu')
-
-
-		`ispell -d ./some/local/path/lietuviu rašliava.txt` 
-		(interaktyvus ir nuoseklus 'rašliava.txt' teksto tikrinimas; 
-		 naudojamas *lokalus*, nurodytame aplanke/vietoje esantis 
-		 žodynas, t.y. hash failas 'lietuviu.hash'. Pažymėtina, kad 
-		 nurodant žodyno vietą ir pavadinimą, nebūtina pridėti/nurodyti 
-		 failo plėtinį '.hash')
+                `ispell -d lietuviu rašliava.txt`
+                (interaktyvus ir nuoseklus 'rašliava.txt' teksto tikrinimas;
+                 naudojamas globalus žodynas 'lietuviu')
 
 
-		`cat words.txt | ispell -d lietuviu [-a]` 
-		(neinteraktyviai patikrinami 'words.txt' žodžiai; vienas žodis 
-		 eilutėje. Išsamiau: man ispell)
-				
-
-		Jei norite patikrinti utf-8 koduotės tekstą, tai galite 
-		pasinaudoti lietuviu.aff faile aprašytomis formatavimo 
-		taisyklėmis būtent šiam atvejui (t.y.: utf-8 -> iso-8859-13):
-
-		`ispell -d lietuviu -Tutf8 rašliava.txt`
-		(-T nurodo naudoti 'utf8' pavadintą formatuoklį, kuris 
-		 aprašytas 'lietuviu.aff'. Tokiu atveju, tekste esančios UTF-8 
-		 koduotės LT abėcėlės raidės yra verčiamos į ISO-8859-13 
-		 koduotę, t.y. tokią, kokią supranta ispell programa; 
-		 tikrinimas tampa įmanomas be pačio/viso teksto konvertavimo 
-		 iš vienos koduotės į kitą)
-		
-		
-		Ankstesni (~2000 m) paaiškinimai, galbūt nebeaktualūs:
-
-		KSpell biblioteka -T raktą bando, kai yra nurodyta (tokia)
- 		koduotė KSpell konfigūravimo parinktyse.  Jei ispell su tokiu 
-		raktu neveikia, bandoma be (-T) rakto, tikintis, kad ispell 
-		žodyno ir tikrinamo teksto koduotės sutaps. Po to yra 
-		atitinkamai perkoduojama pagal KDE lokalės nustatymus. 
-		KDE 2.2.1, konfigūruojant KSpell, dar galima nurodyti 
-		žodyno koduotę (ISO-8859-13); ankstesnėse versijose, deja, 
-		tokios galimybės nėra.
+                `ispell -d ./some/local/path/lietuviu rašliava.txt`
+                (interaktyvus ir nuoseklus 'rašliava.txt' teksto tikrinimas;
+                 naudojamas *lokalus*, nurodytame aplanke/vietoje esantis
+                 žodynas, t.y. hash failas 'lietuviu.hash'. Pažymėtina, kad
+                 nurodant žodyno vietą ir pavadinimą, nebūtina pridėti/nurodyti
+                 failo plėtinį '.hash')
 
 
-		Analogiškai (tikrinant įvairių koduočių tekstą), galite 
-		tikrinamą tekstą iš pradžių perversti į ISO-8859-13 (CP1257)
-		koduotę:
-		
-		 # ISO-8859-4 -> ISO-8859-13 (CP1257)
-		`cat rašliava.txt | 
-		 iconv -f "ISO-8859-4" -t "ISO-8859-13" > rašliava.txt.cp1257`
-
-		 # CP775 (DOS Baltic Rim) -> ISO-8859-13 (CP1257)
-		`cat rašliava.txt | 
-		 iconv -f "CP775" -t "ISO-8859-13" > rašliava.txt.cp1257`
-
-		 # UTF-8 -> ISO-8859-13 (CP1257)
-		`cat rašliava.txt | 
-		 iconv -f "UTF-8" -t "ISO-8859-13" > rašliava.txt.cp1257`
+                `cat words.txt | ispell -d lietuviu [-a]`
+                (neinteraktyviai patikrinami 'words.txt' žodžiai; vienas žodis
+                 eilutėje. Išsamiau: man ispell)
 
 
-		`ispell -d lietuviu rašliava.txt.cp1257` 
+                Jei norite patikrinti utf-8 koduotės tekstą, tai galite
+                pasinaudoti lietuviu.aff faile aprašytomis formatavimo
+                taisyklėmis būtent šiam atvejui (t.y.: utf-8 -> iso-8859-13):
+
+                `ispell -d lietuviu -Tutf8 rašliava.txt`
+                (-T nurodo naudoti 'utf8' pavadintą formatuoklį, kuris
+                 aprašytas 'lietuviu.aff'. Tokiu atveju, tekste esančios UTF-8
+                 koduotės LT abėcėlės raidės yra verčiamos į ISO-8859-13
+                 koduotę, t.y. tokią, kokią supranta ispell programa;
+                 tikrinimas tampa įmanomas be pačio/viso teksto konvertavimo
+                 iš vienos koduotės į kitą)
 
 
-	* sudaryti/išvesti klaidingų žodžių sąrašą, t.y. parodyti visus 
-	  žodžius, kurie ispell manymu, pagal nurodytą žodyną, yra klaidingi:
+                Ankstesni (~2000 m) paaiškinimai, galbūt nebeaktualūs:
 
-		ispell -d {zodynas} -l
-		
-	  Pvz.:
-		`echo žąsiss žąsis žąsių žąsų | ispell -d lietuviu -l`
-		> žąsiss
-		> žąsių
-		
-
-	* išskleisti žod(-į,-žius), t.y., pagal prie žodžio nurodytas afiksų 
-	  žymas ir afiksų taisykles, sugeneruoti visą žodžių aibę:
-	
-		ispell -d {zodynas} -e
-
-	  Pvz.:
-		`echo stalas/D | ispell -d lietuviu -e`
-		(išskleidžiamas žodis stalas/D; globalus žodynas 'lietuviu')		
-		> stalas stalų stalą stalu stalus stalams stalais stalo stalui 
-		> stalai staluose stale
-
-		`cat words.txt | ispell -d lietuviu -e` 
-		(išskleidžiami words.txt žodžiai; globalus žodynas 'lietuviu')
+                KSpell biblioteka -T raktą bando, kai yra nurodyta (tokia)
+                koduotė KSpell konfigūravimo parinktyse.  Jei ispell su tokiu
+                raktu neveikia, bandoma be (-T) rakto, tikintis, kad ispell
+                žodyno ir tikrinamo teksto koduotės sutaps. Po to yra
+                atitinkamai perkoduojama pagal KDE lokalės nustatymus.
+                KDE 2.2.1, konfigūruojant KSpell, dar galima nurodyti
+                žodyno koduotę (ISO-8859-13); ankstesnėse versijose, deja,
+                tokios galimybės nėra.
 
 
+                Analogiškai (tikrinant įvairių koduočių tekstą), galite
+                tikrinamą tekstą iš pradžių perversti į ISO-8859-13 (CP1257)
+                koduotę:
 
-	* nurodytam žodžiui sudaryti visus įmanomus žodžių ir afiksų žymų 
-	  derinių variantus, kurie generuoja nurodytą žodį. Ne visi 
-	  sugeneruotų variantų žodžiai yra teisingi žodžiai, kaip ir ne visi 
-	  sugeneruoti deriniai generuoja korektiškas žodžių formas, net jei 
-	  viena ar kelios yra korektiškos. Tokia galimybė daugiau skirta 
-	  sudarant žodynus ir nagrinėjant kokie žodžio ir afiksų deriniai 
-	  generuoja tam tikras žodžių formas.
-	
-		ispell -d {zodynas} -c
-	
-	  Pvz.:
-		`echo stalui | ispell -d lietuviu -c`
-		> stalui staluis/B staluis/D staluias/B staluia/E stalus/D 
-		> stalua/E staluus/B staluas/H staluas/B stalas/D
+                 # ISO-8859-4 -> ISO-8859-13 (CP1257)
+                `cat rašliava.txt |
+                 iconv -f "ISO-8859-4" -t "ISO-8859-13" > rašliava.txt.cp1257`
+
+                 # CP775 (DOS Baltic Rim) -> ISO-8859-13 (CP1257)
+                `cat rašliava.txt |
+                 iconv -f "CP775" -t "ISO-8859-13" > rašliava.txt.cp1257`
+
+                 # UTF-8 -> ISO-8859-13 (CP1257)
+                `cat rašliava.txt |
+                 iconv -f "UTF-8" -t "ISO-8859-13" > rašliava.txt.cp1257`
+
+
+                `ispell -d lietuviu rašliava.txt.cp1257`
+
+
+        * sudaryti/išvesti klaidingų žodžių sąrašą, t.y. parodyti visus
+          žodžius, kurie ispell manymu, pagal nurodytą žodyną, yra klaidingi:
+
+                ispell -d {zodynas} -l
+
+          Pvz.:
+                `echo žąsiss žąsis žąsių žąsų | ispell -d lietuviu -l`
+                > žąsiss
+                > žąsių
+
+
+        * išskleisti žod(-į,-žius), t.y., pagal prie žodžio nurodytas afiksų
+          žymas ir afiksų taisykles, sugeneruoti visą žodžių aibę:
+
+                ispell -d {zodynas} -e
+
+          Pvz.:
+                `echo stalas/D | ispell -d lietuviu -e`
+                (išskleidžiamas žodis stalas/D; globalus žodynas 'lietuviu')
+                > stalas stalų stalą stalu stalus stalams stalais stalo stalui
+                > stalai staluose stale
+
+                `cat words.txt | ispell -d lietuviu -e`
+                (išskleidžiami words.txt žodžiai; globalus žodynas 'lietuviu')
 
 
 
-	5. Kaip pridėti į žodyną naujus žodžius? 
+        * nurodytam žodžiui sudaryti visus įmanomus žodžių ir afiksų žymų
+          derinių variantus, kurie generuoja nurodytą žodį. Ne visi
+          sugeneruotų variantų žodžiai yra teisingi žodžiai, kaip ir ne visi
+          sugeneruoti deriniai generuoja korektiškas žodžių formas, net jei
+          viena ar kelios yra korektiškos. Tokia galimybė daugiau skirta
+          sudarant žodynus ir nagrinėjant kokie žodžio ir afiksų deriniai
+          generuoja tam tikras žodžių formas.
+
+                ispell -d {zodynas} -c
+
+          Pvz.:
+                `echo stalui | ispell -d lietuviu -c`
+                > stalui staluis/B staluis/D staluias/B staluia/E stalus/D
+                > stalua/E staluus/B staluas/H staluas/B stalas/D
+
+
+
+        5. Kaip pridėti į žodyną naujus žodžius?
 
 Galite pasinaudoti žodžių pridėjimui skirta programa:
 
-	/tools/utils/spell.py
+        /tools/utils/spell.py
 
 o šios taisyklės, paaiškinimai daugiau skirti tiems, kurie žymas norės
-pridėti rankomis. Afiksų taisyklės ir žymų reikšmės gana išsamiai 
-pakomentuotos (ar yra aiškios iš pačių taisyklių) afiksų taisyklių faile 
-'lietuviu.aff', tačiau prieš tai vertėtų paskaityti apie ispell afiksų 
+pridėti rankomis. Afiksų taisyklės ir žymų reikšmės gana išsamiai
+pakomentuotos (ar yra aiškios iš pačių taisyklių) afiksų taisyklių faile
+'lietuviu.aff', tačiau prieš tai vertėtų paskaityti apie ispell afiksų
 taisykles (formatą):
 
-	man 5 ispell
+        man 5 ispell
 
 
 0.  Jeigu žodis gali turėti priešdėlius ne-, nebe-, pridėkite žymą /N,
     pvz.:
         gera/N
-	toli/N
+        toli/N
 
 1.  Jei žodis nekaitomas, pridėkite jį į žodyną be jokių žymų.
 
-2.  Jei tai daiktavardis ir žodis nesibaigia galūnėmis -is, -uo, tai 
+2.  Jei tai daiktavardis ir žodis nesibaigia galūnėmis -is, -uo, tai
     reikia pridėti žymą /D, pvz.:
 
-	   stalas/D
-	   kėdė/D
-	   paskalos/D
+        stalas/D
+        kėdė/D
+        paskalos/D
 
-    Daiktavardžių daugiskaita iškaitoma savaime. Pridėjus vienaskaitinį 
+    Daiktavardžių daugiskaita iškaitoma savaime. Pridėjus vienaskaitinį
     daiktavardį reikia turėti omenyje, kad bus generuojamos ir jo daugiskaitos
-    formos (klaidingos ar nevartojamos); jei tai (tikrai) nepageidautina dėl 
-    akivaizdžių klaidų, tai derėtų tokio daiktavardžio visas formas pridėti 
+    formos (klaidingos ar nevartojamos); jei tai (tikrai) nepageidautina dėl
+    akivaizdžių klaidų, tai derėtų tokio daiktavardžio visas formas pridėti
     atskirai, be jokių žymų.
- 
 
-2a. Jeigu daiktavardis yra vyriškos giminės ir vnsk. vardininkas baigiasi -is, 
-    o vnsk. kilmininko galūnė yra -io (peilis; peilio), tai taip pat reikia 
+
+2a. Jeigu daiktavardis yra vyriškos giminės ir vnsk. vardininkas baigiasi -is,
+    o vnsk. kilmininko galūnė yra -io (peilis; peilio), tai taip pat reikia
     pridėti /D žymą, pvz.:
-        
-	kailis/D
-	peilis/D
-	brolis/D
 
-2b. Jei tai: 
-    - daiktavardis su vnsk. vardininko galūnėmis -is, -uo, -ė (jei vnsk. 
+        kailis/D
+        peilis/D
+        brolis/D
+
+2b. Jei tai:
+    - daiktavardis su vnsk. vardininko galūnėmis -is, -uo, -ė (jei vnsk
        kilmininkas yra su galūne -ers, pvz.: duktė, dukters);
-    
-    - daugiskaitinis daiktavardis, kurio galūnė -ys (pvz.: nešmenys, sėmenys); 
 
-    reikia nuspręsti du dalykus: 
+    - daugiskaitinis daiktavardis, kurio galūnė -ys (pvz.: nešmenys, sėmenys);
 
-    -  tai vyriška (žyma /V), ar moteriška (žyma /M) giminė, 
+    reikia nuspręsti du dalykus:
+
+    -  tai vyriška (žyma /V), ar moteriška (žyma /M) giminė,
        pvz.: akis/M, dantis/V.
 
-	IR
+       IR
 
-    -  jei vnsk. vardininko galūnė yra  -is, arba tai daugiskaitinis 
+    -  jei vnsk. vardininko galūnė yra  -is, arba tai daugiskaitinis
        daiktavardis su galūne -ys, tai ar dgsk. kilmininke galūnė yra minkšta
-       (-ių, žyma /I), ar kieta (-ų, žyma /K). 
-       Pvz.: akis -> ak-ių (minkšta /I), ausis -> aus-ų (kieta /K). 
+       (-ių, žyma /I), ar kieta (-ų, žyma /K).
+       Pvz.: akis -> ak-ių (minkšta /I), ausis -> aus-ų (kieta /K).
 
-    Keletas tokių daiktavardžių žymėjimo pavyzdžių:			      
+    Keletas tokių daiktavardžių žymėjimo pavyzdžių:
 
-    	antruonys/VI	# dgsk. daiktavardis	    
-    	sėmenys/VK  	# dgsk. daiktavardis
-    	duktė/M
-    	sesuo/M
-    	akis/MI
-    	ausis/MK
-    	valtis/MI
-    	vanduo/V
-    	vagis/VI
-    	žvėris/VI
-    	dantis/VI
-    	debesis/VK
+        antruonys/VI    # dgsk. daiktavardis
+        sėmenys/VK      # dgsk. daiktavardis
+        duktė/M
+        sesuo/M
+        akis/MI
+        ausis/MK
+        valtis/MI
+        vanduo/V
+        vagis/VI
+        žvėris/VI
+        dantis/VI
+        debesis/VK
 
 
 3. Jei tai būdvardis, tai pridėkite žymą /B.
-   Jei būdvardis yra su galūne -is, tai *papildomai* reikia pridėti žymą, 
+   Jei būdvardis yra su galūne -is, tai *papildomai* reikia pridėti žymą,
    pagal jo dgsk. naudininko linksnį:
-       didelis, didel-iems -- žyma /W; didelis/BW.
-       medinis, medin-iams -- žyma /U; medinis/BU.
+
+         didelis, didel-iems -- žyma /W; didelis/BW.
+         medinis, medin-iams -- žyma /U; medinis/BU.
 
    Toliau, jei galima įsivaizduoti būdvardžio bevardę giminę
    (geras -> gera), įvardžiuotines formas (geras -> gerasis),
    prieveiksmius su -ai (geras -> gerai), laipsnius
    (geras, geresnis, geriausias) ir t.t., tai būdvardis vadinamas
-   kokybiniu, ir jam *papildomai* reikėtų pridėti žymą /Q. 
+   kokybiniu, ir jam *papildomai* reikėtų pridėti žymą /Q.
    Panašu, kad beveik visi būdvardžiai, kurie nesibaigia galūne -is,
    yra arba gali būti (kaitybos požiūriu; net jei kai kurios formos
-   yra keistos, nevartojamos) KOKYBINIAI būdvardžiai. 
-   Priešingai: būdvardžiai, kurie baigiasi galūne -is, yra nekokybiniai 
-   būdvardžiai, t.y. SANTYKINIAI būdvardžiai. Jie dažniausiai padaryti 
-   iš kokio nors daiktavardžio ir nurodo daikto santykį su kitu: 
-      baltakaklis -> turintis baltą kaklą;
-      medinis     -> padarytas iš medžio.
+   yra keistos, nevartojamos) KOKYBINIAI būdvardžiai.
+   Priešingai: būdvardžiai, kurie baigiasi galūne -is, yra nekokybiniai
+   būdvardžiai, t.y. SANTYKINIAI būdvardžiai. Jie dažniausiai padaryti
+   iš kokio nors daiktavardžio ir nurodo daikto santykį su kitu:
 
-   Keletas būdvardžių žymėjimo pavyzdžių:   
+        baltakaklis -> turintis baltą kaklą;
+        medinis     -> padarytas iš medžio.
 
-   geras/BQN
-   gražus/BQN
-   saldus/BQN
-   žydraakis/BUN 
-   medinis/BUN
-   didelis/BWN
-   abstraktus/BQN
-   absoliutus/BQN
-   visaapimantis/BUN
+   Keletas būdvardžių žymėjimo pavyzdžių:
+
+        geras/BQN
+        gražus/BQN
+        saldus/BQN
+        žydraakis/BUN
+        medinis/BUN
+        didelis/BWN
+        abstraktus/BQN
+        absoliutus/BQN
+        visaapimantis/BUN
 
 4. Jei tai veiksmažodis, turėsite nurodyti iš karto 3 žodžio formas (laikus):
-   bendratį, esamąjį, ir būtąjį kartinį.  
+   bendratį, esamąjį, ir būtąjį kartinį.
 
    #############################
    ##        Bendratis        ##
@@ -432,87 +434,89 @@ taisykles (formatą):
 
    Visų veiksmažodžių bendratis žymima /T.
    Tačiau jei bendratis baigiasi -YTI arba -ŪTI, reikia *papildomai*
-   pridėti: 
-   	    /U, jei būsimojo laiko III asmuo turi trumpas balses (i, u);
-	    /W, jei būsimoje laiko III asmuo turi ilgas balses (y, ū).
-   
-   Pvz.: 
-   	   l-YTI: lyti, lIs; lyti/TU
-	   g-YTI: gyti, gIs; gyti/TU
-	   p-ŪTI: pŪti, pUs; pūti/TU
+   pridėti:
+        /U, jei būsimojo laiko III asmuo turi trumpas balses (i, u);
+        /W, jei būsimoje laiko III asmuo turi ilgas balses (y, ū).
 
-           sak-YTI: sakyti, sakYs; sakyti/TW
-	   siūti:    siūti,  siūs; siūti/TW
-	   
+   Pvz.:
+        l-YTI: lyti, lIs; lyti/TU
+        g-YTI: gyti, gIs; gyti/TU
+        p-ŪTI: pŪti, pUs; pūti/TU
+
+        sak-YTI: sakyti, sakYs; sakyti/TW
+        siūti:    siūti,  siūs; siūti/TW
+
   Verta įsidėmėti šias taisykles (ualgiman.dtiltas.lt):
 
-      - Dviskiemeniai veiksmažodžiai, kurių bendraties kamienas 
-  baigiasi y, ū, būsimojo laiko III asmenyje turi i, u.
-  (*išimtys*: vyti, veja, vijo > vys, siūti, siuva, siuvo > siūs)
+      - Dviskiemeniai veiksmažodžiai, kurių bendraties kamienas
+        baigiasi y, ū, būsimojo laiko III asmenyje turi i, u.
+        (*išimtys*: vyti, veja, vijo > vys, siūti, siuva, siuvo > siūs)
 
-      - Visų veiksmažodžių, turinčių šaknyje i, u, būsimojo laiko 
-  III asmuo išlaiko bendraties balsę. 
-  Pvz.:	siusti – sius, risti – ris, skusti – skus.
+      - Visų veiksmažodžių, turinčių šaknyje i, u, būsimojo laiko
+        III asmuo išlaiko bendraties balsę.
+        Pvz.: siusti – sius, risti – ris, skusti – skus.
 
-      - Visų veiksmažodžių, turinčių šaknyje y, ū, būsimojo laiko 
-  III asmuo išlaiko bendraties balsę. 
-  Pvz.: dygti – dygs, nykti – nyks, grūsti – grūs, pūsti – pūs.
+      - Visų veiksmažodžių, turinčių šaknyje y, ū, būsimojo laiko
+        III asmuo išlaiko bendraties balsę.
+        Pvz.: dygti – dygs, nykti – nyks, grūsti – grūs, pūsti – pūs.
 
-  Taip pat verta įsidėmėti ir tai, kad bene visi (?) daugiaskiemeniai 
- (daugiau nei 2) veiksmažodžiai būsimojo laiko III asmens galūnėje 
-  turi tokią pačią balsę, kaip ir bendraties kamiene: 
-  	 sa'kY'ti > sakYs, tram'dY'ti > tramdYs, nu'ščiŪ'ti > nuščiŪs, ...
+   Taip pat verta įsidėmėti ir tai, kad bene visi (?) daugiaskiemeniai
+   (daugiau nei 2) veiksmažodžiai būsimojo laiko III asmens galūnėje
+   turi tokią pačią balsę, kaip ir bendraties kamiene:
 
-  Vadovaujantis dviskiemenių/daugiaskiemenių žodžių darybos 
-  taisykle/dėsningumu svarbu atskirti koks žodis yra šakninis ir kiek 
-  jis turi skiemenų, nes tai netaikoma priešdėliniams dariniams, pvz:
+        sa'kY'ti > sakYs, tram'dY'ti > tramdYs, nu'ščiŪ'ti > nuščiŪs, ...
 
-         palyti, užlyti, nulyti, ... (dviskiemenis šakninis žodis lyti)
-	 užsibūti, pabūti, išbūti, ... (dviskiemenis šakninis žodis būti)
-	 užmatyti, numatyti, permatyti ... (triskiemenis žodis matyti)
-	 
+   Vadovaujantis dviskiemenių/daugiaskiemenių žodžių darybos
+   taisykle/dėsningumu svarbu atskirti koks žodis yra šakninis ir kiek
+   jis turi skiemenų, nes tai netaikoma priešdėliniams dariniams, pvz:
+
+        palyti, užlyti, nulyti, ... (dviskiemenis šakninis žodis lyti)
+        užsibūti, pabūti, išbūti, ... (dviskiemenis šakninis žodis būti)
+        užmatyti, numatyti, permatyti ... (triskiemenis žodis matyti)
+
 
    #############################
    ##     Esamasis laikas     ##
    #############################
+
    Visų veiksmažodžių esamasis laikas žymimas /E.
-   
+
 
    #############################
    ## Būtasis kartinis laikas ##
    #############################
+
    Jei veiksmažodis yra {-YTI,-Ė}(pvz.: laik-YTI, laik-Ė): /Y.
    Visų kitų veiksmažodžių būtasis kartinis laikas žymimas /P.
-
 
 
    ###########################
    ## Dalelytės-priešdėliai ##
    ###########################
 
-   Sangrąžiniams priešdėliniams veiksmažodžiams (formoms; norint tokias gauti) 
-   reikia pridėti /S (dalelytės: ne, nebe, nesi, nebesi, besi, tebesi)
-   Pvz.: 
-   	 moko/S > nebesimoko, besimoko, tebesimoko, ...
+   Sangrąžinėms priešdėlinėms veiksmažodžių formoms gauti reikia pridėti /S
+   (dalelytės: ne, nebe, nesi, nebesi, besi, tebesi)
+   Pvz.:
+        moko/S > nebesimoko, besimoko, tebesimoko, ...
 
    o nesangrąžiniams (visiems kitiems) /N (dalelytės: ne, nebe)
-   Pvz.: 
-   	 kilti/TN, kyla/EN > nebekilti, nekilti, nebekyla, nekyla
+   Pvz.:
+        kilti/TN, kyla/EN > nebekilti, nekilti, nebekyla, nekyla
 
-   Jei žodis turi formas su be, te, tebe, tai verta pridėti /X 
+   Jei žodis turi formas su be, te, tebe, tai verta pridėti /X
    (dalelytės: be, te, tebe)
-   Pvz.: 
-   	 sakyti/X, matyti/X > tebesakyti, tesakyti, tematyti, tebematyti, ...   
-  
+   Pvz.:
+        sakyti/X, matyti/X > tebesakyti, tesakyti, tematyti, tebematyti, ...
+
    Priešdėlinių dalelyčių žymas galima derinti, pvz.: sako/SX, kabo/NX ...
 
    #
    # Priešdėliai:
    #
-   #  	       | ap | at | į | iš | nu | pa | par | per | pra | pri | su | už |
+   #           | ap | at | į | iš | nu | pa | par | per | pra | pri | su | už |
    # --------------------------------------------------------------------------
-   # papsrast. |  a |  b | c |  d |  e |  f |  g  |  h	|  i  |  j  |  k |  l |
-   # su sngr.  |  m |  n | o |  p |  q |  r |  s  |  t	|  u  |  v  |  w |  x |
+   # papsrast. |  a |  b | c |  d |  e |  f |  g  |  h  |  i  |  j  |  k |  l |
+   # su sngr.  |  m |  n | o |  p |  q |  r |  s  |  t  |  u  |  v  |  w |  x |
    #
    # (žr. lietuviu.aff)
    #
@@ -521,105 +525,110 @@ taisykles (formatą):
 
    gyti/TUNX
    gyja/ENX
-   gijo/YNXadl	> {ap}gijo, {iš}gijo, {už}gijo, ...
+   gijo/YNXadl  > {ap}gijo, {iš}gijo, {už}gijo, ...
 
    valgyti/TNX
    valgo/ENX
-   valgė/YNXq	> {nusi}valgė, ...
-   
+   valgė/YNXq   > {nusi}valgė, ...
+
    mylėti/TSX
    myli/ESX
    mylėjo/PSX
 
-  
+
    #################################
-   ## Sangrąžiniai veiksmažodžiai ## 
-   ## (-tis,-asi,-isi,-osi,-ėsi)  ##   
+   ## Sangrąžiniai veiksmažodžiai ##
+   ## (-tis,-asi,-isi,-osi,-ėsi)  ##
    #################################
-   
-   Jei veiksmažodis turi ir sangrąžinę formą (pvz.: laikyti > laikytis, 
-   laiko > laikosi, laikė > laikėsi), tai prie šakninio veiksmažodžio 
+
+   Jei veiksmažodis turi ir sangrąžinę formą (pvz.: laikyti > laikytis,
+   laiko > laikosi, laikė > laikėsi) arba yra tik sangrąžinis veiksmažodis
+   (pvz.: elgtis, džiaugtis, juoktis), tai prie šakninio veiksmažodžio
    reikia papildomai pridėti žym-ą(-as):
 
-   	- bendračiai (visais atvejais):  /R
+        - bendračiai (visais atvejais):   /R
 
-	- esamajam l.:  
-       	     * kai žodis baigiasi -i:  /O; 
-	     * visais kitais atvejais: /R.
+        - esamajam l.:
+             * kai žodis baigiasi -i(si): /O;
+             * visais kitais atvejais:    /R.
 
-	- būtajam l. : 
-	     * kai žodis baigiasi -o arba
-	       tai veiksmažodis {-yti, -ė}: /O;
-	     * visais kitais atvejais: /R.	  
-   
+        - būtajam l. :
+             * kai žodis baigiasi -o(si) arba
+               tai veiksmažodis {-yti(s), -ė(si)}: /O;
+             * visais kitais atvejais: /R.
+
    (automatizmas: visiems veiksmažodžiams su žyma /Y, sngr. formai pridėti /O)
 
-   Pažymėtina, kad sangrąžinių žodžių afiksų žymos (/R, /O) nekryžminamos 
-   (nedalyvauja  cross-product) su kitomis afiksų žymomis, t.y. generuojant 
-   žodžius nesudaromi priešdėliniai dariniai, pvz.: 
+   Pažymėtina, kad sangrąžinių žodžių afiksų žymos (/R, /O) nekryžminamos
+   (nedalyvauja  cross-product) su kitomis afiksų žymomis, t.y. generuojant
+   žodžius nesudaromi priešdėliniai dariniai, pvz.:
+
      nerti/TRa > ap{nerti, ...}, *tačiau* tik {nertis, ...}, be priešdėlio ap.
 
 
-   Pavyzdžiai:		  		 
-   	mylėti/TR  (mylėtis, ...)
-	myli/ER    (mylisi, ...) 
-   	mylėjo/PO  (mylėjosi; mylėj-O, todėl /O)
+   Pavyzdžiai:
+        mylėti/TR  (mylėtis, ...)
+        myli/ER    (mylisi, ...)
+        mylėjo/PO  (mylėjosi; mylėj-O, todėl /O)
 
-	skalbė/PR  (skalbėsi; bndr. skalb-ti, t.y. tai ne {-yti,ė}, todėl /R)
-	skaitė/YO  (skaitėsi; bndr. skait-YTI, o būt. l.: skait-Ė, todėl /O)
-	kirmijo/PO (kirmijosi; kirmij-O, todėl /O);
+        skalbė/PR  (skalbėsi; bndr. skalb-ti, t.y. tai ne {-yti,ė}, todėl /R)
+        skaitė/YO  (skaitėsi; bndr. skait-YTI, o būt. l.: skait-Ė, todėl /O)
+        kirmijo/PO (kirmijosi; kirmij-O, todėl /O);
 
-   
+        elgtis/R
+        elgiasi/R
+        elgėsi/R
 
-Raginame visus naudotojus pasidalinti savo surinktais žodžiais, kurių nėra 
+
+
+Raginame visus naudotojus pasidalinti savo surinktais žodžiais, kurių nėra
 ispell-lt žodynuose. Siųskite savo asmeninius žodynėlius ispell-lt projekto
-autoriams/dalyviams, arba registruokite pavienius žodžius ispell-lt 
+autoriams/dalyviams, arba registruokite pavienius žodžius ispell-lt
 Launchpad tinklapyje:
-	
-	https://bugs.launchpad.net/ispell-lt
-	(Nauji žodžiai)
+
+        https://bugs.launchpad.net/ispell-lt
+        (Nauji žodžiai)
 
 
 Jūsų asmeniniai ispell žodynėliai Linux/Unix sistemose yra:
-	~/.ispell_lietuviu
-	~/.ispell_default 
+        ~/.ispell_lietuviu
+        ~/.ispell_default
 
 Windows sistemose, jei naudojate Cygwin, pvz.:
-	"C:\cygwin\home\Jonas\.ispell_lietuviu
+        "C:\cygwin\home\Jonas\.ispell_lietuviu
 
-Jei naudojatės Mozilla programomis, tai savo profilio aplanke reikėtų 
+Jei naudojatės Mozilla programomis, tai savo profilio aplanke reikėtų
 ieškoti failo 'persdict.dat', pvz.:
 
-	~/.mozilla/firefox/bn1s0oz5.default/presdict.dat
+        ~/.mozilla/firefox/bn1s0oz5.default/presdict.dat
 
-	"C:\Documents and Settings\Jonas\Application Data\Mozilla\SeaMonkey\
-	 Profiles\bn1s0oz5.default\persdict.dat" 
+        "C:\Documents and Settings\Jonas\Application Data\Mozilla\SeaMonkey\
+         Profiles\bn1s0oz5.default\persdict.dat"
 
-OpenOffice programos meniu: 'Tools > Options > Language Settings > 
-Writing Aids > 	User-defined dictionaries' bus matyti visi naudotojo 
-žodynėliai, o šių žodynėlių aplankai, OpenOffice v2.x, v3.x yra: 
+OpenOffice programos meniu: 'Tools > Options > Language Settings >
+Writing Aids > User-defined dictionaries' bus matyti visi naudotojo
+žodynėliai, o šių žodynėlių aplankai, OpenOffice v2.x, v3.x yra:
 
-	~/.openoffice.org/2/user/wordbook/
-	"%USER_PROFILE%\Application data\OpenOffice.org\2\user\wordbook\"
+        ~/.openoffice.org/2/user/wordbook/
+        "%USER_PROFILE%\Application data\OpenOffice.org\2\user\wordbook\"
 
-	~/.openoffice.org/3/user/wordbook/
-	"%USER_PROFILE%\Application data\OpenOffice.org\3\user\wordbook\"
+        ~/.openoffice.org/3/user/wordbook/
+        "%USER_PROFILE%\Application data\OpenOffice.org\3\user\wordbook\"
 
-	(čia %USER_PROFILE% -- Windows naudotojo paskyros aplankas, 
-	 pvz.: "C:\Documents and Settings\Jonas\")
+        (čia %USER_PROFILE% -- Windows naudotojo paskyros aplankas,
+         pvz.: "C:\Documents and Settings\Jonas\")
 
-todėl, pavyzdžiui, naudotojo žodynėliai 'standard', 'mano_lt', 'mano1', 
+todėl, pavyzdžiui, naudotojo žodynėliai 'standard', 'mano_lt', 'mano1',
 OpenOffice 3.x, bus:
 
-	~/.openoffice.org/3/user/wordbook/
-	    * mano1.dic
-	    * mano_lt.dic
-	    * standard.dic
+        ~/.openoffice.org/3/user/wordbook/
+            * mano1.dic
+            * mano_lt.dic
+            * standard.dic
 
-	arba (Windows sistemose):
+        arba (Windows sistemose):
 
-	"%USER_PROFILE%\Application data\OpenOffice.org\3\user\wordbook\
-	    * mano1.dic
-	    * mano_lt.dic
-	    * standard.dic
-
+        "%USER_PROFILE%\Application data\OpenOffice.org\3\user\wordbook\
+            * mano1.dic
+            * mano_lt.dic
+            * standard.dic

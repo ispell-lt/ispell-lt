@@ -411,10 +411,6 @@ baigti/TRSXacdefghjklmpqrsvwx
 #baigtis/T                      # sngr. baigti/.*R
 baisëja/ERSXr
 #baisëjasi/E                    # sngr. baisëja/.*R
-baisëjo/POSXr
-#baisëjosi/P                    # sngr. baisëjo/.*O
-baisëti/TRSXr
-#baisëtis/T                     # sngr. baisëti/.*R
 balansavo/PNXdfhkptw
 balansuoja/ENXdfhkptw
 balansuoti/TNXdfhkptw
@@ -500,12 +496,6 @@ blaðkyti/TRSXdpu
 #blaðkytis/T                    # sngr. blaðkyti/.*R
 blaðko/ERSXdpu
 #blaðkosi/E                     # sngr. blaðko/.*R
-blausë/PRSXm
-#blausësi/P                     # sngr. blausë/.*R
-blausia/ERSXm
-#blausiasi/E                    # sngr. blausia/.*R
-blausti/TRSXm
-#blaustis/T                     # sngr. blausti/.*R
 blëso/PNXdeij
 blësta/ENXdeij
 blësti/TNXdeij
@@ -554,10 +544,6 @@ braukia/ERSXadefhilmnoprx
 #braukiasi/E                    # sngr. braukia/.*R
 braukti/TRSXadefhilmnoprx
 #brauktis/T                     # sngr. braukti/.*R
-brauna/ERSXcopstu
-#braunasi/E                     # sngr. brauna/.*R
-brauti/TRSXcopstu
-#brautis/T                      # sngr. brauti/.*R
 brëkðta/ENXi
 brëkðti/TNXi
 brenda/ENXbcdegh
@@ -570,8 +556,6 @@ brëþia/ENXabcefhlmoqrtx
 brëþti/TNXabcefhlmoqrtx
 brido/PNXbcdegh
 bristi/TNXbcdegh
-brovë/PRSXcopstu
-#brovësi/P                      # sngr. brovë/.*R
 brûkðniavo/PNXefjklwx
 brûkðniuoja/ENXefjklwx
 brûkðniuoti/TNXefjklwx
@@ -673,12 +657,6 @@ dailinti/TRSXacedfhmnqprtwv
 dainavo/PSXabcdefhklqruvw
 dainuoja/ESXabcdefhklqruvw
 dainuoti/TSXabcdefhklqruvw
-dairë/O
-#dairësi/Y                      # sngr. dairë/O
-dairyti/R
-#dairytis/T                     # sngr. dairyti/R
-dairo/R
-#dairosi/E                      # sngr. dairo/R
 dalija/ERSXadfhkmnprt
 #dalijasi/E                     # sngr. dalija/.*R
 dalijo/POSXadfhkmnprt
@@ -700,18 +678,12 @@ dangstyti/TRSXafmlvx
 #dangstytis/T                   # sngr. dangstyti/.*R
 dangsto/ERSXafmlvx
 #dangstosi/E                    # sngr. dangsto/.*R
-darbavo/O
-#darbavosi/P                    # sngr. darbavo/O
 darbina/ERSXco
 #darbinasi/E                    # sngr. darbina/.*R
 darbino/POSXco
 #darbinosi/P                    # sngr. darbino/.*O
 darbinti/TRSXco
 #darbintis/T                    # sngr. darbinti/.*R
-darbuoja/R
-#darbuojasi/E                   # sngr. darbuoja/R
-darbuoti/R
-#darbuotis/T                    # sngr. darbuoti/R
 darë/NYOSXabcdfhijklmnprtuvwx
 #darësi/Y                       # sngr. darë/.*O
 darinëja/ENXbcdehklnpx
@@ -931,18 +903,12 @@ dygti/TNXdjk
 dokumentavo/PNX
 dokumentuoja/ENX
 dokumentuoti/TNX
-domëjo/POSXrw
-#domëjosi/P                     # sngr. domëjo/.*O
-domëti/TRSXrw
-#domëtis/T                      # sngr. domëti/.*R
-domi/EOSXrw
 domina/ENXfk
 dominavo/NPX
 domino/PNXfk
 dominti/TNXfk
 dominuoja/ENX
 dominuoti/NTX
-#domisi/E                       # sngr. domi/.*O
 doroja/ESXabfkmnrw
 dorojo/PSXabfkmnrw
 doroti/TSXabfkmnrw
@@ -1012,12 +978,6 @@ drybso/ENXbdfitvx
 drybsojo/PNXbdfitvx
 drybsoti/TNXbdfitvx
 dryska/ENXacbedfikouwvx
-drovëjo/O
-#drovëjosi/P                    # sngr. drovëjo/O
-drovëti/R
-#drovëtis/T                     # sngr. drovëti/R
-drovi/O
-#drovisi/E                      # sngr. drovi/O
 droþë/PRSXadefhjknpqrv
 #droþësi/P                      # sngr. droþë/.*R
 droþia/ERSXadefhjknpqrv
@@ -1088,12 +1048,6 @@ dvigubinti/TRSXfrw
 dvokë/PNX
 dvokia/ENX
 dvokti/TNX
-dþiaugë/PRSXamnrv
-#dþiaugësi/P                    # sngr. dþiaugë/.*R
-dþiaugia/ERSXamnrv
-#dþiaugiasi/E                   # sngr. dþiaugia/.*R
-dþiaugti/TRSXamnrv
-#dþiaugtis/T                    # sngr. dþiaugti/.*R
 dþiovina/ERSXabedfihjkprtwvx
 #dþiovinasi/E                   # sngr. dþiovina/.*R
 dþiovino/POSXabedfihjkprtwvx
@@ -1149,12 +1103,6 @@ eksponuoti/TRSXd
 eksportavo/PNXd
 eksportuoja/ENXd
 eksportuoti/TNXd
-elgë/R
-#elgësi/P                       # sngr. elgë/R
-elgia/R
-#elgiasi/E                      # sngr. elgia/R
-elgti/R
-#elgtis/T                       # sngr. elgti/R
 eliminavo/PSXfkw
 eliminuoja/ESXfkw
 eliminuoti/TSXfkw
@@ -1752,6 +1700,15 @@ iðbadëti/TNX
 iðradinëja/ENX
 iðradinëjo/PNX
 iðradinëti/TNX
+iðsiropðti/TNX
+iðsiropðèia/ENX
+iðsiropðtë/PNX
+iðsityèioti/TNX
+iðsityèioja/ENX
+iðsityèiojo/PNX
+iðsivaipyti/TNX
+iðsivaipo/ENX
+iðsivaipë/YNX
 iðvydo/PNX
 iðvysta/ENX
 iðvysti/TNX
@@ -2491,12 +2448,6 @@ lavino/POSXdfipr
 #lavinosi/P                     # sngr. lavino/.*O
 lavinti/TRSXdfipr
 #lavintis/T                     # sngr. lavinti/.*R
-laþina/ERSXw
-#laþinasi/E                     # sngr. laþina/.*R
-laþino/POSXw
-#laþinosi/P                     # sngr. laþino/.*O
-laþinti/TRSXw
-#laþintis/T                     # sngr. laþinti/.*R
 legalizavo/POSX
 #legalizavosi/P                 # sngr. legalizavo/.*O
 legalizuoja/ERSX
@@ -2786,12 +2737,6 @@ medituoti/TNXf
 medþioja/ENXdfkw
 medþiojo/PNXdfkw
 medþioti/TNXdfkw
-mëgauja/R
-#mëgaujasi/E                    # sngr. mëgauja/R
-mëgauti/R
-#mëgautis/T                     # sngr. mëgauti/R
-mëgavo/O
-#mëgavosi/P                     # sngr. mëgavo/O
 mëgina/ERSXdfrv
 #mëginasi/E                     # sngr. mëgina/.*R
 mëgino/POSXdfrv
@@ -3067,6 +3012,12 @@ nuomojo/POSXdhp
 #nuomojosi/P                    # sngr. nuomojo/.*O
 nuomoti/TRSXdhp
 #nuomotis/T                     # sngr. nuomoti/.*R
+nusiropðti/TNX
+nusiropðèia/ENX
+nusiropðtë/PNX
+nusivaipyti/TNX
+nusivaipo/ENX
+nusivaipë/YNX
 nustebo/PNX
 nustebti/TNX
 nustemba/ENX
@@ -3136,6 +3087,9 @@ parduoti/TNXdhp
 pareigoja/ENXco
 pareigojo/PNXco
 pareigoti/TNXco
+parsiropðti/TNX
+parsiropðèia/ENX
+parsiropðtë/PNX
 pasakoja/ERSXbdefhjkprv
 #pasakojasi/E                   # sngr. pasakoja/.*R
 pasakojo/POSXbdefhjkprv
@@ -3435,6 +3389,12 @@ prieðtaravo/PNXf
 prievartauja/ENXd
 prievartauti/TNXd
 prievartavo/PNXd
+prisiropðti/TNX
+prisiropðèia/ENX
+prisiropðtë/PNX
+prisivaipyti/TNX
+prisivaipo/ENX
+prisivaipë/YNX
 privalëjo/PNX
 privalëti/TNX
 privalo/ENX
@@ -3803,12 +3763,6 @@ rodyti/TRWSXabcdefjlmoqrv
 #rodytis/T                      # sngr. rodyti/.*R
 rodo/ERSXabcdefjlmoqrv
 #rodosi/E                       # sngr. rodo/.*R
-ropðèia/ERSXnopqsvx
-#ropðèiasi/E                    # sngr. ropðèia/.*R
-ropðtë/PRSXnopqsvx
-#ropðtësi/P                     # sngr. ropðtë/.*R
-ropðti/TRSXnopqsvx
-#ropðtis/T                      # sngr. ropðti/.*R
 rovë/PRSXabcdefhijklnopqrstuvwx
 #rovësi/P                       # sngr. rovë/.*R
 rûdija/ENXadefhijkl
@@ -3883,12 +3837,6 @@ saugojo/POSXadefklmprx
 #saugosi/E                      # sngr. saugo/R
 saugoti/TRSXadefklmprx
 #saugotis/T                     # sngr. saugoti/.*R
-savina/ERSXeor
-#savinasi/E                     # sngr. savina/.*R
-savino/POSXeor
-#savinosi/P                     # sngr. savino/.*O
-savinti/TRSXeor
-#savintis/T                     # sngr. savinti/.*R
 sëda/ERSXacdefhjklnovx
 #sëdasi/E                       # sngr. sëda/.*R
 sëdëjo/PSXbdfinopqrvx
@@ -4853,12 +4801,6 @@ teikia/ERSXcefhkoqt
 #teikiasi/E                     # sngr. teikia/.*R
 teikti/TRSXcefhkoqt
 #teiktis/T                      # sngr. teikti/.*R
-teirauja/ERSXprt
-#teiraujasi/E                   # sngr. teirauja/.*R
-teirauti/TRSXprt
-#teirautis/T                    # sngr. teirauti/.*R
-teiravo/POSXprt
-#teiravosi/P                    # sngr. teiravo/.*O
 teisë/PRSXbehjnqtv
 #teisësi/P                      # sngr. teisë/.*R
 teisia/ERSXbehjnqtv
@@ -4998,12 +4940,6 @@ tirpsta/ENXabdefk
 tirpti/TNXabdefk
 tirti/TRSXdfjp
 #tirtis/T                       # sngr. tirti/.*R
-tyèioja/ERSXpr
-#tyèiojasi/E                    # sngr. tyèioja/.*R
-tyèiojo/POSXpr
-#tyèiojosi/P                    # sngr. tyèiojo/.*O
-tyèioti/TRSXpr
-#tyèiotis/T                     # sngr. tyèioti/.*R
 tyko/ENXefi
 tykojo/PNXefi
 tykoti/TNXefi
@@ -5255,12 +5191,6 @@ vaikðtinëja/ENXadefiknprv
 vaikðtinëjo/PNXadefiknprv
 vaikðtinëti/TNXadefiknprv
 vaikðto/ENXabdfiknpqrtuv
-vaipë/YOSmnpqrvw
-#vaipësi/Y                      # sngr. vaipë/.*O
-vaipyti/TRWSmnpqrvw
-#vaipytis/T                     # sngr. vaipyti/.*R
-vaipo/ERSmnpqrvw
-#vaiposi/E                      # sngr. vaipo/.*R
 vairavo/PNXbcdefgj
 vairuoja/ENXbcdefgj
 vairuoti/TNXbcdefgj
@@ -5430,12 +5360,6 @@ verkðlenti/TNXdf
 verkti/TNXadefijlmnopqrtvx
 versti/TRSXabcdefghijklmnopqrtvwx
 #verstis/T                      # sngr. versti/.*R
-verðiavo/POSXmpvw
-#verðiavosi/P                   # sngr. verðiavo/.*O
-verðiuoja/ERSXmpvw
-#verðiuojasi/E                  # sngr. verðiuoja/.*R
-verðiuoti/TRSXmpvw
-#verðiuotis/T                   # sngr. verðiuoti/.*R
 verta/ENXeq
 vertë/PRSXabcdefghijklmnopqrtvwx
 vertëjo/PNXeq

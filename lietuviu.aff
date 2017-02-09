@@ -6175,88 +6175,142 @@ suffixes
 # sangràþinëms veiksmaþodþiø formoms nelipdomi (nes netinka) prieðdëliai,
 # dalelytës.
 #
+# Kaitomi ir tik sangràþiniai veiksmaþodþiai (-tis, -[aëio]si).
+# Sangràþiniø -[zþ]tis þodþiø þodyne nëra; jei tokiø atsirastø, tai reikëtø
+# paðalinti ðias komentaro þymas:
+#
+#       #~N6~      -ztis
+#       #~N7~      -þtis
+#
 
-        #####################
-        ##    Bendratis    ##
-        #####################
 
-        # Sngr. forma ið bendraties
+        ## Bendratis ##
+
         T I             >       S               # imti > imtis
 
 
+        ##########################
         ## Bût. daþninis laikas ##
+        ##########################
+
 
         # Vnsk., I asm.
         T I             >       -TI,DAVAUSI     # imti > imdavausi
+        T I S           >       -TIS,DAVAUSI    # sngr.; elgtis
 
         # Vnsk., II asm.
         T I             >       -TI,DAVAISI     # imdavaisi
+        T I S           >       -TIS,DAVAISI    # sngr.
 
         # Vnsk./Dgsk., III asm.
         T I             >       -TI,DAVOSI      # imdavosi
+        T I S           >       -TIS,DAVOSI     # sngr.
 
         # Dgsk., I asm.
         T I             >       -TI,DAVOMËS     # imdavomës
+        T I S           >       -TIS,DAVOMËS    # sngr.
 
         # Dgsk., II asm.
         T I             >       -TI,DAVOTËS     # imdavotës
+        T I S           >       -TIS,DAVOTËS    # sngr.
 
 
-
+        ######################
         ## Bûsimasis laikas ##
+        ######################
+
 
         # Vnsk., I asm.
         [^SÐZÞ] T I     >       -TI,SIUOSI      # imti > imsiuosi
         [SÐ] T I        >       -TI,IUOSI       # vesiuosi, neðiuosi
         Z T I           >       -ZTI,SIUOSI     # megsiuosi
         Þ T I           >       -ÞTI,ÐIUOSI     # veðiuosi
+        # sngr.
+        [^SÐZÞ] T I S   >       -TIS,SIUOSI
+        [SÐ] T I S      >       -TIS,IUOSI      # ropðtis
+#~N6~   Z T I S         >       -ZTIS,SIUOSI
+#~N7~   Þ T I S         >       -ÞTIS,ÐIUOSI
+
 
         # Vnsk., II asm.
         [^SÐZÞ] T I     >       -TI,SIESI       # imsiesi
         [SÐ] T I        >       -TI,IESI        # vesiesi, neðiesi
         Z T I           >       -ZTI,SIESI      # megsiesi
         Þ T I           >       -ÞTI,ÐIESI      # veðiesi
+        # sngr.
+        [^SÐZÞ] T I S   >       -TIS,SIESI
+        [SÐ] T I S      >       -TIS,IESI
+#~N6~   Z T I S         >       -ZTIS,SIESI
+#~N7~   Þ T I S         >       -ÞTIS,ÐIESI
+
 
         # Vnsk./Dgsk., III asm.
         [^SÐZÞ] T I     >       -TI,SIS         # imsis
         [SÐ] T I        >       -TI,IS          # vesis, neðis
         Z T I           >       -ZTI,SIS        # megsis
         Þ T I           >       -ÞTI,ÐIS        # veðis
+        # sngr.
+        [^SÐZÞ] T I S   >       -TIS,SIS
+        [SÐ] T I S      >       -TIS,IS
+#~N6~   Z T I S         >       -ZTIS,SIS
+#~N7~   Þ T I S         >       -ÞTIS,ÐIS
+
 
         # Dgsk., I asm.
         [^SÐZÞ] T I     >       -TI,SIMËS       # imsimës
         [SÐ] T I        >       -TI,IMËS        # vesimës, neðimës
         Z T I           >       -ZTI,SIMËS      # megsimës
         Þ T I           >       -ÞTI,ÐIMËS      # veðimës
+        # sngr.
+        [^SÐZÞ] T I S   >       -TIS,SIMËS
+        [SÐ] T I S      >       -TIS,IMËS
+#~N6~   Z T I S         >       -ZTIS,SIMËS
+#~N7~   Þ T I S         >       -ÞTIS,ÐIMËS
+
 
         # Dgsk., II asm.
         [^SÐZÞ] T I     >       -TI,SITËS       # imsitës
         [SÐ] T I        >       -TI,ITËS        # vesitës, neðitës
         Z T I           >       -ZTI,SITËS      # megsitës
         Þ T I           >       -ÞTI,ÐITËS      # veðitës
-
+        # sngr.
+        [^SÐZÞ] T I S   >       -TIS,SITËS
+        [SÐ] T I S      >       -TIS,ITËS
+#~N6~   Z T I S         >       -ZTIS,SITËS
+#~N7~   Þ T I S         >       -ÞTIS,ÐITËS
 
 
         ## Tariamoji nuosaka ##
 
         # Vnsk., I asm.
         T I             >       -TI,ÈIAUSI      # rinkti > rinkèiausi
+        T I S           >       -TIS,ÈIAUSI     # sngr.; ropðèiausi
 
         # Vnsk., II asm.
         T I             >       -I,UMEISI       # rinktumeisi, rinktumeis
         T I             >       -I,UMEIS
+        # sngr.
+        T I S           >       -IS,UMEISI
+        T I S           >       -IS,UMEIS
 
         # Vnsk./Dgsk., III asm.
         T I             >       -I,ØSI          # rinktøsi
+        T I S           >       -IS,ØSI         # sngr.; ropðtøsi
+
 
         # Dgsk., I asm.
         T I             >       -I,UMËMËS       # rinktumëmës, rinktumës
         T I             >       -I,UMËS
+        # sngr.
+        T I S           >       -IS,UMËMËS
+        T I S           >       -IS,UMËS
 
         # Dgsk., II asm.
         T I             >       -I,UMËTËS       # rinktumëtës, rinktutës
         T I             >       -I,UTËS
-
+        # sngr.
+        T I S           >       -IS,UMËTËS
+        T I S           >       -IS,UTËS
 
 
         ## Liepiamoji nuosaka ##
@@ -6265,17 +6319,29 @@ suffixes
         [^KG] T I       >       -TI,KIS         # siøsti > siøskis
         K T I           >       -TI,IS          # traukti > traukis
         G T I           >       -GTI,KIS        # rengti > renkis
+        # sngr.
+        [^KG] T I S     >       -TIS,KIS
+        K T I S         >       -TIS,IS
+        G T I S         >       -GTIS,KIS
+
 
         # Dgsk., I asm.
         [^KG] T I       >       -TI,KIMËS       # siøskimës
         K T I           >       -TI,IMËS        # traukimës
         G T I           >       -GTI,KIMËS      # renkimës
+        # sngr.
+        [^KG] T I S     >       -TIS,KIMËS
+        K T I S         >       -TIS,IMËS
+        G T I S         >       -GTIS,KIMËS
 
         # Dgsk., II asm.
         [^KG] T I       >       -TI,KITËS       # siøskitës
         K T I           >       -TI,ITËS        # traukitës
         G T I           >       -GTI,KITËS      # renkitës
-
+        # sngr.
+        [^KG] T I S     >       -TIS,KITËS
+        K T I S         >       -TIS,ITËS
+        G T I S         >       -GTIS,KITËS
 
 
         ## Pusdalyvis ##
@@ -6283,31 +6349,37 @@ suffixes
         # Vnsk.
         T I             >       -TI,DAMASIS     # rinkti > rinkdamasis
         T I             >       -TI,DAMASI      # rinkti > rinkdamasi
+        # sngr.
+        T I S           >       -TIS,DAMASIS
+        T I S           >       -TIS,DAMASI
 
         # Dgsk.
         T I             >       -TI,DAMIESI     # rinkdamiesi
         T I             >       -TI,DAMOSI      # rinkdamosi
-
+        # sngr.
+        T I S           >       -TIS,DAMIESI
+        T I S           >       -TIS,DAMOSI
 
 
         ## Bût. k. laiko neveikiamasis dalyvis ##
 
         T I             >       -I,ASI          # mylëtasi
-
+        T I S           >       -IS,ASI         # sngr.
 
 
         ## Bût. d. laiko padalyvis ##
 
         T I             >       -TI,DAVUSIS     # rinkdavusis
-
+        T I S           >       -TIS,DAVUSIS    # sngr.
 
 
         #####################
         ## Esamasis laikas ##
         #####################
 
-        # Sngr. forma ið esamojo laiko (ðakninis þodis)
-        [AO]            >       SI              # neðasi, raðosi
+
+        # Sngr. forma ið ðakninio þodþio (-ë ið bûtojo laiko skilties)
+        [AOË]           >       SI              # neðasi, raðosi, neðësi
 
 
         # Vnsk./dgsk. III asm.: ðakninis þodis
@@ -6315,6 +6387,9 @@ suffixes
         # Vnsk., I asm.
         A               >       -A,UOSI         # supa > supuosi
         O               >       -O,AUSI         # bijo > bijausi
+        # sngr.
+        A S I           >       -ASI,UOSI
+        O S I           >       -OSI,AUSI
 
         # Vnsk., II asm.
         [^I] A          >       -A,IESI         # supa > supiesi
@@ -6322,16 +6397,25 @@ suffixes
         È I A           >       -ÈIA,TIESI      # puèia > putiesi
         [^D] Þ I A      >       -A,ESI          # grauþiesi, verþiesi
         D Þ I A         >       -ÞIA,IESI       # beldþia > beldiesi
+        # sngr.
+        [^I] A S I      >       -ASI,IESI
+        [^ÈÞ] I A S I   >       -ASI,ESI
+        È I A S I       >       -ÈIASI,TIESI
+        [^D] Þ I A S I  >       -ASI,ESI
+        D Þ I A S I     >       -ÞIASI,IESI
 
         O               >       -O,AISI         # moko > mokaisi
+        O S I           >       -OSI,AISI       # sngr.
 
+
+        # -ë(si) ið bûtojo laiko skilties
         # Dgsk., I asm.
-        [AO]            >       MËS             # supamës, raðomës
+        [AOË]           >       MËS             # supamës, raðomës, klausëmës
+        [AOË] S I       >       -SI,MËS         # sngr.
 
         # Dgsk., II asm.
-        [AO]            >       TËS             # supatës, raðotës
-
-
+        [AOË]           >       TËS             # supatës, raðotës
+        [AOË] S I       >       -SI,TËS         # sngr.
 
 
         ## Padalyvis ##
@@ -6340,15 +6424,16 @@ suffixes
         # (nors jei sngr. þyma /R ne papildoma prie /E, tai...)
         A               >       NTIS            # sukantis
         O               >       -O,ANTIS        # matantis
-
+        # sngr.
+        A S I           >       -SI,NTIS
+        O S I           >       -OSI,ANTIS
 
 
         ## Neveik. dalyvis ##
 
         # Neveik. rûð., bevrd. gim.
         [AO]            >       MASI            # einamasi, raðomasi
-
-
+        [AO] S I        >       -SI,MASI        # sngr.
 
 
         ####################
@@ -6356,8 +6441,8 @@ suffixes
         ####################
 
 
-        # Sngr. forma ið esamojo laiko (ðakninis þodis)
-        Ë               >       SI              # raðë > raðësi, neðë > neðësi
+        # Sngr. forma ið ðakninio þodþio (perkelta á esamojo laiko skiltá)
+        #Ë               >       SI              # raðë > raðësi, neðë > neðësi
 
         # Vnsk./dgsk. III asm.: ðakninis þodis
 
@@ -6365,22 +6450,30 @@ suffixes
         [^DT] Ë         >       -Ë,IAUSI        # neðë  > neðiausi
         D Ë             >       -Ë,ÞIAUSI       # beldë > beldþiausi
         T Ë             >       -TË,ÈIAUSI      # keitë > keièiausi
+        # sngr.
+        [^DT] Ë S I     >       -ËSI,IAUSI
+        D Ë S I         >       -ËSI,ÞIAUSI
+        T Ë S I         >       -TËSI,ÈIAUSI
 
         # Vnsk., II asm.
         Ë               >       -Ë,EISI         # keiteisi
+        Ë S I           >       -ËSI,EISI       # sngr.
 
+
+        # Perkelta á esamojo laiko skiltá
         # Dgsk., I asm.
-        Ë               >       MËS             # keitëmës
+        #Ë               >       MËS             # keitëmës
+        #Ë S I           >       -SI,MËS         # sngr.
 
         # Dgsk., II asm.
-        Ë               >       TËS             # keitëtës
-
+        #Ë               >       TËS             # keitëtës
+        #Ë S I           >       -SI,TËS         # sngr.
 
 
         ## Padalyvis ##
 
         Ë               >       -Ë,USIS         # vylë > vylusis
-
+        Ë S I           >       -ËSI,USIS       # sngr.
 
 
         ## Dalyvis ##
@@ -6389,16 +6482,20 @@ suffixes
 
         # Vnsk., vyr. gim.
         Ë               >       -Ë,ÆSIS         # tarë > taræsis
+        Ë S I           >       -ËSI,ÆSIS       # sngr.
 
         # Vnsk., mot. gim.
         #Ë              >       -Ë,USIS         # tarusis
+        #Ë S I          >       -ËSI,USIS       # sngr.
+
 
         # Dgsk., vyr. gim.
         Ë               >       -Ë,ÆSI          # taræsi
+        Ë S I           >       -ËSI,ÆSI        # sngr.
 
         # Dgsk., mot. gim.
         Ë               >       -Ë,USIOSI       # tarusiosi
-
+        Ë S I           >       -ËSI,USIOSI     # sngr.
 
 
         ## Daiktavardis ##
@@ -6410,6 +6507,14 @@ suffixes
         Ë               >       -Ë,IMÀSI
         Ë               >       -Ë,IMUSI
         Ë               >       -Ë,IMESI
+        # sngr.
+        Ë S I           >       -ËSI,IMASIS
+        Ë S I           >       -ËSI,IMOSI
+        Ë S I           >       -ËSI,IMUISI
+        Ë S I           >       -ËSI,IMÀSI
+        Ë S I           >       -ËSI,IMUSI
+        Ë S I           >       -ËSI,IMESI
+
 
         # Dgsk., vyr. gim.
         Ë               >       -Ë,IMAISI       # keitimaisi
@@ -6418,8 +6523,13 @@ suffixes
         #Ë              >       -Ë,IMUSIS
         #Ë              >       -Ë,IMAISIS
         #Ë              >       -Ë,IMUOSESI
-
-
+        # sngr.
+        Ë S I           >       -ËSI,IMAISI
+        Ë S I           >       -ËSI,IMØSI
+        #Ë S I          >       -ËSI,IMAMSIS
+        #Ë S I          >       -ËSI,IMUSIS
+        #Ë S I          >       -ËSI,IMAISIS
+        #Ë S I          >       -ËSI,IMUOSESI
 
 
 
@@ -6436,24 +6546,24 @@ suffixes
 # Sangràþiniai veiksmaþodþiai.
 #
 # Esamojo laiko formos þyma, JEI:
-#  - ji baigiasi -i (pvz.: tyl-i, tik-i, myl-i);
+#  - ji baigiasi -i(si) (pvz.: tyl-i, tik-i, myl-i);
 #
 # Bûtojo laiko formos þyma, JEI:
-#  - ji baigiasi -o (pvz.: buv-o, vëlav-o, dirb-o);
-# ARBA, JEI:
-#  - ji baigiasi -ë, o bendratyje -yti. ({rað-yti; rað-ë}, {mat-yti; mat-ë}).
-#    (automatizmas: jei veiksmaþodis su /Y þyma, tai sangràþai lipdome /O)
+#  - ji baigiasi -o(si) (pvz.: buv-o, vëlav-o, dirb-o, kivirèij-osi);
+# ARBA:
+#  - ji baigiasi -ë(si), o bendratyje -yti(s):
+#        rað-ë (rað-yti); mat-ë (mat-yti); maiv-ësi (maiv-ytis).
+# (automatizmas: jei veiksmaþodis su /Y þyma, tai sangràþai lipdome /O)
 #
 #         o -> osi :  mylëj-o -> mylëj-osi, aiðkin-o -> aiðkin-osi;
 #  ë (-yti) -> ësi :    sak-ë -> sak-ësi,     laik-ë -> laik-ësi;
 #
 # Nesigauna visos sangràþiniø formø darybos sutraukti po viena afikso þyma,
-# nes sutampa galûnës (konkreèiai -o, esamajame ir bûtajame laikuose). Taip pat
-# skiriasi veiksmaþodþiø {-yti, -ë} daryba, nuo kitø, pvz:
-#  {rað-yti; rað-ë}    > rað-iusis, rað-ymasis, kt.
-#  versus
-#  {skalb-ti; skalb-ë} > skalb-usis, skalb-imasis, kt.
-#
+# nes sutampa galûnës (konkreèiai -o, esamajame ir bûtajame laikuose). Taip
+# pat skiriasi veiksmaþodþiø {-yti, -ë} daryba, nuo kitø, pvz:
+#    rað-yti; rað-ë    > rað-iusis, rað-ymasis, kt.
+#      versus
+#    skalb-ti; skalb-ë > skalb-usis, skalb-imasis, kt.
 #
 # Paþymëtina, kad afikso þyma be þvaigþdutës '*', t.y. generuojant þodþius ðis
 # afiksas nejungiamas su kitais (cross-product); tokioms (neprieðdëlinëms)
@@ -6467,35 +6577,51 @@ suffixes
         #####################
 
         # Sngr. forma ið esamojo laiko (ðakninis þodis)
-        I               >       SI              # mylisi
+        [^S] I          >       SI              # tikisi
+        [^ËIO] S I      >       SI              # ilsisi
 
         # Vnsk./dgsk. III asm.: ðakninis þodis
 
         # Vnsk., I asm.
-        [^DT] I         >       UOSI            # tiki > tikiuosi
+        [^DST] I        >       UOSI            # tiki > tikiuosi
+        [^ËIO] S I      >       UOSI            # ilsiuosi
         D I             >       -I,ÞIUOSI       # girdi > girdþiuosi
         T I             >       -TI,ÈIUOSI      # ðlykðti > ðlykðèiuosi
+        # sngr.
+        [^DT] I S I     >       -SI,UOSI
+        D I S I         >       -ISI,ÞIUOSI
+        T I S I         >       -TISI,ÈIUOSI
 
         # Vnsk., II asm.
-        I               >       ESI             # tiki > tikiesi
+        [^S] I          >       ESI             # tiki > tikiesi
+        [^ËIO] S I      >       ESI             # ilsiesi
+        I S I           >       -SI,ESI         # sngr.; domiesi
+
 
         # Dgsk., I asm.
-        I               >       MËS             # tikimës
+        [^S] I          >       MËS             # tikimës
+        [^ËIO] S I      >       MËS             # ilsimës
+        I S I           >       -SI,MËS         # sngr.
 
         # Dgsk., II asm.
-        I               >       TËS             # tikitës
+        [^S] I          >       TËS             # tikitës
+        [^ËIO] S I      >       TËS             # ilsitës
+        I S I           >       -SI,TËS         # sngr.
 
 
         ## Padalyvis ##
 
-        I               >       NTIS            # mylintis
+        [^S] I          >       NTIS            # mylintis
+        [^ËIO] S I      >       NTIS            # ilsintis
+        I S I           >       -SI,NTIS        # sngr.
 
 
         ## Neveik. dalyvis ##
 
         # Neveik. rûð., bevrd. gim.
-        I               >       MASI            # mylimasi, tikimasi
-
+        [^S] I          >       MASI            # mylimasi, tikimasi
+        [^ËIO] S I      >       MASI            # ilsimasi
+        I S I           >       -SI,MASI        # sngr.
 
 
 
@@ -6513,20 +6639,29 @@ suffixes
         [^DT] Ë         >       -Ë,IAUSI        # neðë  > neðiausi
         D Ë             >       -Ë,ÞIAUSI       # beldë > beldþiausi
         T Ë             >       -TË,ÈIAUSI      # keitë > keièiausi
+        # sngr.
+        [^DT] Ë S I     >       -ËSI,IAUSI
+        D Ë S I         >       -ËSI,ÞIAUSI
+        T Ë S I         >       -TËSI,ÈIAUSI
 
         O               >       -O,AUSI         # dirbausi, vijausi
+        O S I           >       -OSI,AUSI       # sngr.
 
         # Vnsk., II asm.
         Ë               >       -Ë,EISI         # keiteisi
         O               >       -O,AISI         # dirbaisi, vijaisi
+        # sngr.
+        Ë S I           >       -ËSI,EISI
+        O S I           >       -OSI,AISI
 
 
         # Dgsk., I asm.
         [ËO]            >       MËS             # dirbomës, vijomës
+        [ËO] S I        >       -SI,MËS         # sngr.
 
         # Dgsk., II asm.
         [ËO]            >       TËS             # dirbotës, vijotës
-
+        [ËO] S I        >       -SI,TËS         # sngr.
 
 
         ## Padalyvis ##
@@ -6534,9 +6669,13 @@ suffixes
         [^DT] Ë         >       -Ë,IUSIS        # laikë  > laikiusis
         D Ë             >       -Ë,ÞIUSIS       # rodë   > rodþiusis
         T Ë             >       -TË,ÈIUSIS      # raitë  > raièiusis
+        # sngr.
+        [^DT] Ë S I     >       -ËSI,IUSIS
+        D Ë S I         >       -ËSI,ÞIUSIS
+        T Ë S I         >       -TËSI,ÈIUSIS
 
         O               >       -O,USIS         # mylëjo > mylëjusis
-
+        O S I           >       -OSI,USIS       # sngr.
 
 
         ## Dalyvis ##
@@ -6546,20 +6685,32 @@ suffixes
         # Vnsk., vyr. gim.
         Ë               >       -Ë,ÆSIS         # laikë > laikæsis
         O               >       -O,ÆSIS         # supo  > supæsis
+        # sngr.
+        Ë S I           >       -ËSI,ÆSIS
+        O S I           >       -OSI,ÆSIS
 
         # Vnsk., mot. gim.
         #Ë              >       -Ë,IUSIS        # taisiusis
         #O              >       -O,USIS         # supusis
+        # sngr.
+        #Ë S I          >       -ËSI,IUSIS
+        #O S I          >       -OSI,USIS
 
 
         # Dgsk., vyr. gim.
         Ë               >       -Ë,ÆSI          # laikæsi
         O               >       -O,ÆSI          # supæsi
+        # sngr.
+        Ë S I           >       -ËSI,ÆSI
+        O S I           >       -OSI,ÆSI
+
 
         # Dgsk., mot. gim.
         Ë               >       -Ë,IUSIOSI      # taisiusiosi
         O               >       -O,USIOSI       # supusiosi
-
+        # sngr.
+        Ë S I           >       -ËSI,IUSIOSI
+        O S I           >       -OSI,USIOSI
 
 
         ## Daiktavardis ##
@@ -6583,6 +6734,21 @@ suffixes
         O               >       -O,IMUSI
         O               >       -O,IMESI
 
+        # sngr.
+        Ë S I           >       -ËSI,YMASIS
+        Ë S I           >       -ËSI,YMOSI
+        Ë S I           >       -ËSI,YMUISI
+        Ë S I           >       -ËSI,YMÀSI
+        Ë S I           >       -ËSI,YMUSI
+        Ë S I           >       -ËSI,YMESI
+
+        O S I           >       -OSI,IMASIS
+        O S I           >       -OSI,IMOSI
+        O S I           >       -OSI,IMUISI
+        O S I           >       -OSI,IMÀSI
+        O S I           >       -OSI,IMUSI
+        O S I           >       -OSI,IMESI
+
 
         # Dgsk., vyr. gim.
         Ë               >       -Ë,YMAISI       # skaitymaisi
@@ -6598,3 +6764,18 @@ suffixes
         #O              >       -O,IMUSIS
         #O              >       -O,IMAISIS
         #O              >       -O,IMUOSESI
+
+        # sngr.
+        Ë S I           >       -ËSI,YMAISI
+        Ë S I           >       -ËSI,YMØSI
+        #Ë S I          >       -ËSI,YMAMSIS
+        #Ë S I          >       -ËSI,YMUSIS
+        #Ë S I          >       -ËSI,YMAISIS
+        #Ë S I          >       -ËSI,YMUOSESI
+
+        O S I           >       -OSI,IMAISI
+        O S I           >       -OSI,IMØSI
+        #O S I          >       -OSI,IMAMSIS
+        #O S I          >       -OSI,IMUSIS
+        #O S I          >       -OSI,IMAISIS
+        #O S I          >       -OSI,IMUOSESI
