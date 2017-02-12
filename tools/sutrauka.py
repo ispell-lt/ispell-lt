@@ -138,9 +138,9 @@ def sutrauka(lines, outfile=sys.stdout, myspell=True):
     words = {}
     wcount = 0
 
-    # Skliaudþiamøjø þodþiø grupës (pagal afiksø þymø rinkinius):
-    vflags = set("TYEP")  # verb flags
-    aflags = set("AB")    # adjective flags
+    # Skliaudþiamøjø þodþiø klasës (pagal afiksø þymø rinkinius):
+    vflags = set("TYEPRO")  # verb flags
+    aflags = set("AB")      # adjective flags
 
     _msg("\n--- %s %s\nReading ", sys.argv[0], '-' * (55 - len(sys.argv[0])))
 
@@ -264,6 +264,13 @@ def sutrauka(lines, outfile=sys.stdout, myspell=True):
                     del verbs[word]
                     break
 
+    # beafiksiniø þodþiø paðalinimas, jei jie yra kitose afiksiniø klasëse
+    for word, flags in items(words.copy()):
+        if (not flags and (word in verbs or word in adjes)):
+            _stats(word, flags, set())
+            # _msg("Deleting %s\n", word)
+            del words[word]
+    
     wlist = []
     NS = set('NS')
     for word, flags in chain(items(words), items(verbs), items(adjes)):
