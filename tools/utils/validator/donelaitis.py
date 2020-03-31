@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """
 Priemonës þodþiø ieðkoti VDU KLC tekstyne per webiná interfeisà.
 

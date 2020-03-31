@@ -139,7 +139,7 @@ ifdef MSWIN
     SHELL_SH = 1
 
     ifdef GNUWIN
-        PYCMD = python
+        PYCMD = python3
         PLCMD = perl
     endif
 
@@ -461,7 +461,7 @@ dist-oxt: myspell
 
 MANIFEST:
 	mkdir -p $(D_BUILD)
-	python -c \
+	python3 -c \
 	'from distutils.core import setup; \
 	 setup(name = "-", version = "-", url = "-", \
 	       author = "-", author_email = "-")' \
