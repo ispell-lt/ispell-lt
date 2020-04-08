@@ -1,11 +1,11 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: iso-8859-13 -*-
 '''
 $Id: spell.py,v 1.4 2003/11/24 23:51:16 alga Exp $
 
 Paleidimas:
 
-  python spell.py [-m] [infile]
+  python3 spell.py [-m] [infile]
 
      -m     -- nurodo, kad þodþius reikia dëti á lietuviu.zodziai ir
                lietuviu.veiksmazodziai, o ne lietuviu.privatus

@@ -47,7 +47,7 @@ BEGIN {
 
     if (!converter) {
         if (PY_ICONV) {
-            converter = "python -u " PY_ICONV " -f ISO-8859-13 -t UTF-8"
+            converter = "python3 -u " PY_ICONV " -f ISO-8859-13 -t UTF-8"
         } else {
             print "No suitable converter found and PY_ICONV is not set."\
                 > "/dev/stderr"
