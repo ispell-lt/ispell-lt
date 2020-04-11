@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Copyright (c) 2016, Laimonas Vėbra
+# Copyright (c) 2002-2020 by Albertas Agejevas, Laimonas Vėbra
 # All rights reserved.
 #
 # This program is licensed under the Simplified BSD License.
 # See <http://www.opensource.org/licenses/bsd-license>
-#
-# Based on original work of Albertas Agejevas, (c) 2002
 """
 Converts ispell affix file to OpenOffice's MySpell format.
 See <https://www.openoffice.org/lingucomponent/affix.readme>
