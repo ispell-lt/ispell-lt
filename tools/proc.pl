@@ -957,7 +957,7 @@ $make .= <<"---";
 	\${PREZIP}$prezip_d < \$< $conv | \${ASPELL} \${ASPELL_FLAGS} --lang=$lang create master ./\$@
 
 .wl.cwl:
-	cat \$< | LC_COLLATE=C /bin/sort -u | \${PREZIP}$prezip_c > \$@
+	cat \$< | LC_COLLATE=C /usr/bin/sort -u | \${PREZIP}$prezip_c > \$@
 
 .pz:
 	\${PREZIP}$prezip_d < \$< > \$@
