@@ -3789,7 +3789,7 @@ suffixes
 
 
         # dgsk., vyr. gim.
-        [^I ]A S        >       -AS,IEJI        # pirmieji
+        [^I] A S        >       -AS,IEJI        # pirmieji
         È I A S         >       -ÈIAS,TIEJI     # tretieji
 
         A S             >       -AS,ØJØ
