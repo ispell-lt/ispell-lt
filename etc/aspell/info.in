@@ -21,7 +21,7 @@ copyright Free Software
 version @VERSION@
 complete true
 accurate true
-url https://launchpad.net/ispell-lt
+url https://github.com/ispell-lt/ispell-lt
 alias lt lithuanian lietuviu
 dict:
   name lt

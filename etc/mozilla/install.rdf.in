@@ -9,7 +9,7 @@
     <em:creator>Albertas Agejevas</em:creator>
     <em:type>64</em:type>
 @CONTRIBUTORS@
-    <em:homepageURL>https://launchpad.net/ispell-lt</em:homepageURL>
+    <em:homepageURL>https://github.com/ispell-lt/ispell-lt</em:homepageURL>
     <em:unpack>true</em:unpack> 
     <em:targetApplication>
       <Description>

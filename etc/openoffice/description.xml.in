@@ -11,8 +11,8 @@
 			<OpenOffice.org-minimal-version value="3.0" d:name="OpenOffice.org 3.0" />
 		</dependencies>
 	<publisher>
-		<name xlink:href="https://launchpad.net/ispell-lt" lang="en">Albertas Agejevas and contributors</name>
-		<name xlink:href="https://launchpad.net/ispell-lt" lang="lt">Albertas Agejevas ir bendradarbiai</name>
+		<name xlink:href="https://github.com/ispell-lt/ispell-lt" lang="en">Albertas Agejevas and contributors</name>
+		<name xlink:href="https://github.com/ispell-lt/ispell-lt" lang="lt">Albertas Agejevas ir bendradarbiai</name>
 	</publisher>
 	<registration>
 		<simple-license accept-by="admin" suppress-on-update="true" >
