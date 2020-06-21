@@ -6,7 +6,7 @@
 # Kintamuosius (ypač, kurių reikšmes nustato išorinės programos)
 # geriau naudoti ne rekursiškai išplečiamus, t.y. su ':='
 
-VERSION := 1.3.1-$(shell date -u +%Y\.%m\.%d)
+VERSION := 1.3.2
 
 FIREFOXVERSION     := 43.*
 THUNDERBIRDVERSION := 43.*
