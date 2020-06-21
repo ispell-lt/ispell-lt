@@ -393,9 +393,10 @@ dist-hyph: D_DST_T := $(D_TMP)/$(D_HYPH)
 dist-hyph:
 	mkdir -p $(D_DST)
 	mkdir -p $(D_DST_T)
-	cp -f $(D_CONF)/$(D_HYPH)/hyph_lt_LT.dic \
-	      $(D_CONF)/$(D_HYPH)/README_hyph_lt_LT.txt \
-	      $(D_DST_T)
+	cp -f $(D_CONF)/$(D_HYPH)/hyph_lt.dic.utf-8 \
+	      $(D_DST_T)/hyph_lt_LT.dic
+	cp -f $(D_CONF)/$(D_HYPH)/README_hyph_lt.txt \
+              $(D_DST_T)/README_hyph_lt_LT.txt
 	cd $(D_DST_T); zip -r $(dist_pkg_hyph) ./
 	mv -f $(D_DST_T)/$(dist_pkg_hyph) $(D_DST)
 	$(call deldir,$(D_DST_T))
@@ -450,8 +451,8 @@ dist-oxt: myspell
 	sed -e 's/@VERSION@/$(VERSION)/' \
 	      $(D_CONF)/$(D_OOFFICE)/description.xml.in > \
 	      $(D_DST_T)/description.xml
-	cp -f $(D_CONF)/$(D_HYPH)/hyph_lt_LT.dic $(D_DST_T)/hyph_lt.dic
-	cp -f $(D_CONF)/$(D_HYPH)/README_hyph_lt_LT.txt \
+	cp -f $(D_CONF)/$(D_HYPH)/hyph_lt.dic.utf-8 $(D_DST_T)/hyph_lt.dic
+	cp -f $(D_CONF)/$(D_HYPH)/README_hyph_lt.txt \
 	      $(D_DST_T)/README_hyph
 	cp -f README.EN $(D_DST_T)/README
 	cp -f AUTHORS COPYING $(D_DST_T)
