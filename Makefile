@@ -223,14 +223,14 @@ myspell: lt_LT.dic lt_LT.aff
 lt_LT.%: D_DST := $(D_BUILD)/$(D_MYSPELL)
 lt_LT.%: MY_AFF := etc/myspell/myspell.aff
 ## ---------------------------------------------------------------------------
-lt_LT.dic: lietuviu.dict
+lt_LT.dic: liet-utf8.dict
 	mkdir -p $(D_DST)
 	wc -l < $< | tr -d ' ' > $(D_DST)/$@
 	cat $< >> $(D_DST)/$@
 
 lt_LT.aff: lietuviu.aff
 	mkdir -p $(D_DST)
-	$(PYCMD) $(D_TOOLS)/ispell2myspell.py -c $(MY_AFF) -s $^ > $(D_DST)/$@
+	$(PYCMD) $(D_TOOLS)/ispell2myspell.py -c $(MY_AFF) -e UTF-8 -s $^ > $(D_DST)/$@
 ifdef MSWIN
 	$(call dos2unix,$(D_DST)/$@)
 endif
@@ -242,12 +242,14 @@ ifdef HAVE_ASPELL
 .PHONY: aspell
 ## ---------------------------------------------------------------------------
 aspell: D_DST := $(D_BUILD)/$(D_ASPELL)
+aspell: MY_AFF := etc/myspell/myspell.aff
 ## ---------------------------------------------------------------------------
-aspell: lt_LT.aff lietuviu.dict
+aspell: lietuviu.dict
 	mkdir -p $(D_DST)
 	cp -f $(D_CONF)/$(D_ASPELL)/lt.dat $(D_DST)
 	cp -f lietuviu.dict $(D_DST)/lt.wl
-	cp -f $(D_BUILD)/$(D_MYSPELL)/lt_LT.aff $(D_DST)/lt_affix.dat
+	$(PYCMD) $(D_TOOLS)/ispell2myspell.py -c $(MY_AFF) \
+                 -e ISO-8859-13 -s lietuviu.aff > $(D_DST)/lt_affix.dat
 ifdef MSWIN
 	$(call dos2unix,$(D_DST)/lt.wl)
 	$(call dos2unix,$(D_DST)/lt_affix.dat)
