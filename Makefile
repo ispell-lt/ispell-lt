@@ -6,13 +6,7 @@
 # Kintamuosius (ypač, kurių reikšmes nustato išorinės programos)
 # geriau naudoti ne rekursiškai išplečiamus, t.y. su ':='
 
-VERSION := 1.3.2
-
-FIREFOXVERSION     := 43.*
-THUNDERBIRDVERSION := 43.*
-SEAMONKEYVERSION   := 2.38.*
-## Fennec is the codename of Firefox for Android
-FENNECVERSION      := 40.0
+VERSION   := 1.3.2
 
 D_BUILD   := build
 D_CONF    := etc
@@ -417,22 +411,12 @@ dist-xpi: myspell
 	cp -f $(D_BUILD)/$(D_MYSPELL)/lt_LT.aff $(D_DST_T)/dictionaries/lt.aff
 	cp -f README.EN $(D_DST_T)/README
 	cp -f COPYING $(D_DST_T)
-	tail -n+4 AUTHORS | sed -E -e \
-	    's/^\s*\<(.*)\>\s*<.*$$/    <$(CT)>\1<\/$(CT)>/' > \
-	    $(D_TMP)/contributors.txt
 	sed \
-	    -e '\_@CONTRIBUTORS@_ { r $(D_TMP)/contributors.txt' \
-	    -e 'd }' \
 	    -e 's/@VERSION@/$(VERSION)/' \
-	    -e 's/@FIREFOXVERSION@/$(FIREFOXVERSION)/' \
-	    -e 's/@THUNDERBIRDVERSION@/$(THUNDERBIRDVERSION)/' \
-	    -e 's/@SEAMONKEYVERSION@/$(SEAMONKEYVERSION)/' \
-	    -e 's/@FENNECVERSION@/$(FENNECVERSION)/' \
-	    $(D_CONF)/$(D_MOZILLA)/install.rdf.in > $(D_DST_T)/install.rdf
+	    $(D_CONF)/$(D_MOZILLA)/manifest.json.in > $(D_DST_T)/manifest.json
 	cd $(D_DST_T); zip -r $(dist_pkg_mozilla) ./
 	mv -f $(D_DST_T)/$(dist_pkg_mozilla) $(D_DST)
 	$(call deldir,$(D_DST_T))
-	@rm -f $(D_TMP)/contributors.txt
 
 
 ## Priedas OpenOffice ir LibreOffice paketams

@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "version": "@VERSION@",
+    "name": "Lietuvių kalbos rašybos tikrinimo žodynas",
+    "author": "Albertas Agejevas and contributors",
+    "homepage_url": "https://github.com/ispell-lt/ispell-lt",
+    "dictionaries": {
+        "lt": "dictionaries/lt.dic"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "lt@dictionaries.addons.mozilla.org"
+        }
+    }
+}
