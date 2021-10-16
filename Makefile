@@ -409,11 +409,10 @@ dist-xpi: myspell
 	mkdir -p $(D_DST_T)/dictionaries
 	cp -f $(D_BUILD)/$(D_MYSPELL)/lt_LT.dic $(D_DST_T)/dictionaries/lt.dic
 	cp -f $(D_BUILD)/$(D_MYSPELL)/lt_LT.aff $(D_DST_T)/dictionaries/lt.aff
-	cp -f README.EN $(D_DST_T)/README
-	cp -f COPYING $(D_DST_T)
-	sed \
-	    -e 's/@VERSION@/$(VERSION)/' \
+	sed -e 's/@VERSION@/$(VERSION)/' \
 	    $(D_CONF)/$(D_MOZILLA)/manifest.json.in > $(D_DST_T)/manifest.json
+	cp -f README.EN $(D_DST_T)/README
+	cp -f AUTHORS COPYING $(D_DST_T)
 	cd $(D_DST_T); zip -r $(dist_pkg_mozilla) ./
 	mv -f $(D_DST_T)/$(dist_pkg_mozilla) $(D_DST)
 	$(call deldir,$(D_DST_T))
