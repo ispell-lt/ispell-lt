@@ -1313,6 +1313,9 @@ gena/ENXbdkl
 genda/ENXafkrwv
 genëja/ENXaefm
 genëjo/PNXaefm
+generalizavo/PSXfhjkvw
+generalizuoja/ESXfhjkvw
+generalizuoti/TSXfhjkvw
 generavo/PSXfhjkvw
 generuoja/ESXfhjkvw
 generuoti/TSXfhjkvw
@@ -2368,7 +2371,6 @@ laidoti/TRSXfhrt
 laiduoja/ENX
 laiduoti/TNX
 laikë/YOSXbdefhijklnpqruvwx
-laikë/SYOXbdefhijklnpqrstvwx
 #laikësi/Y                      # sngr. laikë/.*O
 laikyti/TRWNSXbdefhijklnpqrstvwx
 #laikytis/T                     # sngr. laikyti/.*R
@@ -3075,9 +3077,15 @@ pakuoti/TRSXcdhkoptw
 palaidavo/PNXbn
 palaiduoja/ENXbn
 palaiduoti/TNXbn
+palaikë/YNXv
+palaikyti/TRWNXv
+palaiko/ERNXv
 panikavo/PNXklv
 panikuoja/ENXklv
 panikuoti/TNXklv
+paprastina/ERSXadkvw
+paprastino/POSXadkvw
+paprastinti/TRSXadkvw
 paralyþiavo/PNXk
 paralyþiuoja/ENXk
 paralyþiuoti/TNXk

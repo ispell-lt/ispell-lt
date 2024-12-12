@@ -73,6 +73,7 @@ aglomeracija/D
 agrastas/D
 agregatas/D
 agregatinis/BUN
+agreguotas/B
 agresija/D
 agresyvus/BQN
 agrofirma/D
@@ -286,6 +287,7 @@ analogas/D
 analogija/D
 analoginis/BU
 analogiðkas/BQN
+anapilis/D
 anapusinis/BUN
 anarchinis/BUN
 anarchiðkas/BNQ
@@ -839,6 +841,7 @@ australiðkas/BQN
 austras/DN
 austrë/DN
 austriðkas/BQN
+autentifikacija/D
 autentiðkas/BQN
 autoavarija/D
 autobusas/D
@@ -1442,6 +1445,7 @@ civilizuotas/BQN
 colis/D
 cukinija/D
 cukrus/D
+cunamis/D
 dabar
 dabartinis/BUN
 dabartis/MI
@@ -1908,6 +1912,7 @@ drugys/D
 druska/D
 drûtas/BQ
 dualistinis/BUN
+dubenëlis/D
 dublikatas/D
 dubuo/V
 duèë/D
@@ -2563,6 +2568,7 @@ geltonas/BQ
 gemalinis/BUN
 genas/D
 generalinis/BU
+generalizacija/D
 generatorius/D
 generolas/D
 generolë/D
@@ -2861,7 +2867,10 @@ hibridas/D
 hidraulinis/BU
 hidrofilinis/BUN
 hidrofobinis/BUN
+hidrografija/D
 hidrografinis/BUN
+hidrologija/D
+hidrologinis/BN
 hidroizoliacinis/BUN
 hidrometeorologija/D
 hidroponinis/BUN
@@ -3174,6 +3183,7 @@ iðdaiga/D
 iðdaigininkas/D
 iðdaigininkë/D
 iðdava/D
+iðdavëjas/D
 iðdavystë/D
 iðdidus/BQN
 iðeitis/MI
@@ -5578,6 +5588,7 @@ nugalëtojas/D
 nugara/D
 nugarëlë/D
 nugarinis/BUN
+nukreipëjas/D
 nulinis/BUN
 nulis/D
 nuliukas/D
@@ -8960,12 +8971,14 @@ netesybos/D
 tektoninis/BUN
 telefaksas/D
 telefonas/D
+telefonija/D
 telefoninis/BU
 telegrafinis/BUN
 telekomas/D
 telekomunikacija/D
 telekomunikacinis/BUN
 teleksas/D
+telemetrija/D
 telemetrinis/BUN
 teleologinis/BUN
 telepatinis/BUN
@@ -9171,6 +9184,7 @@ toninis/BUN
 tonusas/D
 topinis/BUN
 topologija/D
+topologinis/BU
 torakalinis/BUN
 torpedinis/BU
 torpidinis/BUN                   ## labai jau spec. terminas arba torpedinis/BUN
@@ -9955,6 +9969,7 @@ visokeriopas/BN
 visokiausias/BN
 viðta/D
 viðtiena/D
+vystytojas/D
 visuma/D
 visuomenë/D
 visuomeninis/BUN

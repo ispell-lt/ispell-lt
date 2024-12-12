@@ -4179,6 +4179,7 @@ aptvinti/TNX
 apuodë/PNX
 apuodþia/ENX
 apuokas/D
+apuokëlis/D
 apuostë/YNX
 apuosti/TNX
 apuostinëja/ENX
@@ -7511,6 +7512,7 @@ aviþinis/BUN
 aviþojas/D
 aviþotas/BQN
 aviþuolë/D
+avocetë/D
 avukas/D
 azalija/D
 azartas/D
@@ -7876,8 +7878,10 @@ balsuotojas/D
 balsus/BQN
 balsvas/BQN
 #balsvumas/D                    # yra balsvas/.*Q
+baltabruvis/B
 #baltagalvë/D                   # baltagalvis/BU -- bûdvardis
 baltagalvis/BU
+baltagurklis/B
 #baltakaklë/D                   # baltakaklis/BU -- bûdvardis
 baltakaklis/BU
 #baltakaktë/D                   # baltakaktis/BU -- bûdvardis
@@ -7910,6 +7914,7 @@ baltas/BQN
 baltasparnis/BUN
 baltasparnis/D
 baltaðaknë/D
+baltauodegis/B
 baltaveidis/BUN
 baltavo/PNX
 baltaþiedë/D
@@ -14322,6 +14327,7 @@ drykti/TNX
 dryska/ENX
 dryþainis/BUN
 dryþainis/D
+dryþagalvis/B
 dryþas/BQN
 dryþavo/PNX
 dryþëtas/BQN
@@ -17788,10 +17794,12 @@ geltligë/D
 gelto/PNX
 geltonas/BQN
 geltonavo/PNX
+geltonbruvis/B
 geltondryþis/BUN
 geltonëja/ENX
 geltonëjo/PNX
 geltonëti/TNX
+geltongalvis/B
 geltongurklis/BUN
 geltonija/ENX
 geltonijo/PNX
@@ -17803,6 +17811,7 @@ geltonis/D
 geltonyti/TWNX
 geltonkasë/D
 geltonkerpë/D
+geltonkojis/B
 geltonmargis/BUN
 geltonmolis/D
 geltonodë/D
@@ -30117,10 +30126,12 @@ juodadarbis/D
 juodadëmis/BUN
 juodagalvis/BUN
 juodakaklis/BUN
+juodakaktis/B
 juodakartis/BUN
 juodakasë/D
 juodakepuris/BUN
 juodakis/BUN
+juodakojis/B
 juodalksninis/BUN
 juodalksnis/D
 juodalksnynas/D
@@ -30314,6 +30325,7 @@ jûrkranklis/D
 jûrlapis/D
 jûrligë/D
 jûrmylë/D
+jûrðarkë/D
 jurta/D
 jûruoja/ENX
 jûruoti/TNX
@@ -31434,6 +31446,7 @@ kariavo/PONX
 karibas/D
 karibë/D
 karieta/D
+karietaitë/D
 karikatûra/D
 karikatûrina/ENX
 karikatûrininkas/D
@@ -37790,6 +37803,7 @@ lagûna/D
 lai
 laibakaklis/BUN
 laibas/BQN
+laibasnapis/B
 laibëja/ENX
 laibëjo/PNX
 laibenis/D
@@ -40391,6 +40405,7 @@ margaplunksnis/BUN
 margarinas/D
 margas/BQN
 margas/D
+margasnapis/B
 margaspalvis/BUN
 margasparnis/BUN
 margavo/PNX
@@ -42456,6 +42471,7 @@ morkienë/D
 morkinis/BUN
 morklapis/D
 morkvenë/D
+mormonas/D
 mortyra/D
 mosavo/PNX
 mosèioja/ENX
@@ -56951,6 +56967,7 @@ paþvyravo/PNX
 paþvyruoja/ENX
 paþvyruoti/TNX
 peèialanda/D
+peèialinda/D
 peèiavosi/O
 besipeèiavo/P
 nesipeèiavo/P
@@ -70351,6 +70368,7 @@ ruèkë/D
 ruèkis/D
 rûda/D
 rudabarzdis/BUN
+rudagalvis/B
 rudakaklis/BUN
 rûdakasë/D
 rûdakasys/D
@@ -74769,6 +74787,7 @@ smiltlendrë/D
 smiltlendrûnë/D
 smiltpievë/D
 smiltuotas/BQN
+smiltviðtë/D
 smiltþemis/D
 smiltþygis/D
 smiltþolë/D
